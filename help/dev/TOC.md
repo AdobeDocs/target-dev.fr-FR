@@ -2,9 +2,9 @@
 user-guide-title: Guide de développement d’Adobe Target
 breadcrumb-title: Guide du développeur de Target
 user-guide-description: Découvrez comment personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques.
-source-git-commit: 5321ce43be26e8f0776da49e597ecb5f8dfb5984
+source-git-commit: 65cad3c558aa0f52c8007dcdb566c0ce3b29d8b7
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '739'
 ht-degree: 56%
 
 ---
@@ -217,5 +217,6 @@ ht-degree: 56%
       + [Initialisation des SDK](/help/dev/patterns/initialize-sdk.md)
       + [Configuration de la collecte de données](/help/dev/patterns/data-collection.md)
       + [Rendu d’expériences](/help/dev/patterns/render-experiences.md)
+      + [Notifier Target](/help/dev/patterns/notify-target.md)
 
 
