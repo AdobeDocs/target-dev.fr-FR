@@ -4,10 +4,10 @@ description: Affichage d’une liste d’hôtes pour vous aider à placer sur la
 title: Comment Placer sur la liste autorisée [!DNL Target] Noeuds Edge ?
 feature: Privacy & Security
 exl-id: a7e5d2fc-da8e-414d-a3da-2441ea21503d
-source-git-commit: 55deb12a59dc228ec7dcec17fc0ecb43e2900613
+source-git-commit: 3f4147d521b1fb3ee12e879e52a48d459f6b24b9
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 5%
+source-wordcount: '516'
+ht-degree: 6%
 
 ---
 
@@ -27,11 +27,7 @@ Vous pouvez placer sur la liste autorisée [!DNL Target] noeuds Edge, le cas éc
 >
 >[!DNL Adobe Target] L’infrastructure est en cours de mise à jour et les clients qui souhaitent placer sur la liste autorisée des adresses doivent utiliser les deux ensembles d’adresses IP. Sinon, les clients qui utilisent des implémentations côté serveur ou hybrides, dans lesquelles les appels d’API Target pour récupérer des expériences sont issus d’un réseau derrière un pare-feu configuré pour utiliser une liste autorisée, seront affectés.
 >
->Cette mise à jour est effectuée selon le planning suivant :
->
->* 22-26 mai : région Europe, Moyen-Orient et Afrique (EMEA)
->* 22-26 mai : région Asie-Pacifique (APAC)
->* 6-10 juin : région des Amériques
+>All Edge4 *x* Les adresses répertoriées dans les deux tableaux ci-dessous doivent être mises à jour le 9 août 2023.
 
 ## Traduction d’adresses réseau (NAT) des adresses IP de [!DNL Target] edge
 
