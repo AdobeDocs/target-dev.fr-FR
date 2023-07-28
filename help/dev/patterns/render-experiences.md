@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 18f070005685699e2d1feb12a31802faa17e35f3
+source-git-commit: ca3a3e5b8272c0db9e355abd2d16896251594b43
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1080'
 ht-degree: 5%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 5%
 # Rendu d’expériences
 
 Suivez les étapes de la section *Expériences de rendu* diagramme pour s’assurer que toutes les tâches nécessaires au rendu des expériences sont exécutées dans le bon ordre.
+
+>[!NOTE]
+>
+>Si vous avez activé la requête de chargement automatique de page au cours de la [Configuration de l’étape Requête de chargement de page automatique](/help/dev/patterns/initialize-sdk.md#automatic) in *Initialisation des SDK* , vous pouvez ignorer cette activité, sauf si vous souhaitez appeler le SDK Adobe Target pour effectuer le rendu d’expériences supplémentaires à l’aide d’une demande d’emplacement régional.
 
 >[!TIP]
 >
@@ -58,7 +62,7 @@ Ajout d’éléments en promotion et contrôle leur placement dans Target Recomm
 
 **Paramètres d’entité requis**
 
-* L’attribut d’élément dans les promotions doit être transmis lors de l’utilisation de l’option &quot;promouvoir par attribut&quot;.
+* Les attributs d’élément dans les promotions doivent être transmis lors de l’utilisation de l’option &quot;promouvoir par attribut&quot;.
 
 +++
 
@@ -90,7 +94,7 @@ Effectuez des recommandations en fonction du contenu du panier de l’utilisateu
 
 ## 3.3 : critères basés sur la popularité {#popularity}
 
-Effectuez des recommandations en fonction de la popularité globale d’un élément sur votre site ou de la popularité des éléments au sein de la catégorie, de la marque, du genre, préférée ou la plus consultée d’un utilisateur, etc.
+Effectuez des recommandations en fonction de la popularité globale d’un élément sur votre site ou de la popularité des éléments dans la catégorie, la marque, le genre, préférée ou la plus consultée d’un visiteur, etc.
 
 +++Voir les détails
 
@@ -107,7 +111,7 @@ Effectuez des recommandations en fonction de la popularité globale d’un élé
 **Paramètres d’entité requis**
 
 * `entity.categoryId` ou l’attribut item pour popularité basé sur le critère est basé sur l’attribut current ou l’attribut item .
-* Aucun élément ne doit être transmis pour le site le plus consulté/le plus vendu.
+* Rien ne doit être transmis pour le site le plus consulté/le plus vendu.
 
 **Lectures**
 
@@ -168,7 +172,7 @@ Effectuez des recommandations en fonction du comportement de l’utilisateur.
 
 ## 3.6 : Critères personnalisés {#custom}
 
-Recommandations basées sur un fichier personnalisé que vous chargez
+Faites des recommandations en fonction d’un fichier personnalisé que vous chargez.
 
 +++Voir les détails
 
@@ -222,7 +226,7 @@ Transmettez les identifiants d’entité pour les entités que vous souhaitez ex
 
 * [Attributs d’entité](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
 
-Vous pouvez également accomplir cette étape en créant des flux de produit à l’aide de la variable [!DNL Target] Interface utilisateur permettant de mettre à jour le catalogue de produits pour [!DNL Recommendations].
+Vous pouvez également accomplir cette étape en créant des [flux de produits](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html){target=_blank} en utilisant la variable [!DNL Target] Interface utilisateur permettant de mettre à jour le catalogue de produits pour [!DNL Recommendations].
 
 +++
 
@@ -244,7 +248,7 @@ Fournissez les attributs de profil utilisés comme clés pour les règles d’in
 
 ## 3.11 : Déclenchement de la requête de chargement de page {#fire}
 
-Cette étape déclenche une [!DNL Delivery API] appelez avec `execute` > `pageLoad` payload dans la requête. La variable `getOffers()` récupère l’expérience et `applyOffers()` effectue le rendu de l’expérience sur la page. La requête pageLoad est nécessaire pour le rendu des expériences créées dans la variable [Compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank} (VEC).
+Cette étape déclenche une [!DNL Delivery API] appelez avec `execute` > `pageLoad` payload dans la requête. La variable `getOffers()` récupère l’expérience et `applyOffers()` effectue le rendu de l’expérience sur la page. La variable `pageLoad` est nécessaire pour le rendu des expériences créées dans la variable [Compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank} (VEC).
 
 +++Voir les détails
 
