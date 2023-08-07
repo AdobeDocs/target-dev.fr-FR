@@ -4,10 +4,10 @@ description: Afficher les détails des modifications dans chaque version de [!DN
 title: Que comprend chaque version d’at.js ?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: dc7831e4c3eb7dfc4a11d440e55b3a116b6e28fc
 workflow-type: tm+mt
-source-wordcount: '4554'
-ht-degree: 74%
+source-wordcount: '4603'
+ht-degree: 73%
 
 ---
 
@@ -15,9 +15,15 @@ ht-degree: 74%
 
 Informations détaillées sur les modifications apportées à chaque version de la bibliothèque JavaScript at.js [!DNL Adobe Target].
 
->[!WARNING]
+>[!IMPORTANT]
 >
->[!DNL Adobe Target] prend en charge at.js 1.*x* et at.js 2.*x*. Effectuez une mise à niveau vers la mise à jour la plus récente de l’une des versions majeures d’at.js pour vous assurer que vous utilisez une version prise en charge.
+>[!DNL Adobe Target] prend en charge at.js 1.*x* et at.js 2.*x*.
+>
+>at.js 1.*x* est entré en mode de maintenance. La variable [!DNL Target] L’équipe publie des correctifs de bogues et des correctifs de sécurité si nécessaire.
+>
+>La variable [!DNL Target] L’équipe fournit une prise en charge complète d’at.js 2.*x* et publie régulièrement des correctifs de bogues, des correctifs de sécurité, des fonctionnalités et une optimisation des performances.
+>
+>Vous devez effectuer la mise à niveau vers les dernières versions de l’une ou l’autre des versions 1.*x* ou 2.*x* pour obtenir des correctifs de bogues et des correctifs de sécurité pour les problèmes détectés dans une version mineure précédente de la version majeure correspondante.
 
 Balises dans [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode préconisée pour la mise à niveau d’at.js. Les développeurs d’extensions ajoutent continuellement de nouvelles fonctionnalités à leurs extensions et corrigent fréquemment les bogues. Ces mises à jour sont incluses dans de nouvelles versions d’une extension et mises à disposition dans le catalogue Adobe Experience Platform sous forme de mises à niveau. Pour plus d’informations, voir [Mises à niveau des extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) dans le *Présentation des balises* guide.
 
@@ -90,7 +96,7 @@ Cette version supprime également la prise en charge de Microsoft Internet Explo
 Cette version d’at.js est une version de maintenance qui comprend les améliorations et correctifs suivants :
 
 * Correction d’un problème en raison duquel la fonction `targetPageParams` était incluse dans les requêtes de mbox. La fonction `targetPageParams` doit uniquement être incluse dans les requêtes `pageLoad`. (TNT-40247)
-* Optimisation des références globales aux fenêtres et aux documents dans l’extension Adobe Experience Platform. (TNT-37124)
+* Optimisation des fenêtres et des documents globaux référençant dans l’extension Adobe Experience Platform. (TNT-37124)
 
 ## at.js 2.4.0 (14 janvier 2021)
 
