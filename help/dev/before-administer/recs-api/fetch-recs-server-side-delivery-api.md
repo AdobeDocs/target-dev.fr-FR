@@ -6,9 +6,9 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: ba53161b2ec51af3d90994773034790feb51099c
 workflow-type: tm+mt
-source-wordcount: '1521'
+source-wordcount: '1507'
 ht-degree: 1%
 
 ---
@@ -88,7 +88,6 @@ Les ressources suivantes fournissent des exemples de différentes mises en oeuvr
 | --- | --- |
 | [Adobe Target partout : implémentation côté serveur ou dans IoT](https://expleague.azureedge.net/labs/L733/index.html) | Adobe Summit 2019 Lab qui offre une expérience pratique pour une application React qui tire parti des API côté serveur Adobe Target. |
 | [Adobe Target dans une application mobile sans SDK Adobe](https://community.tealiumiq.com/t5/Universal-Data-Hub/Adobe-Target-in-a-Mobile-App-Without-the-Adobe-SDK/ta-p/26753) | Ce guide explique comment configurer Adobe Target dans votre application mobile sans installer le SDK Adobe. Cette solution utilise l’affichage web du SDK Tealium et le module Commandes distantes pour envoyer et recevoir des requêtes à l’API visiteur Adobe (Experience Cloud) et à l’API Adobe Target. |
-| [Fonctionnement d’Adobe Target dans les applications mobiles](../../implement/mobile/how-target-works-mobile-apps.md) | Fonctionnement de Target avec le SDK Mobile |
 | [Configuration de l’extension Target dans les API Experience Platform Launch et implémentation des API Target](https://developer.adobe.com/client-sdks/documentation/adobe-target/) | Procédure de configuration de l’extension Target dans Experience Platform Launch, d’ajout de l’extension Target à votre application et d’implémentation des API Target pour demander des activités, prérécupérer des offres et passer en mode d’aperçu visuel. |
 | [Client de noeud Adobe Target](https://www.npmjs.com/package/@adobe/target-nodejs-sdk) | SDK Target Node.js Open Source v1.0 |
 | [Présentation côté serveur](../../implement/server-side/server-side-overview.md) | Informations sur les API de diffusion côté serveur Adobe Target, les API de diffusion par lots côté serveur, le SDK Node.js et les API Recommendations Adobe Target. |
