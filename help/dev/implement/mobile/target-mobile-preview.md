@@ -4,9 +4,9 @@ description: Utilisez les liens d’aperçu mobile pour vérifier systématiquem
 title: Comment utiliser le lien d’aperçu mobile dans [!DNL Target] Mobile ?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: b678b69624963b4bdbce230a05a0355da96469f1
+source-git-commit: 97c96e63f9121793a83b445ad3dc33c5d094509a
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '555'
 ht-degree: 51%
 
 ---
@@ -34,7 +34,7 @@ La fonctionnalité d’aperçu mobile vous permet de tester entièrement vos act
    * **iOS**: pour plus d’informations sur la définition de schémas d’URL pour iOS, voir [Définition d’un modèle d’URL personnalisé pour votre application](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank} sur le site web du développeur Apple.
    * **Android**: pour plus d’informations sur la définition de schémas d’URL pour Android, voir [Création de liens profonds vers le contenu de l’application](https://developer.android.com/training/app-links/deep-linking){target=_blank} sur le site web des développeurs Android.
 
-1. **Configuration `collectLaunchInfo` API**
+1. **Configuration `collectLaunchInfo` API (i0S uniquement)**
 
    Pour plus d’informations, voir [Aperçu visuel](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} in *Adobe Target* dans le *[!DNL Adobe Experience Platform Mobile SDK]* la documentation.
 
