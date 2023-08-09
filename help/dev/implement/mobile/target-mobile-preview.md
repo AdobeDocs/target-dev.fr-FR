@@ -4,20 +4,16 @@ description: Utilisez les liens d’aperçu mobile pour vérifier systématiquem
 title: Comment utiliser le lien d’aperçu mobile dans [!DNL Target] Mobile ?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: cf39b35e208a99114b3f97df2e9ef7eb8a46e153
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 68%
+source-wordcount: '554'
+ht-degree: 57%
 
 ---
 
 # [!DNL Target] aperçu mobile
 
 Utilisez le lien d’aperçu mobile pour vérifier simplement et de manière exhaustive la qualité des activités des applications mobiles et prenez part à différentes expériences directement sur votre appareil, sans avoir à utiliser de dispositif de test spécifique.
-
->[!NOTE]
->
->La fonctionnalité d’aperçu mobile requiert de télécharger et d’installer la version appropriée 4.14 (ou ultérieure) du SDK Adobe Mobile.
 
 ## Aperçu
 
@@ -27,69 +23,24 @@ La fonctionnalité d’aperçu mobile vous permet de tester entièrement vos act
 
 1. **Utilisez une version prise en charge du SDK :** la fonction d’aperçu mobile requiert de télécharger et d’installer la version appropriée 4.14 (ou ultérieure) du SDK Adobe Mobile dans vos applications correspondantes.
 
-   Pour savoir comment télécharger le SDK approprié, voir :
-
-   * **IOS :** [Avant de commencer](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/requirements.html) dans le *Aide d’iOS pour Mobile Services*.
-   * **Android :** [Avant de commencer](https://experienceleague.adobe.com/docs/mobile-services/android/getting-started-android/requirements.html) dans le *Aide sur Mobile Services Android*.
+   Pour obtenir des instructions sur le téléchargement du SDK approprié, voir [Versions actuelles du SDK](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/){target=_blank} dans le *[!DNL Adobe Experience Platform Mobile SDK]* la documentation.
 
 1. **Configurez un modèle d’URL :** le lien d’aperçu utilise un modèle d’URL pour ouvrir votre application. Vous devez spécifiez un modèle d’URL unique pour l’aperçu.
 
-   L’illustration suivante présente un exemple sous iOS :
+   Pour plus d’informations, voir [Aperçu visuel](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} in *Adobe Target* dans le *[!DNL Adobe Experience Platform Mobile SDK]* la documentation.
 
-   ![image alternative](assets/mobile-preview-url-scheme-ios.png)
+   Les liens suivants contiennent plus d’informations :
 
-   L’illustration suivante présente un exemple sous Android :
+   * **iOS**: pour plus d’informations sur la définition de schémas d’URL pour iOS, voir [Définition d’un modèle d’URL personnalisé pour votre application](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank} sur le site web du développeur Apple.
+   * **Android**: pour plus d’informations sur la définition de schémas d’URL pour Android, voir [Création de liens profonds vers le contenu de l’application](https://developer.android.com/training/app-links/deep-linking){target=_blank} sur le site web des développeurs Android.
 
-   ![image alternative](assets/Android_Deeplink.png)
+1. **Configuration `collectLaunchInfo` API**
 
-1. **Suivez les liens profonds Adobe.**
-
-   **iOS :** dans l’AppDelegate, appelez `[ADBMobile trackAdobeDeepLink:url` lorsque le délégué est invité à ouvrir la ressource avec le modèle d’URL spécifié à l’étape précédente.
-
-   Le fragment de code suivant est un exemple :
-
-   ```javascript {line-numbers="true"}
-   - (BOOL) application:(UIApplication *)app openURL:(NSURL *)url 
-                options:(NSDictionary<NSString *,id> *)options { 
-   
-       if ([[url scheme] isEqualToString:@"com.adobe.targetmobile"]) { 
-           [ADBMobile trackAdobeDeepLink:url]; 
-           return YES; 
-       } 
-       return NO; 
-   } 
-   ```
-
-   **Android :** dans l’application, appelez `Config.trackAdobeDeepLink(URL);` lorsque l’appelant est invité à ouvrir la ressource avec le modèle d’URL spécifié à l’étape précédente.
-
-   ```javascript {line-numbers="true"}
-    private Boolean shouldOpenDeeplinkUrl() { 
-        Intent appLinkIntent = getIntent(); 
-        String appLinkAction = appLinkIntent.getAction(); 
-        Uri appLinkData = appLinkIntent.getData; 
-        if (appLinkData.toString().startsWith("com.adobe.targetmobile")) { 
-            Config.trackAdobeDeepLink(appLinkData); 
-            return true; 
-        } 
-        return false; 
-     }
-   ```
-
-   Pour que l’aperçu mobile fonctionne pour Android, vous devez également ajouter le fragment de code suivant dans AndroidManifest.xml en cas d’utilisation de la version 5 du SDK Mobile Adobe :
-
-   ```javascript {line-numbers="true"}
-   <activity android:name="com.adobe.marketing.mobile.FullscreenMessageActivity" />
-   ```
-
-   Si vous utilisez la version 4 du SDK Mobile Adobe, utilisez le fragment de code suivant :
-
-   ```javascript {line-numbers="true"}
-   <activity android:name="com.adobe.mobile.MessageFullScreenActivity" />
-   ```
+   Pour plus d’informations, voir [Aperçu visuel](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} in *Adobe Target* dans le *[!DNL Adobe Experience Platform Mobile SDK]* la documentation.
 
 ## Génération d’un lien d’aperçu
 
-1. Dans le [!DNL Target] Cliquez sur l’interface utilisateur **[!UICONTROL Plus d’options]** (trois points alignés verticalement), puis sélectionnez **[!UICONTROL Créer un aperçu mobile]**.
+1. Dans le [!DNL Target] Cliquez sur l’interface utilisateur **[!UICONTROL Plus d’options]** (points de suspension verticaux), puis sélectionnez **[!UICONTROL Créer un aperçu mobile]**.
 
    ![image alternative](assets/mobile-preview-create.png)
 
