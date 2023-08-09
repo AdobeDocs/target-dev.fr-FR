@@ -4,10 +4,10 @@ description: Utilisez les liens d’aperçu mobile pour vérifier systématiquem
 title: Comment utiliser le lien d’aperçu mobile dans [!DNL Target] Mobile ?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: cf39b35e208a99114b3f97df2e9ef7eb8a46e153
+source-git-commit: b678b69624963b4bdbce230a05a0355da96469f1
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 57%
+source-wordcount: '552'
+ht-degree: 51%
 
 ---
 
@@ -21,7 +21,7 @@ La fonctionnalité d’aperçu mobile vous permet de tester entièrement vos act
 
 ## Conditions préalables
 
-1. **Utilisez une version prise en charge du SDK :** la fonction d’aperçu mobile requiert de télécharger et d’installer la version appropriée 4.14 (ou ultérieure) du SDK Adobe Mobile dans vos applications correspondantes.
+1. **Utilisez une version prise en charge du SDK :** La fonctionnalité d’aperçu mobile requiert que vous téléchargiez et installez la version appropriée du SDK Mobile Adobe dans vos applications correspondantes.
 
    Pour obtenir des instructions sur le téléchargement du SDK approprié, voir [Versions actuelles du SDK](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/){target=_blank} dans le *[!DNL Adobe Experience Platform Mobile SDK]* la documentation.
 
