@@ -4,10 +4,10 @@ description: Découvrez les fonctionnalités prises en charge pour [!UICONTROL p
 title: Quelles fonctionnalités sont prises en charge dans la prise de décision sur les périphériques ?
 feature: at.js
 exl-id: bdd65658-6c4a-41ae-a222-59c00a11bdac
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 79ffa3f58d780f587fe1202b82d3860395504dfe
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 9%
+source-wordcount: '666'
+ht-degree: 10%
 
 ---
 
@@ -36,7 +36,7 @@ Le tableau suivant indique les règles d’audience prises en charge ou non par 
 
 | Règle d’audience | Pris en charge ? |
 | --- | --- |
-| [Géo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Oui |
+| [Géo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Oui<P>Lors de l’utilisation de la prise de décision sur l’appareil, les attributs géographiques suivants sont pris en charge :<ul><li>Pays/zone géographique</li><li>Ville</li><li>Latitude</li><li>Longitude</li></ul> |
 | [Réseau](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | Non |
 | [Mobile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | Non |
 | [Paramètres personnalisés](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | Oui |

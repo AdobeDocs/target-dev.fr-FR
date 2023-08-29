@@ -4,9 +4,9 @@ description: Découvrez comment utiliser [!UICONTROL [!UICONTROL prise de décis
 title: Qu’est-ce que la prise de décision sur appareil ?
 feature: Implement Server-side
 exl-id: 22ed3072-56f0-4075-9d1a-d642afe3b649
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 79ffa3f58d780f587fe1202b82d3860395504dfe
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1214'
 ht-degree: 8%
 
 ---
@@ -59,7 +59,7 @@ La prise de décision sur les appareils prend en charge les règles d’audience
 
 | Règle d’audience | Prise de décision sur appareil |
 | --- | --- |
-| [Géo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Oui |
+| [Géo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Oui<P>Lors de l’utilisation de la prise de décision sur l’appareil, les attributs géographiques suivants sont pris en charge :<ul><li>Pays/zone géographique</li><li>Ville</li><li>Latitude</li><li>Longitude</li></ul> |
 | [Réseau](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | Non |
 | [Mobile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | Non |
 | [Paramètres personnalisés](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | Oui |
@@ -123,7 +123,7 @@ Pour obtenir des exemples illustrant la prise en main des étapes 1 à 3 ci-dess
 
 ### Webinaire : personnaliser et tester sans latence avec prise de décision sur l’appareil à partir d’[!DNL Adobe Target]
 
-Plus que jamais, les professionnels du marketing, les propriétaires et les développeurs de produits sont chargés d’optimiser l’expérience client globale sur les sites, les applications et dans toutes les situations où ils sont en contact avec leurs clients. Les multiples outils avec des silos de données et des mises en oeuvre complexes sont inadéquats.
+Plus que jamais, les spécialistes marketing, les propriétaires et les développeurs de produits sont chargés d’optimiser l’expérience client globale sur les sites, les applications et dans toutes les situations où ils sont en contact avec leurs clients. Les multiples outils avec des silos de données et des mises en oeuvre complexes sont inadéquats.
 
 Dans ce webinaire enregistré, [!DNL Adobe Target] les experts en produits expliquent comment le déplacement des décisions d’optimisation d’expérience critiques sur l’appareil pour s’exécuter localement avec une latence proche de zéro peut ouvrir la voie à de nouveaux cas d’utilisation passionnants tout en améliorant les performances du site pour vos clients.
 
