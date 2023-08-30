@@ -4,10 +4,10 @@ description: Découvrez comment [!DNL Adobe Target] se conforme aux lois sur la 
 title: Comment Target gère-t-il les problèmes de confidentialité, y compris les informations d’identification personnelles ?
 feature: Privacy & Security
 exl-id: 4330e034-2483-4a25-9c87-48dbef6fc9de
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 88bde40aa6dfb96e1d53e4db6ba5547d38dbbb99
 workflow-type: tm+mt
-source-wordcount: '716'
-ht-degree: 58%
+source-wordcount: '790'
+ht-degree: 53%
 
 ---
 
@@ -38,6 +38,12 @@ Les paramètres suivants sont disponibles dans la variable [!DNL Target] l’int
   ![obfuscate-ip-options](assets/obfuscate-ip.png)
 
 [!DNL Target] reçoit l’adresse IP complète et l’obscurcit (s’il est défini sur le dernier octet ou l’adresse IP complète) comme spécifié. [!DNL Target] contient ensuite l’adresse IP obscurcie uniquement en mémoire pendant la session en cours.
+
+### Obscurcissement de l’adresse IP au niveau du flux de données lors de l’utilisation de la variable [!DNL Adobe Experience Platform Web SDK] {#aep}
+
+Lors de l’utilisation de la variable [!DNL Platform Web SDK] (version 23.4 ou ultérieure), le paramètre d’obscurcissement d’IP au niveau du flux de données est prioritaire par rapport à toute option d’obscurcissement d’IP définie dans [!DNL Target]. Par exemple, si l’option d’obscurcissement de l’adresse IP au niveau du flux de données est définie sur [!UICONTROL Complet] et la variable [!DNL Target] L’option d’obscurcissement d’IP est définie sur [!UICONTROL Obscurcissement du dernier octet], [!DNL Target] reçoit une adresse IP complètement obscurcie.
+
+Pour plus d’informations, voir [!UICONTROL Obscurcissement d’IP] in [Configuration d’un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html){target=_blank} dans le *[!DNL Adobe Experience Platfrom]Guide des flux de données*.
 
 ## Géosegmentation
 
