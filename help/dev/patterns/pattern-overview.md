@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: c4b9dfed19e5e4a56bfeae26c4310b997a2d617e
+source-git-commit: 7a79eb1d263cf42529a5a1b1ca1f9de4db218a49
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---
@@ -34,10 +34,10 @@ Notez que les nombres dans l’image n’indiquent pas la séquence des opérati
 
 Chaque motif se compose de différentes parties. Chaque partie correspond à une exigence de mise en oeuvre critique pour votre [!DNL Target] implémentation.
 
-Chaque partie est expliquée sur une page distincte de ce guide. Par exemple, la variable [!DNL Target] Le modèle d’implémentation contient les pages suivantes :
+Chaque partie est expliquée sur une page distincte de ce guide. Par exemple, la variable [[!DNL Recommendations] modèle d’implémentation à l’aide d’at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md) contient les pages suivantes :
 
 * Initialisation du SDK
-* Enrichir le profil
+* Configuration de la collecte de données
 * Expériences de rendu
 * Notifier [!DNL Target]
 
