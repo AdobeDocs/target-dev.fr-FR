@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 7a79eb1d263cf42529a5a1b1ca1f9de4db218a49
+source-git-commit: 6cd78f8e3cbdd97a09b0cb6ca3af55994e85f819
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Cette étape vous permet de vous assurer que tous les événements qui doivent �
 
 +++Voir les détails
 
-![Déclenchement du diagramme de l’API de suivi Adobe Target](/help/dev/patterns/recs-atjs/assets/fire-adobe-target-track-api-diagram.png){width="300" zoomable="yes"}
+![Déclenchement du diagramme de l’API de suivi Adobe Target](/help/dev/patterns/recs-atjs/assets/fire-adobe-target-track-api-diagram.png){width="400" zoomable="yes"}
 
 Vous envoyez les attributs de conversion de commande comme indiqué dans la variable *Conditions préalables* ci-dessous. Le nom de la mbox n’a pas d’importance, mais la conversion doit utiliser `orderConfirmPage`.
 

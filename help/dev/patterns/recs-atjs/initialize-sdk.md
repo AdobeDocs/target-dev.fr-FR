@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: e15513f5c52240536ccf41f16ba7f4dc6dbf9a04
+source-git-commit: 6cd78f8e3cbdd97a09b0cb6ca3af55994e85f819
 workflow-type: tm+mt
 source-wordcount: '1791'
 ht-degree: 7%
@@ -54,7 +54,7 @@ Cette étape permet de s’assurer que la variable `VisitorAPI.js` La bibliothè
 
 +++Voir les détails
 
-![Chargement du diagramme du SDK de l’API visiteur](/help/dev/patterns/recs-atjs/assets/load-visitor-api-sdk.png){width="300" zoomable="yes"}
+![Chargement du diagramme du SDK de l’API visiteur](/help/dev/patterns/recs-atjs/assets/load-visitor-api-sdk.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
@@ -90,7 +90,7 @@ Cette étape permet de s’assurer que les identifiants connus de vos visiteurs 
 
 +++Voir les détails
 
-![Définition de l’ID de client](/help/dev/patterns/recs-atjs/assets/set-customer-id.png){width="300" zoomable="yes"}
+![Définition de l’ID de client](/help/dev/patterns/recs-atjs/assets/set-customer-id.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
@@ -117,7 +117,7 @@ Cette étape permet à at.js de récupérer toutes les expériences qui doivent 
 
 +++Voir les détails
 
-![Configuration d’une requête de chargement de page automatique](/help/dev/patterns/recs-atjs/assets/configure-automatic-page-request.png){width="300" zoomable="yes"}
+![Configuration d’une requête de chargement de page automatique](/help/dev/patterns/recs-atjs/assets/configure-automatic-page-request.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
@@ -146,7 +146,7 @@ Cette étape permet de s’assurer qu’il n’y a pas de scintillement de page 
 
 +++Voir les détails
 
-![Configuration du diagramme de gestion du scintillement](/help/dev/patterns/recs-atjs/assets/flicker-handling.png){width="300" zoomable="yes"}
+![Configuration du diagramme de gestion du scintillement](/help/dev/patterns/recs-atjs/assets/flicker-handling.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
@@ -179,7 +179,7 @@ Cette étape permet de s’assurer que toutes les données qui doivent être env
 
 +++Voir les détails
 
-![Diagramme de mappage des données](/help/dev/patterns/recs-atjs/assets/data-mapping.png){width="300" zoomable="yes"}
+![Diagramme de mappage des données](/help/dev/patterns/recs-atjs/assets/data-mapping.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
@@ -399,7 +399,7 @@ Cette étape permet de s’assurer que toutes les données qui doivent être env
 
 +++Voir les détails
 
-![Diagramme de mappage des données à distance](/help/dev/patterns/recs-atjs/assets/remote-data-mapping.png){width="300" zoomable="yes"}
+![Diagramme de mappage des données à distance](/help/dev/patterns/recs-atjs/assets/remote-data-mapping.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
@@ -427,7 +427,7 @@ Cette étape garantit que la bibliothèque JavaScript at.js est chargée et init
 
 +++Voir les détails
 
-![Chargement du diagramme du SDK Web d’Adobe Target](/help/dev/patterns/recs-atjs/assets/load-web-sdk.png){width="300" zoomable="yes"}
+![Chargement du diagramme du SDK Web d’Adobe Target](/help/dev/patterns/recs-atjs/assets/load-web-sdk.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
