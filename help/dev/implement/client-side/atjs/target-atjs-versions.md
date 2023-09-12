@@ -4,9 +4,9 @@ description: Afficher les détails des modifications dans chaque version de [!DN
 title: Que comprend chaque version d’at.js ?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: dc7831e4c3eb7dfc4a11d440e55b3a116b6e28fc
+source-git-commit: 0bdbeebc07bc4e1dd0dc34171fbf2476db5c256f
 workflow-type: tm+mt
-source-wordcount: '4603'
+source-wordcount: '4635'
 ht-degree: 73%
 
 ---
@@ -21,11 +21,16 @@ Informations détaillées sur les modifications apportées à chaque version de 
 >
 >at.js 1.*x* est entré en mode de maintenance. La variable [!DNL Target] L’équipe publie des correctifs de bogues et des correctifs de sécurité si nécessaire.
 >
->La variable [!DNL Target] L’équipe fournit une prise en charge complète d’at.js 2.*x* et publie régulièrement des correctifs de bogues, des correctifs de sécurité, des fonctionnalités et une optimisation des performances.
+>La variable [!DNL Target] L’équipe fournit une prise en charge complète d’at.js 2.*x* et publie régulièrement des correctifs de bogues, des correctifs de sécurité, des fonctionnalités et l’optimisation des performances.
 >
 >Vous devez effectuer la mise à niveau vers les dernières versions de l’une ou l’autre des versions 1.*x* ou 2.*x* pour obtenir des correctifs de bogues et des correctifs de sécurité pour les problèmes détectés dans une version mineure précédente de la version majeure correspondante.
 
-Balises dans [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode préconisée pour la mise à niveau d’at.js. Les développeurs d’extensions ajoutent continuellement de nouvelles fonctionnalités à leurs extensions et corrigent fréquemment les bogues. Ces mises à jour sont incluses dans de nouvelles versions d’une extension et mises à disposition dans le catalogue Adobe Experience Platform sous forme de mises à niveau. Pour plus d’informations, voir [Mises à niveau des extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) dans le *Présentation des balises* guide.
+Balises dans [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode préconisée pour la mise à niveau d’at.js. Les développeurs d’extensions ajoutent continuellement de nouvelles fonctionnalités à leurs extensions et corrigent fréquemment les bogues. Ces mises à jour sont incluses dans de nouvelles versions d’une extension et mises à disposition dans le catalogue Adobe Experience Platform sous forme de mises à niveau. Pour plus d’informations, voir [Mises à niveau des extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) dans le *Présentation des balises* guide.6+
+
+## at.js version 2.10.3 (12 septembre 2023)
+
+* Correction d’un problème qui déclenchait incorrectement la variable `at-content-rendering-succeeded` événement personnalisé lorsqu’aucune offre n’est générée. l’événement correct, `at-content-rendering-no-offers`, est maintenant déclenché.
+* Ajout `eventToken` et `responseTokens` pour l’objet d’erreur `at-content-rendering-failed` événement personnalisé.
 
 ## at.js version 2.10.2 (7 mars 2023)
 
