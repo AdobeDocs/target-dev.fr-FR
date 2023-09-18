@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a3644cd06c01d7b0d996aabbcb67272e1712b70c
+source-git-commit: 60b986b4d956972714cb485057484ee5d6eed2bb
 workflow-type: tm+mt
 source-wordcount: '1791'
 ht-degree: 7%
@@ -117,7 +117,7 @@ Cette étape permet à at.js de récupérer toutes les expériences qui doivent 
 
 +++Voir les détails
 
-![Configuration d’une requête de chargement de page automatique](/help/dev/patterns/recs-atjs/assets/configure-automatic-page-request.png){width="400" zoomable="yes"}
+![Configuration d’une requête de chargement de page automatique](/help/dev/patterns/recs-atjs/assets/configure-automatic-page-request-combined.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
@@ -146,7 +146,7 @@ Cette étape permet de s’assurer qu’il n’y a pas de scintillement de page 
 
 +++Voir les détails
 
-![Configuration du diagramme de gestion du scintillement](/help/dev/patterns/recs-atjs/assets/flicker-handling.png){width="400" zoomable="yes"}
+![Configuration du diagramme de gestion du scintillement](/help/dev/patterns/recs-atjs/assets/flicker-handling-combined.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
