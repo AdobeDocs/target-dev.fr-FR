@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: f2587af68a76eb700378076ad9f20844061164ae
+source-git-commit: a3644cd06c01d7b0d996aabbcb67272e1712b70c
 workflow-type: tm+mt
 source-wordcount: '1791'
 ht-degree: 7%
@@ -90,7 +90,7 @@ Cette étape permet de s’assurer que les identifiants connus de vos visiteurs 
 
 +++Voir les détails
 
-![Définition de l’ID de client](/help/dev/patterns/recs-atjs/assets/set-customer-id.png){width="400" zoomable="yes"}
+![Définition de l’ID de client](/help/dev/patterns/recs-atjs/assets/set-customer-id-combined.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
