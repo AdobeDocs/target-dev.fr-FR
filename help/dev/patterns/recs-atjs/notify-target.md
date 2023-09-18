@@ -6,7 +6,7 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6cd78f8e3cbdd97a09b0cb6ca3af55994e85f819
+source-git-commit: 8fae7e18f555e6b549e0b9c486be73e3483dac86
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 1%
@@ -29,13 +29,13 @@ Le numéro de l’étape dans l’illustration suivante correspond à la section
 
 ![Diagramme Notifier Target](/help/dev/patterns/recs-atjs/assets/diagram-notify-target.png){width="600" zoomable="yes"}
 
-## Fire [!DNL Adobe Target] Suivi de l’API
+## 4.1 : Déclenchement [!DNL Adobe Target] Suivi de l’API
 
 Cette étape vous permet de vous assurer que tous les événements qui doivent être envoyés à [!DNL Target] sont envoyés à l’aide de la fonction `trackEvent` .
 
 +++Voir les détails
 
-![Déclenchement du diagramme de l’API de suivi Adobe Target](/help/dev/patterns/recs-atjs/assets/fire-adobe-target-track-api-diagram.png){width="400" zoomable="yes"}
+![Déclenchement du diagramme de l’API de suivi Adobe Target](/help/dev/patterns/recs-atjs/assets/fire-adobe-target-track-api-diagram-combined.png){width="400" zoomable="yes"}
 
 Vous envoyez les attributs de conversion de commande comme indiqué dans la variable *Conditions préalables* ci-dessous. Le nom de la mbox n’a pas d’importance, mais la conversion doit utiliser `orderConfirmPage`.
 
