@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 85af1bad244dc0aa7665e2fbb627d82f6fabbf88
+source-git-commit: 266a8670a906e5be70f11bb05301b708f61a57d6
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1104'
 ht-degree: 7%
 
 ---
@@ -29,7 +29,9 @@ Suivez les étapes de la section *Expériences de rendu* diagramme pour s’assu
 
 La gestion automatique du scintillement prêt à l’emploi disponible avec at.js n’a de sens que lorsque vous avez [!UICONTROL Requête de chargement de page automatique] activée. Cette option masque l’intégralité du corps du HTML lors de la récupération des expériences à partir de [!DNL Target]. Dans ce cas, il vous incombe de gérer le scintillement. Recherchez des modèles de mise en oeuvre disponibles pour la gestion du scintillement à titre indicatif.
 
-Les numéros des étapes de l’illustration suivante correspondent aux sections ci-dessous.
+>[!NOTE]
+>
+>Les numéros des étapes de l’illustration suivante correspondent aux sections ci-dessous. Les numéros des étapes ne sont pas dans un ordre particulier et ne reflètent pas l’ordre des étapes effectuées dans la variable [!DNL Target] Interface utilisateur lors de la création de l’activité.
 
 ![Diagramme des expériences de rendu](/help/dev/patterns/recs-atjs/assets/diagram-render-experiences-new.png){width="600" zoomable="yes"}
 

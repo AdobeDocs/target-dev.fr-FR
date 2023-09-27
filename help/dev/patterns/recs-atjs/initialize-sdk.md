@@ -6,9 +6,9 @@ level: Experienced
 role: Developer
 hide: true
 hidefromtoc: true
-source-git-commit: a87f9a13fc1feb12c62f1b772975958541f7523a
+source-git-commit: 266a8670a906e5be70f11bb05301b708f61a57d6
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1814'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,9 @@ Suivez les étapes de la section *Initialisation du SDK* afin de vous assurer qu
 
 Pour les applications multi-pages, ce flux se produit chaque fois que la page se recharge ou que le visiteur accède à une nouvelle page du site web.
 
-Les numéros des étapes de l’illustration suivante correspondent aux sections ci-dessous.
+>[!NOTE]
+>
+>Les numéros des étapes de l’illustration suivante correspondent aux sections ci-dessous. Les numéros des étapes ne sont pas dans un ordre particulier et ne reflètent pas l’ordre des étapes effectuées dans la variable [!DNL Target] Interface utilisateur lors de la création de l’activité.
 
 ![Diagramme Initialisation des SDK](/help/dev/patterns/recs-atjs/assets/diagram-initiaze-sdk.png){width="600" zoomable="yes"}
 
