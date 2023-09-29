@@ -4,11 +4,9 @@ description: Assurez-vous que tous les événements qui doivent être suivis par
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 013a49b92357cfb5d45f7e595b46b1b12ce91c65
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
@@ -49,6 +47,10 @@ Vous n’avez pas besoin d’inclure les attributs de conversion de commande dan
    * `productPurchaseId`: ID de produit achetés dans le cadre de la commande. Séparez plusieurs produits à l’aide de virgules.
    * `orderTotal`: total de la commande pour l’achat.
    * `orderId`: identifiant de la commande de l’achat.
+
+  L’illustration suivante présente une [règle pour [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html){target=_blank} qui ne doit être déclenché que sur la variable [!UICONTROL Confirmation] page.
+
+  ![Page Configuration de l’action](/help/dev/patterns/recs-atjs/assets/action-configuration.png){width="400" zoomable="yes"}
 
 * Si vous effectuez le suivi d’un événement pour l’ajout de panier, envoyez `cartIds` comme paramètre. Une liste d’ID de produit séparés par des virgules peut être transmise pour `cardIds`.
 

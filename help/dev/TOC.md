@@ -2,7 +2,7 @@
 user-guide-title: Guide de développement d’Adobe Target
 breadcrumb-title: Guide du développeur de Target
 user-guide-description: Découvrez comment personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques.
-source-git-commit: 7a79eb1d263cf42529a5a1b1ca1f9de4db218a49
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 55%
@@ -206,7 +206,7 @@ ht-degree: 55%
       + [API de modèles](/help/dev/administer/models-api/models-api-overview.md)
    + [API ADOBE ADMIN CONSOLE](/help/dev/before-implement/delivery-api-overview/adobe-console-api.md)
    + [API du serveur réseau Adobe Experience Platform Edge](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
-+ Modèles de mise en oeuvre {#implementation-patterns} {#hidden}
++ Modèles de mise en oeuvre {#implementation-patterns}
    + [Présentation des modèles d’implémentation](/help/dev/patterns/pattern-overview.md)
    + Modèle de mise en oeuvre Recommendations à l’aide d’at.js {#atjs}
       + [Modèle de mise en oeuvre Recommendations à l’aide de la présentation d’at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)

@@ -4,11 +4,9 @@ description: Assurez-vous que toutes les tâches nécessaires à la collecte de 
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 30634afc84877a4e88e08f3b2173d4c0727f4362
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '391'
 ht-degree: 3%
 
 ---
@@ -107,4 +105,6 @@ Utilisation [méthode adobe.target.trackEvent()](/help/dev/implement/client-side
 +++
 
 [Revenez au diagramme en haut de cette page.](#diagram)
+
+Passez à l’étape 3 : [Rendu d’expériences](/help/dev/patterns/recs-atjs/render-experiences.md)
 

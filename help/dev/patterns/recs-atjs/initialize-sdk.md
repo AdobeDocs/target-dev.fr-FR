@@ -4,11 +4,9 @@ description: Assurez-vous que toutes les étapes nécessaires pour charger la va
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-hide: true
-hidefromtoc: true
-source-git-commit: 266a8670a906e5be70f11bb05301b708f61a57d6
+source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
 workflow-type: tm+mt
-source-wordcount: '1814'
+source-wordcount: '1820'
 ht-degree: 7%
 
 ---
@@ -448,6 +446,8 @@ Incorporez le fichier at.js sur toutes vos pages web où l’expérimentation, l
 +++
 
 [Revenez au diagramme en haut de cette page.](#diagram)
+
+Passez à l’étape 2 : [Configuration de la collecte de données](/help/dev/patterns/recs-atjs/data-collection.md).
 
 
 
