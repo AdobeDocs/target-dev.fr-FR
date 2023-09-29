@@ -3,9 +3,9 @@ title: Initialisation du SDK Java à l’aide de la méthode create
 description: Découvrez comment utiliser la méthode create pour initialiser le SDK Java et instancier le [!UICONTROL TargetClient] pour effectuer des appels vers [!DNL Adobe Target] pour des expériences et des expériences personnalisées.
 feature: APIs/SDKs
 exl-id: 0e0ddead-7de8-4549-b81c-e72598558e4b
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 1d080b5e402e5d55039bf06611b44678cc6c36de
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '462'
 ht-degree: 18%
 
 ---
@@ -44,6 +44,9 @@ ClientConfigBuilder ClientConfig.builder()
 | socketTimeout | Nombre | Non | 10000 | Délai d’expiration du socket pour toutes les requêtes en millisecondes |
 | maxConnectionsPerHost | Nombre | Non | 100 | Nombre max. de connexions par [!DNL Target] hôte |
 | maxConnectionsTotal | Nombre | Non | 200 | Nombre max. de connexions incluant toutes les [!DNL Target] hosts |
+| connectionTtlMs | Nombre | Non | -1 | La durée de vie totale (TTL) définit la durée de vie maximale des connexions persistantes en millisecondes. Par défaut, les connexions resteront actives indéfiniment. |
+| idleConnectionValidationMs | Nombre | Non | 1000 | Période d’inactivité en millisecondes après laquelle les connexions persistantes sont revalidées avant d’être réutilisées |
+| evrapporteIdleConnectionsAfterSecs | Nombre | Non | 20 | Durée en secondes d’exclusion des connexions inactives du pool de connexions |
 | enableRetries | Booléen | Non | true | Tentatives automatiques pour les délais de socket (max 4) |
 | logRequests | Booléen | Non | false | Journal [!DNL Target] requêtes et réponses dans debug |
 | logRequestStatus | Booléen | Non | false | Journal [!DNL Target] temps de réponse, état et URL |
