@@ -1,46 +1,44 @@
 ---
 keywords: aq, aperçu, lien d’aperçu, mobile, aperçu mobile
-description: Utilisez les liens d’aperçu mobile pour vérifier systématiquement la qualité des activités des applications mobiles. Vous pouvez vous inscrire à différentes expériences sans appareils de test spéciaux.
-title: Comment utiliser le lien d’aperçu mobile dans [!DNL Target] Mobile ?
+description: Utilisez les liens d’aperçu mobile pour vérifier systématiquement la qualité des activités des applications mobiles.
+title: Comment utiliser les liens d’aperçu mobile dans [!DNL Adobe Target] Mobile ?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: 97c96e63f9121793a83b445ad3dc33c5d094509a
+source-git-commit: 0bcfa16cb79644e7ce10e33daf6c8385104c197f
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 51%
+source-wordcount: '548'
+ht-degree: 27%
 
 ---
 
 # [!DNL Target] aperçu mobile
 
-Utilisez le lien d’aperçu mobile pour vérifier simplement et de manière exhaustive la qualité des activités des applications mobiles et prenez part à différentes expériences directement sur votre appareil, sans avoir à utiliser de dispositif de test spécifique.
+Utilisez les liens d’aperçu mobile pour vérifier simplement et de manière exhaustive la qualité des activités des applications mobiles et vous inscrire à différentes expériences à l’aide de votre appareil sans périphérique de test spécial.
 
-## Aperçu
-
-La fonctionnalité d’aperçu mobile vous permet de tester entièrement vos activités d’applications mobiles avant de les mettre en service.
+La fonctionnalité d’aperçu mobile vous permet de tester entièrement vos activités d’application mobile avant de les lancer en ligne.
 
 ## Conditions préalables
 
-1. **Utilisez une version prise en charge du SDK :** La fonctionnalité d’aperçu mobile requiert que vous téléchargiez et installez la version appropriée du SDK Mobile Adobe dans vos applications correspondantes.
+1. **Utilisez une version prise en charge du SDK :** La fonction d’aperçu mobile requiert que vous téléchargiez et installez la version appropriée de la fonction [!DNL Adobe Mobile SDK] dans vos applications correspondantes.
 
    Pour obtenir des instructions sur le téléchargement du SDK approprié, voir [Versions actuelles du SDK](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/){target=_blank} dans le *[!DNL Adobe Experience Platform Mobile SDK]* la documentation.
 
-1. **Configurez un modèle d’URL :** le lien d’aperçu utilise un modèle d’URL pour ouvrir votre application. Vous devez spécifiez un modèle d’URL unique pour l’aperçu.
+1. **Configurez un modèle d’URL :** le lien d’aperçu utilise un modèle d’URL pour ouvrir votre application. Spécifiez un modèle d’URL unique pour l’aperçu.
 
-   Pour plus d’informations, voir [Aperçu visuel](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} in *Adobe Target* dans le *[!DNL Adobe Experience Platform Mobile SDK]* la documentation.
+   Pour plus d’informations, voir [Aperçu visuel](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} in *Configuration de l’extension Target dans l’interface utilisateur de connexion aux données* dans le *[!DNL Mobile SDK]* la documentation.
 
    Les liens suivants contiennent plus d’informations :
 
-   * **iOS**: pour plus d’informations sur la définition de schémas d’URL pour iOS, voir [Définition d’un modèle d’URL personnalisé pour votre application](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank} sur le site web du développeur Apple.
-   * **Android**: pour plus d’informations sur la définition de schémas d’URL pour Android, voir [Création de liens profonds vers le contenu de l’application](https://developer.android.com/training/app-links/deep-linking){target=_blank} sur le site web des développeurs Android.
+   * **iOS**: pour plus d’informations sur la définition de schémas d’URL pour iOS, voir [Définition d’un modèle d’URL personnalisé pour votre application](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank} sur le *Développeur Apple* site web.
+   * **Android**: pour plus d’informations sur la définition de schémas d’URL pour Android, voir [Création de liens profonds vers le contenu de l’application](https://developer.android.com/training/app-links/deep-linking){target=_blank} sur le *Développeurs Android* site web.
 
-1. **Configuration `collectLaunchInfo` API (i0S uniquement)**
+1. **Configurez la variable `collectLaunchInfo` API (i0S uniquement)**
 
-   Pour plus d’informations, voir [Aperçu visuel](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} in *Adobe Target* dans le *[!DNL Adobe Experience Platform Mobile SDK]* la documentation.
+   Pour plus d’informations, voir [Aperçu visuel](https://developer.adobe.com/client-sdks/documentation/adobe-target/#visual-preview){target=_blank} in *Configuration de l’extension Target dans l’interface utilisateur de connexion aux données* dans le *[!DNL Mobile SDK]* la documentation.
 
 ## Génération d’un lien d’aperçu
 
-1. Dans le [!DNL Target] Cliquez sur l’interface utilisateur **[!UICONTROL Plus d’options]** (points de suspension verticaux), puis sélectionnez **[!UICONTROL Créer un aperçu mobile]**.
+1. Dans le [!DNL Target] Cliquez sur l’interface utilisateur **[!UICONTROL Plus d’options]** (points de suspension verticaux), puis sélectionnez **[!UICONTROL Créer un lien d’aperçu mobile]**.
 
    ![image alternative](assets/mobile-preview-create.png)
 
@@ -48,13 +46,13 @@ La fonctionnalité d’aperçu mobile vous permet de tester entièrement vos act
 
    >[!NOTE]
    >
-   >Seules les activités AB et XT basées sur les formulaires peuvent être sélectionnées.
+   >Vous pouvez sélectionner uniquement Basé sur un formulaire. [!UICONTROL Test A/B] et [!UICONTROL Ciblage d’expérience] (XT).
 
    ![image alternative](assets/mobile-preview-select-activities.png)
 
 1. Spécifiez le modèle d’URL de votre application.
 
-   Il doit être identique à celui présent dans votre application iOS ou Android. Au besoin, répétez ce processus séparément pour iOS et Android.
+   Le modèle d’URL doit être identique à celui existant dans votre application iOS ou Android. Répétez cette procédure séparément pour iOS et Android, si nécessaire.
 
    ![image alternative](assets/mobile-preview-enter-url-scheme.png)
 
@@ -64,15 +62,15 @@ La fonctionnalité d’aperçu mobile vous permet de tester entièrement vos act
 
 ## Afficher l’aperçu sur votre appareil
 
-Ouvrez le lien dans un navigateur mobile sur l’appareil sur lequel vous avez installé votre application. Il peut s’agir de l’application de production que vous avez téléchargée de la boutique Apple App Store ou Google Play. Pas besoin d’une version spéciale. Si vous avez un lien d’aperçu actif, vous pourrez afficher les expériences sur l’appareil.
+Ouvrez le lien dans un navigateur mobile sur l’appareil sur lequel vous avez installé votre application. Cette application peut être l’application de production que vous avez téléchargée à partir de [!DNL Apple App Store] ou le [!DNL Google Play Store]. L’application n’a pas besoin d’être une version spéciale. Si vous disposez d’un lien d’aperçu actif, vous pouvez afficher les expériences sur l’appareil.
 
 1. Ouvrez le lien dans votre navigateur mobile.
 
-   Partagez le lien que vous avez copié à l’étape précédente à partir du [!DNL Target] L’interface utilisateur de votre appareil mobile d’une manière pratique, par exemple en utilisant du texte, du courrier électronique ou du Slack.
+   Partagez le lien que vous avez copié dans la section précédente à partir du [!DNL Target] de l’interface utilisateur de votre périphérique mobile d’une manière pratique, par exemple en utilisant du texte, des courriers électroniques ou des [!DNL Slack].
 
    |![aperçu lien profond 1](assets/mobile-preview-open-deeplink.png)|![aperçu lien profond 2](assets/mobile-preview-open-app.png)|
 
-   Votre application s’ouvre et démarre. [!DNL Target] Mode Aperçu mobile.
+   Votre application s’ouvre et démarre. [!DNL Target] [!UICONTROL Mode Aperçu mobile].
 
 1. Sélectionnez la combinaison d’expériences que vous souhaitez afficher, puis cliquez sur **[!UICONTROL Démarrer les expériences]**.
 
