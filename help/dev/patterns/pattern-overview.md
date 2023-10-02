@@ -4,9 +4,9 @@ description: Comprendre comment utiliser les modèles d’implémentation
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
+source-git-commit: 09dafc7c85ea7f3600fceac4e673e8f1901771a4
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Le modèle suivant est actuellement disponible :
 
 * [[!DNL Recommendations] modèle d’implémentation à l’aide d’at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
 
-Ces modèles de mise en oeuvre sont destinés à se concentrer sur ce qu’il convient de faire, quand le faire et où le faire plutôt que sur la manière de le faire. Les diagrammes de flux détaillés vous aident à comprendre la séquence des opérations et les liens vers la documentation appropriée fournissent des instructions contextuelles et détaillées.
+Ces modèles de mise en oeuvre se concentrent sur ce qu’il convient de faire, quand le faire et où le faire. Les diagrammes de flux détaillés vous aident à comprendre la séquence des opérations et les liens vers la documentation appropriée fournissent des instructions contextuelles et détaillées.
 
 ## Suggérer des idées pour de nouveaux modèles ou des corrections de modèles existants
 
