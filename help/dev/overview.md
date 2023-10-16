@@ -5,16 +5,14 @@ description: Comment mettre en œuvre et administrer  [!DNL Adobe Target]  et ut
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 063d0574ee380bf76130fb0f17db89cd09efdb7d
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '479'
 ht-degree: 14%
 
 ---
 
 # Guide du développeur [!DNL Adobe Target]
-
-![Image de bannière Adobe Target](/help/dev/assets/target-home-banner-simple.png)
 
 **([Affichage [!DNL Target] mises à jour de la documentation](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
 
