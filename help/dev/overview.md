@@ -1,13 +1,13 @@
 ---
-keywords: guide de développement de target ; présentation
+keywords: guide de développement de target ; présentation ; accueil
 title: Guide de développement d’Adobe Target
 description: Comment mettre en œuvre et administrer  [!DNL Adobe Target]  et utiliser ses API et SDK ?
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
-source-git-commit: 063d0574ee380bf76130fb0f17db89cd09efdb7d
+source-git-commit: 1d834edf4da94614e3a4be665ebd97399439ec98
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '480'
 ht-degree: 14%
 
 ---
