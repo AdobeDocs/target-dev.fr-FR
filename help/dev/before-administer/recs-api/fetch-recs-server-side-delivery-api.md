@@ -6,9 +6,9 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
-source-git-commit: ba53161b2ec51af3d90994773034790feb51099c
+source-git-commit: d98c7b890f7456de0676cadce5d6c70bc62d6140
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1520'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ La syntaxe de la variable [API de diffusion](/help/dev/implement/delivery-api/ov
      ![server-side-Delivery-API-call.png](assets/server-side-delivery-api-call2.png)
 Pensez à configurer correctement vos paramètres de requête. Par exemple, veillez à spécifier `{{CLIENT_CODE}}` le cas échéant. &lt;!— Q : Dans la syntaxe d’appel mise à jour, entity.id est répertorié en tant que profileParameter au lieu d’un mboxParameter comme dans les anciennes versions. ---> &lt;!— Q : Ancienne image ![côté serveur-create-recs-post.png](assets/server-side-create-recs-post.png) Ancien texte d’accompagnement : &quot;Notez que cette recommandation est basée sur du contenu . Des produits similaires sont basés sur le paramètre entity.id envoyé via mboxParameters.&quot; —>
      ![client-code3](assets/client-code3.png)
-1. Envoyez la requête. Cette opération s’exécute sur la propriété *api_charter* emplacement, sur lequel une recommandation principale est exécutée, défini avec votre conception JSON, qui génère une liste d’entités recommandées.
+1. Envoyez la requête. Cette opération s’exécute sur la propriété *api_charter* emplacement sur lequel une recommandation active est exécutée, défini avec votre conception JSON, qui génère une liste d’entités recommandées.
 1. Recevez une réponse basée sur la conception JSON.
    ![côté serveur-create-recs-json-response2.png](assets/server-side-create-recs-json-response2.png)
 La réponse comprend l’identifiant de clé, ainsi que les identifiants d’entité des entités recommandées.
@@ -97,22 +97,22 @@ Les ressources suivantes fournissent des exemples de différentes mises en oeuvr
 
 La plupart du temps, les recommandations sont configurées dans l’interface utilisateur d’Adobe Target, puis utilisées ou accessibles via les API de Target, pour des raisons telles que celles mentionnées dans les sections ci-dessus. Cette coordination entre l’interface utilisateur et l’API est courante. Cependant, il arrive parfois que les utilisateurs souhaitent effectuer toutes les actions via les API (configuration, ainsi que l’utilisation des résultats). Bien que beaucoup moins courant, les utilisateurs peuvent absolument configurer, exécuter, *et* tirer parti des résultats des recommandations entièrement à l’aide des API.
 
-Nous avons appris dans une [section précédente](manage-catalog.md) comment gérer les entités Recommendations Adobe Target et les diffuser côté serveur. De même, la variable [Console Adobe Developer](https://developer.adobe.com/console/home) vous permet de gérer les critères, les promotions, les collections et les modèles de conception sans avoir à vous connecter à Adobe Target. Une liste complète de toutes les API Recommendations se trouve [here](http://developers.adobetarget.com/api/recommendations/), mais voici un résumé à titre de référence.
+Nous avons appris dans une [section précédente](manage-catalog.md) comment gérer les entités Recommendations Adobe Target et les diffuser côté serveur. De même, la variable [Console Adobe Developer](https://developer.adobe.com/console/home) vous permet de gérer les critères, les promotions, les collections et les modèles de conception sans avoir à vous connecter à Adobe Target. Une liste complète de toutes les API Recommendations se trouve [here](https://developer.adobe.com/target/administer/recommendations-api/), mais voici un résumé à titre de référence.
 
 | Ressource | Détails |
 | --- | --- |
-| [Collections](http://developers.adobetarget.com/api/recommendations/#tag/Collections) | Répertorier, créer, obtenir, modifier et supprimer des collections |
-| [Critères](http://developers.adobetarget.com/api/recommendations/#tag/Criteria) | Listez et obtenez des critères. |
-| [Conceptions](http://developers.adobetarget.com/api/recommendations/#tag/Designs) | Répertorier, créer, obtenir, modifier, supprimer et valider des conceptions. |
-| [Entités](http://developers.adobetarget.com/api/recommendations/#tag/Entities) | Enregistrez, supprimez et obtenez des entités. |
-| [Promotions](http://developers.adobetarget.com/api/recommendations/#tag/Promotions) | Répertorier, créer, obtenir, modifier et supprimer des promotions. |
-| [Critères de catégorie](http://developers.adobetarget.com/api/recommendations/#tag/Category-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères de catégorie. |
-| [Critères personnalisés](http://developers.adobetarget.com/api/recommendations/#tag/Custom-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères personnalisés. |
-| [Critères d’élément](http://developers.adobetarget.com/api/recommendations/#tag/Item-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères d’élément. |
-| [Critères de popularité](http://developers.adobetarget.com/api/recommendations/#tag/Popularity-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères de popularité. |
-| [Critères d’attribut de profil](http://developers.adobetarget.com/api/recommendations/#tag/Profile-Attribute-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères d’attribut de profil. |
-| [Critères récents](http://developers.adobetarget.com/api/recommendations/#tag/Recent-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères récents. |
-| [Critères de séquence](http://developers.adobetarget.com/api/recommendations/#tag/Sequence-Criteria) | Lister, créer, obtenir, modifier et supprimer des critères de séquence. |
+| [Collections](https://developer.adobe.com/target/administer/recommendations-api/#tag/Collections) | Répertorier, créer, obtenir, modifier et supprimer des collections |
+| [Critères](https://developer.adobe.com/target/administer/recommendations-api/#tag/Criteria) | Listez et obtenez des critères. |
+| [Conceptions](https://developer.adobe.com/target/administer/recommendations-api/#tag/Designs) | Répertorier, créer, obtenir, modifier, supprimer et valider des conceptions. |
+| [Entités](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities) | Enregistrez, supprimez et obtenez des entités. |
+| [Promotions](https://developer.adobe.com/target/administer/recommendations-api/#tag/Promotions) | Répertorier, créer, obtenir, modifier et supprimer des promotions. |
+| [Critères de catégorie](https://developer.adobe.com/target/administer/recommendations-api/#tag/Category-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères de catégorie. |
+| [Critères personnalisés](https://developer.adobe.com/target/administer/recommendations-api/#tag/Custom-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères personnalisés. |
+| [Critères d’élément](https://developer.adobe.com/target/administer/recommendations-api/#tag/Item-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères d’élément. |
+| [Critères de popularité](https://developer.adobe.com/target/administer/recommendations-api/#tag/Popularity-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères de popularité. |
+| [Critères d’attribut de profil](https://developer.adobe.com/target/administer/recommendations-api/#tag/Profile-Attribute-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères d’attribut de profil. |
+| [Critères récents](https://developer.adobe.com/target/administer/recommendations-api/#tag/Recent-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères récents. |
+| [Critères de séquence](https://developer.adobe.com/target/administer/recommendations-api/#tag/Sequence-Criteria) | Lister, créer, obtenir, modifier et supprimer des critères de séquence. |
 
 ## Documentation de référence
 
