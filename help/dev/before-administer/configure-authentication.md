@@ -3,9 +3,9 @@ title: Configuration de l’authentification pour [!DNL Adobe Target] API
 description: Comment générer les jetons d’authentification nécessaires pour interagir avec succès [!DNL Adobe Target] API ?
 feature: APIs/SDKs, Administration & Configuration
 exl-id: fc67363c-6527-40aa-aff1-350b5af884ab
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1942'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Voici les étapes préliminaires requises pour générer les jetons d’authenti
 | Ressource | Détails |
 | --- | --- |
 | Postman | Pour réussir ces étapes, obtenez la variable [application Postman](https://www.postman.com/downloads/) pour votre système d’exploitation. Postman basic est gratuit avec la création de compte. Bien que non requis pour utiliser [!DNL Adobe Target] API en général, Postman facilite les workflows d’API et [!DNL Adobe Target] fournit plusieurs collections Postman pour aider à exécuter ses API et découvrir comment elles fonctionnent. Le reste de ce guide suppose des connaissances opérationnelles de Postman. Pour obtenir de l’aide, voir [Documentation Postman](https://learning.getpostman.com/). |
-| Références | Le reste de ce guide se familiarisera avec les ressources suivantes :<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Documentation sur l’API d’administration et de profil de Target](../administer/admin-api/admin-api-overview-new.md)</li><li>[Documentation de l’API Recommendations](https://developers.adobetarget.com/api/recommendations/)</li></ul> |
+| Références | Le reste de ce guide se familiarisera avec les ressources suivantes :<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Documentation sur l’API d’administration et de profil de Target](../administer/admin-api/admin-api-overview-new.md)</li><li>[Documentation de l’API Recommendations](https://developer.adobe.com/target/administer/recommendations-api/)</li></ul> |
 
 ## Création d’un projet Adobe I/O
 

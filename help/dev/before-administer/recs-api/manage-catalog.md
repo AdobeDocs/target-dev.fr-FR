@@ -6,10 +6,10 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: aea82607-cde4-456a-8dfb-2967badce455
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 2%
+source-wordcount: '924'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 Tout en vous assurant que vous répondez à la variable [conditions requises pour utiliser l’API Recommendations](/help/dev/before-administer/recs-api/overview.md#prerequisites), vous avez appris à [générer un jeton d’accès ;](/help/dev/before-administer/configure-authentication.md) utilisation du flux d’authentification JWT pour utiliser la variable [!DNL Adobe Target] API d’administration sur le [Console Adobe Developer](https://developer.adobe.com/console/home).
 
-Vous pouvez désormais utiliser la variable [API RECOMMENDATIONS](https://developers.adobetarget.com/api/recommendations/) pour ajouter, mettre à jour ou supprimer des éléments dans votre catalogue de recommandations. Comme pour le reste des API d’administration Adobe Target, les API Recommendations nécessitent une authentification.
+Vous pouvez désormais utiliser la variable [API RECOMMENDATIONS](https://developer.adobe.com/target/administer/recommendations-api/) pour ajouter, mettre à jour ou supprimer des éléments dans votre catalogue de recommandations. Comme pour le reste des API d’administration Adobe Target, les API Recommendations nécessitent une authentification.
 
 >[!NOTE]
 >
@@ -25,11 +25,11 @@ Vous pouvez désormais utiliser la variable [API RECOMMENDATIONS](https://develo
 
 ![JWT3ff](assets/configure-io-target-jwt3ff.png)
 
-Avant de poursuivre, obtenez la variable [Collection Recommendations Postman](https://developers.adobetarget.com/api/recommendations/#section/Postman).
+Avant de poursuivre, obtenez la variable [Collection Recommendations Postman](https://developer.adobe.com/target/administer/recommendations-api/#section/Postman).
 
 ## Création et mise à jour d’éléments à l’aide de l’API Enregistrer les entités
 
-Pour renseigner votre base de données de produits Recommendations à l’aide de l’API plutôt que d’un flux de produits CSV ou de demandes Target se déclenchant sur des pages de produits, utilisez le [API Enregistrer les entités](https://developers.adobetarget.com/api/recommendations/#operation/saveEntities). Cette requête ajoute ou met à jour un élément dans un seul environnement Target. La syntaxe est la suivante :
+Pour renseigner votre base de données de produits Recommendations à l’aide de l’API plutôt que d’un flux de produits CSV ou de demandes Target se déclenchant sur des pages de produits, utilisez le [API Enregistrer les entités](https://developer.adobe.com/target/administer/recommendations-api/#operation/saveEntities). Cette requête ajoute ou met à jour un élément dans un seul environnement Target. La syntaxe est la suivante :
 
 ```
 POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
@@ -124,7 +124,7 @@ Il semble que ces deux derniers éléments n&#39;appartiennent pas à . Examinon
 
 ## Obtention des détails d’élément avec l’API Get Entity
 
-Pour récupérer les détails d’un élément existant, utilisez le [Obtenir l’API d’entité](https://developers.adobetarget.com/api/recommendations/#operation/getEntity). La syntaxe est la suivante :
+Pour récupérer les détails d’un élément existant, utilisez le [Obtenir l’API d’entité](https://developer.adobe.com/target/administer/recommendations-api/#operation/getEntity). La syntaxe est la suivante :
 
 ```
 GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities/[entity.id]
@@ -163,7 +163,7 @@ Supposons que vous décidiez que ces entités doivent être supprimées de votre
 
 ## Suppression d’éléments avec l’API Supprimer des entités
 
-Pour supprimer des éléments de votre catalogue, utilisez la méthode [API Supprimer les entités](https://developers.adobetarget.com/api/recommendations/#operation/deleteEntities). La syntaxe est la suivante :
+Pour supprimer des éléments de votre catalogue, utilisez la méthode [API Supprimer les entités](https://developer.adobe.com/target/administer/recommendations-api/#operation/deleteEntities). La syntaxe est la suivante :
 
 ```
 DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimited-entity-ids]&environment=[environmentId]

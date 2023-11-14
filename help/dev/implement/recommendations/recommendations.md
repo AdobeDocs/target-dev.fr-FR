@@ -4,9 +4,9 @@ description: Découvrez comment implémenter [!UICONTROL Recommendations] activi
 title: Comment mettre en oeuvre [!UICONTROL Recommendations] Activités ?
 feature: Recommendations
 exl-id: af1e8b60-6dbb-451b-aa4f-e167d1800d1c
-source-git-commit: 1e1bfb556005f7ea998caf97685c834825372bd6
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1461'
 ht-degree: 29%
 
 ---
@@ -45,7 +45,7 @@ Pour fournir des recommandations de grande qualité, [!UICONTROL Cible] doivent 
 | Méthode | Qu’est-ce que c’est ? | Quand l’utiliser | Informations supplémentaires |
 | --- | --- | --- | --- |
 | Flux de catalogue | Planifiez le chargement et l’ingestion quotidiens d’un flux (CSV, XML de produit Google ou Classifications de produit Analytics). | Pour envoyer des informations sur plusieurs éléments à la fois. Pour envoyer des informations qui changent rarement. | Voir [Flux](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html). |
-| API Entités | Appelez une API pour envoyer des mises à jour instantanées pour un seul élément. | Pour envoyer des mises à jour lorsqu’elles surviennent sur un élément à la fois. Pour envoyer des informations qui changent fréquemment (par exemple, le prix, le stock/le niveau de stock). | Voir [Documentation destinée aux développeurs de l’API Entities](https://developers.adobetarget.com/api/recommendations/#tag/Entities). |
+| API Entités | Appelez une API pour envoyer des mises à jour instantanées pour un seul élément. | Pour envoyer des mises à jour lorsqu’elles surviennent sur un élément à la fois. Pour envoyer des informations qui changent fréquemment (par exemple, le prix, le stock/le niveau de stock). | Voir [Documentation destinée aux développeurs de l’API Entities](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities). |
 | Transmission des mises à jour sur la page | Envoyez les mises à jour instantanées d’un seul élément à l’aide de JavaScript sur la page ou de l’API de diffusion. | Pour envoyer des mises à jour lorsqu’elles surviennent sur un élément à la fois. Pour envoyer des informations qui changent fréquemment (par exemple, le prix, le stock/le niveau de stock). | Voir [Consultations d’articles/pages de produits](#item-views-or-product-pages) ci-dessous |
 
 La plupart des clients doivent mettre en oeuvre au moins un flux. Vous pouvez ensuite choisir de compléter votre flux avec des mises à jour pour les attributs ou éléments fréquemment modifiés à l’aide de l’API Entités ou de la méthode sur la page.

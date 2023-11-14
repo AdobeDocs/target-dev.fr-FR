@@ -6,10 +6,10 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 0d03c650-0b00-44b8-a794-10e5d738e42c
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 2fba03b3882fd23a16342eaab9406ae4491c9044
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 2%
+source-wordcount: '339'
+ht-degree: 1%
 
 ---
 
@@ -47,4 +47,4 @@ Notez les ressources suivantes, qui sont nécessaires pour comprendre ce guide e
 | Ressource | Détails |
 | --- | --- |
 | Postman | Obtenez la variable [application Postman](https://www.postman.com/downloads/) pour votre système d’exploitation. Postman basic est gratuit avec la création de compte. Bien qu’elles ne soient pas requises pour utiliser les API Adobe Target en général, Postman facilite les processus d’API et Adobe Target fournit plusieurs collections Postman pour aider à exécuter ses API et apprendre à les utiliser. Le reste de ce guide suppose des connaissances opérationnelles de Postman. Pour obtenir de l’aide, reportez-vous au [Documentation Postman](https://learning.getpostman.com/). |
-| Références | Le reste de ce guide se familiarisera avec les ressources suivantes :<UL><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Documentation sur l’API d’administration et de profil de Target](../../administer/admin-api/admin-api-overview-new.md)</li><li>[Documentation de l’API Recommendations](https://developers.adobetarget.com/api/recommendations/)</li></UL> |
+| Références | Le reste de ce guide se familiarisera avec les ressources suivantes :<UL><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Documentation sur l’API d’administration et de profil de Target](../../administer/admin-api/admin-api-overview-new.md)</li><li>[Documentation de l’API Recommendations](https://developer.adobe.com/target/administer/recommendations-api/)</li></UL> |
