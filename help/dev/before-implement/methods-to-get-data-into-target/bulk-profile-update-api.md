@@ -4,10 +4,10 @@ description: Obtenir des données dans [!DNL Target] à l’aide de l’API de m
 title: Comment obtenir des données dans [!DNL Target] Utilisation de l’API de mise à jour de profil en bloc ?
 feature: Implementation
 exl-id: 654b13b7-1683-4c44-80e6-7557b9d29f66
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 3ae2391dea9994c0ddc1df39d74cccf6e067c1a4
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 62%
+source-wordcount: '404'
+ht-degree: 59%
 
 ---
 
@@ -41,6 +41,8 @@ Les attributs de profil envoyés via le site peuvent être mis à jour via l’A
 ## Avertissements
 
 La taille du fichier de traitement par lot doit être inférieure à 50 Mo. En outre, le nombre total de lignes ne doit pas dépasser 500 000 lignes par téléchargement.
+
+Les mises à jour surviennent généralement en moins d’une heure, mais peuvent prendre jusqu’à 24 heures pour être répercutées.
 
 Le nombre de lignes pouvant être téléchargées en lots ultérieurs sur une période de 24 heures est illimité. Cependant, le processus d’assimilation peut être ralenti pendant les heures ouvrables pour s’assurer que les autres processus s’exécutent efficacement.
 

@@ -4,9 +4,9 @@ description: Obtenir des données dans [!DNL Target] à l’aide de l’API de m
 title: Comment obtenir des données dans [!DNL Target] Utilisation de l’API de mise à jour de profil unique ?
 feature: Implementation
 exl-id: e6c394cb-74a3-4991-b656-5ae601f2d5e2
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 3ae2391dea9994c0ddc1df39d74cccf6e067c1a4
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '204'
 ht-degree: 35%
 
 ---
