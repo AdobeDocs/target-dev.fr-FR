@@ -4,7 +4,7 @@ description: Obtenir des données dans [!DNL Target] à l’aide de l’API de m
 title: Comment obtenir des données dans [!DNL Target] Utilisation de l’API de mise à jour de profil en bloc ?
 feature: Implementation
 exl-id: 654b13b7-1683-4c44-80e6-7557b9d29f66
-source-git-commit: 3ae2391dea9994c0ddc1df39d74cccf6e067c1a4
+source-git-commit: 773f8a2f22cfbf740a5ce68809b38b33b621f3b5
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 59%
