@@ -4,9 +4,9 @@ description: Afficher les détails des modifications dans chaque version de [!DN
 title: Que comprend chaque version d’at.js ?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: c5d1f477a2561a59efb3250e35563b48822fbe59
+source-git-commit: ccb87e1217b754b2d496308da35998882cbe2fb1
 workflow-type: tm+mt
-source-wordcount: '4697'
+source-wordcount: '4712'
 ht-degree: 72%
 
 ---
@@ -26,6 +26,10 @@ Informations détaillées sur les modifications apportées à chaque version de 
 >Vous devez effectuer la mise à niveau vers les dernières versions de l’une ou l’autre des versions 1.*x* ou 2.*x* pour obtenir des correctifs de bogues et des correctifs de sécurité pour les problèmes détectés dans une version mineure précédente de la version majeure correspondante.
 
 Balises dans [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode préconisée pour la mise à niveau d’at.js. Les développeurs d’extensions ajoutent continuellement de nouvelles fonctionnalités à leurs extensions et corrigent fréquemment les bogues. Ces mises à jour sont incluses dans de nouvelles versions d’une extension et mises à disposition dans le catalogue Adobe Experience Platform sous forme de mises à niveau. Pour plus d’informations, voir [Mises à niveau des extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) dans le *Présentation des balises* guide.6+
+
+## at.js version 2.11.3 (21 novembre 2023)
+
+* Correction d’un problème qui empêchait l’envoi des jetons de réponse sur `at-content-rendering-failed` événements .
 
 ## at.js version 2.11.2 (26 octobre 2023)
 
