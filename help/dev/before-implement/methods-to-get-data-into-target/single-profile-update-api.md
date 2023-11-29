@@ -4,20 +4,20 @@ description: Obtenir des données dans [!DNL Target] à l’aide de l’API de m
 title: Comment obtenir des données dans [!DNL Target] Utilisation de l’API de mise à jour de profil unique ?
 feature: Implementation
 exl-id: e6c394cb-74a3-4991-b656-5ae601f2d5e2
-source-git-commit: 3ae2391dea9994c0ddc1df39d74cccf6e067c1a4
+source-git-commit: 734bda64915a08f2edba37cbbb66b2de581c2237
 workflow-type: tm+mt
 source-wordcount: '204'
-ht-degree: 35%
+ht-degree: 11%
 
 ---
 
-# API de mise à jour de profil individuel
+# API de mise à jour de profil unique
 
 Presque identique au [!UICONTROL API de mise à jour des profils en masse] in [!DNL Adobe Target], mais un profil du visiteur est mis à jour à la fois, dans la ligne de l’appel API au lieu d’un fichier .csv .
 
 ## Format
 
-Le visiteur doit être identifié à l’aide de la valeur [!DNL Target]mboxPC ou `mbox3rdPartyId` de L’Experience Cloud ID (ECID) n’est pas pris en charge.
+Le visiteur doit être identifié via la variable [!DNL Target] `mboxPC` ou `mbox3rdPartyId` . La variable [!UICONTROL Identifiant Experience Cloud] (ECID) n’est pas pris en charge.
 
 ## Exemples de cas d’utilisation
 
@@ -25,17 +25,14 @@ Vous souhaitez mettre à jour le profil d’un visiteur unique qui effectue une 
 
 ## Avantages de la méthode
 
-Nombre d’attributs de profil illimité.
-
-Les attributs de profil envoyés via le site peuvent être mis à jour via l’API et vice versa.
+* Nombre d’attributs de profil illimité.*
+* Les attributs de profil envoyés via le site peuvent être mis à jour via l’API et de la manière inverse.
 
 ## Avertissements
 
-Limite de 1 000 000 d’appels de l’API (1 million) par période de 24 heures.
-
-Met à jour le profil uniquement. Impossible de créer un profil pour un utilisateur potentiel [!DNL Target] n&#39;a pas encore vu.
-
-Les mises à jour surviennent généralement en moins d’une heure, mais peuvent prendre jusqu’à 24 heures pour être répercutées.
+* Limite de 1 000 000 appels API (1 million) par période de 24 heures.
+* Met à jour le profil uniquement. Impossible de créer un profil pour un utilisateur potentiel [!DNL Target] n&#39;a pas encore vu.
+* Les mises à jour surviennent généralement en moins d’une heure, mais peuvent prendre jusqu’à 24 heures pour être répercutées.
 
 ## Exemples de code
 
