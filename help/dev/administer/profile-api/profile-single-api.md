@@ -3,9 +3,9 @@ title: API de mise à jour de profil unique Adobe Target
 description: Découvrez comment utiliser [!DNL Adobe Target] [!UICONTROL API de mise à jour de profil unique] pour envoyer les données de profil d’un visiteur unique à [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: 81bff85a9d1fe28ca267c471a470da95568fd06d
+source-git-commit: dcff5d2eb8740420a9f9cf488474c3bca1628567
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '386'
 ht-degree: 4%
 
 ---
@@ -27,6 +27,8 @@ Avantages de la variable [!UICONTROL API de mise à jour de profil unique] inclu
 * Les mises à jour surviennent généralement en moins d’une heure, mais peuvent prendre jusqu’à 24 heures pour être répercutées.
 
   Si vous devez envoyer d’autres mises à jour ou exiger que les mises à jour soient traitées dans des délais plus courts, envisagez d’envoyer des mises à jour de profil transactionnel par le biais d’une mise à jour côté client (recommandé) ou via la variable [!DNL Adobe Target] côté serveur [API de diffusion](/help/dev/implement/delivery-api/overview.md).
+
+* La variable [!UICONTROL API de mise à jour de profil unique] est une API serveur à serveur qui n’est pas conçue pour fonctionner dans une page web. Pour mettre à jour un profil du visiteur dans votre page web, vous pouvez utiliser la variable [trackEvent()](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md) ou la fonction [API de diffusion](/help/dev/implement/delivery-api/overview.md).
 
 ## Format
 
