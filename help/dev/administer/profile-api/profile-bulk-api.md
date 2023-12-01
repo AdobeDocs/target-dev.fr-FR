@@ -3,9 +3,9 @@ title: API de mise à jour du profil en bloc d’Adobe Target
 description: Découvrez comment utiliser [!DNL Adobe Target] [!UICONTROL API de mise à jour des profils en masse] pour envoyer des données de profil de plusieurs visiteurs à [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: 6f7d9875e3b73352ead3a55e40a4b2f81f3d4400
+source-git-commit: 43f4fb8345a77ccb0e112fe196e7e0944cc468c9
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '722'
 ht-degree: 9%
 
 ---
@@ -24,6 +24,11 @@ En utilisant la variable [!UICONTROL API de mise à jour des profils en masse], 
 >[!NOTE]
 >
 >Version 2 (v2) du [!UICONTROL API de mise à jour des profils en masse] est la version actuelle. Cependant, [!DNL Target] prend toujours en charge la version 1 (v1).
+
+## Avantages de l’API de mise à jour du profil en bloc
+
+* Nombre d’attributs de profil illimité.
+* Les attributs de profil envoyés via le site peuvent être mis à jour via l’API et de la manière inverse.
 
 ## Avertissements
 
