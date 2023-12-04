@@ -1,18 +1,18 @@
 ---
 keywords: guide de développement de target ; présentation ; accueil
-title: Guide de développement d’Adobe Target
-description: Comment mettre en œuvre et administrer  [!DNL Adobe Target]  et utiliser ses API et SDK ?
+title: Guide du développeur d’Adobe Target
+description: Comment mettre en oeuvre et administrer [!DNL Adobe Target] et travailler avec ses API et ses SDK ?
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
-source-git-commit: a72d3ee76b25702b186565e86ec6b0e67c9d5d1b
+source-git-commit: dadc3804da4592dba4ad88b8c5c9f804c56e232b
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 15%
+source-wordcount: '407'
+ht-degree: 5%
 
 ---
 
-# Guide du développeur [!DNL Adobe Target]
+# [!DNL Adobe Target] Guide du développeur
 
 **([Affichage [!DNL Target] mises à jour de la documentation](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
 
@@ -30,7 +30,7 @@ Ceci *[!DNL Adobe Target]Guide du développeur* fournit des ressources et des gu
 
 ## Prise en main de la mise en oeuvre
 
-**[](/help/dev/before-implement/considerations-before-you-implement-target.md)** Avant l’implémentation : considérations à prendre en compte avant d’implémenter [!DNL Adobe Target].
+**[Avant l’implémentation](/help/dev/before-implement/considerations-before-you-implement-target.md)**: observations à prendre en compte avant l’implémentation [!DNL Adobe Target].
 
 ## Implémentation côté client
 
@@ -76,7 +76,7 @@ Ceci *[!DNL Adobe Target]Guide du développeur* fournit des ressources et des gu
 
 [**[!DNL Target Admin API]**](administer/admin-api/admin-api-overview-new.md): utilisez la variable [!DNL Adobe Target] API d’administration pour gérer les propriétés, les activités, les audiences, les offres, les propriétés, les rapports, les mbox, les hôtes, les environnements, etc.
 
-[**[!DNL Target Profile API]**](/help/dev/administer/profile-api/profile-api-overview.md): Récupération [!DNL Adobe Target] informations de profil utilisateur.
+[**[!DNL Target Profile API]**](/help/dev/administer/profile-api/profiles-api.md): Récupération [!DNL Adobe Target] informations de profil utilisateur.
 
 [**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports): Récupération [!UICONTROL Test A/B] et [!UICONTROL Automated Personalization] données du rapport d’activité.
 
