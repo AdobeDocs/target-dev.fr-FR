@@ -1,18 +1,18 @@
 ---
-user-guide-title: Guide de développement d’Adobe Target
+user-guide-title: Guide du développeur d’Adobe Target
 breadcrumb-title: Guide du développeur de Target
 user-guide-description: Découvrez comment personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques.
-source-git-commit: af9db32d59bdf32f2b9fade267922803250377dd
+source-git-commit: 9707680ddcf0c373c635aa9f3cb5ba1b74cf90a3
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 54%
+source-wordcount: '744'
+ht-degree: 46%
 
 ---
 
 
-# Guide de développement d’Adobe Target {#developer}
+# Guide du développeur d’Adobe Target {#developer}
 
-+ [Guide de développement d’Adobe Target](overview.md)
++ [Guide du développeur d’Adobe Target](overview.md)
 + Prise en main {#implementation}
    + Avant l’implémentation {#before-implement}
       + [Avant l’implémentation](before-implement/considerations-before-you-implement-target.md)
@@ -36,7 +36,7 @@ ht-degree: 54%
       + [API de mise à jour de profil unique](before-implement/methods-to-get-data-into-target/single-profile-update-api.md)
       + [Attributs du client](before-implement/methods-to-get-data-into-target/customer-attributes.md)
       + [Paramètres de l’API de profil](before-implement/methods-to-get-data-into-target/profile-api-settings.md)
-   + [Target présentation de la sécurité](before-implement/target-security-overview.md)
+   + [Présentation de la sécurité de Target](before-implement/target-security-overview.md)
    + [Navigateurs pris en charge](before-implement/supported-browsers.md)
    + [Modifications du chiffrement de TLS (Transport Layer Security)](before-implement/tls-transport-layer-security-encryption.md)
    + [CNAME et Adobe Target](before-implement/implement-cname-support-in-target.md)
@@ -89,7 +89,7 @@ ht-degree: 54%
       + [Utilisation d’une mbox globale à partir d’une implémentation héritée](implement/client-side/atjs/global-mbox/mbox-global-target-standard.md)
       + [Transfert de paramètres vers une mbox globale](implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md)
       + [Questions fréquentes relatives aux mboxes globales](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
-+ Implémentation côté serveur {#server-side}
++ Mise en oeuvre côté serveur {#server-side}
    + [Aperçu de l’implémentation de Target côté serveur](implement/server-side/server-side-overview.md)
    + [Prise en main des SDK Target](implement/server-side/sdk-guides/getting-started/getting-started.md)
    + [Exemples d’applications](implement/server-side/sdk-guides/sample-apps/sample-apps.md)
@@ -132,7 +132,7 @@ ht-degree: 54%
    + Référence du SDK Java {#java}
       + [Présentation du SDK Java](implement/server-side/java/overview.md)
       + [Installation du SDK Java](implement/server-side/java/install-sdk.md)
-      + [Initialiser le SDK Java](implement/server-side/java/initialize-sdk.md)
+      + [Initialisation du SDK Java](implement/server-side/java/initialize-sdk.md)
       + [Obtention d’offres (Java)](implement/server-side/java/get-offers.md)
       + [Obtenir des attributs (Java)](implement/server-side/java/get-attributes.md)
       + [Envoi de notifications (Java)](implement/server-side/java/send-notifications.md)
@@ -154,7 +154,7 @@ ht-degree: 54%
    + Référence du SDK Python {#python}
       + [Présentation du SDK Python](implement/server-side/python/overview.md)
       + [Installation du SDK Python](implement/server-side/python/install-sdk.md)
-      + [Initialiser le SDK Python](implement/server-side/python/initialize-sdk.md)
+      + [Initialisation du SDK Python](implement/server-side/python/initialize-sdk.md)
       + [Obtention d’offres (Python)](implement/server-side/python/get-offers.md)
       + [Obtenir des attributs (Python)](implement/server-side/python/get-attributes.md)
       + [Envoyer des notifications (Python)](implement/server-side/python/send-notifications.md)
@@ -168,8 +168,8 @@ ht-degree: 54%
    + [Aperçu de Target Mobile](implement/mobile/target-mobile-preview.md)
    + [Utilisation du service de localisation](implement/mobile/use-location-service.md)
    + [FAQ sur Target pour les applications mobiles](implement/mobile/mobile-faq.md)
-   + [Mise en œuvre de Target avec le SDK mobile AEP dans une application native avec des vues web](/help/dev/implement/mobile/native-app.md)
-+ Implémentation par e-mail {#implement-email}
+   + [Mise en oeuvre de Target avec le SDK AEP Mobile dans une application native avec des vues web](/help/dev/implement/mobile/native-app.md)
++ Implémentation par email {#implement-email}
    + [Message électronique : implémentation de Target](implement/email/overview.md)
    + [Création d’une adbox pour une image](implement/email/testing-content-with-the-adbox.md)
    + [Test d’une adbox d’image de courrier électronique](implement/email/testing-email-image-adbox.md)
@@ -187,14 +187,16 @@ ht-degree: 54%
       + [Prérécupération](/help/dev/before-implement/delivery-api-overview/prefetch.md)
       + [Notifications](/help/dev/before-implement/delivery-api-overview/notifications.md)
       + [Intégration à Experience Cloud](before-implement/delivery-api-overview/integration.md)
-      + [Considérations et restrictions connues](/help/dev/before-implement/delivery-api-overview/known-limitations.md)
+      + [Considérations et limites connues](/help/dev/before-implement/delivery-api-overview/known-limitations.md)
       + [Conseils au client](/help/dev/before-implement/delivery-api-overview/client-hints.md)
       + [API de diffusion](/help/dev/implement/delivery-api/delivery-api.md)
    + API d’administration {#admin-api}
       + [API d’administration - Aperçu](before-administer/admin-api-overview/admin-api-overview.md)
       + [API d’administration Adobe Target](/help/dev/administer/admin-api/admin-api-overview-new.md)
    + API de profil {#profile-apis}
-      + [Présentation des API de profils](/help/dev/administer/profile-api/profile-api-overview.md)
+      + [Présentation de l’API Profiles](/help/dev/administer/profile-api/profiles-api.md)
+      + [Récupération de profils](/help/dev/administer/profile-api/profile-fetch.md)
+      + [Mettre à jour les profils](/help/dev/administer/profile-api/profile-api-overview.md)
       + [API de mise à jour de profil unique](/help/dev/administer/profile-api/profile-single-api.md)
       + [API de mise à jour des profils en masse](/help/dev/administer/profile-api/profile-bulk-api.md)
    + [API de création de rapports](/help/dev/administer/reporting-api/reporting-api.md)
@@ -212,10 +214,10 @@ ht-degree: 54%
 + Modèles de mise en oeuvre {#implementation-patterns}
    + [Présentation des modèles d’implémentation](/help/dev/patterns/pattern-overview.md)
    + Modèle de mise en oeuvre Recommendations à l’aide d’at.js {#atjs}
-      + [Vue d’ensemble du modèle d’implémentation de Recommendations à l’aide d’at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
-      + [Initialiser les SDK](/help/dev/patterns/recs-atjs/initialize-sdk.md)
-      + [Configurer la collecte de données](/help/dev/patterns/recs-atjs/data-collection.md)
-      + [Effectuer le rendu d’expériences](/help/dev/patterns/recs-atjs/render-experiences.md)
+      + [Modèle de mise en oeuvre Recommendations à l’aide de la présentation d’at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
+      + [Initialisation des SDK](/help/dev/patterns/recs-atjs/initialize-sdk.md)
+      + [Configuration de la collecte de données](/help/dev/patterns/recs-atjs/data-collection.md)
+      + [Rendu d’expériences](/help/dev/patterns/recs-atjs/render-experiences.md)
       + [Notifier Target](/help/dev/patterns/recs-atjs/notify-target.md)
 
 
