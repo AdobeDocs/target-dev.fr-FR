@@ -3,10 +3,10 @@ title: API de mise à jour du profil en bloc d’Adobe Target
 description: Découvrez comment utiliser [!DNL Adobe Target] [!UICONTROL API de mise à jour des profils en masse] pour envoyer des données de profil de plusieurs visiteurs à [!DNL Target].
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: 43f4fb8345a77ccb0e112fe196e7e0944cc468c9
+source-git-commit: 8bc819823462fae71335ac3b6c871140158638fe
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 9%
+source-wordcount: '727'
+ht-degree: 8%
 
 ---
 
@@ -54,14 +54,14 @@ Vous référencez ce fichier dans l’appel du POST à [!DNL Target] serveurs po
 * La taille du fichier de traitement par lot doit être inférieure à 50 Mo. En outre, le nombre total de lignes ne doit pas dépasser 500 000. Cette limite garantit que les serveurs ne sont pas inondés de requêtes trop nombreuses.
 * Vous pouvez envoyer plusieurs fichiers. Cependant, la somme totale des lignes de tous les fichiers que vous envoyez par jour ne doit pas dépasser un million pour chaque client.
 * Le nombre d’attributs que vous chargez n’est pas limité. Toutefois, la taille globale d’un profil, y compris les données système, ne doit pas dépasser 2 000 Ko. [!DNL Adobe] recommande d’utiliser moins de 1 000 Ko de stockage pour les attributs de profil.
-* Les paramètres et les valeurs sont sensibles à la casse.
+* Les paramètres et valeurs sont sensibles à la casse.
 
 ## requête de POST HTTP
 
 Envoyez une requête de POST HTTP à [!DNL Target] serveurs Edge pour traiter le fichier. Voici un exemple de requête de POST HTTP pour le fichier batch.txt à l’aide de la commande curl :
 
 ``````
-curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/ CLIENTCODE/v2/profile/batchUpdate
+curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
 ``````
 
 Où :
