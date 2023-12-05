@@ -3,7 +3,7 @@ title: Récupération de profils
 description: Découvrez comment utiliser les API de profil Adobe Target pour récupérer les données de visiteur à utiliser dans [!DNL Target].
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
-source-git-commit: 9707680ddcf0c373c635aa9f3cb5ba1b74cf90a3
+source-git-commit: e5a1c38d448cb7446b7b26cd0dc882976ba94dd3
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -39,13 +39,13 @@ Voir [Mise à jour de profils](/help/dev/administer/profile-api/profile-api-over
 L’exemple suivant illustre le format de requête pour récupérer un profil à l’aide d’un `thirdPartyId`:
 
 ```
-https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/your-thirdpartyid?<your-client-code>
+https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/your-thirdpartyid?client=<your-client-code>
 ```
 
 Remplacer `<your-client-code>` et `your-thirdpartyid` et déclenchez une requête de GET. Voici un exemple d’appel de récupération de profil utilisant un [!UICONTROL thirdpartyid]:
 
 ```
-http://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/a1-mbox3rdPartyId?client=<your-client-code>
+https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/a1-mbox3rdPartyId?client=<your-client-code>
 ```
 
 Lorsque cet appel est effectué, [!DNL Target] tente de localiser le profil en premier dans la grappe indiquée dans la requête edge ou partout où le profil est situé et renvoie le contenu. Le contenu du profil est renvoyé au format JSON.

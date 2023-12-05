@@ -4,9 +4,9 @@ description: Comment utiliser la variable [!UICONTROL API de diffusion Adobe Tar
 keywords: api de diffusion
 exl-id: 142ec3be-b017-4cdc-9079-b1cc173a710a
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: e5a1c38d448cb7446b7b26cd0dc882976ba94dd3
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,3 @@ Avant d’effectuer une [!UICONTROL API de diffusion Target] appelez , procédez
 1. Créez un [!DNL Target] activité (A/B, XT, AP ou Recommendations) utilisant la variable [Compositeur d’après les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=en) ou le [Compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html).
 1. Utilisez l’API de diffusion pour obtenir une réponse pour les mbox utilisées dans la variable [!DNL Target] activité créée à l’étape 2.
 1. Présenter l’expérience au visiteur.
-
-## Collection Postman {#postman}
-
-Postman est une application qui permet de déclencher facilement des appels API. [Cette collection Postman](https://run.pstmn.io/button.svg) contient des exemples d’appels API de diffusion.
