@@ -3,7 +3,7 @@ title: Récupération de profils
 description: Découvrez comment utiliser les API de profil Adobe Target pour récupérer les données de visiteur à utiliser dans [!DNL Target].
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
-source-git-commit: e5a1c38d448cb7446b7b26cd0dc882976ba94dd3
+source-git-commit: ee53a8f0210480d9b70dc77a3a5cd8d92d2f2e3d
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 1%
@@ -27,7 +27,7 @@ https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/your-tnt-id?client=<yo
 Remplacer `<your-client-code>` et `your-tnt-id` et déclenchez une requête de GET. Voici un exemple d’appel de récupération de profil utilisant un `tntid`;
 
 ```
-http://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046?client=<your-client-code>
+https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046?client=<your-client-code>
 ```
 
 ## Utilisation d’un thirdPartyId
