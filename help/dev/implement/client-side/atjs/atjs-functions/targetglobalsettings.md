@@ -4,10 +4,10 @@ description: Utilisez la variable [!UICONTROL targetGlobalSettings()] pour la fo
 title: Comment utiliser la variable [!UICONTROL targetGlobalSettings()] Fonction ?
 feature: at.js
 exl-id: f6218313-6a70-448e-8555-b7b039e64b2c
-source-git-commit: d5d25c6a559dafe446d26cca6c03d8e693cbd508
+source-git-commit: 12cf430b65695d38d1651f2a97df418d82d231f3
 workflow-type: tm+mt
-source-wordcount: '2521'
-ht-degree: 68%
+source-wordcount: '2568'
+ht-degree: 58%
 
 ---
 
@@ -18,6 +18,18 @@ Vous pouvez remplacer les paramètres de la bibliothèque at.js à l’aide de l
 ## Paramètres
 
 Vous pouvez remplacer les paramètres suivants :
+
+### aepSandboxId
+
+* **Type** : String
+* **Valeur par défaut**: null
+* **Description**: paramètre facultatif utilisé pour l’envoi [!DNL Adobe Experience Platform] ID de sandbox à partager [!DNL Adobe Experience Platform] destinations créées dans l’environnement de test autre que l’environnement par défaut avec [!DNL Target]. If `aepSandboxId` est non nul, `aepSandboxName` doit également être fourni.
+
+### aepSandboxName
+
+* **Type** : String
+* **Valeur par défaut**: null
+* **Description**: paramètre facultatif utilisé pour l’envoi [!DNL Adobe Experience Platform] nom de l’environnement de test à partager [!DNL Adobe Experience Platform] destinations créées dans l’environnement de test autre que l’environnement par défaut avec [!DNL Target]. If `aepSandboxName` est non nul, `aepSandboxId` doit également être fourni.
 
 ### artifactLocation
 
@@ -88,13 +100,13 @@ Vous pouvez remplacer les paramètres suivants :
 
   **Côté serveur uniquement** :
 
-  Côté serveur uniquement est la méthode de prise de décision par défaut préconfigurée lors de l’implémentation et du déploiement d’at.js 2.5+ sur vos propriétés web.
+  Côté serveur uniquement, la méthode de prise de décision par défaut est configurée prête à l’emploi lorsque at.js 2.5+ est implémenté et déployé sur vos propriétés web.
 
-  L’utilisation de Côté serveur uniquement comme configuration par défaut signifie que toutes les décisions sont prises sur le réseau Edge de [!DNL Target], ce qui implique un appel au serveur bloquant. Cette approche peut introduire une latence incrémentielle, mais elle offre également des avantages significatifs, comme la possibilité d’appliquer des [!DNL Target]les fonctionnalités d’apprentissage automatique qui incluent [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP) et [Ciblage automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activités.
+  L’utilisation du côté serveur uniquement comme configuration par défaut signifie que toutes les décisions sont prises sur la variable [!DNL Target] réseau Edge, qui implique un appel au serveur bloquant. Cette approche peut introduire une latence incrémentielle, mais elle offre également des avantages significatifs, comme la possibilité d’appliquer des [!DNL Target]les fonctionnalités d’apprentissage automatique qui incluent [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP) et [Ciblage automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) activités.
 
   En outre, améliorez vos expériences personnalisées en utilisant [!DNL Target]Le profil utilisateur de , qui est conservé d’une session à l’autre et sur plusieurs canaux, peut fournir de puissants résultats à votre entreprise.
 
-  Enfin, la valeur côté serveur uniquement vous permet d’utiliser Adobe Experience Cloud et d’affiner les audiences qui peuvent être ciblées par le biais des segments d’Audience Manager et d’Adobe Analytics.
+  Enfin, côté serveur, vous pouvez uniquement utiliser Adobe Experience Cloud et affiner les audiences qui peuvent être ciblées par le biais des segments d’Audience Manager et d’Adobe Analytics.
 
   **Sur l’appareil uniquement** :
 
@@ -166,7 +178,7 @@ Vous pouvez remplacer les paramètres suivants :
 
 * **Type** : booléen
 * **Valeur par défaut** : false
-* **Description**[!DNL Target] : indique si doit invoquer la fonction `isOptedOut()` de l’API visiteur. Fait partie de l’activation de Device Graph.
+* **Description**: indique si [!DNL Target] doit appeler l’API visiteur `isOptedOut()` de la fonction Fait partie de l’activation de Device Graph.
 
 ### overrideMboxEdgeServer
 
@@ -214,7 +226,7 @@ Vous pouvez remplacer les paramètres suivants :
 
 * **Type** : String
 * **Valeur par défaut** : valeur définie via l’interface utilisateur.
-* **Description**[!DNL Target] : représente le serveur Edge de 
+* **Description**: représente le [!DNL Target] serveur Edge.
 
 ### serverState
 
@@ -244,7 +256,7 @@ Vous pouvez remplacer les paramètres suivants :
 
 * **Type** : nombre
 * **Valeur par défaut** : 2 000 ms = 2 s
-* **Description** : représente le délai d’expiration de la demande de l’API visiteur.
+* **Description**: représente le délai d’expiration de la requête de l’API visiteur.
 
 ## Utilisation
 
@@ -284,7 +296,7 @@ Chaque fournisseur de données présente la structure suivante :
 | name | Chaîne | Nom du fournisseur |
 | version | Chaîne | Version du fournisseur. Cette clé sera utilisée pour l’évolution du fournisseur. |
 | timeout | Nombre | Représente le délai d’attente du fournisseur dans le cas d’une requête réseau. Cette clé est facultative. |
-| provider | Fonction | Fonction qui contient la logique de recherche des données de fournisseur.<p>La fonction comporte un seul paramètre requis : `callback`. Le paramètre callback est une fonction qui doit être appelée uniquement lorsque les données ont été recherchées avec succès ou qu’une erreur s’est produite.<p>Le paramètre callback appelle lui-même deux paramètres :<ul><li>error : indique qu’une erreur s’est produite. Si l’exécution est correcte, ce paramètre doit être défini sur la valeur Null.</li><li>params : objet JSON, représentant les paramètres qui seront envoyés dans une [!DNL Target] requête.</li></ul> |
+| provider | Fonction | Fonction qui contient la logique de recherche des données de fournisseur.<p>La fonction comporte un seul paramètre requis : `callback`. Le paramètre callback est une fonction qui doit être appelée uniquement lorsque les données ont été recherchées avec succès ou qu’une erreur s’est produite.<p>Le paramètre callback appelle lui-même deux paramètres :<ul><li>error : indique qu’une erreur s’est produite. Si l’exécution est correcte, ce paramètre doit être défini sur la valeur Null.</li><li>params : objet JSON, représentant les paramètres qui seront envoyés dans une [!DNL Target] requête.</li></ul> |
 
 L’exemple suivant illustre l’exécution synchronisée par le fournisseur de données :
 
@@ -327,7 +339,7 @@ window.targetGlobalSettings = {
 };
 ```
 
-Une fois que at.js a traité `window.targetGlobalSettings.dataProviders`[!DNL Target], la requête contient des paramètres supplémentaires : `t1=1`, `t2=2` et `t3=3`.
+Après les processus at.js `window.targetGlobalSettings.dataProviders`, la variable [!DNL Target] request contient des paramètres supplémentaires : `t1=1`, `t2=2` et `t3=3`.
 
 L’exemple suivant utilise des fournisseurs de données pour collecter des données de l’API météorologique et les envoyer en tant que paramètres dans une [!DNL Target] requête. La variable [!DNL Target] comporte des paramètres supplémentaires, tels que `country` et `weatherCondition`.
 
@@ -398,11 +410,11 @@ window.targetGlobalSettings = {
 ...
 ```
 
-Une fois les paramètres `cspScriptNonce` et `cspStyleNonce` spécifiés, at.js 2.3.0+ les définit comme attributs de nonces sur toutes les balises SCRIPT et STYLE qu’il ajoute au DOM lors de l’application des offres [!DNL Target]
+Après `cspScriptNonce` et `cspStyleNonce` Les paramètres sont spécifiés, at.js 2.3.0+ les définit comme des attributs à usage unique sur toutes les balises SCRIPT et STYLE qu’il ajoute au DOM lors de l’application [!DNL Target] offres.
 
 ## Personnalisation hybride
 
-`serverState`[!DNL Target] est un paramètre disponible dans at.js v2.2+ qui peut être utilisé pour optimiser les performances des pages lors de l’implémentation d’une intégration hybride de L’intégration hybride signifie que vous utilisez at.js v2.2+ côté client et l’API de diffusion ou une [!DNL Target] SDK côté serveur pour diffuser des expériences. `serverState` permet à at.js v2.2+ d’appliquer des expériences directement à partir du contenu récupéré côté serveur et renvoyé au client dans le cadre de la page diffusée.
+`serverState` est un paramètre disponible dans at.js v2.2+ qui peut être utilisé pour optimiser les performances des pages lors d’une intégration hybride de [!DNL Target] est implémentée. L’intégration hybride signifie que vous utilisez at.js v2.2+ côté client et l’API de diffusion ou une [!DNL Target] SDK côté serveur pour diffuser des expériences. `serverState` permet à at.js v2.2+ d’appliquer des expériences directement à partir du contenu récupéré côté serveur et renvoyé au client dans le cadre de la page diffusée.
 
 ### Conditions requises
 
@@ -525,13 +537,13 @@ Veuillez tenir compte des points suivants lors de l’utilisation de `serverStat
    * Les activités créées par le Compositeur d’expérience visuelle qui sont exécutées au chargement de la page.
    * Les vues prérécupérées.
 
-     Dans le cas de SPA utilisant les vues [!DNL Target] et `triggerView()` dans l’API at.js, at.js v2.2 met en cache le contenu de toutes les vues prérécupérées côté serveur et les applique dès que chaque vue est déclenchée via `triggerView()`. Là encore, il ne déclenche pas d’autres appels de récupération de contenu à [!DNL Target].
+     Dans le cas d’SPA utilisant [!DNL Target] Vues et `triggerView()` dans l’API at.js, at.js v2.2 met en cache le contenu de toutes les vues prérécupérées côté serveur et les applique dès que chaque vue est déclenchée via `triggerView()`, à nouveau sans déclencher d’appels de récupération de contenu supplémentaires vers [!DNL Target].
 
    * **Remarque** : les mbox récupérées côté serveur ne sont actuellement pas prises en charge dans `serverState`.
 
-* Lors de l’application d’offres `serverState`, at.js prend en compte les paramètres `pageLoadEnabled` et `viewsEnabled`. Par exemple, les offres de chargement de page ne sont pas appliquées si le paramètre `pageLoadEnabled` est défini sur false.
+* Lors de l’application `serverState` offres, at.js prend en compte `pageLoadEnabled` et `viewsEnabled` par exemple, les offres de chargement de page ne seront pas appliquées si la variable `pageLoadEnabled` est false.
 
-  Pour activer ces paramètres, activez la bascule dans **Administration > Implémentation > Modifier > Chargement de page activé**.
+  Pour activer ces paramètres, activez le bouton d’activation **Administration > Mise en oeuvre > Modifier > Chargement de page activé**.
 
   ![Paramètres du chargement de page activé](../../assets/page-load-enabled-setting.png)
 
