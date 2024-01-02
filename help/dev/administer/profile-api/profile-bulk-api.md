@@ -3,7 +3,8 @@ title: API de mise à jour du profil en bloc d’Adobe Target
 description: Découvrez comment utiliser [!DNL Adobe Target] [!UICONTROL API de mise à jour des profils en masse] pour envoyer des données de profil de plusieurs visiteurs à [!DNL Target] à utiliser dans le ciblage.
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
-source-git-commit: a6f47c99cfc419771c1a6674990c415a2035ab4e
+exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
+source-git-commit: 32a6d14c911b977aea96b0fb6832929892d70d5d
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 8%
@@ -18,8 +19,8 @@ En utilisant la variable [!UICONTROL API de mise à jour des profils en masse], 
 
 | Version | Exemple d’URL | Fonctionnalités |
 | --- | --- | --- |
-| v1 | `http://CLIENTCODE.tt.omtrdc.net/m2/ CLIENTCODE/profile/batchUpdate` | Prise en charge de la mise à jour des profils en masse uniquement. |
-| v2 | `http://CLIENTCODE.tt.omtrdc.net/m2/ CLIENTCODE/v2/profile/batchUpdate` | <ul><li>Créez un profil s’il est introuvable.</li><li>Mise à jour de l’état par ligne.</li></ul> |
+| v1 | `http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/profile/batchUpdate` | Prise en charge de la mise à jour des profils en masse uniquement. |
+| v2 | `http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate` | <ul><li>Créez un profil s’il est introuvable.</li><li>Mise à jour de l’état par ligne.</li></ul> |
 
 >[!NOTE]
 >
