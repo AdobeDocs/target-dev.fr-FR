@@ -4,9 +4,9 @@ description: Découvrez comment utiliser [!DNL Adobe Target] [!UICONTROL API de 
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 32a6d14c911b977aea96b0fb6832929892d70d5d
+source-git-commit: 3d90616b0a920abea380d4cfcd1227eafde86adb
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '846'
 ht-degree: 8%
 
 ---
@@ -34,6 +34,7 @@ En utilisant la variable [!UICONTROL API de mise à jour des profils en masse], 
 ## Avertissements
 
 * La taille du fichier de traitement par lot doit être inférieure à 50 Mo. En outre, le nombre total de lignes ne doit pas dépasser 500 000 lignes par téléchargement.
+* Les mises à jour surviennent généralement en moins d’une heure, mais peuvent prendre jusqu’à 24 heures pour être répercutées.
 * Le nombre de lignes que vous pouvez transférer sur une période de 24 heures dans les lots suivants n’est pas limité. Cependant, le processus d’assimilation peut être ralenti pendant les heures ouvrables pour s’assurer que les autres processus s’exécutent efficacement.
 * Les appels de mise à jour de lots v2 consécutifs sans appels de mbox intermédiaires pour le même thirdPartyIds remplacent les propriétés mises à jour lors du premier appel de mise à jour de lots.
 * [!DNL Adobe] ne garantit pas que 100 % des données de profil de lot seront intégrées et conservées dans Target et, par conséquent, seront disponibles pour une utilisation dans le ciblage. Dans la conception actuelle, il est possible qu’un faible pourcentage de données (jusqu’à 0,1 % des grands lots de production) ne soient pas intégrées ou conservées.
