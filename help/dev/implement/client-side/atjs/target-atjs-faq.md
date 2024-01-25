@@ -4,10 +4,10 @@ description: Lire les réponses aux questions fréquentes sur [!DNL Adobe Target
 title: Quelles sont les questions et réponses fréquentes concernant at.js ?
 feature: at.js
 exl-id: 362ccc5b-8731-46c0-bc52-3e55c273e216
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 448c43c0c10e22ad054f4ee98bfc282f8c96cdcb
 workflow-type: tm+mt
-source-wordcount: '2897'
-ht-degree: 74%
+source-wordcount: '2938'
+ht-degree: 66%
 
 ---
 
@@ -17,9 +17,9 @@ Réponses aux questions fréquentes sur la bibliothèque JavaScript at.js [!DNL 
 
 ## Quels sont les avantages d’utiliser at.js au lieu de mbox.js ?
 
-La bibliothèque at.js remplace mbox.js. La bibliothèque mbox.js n’est plus prise en charge. Pour la plupart des utilisateurs, at.js offre des avantages par rapport à mbox.js.
+La bibliothèque at.js remplace mbox.js. La bibliothèque mbox.js n’est plus prise en charge. Toutefois, pour la plupart des utilisateurs, at.js offre des avantages par rapport à mbox.js.
 
-Autres avantages : at.js réduit les délais de chargement des pages pour les implémentations web, renforce la sécurité et offre des options d’implémentation optimisées pour les applications d’une seule page.
+Autres avantages : at.js réduit les délais de chargement des pages pour les implémentations web, renforce la sécurité et offre des options d’implémentation optimisées pour les applications d’une seule page.
 
 Le diagramme suivant illustre les performances de chargement de page avec mbox.js et at.js.
 
@@ -31,7 +31,7 @@ Comme illustré ci-dessus, avec mbox.js, le contenu de la page ne commençait à
 
 ## Quel est l’impact de at.js et mbox.js sur le temps chargement de la page ? 
 
-Bon nombre de clients et de consultants souhaitent connaître l’impact d’at.js et de mbox.js sur le délai de chargement des pages, particulièrement en ce qui concerne les nouveaux utilisateurs et les utilisateurs réguliers. Il est, malheureusement, difficile de mesurer l’influence d’at.js ou de mbox.js sur le délai de chargement des pages et d’avancer des chiffres concrets en raison de l’implémentation de chaque client.
+De nombreux clients et consultants souhaitent connaître l’impact d’at.js et de mbox.js sur le délai de chargement des pages, en particulier en ce qui concerne les nouveaux utilisateurs et les utilisateurs réguliers. Malheureusement, il est difficile de mesurer at.js ou mbox.js et de fournir des chiffres concrets concernant l’influence d’at.js ou de mbox.js sur le délai de chargement des pages en raison de l’implémentation de chaque client.
 
 Cependant, si l’API visiteur est présente sur la page, [!DNL Target] peut mieux comprendre l’influence d’at.js et de mbox.js sur le temps de chargement des pages.
 
@@ -69,9 +69,9 @@ Les sections suivantes décrivent la séquence d’actions pour les nouveaux vis
 
 ## Pourquoi les temps de réponse semblent-ils plus lents après la mise à niveau d’une version précédente d’at.js vers la version 1.0.0 ?
 
-at.js version 1.0.0 (et ultérieure) déclenche toutes les demandes en parallèle. Les versions précédentes exécutent les requêtes de manière séquentielle, ce qui signifie que les requêtes sont placées en file d’attente et que [!DNL Target] attend que la première requête se termine avant de passer à la suivante.
+at.js version 1.0.0 et ultérieure déclenche toutes les requêtes en parallèle. Les versions précédentes exécutent les requêtes de manière séquentielle, ce qui signifie que les requêtes sont placées en file d’attente et que [!DNL Target] attend que la première requête se termine avant de passer à la suivante.
 
-La façon dont les versions précédentes d’at.js exécutent les demandes est sujette au « blocage d’en-tête de ligne ». Dans at.js 1.0.0 et versions ultérieures, [!DNL Target] est passé à l’exécution de requêtes parallèles.
+La manière dont les versions précédentes d’at.js exécutent les demandes est sujette au &quot;blocage d’en-tête de ligne&quot;. Dans at.js 1.0.0 et versions ultérieures, [!DNL Target] est passé à l’exécution de requêtes parallèles.
 
 Si vous vérifiez la cascade de l’onglet réseau pour at.js 0.9.1, par exemple, vous verrez que le suivant [!DNL Target] ne démarre pas tant que la précédente n’est pas terminée. Cette séquence n’est pas le cas avec at.js 1.0.0 et versions ultérieures, où toutes les requêtes démarrent en même temps.
 
@@ -118,11 +118,11 @@ Pour plus d’informations, voir [Comment at.js gère le scintillement](/help/de
 
 ## Est-ce qu’at.js est compatible avec l’intégration [!DNL Adobe Experience Manager] (Experience Manager) ?
 
-[!DNL Adobe Experience Manager] 6.2 avec FP-11577 (ou ultérieur) prend maintenant en charge les mises en œuvre d’at.js avec son intégration des [!UICONTROL Services cloud Adobe Target]. 
+[!DNL Adobe Experience Manager] 6.2 avec FP-11577 (ou version ultérieure) prend désormais en charge les implémentations d’at.js avec ses [!UICONTROL Cloud Service Adobe Target] intégration.
 
 ## Comment empêcher le scintillement au chargement des pages avec at.js ?
 
-[!DNL Target] propose plusieurs solutions pour éviter le scintillement au chargement des pages. Pour plus d’informations, voir [Prévention du scintillement avec at.js](/help/dev/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md).
+[!DNL Target] offre plusieurs méthodes pour empêcher le scintillement au chargement des pages. Pour plus d’informations, voir [Prévention du scintillement avec at.js](/help/dev/implement/client-side/atjs/how-atjs-works/manage-flicker-with-atjs.md).
 
 ## Quelle est la taille de fichier d’at.js ?
 
@@ -130,7 +130,7 @@ Le fichier at.js fait environ 109 Ko une fois téléchargé. Cependant, comme l
 
 ## Pourquoi le fichier at.js est-il plus volumineux que le fichier mbox.js ?
 
-La mise en œuvre d’at.js utilise une seule bibliothèque (at.js), tandis que les mises en œuvre de mbox.js utilisent en fait deux bibliothèques (mbox.js et target.js). Il serait donc préférable donc de comparer at.js à mbox.js *et* `target.js`. Si l’on compare la taille des fichiers gzip des deux versions, at.js version 1.2 fait 34 Ko, tandis mbox.js version 63 fait 26,2 Ko. ``
+Les implémentations d’at.js utilisent une seule bibliothèque ( at.js), tandis que les implémentations de mbox.js utilisent en fait deux bibliothèques ( mbox.js et target.js). Il serait donc préférable donc de comparer at.js à mbox.js *et* `target.js`. Si l’on compare la taille des fichiers gzip des deux versions, at.js version 1.2 fait 34 Ko, tandis mbox.js version 63 fait 26,2 Ko. ``
 
 Le fichier at.js est plus volumineux, car il effectue beaucoup plus d’analyses DOM que le fichier mbox.js, du fait que le fichier at.js doit interpréter les données « brutes » qu’il récupère dans la réponse JSON. mbox.js utilisait `document.write()` et toute l’analyse était effectuée par le navigateur.
 
@@ -162,7 +162,7 @@ Oui, comme avec mbox.js.
 
 Les clients de [!DNL Target] utilisent parfois des instances basées sur le cloud avec [!DNL Target] à des fins de test ou de preuve de concept. Ces domaines, et de nombreux autres, font partie de la [liste des suffixes publics](https://publicsuffix.org/list/public_suffix_list.dat).
 
-Les navigateurs modernes n’enregistrent pas les cookies si vous utilisez ces domaines, sauf si vous personnalisez le paramètre `cookieDomain` à l’aide de targetGlobalSettings(). Pour plus d’informations, voir [Utilisation d’instances basées sur Cloud avec [!DNL Target]](/help/dev/implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md).
+Les navigateurs modernes n’enregistrent pas les cookies si vous utilisez ces domaines, sauf si vous personnalisez le paramètre `cookieDomain` à l’aide de targetGlobalSettings(). Pour plus d’informations, voir [Utilisation d’instances basées sur le cloud avec [!DNL Target]](/help/dev/implement/client-side/target-debugging-atjs/targeting-using-cloud-based-instances.md).
 
 ## Les adresses IP peuvent-elles être utilisées comme domaine de cookie lors de l’utilisation d’at.js ?
 
@@ -196,21 +196,21 @@ if (/^123\.456\.78\..*/g.test(window.location.hostname)) {
 
 ## Pourquoi des messages d’avertissement du type « Actions avec sélecteurs manquants » s’affichent-ils ?
 
-Ces messages ne sont pas liés à la fonctionnalité at.js. La bibliothèque at.js tente de signaler tout ce qui est introuvable dans l’élément DOM.
+Ces messages ne sont pas liés à la fonctionnalité at.js. La bibliothèque at.js tente de signaler tout ce qui est introuvable dans le modèle DOM.
 
 L’affichage de ce message d’avertissement peut s’expliquer par les causes suivantes :
 
 * La page est créée dynamiquement et at.js ne parvient pas à trouver l’élément.
 * La page est créée lentement (en raison de la lenteur du réseau) et at.js ne parvient pas à trouver le sélecteur dans le DOM.
-* La structure de la page sur laquelle s’exécute l’activité a été modifiée. Si vous rouvrez l’activité dans le Compositeur d’expérience visuelle (VEC), un message d’avertissement s’affiche. Mettez à jour l’activité afin que tous les éléments nécessaires soient détectés.
-* La page sous-jacente fait partie d’une application d’une seule page ou la page contient des éléments qui apparaissent plus bas dans la page et le « mécanisme d’interrogation des sélecteurs » at.js ne parvient pas à trouver ces éléments. Augmenter le `selectorsPollingTimeout` peut aider. Pour plus d’informations, voir [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
+* La structure de la page sur laquelle s’exécute l’activité a été modifiée. Si vous rouvrez l’activité dans le compositeur d’expérience visuelle (VEC), un message d’avertissement s’affiche. Mettez à jour l’activité afin que tous les éléments nécessaires soient détectés.
+* La page sous-jacente fait partie d’une application d’une seule page (SPA) ou la page contient des éléments qui apparaissent plus bas dans la page et le &quot;mécanisme d’interrogation des sélecteurs&quot; d’at.js ne parvient pas à trouver ces éléments. Augmenter le `selectorsPollingTimeout` peut aider. Pour plus d’informations, voir [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
 * Les mesures de suivi des clics tentent de s’ajouter à chaque page, indépendamment de l’URL à laquelle elles ont été configurées. Bien que sans danger, cette situation entraîne l’affichage répété de ces messages.
 
   Pour de meilleurs résultats, téléchargez et utilisez la variable [dernière version d’at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md). Pour plus d’informations sur le téléchargement d’at.js, voir [Téléchargement d’at.js à l’aide du [!DNL Target] interface](how-to-deployatjs/implement-target-without-a-tag-manager.md#download-atjs-using-the-target-interface) dans la section [*Déploiement d’at.js* > *Mise en oeuvre [!DNL Target] sans gestionnaire de balises*](how-to-deployatjs/implement-target-without-a-tag-manager.md) article.
 
 ## À quoi correspond le domaine tt.omtrdc.net auquel les appels au serveur de [!DNL Target] sont adressés ?
 
-tt.omtrdc.net est le nom de domaine du réseau EDGE d’Adobe utilisé pour recevoir tous les appels au serveur pour [!DNL Target].
+tt.omtrdc.net est le nom de domaine du réseau EDGE d’Adobe, utilisé pour recevoir tous les appels au serveur pour [!DNL Target].
 
 ## Pourquoi at.js n’utilise-t-il pas toujours les indicateurs de cookie HttpOnly et Secure ?
 
@@ -297,3 +297,7 @@ Cette syntaxe est la suivante :
 `<!DOCTYPE html>`
 
 Le doctype HTML 5 garantit le chargement de la page en mode standard. Lors du chargement en mode quirks, certaines API JS dont le fichier at.js dépend sont désactivées. [!DNL Target] désactive at.js en mode quirks.
+
+## at.js fonctionne-t-il dans un environnement d’application Ionic ?
+
+Cette implémentation n’a jamais été testée, car at.js n’était pas destiné à fonctionner dans un environnement non web. [!DNL Adobe] recommande son [SDK pour les implémentations mobiles](/help/dev/implement/mobile/overview.md).
