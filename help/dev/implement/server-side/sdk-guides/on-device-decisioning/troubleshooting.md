@@ -3,9 +3,9 @@ title: Résolution des problèmes de prise de décision sur les appareils
 description: Découvrez comment résoudre les problèmes [!UICONTROL prise de décision sur appareil]
 exl-id: e76f95ce-afae-48e0-9dbb-2097133574dc
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 1d892d4d4d6f370f7772d0308ee0dd0d5c12e700
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ L’activation des traces génère des informations supplémentaires à partir d
    }};
    ```
 
-   **Java **
+   **Java**
 
    ```js {line-numbers="true"}
    Trace trace = new Trace()
@@ -115,7 +115,7 @@ L’activation des traces génère des informations supplémentaires à partir d
 
 ## 3. Vérifiez les [!UICONTROL prise de décision sur appareil] *artefact de règle* a été récupéré et mis en cache selon l’intervalle d’interrogation défini.
 
-1. Patientez pendant la durée de l’intervalle d’interrogation (la valeur par défaut est de 5 minutes) et assurez-vous que l’artefact est récupéré par le SDK. Les mêmes journaux de terminal seront générés.
+1. Patientez pendant la durée de l’intervalle d’interrogation (20 minutes par défaut) et assurez-vous que l’artefact est récupéré par le SDK. Les mêmes journaux de terminal seront générés.
 
    En outre, des informations provenant de la variable[!DNL Target]Trace doit être généré vers le terminal avec des détails sur l’artefact de règle.
 
