@@ -4,9 +4,9 @@ description: Comment utiliser la prérécupération dans le [!UICONTROL API de d
 keywords: api de diffusion
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-source-git-commit: 91592a86957770c4d189115fd3ebda61ed52dd38
+source-git-commit: 803723d95d50cc39101d1646232446fbb0254385
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -126,7 +126,7 @@ Dans la réponse, le `content` champ contenant l’expérience à présenter à 
 
 [[!UICONTROL Adobe Analytics pour Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T) est une intégration intersolutions qui vous permet de créer des activités basées sur des [!DNL Analytics] mesures de conversion et segments d’audience.
 
-Le fragment de code suivant vous permet de prérécupérer une mbox contenant `clickTrack` mesures à avertir [!DNL Analytics] qu’un utilisateur a cliqué sur une offre :
+Le fragment de code suivant est une réponse d’une prérécupération d’une mbox contenant `clickTrack` mesures à avertir [!DNL Analytics] qu’un utilisateur a cliqué sur une offre :
 
 ```
 {
