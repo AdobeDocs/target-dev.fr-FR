@@ -4,9 +4,9 @@ description: Comment utiliser la prérécupération dans le [!UICONTROL API de d
 keywords: api de diffusion
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 91592a86957770c4d189115fd3ebda61ed52dd38
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -121,6 +121,51 @@ Dans le `prefetch` champ, ajouter un ou plusieurs champs `mboxes` vous souhaitez
 ```
 
 Dans la réponse, le `content` champ contenant l’expérience à présenter à l’utilisateur pour un `mbox`. Cela s’avère très utile lorsqu’il est mis en cache sur votre serveur, de sorte que lorsqu’un utilisateur interagit avec votre application web ou mobile au cours d’une session et visite une `mbox` sur n’importe quelle page spécifique de votre application, l’expérience peut être diffusée à partir du cache au lieu d’en créer une autre. [!UICONTROL API de diffusion Adobe Target] appelez . Cependant, lorsqu’une expérience est diffusée à l’utilisateur à partir de la variable `mbox`, un `notification` sera envoyé par l’intermédiaire d’un appel de l’API de diffusion afin que la journalisation des impressions se produise. En effet, la réponse de `prefetch` Les appels sont mis en cache, ce qui signifie que l’utilisateur n’a pas vu les expériences au moment où la fonction `prefetch` l’appel se produit. Pour en savoir plus sur la variable `notification` processus, voir [Notifications](notifications.md).
+
+## Prérécupération des mbox avec des mesures clickTrack lors de l’utilisation de [!UICONTROL Analytics pour Target] (A4T)
+
+[[!UICONTROL Adobe Analytics pour Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T) est une intégration intersolutions qui vous permet de créer des activités basées sur des [!DNL Analytics] mesures de conversion et segments d’audience.
+
+Le fragment de code suivant vous permet de prérécupérer une mbox contenant `clickTrack` mesures à avertir [!DNL Analytics] qu’un utilisateur a cliqué sur une offre :
+
+```
+{
+  "prefetch": {
+    "mboxes": [
+      {
+        "index": 0,
+        "name": "<mboxName>",
+        "options": [
+           ...
+        ],
+        "metrics": [
+          {
+            "type": "click",
+            "eventToken": "<eventToken>",
+             "analytics": {
+               "payload": {
+                 "pe": "tnt",
+                 "tnta": "..."
+               }
+             }
+          },
+          }
+        ],
+        "analytics": {
+          "payload": {
+            "pe": "tnt",
+            "tnta": "347565:1:0|2,347565:1:0|1"
+          }
+        }
+      }
+    ]
+  }
+}
+```
+
+>[!NOTE]
+>
+>La prérécupération d’une mbox contient le paramètre [!DNL Analytics] charge utile pour les activités qualifiées uniquement. La prérécupération des mesures de succès pour les activités non encore qualifiées entraîne des incohérences dans les rapports.
 
 ## Prérécupération des vues
 
