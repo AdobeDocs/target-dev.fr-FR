@@ -4,28 +4,28 @@ description: Comment utiliser la prérécupération dans le [!UICONTROL API de d
 keywords: api de diffusion
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-source-git-commit: 9a3068b0765c238daa2f9af904c0f6f15b57cc24
+source-git-commit: 901b56a91c69c9c5a2bd322aa999d45c47058a5e
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
 
 # Prérécupération
 
-La prérécupération permet aux clients tels que les applications mobiles et les serveurs de récupérer du contenu pour plusieurs mbox ou vues dans une requête, de le mettre en cache localement et de le notifier ultérieurement. [!DNL Target] lorsque l’utilisateur visite ces mbox ou vues.
+La prérécupération permet aux clients tels que les applications mobiles et les serveurs de récupérer du contenu pour plusieurs mbox ou vues dans une requête, de le mettre en cache localement et de le notifier ultérieurement. [!DNL Target] lorsque le visiteur visite ces mbox ou vues.
 
 Lors de l’utilisation de la prérécupération, il est important de connaître les termes suivants :
 
 | Nom du champ | Description |
 | --- | --- |
-| `prefetch` | Liste des mbox et des vues qui doivent être récupérées, mais qui ne doivent pas être marquées comme visitées. La variable [!DNL Target] Edge renvoie une `eventToke`n pour chaque mbox ou vue existant dans le tableau de prérécupération. |
+| `prefetch` | Liste des mbox et des vues qui doivent être récupérées, mais qui ne doivent pas être marquées comme visitées. La variable [!DNL Target] Edge renvoie une `eventToken` pour chaque mbox ou vue existant dans le tableau de prérécupération. |
 | `notifications` | Liste des mbox et des vues précédemment prérécupérées et qui doivent être marquées comme visitées. |
 | `eventToken` | Jeton chiffré haché renvoyé lors de la prérécupération du contenu. Ce jeton doit être renvoyé à [!DNL Target] dans le `notifications` tableau. |
 
 ## Prérécupération des mbox
 
-Les clients tels que les applications mobiles et les serveurs peuvent prérécupérer plusieurs mbox pour un utilisateur donné au cours d’une session et les mettre en cache afin d’éviter plusieurs appels à [!UICONTROL API de diffusion Adobe Target].
+Les clients, tels que les applications mobiles et les serveurs, peuvent prérécupérer plusieurs mbox pour un visiteur donné au cours d’une session et les mettre en cache afin d’éviter plusieurs appels à la fonction [!UICONTROL API de diffusion Adobe Target].
 
 ```
 curl -X POST \
@@ -69,7 +69,7 @@ curl -X POST \
 }'
 ```
 
-Dans le `prefetch` champ, ajouter un ou plusieurs champs `mboxes` vous souhaitez prérécupérer simultanément pour un utilisateur au sein d’une session. Une fois que vous avez prérécupéré `mboxes` vous recevrez la réponse suivante :
+Dans le `prefetch` champ, ajouter un ou plusieurs champs `mboxes` vous souhaitez prérécupérer au moins une fois pour un visiteur au cours d’une session. Après avoir prérécupéré `mboxes`, vous recevez la réponse suivante :
 
 ```
 {
@@ -120,9 +120,9 @@ Dans le `prefetch` champ, ajouter un ou plusieurs champs `mboxes` vous souhaitez
 }
 ```
 
-Dans la réponse, le `content` champ contenant l’expérience à présenter à l’utilisateur pour un `mbox`. Cela s’avère très utile lorsqu’il est mis en cache sur votre serveur, de sorte que lorsqu’un utilisateur interagit avec votre application web ou mobile au cours d’une session et visite une `mbox` sur n’importe quelle page spécifique de votre application, l’expérience peut être diffusée à partir du cache au lieu d’en créer une autre. [!UICONTROL API de diffusion Adobe Target] appelez . Cependant, lorsqu’une expérience est diffusée à l’utilisateur à partir de la variable `mbox`, un `notification` sera envoyé par l’intermédiaire d’un appel de l’API de diffusion afin que la journalisation des impressions se produise. En effet, la réponse de `prefetch` Les appels sont mis en cache, ce qui signifie que l’utilisateur n’a pas vu les expériences au moment où la fonction `prefetch` l’appel se produit. Pour en savoir plus sur la variable `notification` processus, voir [Notifications](notifications.md).
+Dans la réponse, la variable `content` champ contenant l’expérience à présenter au visiteur pour un particulier `mbox`. Cela s’avère très utile lorsqu’il est mis en cache sur votre serveur, de sorte que lorsqu’un visiteur interagit avec votre application web ou mobile au cours d’une session et visite une `mbox` sur n’importe quelle page spécifique de votre application, l’expérience peut être diffusée à partir du cache au lieu d’en créer une autre. [!UICONTROL API de diffusion Adobe Target] appelez . Cependant, lorsqu’une expérience est diffusée au visiteur à partir de la variable `mbox`, un `notification` est envoyé via un appel de l’API de diffusion pour que la journalisation des impressions se produise. En effet, la réponse de `prefetch` Les appels sont mis en cache, ce qui signifie que le visiteur n’a pas vu les expériences au moment où la fonction `prefetch` l’appel se produit. Pour en savoir plus sur la variable `notification` processus, voir [Notifications](notifications.md).
 
-## Prérécupération des mbox avec des mesures clickTrack lors de l’utilisation de [!UICONTROL Analytics pour Target] (A4T)
+## Prérécupération des mbox avec `clickTrack` mesures lors de l’utilisation de [!UICONTROL Analytics pour Target] (A4T)
 
 [[!UICONTROL Adobe Analytics pour Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T) est une intégration intersolutions qui vous permet de créer des activités basées sur des [!DNL Analytics] mesures de conversion et segments d’audience.
 
