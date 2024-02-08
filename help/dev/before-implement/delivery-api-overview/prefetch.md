@@ -4,9 +4,9 @@ description: Comment utiliser la prérécupération dans le [!UICONTROL API de d
 keywords: api de diffusion
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-source-git-commit: 901b56a91c69c9c5a2bd322aa999d45c47058a5e
+source-git-commit: 4ff2746b8b485fe3d845337f06b5b0c1c8d411ad
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Lors de l’utilisation de la prérécupération, il est important de connaître
 
 Les clients, tels que les applications mobiles et les serveurs, peuvent prérécupérer plusieurs mbox pour un visiteur donné au cours d’une session et les mettre en cache afin d’éviter plusieurs appels à la fonction [!UICONTROL API de diffusion Adobe Target].
 
-```
+```shell shell-session
 curl -X POST \
 'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=7abf6304b2714215b1fd39a870f01afc#1555632114' \
 -H 'Content-Type: application/json' \
@@ -71,7 +71,7 @@ curl -X POST \
 
 Dans le `prefetch` champ, ajouter un ou plusieurs champs `mboxes` vous souhaitez prérécupérer au moins une fois pour un visiteur au cours d’une session. Après avoir prérécupéré `mboxes`, vous recevez la réponse suivante :
 
-```
+```JSON {line-numbers="true"}
 {
     "status": 200,
     "requestId": "5efee0d8-3779-4b12-a74e-e04848faf191",
@@ -128,7 +128,7 @@ Dans la réponse, la variable `content` champ contenant l’expérience à prés
 
 Le fragment de code suivant est une réponse d’une prérécupération d’une mbox contenant `clickTrack` mesures à avertir [!DNL Analytics] qu’un utilisateur a cliqué sur une offre :
 
-```
+```JSON {line-numbers="true"}
 {
   "prefetch": {
     "mboxes": [
@@ -169,9 +169,9 @@ Le fragment de code suivant est une réponse d’une prérécupération d’une 
 
 ## Prérécupération des vues
 
-Les vues prennent en charge les applications d’une seule page (SPA) et les applications mobiles de manière plus transparente. Les vues peuvent être considérées comme un groupe logique d’éléments visuels qui, ensemble, constituent une expérience SPA ou mobile. Désormais, via l’API de diffusion, le compositeur d’expérience visuelle a créé des activités AB et XT avec des modifications sur [Vues pour les SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) peut maintenant être prérécupéré.
+Les vues prennent en charge les applications d’une seule page (SPA) et les applications mobiles de manière plus transparente. Les vues peuvent être considérées comme un groupe logique d’éléments visuels qui, ensemble, constituent une expérience SPA ou mobile. Désormais, grâce à l’API de diffusion, le compositeur d’expérience visuelle a été créé. [[!UICONTROL Test A/B]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html){target=_blank} and [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html){target=_blank} (X) Activités T avec modifications sur [Vues pour les SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) peut maintenant être prérécupéré.
 
-```
+```shell  {line-numbers="true"}
 curl -X POST \
   'https://demo.tt.omtrdc.net/rest/v1/delivery?client=demo&sessionId=a3e7368c62d944c0855d424cd7a03ab0' \
   -H 'Content-Type: application/json' \
@@ -199,9 +199,9 @@ curl -X POST \
 }'
 ```
 
-L’exemple d’appel ci-dessus prérécupère toutes les vues créées via le SPA VEC pour les activités AB et XT à afficher pour le web. `channel`. Notez dans l’appel que nous voulons prérécupérer toutes les vues des activités AB ou XT d’un visiteur avec `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131` qui visite le `url`:`https://target.enablementadobe.com/react/demo/#/` est admissible.
+L’exemple d’appel ci-dessus prérécupère toutes les vues créées via le SPA VEC pour [!UICONTROL Test A/B] et activités de ciblage d’expérience à afficher pour le Web `channel`. Notez que l’appel récupère toutes les vues de la variable [!UICONTROL Test A/B] ou les activités de ciblage d’expérience d’un visiteur avec `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131` qui visite le `url`:`https://target.enablementadobe.com/react/demo/#/` est admissible.
 
-```
+```JSON  {line-numbers="true"}
 {
     "status": 200,
     "requestId": "14ce028e-d2d2-4504-b3da-32740fa8dd61",
@@ -280,4 +280,4 @@ L’exemple d’appel ci-dessus prérécupère toutes les vues créées via le S
 }
 ```
 
-Dans le `content` les champs de la réponse, les métadonnées de note telles que `type`, `selector`, `cssSelector`, et `content`, qui sont utilisées pour rendre l’expérience à votre utilisateur final lorsqu’un utilisateur visite votre page. Notez que la variable `prefetched` le contenu peut être mis en cache et rendu à l’utilisateur si nécessaire.
+Dans le `content` les champs de la réponse, les métadonnées de note telles que `type`, `selector`, `cssSelector`, et `content`, qui sont utilisées pour effectuer le rendu de l’expérience à votre visiteur lorsqu’un utilisateur visite votre page. Notez que la variable `prefetched` le contenu peut être mis en cache et rendu à l’utilisateur si nécessaire.
