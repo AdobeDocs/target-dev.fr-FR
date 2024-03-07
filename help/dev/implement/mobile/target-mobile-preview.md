@@ -4,10 +4,10 @@ description: Utilisez les liens d’aperçu mobile pour vérifier systématiquem
 title: Comment utiliser les liens d’aperçu mobile dans [!DNL Adobe Target] Mobile ?
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
-source-git-commit: 0bcfa16cb79644e7ce10e33daf6c8385104c197f
+source-git-commit: 15e42d0fb049f9243ff5468ff5f22a8e79c55c79
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 27%
+source-wordcount: '508'
+ht-degree: 23%
 
 ---
 
@@ -38,15 +38,15 @@ La fonctionnalité d’aperçu mobile vous permet de tester entièrement vos act
 
 ## Génération d’un lien d’aperçu
 
-1. Dans le [!DNL Target] Cliquez sur l’interface utilisateur **[!UICONTROL Plus d’options]** (points de suspension verticaux), puis sélectionnez **[!UICONTROL Créer un lien d’aperçu mobile]**.
+1. Dans le [!DNL Target] Cliquez sur l’interface utilisateur **[!UICONTROL More Options]** (points de suspension verticaux), puis sélectionnez **[!UICONTROL Create Mobile Preview Link]**.
 
    ![image alternative](assets/mobile-preview-create.png)
 
-1. Sélectionnez les activités à prévisualiser, puis cliquez sur **[!UICONTROL Générer un lien d’aperçu mobile]**.
+1. Sélectionnez les activités à prévisualiser, puis cliquez sur **[!UICONTROL Generate Mobile Preview Link]**.
 
    >[!NOTE]
    >
-   >Vous pouvez sélectionner uniquement Basé sur un formulaire. [!UICONTROL Test A/B] et [!UICONTROL Ciblage d’expérience] (XT).
+   >Vous pouvez sélectionner uniquement Basé sur un formulaire. [!UICONTROL A/B Test] et [!UICONTROL Experience Targeting] (XT).
 
    ![image alternative](assets/mobile-preview-select-activities.png)
 
@@ -56,7 +56,7 @@ La fonctionnalité d’aperçu mobile vous permet de tester entièrement vos act
 
    ![image alternative](assets/mobile-preview-enter-url-scheme.png)
 
-1. Cliquez sur **[!UICONTROL Générer un lien d’aperçu mobile]**, puis copiez le lien.
+1. Cliquez sur **[!UICONTROL Generate Mobile Preview Link]**, puis copiez le lien.
 
    ![image alternative](assets/mobile-preview-generate-and-copy.png)
 
@@ -70,14 +70,14 @@ Ouvrez le lien dans un navigateur mobile sur l’appareil sur lequel vous avez i
 
    |![aperçu lien profond 1](assets/mobile-preview-open-deeplink.png)|![aperçu lien profond 2](assets/mobile-preview-open-app.png)|
 
-   Votre application s’ouvre et démarre. [!DNL Target] [!UICONTROL Mode Aperçu mobile].
+   Votre application s’ouvre et démarre. [!DNL Target] [!UICONTROL Mobile Preview Mode].
 
-1. Sélectionnez la combinaison d’expériences que vous souhaitez afficher, puis cliquez sur **[!UICONTROL Démarrer les expériences]**.
+1. Sélectionnez la combinaison d’expériences à afficher, puis cliquez sur **[!UICONTROL Launch Experiences]**.
 
    |![aperçu mobile 1](assets/mobile-preview-experience-selection-1.png)|![aperçu mobile 2](assets/mobile-preview-experience-result-1-france.png)|![aperçu mobile 3](assets/mobile-preview-experience-result-1-shipfree.png)|
 |![aperçu mobile 4](assets/mobile-preview-experience-selection-2.png)|![aperçu mobile 5](assets/mobile-preview-experience-result-2-aus.png)|![aperçu mobile 6](assets/mobile-preview-experience-result-2-10off.png)|
 
 ## Limites 
 
-* Après avoir cliqué sur le bouton **[!UICONTROL Démarrer les expériences]**, la vue doit charger à nouveau pour afficher le nouveau contenu. Le moyen le plus simple est de basculer vers un autre écran et de revenir ensuite dans l’écran où la modification doit avoir lieu.
+* La vue doit se charger à nouveau pour que le nouveau contenu s’affiche après l’événement **[!UICONTROL Launch Experiences]** Cliquez sur le bouton . Le moyen le plus simple est de basculer vers un autre écran et de revenir ensuite dans l’écran où la modification doit avoir lieu.
 * L’aperçu mobile n’est pas pris en charge pour les versions Android antérieures à API-19 (KitKat).
