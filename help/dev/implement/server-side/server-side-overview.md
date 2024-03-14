@@ -4,16 +4,22 @@ description: En savoir plus sur les [!DNL Adobe Target] API de diffusion côté 
 title: Où puis-je en savoir plus sur [!DNL Target] API et SDK de diffusion côté serveur ?
 feature: Implement Server-side
 exl-id: 3eb0a789-cf1a-4d02-acf7-3c895bcb662f
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 75af30045684b95d5989b0a1f877ba95bb8cd883
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 14%
+source-wordcount: '569'
+ht-degree: 13%
 
 ---
 
 # Côté serveur : implémentation [!DNL Target]
 
 Informations sur [!DNL Adobe Target] API de diffusion côté serveur, SDK et [!DNL Target Recommendations] API.
+
+>[!NOTE]
+>
+>Si votre mise en oeuvre utilise at.js et [!DNL AppMeasurement] côté client, vous devez utiliser la variable [!UICONTROL Target Delivery API] et les SDK côté serveur décrits ci-dessous.
+>
+>Si votre mise en oeuvre utilise la variable [!UICONTROL Adobe Experience Platform Web SDK], vous devez utiliser la variable [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server API]](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank}.
 
 Le processus suivant se produit dans une implémentation côté serveur de [!DNL Target] :
 
