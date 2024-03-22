@@ -2,10 +2,10 @@
 user-guide-title: Guide du développeur d’Adobe Target
 breadcrumb-title: Guide du développeur de Target
 user-guide-description: Découvrez comment personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques.
-source-git-commit: 9707680ddcf0c373c635aa9f3cb5ba1b74cf90a3
+source-git-commit: 49b6572c0d414ab304712691c97794bb0b1e3781
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 46%
+source-wordcount: '753'
+ht-degree: 45%
 
 ---
 
@@ -22,6 +22,7 @@ ht-degree: 46%
       + [Réglementations relatives à la confidentialité et à la protection des données](before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md)
       + [Cookies Target](before-implement/privacy/cookie-behavior.md)
       + [Suppression du cookie Target](before-implement/privacy/cookie-deleting.md)
+      + [Impact de l’obsolescence des cookies tiers sur Target (at.js)](/help/dev/before-implement/privacy/third_party_cookie_deprecation)
       + [Politiques de cookie Google Chrome samesite](before-implement/privacy/google-chrome-samesite-cookie-policies.md)
       + [ITP (Intelligent Tracking Prevention) 2.x d’Apple](before-implement/privacy/apple-itp-2x.md)
       + [Directives relatives aux CSP (Content Security Policy, politique de sécurité du contenu)](before-implement/privacy/content-security-policy.md)
