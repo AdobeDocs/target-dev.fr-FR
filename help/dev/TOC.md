@@ -2,9 +2,9 @@
 user-guide-title: Guide du développeur d’Adobe Target
 breadcrumb-title: Guide du développeur de Target
 user-guide-description: Découvrez comment personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques.
-source-git-commit: 54647001c4e5dc5ce208430c7fea103a720b0980
+source-git-commit: c963a070a7a4c5e7dc2915eb5ac7d60895340705
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '756'
 ht-degree: 45%
 
 ---
@@ -164,6 +164,7 @@ ht-degree: 45%
       + [Enregistreur (Python)](implement/server-side/python/logger.md)
 + [Implémentation hybride](implement/hybrid/hybrid-overview.md)
 + [Implémentation Recommendations](implement/recommendations/recommendations.md)
++ [bêta de mise en oeuvre de Recommendations](/help/dev/implement/recommendations/recommendations-beta.md)
 + Mise en oeuvre des applications mobiles {#mobile-apps}
    + [Target pour les applications mobiles](implement/mobile/overview.md)
    + [Aperçu de Target Mobile](implement/mobile/target-mobile-preview.md)
@@ -211,7 +212,7 @@ ht-degree: 45%
       + [Présentation de l’API Modèles (Liste bloquée)](before-administer/models-api.md)
       + [API de modèles](/help/dev/administer/models-api/models-api-overview.md)
    + [API ADOBE ADMIN CONSOLE](/help/dev/before-implement/delivery-api-overview/adobe-console-api.md)
-   + [API du serveur réseau Adobe Experience Platform Edge](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
+   + [API du serveur Edge Network Adobe Experience Platform](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
 + Modèles de mise en oeuvre {#implementation-patterns}
    + [Présentation des modèles d’implémentation](/help/dev/patterns/pattern-overview.md)
    + Modèle de mise en oeuvre Recommendations à l’aide d’at.js {#atjs}
