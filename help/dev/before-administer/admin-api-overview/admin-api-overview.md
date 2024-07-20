@@ -1,36 +1,36 @@
 ---
 title: Présentation de l’API d’administration Adobe Target
-description: Présentation de la variable [!DNL Adobe Target Admin API]
+description: Présentation de  [!DNL Adobe Target Admin API]
 exl-id: 1168d376-c95b-4c5a-b7a2-c7815799a787
 feature: APIs/SDKs
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '1365'
-ht-degree: 3%
+source-wordcount: '1312'
+ht-degree: 2%
 
 ---
 
 # Présentation de l’API d’administration de Target
 
-Cet article présente un aperçu des informations générales nécessaires pour comprendre et utiliser [!DNL Adobe Target Admin API]s’affiche correctement. Le contenu suivant suppose que vous comprenez comment [configuration de l’authentification](../configure-authentication.md) pour [!DNL Adobe Target Admin API]s.
+Cet article présente un aperçu des informations générales nécessaires pour comprendre et utiliser correctement les [!DNL Adobe Target Admin API]s. Le contenu suivant suppose que vous comprenez comment [configurer l’authentification](../configure-authentication.md) pour les [!DNL Adobe Target Admin API]s.
 
 >[!NOTE]
 >
->Si vous souhaitez administrer [!DNL Target] via l’interface utilisateur, voir [section administration de *Guide du professionnel d’Adobe Target*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
+>Si vous souhaitez administrer [!DNL Target] via l’interface utilisateur, reportez-vous à la [section d’administration du *Guide du praticien d’entreprise Adobe Target*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
 >
->Les API d’administration et les API de profil sont souvent appelées collectivement (&quot;API d’administration et de profil&quot;), mais peuvent également être référencées séparément (&quot;API d’administration&quot; et &quot;API de profil&quot;). L’API Recommendations est une implémentation spécifique d’une [!DNL Target] API d’administration.
+>Les API d’administration et les API de profil sont souvent appelées collectivement (&quot;API d’administration et de profil&quot;), mais peuvent également être référencées séparément (&quot;API d’administration&quot; et &quot;API de profil&quot;). L’API Recommendations est une implémentation spécifique d’une API d’administration [!DNL Target].
 
 ## Avant de commencer
 
-Dans tous les exemples de code fournis pour le [API d’administration](../../administer/admin-api/admin-api-overview-new.md), remplacer {tenant} avec votre valeur de client, `your-bearer-token` avec le jeton d’accès que vous générez avec votre JWT et `your-api-key` avec votre clé d’API du [Console Adobe Developer](https://developer.adobe.com/console/home). Pour plus d’informations sur les clients et les JWT, consultez l’article sur la manière de [configuration de l’authentification](../configure-authentication.md) pour Adobe [!DNL Target] API d’administration.
+Dans tous les exemples de code fournis pour les [API d&#39;administration](../../administer/admin-api/admin-api-overview-new.md), remplacez {tenant} par la valeur de votre client, `your-bearer-token` par le jeton d&#39;accès que vous générez avec vos JWT et `your-api-key` avec votre clé d&#39;API provenant de [Adobe Developer Console](https://developer.adobe.com/console/home). Pour plus d’informations sur les clients et les JWT, consultez l’article sur la [configuration de l’authentification](../configure-authentication.md) pour les API d’administration d’Adobe [!DNL Target].
 
 ## Contrôle de version
 
 Toutes les API sont associées à une version. Il est important de fournir la version appropriée de l’API que vous souhaitez utiliser.
 
-Si la requête contient un payload (POST ou PUT), la variable `Content-Type` L’en-tête de la requête est utilisé pour spécifier la version.
+Si la requête contient un payload (POST ou PUT), l’en-tête `Content-Type` de la requête est utilisé pour spécifier la version.
 
-Si la requête ne contient pas de payload (GET, DELETE ou OPTIONS), la variable `Accept` header est utilisé pour spécifier la version.
+Si la requête ne contient pas de payload (GET, DELETE ou OPTIONS), l’en-tête `Accept` est utilisé pour spécifier la version.
 
 Si aucune version n’est fournie, l’appel est défini par défaut sur V1 (application/vnd.adobe.target.v1+json).
 
@@ -56,7 +56,7 @@ Message d’erreur pour les fonctionnalités non prises en charge
 
 Collecte Postman d’administration
 
-Postman est une application qui permet de déclencher facilement des appels API. Ceci [Collection Postman de l’API d’administration Target](https://developers.adobetarget.com/api/#admin-postman-collection) contient tous les appels d’API d’administration de Target qui nécessitent une authentification à l’aide des activités, audiences, offres, rapports, mbox et environnements.
+Postman est une application qui permet de déclencher facilement des appels API. Cette [ collection Postman de l’API d’administration Target ](https://developers.adobetarget.com/api/#admin-postman-collection) contient tous les appels de l’API d’administration Target qui nécessitent une authentification à l’aide des activités, audiences, offres, rapports, mbox et environnements.
 
 ## Codes de réponse
 
@@ -65,9 +65,9 @@ Voici les codes de réponse courants pour les API d’administration Target.
 | État | Signification | Description |
 | --- | --- | --- |
 | 200 | [OK](https://www.rfc-editor.org/rfc/rfc7231#section-6.3.1) | OK |  |
-| 400 | [Demande incorrecte](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.1) | Requête incorrecte. Il est probable que les données fournies dans la requête ne soient pas valides. |  |
-| 401 | [Interdiction](https://www.rfc-editor.org/rfc/rfc7235#section-3.1) | L’utilisateur n’est pas autorisé à effectuer cette opération. |  |
-| 403 | [Interdit](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.3) | L&#39;accès à cette ressource est interdit. |  |
+| 400 | [Requête incorrecte](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.1) | Requête incorrecte. Il est probable que les données fournies dans la requête ne soient pas valides. |  |
+| 401 | [Non autorisé](https://www.rfc-editor.org/rfc/rfc7235#section-3.1) | L’utilisateur n’est pas autorisé à effectuer cette opération. |  |
+| 403 | [Forbidden](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.3) | L&#39;accès à cette ressource est interdit. |  |
 | 404 | [Introuvable](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.4) | La ressource référencée est introuvable. |  |
 
 ## Activités
@@ -110,7 +110,7 @@ Le traitement par lots se termine une fois toutes les opérations terminées, un
 
 | Attribut | Description | Limites | Par défaut |
 | --- | --- | --- | --- |
-| body | corps pour l’opération de lot HTTP. seront ignorés pour toutes les actions, à l’exception de POST et de PUT. peut faire référence aux identifiants des actions par lots précédentes, par exemple : &quot;offerId&quot;: &quot;{operationIdResponse:0}&quot;, &quot;segmentId&quot;: &quot;{operationIdResponse:1}&quot; | doit être un JSON valide ; si vous référencez une operationIdResponse, la réponse operationId référencée doit être un ID valide et la méthode de cette action doit être POST. | objet vide {} |  |
+| corps | corps pour l’opération de lot HTTP. seront ignorés pour toutes les actions, à l’exception de POST et de PUT. peut faire référence aux identifiants des actions par lots précédentes, par exemple : &quot;offerId&quot;: &quot;{operationIdResponse:0}&quot;, &quot;segmentId&quot;: &quot;{operationIdResponse:1}&quot; | doit être un JSON valide ; si vous référencez une operationIdResponse, la réponse operationId référencée doit être un ID valide et la méthode de cette action doit être POST. | objet vide {} |  |
 | dependingOnOperationIds | liste des ID de contrainte qui garantissent que l’opération en cours s’exécutera uniquement si les opérations spécifiées sont terminées avec succès. Peuvent être utilisées pour enchaîner les opérations. | 255 opérations au maximum sont autorisées ; les valeurs uniques ne sont autorisées que ; doit pointer vers un operationId valide dans le tableau ; les dépendances cycliques ne sont pas autorisées |  |  |
 | en-têtes | tableau d’en-têtes clé-valeur à envoyer avec une opération particulière. Si l’authentification pour l’API de lot a été effectuée via l’en-tête d’autorisation, elle sera également copiée pour des opérations individuelles. | Le nombre maximal d’en-têtes dans le tableau autorisé est de 50. | Content-Type: application/json |  |
 | headers->name | nom de l’en-tête | doit être unique parmi d’autres noms d’en-tête. les en-têtes ne sont pas sensibles à la casse par rfc, sinon les valeurs se remplaceront les unes les autres. |  |  |
@@ -118,7 +118,7 @@ Le traitement par lots se termine une fois toutes les opérations terminées, un
 | method | méthode HTTP à utiliser. Options disponibles : GET, POST, PUT, PATCH, DELETE | seules les méthodes GET, POST, PUT, PATCH et DELETE sont autorisées |  |  |
 | operationId | identifiant d’opération utilisé pour identifier une opération parmi d’autres opérations pour les réponses et le référencement des résultats. | unique parmi d’autres opérations ; valeurs comprises entre 0 et 255 |  |  |
 | opérations | liste des opérations à effectuer dans un lot. l’ordre n’est pas pertinent. | 256 opérations au maximum sont autorisées |  |  |
-| relativeUrl | URL relative de l’API de repos de l’administrateur, partie après &quot;/admin/rest/&quot;. Peut contenir des paramètres de chaîne de requête tels que : &quot;/v2/campaigns?limit=10&amp;offset=10&quot;. peut faire référence à des URL avec des identifiants provenant d’actions par lots précédentes, par exemple : &quot;/v1/offer/{operationIdResponse:0}&quot;. Si des paramètres de requête sont envoyés, ils doivent être codés en URL. | doit commencer par / (être relatif) ; seules les nouvelles API JSON valides sont prises en charge ; en cas d’URL relative non valide, une réponse 404 pour une opération particulière est renvoyée ; en cas de référencement d’une operationIdResponse, la réponse operationId référencée doit être un ID valide et la méthode de cette action doit être POST. |  |  |
+| relativeUrl | URL relative de l’API de repos de l’administrateur, partie après &quot;/admin/rest/&quot;. Peut contenir des paramètres de chaîne de requête tels que : &quot;/v2/campaigns?limit=10&amp;offset=10&quot;. peut faire référence aux URL contenant des identifiants provenant d’actions par lots précédentes, par exemple : &quot;/v1/offer/{operationIdResponse:0}&quot;. Si des paramètres de requête sont envoyés, ils doivent être codés en URL. | doit commencer par / (être relatif) ; seules les nouvelles API JSON valides sont prises en charge ; en cas d’URL relative non valide, une réponse 404 pour une opération particulière est renvoyée ; en cas de référencement d’une operationIdResponse, la réponse operationId référencée doit être un ID valide et la méthode de cette action doit être POST. |  |  |
 
 #### Exemple d’objet de requête
 
@@ -154,7 +154,7 @@ Le traitement par lots se termine une fois toutes les opérations terminées, un
 | en-têtes | tableau d’en-têtes clé-valeur à envoyer en tant que réponse pour une opération particulière. |  |
 | headers->name | nom de l’en-tête |  |
 | headers->value | valeur d’en-tête |  |
-| body | corps de l’opération de réponse par lots HTTP |  |
+| corps | corps de l’opération de réponse par lots HTTP |  |
 
 #### Exemple d’objet Response
 

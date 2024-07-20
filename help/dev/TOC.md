@@ -41,7 +41,7 @@ ht-degree: 45%
    + [Navigateurs pris en charge](before-implement/supported-browsers.md)
    + [Modifications du chiffrement de TLS (Transport Layer Security)](before-implement/tls-transport-layer-security-encryption.md)
    + [CNAME et Adobe Target](before-implement/implement-cname-support-in-target.md)
-+ Mise en oeuvre côté client {#client-side}
++ Implémentation côté client {#client-side}
    + [Aperçu : implémentation de Target pour le web côté client](implement/client-side/overview.md)
    + [Mise en oeuvre du SDK Web Adobe Experience Platform - Aperçu](implement/client-side/aep-web-sdk.md)
    + Implémentation d’at.js {#at-js-implementation}
@@ -90,12 +90,12 @@ ht-degree: 45%
       + [Utilisation d’une mbox globale à partir d’une implémentation héritée](implement/client-side/atjs/global-mbox/mbox-global-target-standard.md)
       + [Transfert de paramètres vers une mbox globale](implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md)
       + [Questions fréquentes relatives aux mboxes globales](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
-+ Mise en oeuvre côté serveur {#server-side}
++ Implémentation côté serveur {#server-side}
    + [Aperçu de l’implémentation de Target côté serveur](implement/server-side/server-side-overview.md)
    + [Prise en main des SDK Target](implement/server-side/sdk-guides/getting-started/getting-started.md)
    + [Exemples d’applications](implement/server-side/sdk-guides/sample-apps/sample-apps.md)
    + [Transition des API héritées de Target vers Adobe I/O](implement/server-side/transition-from-target-classic-apis.md)
-   + Principes fondamentaux {#core-principles}
+   + Principes de base {#core-principles}
       + [Présentation des principes de base](implement/server-side/sdk-guides/core-principles/overview.md)
       + [Identifiant utilisateur et regroupement](implement/server-side/sdk-guides/core-principles/user-identification-and-bucketing.md)
       + [Ciblage de l’audience](implement/server-side/sdk-guides/core-principles/audience-targeting.md)
@@ -165,18 +165,18 @@ ht-degree: 45%
 + [Implémentation hybride](implement/hybrid/hybrid-overview.md)
 + [Implémentation Recommendations](implement/recommendations/recommendations.md)
 + [bêta de mise en oeuvre de Recommendations](/help/dev/implement/recommendations/recommendations-beta.md)
-+ Mise en oeuvre des applications mobiles {#mobile-apps}
++ Implémentation de l&#39;application mobile {#mobile-apps}
    + [Target pour les applications mobiles](implement/mobile/overview.md)
    + [Aperçu de Target Mobile](implement/mobile/target-mobile-preview.md)
    + [Utilisation du service de localisation](implement/mobile/use-location-service.md)
    + [FAQ sur Target pour les applications mobiles](implement/mobile/mobile-faq.md)
    + [Mise en oeuvre de Target avec le SDK AEP Mobile dans une application native avec des vues web](/help/dev/implement/mobile/native-app.md)
-+ Implémentation par email {#implement-email}
++ Implémentation des emails {#implement-email}
    + [Message électronique : implémentation de Target](implement/email/overview.md)
    + [Création d’une adbox pour une image](implement/email/testing-content-with-the-adbox.md)
    + [Test d’une adbox d’image de courrier électronique](implement/email/testing-email-image-adbox.md)
    + [Fonctionnement avec un redirecteur](implement/email/working-with-redirectors.md)
-+ Guides d’API {#api}
++ Guides de l’API {#api}
    + [Présentation de l’API Target](/help/dev/before-administer/target-api-overview.md)
    + [Configuration de l’authentification pour les API Target](/help/dev/before-administer/configure-authentication.md)
    + Guide de l’API de diffusion {#delivery-api}
@@ -202,7 +202,7 @@ ht-degree: 45%
       + [API de mise à jour de profil unique](/help/dev/administer/profile-api/profile-single-api.md)
       + [API de mise à jour des profils en masse](/help/dev/administer/profile-api/profile-bulk-api.md)
    + [API de création de rapports](/help/dev/administer/reporting-api/reporting-api.md)
-   + API RECOMMENDATIONS {#recommendations-api}
+   + API Recommendations {#recommendations-api}
       + [Présentation de l’API Recommendations](before-administer/recs-api/overview.md)
       + [Gestion de votre catalogue avec les API](before-administer/recs-api/manage-catalog.md)
       + [Gestion des critères personnalisés](before-administer/recs-api/manage-custom-criteria.md)
@@ -213,9 +213,9 @@ ht-degree: 45%
       + [API de modèles](/help/dev/administer/models-api/models-api-overview.md)
    + [API ADOBE ADMIN CONSOLE](/help/dev/before-implement/delivery-api-overview/adobe-console-api.md)
    + [API du serveur Edge Network Adobe Experience Platform](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
-+ Modèles de mise en oeuvre {#implementation-patterns}
++ Modèles d’implémentation {#implementation-patterns}
    + [Présentation des modèles d’implémentation](/help/dev/patterns/pattern-overview.md)
-   + Modèle de mise en oeuvre Recommendations à l’aide d’at.js {#atjs}
+   + Modèle de mise en oeuvre Recommendations utilisant at.js {#atjs}
       + [Modèle de mise en oeuvre Recommendations à l’aide de la présentation d’at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
       + [Initialisation des SDK](/help/dev/patterns/recs-atjs/initialize-sdk.md)
       + [Configuration de la collecte de données](/help/dev/patterns/recs-atjs/data-collection.md)

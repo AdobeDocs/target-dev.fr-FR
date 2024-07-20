@@ -1,25 +1,25 @@
 ---
 title: Résolution des problèmes de prise de décision sur les appareils
-description: Découvrez comment résoudre les problèmes [!UICONTROL prise de décision sur appareil]
+description: Découvrez comment résoudre les problèmes [!UICONTROL on-device decisioning]
 exl-id: e76f95ce-afae-48e0-9dbb-2097133574dc
 feature: APIs/SDKs
 source-git-commit: 1d892d4d4d6f370f7772d0308ee0dd0d5c12e700
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
 
-# Dépannage [!UICONTROL prise de décision sur appareil]
+# Résolution des problèmes [!UICONTROL on-device decisioning]
 
 ## Validation de la configuration
 
 ### Résumé des étapes
 
-1. Assurez-vous que la variable `logger` est configuré
-1. Assurez-vous que [!DNL Target] traces activées
-1. Vérifiez les [!UICONTROL prise de décision sur appareil] *artefact de règle* a été récupéré et mis en cache selon l’intervalle d’interrogation défini.
-1. Validation de la diffusion de contenu via l’artefact de règle mis en cache en créant un test [!UICONTROL prise de décision sur appareil] activité via le compositeur d’expérience d’après les formulaires.
+1. Assurez-vous que le `logger` est configuré
+1. Assurez-vous que les [!DNL Target] traces sont activées
+1. Vérifiez que l’ [!UICONTROL on-device decisioning] *artefact de règle* a été récupéré et mis en cache selon l’intervalle d’interrogation défini.
+1. Validez la diffusion de contenu via l’artefact de règle mis en cache en créant une activité de test [!UICONTROL on-device decisioning] via le compositeur d’expérience d’après les formulaires.
 1. Erreurs de notification d’envoi Inspect
 
 ## 1. Vérifiez que l’enregistreur est configuré.
@@ -28,7 +28,7 @@ Lors de l’initialisation du SDK, veillez à activer la journalisation.
 
 **Node.js**
 
-Pour le SDK Node.js a `logger` doit être fourni.
+Pour le SDK Node.js, un objet `logger` doit être fourni.
 
 ```js {line-numbers="true"}
 const CONFIG = {
@@ -40,7 +40,7 @@ const CONFIG = {
 
 **SDK Java**
 
-Pour le SDK Java `logRequests` sur le `ClientConfig` doit être activé.
+Pour le SDK Java `logRequests` sur `ClientConfig`, doit être activé.
 
 ```js {line-numbers="true"}
 ClientConfig config = ClientConfig.builder()
@@ -56,19 +56,19 @@ La JVM doit également être lancée avec le paramètre de ligne de commande sui
 java -Dorg.slf4j.simpleLogger.defaultLogLevel=DEBUG ...
 ```
 
-## 2. Assurez-vous que[!DNL Target]Les traces sont activées
+## 2. Vérifiez que [!DNL Target]Traces est activé
 
-L’activation des traces génère des informations supplémentaires à partir de [!DNL Adobe Target] en ce qui concerne l’artefact rules.
+L’activation des traces génère des informations supplémentaires à partir de [!DNL Adobe Target] en ce qui concerne l’artefact de règles.
 
-1. Accédez au[!DNL Target]Interface utilisateur dans [!DNL Experience Cloud].
+1. Accédez à l’[!DNL Target]interface utilisateur dans [!DNL Experience Cloud].
 
-   ![image alternative](assets/asset-target-ui-1.png)
+   ![alt image](assets/asset-target-ui-1.png)
 
-1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]** et cliquez sur **[!UICONTROL Générer un nouveau jeton d’autorisation]**.
+1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** et cliquez sur **[!UICONTROL Generate New Authorization Token]**.
 
-   ![image alternative](assets/asset-target-ui-2.png)
+   ![alt image](assets/asset-target-ui-2.png)
 
-1. Copiez le jeton d’autorisation nouvellement généré dans le Presse-papiers et ajoutez-le à votre[!DNL Target]request :
+1. Copiez le jeton d’autorisation nouvellement généré dans le presse-papiers et ajoutez-le à votre requête [!DNL Target]:
 
    **Node.js**
 
@@ -113,11 +113,11 @@ L’activation des traces génère des informations supplémentaires à partir d
      AT: LD.ArtifactProvider artifact received - status=200
    ```
 
-## 3. Vérifiez les [!UICONTROL prise de décision sur appareil] *artefact de règle* a été récupéré et mis en cache selon l’intervalle d’interrogation défini.
+## 3. Vérifiez que l’ [!UICONTROL on-device decisioning] *artefact de règle* a été récupéré et mis en cache selon l’intervalle d’interrogation défini.
 
 1. Patientez pendant la durée de l’intervalle d’interrogation (20 minutes par défaut) et assurez-vous que l’artefact est récupéré par le SDK. Les mêmes journaux de terminal seront générés.
 
-   En outre, des informations provenant de la variable[!DNL Target]Trace doit être généré vers le terminal avec des détails sur l’artefact de règle.
+   De plus, les informations de la [!DNL Target]Trace doivent être envoyées au terminal avec des détails sur l’artefact de règle.
 
    ```text {line-numbers="true"}
    "trace": {
@@ -135,25 +135,25 @@ L’activation des traces génère des informations supplémentaires à partir d
      },
    ```
 
-## 4. Validez la diffusion de contenu via l’artefact de règle mis en cache en créant un test. [!UICONTROL prise de décision sur appareil] activité via le compositeur d’expérience d’après les formulaires
+## 4. Validez la diffusion de contenu via l’artefact de règle mis en cache en créant une activité de test [!UICONTROL on-device decisioning] via le compositeur d’expérience d’après les formulaires
 
-1. Accédez au[!DNL Target]Interface utilisateur dans Experience Cloud
+1. Accédez à l’interface utilisateur de [!DNL Target]dans Experience Cloud
 
-   ![image alternative](assets/asset-target-ui-1.png)
+   ![alt image](assets/asset-target-ui-1.png)
 
 1. Créez une activité XT à l’aide du compositeur d’expérience d’après les formulaires.
 
-   ![image alternative](assets/asset-form-base-composer-ui.png)
+   ![alt image](assets/asset-form-base-composer-ui.png)
 
-1. Saisissez le nom de mbox utilisé dans votre[!DNL Target]request comme emplacement de l’activité XT (notez qu’il doit s’agir d’un nom de mbox unique, spécifiquement à des fins de développement).
+1. Saisissez le nom de mbox utilisé dans votre requête [!DNL Target]comme emplacement de l’activité XT (notez qu’il doit s’agir d’un nom de mbox unique, spécifiquement à des fins de développement).
 
-   ![image alternative](assets/asset-mbox-location-ui.png)
+   ![alt image](assets/asset-mbox-location-ui.png)
 
-1. Remplacez le contenu par une offre de HTML ou JSON. Cette valeur est renvoyée dans la variable[!DNL Target]à votre application. Laissez le ciblage de l’activité &quot;Tous les visiteurs&quot; et sélectionnez une mesure de votre choix. Nommez l’activité, enregistrez-la, puis activez-la pour vous assurer que la mbox/l’emplacement utilisé est réservé au développement.
+1. Remplacez le contenu par une offre d’HTML ou JSON. Cela sera renvoyé dans la requête[!DNL Target]à votre application. Laissez le ciblage de l’activité &quot;Tous les visiteurs&quot; et sélectionnez une mesure de votre choix. Nommez l’activité, enregistrez-la, puis activez-la pour vous assurer que la mbox/l’emplacement utilisé est réservé au développement.
 
-   ![image alternative](assets/asset-target-content-ui.png)
+   ![alt image](assets/asset-target-content-ui.png)
 
-1. Dans votre application, ajoutez une instruction de journal pour le contenu reçu dans la réponse de votre[!DNL Target]requête
+1. Dans votre application, ajoutez une instruction de journal pour le contenu reçu dans la réponse de votre requête [!DNL Target].
 
    **SDK Node.js**
 
@@ -191,9 +191,9 @@ L’activation des traces génère des informations supplémentaires à partir d
    }
    ```
 
-1. Consultez les journaux de votre terminal pour vérifier que votre contenu est en cours de diffusion et qu’il a été diffusé via l’artefact de règles sur votre serveur. La variable `LD.DeciscionProvider` est généré lorsque la qualification et la prise de décision de l’activité ont été déterminées sur l’appareil en fonction de l’artefact de règles. En outre, en raison de la journalisation de la variable `content`, vous devriez voir `<div>test</div>` ou toutefois, vous avez décidé que la réponse doit être lors de la création de l’activité de test.
+1. Consultez les journaux de votre terminal pour vérifier que votre contenu est en cours de diffusion et qu’il a été diffusé via l’artefact de règles sur votre serveur. L’objet `LD.DeciscionProvider` est généré lorsque la qualification et la prise de décision de l’activité ont été déterminées sur l’appareil en fonction de l’artefact de règles. De plus, en raison de la journalisation de `content`, vous devriez voir `<div>test</div>` ou la réponse que vous avez choisie lors de la création de l’activité de test.
 
-   **Sortie de journal**
+   **Sortie de journalisation**
 
    ```text {line-numbers="true"}
    AT: LD.DecisionProvider {...}
@@ -239,11 +239,11 @@ client = TargetClient.create({
 
 ## Scénarios de dépannage courants
 
-Veillez à consulter [fonctionnalités prises en charge](supported-features.md) pour [!UICONTROL prise de décision sur appareil] lorsque vous rencontrez des problèmes.
+Veillez à passer en revue les [fonctionnalités prises en charge](supported-features.md) pour [!UICONTROL on-device decisioning] lorsque vous rencontrez des problèmes.
 
 ### Les activités de prise de décision sur appareil ne s’exécutent pas en raison d’une audience ou d’une activité non prise en charge
 
-Un problème courant qui peut se produire est [!UICONTROL prise de décision sur appareil] les activités ne s’exécutent pas en raison de l’audience en cours d’utilisation ou du type d’activité non pris en charge.
+Un problème courant qui peut se produire est que les activités [!UICONTROL on-device decisioning] ne s’exécutent pas en raison de l’audience utilisée ou du type d’activité non pris en charge.
 
 (1) À l’aide de la sortie du journal, passez en revue les entrées de la propriété trace dans votre objet de réponse. Identifiez spécifiquement la propriété des campagnes :
 
@@ -264,11 +264,11 @@ Un problème courant qui peut se produire est [!UICONTROL prise de décision sur
     }
 ```
 
-Vous remarquerez que l’activité pour laquelle vous essayez de vous qualifier ne figure pas dans la variable `campaigns` car l’audience ou le type d’activité n’est pas pris en charge. Si l’activité est répertoriée sous la variable `campaigns` , votre problème n’est pas dû à un type d’audience ou d’activité non pris en charge.
+Vous remarquerez que l’activité pour laquelle vous essayez de vous qualifier ne figure pas dans la propriété `campaigns`, car l’audience ou le type d’activité n’est pas pris en charge. Si l’activité est répertoriée sous la propriété `campaigns`, votre problème n’est pas dû à une audience ou à un type d’activité non pris en charge.
 
-(2) Recherchez également la variable `rules.json` en examinant le fichier `trace` > `artifact` > `artifactLocation` dans la sortie de l’enregistreur et notez que votre activité est absente du `rules` > `mboxes` property:
+(2) Recherchez également le fichier `rules.json` en regardant `trace` > `artifact` > `artifactLocation` dans la sortie de l’enregistreur et notez que votre activité est absente de la propriété `rules` > `mboxes` :
 
-**Sortie de journal**
+**Sortie de journalisation**
 
 ```text {line-numbers="true"}
  ...
@@ -278,11 +278,11 @@ Vous remarquerez que l’activité pour laquelle vous essayez de vous qualifier 
  }
 ```
 
-Enfin, accédez au[!DNL Target]et localisez l’activité en question : [experience.adobe.com/target](https://experience.adobe.com/target)
+Enfin, accédez à l’[!DNL Target]interface utilisateur et localisez l’activité en question : [experience.adobe.com/target](https://experience.adobe.com/target)
 
 Passez en revue les règles utilisées dans l’audience et assurez-vous de n’utiliser que celles mentionnées ci-dessus qui sont prises en charge. De plus, assurez-vous que le type d’activité est A/B ou XT.
 
-![image alternative](assets/asset-target-audience-ui.png)
+![alt image](assets/asset-target-audience-ui.png)
 
 ### Les activités de prise de décision sur appareil ne s’exécutent pas en raison d’une audience non qualifiée
 
@@ -342,7 +342,7 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-(2) Assurez-vous que vous êtes qualifié pour l’audience de votre activité en consultant la section `matchedRuleConditions` ou `unmatchedRuleConditions` de votre sortie de trace :
+(2) Assurez-vous que vous êtes qualifié pour l’audience de votre activité en examinant la propriété `matchedRuleConditions` ou `unmatchedRuleConditions` de votre sortie de trace :
 
 **Sortie de suivi**
 
@@ -394,11 +394,11 @@ Il n’est peut-être pas évident de comprendre pourquoi une activité de prise
 ...
 ```
 
-Consultez la `artifactLastRetrieved` date de l’artefact et assurez-vous que vous disposez de la dernière `rules.json` téléchargé dans votre application.
+Examinez la date `artifactLastRetrieved` de l’artefact et assurez-vous que le dernier fichier `rules.json` est téléchargé dans votre application.
 
-(2) Recherchez la variable `evaluatedCampaignTargets` dans la sortie de l’enregistreur :
+(2) Recherchez la propriété `evaluatedCampaignTargets` dans la sortie de l&#39;enregistreur :
 
-**Sortie de journal**
+**Sortie de journalisation**
 
 ```text {line-numbers="true"}
 ...
@@ -470,24 +470,24 @@ Consultez la `artifactLastRetrieved` date de l’artefact et assurez-vous que vo
 ...
 ```
 
-(3) Consultez la section `context`, `page`, et `referring` pour s’assurer qu’elle est aussi performante que prévu, ce qui peut affecter la qualification de ciblage de l’activité.
+(3) Examinez les données `context`, `page` et `referring` pour vous assurer qu’elles sont aussi bonnes que prévu, car elles peuvent affecter la qualification de ciblage de l’activité.
 
-(4) Consultez la section `campaignId` pour s’assurer que l’activité ou les activités que vous prévoyez d’exécuter sont évaluées. La variable `campaignId` correspondra à l’ID d’activité sur l’onglet d’aperçu de l’activité dans la variable[!DNL Target]Interface utilisateur :
+(4) Vérifiez le `campaignId` pour vous assurer que l’activité ou les activités que vous prévoyez d’exécuter sont évaluées. Le `campaignId` correspondra à l’ID d’activité sur l’onglet d’aperçu de l’activité dans l’[!DNL Target]interface utilisateur :
 
-![image alternative](assets/asset-activity-id-target-ui.png)
+![alt image](assets/asset-activity-id-target-ui.png)
 
-(5) Consultez la section `matchedRuleConditions` et `unmatchedRuleConditions` pour identifier les problèmes liés à la qualification aux règles d’audience pour une activité donnée.
+(5) Passez en revue les `matchedRuleConditions` et `unmatchedRuleConditions` afin d’identifier les problèmes admissibles aux règles d’audience pour une activité donnée.
 
-(6) Consultez la dernière version `rules.json` pour vous assurer que l’activité ou les activités que vous souhaitez exécuter localement sont incluses. L’emplacement est référencé ci-dessus à l’étape 1.
+(6) Consultez le dernier fichier `rules.json` pour vous assurer que l’activité ou les activités que vous souhaitez exécuter localement sont incluses. L’emplacement est référencé ci-dessus à l’étape 1.
 
 (7) Assurez-vous que vous utilisez les mêmes noms de mbox dans votre requête et dans vos activités.
 
 (8) Assurez-vous d’utiliser les règles d’audience prises en charge et les types d’activité pris en charge.
 
-### Un appel au serveur est effectué même si la configuration de l’activité sous une mbox indique &quot;Lors de la prise de décision du périphérique éligible&quot; dans la variable[!DNL Target]interface utilisateur
+### Un appel au serveur est effectué même si la configuration de l’activité sous une mbox indique &quot;On Device Decisioning Eligible&quot; dans l’interface utilisateur de [!DNL Target].
 
 Il existe plusieurs raisons pour lesquelles un appel au serveur est effectué même si l’appareil est éligible pour la prise de décision sur l’appareil :
 
-* Lorsque la mbox utilisée pour une activité &quot;On Device Decisioning Eligible&quot; est également utilisée pour d’autres activités qui ne sont pas &quot;On Device Decisioning Eligible&quot;, la mbox est répertoriée sous le `remoteMboxes` dans la section `rules.json` artefact. Lorsqu’une mbox est répertoriée sous `remoteMboxes`, n’importe quel `getOffer(s)` les appels à cette mbox entraînent un appel au serveur.
+* Lorsque la mbox utilisée pour une activité &quot;On Device Decisioning Eligible&quot; est également utilisée pour d’autres activités qui ne sont pas &quot;On Device Decisioning Eligible&quot;, la mbox est répertoriée sous la section `remoteMboxes` de l’artefact `rules.json`. Lorsqu’une mbox est répertoriée sous `remoteMboxes`, tout appel `getOffer(s)` à cette mbox déclenche un appel au serveur.
 
-* Si vous configurez une activité sous un espace de travail/une propriété et que vous n’en incluez pas la même lors de la configuration du SDK, la variable `rules.josn` de l’espace de travail par défaut à télécharger, qui peut utiliser la mbox sous la propriété `remoteMboxes` .
+* Si vous configurez une activité sous un espace de travail/une propriété et que vous n’en incluez pas la même lors de la configuration du SDK, cela peut entraîner le téléchargement de l’`rules.josn` de l’espace de travail par défaut, qui peut utiliser la mbox sous la section `remoteMboxes` .

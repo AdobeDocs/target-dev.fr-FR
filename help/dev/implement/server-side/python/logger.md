@@ -1,6 +1,6 @@
 ---
-title: Initialisez la [!DNL Adobe Target] SDK Python pour consigner les requêtes
-description: Découvrez comment consigner des requêtes dans le [!DNL Adobe Target] SDK Python.
+title: Initialisation du kit SDK  [!DNL Adobe Target] Python pour consigner les requêtes
+description: Découvrez comment consigner des requêtes dans le kit SDK  [!DNL Adobe Target] Python.
 feature: APIs/SDKs
 exl-id: 0b3792a5-a9a7-4768-a429-598b49f1fd93
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
@@ -14,9 +14,9 @@ ht-degree: 3%
 
 ## Description
 
-When [initialisation du SDK](initialize-sdk.md), la variable `options["logger"]` est un objet facultatif. Par défaut, un enregistreur de niveau INFO sera créé sous la variable `adobe.target` espace de noms. Toutefois, pour personnaliser efficacement le niveau de journalisation ou le débogage en cas de problème, une `logger` peut être fourni lors de l’initialisation du SDK.
+Lorsque [ initialise le SDK ](initialize-sdk.md), l’objet `options["logger"]` est un objet facultatif. Par défaut, un enregistreur de niveau INFO sera créé sous l’espace de noms `adobe.target`. Cependant, pour personnaliser le niveau de journalisation ou déboguer efficacement en cas de problème, un objet `logger` peut être fourni lors de l’initialisation du SDK.
 
-La variable `logger` doit comporter un objet `debug()` et un `error()` . Lorsqu’un enregistreur approprié est fourni, [!DNL Target] les demandes et réponses seront consignées.
+L’objet `logger` doit avoir une méthode `debug()` et une méthode `error()`. Lorsqu’un journal approprié est fourni, [!DNL Target] requêtes et réponses seront consignées.
 
 ## Exemple
 

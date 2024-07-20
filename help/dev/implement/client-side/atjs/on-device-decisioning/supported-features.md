@@ -1,38 +1,38 @@
 ---
 keywords: implémentation, bibliothèque javascript, js, atjs, prise de décision sur les appareils, prise de décision sur les appareils, fonctionnalités prises en charge, 8 $
-description: Découvrez les fonctionnalités prises en charge pour [!UICONTROL prise de décision sur appareil].
+description: Découvrez les fonctionnalités prises en charge pour [!UICONTROL on-device decisioning].
 title: Quelles fonctionnalités sont prises en charge dans la prise de décision sur les périphériques ?
 feature: at.js
 exl-id: bdd65658-6c4a-41ae-a222-59c00a11bdac
 source-git-commit: 79ffa3f58d780f587fe1202b82d3860395504dfe
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 10%
+source-wordcount: '478'
+ht-degree: 12%
 
 ---
 
-# Fonctionnalités prises en charge pour [!UICONTROL prise de décision sur appareil]
+# Fonctionnalités prises en charge pour [!UICONTROL on-device decisioning]
 
-La variable [!DNL Adobe Target] Le SDK JS offre aux clients la possibilité de choisir entre les performances et l’actualisation des données pour les décisions. En d’autres termes, si la diffusion de contenu personnalisé le plus pertinent et attrayant par le biais de l’apprentissage automatique est la plus importante pour vous, un appel au serveur en direct doit être effectué. Mais lorsque les performances sont plus critiques, une décision doit être prise sur l’appareil et en mémoire. Pour [!UICONTROL prise de décision sur appareil] pour travailler, reportez-vous aux sections suivantes qui répertorient les fonctionnalités prises en charge.
+Le SDK JS [!DNL Adobe Target] offre aux clients la possibilité de choisir entre les performances et l’actualisation des données pour les décisions. En d’autres termes, si la diffusion de contenu personnalisé le plus pertinent et attrayant par le biais de l’apprentissage automatique est la plus importante pour vous, un appel au serveur en direct doit être effectué. Mais lorsque les performances sont plus critiques, une décision doit être prise sur l’appareil et en mémoire. Pour que [!UICONTROL on-device decisioning] fonctionne, reportez-vous aux sections suivantes qui répertorient les fonctionnalités prises en charge.
 
 ## Types d’activité pris en charge
 
-Le tableau suivant indique laquelle [types d’activités](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) créé par la fonction [Compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html) ou [Compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC) sont pris en charge ou non par [!UICONTROL prise de décision sur appareil].
+Le tableau suivant indique les [types d’activité](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) créés par le [compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html) ou le [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC) sont pris en charge ou non pour [!UICONTROL on-device decisioning].
 
 | Type d’activité | Pris en charge ? |
 | --- | --- |
 | [Test A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) | Oui |
 | [affectation automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html) | Non |
-| [ciblage automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) ![Premium](../../../assets/premium.png) | Non |
+| [Ciblage automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) ![Premium](../../../assets/premium.png) | Non |
 | [Test multivarié](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html) (MVT) | Non |
 | [Ciblage d’expérience](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) | Oui |
 | [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) ![Premium](../../../assets/premium.png) | Non |
-| [Recommandations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) ![Premium](../../../assets/premium.png) | Non |
+| [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) ![Premium](../../../assets/premium.png) | Non |
 | [Activités utilisant Analytics pour Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?) (A4T) | Oui |
 
 ## Ciblage de l’audience
 
-Le tableau suivant indique les règles d’audience prises en charge ou non par [!UICONTROL prise de décision sur appareil].
+Le tableau suivant indique les règles d’audience prises en charge ou non pour [!UICONTROL on-device decisioning].
 
 | Règle d’audience | Pris en charge ? |
 | --- | --- |
@@ -46,11 +46,11 @@ Le tableau suivant indique les règles d’audience prises en charge ou non par 
 | [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Non |
 | [Sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Non |
 | [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Oui |
-| Audiences Adobe Experience Cloud<P>([!DNL Audiences from Adobe Analytics], [!DNL Adobe Audience Manager], et [!DNL Adobe Experience Manager]) | Non |
+| Audiences Adobe Experience Cloud<P>([!DNL Audiences from Adobe Analytics], [!DNL Adobe Audience Manager] et [!DNL Adobe Experience Manager]) | Non |
 
-### Ciblage géographique pour [!UICONTROL prise de décision sur appareil]
+### Ciblage géographique pour [!UICONTROL on-device decisioning]
 
-Pour maintenir une latence minimale pour [!UICONTROL prise de décision sur appareil] activités avec des audiences basées sur la géographie, Adobe vous recommande de fournir les valeurs géographiques vous-même dans l’appel à la fonction [getOffers](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md). Définissez l’objet Geo dans le contexte de la requête. Cela signifie, à partir du navigateur, un moyen de déterminer l’emplacement de chaque visiteur. Par exemple, vous pouvez effectuer une recherche IP/géo à l’aide d’un service que vous configurez. Certains fournisseurs d’hébergement, tels que Google Cloud, fournissent cette fonctionnalité par le biais d’en-têtes personnalisés dans chaque `HttpServletRequest`.
+Pour maintenir une latence minimale pour les activités [!UICONTROL on-device decisioning] avec des audiences basées sur la géolocalisation, Adobe vous recommande de fournir vous-même les valeurs géographiques dans l’appel à [getOffers](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md). Définissez l’objet Geo dans le contexte de la requête. Cela signifie, à partir du navigateur, un moyen de déterminer l’emplacement de chaque visiteur. Par exemple, vous pouvez effectuer une recherche IP/géo à l’aide d’un service que vous configurez. Certains fournisseurs d’hébergement, tels que Google Cloud, fournissent cette fonctionnalité par le biais d’en-têtes personnalisés dans chaque `HttpServletRequest`.
 
 ```javascript {line-numbers="true"}
 window.adobe.target.getOffers({ 
@@ -72,7 +72,7 @@ window.adobe.target.getOffers({
 })
 ```
 
-Cependant, si vous ne parvenez pas à effectuer des recherches IP vers géo sur votre serveur, mais que vous souhaitez toujours effectuer des recherches [!UICONTROL prise de décision sur appareil] pour [getOffers](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md) requêtes contenant des audiences basées sur la géographie, cette fonctionnalité est également prise en charge. L’inconvénient de cette approche est qu’elle utilise une recherche distante IP/géo, ce qui ajoute une latence à chaque `getOffers` appelez . Cette latence doit être inférieure à une `getOffers` appel avec prise de décision côté serveur, car il atteint un réseau de diffusion de contenu situé près de votre serveur. Indiquez uniquement le champ &quot;ipAddress&quot; dans l’objet Geo dans le contexte de votre requête pour que le SDK récupère la géolocalisation de l’adresse IP de votre visiteur. Si un autre champ en plus de &quot;ipAddress&quot; est fourni, la variable [!DNL Target] Le SDK ne récupère pas les métadonnées de géolocalisation pour la résolution.
+Cependant, si vous ne parvenez pas à effectuer des recherches IP vers géo sur votre serveur, mais que vous souhaitez toujours effectuer [!UICONTROL on-device decisioning] pour les demandes [getOffers](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md) qui contiennent des audiences basées sur la géographie, cela est également pris en charge. L’inconvénient de cette approche est qu’elle utilise une recherche IP/géo distante, ce qui ajoute une latence à chaque appel `getOffers`. Cette latence doit être inférieure à un appel `getOffers` avec prise de décision côté serveur, car elle atteint un réseau de diffusion de contenu situé près de votre serveur. Indiquez uniquement le champ &quot;ipAddress&quot; dans l’objet Geo dans le contexte de votre requête pour que le SDK récupère la géolocalisation de l’adresse IP de votre visiteur. Si un autre champ en plus de &quot;ipAddress&quot; est fourni, le SDK [!DNL Target] ne récupérera pas les métadonnées de géolocalisation pour la résolution.
 
 ```javascript {line-numbers="true"}
 window.adobe.target.getOffers({ 
@@ -92,7 +92,7 @@ window.adobe.target.getOffers({
 
 ### Méthode d’affectation
 
-Le tableau suivant indique les méthodes d’attribution prises en charge ou non par [!UICONTROL prise de décision sur appareil].
+Le tableau suivant indique les méthodes d’attribution prises en charge ou non pour [!UICONTROL on-device decisioning].
 
 | Méthode d’affectation | Pris en charge ? |
 | --- | --- |

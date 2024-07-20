@@ -1,31 +1,31 @@
 ---
 title: Prérécupération de l’API de diffusion Adobe Target
-description: Comment utiliser la prérécupération dans le [!UICONTROL API de diffusion Adobe Target]?
+description: Comment utiliser la prérécupération dans [!UICONTROL Adobe Target Delivery API] ?
 keywords: api de diffusion
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
 source-git-commit: 4ff2746b8b485fe3d845337f06b5b0c1c8d411ad
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
 
 # Prérécupération
 
-La prérécupération permet aux clients tels que les applications mobiles et les serveurs de récupérer du contenu pour plusieurs mbox ou vues dans une requête, de le mettre en cache localement et de le notifier ultérieurement. [!DNL Target] lorsque le visiteur visite ces mbox ou vues.
+La prérécupération permet aux clients tels que les applications mobiles et les serveurs de récupérer du contenu pour plusieurs mbox ou vues dans une requête, de le mettre en cache localement et par la suite de notifier [!DNL Target] lorsque le visiteur visite ces mbox ou vues.
 
 Lors de l’utilisation de la prérécupération, il est important de connaître les termes suivants :
 
 | Nom du champ | Description |
 | --- | --- |
-| `prefetch` | Liste des mbox et des vues qui doivent être récupérées, mais qui ne doivent pas être marquées comme visitées. La variable [!DNL Target] Edge renvoie une `eventToken` pour chaque mbox ou vue existant dans le tableau de prérécupération. |
+| `prefetch` | Liste des mbox et des vues qui doivent être récupérées, mais qui ne doivent pas être marquées comme visitées. L’Edge [!DNL Target] renvoie un `eventToken` pour chaque mbox ou vue existant dans le tableau de prérécupération. |
 | `notifications` | Liste des mbox et des vues précédemment prérécupérées et qui doivent être marquées comme visitées. |
-| `eventToken` | Jeton chiffré haché renvoyé lors de la prérécupération du contenu. Ce jeton doit être renvoyé à [!DNL Target] dans le `notifications` tableau. |
+| `eventToken` | Jeton chiffré haché renvoyé lors de la prérécupération du contenu. Ce jeton doit être renvoyé à [!DNL Target] dans le tableau `notifications`. |
 
 ## Prérécupération des mbox
 
-Les clients, tels que les applications mobiles et les serveurs, peuvent prérécupérer plusieurs mbox pour un visiteur donné au cours d’une session et les mettre en cache afin d’éviter plusieurs appels à la fonction [!UICONTROL API de diffusion Adobe Target].
+Les clients, tels que les applications mobiles et les serveurs, peuvent prérécupérer plusieurs mbox pour un visiteur donné au cours d’une session et les mettre en cache afin d’éviter plusieurs appels vers le [!UICONTROL Adobe Target Delivery API].
 
 ```shell shell-session
 curl -X POST \
@@ -69,7 +69,7 @@ curl -X POST \
 }'
 ```
 
-Dans le `prefetch` champ, ajouter un ou plusieurs champs `mboxes` vous souhaitez prérécupérer au moins une fois pour un visiteur au cours d’une session. Après avoir prérécupéré `mboxes`, vous recevez la réponse suivante :
+Dans le champ `prefetch` , ajoutez un ou plusieurs `mboxes` que vous souhaitez prérécupérer au moins une fois pour un visiteur au cours d’une session. Après avoir prérécupéré pour ces `mboxes`, vous recevez la réponse suivante :
 
 ```JSON {line-numbers="true"}
 {
@@ -120,13 +120,13 @@ Dans le `prefetch` champ, ajouter un ou plusieurs champs `mboxes` vous souhaitez
 }
 ```
 
-Dans la réponse, la variable `content` champ contenant l’expérience à présenter au visiteur pour un particulier `mbox`. Cela s’avère très utile lorsqu’il est mis en cache sur votre serveur, de sorte que lorsqu’un visiteur interagit avec votre application web ou mobile au cours d’une session et visite une `mbox` sur n’importe quelle page spécifique de votre application, l’expérience peut être diffusée à partir du cache au lieu d’en créer une autre. [!UICONTROL API de diffusion Adobe Target] appelez . Cependant, lorsqu’une expérience est diffusée au visiteur à partir de la variable `mbox`, un `notification` est envoyé via un appel de l’API de diffusion pour que la journalisation des impressions se produise. En effet, la réponse de `prefetch` Les appels sont mis en cache, ce qui signifie que le visiteur n’a pas vu les expériences au moment où la fonction `prefetch` l’appel se produit. Pour en savoir plus sur la variable `notification` processus, voir [Notifications](notifications.md).
+Dans la réponse, vous voyez le champ `content` contenant l’expérience à présenter au visiteur pour un `mbox` particulier. Cela s’avère très utile lorsqu’il est mis en cache sur votre serveur, de sorte que lorsqu’un visiteur interagit avec votre application web ou mobile au cours d’une session et visite un `mbox` sur une page spécifique de votre application, l’expérience peut être diffusée à partir du cache au lieu d’effectuer un autre appel [!UICONTROL Adobe Target Delivery API]. Cependant, lorsqu’une expérience est fournie au visiteur à partir de `mbox`, un `notification` est envoyé via un appel API de diffusion pour que la journalisation des impressions se produise. En effet, la réponse des appels `prefetch` est mise en cache, ce qui signifie que le visiteur n’a pas vu les expériences au moment de l’appel `prefetch`. Pour en savoir plus sur le processus `notification`, voir [Notifications](notifications.md).
 
-## Prérécupération des mbox avec `clickTrack` mesures lors de l’utilisation de [!UICONTROL Analytics pour Target] (A4T)
+## Prérécupération des mbox avec des mesures `clickTrack` lors de l’utilisation de [!UICONTROL Analytics for Target] (A4T)
 
-[[!UICONTROL Adobe Analytics pour Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T) est une intégration intersolutions qui vous permet de créer des activités basées sur des [!DNL Analytics] mesures de conversion et segments d’audience.
+[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T) est une intégration intersolutions qui vous permet de créer des activités basées sur [!DNL Analytics] mesures de conversion et segments d’audience.
 
-Le fragment de code suivant est une réponse d’une prérécupération d’une mbox contenant `clickTrack` mesures à avertir [!DNL Analytics] qu’un utilisateur a cliqué sur une offre :
+Le fragment de code suivant est une réponse d’une prérécupération d’une mbox contenant des mesures `clickTrack` pour informer [!DNL Analytics] qu’un utilisateur a cliqué sur une offre :
 
 ```JSON {line-numbers="true"}
 {
@@ -165,11 +165,11 @@ Le fragment de code suivant est une réponse d’une prérécupération d’une 
 
 >[!NOTE]
 >
->La prérécupération d’une mbox contient le paramètre [!DNL Analytics] charge utile pour les activités qualifiées uniquement. La prérécupération des mesures de succès pour les activités non encore qualifiées entraîne des incohérences dans les rapports.
+>La prérécupération d’une mbox contient la charge utile [!DNL Analytics] pour les activités qualifiées uniquement. La prérécupération des mesures de succès pour les activités non encore qualifiées entraîne des incohérences dans les rapports.
 
 ## Prérécupération des vues
 
-Les vues prennent en charge les applications d’une seule page (SPA) et les applications mobiles de manière plus transparente. Les vues peuvent être considérées comme un groupe logique d’éléments visuels qui, ensemble, constituent une expérience SPA ou mobile. Désormais, grâce à l’API de diffusion, le compositeur d’expérience visuelle a été créé. [[!UICONTROL Test A/B]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html){target=_blank} and [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html){target=_blank} (X) Activités T avec modifications sur [Vues pour les SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) peut maintenant être prérécupéré.
+Les vues prennent en charge les applications d’une seule page (SPA) et les applications mobiles de manière plus transparente. Les vues peuvent être considérées comme un groupe logique d’éléments visuels qui, ensemble, constituent une expérience SPA ou mobile. Désormais, grâce à l’API de diffusion, les activités [[!UICONTROL A/B Test]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html){target=_blank} et [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html){target=_blank} (X)T créées par le VEC avec des modifications sur les [vues pour SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) peuvent être prérécupérées.
 
 ```shell  {line-numbers="true"}
 curl -X POST \
@@ -199,7 +199,7 @@ curl -X POST \
 }'
 ```
 
-L’exemple d’appel ci-dessus prérécupère toutes les vues créées via le SPA VEC pour [!UICONTROL Test A/B] et activités de ciblage d’expérience à afficher pour le Web `channel`. Notez que l’appel récupère toutes les vues de la variable [!UICONTROL Test A/B] ou les activités de ciblage d’expérience d’un visiteur avec `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131` qui visite le `url`:`https://target.enablementadobe.com/react/demo/#/` est admissible.
+L’exemple d’appel ci-dessus prérécupère toutes les vues créées via le SPA VEC pour [!UICONTROL A/B Test] et les activités XT à afficher pour le web `channel`. Notez que l’appel prérécupère toutes les vues des activités [!UICONTROL A/B Test] ou XT auxquelles un visiteur avec `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131` qui visite `url`:`https://target.enablementadobe.com/react/demo/#/` est admissible.
 
 ```JSON  {line-numbers="true"}
 {
@@ -280,4 +280,4 @@ L’exemple d’appel ci-dessus prérécupère toutes les vues créées via le S
 }
 ```
 
-Dans le `content` les champs de la réponse, les métadonnées de note telles que `type`, `selector`, `cssSelector`, et `content`, qui sont utilisées pour effectuer le rendu de l’expérience à votre visiteur lorsqu’un utilisateur visite votre page. Notez que la variable `prefetched` le contenu peut être mis en cache et rendu à l’utilisateur si nécessaire.
+Dans les champs `content` de la réponse, notez les métadonnées telles que `type`, `selector`, `cssSelector` et `content`, qui sont utilisées pour rendre l’expérience à votre visiteur lorsqu’un utilisateur visite votre page. Notez que le contenu `prefetched` peut être mis en cache et rendu à l’utilisateur si nécessaire.

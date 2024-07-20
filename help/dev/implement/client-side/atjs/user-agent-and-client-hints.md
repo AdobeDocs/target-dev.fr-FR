@@ -6,8 +6,8 @@ feature: at.js
 exl-id: e0d87d95-ee95-4ca9-8632-222ae1fb9a91
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 74%
+source-wordcount: '1162'
+ht-degree: 72%
 
 ---
 
@@ -72,7 +72,7 @@ Sec-CH-UA-Platform: "macOS"
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 
 ```
 
-Bien que les informations soient similaires, la première requête au serveur inclue des Client Hints qui contiennent uniquement un sous-ensemble de ce qui est disponible dans la chaîne user-agent. La requête ne contient pas: l’architecture du système d’exploitation, la version complète du système d’exploitation, le nom du moteur de rendu, la version du moteur de rendu et la version complète du navigateur. Cependant, pour les prochaines requêtes, l’API Client Hints permet aux serveurs web de demander des détails supplémentaires à entropie élevée sur l’appareil. Lorsque ces valeurs à entropie élevée sont demandées, en fonction de la politique du navigateur ou des paramètres utilisateur, la réponse du navigateur peut inclure ces informations.
+Bien que les informations soient similaires, la première requête au serveur inclue des Client Hints qui contiennent uniquement un sous-ensemble de ce qui est disponible dans la chaîne user-agent. La requête ne contient pas : l’architecture du système d’exploitation, la version complète du système d’exploitation, le nom du moteur de rendu, la version du moteur de rendu et la version complète du navigateur. Cependant, pour les prochaines requêtes, l’API Client Hints permet aux serveurs web de demander des détails supplémentaires à entropie élevée sur l’appareil. Lorsque ces valeurs à entropie élevée sont demandées, en fonction de la politique du navigateur ou des paramètres utilisateur, la réponse du navigateur peut inclure ces informations.
 
 L’exemple suivant est un objet JSON renvoyé par l’API Client Hints lorsque des valeurs à entropie élevée sont demandées :
 
@@ -176,7 +176,7 @@ Les sections suivantes contiennent plus d’informations sur la manière de tran
 
 ### at.js version 2.9.0 (ou ultérieure)
 
-À compter d’at.js 2.9.0, les conseils client de l’agent utilisateur seront collectés automatiquement à partir du navigateur et envoyés à Target lors de la `getOffer/getOffers()` est appelée. Par défaut, at.js collecte uniquement les Client Hints « à entropie faible ». Si vous effectuez une segmentation de l’audience ou utilisez des scripts de profil basés sur des données dites « à entropie élevée » des sections précédentes, vous devez configurer at.js pour collecter les Client Hints « à entropie élevée » à partir du navigateur via `targetGlobalSettings`.
+À compter d’at.js 2.9.0, les conseils client de l’agent utilisateur seront collectés automatiquement à partir du navigateur et envoyés à Target lors de l’appel de `getOffer/getOffers()`. Par défaut, at.js collecte uniquement les Client Hints « à entropie faible ». Si vous effectuez une segmentation de l’audience ou utilisez des scripts de profil basés sur des données dites « à entropie élevée » des sections précédentes, vous devez configurer at.js pour collecter les Client Hints « à entropie élevée » à partir du navigateur via `targetGlobalSettings`.
 
 ```
 window.targetGlobalSettings = { allowHighEntropyClientHints: true };
@@ -184,4 +184,4 @@ window.targetGlobalSettings = { allowHighEntropyClientHints: true };
 
 ### SDK côté serveur
 
-Pour plus d’informations sur la manière de transmettre des conseils client via des SDK côté serveur, voir [Conseils au client](../../server-side/sdk-guides/core-principles/audience-targeting.md#client-hints) sous la documentation Mise en oeuvre côté serveur .
+Pour plus d’informations sur la manière de transmettre des conseils client via des SDK côté serveur, voir [Conseils client](../../server-side/sdk-guides/core-principles/audience-targeting.md#client-hints) sous la documentation de mise en oeuvre côté serveur.

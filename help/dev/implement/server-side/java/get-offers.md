@@ -1,11 +1,11 @@
 ---
 title: Utilisez getOffers() dans [!DNL Adobe Target] lors de l’utilisation du SDK Java
-description: Découvrez comment utiliser getOffers() pour exécuter une décision et récupérer une expérience à partir de [!DNL Adobe Target].
+description: Découvrez comment utiliser getOffers() pour exécuter une décision et récupérer une expérience de [!DNL Adobe Target].
 feature: APIs/SDKs
 exl-id: 9d7bf956-9d6a-4b4f-a401-2e6814f17f3d
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '635'
 ht-degree: 13%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 13%
 
 ### getOffers
 
-La variable `TargetClient.getOffers` la signature de la méthode est affichée comme suit.
+La signature de la méthode `TargetClient.getOffers` s’affiche comme suit.
 
 **Demande**
 
@@ -38,14 +38,14 @@ TargetDeliveryRequestBuilder TargetDeliveryRequest.builder()
 
 ## Paramètres
 
-La variable `[!UICONTROL TargetDeliveryRequestBuilder]` possède la structure suivante :
+L’objet `[!UICONTROL TargetDeliveryRequestBuilder]` possède la structure suivante :
 
 | Nom | Type | Requis | Description |
 | --- | --- | --- | --- |
 | contexte | Contexte | Oui | Spécifie le contexte de la requête. |
-| sessionId |  | Chaîne | Non | Utilisé pour lier plusieurs [!DNL Target] requests |
+| sessionId |  | Chaîne | Non | Utilisé pour lier plusieurs requêtes [!DNL Target] |
 | thirdPartyId | Chaîne | Non | Identifiant de votre société pour l’utilisateur que vous pouvez envoyer avec chaque appel |
-| cookies | Liste | Non | Liste des cookies renvoyés dans la version précédente [!DNL Target] requête du même utilisateur. |
+| cookies | Liste | Non | Liste des cookies renvoyés dans la requête [!DNL Target] précédente du même utilisateur. |
 | customerIds | Carte | Non | ID de client au format compatible avec VisitorId |
 | execute | ExecuteRequest | Non | Requête PageLoad ou mbox à exécuter. Est évalué immédiatement côté serveur |
 | prefetch | PrefetchRequest | Non | Requête Vues, PageLoad ou mbox à prérécupérer. Renvoie avec jeton de notification à renvoyer lors de la conversion. |
@@ -56,32 +56,32 @@ La variable `[!UICONTROL TargetDeliveryRequestBuilder]` possède la structure su
 | property | Propriété | Non | Spécifie la propriété at_property via le champ de jeton. Il peut être utilisé pour contrôler la portée de la diffusion. |
 | trace | Trace | Non | Active la trace pour l’API de diffusion. |
 | qaMode | QAMode | Non | Utilisez cet objet pour activer le mode AQ dans la requête. |
-| locationHint | Chaîne | Non | [!DNL Target] indicateur d’emplacement du cluster Edge. Utilisé pour cibler un cluster Edge donné pour cette requête. |
+| locationHint | Chaîne | Non | [!DNL Target] Conseil d’emplacement du cluster Edge. Utilisé pour cibler un cluster Edge donné pour cette requête. |
 | visiteur | Visitor | Non | Utilisé pour fournir un objet API visiteur personnalisé. |
 | l’id | VisitorId | Non | Objet contenant les identifiants du visiteur. Par exemple. tntId, thirdParyId, mcId, customerIds. |
 | experienceCloud | ExperienceCloud | Non | Spécifie les intégrations avec Audience Manager et Analytics. Automatiquement renseignée à l’aide de cookies, le cas échéant. |
-| tntId | Chaîne | Non | Identifiant Principal dans [!DNL Target] pour un utilisateur. Récupéré de targetCookies. Génération automatique si elle n’est pas fournie. |
+| tntId | Chaîne | Non | Identifiant de Principal dans [!DNL Target] pour un utilisateur. Récupéré de targetCookies. Génération automatique si elle n’est pas fournie. |
 | mcId | Chaîne | Non | Utilisé pour fusionner et partager des données entre différentes [!DNL Adobe] solutions (ECID). Récupéré de targetCookies. Génération automatique si elle n’est pas fournie. |
-| trackingServer | Chaîne | Non | Le serveur Adobe Analytics pour [!DNL Adobe Target] et [!DNL Adobe Analytics] pour assembler correctement les données. |
-| trackingServerSecure | Chaîne | Non | La variable [!UICONTROL Serveur sécurisé Adobe Analytics] pour [!DNL Adobe Target] et [!DNL Adobe Analytics] pour assembler correctement les données. |
+| trackingServer | Chaîne | Non | Le serveur Adobe Analytics afin que [!DNL Adobe Target] et [!DNL Adobe Analytics] relient correctement les données. |
+| trackingServerSecure | Chaîne | Non | [!UICONTROL Adobe Analytics Secure Server] afin que [!DNL Adobe Target] et [!DNL Adobe Analytics] relient correctement les données. |
 | decisioningMethod | DecisioningMethod | Non | Peut être utilisé pour définir explicitement la méthode de prise de décision ON_DEVICE ou HYBRID pour la prise de décision sur l’appareil |
 
-Les valeurs de chaque champ doivent être conformes à *[!UICONTROL API de diffusion de la vue cible]* spécification de requête. Pour en savoir plus sur la variable *[!UICONTROL API de diffusion de la vue cible]*, voir [http://developers.adobetarget.com/api/#view-delivery-overview](http://developers.adobetarget.com/api/#view-delivery-overview)
+Les valeurs de chaque champ doivent être conformes à la spécification de requête *[!UICONTROL Target View Delivery API]*. Pour en savoir plus sur *[!UICONTROL Target View Delivery API]*, voir [http://developers.adobetarget.com/api/#view-delivery-overview](http://developers.adobetarget.com/api/#view-delivery-overview)
 
 
 ## Réponse
 
-La variable `TargetDeliveryResponse` renvoyé par `TargetClient.getOffers(`) a la structure suivante :
+La `TargetDeliveryResponse` renvoyée par `TargetClient.getOffers(` a la structure suivante :
 
 | Nom | Type | Description |
 | --- | --- | --- |
-| events | &#x200B; TargetDeliveryRequest | *[!DNL Target]* events |
-| response | DeliveryResponse | *[!DNL Target]* response |
+| events | &#x200B; TargetDeliveryRequest | requête *[!DNL Target]* |
+| response | DeliveryResponse | Réponse *[!DNL Target]* |
 | cookies | Liste | Liste des métadonnées de session pour cet utilisateur. Doit être transmis dans la requête cible suivante pour cet utilisateur. |
 | visitorState | Carte | État du visiteur à définir côté client pour être utilisé par l’API visiteur |
 | responseStatus | ResponseStatus | Objet représentant l’état de la réponse |
 
-La variable `ResponseStatus` dans la réponse contient les champs suivants :
+Le `ResponseStatus` de la réponse contient les champs suivants :
 
 | Nom | Type | Description |
 | --- | --- | --- |
@@ -90,7 +90,7 @@ La variable `ResponseStatus` dans la réponse contient les champs suivants :
 | remoteMboxes | Liste de chaînes | Utilisé pour la prise de décision sur l’appareil. Contient une liste des mbox comportant des activités distantes qui ne peuvent pas être décidées entièrement sur l’appareil. |
 | remoteViews | Liste de chaînes | Utilisé pour la prise de décision sur l’appareil. Contient une liste des vues comportant des activités distantes qui ne peuvent pas être décidées entièrement sur l’appareil. |
 
-La variable `TargetCookie` L’objet utilisé pour enregistrer des données pour une session utilisateur présente la structure suivante :
+L’objet `TargetCookie` utilisé pour enregistrer des données pour une session utilisateur présente la structure suivante :
 
 | Nom | Type | Description |
 | --- | --- | --- |

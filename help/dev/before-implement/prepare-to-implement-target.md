@@ -7,21 +7,21 @@ exl-id: cd2a1016-e085-4b61-8680-c0cc176c8277
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 53%
+ht-degree: 45%
 
 ---
 
-# Préparation à l’implémentation [!DNL Target]
+# Préparation à la mise en oeuvre de [!DNL Target]
 
-Tâches à terminer et informations à collecter lors de la préparation de la mise en oeuvre [!DNL Adobe Target].
+Tâches à terminer et informations à collecter lors de la préparation de la mise en oeuvre de [!DNL Adobe Target].
 
-Suivre ces instructions et remplir les questionnaires fournis vous aidera à mettre en oeuvre [!DNL Target], si vous implémentez vous-même ou utilisez des [!DNL Adobe Consulting] (recommandé).
+Suivez ces instructions et remplissez les questionnaires fournis pour mettre en oeuvre [!DNL Target], que vous mettiez en oeuvre seul ou que vous travailliez avec [!DNL Adobe Consulting] (recommandé).
 
-Si vous travaillez avec un conseiller Adobe, vous n’avez pas à connaître les informations de ce document avant de commencer la mise en œuvre de [!DNL Target]. Cependant, le processus préalable à la mise en œuvre peut être plus rapide si vous connaissez déjà les documents créés et les questions posées par Consulting. Il se peut que ces documents soient modifiés à l’avenir.
+Si vous travaillez avec un consultant en Adobe, il n’est pas nécessaire de connaître les informations contenues dans ces documents avant d’implémenter [!DNL Target]. Cependant, le processus préalable à la mise en œuvre peut être plus rapide si vous connaissez déjà les documents créés et les questions posées par Consulting. Il se peut que ces documents soient modifiés à l’avenir.
 
 ## [!DNL Adobe Target] demande d’informations commerciales
 
-Cette section contient le document Business Request for Information (RFI) (Demande d’informations commerciales) qui doit être rempli par le client avant l’expiration du délai [!DNL Target] appel de lancement de la mise en oeuvre.
+Cette section contient le document Business Request for Information (RFI) (Demande d’informations commerciales) qui doit être rempli par le client avant l’appel de lancement de la mise en oeuvre [!DNL Target].
 
 Ce document permet ce qui suit :
 
@@ -32,7 +32,7 @@ Téléchargez le document [Business Request for Information](assets/business-rfi
 
 ## [!DNL Adobe Target] demande d’informations techniques
 
-Cette section contient le document Technical Request for Information (RFI) (Demande d’informations techniques) qui aidera notre équipe de conseillers à développer une [!DNL Target] implémentation qui répond aux exigences techniques et commerciales du client. Les questions posées dans ce document visent à identifier les difficultés ou obstacles sous-jacents afin de réduire, voire d’éliminer, la nécessité de modifier la mise en œuvre.
+Cette section contient le document Technical Request for Information (RFI) (Demande d’informations techniques) qui aidera notre équipe de conseillers à développer une implémentation [!DNL Target] qui répondra aux exigences commerciales et techniques du client. Les questions posées dans ce document visent à identifier les difficultés ou obstacles sous-jacents afin de réduire, voire d’éliminer, la nécessité de modifier la mise en œuvre.
 
 Ce document permet ce qui suit :
 

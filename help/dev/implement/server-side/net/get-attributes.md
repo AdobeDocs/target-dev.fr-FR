@@ -1,12 +1,12 @@
 ---
-title: Utilisation de getAttributes dans [!DNL Adobe Target] avec le SDK .NET
-description: Découvrez comment utiliser getAttributes() pour récupérer des expériences d’expérimentation et personnalisées à partir de [!DNL Target] et extraire des valeurs d’attribut.
+title: Utilisation de getAttributes dans  [!DNL Adobe Target]  avec le SDK .NET
+description: Découvrez comment utiliser getAttributes() pour récupérer des expériences d’expérimentation et personnalisées à partir de [!DNL Target]  et extraire des valeurs d’attribut.
 feature: APIs/SDKs
 exl-id: 808da83d-3077-468b-a2ad-e35c25905f7d
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
 source-wordcount: '211'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 ## Description
 
-`GetAttributes()` est utilisé pour récupérer les expériences et les expériences personnalisées d’ [!DNL Target] et extraire des valeurs d’attribut.
+`GetAttributes()` est utilisé pour récupérer l’expérimentation et les expériences personnalisées de [!DNL Target] et extraire des valeurs d’attribut.
 
 ## Méthode
 
@@ -28,16 +28,16 @@ TargetAttributes TargetClient.GetAttributes(TargetDeliveryRequest targetRequest,
 
 | Nom | Type | Requis | Par défaut | Description |
 | --- | --- | --- | --- | --- |
-| targetRequest | TargetDeliveryRequest | Non | valeur nulle | Identique [!DNL Target] requête utilisée pour [Obtention d’une &#x200B; d’offres](get-offers.md) |
+| targetRequest | TargetDeliveryRequest | Non | valeur nulle | Même requête [!DNL Target] utilisée pour [Obtenir des offres &#x200B;](get-offers.md) |
 | mboxNames | chaîne params[] | Non | valeur nulle | Tableau de paramètres de noms de mbox |
 
 ## Résultats
 
-A `TargetAttributes` est renvoyé par `TargetClient.GetAttributes()` qui possède les propriétés et méthodes suivantes :
+Un objet `TargetAttributes` est renvoyé par `TargetClient.GetAttributes()` qui possède les propriétés et méthodes suivantes :
 
 | Propriété/méthode | Type de retour | Description |
 | --- | --- | --- |
-| Réponse | TargetDeliveryResponse | Renvoie l’objet de réponse normalement renvoyé par [Obtention d’offres](get-offers.md) |
+| Réponse | TargetDeliveryResponse | Renvoie l’objet de réponse normalement renvoyé par [Obtenir des offres](get-offers.md) |
 | ToDictionary | IReadOnlyDictionary | Renvoie un dictionnaire de dictionnaires avec des paires clé-valeur regroupées par noms de mbox |
 | ToMboxDictionary(mboxName) | IReadOnlyDictionary | Renvoie un dictionnaire avec des paires clé-valeur pour la mbox fournie |
 | GetBoolean(mboxName, key, defaultValue) | bool | Renvoie la valeur d’un nom de mbox et d’une clé d’attribut spécifiés |

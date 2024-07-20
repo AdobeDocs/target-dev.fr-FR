@@ -1,19 +1,19 @@
 ---
 keywords: adobe.target.getOffer, getOffer, getoffer, get offer, at.js, fonctions, fonction, 8 $
-description: Utilisez la variable [!UICONTROL adobe.target.getOffer()] et ses options pour la fonction [!DNL Adobe Target] bibliothèque at.js pour déclencher des demandes pour obtenir une [!DNL Target] offre.
-title: Comment utiliser la variable [!UICONTROL adobe.target.getOffer()] Fonction ?
+description: Utilisez la fonction [!UICONTROL adobe.target.getOffer()] et ses options pour la bibliothèque  [!DNL Adobe Target] at.js pour déclencher les demandes d’obtention d’une offre  [!DNL Target] .
+title: Comment utiliser la fonction [!UICONTROL adobe.target.getOffer()] ?
 feature: at.js
 exl-id: 7b917d42-06e8-4838-a09d-0c4872c9beaa
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '460'
 ht-degree: 81%
 
 ---
 
 # [!DNL adobe.target.getOffer(options)]
 
-Cette fonction déclenche une requête pour obtenir une [!DNL Target] offre.
+Cette fonction déclenche une requête pour obtenir une offre [!DNL Target].
 
 Utilisez avec `[!UICONTROL adobe.target.applyOffer()]` pour traiter la réponse ou utilisez votre propre gestion de succès. Le paramètre options est obligatoire et possède la structure suivante :
 
@@ -22,12 +22,12 @@ Utilisez avec `[!UICONTROL adobe.target.applyOffer()]` pour traiter la réponse 
 | mbox | Chaîne | Oui | Nom de mbox |
 | params | Objet | Non | Paramètres mbox. Objet de paires clé-valeur qui possède la structure suivante :<P>`{ "param1": "value1", "param2": "value2"}` |
 | success | Fonction | Oui | Rappel à exécuter lors de l’obtention d’une réponse du serveur. La fonction de rappel de succès reçoit un seul paramètre qui représente un tableau des objets d’offre. Voici un exemple de rappel de succès :<P>`function handleSuccess(response){......}`<P>Pour plus d’informations, voir les réponses ci-dessous. |
-| error | Fonction | Oui | Rappel à exécuter lors d’une erreur. Quelques cas sont considérés comme des erreurs :<ul><li>Le code d’état HTTP est différent de 200 OK.</li><li>La réponse ne peut pas être analysée. Par exemple, le code JSON a été mal créé ou du code HTML a été utilisé à la place de JSON.</li><li>La réponse contient la clé error. Par exemple, une exception a été levée à la périphérie car une demande n’a pas pu être correctement traitée. Un message d’erreur peut être généré lorsqu’une mbox est bloquée et qu’il est impossible de récupérer le contenu correspondant, etc. La fonction de rappel d’erreur reçoit deux paramètres : status et error. Voici un exemple de rappel d’erreur : `function handleError(status, error){......}`</li></ul>Pour plus d’informations, voir les réponses d’erreur ci-dessous. |
-| timeout | Nombre | Non | Délai d’attente exprimé en secondes. Si cette valeur n’est pas spécifiée, le délai d’attente par défaut d’at.js est utilisé.<P>Le délai d’expiration par défaut peut être défini à partir de la variable [!DNL Target] IU sous [!UICONTROL Administration] > [!UICONTROL Implémentation]. |
+| error | Fonction | Oui | Rappel à exécuter lors d’une erreur. Quelques cas sont considérés comme des erreurs :<ul><li>Le code d’état HTTP est différent de 200 OK.</li><li>La réponse ne peut pas être analysée. Par exemple, le code JSON a été mal créé ou du code HTML a été utilisé à la place de JSON.</li><li>La réponse contient la clé error. Par exemple, une exception a été levée à la périphérie car une demande n’a pas pu être correctement traitée. Un message d’erreur peut être généré lorsqu’une mbox est bloquée et qu’il est impossible de récupérer le contenu correspondant, etc. La fonction de rappel d’erreur reçoit deux paramètres : status et error. Voici un exemple de rappel d’erreur : `function handleError(status, error){......}`</li></ul>Pour plus d’informations, voir les réponses d’erreur ci-dessous. |
+| timeout | Nombre | Non | Délai d’attente exprimé en secondes. Si cette valeur n’est pas spécifiée, le délai d’attente par défaut d’at.js est utilisé.<P>Le délai d’expiration par défaut peut être défini à partir de l’interface utilisateur [!DNL Target] sous [!UICONTROL Administration] > [!UICONTROL Implementation]. |
 
 ## Exemples
 
-Ajouter des paramètres avec [!UICONTROL getOffer()] et [!UICONTROL applyOffer()] pour la gestion de succès :
+Ajout de paramètres avec [!UICONTROL getOffer()] et utilisation de [!UICONTROL applyOffer()] pour la gestion de succès :
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffer({   
@@ -48,7 +48,7 @@ adobe.target.getOffer({
 });
 ```
 
-Ajouter des paramètres et des paramètres de profil avec [!UICONTROL getOffer()] et [!UICONTROL applyOffer()] pour la gestion de succès :
+Ajout de paramètres et de paramètres de profil avec [!UICONTROL getOffer()] et utilisation de [!UICONTROL applyOffer()] pour la gestion de succès :
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffer({   
@@ -71,7 +71,7 @@ adobe.target.getOffer({
 });
 ```
 
-Utilisation d’un délai d’expiration personnalisé et d’une gestion de succès personnalisée avec [!UICONTROL getOffer()]:
+Utilisation d’un délai d’expiration personnalisé et d’une gestion de succès personnalisée avec [!UICONTROL getOffer()] :
 
 « YOUR_OWN_CUSTOM_HANDLING_FUNCTION » est un espace réservé pour une fonction définie par le client.
 

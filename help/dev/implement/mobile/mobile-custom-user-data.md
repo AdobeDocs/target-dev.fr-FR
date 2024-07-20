@@ -1,38 +1,38 @@
 ---
 keywords: application mobile, envoi de données d’application mobile, données utilisateur personnalisées mobiles, données personnalisées d’application mobile
-description: Découvrez comment envoyer des informations supplémentaires sur l’emplacement de l’utilisateur à [!DNL Adobe Target] comme paires nom-valeur pour vous aider à créer des audiences personnalisées.
+description: Découvrez comment envoyer des informations supplémentaires sur l’emplacement ou l’utilisateur à  [!DNL Adobe Target] en tant que paires nom-valeur pour vous aider à créer des audiences personnalisées.
 title: Comment envoyer des données utilisateur personnalisées dans une application iOS ?
 feature: Implement Mobile
 exl-id: 9cf8e8fd-1898-43b1-b339-d7a21cb35d57
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 62%
+source-wordcount: '407'
+ht-degree: 55%
 
 ---
 
 # iOS - Envoi de données utilisateur personnalisées
 
-Vous pouvez envoyer des informations supplémentaires sur l’emplacement de l’utilisateur à [!DNL Target] comme des paires nom-valeur.
+Vous pouvez envoyer des informations supplémentaires sur l’emplacement ou l’utilisateur à [!DNL Target] en tant que paires nom-valeur.
 
 >[!IMPORTANT]
 >
->Prise en charge de [!DNL Adobe Mobile] version 4.*x* Les SDK ont pris fin le 31 août 2021 et ne sont plus recommandés pour [!DNL Adobe Target] utilisateurs mobiles.
+>Prise en charge de la version 4 de [!DNL Adobe Mobile].Les SDK *x* ont pris fin le 31 août 2021 et ne sont plus recommandés pour les utilisateurs mobiles [!DNL Adobe Target].
 >
->La variable [SDK Adobe Experience Platform pour les applications mobiles](https://developer.adobe.com/client-sdks/documentation/){target=_blank} est la solution recommandée pour la puissance [!DNL Adobe Experience Cloud] solutions et services dans vos applications mobiles.
+>Le [SDK Adobe Experience Platform pour les applications mobiles](https://developer.adobe.com/client-sdks/documentation/){target=_blank} est la solution recommandée pour alimenter les services et solutions [!DNL Adobe Experience Cloud] de vos applications mobiles.
 
 Ces informations peuvent être utilisées pour créer des audiences personnalisées (par exemple, utilisateurs disposant de plus de 25 000 miles) et créer des rapports.
 
-Vous pouvez envoyer deux types de paramètres avec un [!DNL Target] call:
+Vous pouvez envoyer deux types de paramètres avec un appel [!DNL Target] :
 
-* **paramètres de mbox**: les paramètres de mbox ne sont pas persistants entre les sessions.
-* **Paramètres de profil**: les paramètres de profil sont stockés dans la banque de profils du visiteur et persistent entre les sessions. Les paramètres de mbox ne sont pas conservés. Tandis que certaines clés sont réservées, les paramètres de profil et mbox peuvent être des paires personnalisées de type clé-valeur.
+* **Paramètres mbox** : les paramètres mbox ne sont pas persistants entre les sessions.
+* **Paramètres de profil** : les paramètres de profil sont stockés dans la banque de profils du visiteur et persistent entre les sessions. Les paramètres de mbox ne sont pas conservés. Tandis que certaines clés sont réservées, les paramètres de profil et mbox peuvent être des paires personnalisées de type clé-valeur.
 
 Bien que certaines clés soient réservées, les paramètres de profil et mbox peuvent contenir des paires clé-valeur personnalisées.
 
 1. Création d’un dictionnaire.
 
-   Commencez par créer un dictionnaire contenant les valeurs que vous avez envoyées pour être transférées à [!DNL Target]. Pour des questions pratiques, ajoutez ces éléments à la méthode `welcomeMessageCampaign` de manière à ne pas devoir vous soucier de la portée.
+   Créez tout d’abord un dictionnaire avec les valeurs que vous envoyez pour transmettre à [!DNL Target]. Pour des questions pratiques, ajoutez ces éléments à la méthode `welcomeMessageCampaign` de manière à ne pas devoir vous soucier de la portée.
 
    Vous trouverez ci-dessous un exemple de dictionnaire. Vous pouvez le copier et le coller dans la méthode `(void)welcomeMessageCampaign`. Les valeurs des clés telles que `userLevel` et `userMiles` sont codées en dur pour cet exemple. En règle générale, vous transférez les variables correspondantes.
 
@@ -69,6 +69,6 @@ Bien que certaines clés soient réservées, les paramètres de profil et mbox p
 
       (Cliquez sur l’image pour agrandir l’image en largeur réelle.)
 
-      ![Emplacement cible dans la console de débogage](/help/dev/implement/mobile/assets/mobile-debug.png "Emplacement cible dans la console de débogage"){zoomable=&quot;yes&quot;}
+      ![Emplacement de la cible dans la console de débogage](/help/dev/implement/mobile/assets/mobile-debug.png "Emplacement de la cible dans la console de débogage"){zoomable="yes"}
 
-   Vous pouvez créer des audiences et restreindre ou cibler l’affichage de certains contenus en utilisant ces paramètres dans [!DNL Target].
+   Vous pouvez créer des audiences et restreindre ou cibler l’affichage du contenu à l’aide de ces paramètres dans [!DNL Target].

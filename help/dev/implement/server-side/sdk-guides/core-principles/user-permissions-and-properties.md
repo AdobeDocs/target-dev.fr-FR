@@ -1,18 +1,18 @@
 ---
 title: Autorisations et propriétés des utilisateurs
-description: La variable [!DNL Target] Les SDK prennent en charge les autorisations et les propriétés des utilisateurs.
+description: Les  [!DNL Target] SDK incluent la prise en charge des propriétés et des autorisations utilisateur.
 exl-id: 612faf1a-e8f9-4321-b831-90fba69ead3a
 feature: Implement Server-side
 source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 9%
+source-wordcount: '114'
+ht-degree: 0%
 
 ---
 
 # Autorisations et propriétés des utilisateurs
 
-La variable [!DNL Target] Les SDK prennent en charge les autorisations et les propriétés des utilisateurs. Si vous ne savez pas comment [!DNL Adobe Target] gère les autorisations d’entreprise via les espaces de travail et les propriétés. vous pouvez en savoir plus dans la rubrique [Autorisations des utilisateurs d’Enterprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=fr).
+Les SDK [!DNL Target] incluent la prise en charge des propriétés et des autorisations utilisateur. Si vous ne savez pas comment [!DNL Adobe Target] gère les autorisations d’entreprise via des espaces de travail et des propriétés, vous pouvez en savoir plus à ce sujet dans la section [Autorisations des utilisateurs d’entreprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=fr).
 
 Le client peut utiliser un jeton de propriété de deux manières différentes.
 
@@ -34,7 +34,7 @@ const targetClient = TargetClient.create(CONFIG);
 targetClient.getOffers({...})
 ```
 
->[!TAB Java ]
+>[!TAB Java]
 
 ```java {line-numbers="true"}
 ClientConfig clientConfig = ClientConfig.builder()
@@ -50,7 +50,7 @@ TargetClient targetClient = TargetClient.create(clientConfig);
 
 ## Jeton de propriété accessoire dans l’appel getOffers
 
-Un jeton de propriété peut également être spécifié dans un `getOffers` appelez . Pour ce faire, ajoutez un objet property à la requête. Un jeton de propriété spécifié de cette manière est prioritaire par rapport à un jeu de la configuration.
+Un jeton de propriété peut également être spécifié dans un appel `getOffers` individuel. Pour ce faire, ajoutez un objet property à la requête. Un jeton de propriété spécifié de cette manière est prioritaire par rapport à un jeu de la configuration.
 
 >[!BEGINTABS]
 
@@ -76,7 +76,7 @@ targetClient.getOffers({
 })
 ```
 
->[!TAB Java ]
+>[!TAB Java]
 
 ```java {line-numbers="true"}
 ExecuteRequest executeRequest = new ExecuteRequest()

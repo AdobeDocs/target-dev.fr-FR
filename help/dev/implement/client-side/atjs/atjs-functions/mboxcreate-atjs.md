@@ -1,13 +1,13 @@
 ---
 keywords: mboxCreate, mboxcreate, mbox create, at.js, fonctions, fonction
-description: Utilisez la variable [!UICONTROL mboxCreate()] pour la fonction [!DNL Adobe Target] Bibliothèque JavaScript at.js pour appliquer les offres au DIV le plus proche avec le nom de classe mboxDefault . (at.js 1.x)
-title: Comment utiliser la variable [!UICONTROL mboxCreate()] Fonction ?
+description: Utilisez la fonction [!UICONTROL mboxCreate()] de la bibliothèque JavaScript  [!DNL Adobe Target] at.js pour appliquer des offres au DIV le plus proche avec le nom de classe mboxDefault. (at.js 1.x)
+title: Comment utiliser la fonction [!UICONTROL mboxCreate()] ?
 feature: at.js
 exl-id: 86eba1fc-4e1d-4793-94e7-898bf81f8945
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 55%
+source-wordcount: '205'
+ht-degree: 56%
 
 ---
 
@@ -41,8 +41,8 @@ La fonction `mboxCreate()` utilise désormais le point d’entrée « json » 
 
   comme des offres qui définissent des variables JavaScript qui sont utilisées par le code du site ou d’autres mbox qui sont ajoutées ultérieurement à la page.
 
-* Veillez à avoir une `<div class="mboxDefault"></div>`avant d’appeler `[!UICONTROL mboxCreate()]`, car at.js n’en ajoute pas pour vous.
+* Veillez à disposer d’un `<div class="mboxDefault"></div>` avant d’appeler `[!UICONTROL mboxCreate()]`, car at.js n’en ajoutera pas un pour vous.
 
 * Les fonctions `[!UICONTROL mboxCreate()]` vides en haut de page ne sont pas recommandées en tant mbox globale.
 
-  La mbox globale créée automatiquement dans at.js est une meilleure option, car elle se déclenche à partir de la fonction `<head>` et peut renvoyer du contenu plus tôt.
+  La mbox globale créée automatiquement dans at.js est une meilleure option, car elle se déclenche à partir de `<head>` et peut renvoyer du contenu plus tôt.

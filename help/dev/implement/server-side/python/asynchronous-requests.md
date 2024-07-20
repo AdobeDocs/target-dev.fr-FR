@@ -1,11 +1,11 @@
 ---
-title: Utilisation de requêtes asynchrones dans la variable [!DNL Adobe Target] SDK Python
-description: Découvrez comment [!DNL Target] Le SDK Python prend en charge les requêtes asynchrones, ce qui peut réduire le temps cible effectif à zéro.
+title: Utilisation de requêtes asynchrones dans le kit SDK  [!DNL Adobe Target] Python
+description: Découvrez comment le SDK Python  [!DNL Target] prend en charge les requêtes asynchrones, ce qui peut réduire le temps cible effectif à zéro.
 feature: APIs/SDKs
 exl-id: 44ab74e5-3c1a-49cf-9fff-fe523b0c2592
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '133'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ get_attributes(mbox_names, options)
 
 ## Exemple
 
-Un exemple d’application qui utilise la méthode `asyncio` async/attente du module en Python 3.9+ pourrait ressembler à ceci :
+Voici un exemple d’application qui utilise le module `asyncio` async/attente en Python 3.9+ :
 
 ### Python
 
@@ -52,4 +52,4 @@ mboxes = [MboxRequest(name="a1-serverside-ab", index=1)]
 return asyncio.run(get_target_delivery_response(mboxes)
 ```
 
-Cet exemple suppose que vous utilisez Python 3.9+. Si vous utilisez une ancienne version de Python, vous pouvez toujours envoyer des requêtes asynchrones en transmettant `options.callback` to `get_offers`. Consultez l’exemple d’application Flask pour plus d’informations sur l’exécution asynchrone à l’aide de rappels ou async/attente, [here](https://github.com/adobe/target-python-sdk/blob/main/samples/app.py).
+Cet exemple suppose que vous utilisez Python 3.9+. Si vous utilisez une ancienne version de Python, vous pouvez toujours envoyer des requêtes asynchrones en transmettant `options.callback` à `get_offers`. Consultez l’exemple d’application Flask pour plus d’informations sur l’exécution asynchrone à l’aide de rappels ou async/attente, [ici](https://github.com/adobe/target-python-sdk/blob/main/samples/app.py).

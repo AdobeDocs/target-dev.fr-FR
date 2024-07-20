@@ -1,23 +1,23 @@
 ---
 keywords: implémentation, bibliothèque javascript, js, atjs, prise de décision sur l’appareil, prise de décision sur l’appareil, at.js, sur l’appareil, résolution des problèmes, mise en oeuvre2
-description: Découvrez comment résoudre les problèmes [!UICONTROL prise de décision sur appareil] avec la bibliothèque at.js.
+description: Découvrez comment résoudre les problèmes [!UICONTROL on-device decisioning] avec la bibliothèque at.js.
 title: Comment résoudre les problèmes liés à la prise de décision sur les périphériques avec la bibliothèque JavaScript at.js ?
 feature: at.js
 exl-id: b9530cc7-5e83-4fdf-bde9-b2492e0861ff
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
-# Dépannage [!UICONTROL prise de décision sur appareil] pour at.js
+# Dépannage [!UICONTROL on-device decisioning] pour at.js
 
-Procédez comme suit pour résoudre les problèmes [!UICONTROL prise de décision sur appareil] in [!UICONTROL Adobe Target] avec la bibliothèque JavaScript at.js :
+Effectuez les étapes suivantes pour résoudre les problèmes [!UICONTROL on-device decisioning] dans [!UICONTROL Adobe Target] avec la bibliothèque JavaScript at.js :
 
 ## Étape 1 : activation du journal de la console pour at.js
 
-Ajout du paramètre d’URL `mboxDebug=1` permet à at.js d’imprimer les messages dans la console du navigateur.
+L’ajout du paramètre d’URL `mboxDebug=1` permet à at.js d’imprimer des messages dans la console de votre navigateur.
 
 Tous les messages contiennent un préfixe &quot;AT:&quot; pour une présentation pratique. Pour vous assurer qu’un artefact a bien été chargé, le journal de votre console doit contenir des messages similaires à ceux-ci :
 
@@ -30,7 +30,7 @@ L’illustration suivante présente ces messages dans le journal de la console :
 
 (Cliquez sur l’image pour agrandir l’image en largeur réelle.)
 
-![Journal de la console avec des messages d’artefact](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/browser-console.png "Journal de la console avec des messages d’artefact"){zoomable=&quot;yes&quot;}
+![Journal de la console avec messages d’artefact](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/browser-console.png "Journal de la console avec messages d’artefact"){zoomable="yes"}
 
 ## Étape 2 : vérification du téléchargement de l’artefact de règle dans l’onglet Réseau de votre navigateur
 
@@ -48,7 +48,7 @@ Par exemple, pour ouvrir DevTools dans Google Chrome :
 
 ## Étape 3 : vérification du téléchargement des artefacts de règle à l’aide des événements personnalisés at.js
 
-La bibliothèque at.js distribue deux nouveaux événements personnalisés pour prendre en charge [!UICONTROL prise de décision sur appareil].
+La bibliothèque at.js distribue deux nouveaux événements personnalisés pour prendre en charge [!UICONTROL on-device decisioning].
 
 * `adobe.target.event.ARTIFACT_DOWNLOAD_SUCCEEDED`
 * `adobe.target.event.ARTIFACT_DOWNLOAD_FAILED`

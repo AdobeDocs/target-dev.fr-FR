@@ -4,20 +4,21 @@ description: Assurez-vous que toutes les étapes nécessaires au rendu des expé
 feature: APIs/SDKs
 level: Experienced
 role: Developer
-source-git-commit: 723bb2f33a011995757009193ee9c48757ae1213
+exl-id: 7cf0c70b-a4bc-46f4-9b33-099bdb7dd9a9
+source-git-commit: 50ee7e66e30c0f8367763a63b6fde5977d30cfe7
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 7%
+source-wordcount: '908'
+ht-degree: 4%
 
 ---
 
 # Rendu d’expériences
 
-Suivez les étapes de la section *Expériences de rendu* diagramme pour s’assurer que toutes les tâches nécessaires au rendu des expériences sont exécutées dans le bon ordre.
+Suivez les étapes du diagramme *Render Experiences* pour vous assurer que toutes les tâches nécessaires au rendu des expériences sont exécutées dans la séquence correcte.
 
 >[!NOTE]
 >
->Si vous avez activé la requête de chargement automatique de page au cours de la [Configuration de l’étape Requête de chargement de page automatique](/help/dev/patterns/recs-atjs/initialize-sdk.md#automatic) in *Initialisation des SDK* , vous pouvez ignorer cette activité, sauf si vous souhaitez appeler le SDK Adobe Target pour effectuer le rendu d’expériences supplémentaires à l’aide d’une demande d’emplacement régional.
+>Si vous avez activé la requête de chargement de page automatique lors de l’[ étape de configuration de la requête de chargement de page automatique](/help/dev/patterns/recs-atjs/initialize-sdk.md#automatic) dans *Initialiser le SDK* , vous pouvez ignorer cette activité sauf si vous souhaitez appeler le SDK Adobe Target pour effectuer le rendu d’expériences supplémentaires à l’aide d’une requête de localisation régionale.
 
 >[!TIP]
 >
@@ -25,13 +26,13 @@ Suivez les étapes de la section *Expériences de rendu* diagramme pour s’assu
 
 ## Diagramme des expériences de rendu {#diagram}
 
-La gestion automatique du scintillement prêt à l’emploi disponible avec at.js n’a de sens que lorsque vous avez [!UICONTROL Requête de chargement de page automatique] activée. Cette option masque l’intégralité du corps du HTML lors de la récupération des expériences à partir de [!DNL Target]. Dans ce cas, il vous incombe de gérer le scintillement. Recherchez des modèles de mise en oeuvre disponibles pour la gestion du scintillement à titre indicatif.
+La gestion automatique du scintillement prêt à l’emploi disponible avec at.js n’a de sens que lorsque [!UICONTROL Automatic Page Load Request] est activé. Cette option masque l’ensemble du corps de l’HTML lors de la récupération des expériences de [!DNL Target]. Dans ce cas, il vous incombe de gérer le scintillement. Recherchez des modèles de mise en oeuvre disponibles pour la gestion du scintillement à titre indicatif.
 
 >[!NOTE]
 >
->Les numéros des étapes de l’illustration suivante correspondent aux sections ci-dessous. Les numéros des étapes ne sont pas dans un ordre particulier et ne reflètent pas l’ordre des étapes effectuées dans la variable [!DNL Target] Interface utilisateur lors de la création de l’activité.
+>Les numéros des étapes de l’illustration suivante correspondent aux sections ci-dessous. Les numéros des étapes ne sont pas dans un ordre particulier et ne reflètent pas l’ordre des étapes effectuées dans l’interface utilisateur de [!DNL Target] lors de la création de l’activité.
 
-![Diagramme des expériences de rendu](/help/dev/patterns/recs-atjs/assets/diagram-render-experiences-new.png){width="600" zoomable="yes"}
+![ Diagramme des expériences de rendu ](/help/dev/patterns/recs-atjs/assets/diagram-render-experiences-new.png){width="600" zoomable="yes"}
 
 Cliquez sur les liens suivants pour accéder aux sections de votre choix :
 
@@ -50,7 +51,7 @@ Cliquez sur les liens suivants pour accéder aux sections de votre choix :
 
 ## 3.1 : Promotion {#promotion}
 
-Ajoutez des éléments en promotion et contrôlez leur placement dans votre conception de recommandations en choisissant des promotions avant ou arrière dans [!DNL Target] Interface utilisateur lors de la création de l’activité.
+Ajoutez des éléments en promotion et contrôlez leur placement dans votre conception de recommandations en choisissant des promotions avant ou arrière dans l’interface utilisateur [!DNL Target] lors de la création de l’activité.
 
 +++Voir les détails
 
@@ -66,7 +67,7 @@ Ajoutez des éléments en promotion et contrôlez leur placement dans votre conc
 
 **Lectures**
 
-* [Ajout de promotions](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/adding-promotions.html){target=_blank}
+* [Ajouter des promotions](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/adding-promotions.html){target=_blank}
 
 +++
 
@@ -80,9 +81,9 @@ Effectuez des recommandations en fonction du contenu du panier de l’utilisateu
 
 **Critères disponibles**
 
-* [!UICONTROL Les personnes qui les ont consultés ont consulté ceux-ci]
-* [!UICONTROL Les personnes qui les ont consultés ont acheté ces]
-* [!UICONTROL Les personnes qui les ont achetés ont acheté ces]
+* [!UICONTROL People Who Viewed These, Viewed Those]
+* [!UICONTROL People Who Viewed These, Bought Those]
+* [!UICONTROL People Who Bought These, Bought Those]
 
 **Paramètres d’entité requis**
 
@@ -104,22 +105,22 @@ Effectuez des recommandations en fonction de la popularité globale d’un élé
 
 **Critères disponibles**
 
-* [!UICONTROL Les plus consultés sur l’ensemble du site]
-* [!UICONTROL Les plus consultés par catégorie]
-* [!UICONTROL Attribut d’élément le plus consulté]
-* [!UICONTROL Meilleurs vendeurs sur le site]
-* [!UICONTROL Meilleurs vendeurs par catégorie]
-* [!UICONTROL Meilleurs vendeurs par attribut d’article]
-* [!UICONTROL Mesure Début par Analytics]
+* [!UICONTROL Most Viewed Across the Site]
+* [!UICONTROL Most Viewed by Category]
+* [!UICONTROL Most Viewed by Item Attribute]
+* [!UICONTROL Top Sellers Across the Site]
+* [!UICONTROL Top Sellers by Category]
+* [!UICONTROL Top Sellers by Item Attribute]
+* [!UICONTROL Top by Analytics Metric]
 
 **Paramètres d’entité requis**
 
-* `entity.categoryId` ou l’attribut item pour popularité basé sur le critère est basé sur l’attribut current ou l’attribut item .
+* `entity.categoryId` ou l’attribut d’élément pour la popularité basé sur le critère est basé sur l’attribut actuel ou de l’élément .
 * Rien ne doit être transmis pour le site le plus consulté/le plus vendu.
 
 **Lectures**
 
-* [Basé sur la popularité](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Popularity-based](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -133,10 +134,10 @@ Effectuez des recommandations sur la base de la recherche d’éléments similai
 
 **Critères disponibles**
 
-* [!UICONTROL Les personnes ayant consulté ceci ont consulté cela]
-* [!UICONTROL Les personnes ayant consulté ceci ont acheté cela]
-* [!UICONTROL Les personnes ayant acheté ceci ont acheté cela]
-* [!UICONTROL Éléments avec des attributs similaires]
+* [!UICONTROL People Who Viewed This, Viewed That]
+* [!UICONTROL People Who Viewed This, Bought That]
+* [!UICONTROL People Who Bought This, Bought That]
+* [!UICONTROL Items with Similar Attributes]
 
 **Paramètres d’entité requis**
 
@@ -145,7 +146,7 @@ Effectuez des recommandations sur la base de la recherche d’éléments similai
 
 **Lectures**
 
-* [Élément basé](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Élément basé ](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -159,8 +160,8 @@ Effectuez des recommandations en fonction du comportement de l’utilisateur.
 
 **Critères disponibles**
 
-* [!UICONTROL Éléments récemment consultés]
-* [!UICONTROL Recommandé pour vous]
+* [!UICONTROL Recently Viewed Items]
+* [!UICONTROL Recommended for You]
 
 **Paramètres d’entité requis**
 
@@ -168,7 +169,7 @@ Effectuez des recommandations en fonction du comportement de l’utilisateur.
 
 **Lectures**
 
-* [Basé sur les utilisateurs](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Basé sur l’utilisateur](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -182,11 +183,11 @@ Faites des recommandations en fonction d’un fichier personnalisé que vous cha
 
 **Critères disponibles**
 
-* [!UICONTROL Algorithme personnalisé]
+* [!UICONTROL Custom algorithm]
 
 **Paramètres d’entité requis**
 
-`entity.id` ou l’attribut utilisé comme clé pour l’algorithme personnalisé
+`entity.id` ou attribut utilisé comme clé pour l’algorithme personnalisé
 
 **Lectures**
 
@@ -216,7 +217,7 @@ Transmettez les identifiants d’entité pour les entités que vous souhaitez ex
 
 **Lectures**
 
-* [Puis-je exclure dynamiquement une entité ? ](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=en#exclude){target=_blank}
+* [Puis-je exclure dynamiquement une entité ?](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=en#exclude){target=_blank}
 
 +++
 
@@ -230,7 +231,7 @@ Transmettez les identifiants d’entité pour les entités que vous souhaitez ex
 
 * [Attributs d’entité](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
 
-Vous pouvez également accomplir cette étape en créant des [flux de produits](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html){target=_blank} en utilisant la variable [!DNL Target] Interface utilisateur permettant de mettre à jour le catalogue de produits pour [!DNL Recommendations].
+Vous pouvez également accomplir cette étape en créant des [flux de produit](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html){target=_blank} à l’aide de l’interface utilisateur [!DNL Target] pour mettre à jour le catalogue de produits pour [!DNL Recommendations].
 
 +++
 
@@ -252,7 +253,7 @@ Fournissez les attributs de profil utilisés comme clés pour les règles d’in
 
 ## 3.11 : Déclenchement de la requête de chargement de page {#fire}
 
-Cette étape déclenche une [!DNL Delivery API] appelez avec `execute` > `pageLoad` payload dans la requête. La variable `getOffers()` récupère l’expérience et `applyOffers()` effectue le rendu de l’expérience sur la page. La variable `pageLoad` est nécessaire pour le rendu des expériences créées dans la variable [Compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank} (VEC).
+Cette étape déclenche un appel [!DNL Delivery API] avec la charge utile `execute` > `pageLoad` dans la requête. La méthode `getOffers()` récupère l’expérience et `applyOffers()` effectue le rendu de l’expérience sur la page. La requête `pageLoad` est nécessaire pour le rendu des expériences créées dans le [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank} (VEC).
 
 +++Voir les détails
 
@@ -260,7 +261,7 @@ Cette étape déclenche une [!DNL Delivery API] appelez avec `execute` > `pageLo
 
 **Conditions préalables**
 
-* Tous les mappages de données doivent être effectués à l’aide de la variable `targetPageParams` de la fonction
+* Tous les mappages de données doivent être effectués à l’aide de la fonction `targetPageParams` .
 
 **Lectures**
 
@@ -269,7 +270,7 @@ Cette étape déclenche une [!DNL Delivery API] appelez avec `execute` > `pageLo
 
 **Actions**
 
-* Utilisez la variable `getOffers` et `applyOffers` méthodes pour récupérer l’expérience à l’aide d’un appel API de requête de chargement de page.
+* Utilisez les méthodes `getOffers` et `applyOffers` pour récupérer l’expérience à l’aide d’un appel API de requête de chargement de page.
 
 +++
 
@@ -277,7 +278,7 @@ Cette étape déclenche une [!DNL Delivery API] appelez avec `execute` > `pageLo
 
 ## 3.12 : Déclenchement de la demande d’emplacement régional (#location)
 
-Cette étape déclenche une [!DNL Delivery API] appelez avec `execute` > `mboxes` payload dans sa requête. La variable `getOffers` récupère l’expérience et `applyOffers` effectue le rendu de l’expérience sur la page. Vous pouvez envoyer plusieurs mbox sous le `execute` > `mboxes` payload.
+Cette étape déclenche un appel [!DNL Delivery API] avec une charge utile `execute` > `mboxes` dans sa requête. La méthode `getOffers` récupère l’expérience et `applyOffers` la rend sur la page. Vous pouvez envoyer plusieurs mbox sous la charge utile `execute` > `mboxes`.
 
 +++Voir les détails
 
@@ -285,7 +286,7 @@ Cette étape déclenche une [!DNL Delivery API] appelez avec `execute` > `mboxes
 
 **Conditions préalables**
 
-* Tous les mappages de données doivent être effectués à l’aide de la variable `targetPageParams` de la fonction
+* Tous les mappages de données doivent être effectués à l’aide de la fonction `targetPageParams` .
 
 **Lectures**
 
@@ -294,7 +295,7 @@ Cette étape déclenche une [!DNL Delivery API] appelez avec `execute` > `mboxes
 
 **Actions**
 
-* Utilisez la variable `getOffers` et `applyOffers` méthodes pour récupérer l’expérience à l’aide d’un appel API de requête de chargement de page.
+* Utilisez les méthodes `getOffers` et `applyOffers` pour récupérer l’expérience à l’aide d’un appel API de requête de chargement de page.
 
 +++
 

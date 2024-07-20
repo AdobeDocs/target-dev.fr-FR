@@ -5,8 +5,8 @@ feature: APIs/SDKs
 exl-id: 4ccfb455-f813-4bdb-a9c1-d576a110a9bb
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 1%
+source-wordcount: '292'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ npm i @adobe/target-nodejs-sdk -P
    const TargetClient = require("@adobe/target-nodejs-sdk");
    ```
 
-   **Java **
+   **Java**
 
    ```javascript {line-numbers="true"}
    import com.adobe.target.edge.client.ClientConfig;
@@ -90,7 +90,7 @@ npm i @adobe/target-nodejs-sdk -P
    }
    ```
 
-   **Java **
+   **Java**
 
    ```javascript {line-numbers="true"}
    package com.adobe.target.edge.client.model.ondevice.OnDeviceDecisioningHandler;
@@ -113,10 +113,10 @@ npm i @adobe/target-nodejs-sdk -P
    TargetClient targetClient = TargetClient.create(config);
    ```
 
-1. client et `organizationId` peut être récupéré à partir de [!DNL Adobe Target]en accédant à **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]**, comme illustré ici.
+1. Le client et `organizationId` peuvent être récupérés à partir de [!DNL Adobe Target] en accédant à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**, comme illustré ici.
 
    &lt;!— Insérer image-client-code.png —>
-   ![image alternative](assets/asset-rule-artifact-3.png)
+   ![alt image](assets/asset-rule-artifact-3.png)
 
 ## 3. Stocker et utiliser à nouveau la charge utile JSON
 
@@ -147,7 +147,7 @@ function onArtifactDownloadFailed(event) {
 //... Code removed for brevity
 ```
 
->[!TAB Java ]
+>[!TAB Java]
 
 ```javascript {line-numbers="true"}
 MboxRequest mbox = new MboxRequest().name("homepage").index(0);
@@ -162,7 +162,7 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 
 >[!NOTE]
 >
->En initialisant la variable [!DNL Adobe Target]Le SDK via la charge utile JSON. Votre serveur est prêt à traiter immédiatement les requêtes avec les activités de prise de décision sur l’appareil, puisque la variable [!DNL Adobe Target]Le SDK n’a pas besoin d’attendre que l’artefact de règle soit téléchargé.
+>En initialisant le SDK [!DNL Adobe Target]par le biais de la charge utile JSON, votre serveur est prêt à traiter immédiatement les requêtes avec les activités de prise de décision sur l’appareil, puisque le SDK [!DNL Adobe Target]n’a pas besoin d’attendre que l’artefact de règle soit téléchargé.
 
 Voici un exemple illustrant la fonctionnalité d’initialisation de la payload JSON.
 
@@ -255,7 +255,7 @@ function startWebServer() {
 }
 ```
 
->[!TAB Java ]
+>[!TAB Java]
 
 ```javascript {line-numbers="true"}
 import com.adobe.target.edge.client.ClientConfig;

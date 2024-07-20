@@ -1,11 +1,11 @@
 ---
-title: Abonnez-vous aux événements dans la variable [!DNL Adobe Target] SDK Python
-description: Découvrez comment vous abonner à divers événements qui se produisent dans le SDK Python à l’aide de la variable [!UICONTROL OnDeviceDecisioningHandler] .
+title: Abonnez-vous aux événements dans le kit SDK  [!DNL Adobe Target] Python
+description: Découvrez comment vous abonner à divers événements qui se produisent dans le SDK Python à l’aide de l’objet [!UICONTROL OnDeviceDecisioningHandler].
 feature: APIs/SDKs
 exl-id: 4e32e3b5-6072-4703-b09d-abb467aa1304
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '165'
 ht-degree: 3%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 3%
 
 ## Description
 
-When [initialisation du SDK](initialize-sdk.md), la variable `options["events"]` dict est un objet facultatif avec des clés de nom d’événement et des valeurs de fonction de rappel. Il peut être utilisé pour s’abonner à divers événements qui se produisent dans le SDK. Par exemple, la variable `client_ready` peut être utilisé avec une fonction de rappel qui sera appelée lorsque le SDK est prêt pour les appels de méthode.
+Lorsque [ initialise le SDK ](initialize-sdk.md), le dict `options["events"]` est un objet facultatif avec des clés de nom d’événement et des valeurs de fonction de rappel. Il peut être utilisé pour s’abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `client_ready` peut être utilisé avec une fonction de rappel qui sera appelée lorsque le SDK est prêt pour les appels de méthode.
 
-Lorsque la variable `callback` est appelée, un objet d’événement est transmis. Chaque événement comporte une `type` correspondant au nom de l’événement et certains événements incluent des propriétés supplémentaires avec des informations pertinentes.
+Lorsque la fonction `callback` est appelée, un objet d’événement est transmis. Chaque événement comporte un `type` correspondant au nom de l’événement et certains événements incluent des propriétés supplémentaires avec des informations pertinentes.
 
 ## Requête 
 

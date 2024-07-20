@@ -5,14 +5,14 @@ feature: APIs/SDKs
 exl-id: a5ae9826-7bb5-41de-8796-76edc4f5b281
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
 
-# Prise en main de [!DNL Target] SDK
+# Prise en main des [!DNL Target] SDK
 
-Pour être opérationnel, nous vous encourageons à créer votre première [prise de décision sur appareil](../on-device-decisioning/overview.md) dans la langue de votre choix :
+Pour être opérationnel, nous vous encourageons à créer votre première activité d’indicateur de fonctionnalité [prise de décision sur l’appareil](../on-device-decisioning/overview.md) dans la langue de votre choix :
 
 * Node.js
 * Java
@@ -24,26 +24,26 @@ Pour être opérationnel, nous vous encourageons à créer votre première [pris
 1. Activation de la prise de décision sur les appareils pour votre entreprise
 1. Installation du SDK
 1. Initialisation du SDK
-1. Configuration des indicateurs de fonctionnalité dans une [!DNL Adobe Target] [!UICONTROL Test A/B] activité
+1. Configuration des indicateurs de fonctionnalité dans une activité [!DNL Adobe Target] [!UICONTROL A/B Test]
 1. Mise en oeuvre et rendu de la fonctionnalité dans votre application
 1. Mise en oeuvre du suivi des événements dans votre application
-1. Activez votre [!UICONTROL Test A/B] activité
+1. Activation de votre activité [!UICONTROL A/B Test]
 
 ## 1. Activez la prise de décision sur l’appareil pour votre organisation.
 
-L’activation de la prise de décision sur l’appareil garantit une [!UICONTROL Test A/B] est exécutée à une latence proche de zéro. Pour activer cette fonction, accédez à **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]** > **[!UICONTROL Détails du compte]** et activez la variable **[!UICONTROL Prise de décision sur appareil]** bascule.
+L’activation de la prise de décision sur l’appareil garantit qu’une activité [!UICONTROL A/B Test] est exécutée à une latence proche de zéro. Pour activer cette fonction, accédez à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** et activez le bouton d’activation/désactivation **[!UICONTROL On-Device Decisioning]**.
 
-![image alternative](assets/asset-odd-toggle.png)
+![alt image](assets/asset-odd-toggle.png)
 
 >[!NOTE]
 >
->Vous devez disposer de la variable **[!UICONTROL Administration]** ou **[!UICONTROL Approbateur]** [rôle utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) pour activer ou désactiver la fonction **[!UICONTROL Prise de décision sur appareil]** bascule.
+>Vous devez disposer du **[!UICONTROL Admin]** ou du **[!UICONTROL Approver]** [rôle utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) pour activer ou désactiver le bouton d’activation/désactivation de **[!UICONTROL On-Device Decisioning]**.
 
-Après avoir activé la variable **[!UICONTROL Prise de décision sur appareil]** basculer, [!DNL Adobe Target] commence à générer [artefacts de règle](../on-device-decisioning/rule-artifact-overview.md) pour votre client.
+Après avoir activé le bouton d’activation **[!UICONTROL On-Device Decisioning]**, [!DNL Adobe Target] commence à générer des [artefacts de règle](../on-device-decisioning/rule-artifact-overview.md) pour votre client.
 
 ## 2. Installation du SDK
 
-Pour Node.js, Java et Python, exécutez la commande suivante dans le répertoire de votre projet dans le terminal. Pour .NET, ajoutez-le en tant que dépendance par [installation à partir de NuGet](https://www.nuget.org/packages/Adobe.Target.Client).
+Pour Node.js, Java et Python, exécutez la commande suivante dans le répertoire de votre projet dans le terminal. Pour .NET, ajoutez-le en tant que dépendance en [installant à partir de NuGet](https://www.nuget.org/packages/Adobe.Target.Client).
 
 >[!BEGINTABS]
 
@@ -146,31 +146,31 @@ target_client = TargetClient.create(CONFIG)
 
 >[!ENDTABS]
 
-## 4. Configurez les indicateurs de fonctionnalité dans une [!DNL Adobe Target] [!UICONTROL Test A/B] activité
+## 4. Configurez les indicateurs de fonctionnalité dans une activité [!DNL Adobe Target] [!UICONTROL A/B Test]
 
-1. Dans [!DNL Target], accédez à la **[!UICONTROL Activités]** page, puis sélectionnez **[!UICONTROL Créer une activité]** > **[!UICONTROL Test A/B]**.
+1. Dans [!DNL Target], accédez à la page **[!UICONTROL Activities]**, puis sélectionnez **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**.
 
-   ![image alternative](assets/asset-ab.png)
+   ![alt image](assets/asset-ab.png)
 
-1. Dans le **[!UICONTROL Créer une activité de test A/B]** modale, laissez l’option Web par défaut sélectionnée (1), sélectionnez **[!UICONTROL Formulaire]** en tant que compositeur d’expérience (2), sélectionnez **[!UICONTROL Espace de travail par défaut]** avec **[!UICONTROL Aucune restriction de propriété]**(3), puis cliquez sur **[!UICONTROL Suivant]** (4).
+1. Dans le modal **[!UICONTROL Create A/B Test Activity]**, laissez l’option Web par défaut sélectionnée (1), sélectionnez **[!UICONTROL Form]** comme compositeur d’expérience (2), sélectionnez **[!UICONTROL Default Workspace]** avec **[!UICONTROL No Property Restrictions]**(3), puis cliquez sur **[!UICONTROL Next]** (4).
 
-   ![image alternative](assets/asset-form.png)
+   ![alt image](assets/asset-form.png)
 
-1. Dans le **[!UICONTROL Expériences]** étape de création d’une activité, attribuez un nom à votre activité (1) et ajoutez une deuxième expérience, l’expérience B, en cliquant sur **[!UICONTROL Ajouter une expérience]** (2). Saisissez le nom de l’emplacement de votre choix (3). Par exemple : `ondevice-featureflag` ou `homepage-addtocart-featureflag` sont des noms d’emplacement indiquant les destinations pour les tests d’indicateur de fonctionnalité.  Dans l’exemple ci-dessous, `ondevice-featureflag` est l’emplacement défini pour l’expérience B. Vous pouvez éventuellement ajouter des perfectionnements d’audience (4) pour limiter la qualification à l’activité.
+1. À l’étape **[!UICONTROL Experiences]** de la création de l’activité, donnez un nom à votre activité (1) et ajoutez une seconde expérience, l’expérience B, en cliquant sur **[!UICONTROL Add Experience]** (2). Saisissez le nom de l’emplacement de votre choix (3). Par exemple, `ondevice-featureflag` ou `homepage-addtocart-featureflag` sont des noms d’emplacement indiquant les destinations pour les tests d’indicateur de fonctionnalité.  Dans l’exemple ci-dessous, `ondevice-featureflag` est l’emplacement défini pour l’expérience B. Vous pouvez éventuellement ajouter des perfectionnements d’audience (4) pour limiter la qualification à l’activité.
 
-   ![image alternative](assets/asset-location.png)
+   ![alt image](assets/asset-location.png)
 
-1. Dans le **[!UICONTROL CONTENU]** , sélectionnez **[!UICONTROL Création d’une offre JSON]** dans la liste déroulante (1), comme indiqué.
+1. Dans la section **[!UICONTROL CONTENT]** de la même page, sélectionnez **[!UICONTROL Create JSON Offer]** dans la liste déroulante (1) comme indiqué.
 
-   ![image alternative](assets/asset-offer.png)
+   ![alt image](assets/asset-offer.png)
 
-1. Dans le **[!UICONTROL Données JSON]** zone de texte qui s’affiche, saisissez les variables d’indicateur de fonctionnalité pour chaque expérience (1) à l’aide d’un objet JSON valide (2).
+1. Dans la zone de texte **[!UICONTROL JSON Data]** qui s’affiche, saisissez vos variables d’indicateur de fonctionnalité pour chaque expérience (1), à l’aide d’un objet JSON valide (2).
 
    Saisissez les variables d’indicateur de fonctionnalité pour l’expérience A.
 
-   ![image alternative](assets/asset-json_a.png)
+   ![alt image](assets/asset-json_a.png)
 
-   **(Exemple de fichier JSON pour l’expérience A, ci-dessus)**
+   **(Exemple de JSON pour l’expérience A, ci-dessus)**
 
    ```json {line-numbers="true"}
    {
@@ -181,9 +181,9 @@ target_client = TargetClient.create(CONFIG)
 
    Saisissez les variables d’indicateur de fonctionnalité pour l’expérience B.
 
-   ![image alternative](assets/asset-json_b.png)
+   ![alt image](assets/asset-json_b.png)
 
-   **(Exemple JSON pour l’expérience B, ci-dessus)**
+   **(Exemple de JSON pour l’expérience B, ci-dessus)**
 
    ```json {line-numbers="true"}
    {
@@ -192,17 +192,17 @@ target_client = TargetClient.create(CONFIG)
    }
    ```
 
-1. Cliquez sur **[!UICONTROL Suivant]** (1) pour accéder à la variable **[!UICONTROL Ciblage]** de la création de l’activité.
+1. Cliquez sur **[!UICONTROL Next]** (1) pour passer à l’étape **[!UICONTROL Targeting]** de la création de l’activité.
 
-   ![image alternative](assets/asset-next_2_t.png)
+   ![alt image](assets/asset-next_2_t.png)
 
-1. Dans le **[!UICONTROL Ciblage]** exemple d’étape illustré ci-dessous, le ciblage d’audience (2) reste sur l’ensemble par défaut de Tous les visiteurs, pour plus de simplicité. Cela signifie que l’activité n’est pas ciblée. Notez toutefois que l’Adobe vous recommande de toujours cibler vos audiences pour les activités de production. Cliquez sur **[!UICONTROL Suivant]** (3) pour accéder à la variable **[!UICONTROL Objectifs et paramètres]** de la création de l’activité.
+1. Dans l’exemple d’étape **[!UICONTROL Targeting]** illustré ci-dessous, le ciblage d’audience (2) reste sur l’ensemble par défaut de Tous les visiteurs, pour plus de simplicité. Cela signifie que l’activité n’est pas ciblée. Notez toutefois que l’Adobe vous recommande de toujours cibler vos audiences pour les activités de production. Cliquez sur **[!UICONTROL Next]** (3) pour passer à l’étape **[!UICONTROL Goals & Settings]** de la création de l’activité.
 
-   ![image alternative](assets/asset-next_2_g.png)
+   ![alt image](assets/asset-next_2_g.png)
 
-1. Dans le **[!UICONTROL Objectifs et paramètres]** étape, définir **[!UICONTROL Source de création de rapports]** to **[!UICONTROL Adobe Target]** (1). Définissez la variable **[!UICONTROL Mesure de l’objectif]** as **[!UICONTROL Conversion]**, en spécifiant les détails en fonction des mesures de conversion de votre site (2). Cliquez sur **[!UICONTROL Enregistrer et fermer]** (3) pour enregistrer l’activité.
+1. À l’étape **[!UICONTROL Goals & Settings]**, définissez **[!UICONTROL Reporting Source]** sur **[!UICONTROL Adobe Target]** (1). Définissez le **[!UICONTROL Goal Metric]** comme **[!UICONTROL Conversion]**, en spécifiant les détails en fonction des mesures de conversion de votre site (2). Cliquez sur **[!UICONTROL Save & Close]** (3) pour enregistrer l’activité.
 
-   ![image alternative](assets/asset-conv.png)
+   ![alt image](assets/asset-conv.png)
 
 ## 5. Implémentez et effectuez le rendu de la fonctionnalité dans votre application.
 
@@ -382,12 +382,12 @@ target_client.send_notifications({
 
 >[!ENDTABS]
 
-## 7. Activez votre [!UICONTROL Test A/B] activité
+## 7. Activez votre activité [!UICONTROL A/B Test]
 
-1. Cliquez sur **[!UICONTROL Activer]** (1) pour activer votre [!UICONTROL Test A/B] activité.
+1. Cliquez sur **[!UICONTROL Activate]** (1) pour activer votre activité [!UICONTROL A/B Test].
 
    >[!NOTE]
    >
-   >Vous devez disposer de la variable **[!UICONTROL Approbateur]** ou **[!UICONTROL Éditeur]** [rôle utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) pour effectuer cette étape.
+   >Pour effectuer cette étape, vous devez disposer du **[!UICONTROL Approver]** ou du **[!UICONTROL Publisher]** [rôle utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html).
 
-   ![image alternative](assets/asset-activate.png)
+   ![alt image](assets/asset-activate.png)

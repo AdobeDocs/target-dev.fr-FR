@@ -1,18 +1,18 @@
 ---
 title: Télécharger, stocker et mettre à jour automatiquement l’artefact de règle de prise de décision sur l’appareil
-description: Découvrez comment utiliser l’artefact de règle de prise de décision sur l’appareil lors de l’initialisation du [!DNL Adobe Target] SDK.
+description: Découvrez comment utiliser l’artefact de règle de prise de décision sur l’appareil lors de l’initialisation du SDK  [!DNL Adobe Target] .
 feature: APIs/SDKs
 exl-id: be41a723-616f-4aa3-9a38-8143438bd18a
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 1%
+source-wordcount: '347'
+ht-degree: 0%
 
 ---
 
-# Téléchargement, stockage et mise à jour automatique de l’artefact de règle via le [!DNL Adobe Target] SDK
+# Téléchargement, stockage et mise à jour automatique de l’artefact de règle via le SDK [!DNL Adobe Target]
 
-Cette approche est préférable lorsque vous pouvez initialiser la variable [!DNL Adobe Target] SDK au même moment que vous initialisez et démarrez votre serveur web. L’artefact de règle sera téléchargé par la fonction [!DNL Adobe Target] SDK et mis en mémoire cache avant que l’application de serveur web ne commence à traiter les demandes. Une fois votre application web en cours d’exécution, toutes les [!DNL Adobe Target] Les décisions seront exécutées à l’aide de l’artefact de règle en mémoire. L’artefact de règle mis en cache sera mis à jour en fonction de la variable `pollingInterval` vous spécifiez pendant l’étape d’initialisation du SDK.
+Cette approche est préférable lorsque vous pouvez initialiser le SDK [!DNL Adobe Target] au même moment que vous initialisez et démarrez votre serveur web. L’artefact de règle sera téléchargé par le SDK [!DNL Adobe Target] et mis en mémoire cache avant que l’application de serveur web ne commence à traiter les requêtes. Une fois votre application web en cours d’exécution, toutes les décisions [!DNL Adobe Target] seront exécutées à l’aide de l’artefact de règle en mémoire. L’artefact de règle mis en cache sera mis à jour en fonction de l’élément `pollingInterval` que vous avez spécifié lors de l’étape d’initialisation du SDK.
 
 ## Résumé des étapes
 
@@ -52,7 +52,7 @@ npm i @adobe/target-nodejs-sdk -P
    const TargetClient = require("@adobe/target-nodejs-sdk");
    ```
 
-   **Java **
+   **Java**
 
    ```javascript {line-numbers="true"}
    import com.adobe.target.edge.client.ClientConfig;
@@ -82,7 +82,7 @@ npm i @adobe/target-nodejs-sdk -P
    }
    ```
 
-   **Java **
+   **Java**
 
    ```javascript {line-numbers="true"}
    ClientConfig config = ClientConfig.builder()
@@ -92,7 +92,7 @@ npm i @adobe/target-nodejs-sdk -P
    TargetClient targetClient = TargetClient.create(config);
    ```
 
-1. Client et organizationId peuvent être récupérés à partir de [!DNL Adobe Target] en accédant à **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]**, comme illustré ici.
+1. Le client et l’ID d’organisation peuvent être récupérés à partir de [!DNL Adobe Target] en accédant à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**, comme illustré ici.
 
    &lt;!— Insérer image-client-code.png —>
    ![Page d’implémentation sous Administration dans Target](assets/asset-rule-artifact-3.png)
@@ -131,7 +131,7 @@ TargetClient.getOffers({
 })
 ```
 
->[!TAB Java ]
+>[!TAB Java]
 
 ```java {line-numbers="true"}
 MboxRequest mbox = new MboxRequest().name("homepage").index(0);
@@ -146,9 +146,9 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 
 >[!NOTE]
 >
->Dans l’exemple de code ci-dessus, la variable `TargetClient` contient une référence à l’artefact de règle en mémoire. Lorsque vous utilisez cet objet pour appeler des méthodes SDK standard, il utilise l’artefact de règle en mémoire pour la prise de décision. Si votre application est structurée de manière à ce que vous ayez besoin d’appeler les méthodes du SDK dans des fichiers autres que celui qui s’initialise et écoute les demandes du client, et si ces fichiers n’ont pas accès à l’objet TargetClient, vous pouvez télécharger la charge utile JSON et la stocker dans un fichier JSON local à utiliser sur d’autres fichiers, qui doivent initialiser le SDK. Ceci est expliqué dans la section suivante, en ce qui concerne [téléchargement de l’artefact de règle à l’aide d’une charge utile JSON](rule-artifact-json.md).
+>Dans l’exemple de code ci-dessus, l’objet `TargetClient` contient une référence à l’artefact de règle en mémoire. Lorsque vous utilisez cet objet pour appeler des méthodes SDK standard, il utilise l’artefact de règle en mémoire pour la prise de décision. Si votre application est structurée de manière à ce que vous ayez besoin d’appeler les méthodes du SDK dans des fichiers autres que celui qui s’initialise et écoute les demandes du client, et si ces fichiers n’ont pas accès à l’objet TargetClient, vous pouvez télécharger la charge utile JSON et la stocker dans un fichier JSON local à utiliser sur d’autres fichiers, qui doivent initialiser le SDK. Ceci est expliqué dans la section suivante, concernant le [téléchargement de l’artefact de règle à l’aide d’une charge utile JSON](rule-artifact-json.md).
 
-Voici un exemple qui démarre une application web après avoir initialisé la fonction [!DNL Adobe Target] SDK.
+Voici un exemple qui démarre une application web après avoir initialisé le SDK [!DNL Adobe Target].
 
 >[!BEGINTABS]
 
@@ -223,7 +223,7 @@ function startWebServer() {
 }
 ```
 
->[!TAB Java ]
+>[!TAB Java]
 
 ```java {line-numbers="true"}
 import com.adobe.target.edge.client.ClientConfig;

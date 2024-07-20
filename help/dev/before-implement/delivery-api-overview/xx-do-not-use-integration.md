@@ -4,8 +4,8 @@ description: Intégration à Experience Cloud
 keywords: api de diffusion
 source-git-commit: f16903556954d2b1854acd429f60fbf6fc2920de
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 8%
+source-wordcount: '467'
+ht-degree: 7%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 8%
 
 # Intégration à Experience Cloud
 
-## Adobe Analytics pour Target (A4T)
+## Adobe Analytics for Target (A4T)
 
 Lorsqu’un appel de l’API de diffusion Target est déclenché à partir du serveur, Adobe Target renvoie l’expérience de cet utilisateur et, en plus, Adobe Target renvoie la payload Adobe Analytics à l’appelant ou la transfère automatiquement à Adobe Analytics. Pour envoyer des informations sur l’activité Target à Adobe Analytics côté serveur, quelques conditions préalables doivent être remplies :
 
@@ -25,8 +25,8 @@ Lorsqu’un appel de l’API de diffusion Target est déclenché à partir du se
 
 Adobe Target peut transférer automatiquement la charge utile d’analyse vers Adobe Analytics via le côté serveur si les identifiants suivants sont fournis :
 
-1. `supplementalDataId` - Identifiant utilisé pour assembler Adobe Analytics et Adobe Target
-1. `trackingServer` - Adobe du serveur Analytics Pour qu’Adobe Target et Adobe Analytics réunissent correctement les données, le même `supplementalDataId` doivent être transmises à Adobe Target et à Adobe Analytics.
+1. `supplementalDataId` - ID utilisé pour assembler Adobe Analytics et Adobe Target
+1. `trackingServer` - Adobe du serveur Analytics Pour qu’Adobe Target et Adobe Analytics réunissent correctement les données, le même `supplementalDataId` doit être transmis à Adobe Target et à Adobe Analytics.
 
 ```
 curl -X POST \
@@ -73,7 +73,7 @@ curl -X POST \
 
 ### Récupération de la charge utile Analytics à partir d’Adobe Target
 
-Les utilisateurs de l’API de diffusion Adobe Target peuvent récupérer la charge utile Adobe Analytics d’une mbox correspondante, de sorte que le client puisse envoyer la charge utile à Adobe Analytics via le [API d’insertion de données](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md). Lorsqu’un appel Adobe Target côté serveur est déclenché, transmettez `client_side` à la fonction `logging` dans la requête. Cela renverra à son tour un payload si la mbox est présente dans une activité qui utilise Analytics comme source de création de rapports.
+Les clients de l’API de diffusion Adobe Target peuvent récupérer la charge utile Adobe Analytics pour une mbox correspondante afin que le client puisse envoyer la charge utile à Adobe Analytics via l’ [API d’insertion de données](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md). Lorsqu’un appel Adobe Target côté serveur est déclenché, transmettez `client_side` au champ `logging` de la requête. Cela renverra à son tour un payload si la mbox est présente dans une activité qui utilise Analytics comme source de création de rapports.
 
 ```
 curl -X POST \
@@ -121,7 +121,7 @@ curl -X POST \
     }'
 ```
 
-Une fois que vous avez spécifié `logging` = `client_side`, vous recevrez la charge utile dans la variable `mbox` comme illustré ci-dessous.
+Une fois que vous avez spécifié `logging` = `client_side`, vous recevrez la charge utile dans le champ `mbox` comme illustré ci-dessous.
 
 ```
 {
@@ -176,7 +176,7 @@ Une fois que vous avez spécifié `logging` = `client_side`, vous recevrez la ch
 }
 ```
 
-Si la réponse de Target contient quelque chose dans la variable `analytics` -> `payload` , transférez-la tel quel vers Adobe Analytics. Analytics sait comment traiter cette payload. Vous pouvez le faire dans une requête de GET au format suivant :
+Si la réponse de Target contient quoi que ce soit dans la propriété `analytics` -> `payload`, transmettez-la telle quelle à Adobe Analytics. Analytics sait comment traiter cette payload. Vous pouvez le faire dans une requête de GET au format suivant :
 
 ```
 https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta={payload}&mid={mid}&vid={vid}&aid={aid}
@@ -193,7 +193,7 @@ https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta
 
 ### Valeurs d’en-tête requises
 
-| Nom de l&#39;en-tête | Valeur de l&#39;en-tête |
+| Nom de l’en-tête | Valeur de l’en-tête |
 | --- | --- |
 | Hôte | Serveur de collecte de données Analytics (par exemple : adobeags421.sc.omtrdc.net) |
 

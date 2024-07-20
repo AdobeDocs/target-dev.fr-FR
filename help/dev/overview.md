@@ -1,103 +1,103 @@
 ---
 keywords: guide de développement de target ; présentation ; accueil
 title: Guide du développeur d’Adobe Target
-description: Comment mettre en oeuvre et administrer [!DNL Adobe Target] et travailler avec ses API et ses SDK ?
+description: Comment mettre en oeuvre et administrer  [!DNL Adobe Target] et utiliser ses API et SDK ?
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: 655cff9b-fc04-45cf-9068-5c6c32b70d79
 source-git-commit: dadc3804da4592dba4ad88b8c5c9f804c56e232b
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '398'
 ht-degree: 5%
 
 ---
 
 # [!DNL Adobe Target] Guide du développeur
 
-**([Affichage [!DNL Target] mises à jour de la documentation](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
+**([Afficher [!DNL Target] mises à jour de la documentation](https://experienceleague.adobe.com/docs/target/using/release-notes/doc-change.html){target=_blank})**
 
-Ceci *[!DNL Adobe Target]Guide du développeur* fournit des ressources et des guides pour [!DNL Target] développeurs, y compris la documentation sur l’API et le SDK pour implémenter et administrer [!DNL Target].
+Ce *[!DNL Adobe Target]Guide du développeur* fournit des ressources et des guides à l&#39;intention des développeurs [!DNL Target], y compris la documentation sur les API et le SDK pour la mise en oeuvre et l&#39;administration de [!DNL Target].
 
 >[!NOTE]
 >
 >En plus de ce guide, les guides [!DNL Adobe Target] suivants sont également disponibles :
 >
->* [*[!DNL Adobe Target] Guide du praticien professionnel *](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr){target=_blank}
+>* [*[!DNL Adobe Target] Guide du professionnel *](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr){target=_blank}
 >
 >* [*[!DNL Adobe Target] Tutorials *](https://experienceleague.adobe.com/docs/target-learn/tutorials/overview.html?lang=fr){target=_blank}
 >
->Pour plus d’informations sur la version, voir [Notes de mise à jour de Target (actualisées)](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html){target=_blank} dans le *[!DNL Adobe Target]Guide du praticien professionnel*.
+>Pour plus d’informations sur la version, voir [Notes de mise à jour de Target (en cours)](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html){target=_blank} dans le *[!DNL Adobe Target]Guide du praticien de l’entreprise*.
 
 ## Prise en main de la mise en oeuvre
 
-**[Avant l’implémentation](/help/dev/before-implement/considerations-before-you-implement-target.md)**: observations à prendre en compte avant l’implémentation [!DNL Adobe Target].
+**[Avant de mettre en oeuvre](/help/dev/before-implement/considerations-before-you-implement-target.md)** : observations à prendre en compte avant de mettre en oeuvre [!DNL Adobe Target].
 
 ## Implémentation côté client
 
-[**SDK Web Adobe Experience Platform**](/help/dev/implement/client-side/aep-web-sdk.md): la variable [!DNL Adobe Experience Platform Web SDK] permet d’interagir avec les différents services de la variable [!DNL Experience Cloud] (y compris [!DNL Target]) par l’intermédiaire de la variable [!UICONTROL Adobe Experience Edge Network].
+[**SDK Web Adobe Experience Platform**](/help/dev/implement/client-side/aep-web-sdk.md) : [!DNL Adobe Experience Platform Web SDK] permet d’interagir avec les différents services de l’ [!DNL Experience Cloud] (y compris [!DNL Target]) par le [!UICONTROL Adobe Experience Edge Network].
 
-[**Bibliothèque JavaScript at.js de Target**](/help/dev/implement/client-side/overview.md): la bibliothèque JavaScript at.js réduit les délais de chargement des pages pour les implémentations web, renforce la sécurité et offre des options d’implémentation optimisées pour les applications d’une seule page.
+[**Bibliothèque JavaScript at.js**](/help/dev/implement/client-side/overview.md) : la bibliothèque JavaScript at.js réduit les délais de chargement des pages pour les implémentations web, renforce la sécurité et offre de meilleures options d’implémentation pour les applications d’une seule page.
 
 ## Mise en oeuvre côté serveur
 
-[**Présentation du SDK Target**](implement/server-side/server-side-overview.md): Prise en main de [!DNL Adobe Target] SDK, y compris la prise de décision sur l’appareil.
+[**Présentation du SDK Target**](implement/server-side/server-side-overview.md) : commencez avec [!DNL Adobe Target] SDK, y compris la prise de décision sur l’appareil.
 
-[**SDK Node.js**](implement/server-side/node-js/overview.md): comment utiliser la variable [!DNL Target] SDK Node.js.
+[**SDK Node.js**](implement/server-side/node-js/overview.md) : utilisation du SDK [!DNL Target] Node.js.
 
-[**SDK Java**](implement/server-side/java/overview.md): comment utiliser la variable [!DNL Target] SDK Java.
+[**SDK Java**](implement/server-side/java/overview.md) : utilisation du SDK Java [!DNL Target].
 
-[**SDK .NET**](implement/server-side/net/overview.md): comment utiliser la variable [!DNL Target] SDK .NET.
+[**.NET SDK**](implement/server-side/net/overview.md) : utilisation du SDK .NET [!DNL Target].
 
-[**SDK Python**](implement/server-side/python/overview.md): comment utiliser la variable [!DNL Target] SDK Python.
+[**SDK Python**](implement/server-side/python/overview.md) : utilisation du [!DNL Target] SDK Python.
 
 ## Implémentation hybride
 
-[**Déploiement hybride**](implement/hybrid/hybrid-overview.md): implémentation [!DNL Target] en utilisant une combinaison de mise en oeuvre côté client et côté serveur.
+[**Déploiement hybride**](implement/hybrid/hybrid-overview.md) : implémentez [!DNL Target] en combinant l’implémentation côté client et l’implémentation côté serveur.
 
 ## Implémentation Recommendations
 
-[**Implémentation Recommendations**](implement/recommendations/recommendations.md): Planifier et mettre en oeuvre [!DNL Adobe Target Recommendations].
+[**Implémentation de Recommendations**](implement/recommendations/recommendations.md) : planifiez et implémentez [!DNL Adobe Target Recommendations].
 
 ## Mise en oeuvre des applications mobiles
 
-[**Présentation du SDK AEP Mobile**](implement/mobile/overview.md): présentation de la mise en oeuvre [!DNL Adobe Target] avec [!DNL Adobe Experience Platform] SDK mobiles.
+[**Présentation du SDK AEP Mobile**](implement/mobile/overview.md) : vue d’ensemble de la mise en oeuvre de [!DNL Adobe Target] avec [!DNL Adobe Experience Platform] SDK mobiles.
 
-[**Référence du SDK AEP Mobile**](https://developer.adobe.com/client-sdks/documentation/): implémentation [!DNL Adobe Target] avec [!DNL Adobe Experience Platform] SDK mobiles.
+[**Référence du SDK AEP Mobile**](https://developer.adobe.com/client-sdks/documentation/) : implémentation de [!DNL Adobe Target] avec [!DNL Adobe Experience Platform] SDK mobiles.
 
 ## Implémentation par e-mail
 
-[**Présentation des emails**](implement/email/overview.md): présentation de la mise en oeuvre [!DNL Adobe Target] dans les emails.
+[**Présentation des emails**](implement/email/overview.md) : vue d’ensemble de l’implémentation de [!DNL Adobe Target] dans les emails.
 
 ## Guides d’API
 
-[**Introduction**](before-administer/target-api-overview.md): Présentation de [!DNL Adobe Target] API.
+[**Introduction**](before-administer/target-api-overview.md) : présentation des [!DNL Adobe Target] API.
 
-[**[!DNL Target Delivery API]**](/help/dev/implement/delivery-api/overview.md): utilisez la variable [!DNL Adobe Target] API de diffusion permettant de diffuser des expériences sur les canaux web et mobiles ainsi que sur des appareils IoT hors navigateur, tels qu’une télévision connectée, un kiosque ou un écran numérique en magasin.
+[**[!DNL Target Delivery API]**](/help/dev/implement/delivery-api/overview.md) : utilisez les API de diffusion [!DNL Adobe Target] pour diffuser des expériences sur les canaux web et mobiles ainsi que sur des appareils IoT hors navigateur tels qu’une télévision connectée, un kiosque ou un écran numérique en magasin.
 
-[**[!DNL Target Admin API]**](administer/admin-api/admin-api-overview-new.md): utilisez la variable [!DNL Adobe Target] API d’administration pour gérer les propriétés, les activités, les audiences, les offres, les propriétés, les rapports, les mbox, les hôtes, les environnements, etc.
+[**[!DNL Target Admin API]**](administer/admin-api/admin-api-overview-new.md) : utilisez l’API d’administration [!DNL Adobe Target] pour gérer les propriétés, les activités, les audiences, les offres, les propriétés, les rapports, les mbox, les hôtes, les environnements, etc.
 
-[**[!DNL Target Profile API]**](/help/dev/administer/profile-api/profiles-api.md): Récupération [!DNL Adobe Target] informations de profil utilisateur.
+[**[!DNL Target Profile API]**](/help/dev/administer/profile-api/profiles-api.md) : récupérez les informations de profil utilisateur [!DNL Adobe Target].
 
-[**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports): Récupération [!UICONTROL Test A/B] et [!UICONTROL Automated Personalization] données du rapport d’activité.
+[**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports) : récupérez les données des rapports d’activité [!UICONTROL A/B Test] et [!UICONTROL Automated Personalization].
 
-[**[!DNL Target Recommendations API]**](https://developer.adobe.com/target/administer/recommendations-api/): utilisez la variable [!DNL Target Recommendations] API.
+[**[!DNL Target Recommendations API]**](https://developer.adobe.com/target/administer/recommendations-api/) : utilisez l’API [!DNL Target Recommendations].
 
-[**[!DNL Target Models API]**](administer/models-api/models-api-overview.md): gérez les listes bloquées pour définir les fonctionnalités utilisées dans [!DNL Target] modèles d’apprentissage automatique.
+[**[!DNL Target Models API]**](administer/models-api/models-api-overview.md) : gérez les listes bloquées pour définir les fonctionnalités utilisées dans les modèles d’apprentissage automatique [!DNL Target].
 
-[**API de Admin Console**](https://developer.adobe.com/umapi/): gérez les utilisateurs et les droits des produits par le biais des API User Management et de synchronisation des utilisateurs Adobe.
+[**API Admin Console**](https://developer.adobe.com/umapi/) : gérez les utilisateurs et les droits sur les produits par le biais des API User Management et User Sync Adobe.
 
-[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html): utilisez la variable [!DNL Adobe Experience Platform Edge Network Server] API pour divers cas d’utilisation de la collecte, de la personnalisation, de la publicité et du marketing.
+[**[!DNL Adobe Experience Platform Edge Network Server API]**](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html) : utilisez l’API [!DNL Adobe Experience Platform Edge Network Server] pour divers cas d’utilisation de la collecte, de la personnalisation, de la publicité et du marketing.
 
 ## Ressources
 
 * [Adobe du référentiel open source](https://github.com/adobe)
-* [Source du SDK JS du noeud cible](https://github.com/adobe/target-nodejs-sdk)
-* [Référentiel d’exemples de SDK JS pour le noeud cible](https://github.com/adobe/target-nodejs-sdk-samples)
-* [Source du SDK Java pour Target](https://github.com/adobe/target-java-sdk)
-* [Exemple de référentiel pour SDK Java pour Target](https://github.com/adobe/target-java-sdk-samples)
+* [Target Node JS SDK Source](https://github.com/adobe/target-nodejs-sdk)
+* [Exemples de SDK JS de noeud Target Repo](https://github.com/adobe/target-nodejs-sdk-samples)
+* [Target Java SDK Source](https://github.com/adobe/target-java-sdk)
+* [ Exemple de référentiel avec SDK Java Target ](https://github.com/adobe/target-java-sdk-samples)
 * [Implémentation de Target](./before-implement/prepare-to-implement-target.md)
 * [Administration de Target](./before-administer/target-api-overview.md)
-* [Documents de développement Adobe Target : référentiel GitHub](https://github.com/AdobeDocs/target-developers)
+* [Adobe Target Dev Docs GitHub Repo](https://github.com/AdobeDocs/target-developers)
 * [Notes de mise à jour d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/release-notes/release-notes.html)
-* [Guide de l’utilisateur d’Adobe Target Business](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr)
+* [Guide de l’utilisateur professionnel Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr)
 

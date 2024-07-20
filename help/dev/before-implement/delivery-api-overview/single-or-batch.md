@@ -1,25 +1,25 @@
 ---
 title: API de diffusion Adobe Target Diffusion unique ou par lots
-description: Comment utiliser [!UICONTROL API de diffusion Adobe Target] Appels de diffusion unique ou par lots ?
+description: Comment utiliser les appels de [!UICONTROL Adobe Target Delivery API] de diffusion unique ou par lots ?
 keywords: api de diffusion
 exl-id: 525cd1f2-616a-486c-8f49-8117615500bb
 feature: APIs/SDKs
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
 # Diffusion unique ou par lots
 
-La variable [!UICONTROL API de diffusion Adobe Target] prend en charge un appel de diffusion unique ou par lots. Vous pouvez envoyer une requête de serveur pour du contenu pour une ou plusieurs mbox.
+[!UICONTROL Adobe Target Delivery API] prend en charge un appel de remise unique ou par lots. Vous pouvez envoyer une requête de serveur pour du contenu pour une ou plusieurs mbox.
 
 Pesez les coûts de performance lorsque vous décidez d’effectuer un appel unique par rapport à un appel par lot. Si vous connaissez tout le contenu qui doit être affiché pour un utilisateur, la bonne pratique consiste à récupérer le contenu de toutes les mbox avec un seul appel de diffusion par lot, afin d’éviter d’effectuer plusieurs appels de diffusion uniques.
 
 ## Appel de diffusion unique
 
-Vous pouvez récupérer une expérience à afficher à l’utilisateur pour une mbox au moyen de l’option [!UICONTROL API de diffusion Adobe Target]. Notez que si vous effectuez un seul appel de diffusion, vous devez lancer un autre appel de serveur pour récupérer du contenu supplémentaire pour une mbox pour un utilisateur. Cela peut devenir très coûteux au fil du temps. Par conséquent, veillez à évaluer votre approche lors de l’utilisation d’un seul appel de l’API de diffusion.
+Vous pouvez récupérer une expérience à afficher à l’utilisateur pour une mbox via [!UICONTROL Adobe Target Delivery API]. Notez que si vous effectuez un seul appel de diffusion, vous devez lancer un autre appel de serveur pour récupérer du contenu supplémentaire pour une mbox pour un utilisateur. Cela peut devenir très coûteux au fil du temps. Par conséquent, veillez à évaluer votre approche lors de l’utilisation d’un seul appel de l’API de diffusion.
 
 ```
 curl -X POST \
@@ -83,11 +83,11 @@ Dans l’exemple d’appel de diffusion unique ci-dessus, l’expérience est r�
 }
 ```
 
-Dans la réponse, notez le `content` contient le HTML qui décrit l’expérience à présenter à l’utilisateur pour le web qui correspond à la mbox SummerOffer.
+Dans la réponse, notez que le champ `content` contient l’HTML qui décrit l’expérience à présenter à l’utilisateur pour le web qui correspond à la mbox SummerOffer.
 
 ### Exécuter le chargement de page
 
-Si des expériences doivent être affichées lorsqu’un chargement de page se produit dans le canal web, par exemple un test A/B des polices situées dans le pied de page ou l’en-tête, vous pouvez spécifier `pageLoad` dans le `execute` pour récupérer toutes les modifications qui doivent être appliquées.
+Si des expériences doivent être affichées lorsqu’un chargement de page se produit dans le canal web, par exemple un test A/B des polices situées dans le pied de page ou l’en-tête, vous pouvez spécifier `pageLoad` dans le champ `execute` pour récupérer toutes les modifications à appliquer.
 
 ```
 curl -X POST \
@@ -117,7 +117,7 @@ curl -X POST \
 }'
 ```
 
-L’exemple d’appel ci-dessus récupère toutes les expériences pour afficher un utilisateur lors de la page `https://target.enablementadobe.com/react/demo/#/` charge.
+L’exemple d’appel ci-dessus récupère toutes les expériences pour afficher un utilisateur lors du chargement de la page `https://target.enablementadobe.com/react/demo/#/`.
 
 ```
 {
@@ -155,7 +155,7 @@ L’exemple d’appel ci-dessus récupère toutes les expériences pour afficher
   }
 ```
 
-Dans le `content` , la modification qui doit être appliquée au chargement d’une page peut être récupérée. Dans l’exemple ci-dessus, notez qu’un lien de l’en-tête doit être nommé. *Accueil modifié*.
+Dans le champ `content` , la modification qui doit être appliquée au chargement d’une page peut être récupérée. Dans l’exemple ci-dessus, notez qu’un lien sur l’en-tête doit être nommé *Modified Home*.
 
 ## Appel de diffusion mise en cache
 
@@ -203,7 +203,7 @@ curl -X POST \
 }'
 ```
 
-Dans l’exemple d’appel de diffusion par lot ci-dessus, les expériences sont récupérées pour s’afficher pour l’utilisateur avec `tntId`: `abcdefghijkl00023.1_1` pour plusieurs `mbox`:`SummerOffer`, `SummerShoesOffer`, et `SummerDressOffer`. Puisque nous savons que nous devons présenter une expérience pour plusieurs mbox pour cet utilisateur, nous pouvons traiter ces requêtes par lots et effectuer un appel au serveur au lieu de trois appels de diffusion individuels.
+Dans l’exemple d’appel de diffusion par lot ci-dessus, les expériences sont récupérées pour s’afficher pour l’utilisateur avec `tntId`: `abcdefghijkl00023.1_1` pour plusieurs `mbox`:`SummerOffer`, `SummerShoesOffer` et `SummerDressOffer`. Puisque nous savons que nous devons présenter une expérience pour plusieurs mbox pour cet utilisateur, nous pouvons traiter ces requêtes par lots et effectuer un appel au serveur au lieu de trois appels de diffusion individuels.
 
 ```
 {
@@ -252,4 +252,4 @@ Dans l’exemple d’appel de diffusion par lot ci-dessus, les expériences sont
 }
 ```
 
-Dans la réponse ci-dessus, vous pouvez voir que dans la variable `content` de chaque mbox, la représentation par HTML de l’expérience à afficher à l’utilisateur pour chaque mbox peut être récupérée.
+Dans la réponse ci-dessus, vous pouvez constater que dans le champ `content` de chaque mbox, la représentation par HTML de l’expérience à afficher à l’utilisateur pour chaque mbox peut être récupérée.

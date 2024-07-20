@@ -1,6 +1,6 @@
 ---
-title: Utilisation de requêtes asynchrones dans la variable [!DNL Adobe Target] SDK .NET
-description: Découvrez comment [!DNL Target] Le SDK Java prend en charge les requêtes asynchrones, ce qui peut réduire le temps cible effectif à zéro.
+title: Utilisation de requêtes asynchrones dans le SDK [!DNL Adobe Target] .NET
+description: Découvrez comment le SDK Java  [!DNL Target] prend en charge les requêtes asynchrones, ce qui peut réduire le temps cible effectif à zéro.
 feature: APIs/SDKs
 exl-id: fd36cc7b-a884-4e57-93c2-8aff8256109a
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 ## Description
 
-L’un des avantages de l’intégration côté serveur réside dans le fait que l’on peut exploiter l’énorme bande passante et les ressources informatiques disponibles côté serveur en utilisant le parallélisme. [!DNL Target] Le SDK .NET prend en charge les requêtes asynchrones, ce qui facilite l’intégration. [!DNL Target] dans le processus asynchrone existant d’une application.
+L’un des avantages de l’intégration côté serveur réside dans le fait que l’on peut exploiter l’énorme bande passante et les ressources informatiques disponibles côté serveur en utilisant le parallélisme. [!DNL Target] Le SDK .NET prend en charge les requêtes asynchrones, ce qui facilite l’intégration de [!DNL Target] dans le processus asynchrone existant d’une application.
 
 ## Méthodes prises en charge
 
@@ -53,4 +53,4 @@ var notificationRequest = new TargetDeliveryRequest.Builder()
 var notificationResponse = await this.targetClient.SendNotificationsAsync(notificationRequest);
 ```
 
-Cet exemple suppose que vous avez [initialisation du SDK](initialize-sdk.md).
+Cet exemple suppose que [a initialisé le SDK](initialize-sdk.md).

@@ -1,5 +1,5 @@
 ---
-title: Utilisation des méthodes d’utilitaire dans [!DNL Adobe Target] SDK Java
+title: Utilisation des méthodes d’utilitaire dans le kit SDK Java  [!DNL Adobe Target]
 description: Découvrez comment utiliser des méthodes d’assistance, qui sont réutilisables sur plusieurs contrôleurs et peuvent être déplacées vers une classe d’utilitaire distincte.
 feature: APIs/SDKs
 exl-id: 19418126-c4d8-4e6b-bb84-036b7fe0e6ec

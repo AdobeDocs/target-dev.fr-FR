@@ -1,31 +1,31 @@
 ---
 keywords: scintillement, at.js, implémentation, asynchrone, asynchrone, synchrone, synchrone, 8 $
-description: Découvrez comment at.js et [!DNL Target] empêcher le scintillement (le contenu par défaut s’affiche momentanément avant d’être remplacé par le contenu de l’activité) au chargement de la page ou de l’application.
+description: Découvrez comment at.js et  [!DNL Target]  empêchent le scintillement (le contenu par défaut s’affiche momentanément avant d’être remplacé par le contenu de l’activité) au chargement de la page ou de l’application.
 title: Comment at.js gère-t-il le scintillement ?
 feature: at.js
 exl-id: 8aacf254-ec3d-4831-89bb-db7f163b3869
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 63%
+source-wordcount: '699'
+ht-degree: 57%
 
 ---
 
 # Gestion du scintillement par at.js
 
-Informations sur la manière dont la variable [!DNL Adobe Target] La bibliothèque JavaScript at.js empêche le scintillement lors du chargement de la page ou de l’application.
+Informations sur la façon dont la bibliothèque JavaScript at.js [!DNL Adobe Target] empêche le scintillement lors du chargement de la page ou de l’application.
 
 Il y a scintillement lorsque du contenu par défaut est présenté temporairement aux visiteurs avant d’être remplacé par le contenu de l’activité. Ce phénomène peut déstabiliser les visiteurs et doit donc être évité.
 
 ## Utilisation d’une mbox globale créée automatiquement
 
-Lorsque vous activez la [Création automatique d’une Mbox globale](/help/dev/implement/client-side/atjs/global-mbox/customize-global-mbox.md) lors de la configuration d’at.js, ce dernier gère le scintillement en modifiant le paramètre d’opacité au chargement de la page. Lorsque at.js charge, cela change le paramètre d’opacité du `<body>` sur « 0 », rendant la page initialement invisible pour les visiteurs. Après une réponse de [!DNL Target] est reçu, ou si une erreur de la variable [!DNL Target] est détectée. at.js réinitialise l’opacité sur &quot;1&quot;. Ainsi, le visiteur ne voit la page qu’une fois le contenu de vos activités appliqué.
+Lorsque vous activez la [Création automatique d’une Mbox globale](/help/dev/implement/client-side/atjs/global-mbox/customize-global-mbox.md) lors de la configuration d’at.js, ce dernier gère le scintillement en modifiant le paramètre d’opacité au chargement de la page. Au chargement d’at.js, le paramètre d’opacité de l’élément `<body>` est remplacé par &quot;0&quot;, ce qui rend la page initialement invisible pour les visiteurs. Après réception d’une réponse de [!DNL Target], ou si une erreur avec la requête [!DNL Target] est détectée, at.js réinitialise l’opacité sur &quot;1&quot;. Ainsi, le visiteur ne voit la page qu’une fois le contenu de vos activités appliqué.
 
-Si vous activez le paramètre lors de la configuration de at.js, at.js définit l’opacité du style HTML BODY sur 0. Après une réponse de [!DNL Target] est reçu, at.js réinitialise l’opacité du HTML BODY sur 1.
+Si vous activez le paramètre lors de la configuration de at.js, at.js définit l’opacité du style HTML BODY sur 0. Après réception d’une réponse de [!DNL Target], at.js réinitialise l’opacité de l’HTML BODY sur 1.
 
 L’opacité définie sur 0 conserve le contenu de la page masqué pour empêcher le scintillement, mais le navigateur effectue toujours le rendu de la page et charge tous les éléments nécessaires tels que CSS, les images, etc.
 
-If `opacity: 0` ne fonctionne pas dans votre implémentation, vous pouvez également gérer le scintillement en personnalisant `bodyHiddenStyle` et définissez-le sur `body {visibility:hidden !important}`. Vous pouvez utiliser `body {opacity:0 !important}` ou `body {visibility:hidden !important}`, selon ce qui fonctionne le mieux dans votre situation spécifique.
+Si `opacity: 0` ne fonctionne pas dans votre implémentation, vous pouvez également gérer le scintillement en personnalisant `bodyHiddenStyle` et en le définissant sur `body {visibility:hidden !important}`. Vous pouvez utiliser `body {opacity:0 !important}` ou `body {visibility:hidden !important}`, selon ce qui fonctionne le mieux dans votre situation spécifique.
 
 L’illustration suivante présente les appels à Masquer/Afficher le corps dans at.js 1.*x* et at.js 2.x.
 
@@ -33,13 +33,13 @@ L’illustration suivante présente les appels à Masquer/Afficher le corps dans
 
 (Cliquez sur l’image pour agrandir l’image en largeur réelle.)
 
-![Flux cible : demande de chargement de page at.js](/help/dev/implement/client-side/assets/atjs-20-flow-page-load-request.png "Flux cible : demande de chargement de page at.js"){zoomable=&quot;yes&quot;}
+![ Flux cible : requête de chargement de page at.js](/help/dev/implement/client-side/assets/atjs-20-flow-page-load-request.png "Flux cible : requête de chargement de page at.js"){zoomable="yes"}
 
 **at.js 1.*x***
 
 (Cliquez sur l’image pour agrandir l’image en largeur réelle.)
 
-![Flux cible : mbox globale créée automatiquement](/help/dev/implement/client-side/atjs/how-atjs-works/assets/target-flow2.png "Flux cible : mbox globale créée automatiquement"){zoomable=&quot;yes&quot;}
+![ Flux cible : flux cible créé automatiquement : flux cible créé automatiquement : mbox globale créée automatiquement "){zoomable="yes"}](/help/dev/implement/client-side/atjs/how-atjs-works/assets/target-flow2.png "
 
 Pour plus d’informations sur le remplacement de `bodyHiddenStyle`, voir [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
 
@@ -47,7 +47,7 @@ Pour plus d’informations sur le remplacement de `bodyHiddenStyle`, voir [targe
 
 Le chargement d’at.js de manière asynchrone est un excellent moyen d’éviter de bloquer le rendu du navigateur. Cependant, cette technique peut entraîner un scintillement de la page web.
 
-Vous pouvez éviter le scintillement en utilisant un fragment de code de pré-masquage qui sera visible une fois les éléments HTML pertinents personnalisés par Target.
+Vous pouvez éviter le scintillement en utilisant un fragment de code de pré-masquage qui sera visible une fois les éléments d’HTML pertinents personnalisés par Target.
 
 at.js peut être chargé de manière asynchrone, soit directement incorporé sur la page, soit via un gestionnaire de balises (Adobe Experience Platform Launch, par exemple).
 

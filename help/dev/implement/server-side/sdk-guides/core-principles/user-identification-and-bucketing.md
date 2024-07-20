@@ -5,8 +5,8 @@ exl-id: 4fcf235b-6a58-442c-ae13-9d05ec1033fc
 feature: Implement Server-side
 source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 5%
+source-wordcount: '1130'
+ht-degree: 3%
 
 ---
 
@@ -14,20 +14,20 @@ ht-degree: 5%
 
 ## Identification de l’utilisateur
 
-Il existe plusieurs façons d’identifier un utilisateur dans [!DNL Adobe Target]. [!UICONTROL Cible] utilise les identifiants suivants :
+Il existe plusieurs façons d’identifier un utilisateur dans [!DNL Adobe Target]. [!UICONTROL Target] utilise les identifiants suivants :
 
 | Nom du champ | Description |
 | --- | --- |
-| `tntID` | La variable `tntId` est l’identifiant Principal dans [!DNL Target] pour un utilisateur. Vous pouvez fournir cet identifiant, ou [!DNL Target] la génère automatiquement si la requête ne contient pas. |
-| `thirdPartyId` | La variable `thirdPartyId` est l’identifiant de l’utilisateur de votre société, que vous pouvez envoyer avec chaque appel . Lorsqu’un utilisateur se connecte au site d’une entreprise, celle-ci crée généralement un identifiant lié au compte du visiteur, à sa carte de fidélité, à son numéro de membre ou à tout autre identifiant applicable de l’entreprise. |
-| `marketingCloudVisitorId` | La variable `marketingCloudVisitorId` est utilisé pour fusionner et partager des données entre différentes solutions d’Adobe. MarketingCloudVisitorId est requis pour les intégrations avec Adobe Analytics et Adobe Audience Manager. |
-| `customerIds` | Outre l’identifiant visiteur Experience Cloud, d’autres [ID de client](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) et un état authentifié pour chaque visiteur peut également être utilisé. |
+| `tntID` | `tntId` est l’identifiant principal d’un utilisateur dans [!DNL Target]. Vous pouvez fournir cet identifiant ou [!DNL Target] le générera automatiquement si la requête ne contient pas. |
+| `thirdPartyId` | `thirdPartyId` est l’identifiant de votre société pour l’utilisateur, que vous pouvez envoyer avec chaque appel . Lorsqu’un utilisateur se connecte au site d’une entreprise, celle-ci crée généralement un identifiant lié au compte du visiteur, à sa carte de fidélité, à son numéro de membre ou à tout autre identifiant applicable de l’entreprise. |
+| `marketingCloudVisitorId` | `marketingCloudVisitorId` est utilisé pour fusionner et partager des données entre différentes solutions d’Adobe. MarketingCloudVisitorId est requis pour les intégrations avec Adobe Analytics et Adobe Audience Manager. |
+| `customerIds` | Outre l’identifiant visiteur Experience Cloud, d’autres [ID de client](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) et un état authentifié pour chaque visiteur peuvent également être utilisés. |
 
 ## [!DNL Target] ID (tntID)
 
-La variable [!DNL Target] ID ou `tntId`, peut être considéré comme un identifiant d’appareil. Ceci `tntId` est généré automatiquement par [!DNL Adobe Target] s’il n’est pas fourni dans la requête. Les requêtes suivantes doivent inclure ceci : `tntId` afin que le contenu approprié soit diffusé sur un appareil utilisé par le même utilisateur.
+L’ [!DNL Target] ID, ou `tntId`, peut être considéré comme un ID d’appareil. Cet `tntId` est généré automatiquement par [!DNL Adobe Target] s’il n’est pas fourni dans la requête. Les demandes suivantes doivent inclure cet `tntId` pour que le contenu approprié soit diffusé sur un appareil utilisé par le même utilisateur.
 
-L’exemple d’appel suivant illustre une situation dans laquelle un appel `tntId` n’est pas transmis à [!DNL Target].
+L’exemple d’appel suivant illustre une situation dans laquelle un `tntId` n’est pas transmis à [!DNL Target].
 
 >[!BEGINTABS]
 
@@ -82,7 +82,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-En l’absence d’une `tntId`, [!DNL Adobe Target] génère une `tntId` et le fournit dans la réponse, comme suit.
+En l’absence d’un `tntId`, [!DNL Adobe Target] génère un `tntId` et le fournit dans la réponse, comme suit.
 
 ```json {line-numbers="true"}
 {
@@ -97,13 +97,13 @@ En l’absence d’une `tntId`, [!DNL Adobe Target] génère une `tntId` et le f
 }
 ```
 
-Dans cet exemple, la variable `tntId` is `10abf6304b2714215b1fd39a870f01afc.35_0`. Veuillez noter que `tntId` doit être utilisé pour le même utilisateur sur plusieurs sessions.
+Dans cet exemple, le `tntId` généré est `10abf6304b2714215b1fd39a870f01afc.35_0`. Notez que cet `tntId` doit être utilisé pour le même utilisateur entre les sessions.
 
 ## ID tiers (thirdPartyId)
 
-Si votre organisation utilise un ID pour identifier votre visiteur, vous pouvez utiliser `thirdPartyID` pour diffuser du contenu. A `thirdPartyID` est un identifiant persistant utilisé par votre entreprise pour identifier un utilisateur final, qu’il interagisse avec votre entreprise à partir de canaux web, mobiles ou IoT. En d’autres termes, la variable `thirdPartyId` référence les données de profil utilisateur qui peuvent être utilisées sur plusieurs canaux. Cependant, vous devez fournir la variable `thirdPartyID` pour chaque [!DNL Adobe Target] L’API de diffusion vous appelle.
+Si votre organisation utilise un identifiant pour identifier votre visiteur, vous pouvez utiliser `thirdPartyID` pour diffuser du contenu. Un `thirdPartyID` est un identifiant persistant utilisé par votre entreprise pour identifier un utilisateur final, qu’il interagisse avec votre entreprise à partir de canaux web, mobiles ou IoT. En d’autres termes, le `thirdPartyId` référence les données de profil utilisateur qui peuvent être utilisées sur plusieurs canaux. Cependant, vous devez fournir le `thirdPartyID` pour chaque appel de l’API de diffusion [!DNL Adobe Target] que vous effectuez.
 
-L’exemple d’appel suivant illustre l’utilisation d’une `thirdPartyId`.
+L’exemple d’appel suivant illustre l’utilisation d’un `thirdPartyId`.
 
 >[!BEGINTABS]
 
@@ -163,13 +163,13 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-Dans ce scénario, [!DNL Adobe Target] génère une `tntId` puisqu’il n’a pas été transmis à l’appel d’origine, qui sera mappé à l’élément fourni `thirdPartyId`.
+Dans ce scénario, [!DNL Adobe Target] génère un `tntId` puisqu’il n’a pas été transmis dans l’appel d’origine, qui sera mappé sur le `thirdPartyId` fourni.
 
 ## Identifiant visiteur Marketing Cloud (marketingCloudVisitorId)
 
-La variable `marketingCloudVisitorId` est un identifiant universel et permanent qui identifie vos visiteurs dans toutes les solutions Adobe Experience Cloud. Lorsque votre organisation met en oeuvre le service d’ID, cet ID vous permet d’identifier un même visiteur du site et ses données dans différentes solutions Experience Cloud, y compris [!DNL Adobe Target], Adobe Analytics et Adobe Audience Manager. Veuillez noter que `marketingCloudVisitorId` est requis lors de l’intégration [!DNL Target] avec [!DNL Adobe Analytics] et [!DNL Adobe Audience Manager].
+`marketingCloudVisitorId` est un identifiant universel et permanent qui identifie vos visiteurs dans toutes les solutions Adobe Experience Cloud. Lorsque votre organisation met en oeuvre le service d’ID, cet ID vous permet d’identifier un même visiteur du site et ses données dans différentes solutions Experience Cloud, y compris [!DNL Adobe Target], Adobe Analytics et Adobe Audience Manager. Veuillez noter que `marketingCloudVisitorId` est requis lors de l&#39;intégration de [!DNL Target] à [!DNL Adobe Analytics] et [!DNL Adobe Audience Manager].
 
-L’exemple d’appel suivant montre comment un appel `marketingCloudVisitorId` qui a été récupéré du service d’ID d’Experience Cloud est transmis à [!DNL Target].
+L’exemple d’appel suivant montre comment un `marketingCloudVisitorId` récupéré du service d’ID Experience Cloud est transmis à [!DNL Target].
 
 >[!BEGINTABS]
 
@@ -229,11 +229,11 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-Dans ce scénario, [!DNL Target] génère une `tntId` puisqu’il n’a pas été transmis à l’appel d’origine, qui sera mappé à l’élément fourni `marketingCloudVisitorId`.
+Dans ce scénario, [!DNL Target] génère un `tntId` puisqu’il n’a pas été transmis dans l’appel d’origine, qui sera mappé sur le `marketingCloudVisitorId` fourni.
 
 ## ID de client (customerIds)
 
-[ID de client](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) peuvent être ajoutés ou associés à un identifiant visiteur Experience Cloud. Lors de l’envoi `customerIds`, la variable `marketingCloudVisitorId` doit également être fourni. En outre, un état d’authentification peut être fourni avec chaque `customerId` pour chaque visiteur. Les statuts d&#39;authentification suivants peuvent être utilisés :
+[Les ID de client](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) peuvent être ajoutés ou associés à un ID de visiteur Experience Cloud. Lors de l&#39;envoi de `customerIds`, le `marketingCloudVisitorId` doit également être fourni. De plus, un état d’authentification peut être fourni avec chaque `customerId` pour chaque visiteur. Les statuts d&#39;authentification suivants peuvent être utilisés :
 
 | État d’authentification | État d’utilisateur |
 | --- | --- |
@@ -241,7 +241,7 @@ Dans ce scénario, [!DNL Target] génère une `tntId` puisqu’il n’a pas ét�
 | `authenticated` | L’utilisateur est actuellement authentifié dans une session active sur votre site web ou votre application. |
 | `logged_out` | L’utilisateur était authentifié, mais actuellement déconnecté. L’utilisateur avait l’intention de se déconnecter de l’état authentifié. Il ne souhaite plus être considéré comme authentifié. |
 
-Notez que lorsque la variable `customerId` se trouve dans un état authentifié [!DNL Target] référencez les données de profil utilisateur stockées et liées à customerId. Si la variable `customerId` est dans une zone inconnue ou `logged_out` , il sera ignoré et toutes les données de profil utilisateur qui peuvent être associées à cet état. `customerId` ne sera pas utilisé pour le ciblage des audiences.
+Veuillez noter que seule la présence de `customerId` dans un état authentifié [!DNL Target] référence les données de profil utilisateur stockées et liées à customerId. Si l’état `customerId` est inconnu ou `logged_out`, il sera ignoré et les données de profil utilisateur qui peuvent être associées à cet état `customerId` ne seront pas utilisées pour le ciblage des audiences.
 
 >[!BEGINTABS]
 
@@ -311,11 +311,11 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-L’exemple ci-dessus montre comment envoyer une `customerId` avec un `authenticatedState`. Lors de l’envoi d’un `customerId`, la variable `integrationCode`, `id`, et `authenticatedState` ainsi que la variable `marketingCloudVisitorId` sont obligatoires. La variable `integrationCode` est l’alias de la variable [fichier d’attributs du client](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=fr) vous avez fourni via CRS.
+L’exemple ci-dessus montre comment envoyer un `customerId` avec un `authenticatedState`. Lors de l&#39;envoi d&#39;un `customerId`, les `integrationCode`, `id` et `authenticatedState` ainsi que les `marketingCloudVisitorId` sont requis. `integrationCode` est l’alias du [fichier d’attributs du client](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=fr) que vous avez fourni via CRS.
 
 ## Profil fusionné
 
-Vous pouvez combiner des `tntId`, `thirdPartyID`, et `marketingCloudVisitorId` dans la même requête. Dans ce scénario, [!DNL Adobe Target] maintiendra le mappage de tous ces identifiants et les épinglera à un visiteur. Découvrez comment les profils [fusionné et synchronisé en temps réel](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) en utilisant les différents identifiants.
+Vous pouvez combiner `tntId`, `thirdPartyID` et `marketingCloudVisitorId` dans la même requête. Dans ce scénario, [!DNL Adobe Target] conserve le mappage de tous ces identifiants et les épingle à un visiteur. Découvrez comment les profils sont [fusionnés et synchronisés en temps réel](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) à l’aide des différents identifiants.
 
 >[!BEGINTABS]
 
@@ -379,14 +379,14 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 >[!ENDTABS]
 
-L’exemple ci-dessus montre comment combiner des `tntId`, `thirdPartyID`, et `marketingCloudVisitorId` dans la même requête.
+L’exemple ci-dessus montre comment combiner `tntId`, `thirdPartyID` et `marketingCloudVisitorId` dans la même requête.
 
 ## Bucketing
 
-Vos utilisateurs sont redirigés vers l’affichage d’une expérience en fonction de la configuration de votre [!DNL Adobe Target] activités. Dans [!DNL Adobe Target], le regroupement est :
+Vos utilisateurs sont redirigés vers l’affichage d’une expérience selon la manière dont vous configurez vos activités [!DNL Adobe Target]. Dans [!DNL Adobe Target], le regroupement est :
 
-* **Déterministe**: MurmurHash3 est utilisé pour s’assurer que votre utilisateur est regroupé et qu’il voit la variation appropriée à chaque fois que l’ID utilisateur est cohérent.
-* **Attractif**: [!DNL Adobe Target] stocke la variation que votre utilisateur voit dans le profil utilisateur afin de s’assurer qu’elle est systématiquement présentée à cet utilisateur par sessions et canaux. Les variations et l’attractivité sont garanties lors de l’utilisation de la prise de décision côté serveur. Lorsque la prise de décision sur l’appareil est utilisée, l’attractivité n’est pas garantie.
+* **Déterministe** : MurmurHash3 permet de s’assurer que votre utilisateur est regroupé et qu’il voit la variation appropriée à chaque fois que l’ID utilisateur est cohérent.
+* **Attractif** : [!DNL Adobe Target] stocke la variation que votre utilisateur voit dans le profil utilisateur afin de s’assurer que la variation est systématiquement affichée pour cet utilisateur entre les sessions et les canaux. Les variations et l’attractivité sont garanties lors de l’utilisation de la prise de décision côté serveur. Lorsque la prise de décision sur l’appareil est utilisée, l’attractivité n’est pas garantie.
 
 ## Workflow de regroupement de bout en bout
 
@@ -423,18 +423,18 @@ Avant de passer à l’algorithme de regroupement, il est important de souligner
 Prenons l’exemple suivant :
 
 * Client C avec code client `acmeclient`
-* Activité A avec un ID `1111` et trois expériences `E1`, `E2`, `E3`
-* Les expériences se répartissent comme suit : `E1` - 33%, `E2` - 33%, `E3` - 34 %
+* Activité A ayant l’identifiant `1111` et trois expériences `E1`, `E2`, `E3`
+* Les expériences ont la distribution suivante : `E1` - 33 %, `E2` - 33 %, `E3` - 34 %
 
 Le flux de sélection se présente comme suit :
 
 1. ID de l’appareil `702ff4d0-83b1-4e2e-a0a6-22cbe460eb15`
 1. Code client `acmeclient`
-1. Code d’activité `1111`
+1. ID d’activité `1111`
 1. Sel `experience`
-1. Valeur à hacher `acmeclient.1111.702ff4d0-83b1-4e2e-a0a6-22cbe460eb15.experience`, valeur de hachage `-919077116`
+1. Valeur de hachage `acmeclient.1111.702ff4d0-83b1-4e2e-a0a6-22cbe460eb15.experience`, valeur de hachage `-919077116`
 1. Valeur absolue du hachage `919077116`
-1. Reste après division à 10 000, `7116`
-1. Valeur après le reste divisé par 10 000, `0.7116`
+1. Reste après division par 10 000, `7116`
+1. La valeur après le reste est divisée par 10 000, `0.7116`
 1. Résultat après avoir multiplié la valeur par rapport au nombre total d’expériences `3 * 0.7116 = 2.1348`
-1. L’index d’expérience est `2`, ce qui signifie la troisième expérience, puisque nous utilisons `0` indexation basée sur .
+1. L’index d’expérience est `2`, ce qui signifie la troisième expérience, puisque nous utilisons l’indexation basée sur `0`.

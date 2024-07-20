@@ -1,22 +1,22 @@
 ---
 title: Service d’ID Experience Cloud (ECID)
-description: Bien que la variable [!DNL Target] SDK pour la récupération de contenu à partir de [!DNL Target] peut être puissant, ce qui ajoute la valeur ajoutée de l’utilisation de la variable [!UICONTROL Identifiant Experience Cloud] (ECID) pour le suivi des utilisateurs s’étend au-delà de l’Adobe [!DNL Target]. The ECID enables you to leverage [!DNL Adobe Experience Cloud] produits et fonctionnalités, tels que les rapports A4T et [!DNL Adobe Audience Manager] (AAM) .
+description: Bien que l’utilisation des  [!DNL Target] SDK pour la récupération de contenu à partir de [!DNL Target] puisse s’avérer très efficace, la valeur ajoutée de l’utilisation de l’ECID [!UICONTROL Experience Cloud ID] (ECID) pour le suivi des utilisateurs s’étend au-delà des produits et fonctionnalités d’Adobe [!DNL Target]. The ECID enables you to leverage [!DNL Adobe Experience Cloud] tels que les segments de création de rapports A4T et  [!DNL Adobe Audience Manager]  (AAM).
 exl-id: fd7e5c3e-51c1-4965-ab6a-f50a6b0c910b
 feature: Implement Server-side
 source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 1%
+source-wordcount: '264'
+ht-degree: 0%
 
 ---
 
-# [!UICONTROL Identifiant Experience Cloud] Service (ECID)
+# Service [!UICONTROL Experience Cloud ID] (ECID)
 
-## [!UICONTROL Identifiant Experience Cloud] Intégration (ECID)
+## Intégration [!UICONTROL Experience Cloud ID] (ECID)
 
-Bien que la variable [!DNL Target] SDK pour la récupération de contenu à partir de [!DNL Target] peut être puissant, ce qui ajoute la valeur ajoutée de l’utilisation de la variable [!UICONTROL Identifiant Experience Cloud] (ECID) pour le suivi des utilisateurs s’étend au-delà de [!DNL Adobe Target]. L’ECID vous permet d’exploiter [!DNL Adobe Experience Cloud] produits et fonctionnalités, tels que les rapports A4T et [!DNL Adobe Audience Manager] (AAM) .
+Bien que l’utilisation des SDK [!DNL Target] pour récupérer du contenu à partir de [!DNL Target] puisse être puissante, la valeur ajoutée de l’utilisation de [!UICONTROL Experience Cloud ID] (ECID) pour le suivi des utilisateurs s’étend au-delà de [!DNL Adobe Target]. L’ECID vous permet d’exploiter les [!DNL Adobe Experience Cloud] produits et fonctionnalités, tels que les rapports A4T et les segments [!DNL Adobe Audience Manager] (AAM).
 
-L’ECID est généré et géré par `visitor.js`, qui conserve son propre état. La variable `visitor.js` crée un cookie nommé `AMCV_{organizationId}`, qui est utilisé par [!DNL Target] SDK pour l’intégration ECID. Lorsque la variable [!DNL Target] la réponse est renvoyée, vous devez mettre à jour l’instance Visiteur côté client avec `thevisitorState` renvoyé par la variable [!DNL Target] SDK.
+L’ECID est généré et géré par `visitor.js`, qui conserve son propre état. Le fichier `visitor.js` crée un cookie nommé `AMCV_{organizationId}`, qui est utilisé par les SDK [!DNL Target] pour l’intégration ECID. Lorsque la réponse [!DNL Target] est renvoyée, vous devez mettre à jour l’instance Visiteur côté client avec `thevisitorState` renvoyé par les SDK [!DNL Target].
 
 ```html {line-numbers="true"}
 <!doctype html>
@@ -114,7 +114,7 @@ app.get("/abtest", async (req, res) => {
       }};
 ```
 
->[!TAB Java ]
+>[!TAB Java]
 
 ```java {line-numbers="true"
   console.log("Request", request);
@@ -158,7 +158,7 @@ public class TargetControllerSample {
 
 ## Intégration d’ECID avec l’ID de client
 
-Pour effectuer le suivi des comptes d’utilisateurs des visiteurs et des détails d’état de connexion, `customerIds` peut être transmis via [!DNL Target] SDK.
+Pour effectuer le suivi des comptes d’utilisateurs des visiteurs et des détails d’état de connexion, `customerIds` peut être transmis via les SDK [!DNL Target].
 
 ```html {line-numbers="true"
 <!doctype html>
@@ -274,7 +274,7 @@ app.listen(3000, function () {
 });
 ```
 
->[!TAB Java ]
+>[!TAB Java]
 
 ```java {line-numbers="true"}
 @Controller
@@ -307,18 +307,18 @@ public class TargetControllerSample {
 
 >[!ENDTABS]
 
-## ECID et [!DNL Analytics] Intégration
+## Intégration ECID et [!DNL Analytics]
 
-Pour tirer le meilleur parti du [!DNL Target] SDK et pour utiliser les puissantes fonctionnalités d’analyse fournies par [!DNL Adobe Analytics], vous pouvez utiliser des intégrations dans ECID, [!DNL Analytics], et [!DNL Target].
+Pour tirer le meilleur parti des SDK [!DNL Target] et utiliser les puissantes fonctionnalités d’analyse fournies par [!DNL Adobe Analytics], vous pouvez utiliser des intégrations entre ECID, [!DNL Analytics] et [!DNL Target].
 
-Utilisation d’intégrations entre ECID, [!DNL Analytics], et [!DNL Target] vous permet :
+Grâce aux intégrations entre ECID, [!DNL Analytics] et [!DNL Target], vous pouvez :
 
 * Utilisation de segments de Adobe Audience Manager (AAM)
 * Personnaliser l’expérience utilisateur en fonction du contenu récupéré à partir de [!DNL Target]
 * Assurez-vous que tous les événements et mesures de succès sont collectés dans [!DNL Analytics]
-* Utilisation [!DNL Analytics]&quot;requêtes puissantes et bénéficier de ses formidables visualisations de rapports
+* Utilisez les requêtes puissantes de [!DNL Analytics] et profitez de ses formidables visualisations de rapports.
 
-Intégrations dans ECID, [!DNL Analytics], et [!DNL Target] ne nécessitent aucune gestion spéciale pour les analyses côté serveur. Une fois que l’ECID est intégré, ajoutez `AppMeasurement.js` ([!DNL Analytics] ) côté client. [!DNL Analytics] utilise ensuite l’instance Visitor pour la synchronisation avec [!DNL Target].
+Les intégrations entre ECID, [!DNL Analytics] et [!DNL Target] ne nécessitent aucune gestion spéciale pour les analyses côté serveur. Une fois que vous avez intégré l’ECID, ajoutez `AppMeasurement.js` ([!DNL Analytics] bibliothèque) côté client. [!DNL Analytics] utilise ensuite l’instance Visitor pour se synchroniser avec [!DNL Target].
 
 ```html {line-numbers="true"}
 <!doctype html>
@@ -433,7 +433,7 @@ app.listen(3000, function () {
 });
 ```
 
->[!TAB Java ]
+>[!TAB Java]
 
 ```java {line-numbers="true"}
 @Controller

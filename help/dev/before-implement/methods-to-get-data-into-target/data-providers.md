@@ -1,13 +1,13 @@
 ---
 keywords: implémentation, implémentation, configuration, configuration, fournisseurs de données
-description: Obtenir des données dans [!DNL Target] à l’aide des fournisseurs de données.
-title: Comment obtenir des données dans [!DNL Target] Utilisation des fournisseurs de données ?
+description: Récupérez des données dans  [!DNL Target]  à l’aide des fournisseurs de données.
+title: Comment obtenir des données dans  [!DNL Target] à l’aide de fournisseurs de données ?
 feature: Implementation
 exl-id: 9971bd96-f736-4965-afe2-b4901c12d006
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 53%
+source-wordcount: '287'
+ht-degree: 55%
 
 ---
 
@@ -31,7 +31,7 @@ Collectez des données auprès d’un tiers (par exemple, un service météorolo
 
 ## Avantages de la méthode
 
-Ce paramètre permet aux clients de collecter des données auprès de fournisseurs de données tiers, tels que Demandbase, BlueKai et les services personnalisés, et de transmettre les données à [!DNL Target] comme paramètres de mbox dans la requête de mbox globale.
+Ce paramètre permet aux clients de collecter des données auprès de fournisseurs de données tiers, tels que Demandbase, BlueKai et les services personnalisés, et de transmettre les données à [!DNL Target] en tant que paramètres mbox dans la requête de mbox globale.
 
 Cette fonction prend en charge la collecte des données en provenance de fournisseurs multiples via des requêtes synchrones et asynchrones.
 
@@ -39,7 +39,7 @@ Cette approche permet de gérer aisément le scintillement du contenu de la page
 
 ## Avertissements
 
-Si les fournisseurs de données ont ajouté à `window.targetGlobalSettings.dataProviders` sont asynchrones, elles sont exécutées en parallèle. La requête d’API visiteur est exécutée en parallèle avec des fonctions ajoutées à `window.targetGlobalSettings.dataProviders` pour autoriser un temps d’attente minimal.
+Si les fournisseurs de données ajoutés à `window.targetGlobalSettings.dataProviders` sont asynchrones, ils sont exécutés en parallèle. La requête de l’API visiteur est exécutée en parallèle avec des fonctions ajoutées à `window.targetGlobalSettings.dataProviders` pour permettre un temps d’attente minimal.
 
 at.js ne tente pas de mettre en cache les données. Si le fournisseur de données extrait les données en une seule fois, il doit s’assurer que les données sont mises en cache et que, lorsque la fonction du fournisseur est appelée, les données du cache sont envoyées pour le second appel.
 

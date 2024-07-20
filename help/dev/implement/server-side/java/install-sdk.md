@@ -1,18 +1,18 @@
 ---
 title: Installation du SDK Java
-description: Découvrez comment installer le [!DNL Adobe Target] SDK Java.
+description: Découvrez comment installer le  [!DNL Adobe Target] SDK Java.
 feature: APIs/SDKs
 exl-id: 5828d5b3-c487-49bf-9458-7ef94374e32d
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '46'
 ht-degree: 0%
 
 ---
 
 # Installation du SDK Java
 
-Le SDK Java est distribué par [Maven Central](https://search.maven.org/artifact/com.adobe.target/target-java-sdk). Pour commencer, ajoutez-le en tant que dépendance en installant dans `gradle` ou `maven`:
+Le SDK Java est distribué par [Maven Central](https://search.maven.org/artifact/com.adobe.target/target-java-sdk). Pour commencer, ajoutez-la en tant que dépendance en l’installant dans `gradle` ou `maven` :
 
 >[!BEGINTABS]
 

@@ -1,43 +1,43 @@
 ---
 keywords: application mobile, application mobile sdk, application mobile target, sdk target mobile, sdk d’application mobile, activer target dans sdk
 description: Découvrez comment ajouter le SDK Mobile Services Adobe à votre application mobile.
-title: Comment activer [!DNL Target] dans le [!DNL Adobe Mobile SDK]?
+title: Comment activer [!DNL Target] dans le  [!DNL Adobe Mobile SDK] ?
 feature: Implement Mobile
 exl-id: 4263b96a-23c8-4513-8302-00080122181d
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 49%
+source-wordcount: '274'
+ht-degree: 29%
 
 ---
 
-# Activer [!DNL Target] dans le SDK
+# Activation de [!DNL Target] dans le SDK
 
-Ajoutez la variable [!UICONTROL SDK Adobe Mobile Services] à votre application.
+Ajoutez le [!UICONTROL Adobe Mobile Services SDK] à votre application.
 
 >[!IMPORTANT]
 >
->Prise en charge de [!DNL Adobe Mobile] version 4.*x* Les SDK ont pris fin le 31 août 2021 et ne sont plus recommandés pour [!DNL Adobe Target] utilisateurs mobiles.
+>Prise en charge de la version 4 de [!DNL Adobe Mobile].Les SDK *x* ont pris fin le 31 août 2021 et ne sont plus recommandés pour les utilisateurs mobiles [!DNL Adobe Target].
 >
->La variable [SDK Adobe Experience Platform pour les applications mobiles](https://developer.adobe.com/client-sdks/documentation/){target=_blank} est la solution recommandée pour la puissance [!DNL Adobe Experience Cloud] solutions et services dans vos applications mobiles.
+>Le [SDK Adobe Experience Platform pour les applications mobiles](https://developer.adobe.com/client-sdks/documentation/){target=_blank} est la solution recommandée pour alimenter les services et solutions [!DNL Adobe Experience Cloud] de vos applications mobiles.
 
-1. Si vous n’avez pas encore installé le SDK Adobe Mobile Services dans votre application, utilisez vos informations d’identification Analytics ou Experience Cloud pour le télécharger depuis le site web [Adobe Mobile Services](https://mobilemarketing.adobe.com/).
+1. Si vous n’avez pas encore installé le SDK Adobe Mobile Services dans votre application, utilisez vos informations d’identification Analytics ou Experience Cloud et téléchargez le SDK à partir du site Web [Adobe Mobile Services](https://mobilemarketing.adobe.com/).
 
-1. Ajoutez la variable [!DNL Adobe Mobile Services SDK] à votre application.
+1. Ajoutez le [!DNL Adobe Mobile Services SDK] à votre application.
 
    Les instructions sont disponibles sous [Mise en œuvre principale et cycle de vie](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/dev-qs.html).
 
 1. Ajoutez le code client, le délai et activez SSL.
 
-   Dans Experience Cloud, ouvrez Mobile Services, puis allez dans **[!UICONTROL Gérer les paramètres d’application]** > **[!UICONTROL Options Target du SDK]**.
+   Dans l’Experience Cloud, ouvrez Mobile Services, puis accédez à **[!UICONTROL Manage App Settings]** > **[!UICONTROL SDK Target Options]**.
 
-   Ajoutez [!DNL Target] clientcode et délai d’expiration. Le code client est spécifique à votre compte ou entreprise. Le délai d’expiration est la durée en secondes pendant laquelle [!DNL Target] attend une réponse avant d’afficher le contenu par défaut. Assurez-vous que l’option **[!UICONTROL Utiliser HTTPS]** est sélectionnée sur la page de gestion des paramètres d’application d’Adobe Mobile Services. Si HTTPS n’est pas activé, tous les appels dans iOS9+ seront bloqués, sauf si vous placez sur la liste autorisée la variable [!DNL Target] serveur.
+   Ajoutez votre code client [!DNL Target] et votre délai d’expiration. Le code client est spécifique à votre compte ou entreprise. Le délai d’expiration est le temps en secondes pendant lequel [!DNL Target] attend une réponse avant d’afficher le contenu par défaut. Assurez-vous que l’option **[!UICONTROL Use HTTPS]** est cochée sur la page Gérer les paramètres de l’application dans Adobe Mobile Services. Si HTTPS n’est pas activé, tous les appels dans iOS9+ seront bloqués, sauf si vous placez sur la liste autorisée le serveur [!DNL Target].
 
-   ![image alternative](assets/mobile-clientcode.png)
+   ![alt image](assets/mobile-clientcode.png)
 
 1. Après avoir créé/localisé votre application, recherchez les paramètres de l’application et téléchargez le SDK souhaité.
 
-   ![image alternative](assets/download-sdk.png)
+   ![alt image](assets/download-sdk.png)
 
 >[!WARNING]
 >

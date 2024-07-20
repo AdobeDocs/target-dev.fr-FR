@@ -1,13 +1,13 @@
 ---
 keywords: at.js, 2.0, 1.x, cookies
-description: Détails sur la manière dont [!DNL Adobe Target] at.js 2.x et at.js 1.x gèrent les cookies
+description: Détails sur la façon dont  [!DNL Adobe Target] at.js 2.x et at.js 1.x gèrent les cookies
 title: Cookies at.js
 feature: at.js
 exl-id: 154a844a-6855-4af7-8aed-0719b4c389f5
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '1711'
-ht-degree: 83%
+source-wordcount: '1716'
+ht-degree: 72%
 
 ---
 
@@ -17,11 +17,11 @@ Informations concernant at.js 2.x et at.js 1.comportement du cookie *x*.
 
 ## Comportement des cookies at.js 2.x
 
-Pour at.js version 2.x (jusqu’à la version 2.10.0, mais sans l’inclure), *seuls les cookies propriétaires sont pris en charge*. Comme pour at.js 1.*x*, le cookie propriétaire, &quot;mbox&quot;, est stocké dans `clientdomain.com`, où `clientdomain` est votre domaine.
+Pour at.js version 2.x (jusqu’à la version 2.10.0, mais non incluse), *seuls les cookies propriétaires sont pris en charge*. Comme pour at.js 1.*x*, le cookie propriétaire, &quot;mbox&quot;, est stocké dans `clientdomain.com`, où `clientdomain` correspond à votre domaine.
 
 at.js génère un ID de session et le stocke dans le cookie. La première réponse contient les informations d’activité, ainsi que le `TNT` ou le `PC ID` générés par les serveurs [!DNL Target]. at.js écrit ensuite le `TNT/PC ID` dans le cookie.
 
-La variable `AMCV_###@AdobeOrg` le cookie propriétaire est toujours défini par le service d’ID d’Experience Cloud, bien que la variable `ECID` est transmis [!DNL Target] requêtes.
+Le cookie propriétaire `AMCV_###@AdobeOrg` est toujours défini par le service d’ID Experience Cloud, bien que le `ECID` soit transmis dans les requêtes [!DNL Target].
 
 >[!NOTE]
 >
@@ -36,13 +36,13 @@ Le suivi inter-domaines permet d’afficher les sessions sur deux sites associé
 >Pour at.js versions 2.10.0 et ultérieures, les cookies tiers et le suivi inter-domaines sont pris en charge.
 
 
-## at.js 1.comportement du cookie *x*
+## at.js 1.Comportement du cookie *x*
 
 Pour at.js versions 1.*x*, le comportement du cookie varie selon qu’il s’agit d’un cookie propriétaire, d’un cookie tiers avec un cookie propriétaire ou d’un cookie tiers seul.
 
 ### Quand utiliser les cookies propriétaires ou tiers
 
-La configuration de votre site détermine le type de cookies que vous allez utiliser. Il est utile de comprendre comment [!DNL Target] fonctionne lorsque vous essayez de comprendre les cookies propriétaires et tiers. Voir [Comment [!DNL Adobe Target] work](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html) pour plus d’informations.
+La configuration de votre site détermine le type de cookies que vous allez utiliser. Il est utile de comprendre le fonctionnement de [!DNL Target] lorsque vous essayez de comprendre les cookies propriétaires et tiers. Pour plus d’informations, voir [Fonctionnement de  [!DNL Adobe Target] 2} .](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html)
 
 Il existe trois principaux cas d’utilisation des cookies :
 
@@ -82,7 +82,7 @@ at.js génère un `mboxSession ID` et le stocke dans le cookie. La première ré
 
 >[!NOTE]
 >
->La variable `AMCV_###@AdobeOrg` le cookie propriétaire est toujours défini avec l’identifiant visiteur Experience Cloud.
+>Le cookie propriétaire `AMCV_###@AdobeOrg` est toujours défini avec l’identifiant visiteur Experience Cloud.
 
 ### Comportement des cookies tiers
 
@@ -113,7 +113,7 @@ Le cookie s’accompagne de plusieurs paramètres par défaut. Vous pouvez modif
 | Nom du cookie | mbox. |
 | Domaine du cookie | Niveaux secondaire et supérieur des domaines à partir desquels vous publiez le contenu. Il s’agit d’un cookie propriétaire, puisqu’il est diffusé à partir du domaine de votre société. Exemple : `mycompany.com`. |
 | Domaine du serveur | `clientcode.tt.omtrdc.net`, à l’aide du code client de votre compte. |
-| Durée du cookie | Le cookie reste sur le navigateur du visiteur deux ans après sa dernière connexion.<P>La variable `deviceIdLifetime` peut être remplacé dans [at.js version 2.3.1 ou ultérieure](../atjs/target-atjs-versions.md). Pour plus d’informations, voir [targetGlobalSettings()](../../../implement/client-side/atjs/atjs-functions/targetglobalsettings.md). |
+| Durée du cookie | Le cookie reste sur le navigateur du visiteur deux ans après sa dernière connexion.<P>Le paramètre `deviceIdLifetime` peut être remplacé dans [at.js version 2.3.1 ou ultérieure](../atjs/target-atjs-versions.md). Pour plus d’informations, voir [targetGlobalSettings()](../../../implement/client-side/atjs/atjs-functions/targetglobalsettings.md). |
 | Stratégie P3P | Le cookie est publié avec une stratégie P3P, comme requis par le paramètre par défaut de la plupart des navigateurs. Une stratégie P3P indique à un navigateur qui publie le cookie et comment sont utilisées les informations. |
 
 Le cookie conserve certaines valeurs afin de gérer la façon dont les visiteurs expérimentent les campagnes :
@@ -125,16 +125,16 @@ Le cookie conserve certaines valeurs afin de gérer la façon dont les visiteurs
 | check | Valeur de test unique déterminant si un visiteur prend en charge les cookies. Définie chaque fois qu’un visiteur demande une page. |
 | disable | Défini si le temps de chargement d’un visiteur dépasse le délai configuré dans le SDK Web Adobe Experience Platform ou le fichier at.js. Dure 1 heure par défaut. |
 
-## Impact sur [!DNL Target] pour les visiteurs Safari en raison des modifications de suivi du WebKit Apple
+## Impact sur [!DNL Target] pour les visiteurs Safari suite aux modifications de suivi du WebKit Apple
 
 Gardez à l’esprit les éléments suivants :
 
-### Comment [!DNL Adobe Target] Tracking des tâches ?
+### Comment fonctionne le suivi [!DNL Adobe Target] ?
 
 | Cookies | Détails |
 |--- |--- |
-| Domaines propriétaires | Il s’agit de la mise en oeuvre standard pour [!DNL Target] clients.  Les cookies « mbox » sont définis dans le domaine du client. |
-| Suivi tiers | Le suivi tiers est important pour les cas d’utilisation de publicité et de ciblage dans [!DNL Target] et dans [!DNL Adobe Audience Manager] (AAM).  Le suivi tiers nécessite des techniques de script de site à site. [!DNL Target] utilise deux cookies, « mboxSession » et « mboxPC », définis dans le domaine `clientcode.tt.omtrd.net`. |
+| Domaines propriétaires | Il s’agit de l’implémentation standard pour les clients [!DNL Target].  Les cookies « mbox » sont définis dans le domaine du client. |
+| Suivi tiers | Le suivi tiers est important pour les cas pratiques de publicité et de ciblage dans [!DNL Target] et dans [!DNL Adobe Audience Manager] (AAM).  Le suivi tiers nécessite des techniques de script de site à site. [!DNL Target] utilise deux cookies, &quot;mboxSession&quot; et &quot;mboxPC&quot; définis dans le domaine `clientcode.tt.omtrd.net`. |
 
 ### Quelle est l’approche d’Apple ?
 
@@ -148,11 +148,11 @@ Extrait d’Apple :
 |--- |--- |
 | Intelligent Tracking Prevention (Prévention intelligente du suivi) | Pour en savoir plus, reportez-vous à la section [Intelligent Tracking Prevention](https://webkit.org/blog/7675/intelligent-tracking-prevention/) sur le site du navigateur Web Open Source, WebKit. |
 | Cookies | Comment Safari traite les cookies :<ul><li>Les cookies tiers qui ne se trouvent pas dans un domaine auquel l’utilisateur accède directement ne sont jamais enregistrés. Ce comportement n’est pas neuf. Les cookies tiers ne sont déjà plus pris en charge dans Safari.</li><li>Les cookies tiers définis dans un domaine auquel l’utilisateur accède directement sont effacés après 24 heures.</li><li>Les cookies tiers sont effacés après 30 jours si le domaine propriétaire est classé comme suivant les utilisateurs de site en site. Ce problème peut concerner les grandes entreprises qui envoient les utilisateurs vers différents domaines en ligne. Apple n’a pas précisé clairement comment ces domaines seront classés, ou comment un domaine peut déterminer s’ils sont classés comme suivant les utilisateurs de site en site.</li></ul> |
-| L’apprentissage automatique pour identifier les domaines intersites | Extrait d’Apple :<P>Machine Learning Classifier : modèle d’apprentissage automatique utilisé pour classer les domaines régis par le contrôle privé afin de pouvoir suivre l’utilisateur de site en site, en fonction des statistiques collectées. Sur les différentes statistiques recueillies, trois vecteurs se sont avérés avoir un signal fort pour la classification en fonction des pratiques de suivi actuelles : sous-ressource sous le nombre de domaines uniques, sous-trame sous le nombre de domaines uniques et nombre de domaines uniques redirigés. Toute la collecte et la classification des données se produisent sur le périphérique.<P>Cependant, si l’utilisateur interagit avec example.com comme le domaine principal, souvent appelé domaine propriétaire, la prévention intelligente du suivi considère qu’il s’agit d’un signal que l’utilisateur est intéressé par le site et ajuste temporairement son comportement comme décrit dans cette chronologie :<P>Si l’utilisateur interagit avec dans les dernières 24 heures, ses cookies seront disponibles lorsque `example.com`example.com est un tiers. Cela me permet de « me connecter avec mon compte X sur les scénarios de connexion Y. »<ul><li>Les domaines visités comme domaines de haut niveau ne seront pas affectés. Des sites comme OKTA, par exemple.</li><li>Identifie les domaines qui sont un sous-domaine ou une sous-trame de la page actuelle dans plusieurs domaines uniques..</li></ul> |
+| L’apprentissage automatique pour identifier les domaines intersites | Extrait d’Apple :<P>Machine Learning Classifier : modèle d’apprentissage automatique utilisé pour classer les domaines régis par le contrôle privé afin de pouvoir suivre l’utilisateur de site en site, en fonction des statistiques collectées. Sur les différentes statistiques recueillies, trois vecteurs se sont avérés avoir un signal fort pour la classification en fonction des pratiques de suivi actuelles : sous-ressource sous le nombre de domaines uniques, sous-trame sous le nombre de domaines uniques et nombre de domaines uniques redirigés. Toute la collecte et la classification des données se produisent sur le périphérique.<P>Cependant, si l’utilisateur interagit avec example.com comme domaine supérieur, souvent appelé domaine propriétaire, la prévention intelligente du suivi considère qu’il s’agit d’un signal que l’utilisateur est intéressé par le site web et ajuste temporairement son comportement comme illustré dans cette chronologie :<P>Si l’utilisateur a interagi avec example.com au cours des dernières 24 heures, ses cookies seront disponibles lorsque `example.com` est un tiers. Cela me permet de « me connecter avec mon compte X sur les scénarios de connexion Y. »<ul><li>Les domaines visités comme domaines de haut niveau ne seront pas affectés. Des sites comme OKTA, par exemple.</li><li>Identifie les domaines qui sont des sous-domaines ou des sous-cadres de la page active sur plusieurs domaines uniques.</li></ul> |
 
 ### Comment Adobe sera-t-il affecté ?
 
 | Fonctionnalités affectées | Détails |
 |--- |--- |
-| Prise en charge de l’exclusion | La fonction de suivi du WebKit d’Apple modifie la prise en charge de l’exclusion.<P>[!DNL Target]La fonction d’exclusion de utilise un cookie dans le domaine `clientcode.tt.omtrdc.net`. Pour plus d’informations, consultez la section [Confidentialité](/help/dev/before-implement/privacy/privacy.md)<P>[!DNL Target] prend en charge deux exclusions :<ul><li>une par client (le client gère le lien d’exclusion) ;</li><li>Un par Adobe qui exclut l’utilisateur de tous les [!DNL Target] pour tous les clients.</li></ul>Ces deux méthodes utilisent le cookie tiers. |
-| [!DNL Target] activités | Les clients peuvent choisir leurs [durée de vie du profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html) pour leur [!DNL Target] comptes (jusqu’à 90 jours). Le problème est que si la durée de vie du profil du compte est supérieure à 30 jours et que le cookie propriétaire est effacé car le domaine du client est marqué comme suivant les utilisateurs de site en site, le comportement pour les visiteurs Safari sera affecté dans les domaines suivants de [!DNL Target]:<P>**[!DNL Target]Rapports**: si un utilisateur Safari entre dans une activité, revient après 30 jours, puis effectue une conversion, il est compté comme deux visiteurs et une conversion.<P>Ce comportement est le même pour les activités utilisant [!DNL Analytics] comme source des rapports (A4T).<P>**Profil et appartenance à une activité** :<ul><li>Les données du profil sont effacées lorsque le cookie propriétaire expire.</li><li>L’appartenance à une activité est effacée lorsque le cookie propriétaire expire.</li><li> [!DNL Target] ne fonctionne pas dans Safari pour les comptes qui utilisent une implémentation de cookies tiers ou une implémentation de cookies tiers et de cookies propriétaires. Notez que ce comportement n’est pas récent. Cela fait un certain temps déjà que Safari n’autorise plus les cookies tiers.</li></ul><P>**Suggestions** : s’il existe un risque que le domaine du client soit marqué comme suivant les visiteurs d’une session à l’autre, il est plus prudent de définir la durée de vie du profil sur 30 jours ou moins dans [!DNL Target]. Ceci garantit que les utilisateurs seront suivis de la même manière dans Safari et tous les autres navigateurs. |
+| Prise en charge de l’exclusion | La fonction de suivi du WebKit d’Apple modifie la prise en charge de l’exclusion.<P>L’exclusion de [!DNL Target] utilise un cookie dans le domaine `clientcode.tt.omtrdc.net`. Pour plus d’informations, consultez la section [Confidentialité](/help/dev/before-implement/privacy/privacy.md)<P>[!DNL Target] prend en charge deux exclusions :<ul><li>une par client (le client gère le lien d’exclusion) ;</li><li>Un par Adobe qui exclut l’utilisateur de toutes les fonctionnalités [!DNL Target] pour tous les clients.</li></ul>Ces deux méthodes utilisent le cookie tiers. |
+| [!DNL Target] activités | Les clients peuvent choisir leur [durée de vie du profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html) pour leurs comptes [!DNL Target] (jusqu’à 90 jours). Le problème est que si la durée de vie du profil du compte est supérieure à 30 jours et que le cookie propriétaire est purgé car le domaine du client a été marqué comme suivant les utilisateurs sur plusieurs sites, le comportement des visiteurs Safari sera affecté dans les zones suivantes de [!DNL Target] :<P>**[!DNL Target]Rapports** : si un utilisateur Safari entre dans une activité, revient après 30 jours, puis convertit, cet utilisateur compte comme deux visiteurs et une conversion.<P>Ce comportement est le même pour les activités utilisant [!DNL Analytics] comme source de création de rapports (A4T).<P>**Profil et appartenance à une activité** :<ul><li>Les données du profil sont effacées lorsque le cookie propriétaire expire.</li><li>L’appartenance à une activité est effacée lorsque le cookie propriétaire expire.</li><li> [!DNL Target] ne fonctionne pas dans Safari pour les comptes qui utilisent une implémentation de cookies tiers ou une implémentation de cookies propriétaires et tiers. Notez que ce comportement n’est pas récent. Cela fait un certain temps déjà que Safari n’autorise plus les cookies tiers.</li></ul><P>**Suggestions** : s’il existe un risque que le domaine du client soit marqué comme un suivi des visiteurs d’une session à l’autre, il est plus prudent de définir la durée de vie du profil sur 30 jours ou moins dans [!DNL Target]. Ceci garantit que les utilisateurs seront suivis de la même manière dans Safari et tous les autres navigateurs. |

@@ -1,19 +1,19 @@
 ---
 keywords: sécurité, pratiques de sécurité
-description: Découvrez les procédures utilisées par pour renforcer la sécurité de vos données et de votre expérience Adobe  [!DNL Adobe Target] .
+description: Découvrez les procédures que l’Adobe utilise pour renforcer la sécurité de vos données et de votre expérience  [!DNL Adobe Target] .
 title: Comment Target gère-t-il la sécurité de mes données ?
 feature: Privacy & Security
 exl-id: f24c8b0d-8039-4e07-9ecf-de5a7adebce7
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 94%
+source-wordcount: '147'
+ht-degree: 69%
 
 ---
 
-# [!DNL Target] présentation de la sécurité
+# [!DNL Target] - Présentation de la sécurité
 
-Informations sur l’approche en profondeur et les procédures de sécurité mises en œuvre par Adobe pour renforcer la sécurité de vos données et de votre expérience [!DNL Adobe Target].
+Informations sur l’approche en profondeur et les procédures de sécurité mises en oeuvre par Adobe pour renforcer la sécurité de vos données et de votre expérience [!DNL Adobe Target].
 
 Chez Adobe, nous prenons la sécurité de votre expérience numérique très au sérieux. Les pratiques de sécurité sont profondément enracinées dans nos activités de développement logiciel interne, nos processus opérationnels et nos outils, et sont scrupuleusement suivies par nos équipes interfonctionnelles afin de prévenir, de détecter et de répondre rapidement aux incidents.
 

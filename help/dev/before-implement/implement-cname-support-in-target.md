@@ -1,27 +1,27 @@
 ---
 keywords: service à la clientèle, cname, programme de certificat, nom canonique, cookies, certificat, amc, certificat géré adobe, digicert, validation du contrôle de domaine, dcv, service à la clientèle2
-description: Utilisation de [!UICONTROL Adobe Client Care] pour mettre en oeuvre la prise en charge de CNAME (nom canonique) dans [!DNL Adobe Target] pour gérer les problèmes de blocage des publicités.
+description: Travaillez avec [!UICONTROL Adobe Client Care] pour mettre en oeuvre la prise en charge de CNAME (nom canonique) dans  [!DNL Adobe Target]  pour gérer les problèmes de blocage des publicités.
 title: Comment utiliser CNAME dans Target ?
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1164'
 ht-degree: 1%
 
 ---
 
 # CNAME et Target
 
-Instructions relatives à l’utilisation de [!DNL Adobe Client Care] pour mettre en oeuvre la prise en charge de CNAME (nom canonique) dans [!DNL Adobe Target]. Utilisez CNAME pour gérer les problèmes de blocage des publicités ou les stratégies de cookies liées à ITP (Intelligent Tracking Prevention). Avec CNAME, les appels sont effectués vers un domaine détenu par le client plutôt qu’un domaine détenu par l’Adobe.
+Instructions pour travailler avec [!DNL Adobe Client Care] pour mettre en oeuvre la prise en charge de CNAME (nom canonique) dans [!DNL Adobe Target]. Utilisez CNAME pour gérer les problèmes de blocage des publicités ou les stratégies de cookies liées à ITP (Intelligent Tracking Prevention). Avec CNAME, les appels sont effectués vers un domaine détenu par le client plutôt qu’un domaine détenu par l’Adobe.
 
 ## Demande de la prise en charge du CNAME dans Target
 
 1. Déterminez la liste des noms d’hôtes dont vous avez besoin pour votre certificat SSL (voir la FAQ ci-dessous).
 
-1. Pour chaque nom d’hôte, créez un enregistrement CNAME dans votre DNS en pointant vers votre [!DNL Target] hostname `clientcode.tt.omtrdc.net`.
+1. Pour chaque nom d’hôte, créez un enregistrement CNAME dans votre DNS pointant vers votre nom d’hôte [!DNL Target] habituel `clientcode.tt.omtrdc.net`.
 
-   Par exemple, si votre code client est &quot;client&quot; et que votre nom d’hôte proposé est `target.example.com`, votre enregistrement CNAME DNS ressemble à ceci :
+   Par exemple, si votre code client est &quot;client&quot; et que votre nom d’hôte proposé est `target.example.com`, votre enregistrement CNAME DNS ressemble à :
 
    ```
    target.example.com.  IN  CNAME  cnamecustomer.tt.omtrdc.net.
@@ -31,10 +31,10 @@ Instructions relatives à l’utilisation de [!DNL Adobe Client Care] pour mettr
    >
    >L’autorité de certification de l’Adobe, DigiCert, ne peut pas émettre de certificat tant que cette étape n’est pas terminée. Par conséquent, Adobe ne peut pas répondre à votre demande d’implémentation CNAME tant que cette étape n’est pas terminée.
 
-1. [Remplissez ce formulaire.](assets/FPC_Request_Form.xlsx) et incluez-le lorsque vous [ouvrir un ticket Adobe ClientCare demandant la prise en charge du CNAME](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C):
+1. [Remplissez ce formulaire](assets/FPC_Request_Form.xlsx) et incluez-le lorsque vous [  ouvrez un ticket Adobe Client Care pour demander la prise en charge CNAME](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C) :
 
-   * [!DNL Adobe Target] client code:
-   * Noms d’hôte de certificat SSL (exemple : `target.example.com target.example.org`) :
+   * [!DNL Adobe Target] code client :
+   * Noms d’hôtes de certificat SSL (exemple : `target.example.com target.example.org`) :
    * Acheteur de certificat SSL (l’Adobe est vivement recommandé, voir FAQ : Adobe/client)
    * Si le client achète le certificat, également appelé &quot;Apportez votre propre certificat&quot; (BYOC), renseignez les détails supplémentaires suivants :
       * Organisation de certificats (exemple : Exemple Entreprise Inc) :
@@ -49,7 +49,7 @@ Instructions relatives à l’utilisation de [!DNL Adobe Client Care] pour mettr
 
    Adobe Client Care vous avertit lorsque votre mise en oeuvre est prête.
 
-1. Mettez à jour le `serverDomain` [documentation](../implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverdomain) sur le nouveau nom d’hôte CNAME et définissez `overrideMboxEdgeServer` to `false` [documentation](../implement/client-side/atjs/atjs-functions/targetglobalsettings.md#overridemboxedgeserver) dans votre configuration at.js.
+1. Mettez à jour la `serverDomain` [documentation](../implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverdomain) vers le nouveau nom d’hôte CNAME et définissez `overrideMboxEdgeServer` sur `false` [documentation](../implement/client-side/atjs/atjs-functions/targetglobalsettings.md#overridemboxedgeserver) dans votre configuration at.js.
 
 ## Questions fréquentes
 
@@ -57,35 +57,35 @@ Les informations suivantes répondent aux questions fréquentes sur la demande e
 
 ### Puis-je fournir mon propre certificat (Bring Your own Certificate ou BYOC) ?
 
-Vous pouvez fournir votre propre certificat. Cependant, l’Adobe ne recommande pas cette pratique. La gestion du cycle de vie du certificat SSL est plus facile pour l’Adobe et pour vous si l’Adobe achète et contrôle le certificat. Les certificats SSL doivent être renouvelés chaque année. Par conséquent, le service à la clientèle d’Adobe doit vous contacter chaque année pour obtenir un nouveau certificat en temps voulu. Certains clients peuvent avoir des difficultés à produire un certificat renouvelé dans les délais impartis. Votre [!DNL Target] l’implémentation est mise en danger lorsque le certificat expire, car les navigateurs refusent les connexions.
+Vous pouvez fournir votre propre certificat. Cependant, l’Adobe ne recommande pas cette pratique. La gestion du cycle de vie du certificat SSL est plus facile pour l’Adobe et pour vous si l’Adobe achète et contrôle le certificat. Les certificats SSL doivent être renouvelés chaque année. Par conséquent, le service à la clientèle d’Adobe doit vous contacter chaque année pour obtenir un nouveau certificat en temps voulu. Certains clients peuvent avoir des difficultés à produire un certificat renouvelé dans les délais impartis. Votre mise en oeuvre de [!DNL Target] est mise en danger lorsque le certificat expire, car les navigateurs refusent les connexions.
 
 >[!WARNING]
 >
->Si vous demandez une [!DNL Target] apportez votre propre mise en oeuvre CNAME de certificat. Vous êtes responsable de fournir des certificats renouvelés au service à la clientèle chaque année. Le fait d’autoriser votre certificat CNAME à expirer avant que l’Adobe puisse déployer un certificat renouvelé entraîne une interruption pour votre [!DNL Target] implémentation.
+>Si vous demandez une mise en oeuvre CNAME avec votre propre certificat [!DNL Target], vous devez fournir des certificats renouvelés au service à la clientèle d’Adobe chaque année. Le fait d’autoriser votre certificat CNAME à expirer avant que l’Adobe puisse déployer un certificat renouvelé entraîne une interruption de votre mise en oeuvre [!DNL Target] spécifique.
 
 ### Combien de temps avant l’expiration de mon nouveau certificat SSL ?
 
-Tous les certificats achetés par Adobe sont valides pendant un an. Voir [Article de DigiCert sur les certificats d&#39;un an](https://www.digicert.com/blog/position-on-1-year-certificates) pour plus d’informations.
+Tous les certificats achetés par Adobe sont valides pendant un an. Pour plus d’informations, consultez l’ [article de DigiCert sur les certificats d’un an](https://www.digicert.com/blog/position-on-1-year-certificates) .
 
 ### Quels noms d’hôtes dois-je choisir ? Combien de noms d’hôtes par domaine dois-je choisir ?
 
 Les implémentations CNAME de Target ne nécessitent qu’un seul nom d’hôte par domaine sur le certificat SSL et dans le DNS du client. Adobe recommande un nom d’hôte par domaine. Certains clients ont besoin de davantage de noms d’hôtes par domaine à leurs propres fins (test dans l’évaluation, par exemple), qui est pris en charge.
 
-La plupart des clients choisissent un nom d’hôte comme `target.example.com`. Adobe recommande de suivre cette pratique, mais le choix est finalement le vôtre. Ne demandez pas de nom d’hôte d’un enregistrement DNS existant. Cela entraîne un conflit et retarde la résolution de votre problème. [!DNL Target] Requête CNAME.
+La plupart des clients choisissent un nom d’hôte tel que `target.example.com`. Adobe recommande de suivre cette pratique, mais le choix est finalement le vôtre. Ne demandez pas de nom d’hôte d’un enregistrement DNS existant. Cela provoque un conflit et retarde la résolution de votre demande CNAME [!DNL Target].
 
 ### J’ai déjà une implémentation CNAME pour Adobe Analytics. Puis-je utiliser le même certificat ou nom d’hôte ?
 
 Non, [!DNL Target] nécessite un nom d’hôte et un certificat distincts.
 
-### Mon implémentation actuelle de [!DNL Target] impacté par ITP 2.x ?
+### Mon implémentation actuelle de [!DNL Target] est-elle affectée par ITP 2.x ?
 
-ITP (Intelligent Tracking Prevention) version 2.3 d’Apple a introduit sa fonctionnalité de réduction du cloaking CNAME, qui est capable de détecter [!DNL Target] Les mises en oeuvre CNAME et réduisent l’expiration du cookie à sept jours. Actuellement [!DNL Target] n’a aucune solution pour la limitation CNAME de cloaking Mitigation ITP. Pour plus d’informations sur ITP, voir [ITP (Intelligent Tracking Prevention) 2.x d’Apple](../before-implement/privacy/apple-itp-2x.md).
+ITP (Intelligent Tracking Prevention) version 2.3 d’Apple a introduit sa fonctionnalité de limitation du cloaking CNAME, qui est capable de détecter les mises en oeuvre CNAME [!DNL Target] et réduit l’expiration du cookie à sept jours. Actuellement, [!DNL Target] n’a aucune solution pour la limitation CNAME de cloaking ITP. Pour plus d’informations sur ITP, voir [Apple Intelligent Tracking Prevention (ITP) 2.x](../before-implement/privacy/apple-itp-2x.md).
 
 ### À quel type de interruption de service puis-je m’attendre lorsque mon implémentation CNAME est déployée ?
 
 Il n’y a aucune interruption de service lorsque le certificat est déployé (y compris les renouvellements de certificat).
 
-Cependant, après avoir modifié le nom d’hôte dans votre [!DNL Target] code d’implémentation (`serverDomain` dans at.js) au nouveau nom d’hôte CNAME (`target.example.com`), les navigateurs Web traitent les visiteurs récurrents comme de nouveaux visiteurs. Les données de profil des visiteurs récurrents sont perdues car le cookie précédent est inaccessible sous l’ancien nom d’hôte (`clientcode.tt.omtrdc.net`). Le cookie précédent est inaccessible en raison des modèles de sécurité du navigateur. Cette interruption se produit uniquement lors de la coupure initiale du nouveau CNAME. Les renouvellements de certificats n’ont pas le même effet, car le nom d’hôte ne change pas.
+Cependant, après avoir remplacé le nom d’hôte dans votre code d’implémentation [!DNL Target] (`serverDomain` dans at.js) par le nouveau nom d’hôte CNAME (`target.example.com`), les navigateurs Web traitent les visiteurs récurrents comme de nouveaux visiteurs. Les données de profil des visiteurs récurrents sont perdues car le cookie précédent est inaccessible sous l’ancien nom d’hôte (`clientcode.tt.omtrdc.net`). Le cookie précédent est inaccessible en raison des modèles de sécurité du navigateur. Cette interruption se produit uniquement lors de la coupure initiale du nouveau CNAME. Les renouvellements de certificats n’ont pas le même effet, car le nom d’hôte ne change pas.
 
 ### Quel type de clé et quel algorithme de signature de certificat sont utilisés pour mon implémentation CNAME ?
 
@@ -95,7 +95,7 @@ Tous les certificats sont RSA SHA-256 et les clés sont RSA 2048 bits, par défa
 
 Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de commande macOS ou Linux, à l’aide de bash et curl >=7.49) :
 
-1. Copiez et collez cette fonction bash dans votre terminal ou collez-la dans votre fichier de script de démarrage bash (généralement `~/.bash_profile` ou `~/.bashrc`) afin que la fonction soit disponible dans toutes les sessions de terminal :
+1. Copiez et collez cette fonction bash dans votre terminal ou collez-la dans votre fichier de script de démarrage bash (généralement `~/.bash_profile` ou `~/.bashrc`) afin que la fonction soit disponible sur toutes les sessions de terminal :
 
    ```
    function adobeTargetCnameValidation {
@@ -257,13 +257,13 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
    }
    ```
 
-1. Collez cette commande (en remplaçant `target.example.com` avec votre nom d’hôte) :
+1. Collez la commande suivante (en remplaçant `target.example.com` par votre nom d’hôte) :
 
    ```
    adobeTargetCnameValidation target.example.com
    ```
 
-   Si l’implémentation est prête, la sortie s’affiche comme ci-dessous. La partie importante est que toutes les lignes d’état de validation affichent `✅` plutôt que `🚫`. Chaque partage CNAME Target Edge doit afficher `CN=target.example.com`, qui correspond au nom d’hôte Principal sur le certificat demandé (les noms d’hôtes SAN supplémentaires sur le certificat ne sont pas imprimés dans cette sortie).
+   Si l’implémentation est prête, la sortie s’affiche comme ci-dessous. La partie importante est que toutes les lignes d’état de validation affichent `✅` plutôt que `🚫`. Chaque partage CNAME Target Edge doit afficher `CN=target.example.com`, qui correspond au nom d’hôte principal sur le certificat demandé (les noms d’hôtes SAN supplémentaires sur le certificat ne sont pas imprimés dans cette sortie).
 
    ```
    $ adobeTargetCnameValidation target.example.com
@@ -327,16 +327,16 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
 
 >[!NOTE]
 >
->Si cette commande de validation échoue lors de la validation DNS, mais que vous avez déjà apporté les modifications DNS nécessaires, vous devrez peut-être attendre que vos mises à jour DNS se propagent complètement. Les enregistrements DNS sont associés à [Durée de vie (TTL)](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) qui détermine le délai d’expiration du cache pour les réponses DNS de ces enregistrements. Par conséquent, vous devrez peut-être attendre au moins aussi longtemps que vos TTL. Vous pouvez utiliser la variable `dig target.example.com` ou [Boîte à outils de la suite G](https://toolbox.googleapps.com/apps/dig/#CNAME) pour rechercher vos TTL spécifiques. Pour vérifier la propagation DNS dans le monde, voir [whatsmydns.net](https://whatsmydns.net/#CNAME).
+>Si cette commande de validation échoue lors de la validation DNS, mais que vous avez déjà apporté les modifications DNS nécessaires, vous devrez peut-être attendre que vos mises à jour DNS se propagent complètement. Les enregistrements DNS sont associés à un [TTL (time-to-live)](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) qui détermine le délai d’expiration du cache pour les réponses DNS de ces enregistrements. Par conséquent, vous devrez peut-être attendre au moins aussi longtemps que vos TTL. Vous pouvez utiliser la commande `dig target.example.com` ou [la boîte à outils G Suite](https://toolbox.googleapps.com/apps/dig/#CNAME) pour rechercher vos TTL spécifiques. Pour vérifier la propagation DNS dans le monde, voir [whatsmydns.net](https://whatsmydns.net/#CNAME).
 
 ### Comment utiliser un lien d’exclusion avec CNAME ?
 
-Si vous utilisez CNAME, le lien d’exclusion doit contenir &quot;client=`clientcode` par exemple :
+Si vous utilisez CNAME, le lien d’exclusion doit contenir le paramètre &quot;client=`clientcode`&quot;, par exemple :
 `https://my.cname.domain/optout?client=clientcode`.
 
-Remplacer `clientcode` avec votre code client, puis ajoutez le texte ou l’image à lier au [URL d’exclusion](privacy/privacy.md).
+Remplacez `clientcode` par votre code client, puis ajoutez le texte ou l’image à lier à l’ [URL d’exclusion](privacy/privacy.md).
 
 ## Limites connues
 
 * Le mode AQ n’est pas attractif lorsque vous utilisez CNAME et at.js 1.x, car il est basé sur un cookie tiers. La solution consiste à ajouter les paramètres d’aperçu à chaque URL à laquelle vous accédez. Le mode AQ est attractif lorsque vous disposez de CNAME et at.js 2.x.
-* Lors de l’utilisation de CNAME, il devient plus probable que la taille de l’en-tête du cookie pour [!DNL Target] les appels augmentent. Adobe recommande de conserver la taille du cookie sous 8 Ko.
+* Lors de l’utilisation de CNAME, il devient plus probable que la taille de l’en-tête de cookie pour les appels [!DNL Target] augmente. Adobe recommande de conserver la taille du cookie sous 8 Ko.

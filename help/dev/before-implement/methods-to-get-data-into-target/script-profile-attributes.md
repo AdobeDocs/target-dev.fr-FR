@@ -1,25 +1,25 @@
 ---
 keywords: implémentation, implémentation, configuration, configuration, attributs de profil de script
-description: Obtenir des données dans [!DNL Target] à l’aide d’attributs de profil de script.
-title: Comment obtenir des données dans [!DNL Target] Utilisation d’attributs de profil de script ?
+description: Récupérez des données dans  [!DNL Target]  à l’aide d’attributs de profil de script.
+title: Comment obtenir des données dans  [!DNL Target] à l’aide d’attributs de profil de script ?
 feature: Implementation
 exl-id: ba11f1de-e68b-4505-8e3e-cd4d46ef59a2
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 69%
+source-wordcount: '283'
+ht-degree: 74%
 
 ---
 
 # Attributs de profil de script
 
-Les attributs de profil de script sont des paires nom/valeur définies dans la variable [!DNL Adobe Target] solution. La valeur est déterminée grâce à l’exécution d’un fragment de code JavaScript sur le serveur de Target à chaque appel de serveur.
+Les attributs de profil de script sont des paires nom/valeur définies dans la solution [!DNL Adobe Target]. La valeur est déterminée grâce à l’exécution d’un fragment de code JavaScript sur le serveur de Target à chaque appel de serveur.
 
 Les utilisateurs écrivent de petits fragments de code qui s’exécutent à chaque appel de mbox, avant l’évaluation de l’appartenance d’audience et de l’appartenance à une activité d’un visiteur.
 
 ## Format
 
-Les attributs de profil de script sont créés dans la section Audiences de Target. Tout nom d’attribut est valide et la valeur est le résultat d’une fonction JavaScript écrite par la fonction [!DNL Target] utilisateur. Les noms d’attributs sont automatiquement précédés du préfixe « user. &quot; dans [!DNL Target] pour les distinguer des attributs de profil internes à la page.
+Les attributs de profil de script sont créés dans la section Audiences de Target. Tout nom d’attribut est valide et la valeur est le résultat d’une fonction JavaScript écrite par l’utilisateur [!DNL Target]. Les noms d’attributs sont automatiquement précédés du préfixe « user. &quot; dans [!DNL Target] pour les distinguer des attributs de profil internes à la page.
 
 Les fragments de code sont écrits dans le langage JavaScript Rhino et peuvent référencer des jetons et d’autres valeurs.
 

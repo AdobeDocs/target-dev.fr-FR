@@ -1,12 +1,12 @@
 ---
 title: Ciblage de l’audience
-description: Les audiences peuvent être utilisées pour cibler vos activités d’expérimentation et de personnalisation. [!DNL Adobe Target] prend en charge une myriade de puissantes fonctionnalités de ciblage d’audience prêtes à l’emploi.
+description: Les audiences peuvent être utilisées pour cibler vos activités d’expérimentation et de personnalisation. [!DNL Adobe Target]  prend en charge une myriade de puissantes fonctionnalités de ciblage d’audience prêtes à l’emploi.
 exl-id: df1bd856-e848-452c-90a0-abf29e7a2313
 feature: Implement Server-side
 source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
 workflow-type: tm+mt
-source-wordcount: '967'
-ht-degree: 21%
+source-wordcount: '702'
+ht-degree: 26%
 
 ---
 
@@ -14,11 +14,12 @@ ht-degree: 21%
 
 ## Aperçu
 
-Les audiences peuvent être utilisées pour cibler vos activités d’expérimentation et de personnalisation. [!DNL Adobe Target] prend en charge une myriade de puissantes fonctionnalités de ciblage d’audience prêtes à l’emploi. Les attributs suivants sont disponibles pour [ciblage d&#39;audience](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/create-audience.html):
+Les audiences peuvent être utilisées pour cibler vos activités d’expérimentation et de personnalisation. [!DNL Adobe Target] prend en charge une myriade de puissantes fonctionnalités de ciblage d’audience prêtes à l’emploi. Les attributs suivants sont disponibles pour le [ciblage d’audience](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/create-audience.html) :
 
-### [!DNL Target] Bibliothèque
+### Bibliothèque [!DNL Target]
 
-Pour plus d’informations, voir [[!DNL Target] Bibliothèque](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html). &#x200B;
+Pour plus d’informations, voir [[!DNL Target] Bibliothèque](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/target-library.html).
+&#x200B;
 * Provenant de Bing
 * Navigateur Chrome
 * Navigateur Firefox
@@ -35,8 +36,8 @@ Pour plus d’informations, voir [[!DNL Target] Bibliothèque](https://experienc
 
 ### Géo
 
-Pour plus d’informations, voir [Géo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html).
-&#x200B;&#x200B;
+Pour plus d’informations, voir [Geo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html).
+&#x200B; &#x200B;
 * Pays/zone géographique
 * État
 * Ville
@@ -48,7 +49,7 @@ Pour plus d’informations, voir [Géo](https://experienceleague.adobe.com/docs/
 
 ### Réseau
 
-Pour plus d’informations, voir [Réseau](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html).
+Pour plus d’informations, voir [Network](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html).
 
 * Fournisseur de services Internet
 * Nom de domaine
@@ -119,17 +120,17 @@ Pour plus d’informations, voir [Sources de trafic](https://experienceleague.ad
 
 ### Période
 
-Pour plus d’informations, voir [Période.](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html)
+Pour plus d’informations, voir [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html).
 
 * Date de début / Date de fin
 
 ## Conseils au client
 
-[!DNL Adobe Target] nécessite des conseils client pour une segmentation correcte des attributs du navigateur, du système d’exploitation et de l’audience mobile, ainsi que de certaines instances des scripts de profil. Pour plus d’informations, voir [Agent utilisateur et conseils client](../../../client-side/atjs/user-agent-and-client-hints.md).
+[!DNL Adobe Target] nécessite des conseils client pour une segmentation correcte des attributs de navigateur, système d’exploitation et audience mobile, ainsi que certaines instances de scripts de profil. Pour plus d’informations, voir [Agent utilisateur et conseils client](../../../client-side/atjs/user-agent-and-client-hints.md).
 
 ### Comment transmettre des conseils au client à [!DNL Adobe Target]
 
-À partir du SDK Node.js v2.4.0 et du SDK Java v2.3.0, vous pouvez envoyer des conseils client à [!DNL Target] via `getOffers()` appels . Les conseils au client doivent être inclus dans la variable `request.context` , ainsi que l’agent utilisateur.
+À partir du SDK Node.js v2.4.0 et du SDK Java v2.3.0, les conseils client peuvent être envoyés à [!DNL Target] via des appels `getOffers()`. Les conseils client doivent être inclus dans l’objet `request.context`, avec l’agent utilisateur.
 
 >[!BEGINTABS]
 
@@ -206,11 +207,11 @@ Le tableau suivant indique les règles d’audience prises en charge ou non pour
 | [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Non |
 | [Sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Non |
 | [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Oui |
-| [Audiences Experience Cloud](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (Audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager | Non |
+| [Audiences Experience Cloud](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Non |
 
 ### Ciblage géographique pour la prise de décision sur les appareils
 
-Pour maintenir une latence proche de zéro pour les activités de prise de décision sur les appareils avec des audiences basées sur la géolocalisation, Adobe vous recommande de fournir les valeurs géographiques vous-même dans l’appel à `getOffers`. Pour ce faire, définissez la variable `Geo` dans le `Context` de la requête. Cela signifie que votre serveur aura besoin d’un moyen de déterminer l’emplacement de chaque utilisateur final. Par exemple, votre serveur peut effectuer une recherche IP/géo à l’aide d’un service que vous configurez. Certains fournisseurs d’hébergement, tels que Google Cloud, fournissent cette fonctionnalité par le biais d’en-têtes personnalisés dans chaque `HttpServletRequest`.
+Afin de maintenir une latence proche de zéro pour les activités de prise de décision sur l’appareil avec des audiences basées sur la géolocalisation, Adobe vous recommande de fournir les valeurs géographiques vous-même dans l’appel à `getOffers`. Pour ce faire, définissez l’objet `Geo` dans le `Context` de la requête. Cela signifie que votre serveur aura besoin d’un moyen de déterminer l’emplacement de chaque utilisateur final. Par exemple, votre serveur peut effectuer une recherche IP/géo à l’aide d’un service que vous configurez. Certains fournisseurs d’hébergement, tels que Google Cloud, fournissent cette fonctionnalité par le biais d’en-têtes personnalisés dans chaque `HttpServletRequest`.
 
 >[!BEGINTABS]
 
@@ -269,7 +270,7 @@ public class TargetRequestUtils {
 
 >[!ENDTABS]
 
-Cependant, si vous n’avez pas la possibilité d’effectuer des recherches IP vers géo sur votre serveur, mais que vous souhaitez tout de même prendre des décisions sur l’appareil pour `getOffers` requêtes contenant des audiences basées sur la géographie, cette fonctionnalité est également prise en charge. L’inconvénient de cette approche est qu’elle utilise une recherche IP/géo distante, ce qui ajoute une latence à chaque `getOffers` appelez . Cette latence doit être inférieure à une valeur distante `getOffers` , puisqu’il atteint un réseau de diffusion de contenu situé près de votre serveur. Vous devez **only** fournissez la variable `ipAddress` dans le champ `Geo` dans le `Context` de votre requête, afin que le SDK récupère la géolocalisation de l’adresse IP de votre utilisateur. Si un autre champ s’ajoute à la variable `ipAddress` est fourni, la variable [!DNL Target] Le SDK ne récupère pas les métadonnées de géolocalisation pour la résolution.
+Cependant, si vous ne pouvez pas effectuer de recherches IP vers géo sur votre serveur, mais que vous souhaitez toujours effectuer une prise de décision sur l’appareil pour les demandes `getOffers` contenant des audiences basées sur la géographie, cette prise en charge est également effectuée. L’inconvénient de cette approche est qu’elle utilise une recherche IP/géo distante, ce qui ajoute une latence à chaque appel `getOffers`. Cette latence doit être inférieure à un appel `getOffers` distant, puisqu’elle atteint un réseau de diffusion de contenu situé près de votre serveur. Vous devez **uniquement** fournir le champ `ipAddress` dans l’objet `Geo` dans l’objet `Context` de votre requête, afin que le SDK puisse récupérer la géolocalisation de l’adresse IP de votre utilisateur. Si un autre champ en plus de `ipAddress` est fourni, le SDK [!DNL Target] ne récupérera pas les métadonnées de géolocalisation pour la résolution.
 
 >[!BEGINTABS]
 
@@ -333,4 +334,4 @@ Le tableau suivant indique les règles d’audience prises en charge ou non pour
 | [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Oui |
 | [Sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Oui |
 | [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Oui |
-| [Audiences Experience Cloud](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (Audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager | Oui |
+| [Audiences Experience Cloud](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Oui |

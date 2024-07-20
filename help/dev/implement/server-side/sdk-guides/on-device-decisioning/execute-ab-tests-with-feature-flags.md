@@ -5,7 +5,7 @@ feature: APIs/SDKs
 exl-id: abf66e00-742d-4d40-9b6e-9bd71638c31a
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 ## Résumé des étapes
 
-1. Activer [!UICONTROL prise de décision sur appareil] pour votre organisation
-1. Créez un [!UICONTROL Test A/B] activité
+1. Activer [!UICONTROL on-device decisioning] pour votre organisation
+1. Créer une activité [!UICONTROL A/B Test]
 1. Définissez vos A et B
 1. Ajout d’une audience
 1. Définition de l’affectation du trafic
@@ -29,87 +29,87 @@ ht-degree: 0%
 >
 >Supposons que vous souhaitiez déterminer si la reconception de votre page d’accueil sur le thème des abandons sera bien reçue par vos utilisateurs. Vous décidez de le tester en exécutant une expérience A/B dans [!DNL Adobe Target]. Vous souhaitez également vous assurer que l’expérience est fournie avec de grandes performances afin qu’une expérience utilisateur négative ou lente ne biaise pas les résultats.
 
-## 1. Activez [!UICONTROL prise de décision sur appareil] pour votre organisation
+## 1. Activez [!UICONTROL on-device decisioning] pour votre organisation.
 
-L’activation de la prise de décision sur l’appareil garantit qu’une activité A/B est exécutée à une latence proche de zéro. Pour activer cette fonction, accédez à **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]** > **[!UICONTROL Détails du compte]** in [!DNL Adobe Target], puis activez la variable **[!UICONTROL Prise de décision sur appareil]** bascule.
+L’activation de la prise de décision sur l’appareil garantit qu’une activité A/B est exécutée à une latence proche de zéro. Pour activer cette fonction, accédez à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** dans [!DNL Adobe Target] et activez le bouton d’activation/désactivation de **[!UICONTROL On-Device Decisioning]**.
 
 &lt;!— Insérer image-odd-4.png —>
-![image alternative](assets/asset-odd-toggle.png)
+![alt image](assets/asset-odd-toggle.png)
 
 >[!NOTE]
 >
->Vous devez avoir l’administrateur ou l’approbateur [rôle utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) pour activer ou désactiver le bouton activer/désactiver de la prise de décision sur le périphérique.
+>Vous devez disposer du [rôle d’utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) administrateur ou approbateur pour activer ou désactiver le bouton de prise de décision sur périphérique.
 
-Après avoir activé la variable **[!UICONTROL Prise de décision sur appareil]** basculer, [!DNL Adobe Target] commence à générer des artefacts de règle pour votre client.
+Après avoir activé le bouton bascule **[!UICONTROL On-Device Decisioning]**, [!DNL Adobe Target] commence à générer des artefacts de règle pour votre client.
 
-## 2. Créez une [!UICONTROL Test A/B] activité
+## 2. Créer une activité [!UICONTROL A/B Test]
 
-Dans [!DNL Adobe Target], accédez à la **[!UICONTROL Activités]** page, puis sélectionnez **[!UICONTROL Créer une activité]** > **[!UICONTROL Test A/B]**.
+Dans [!DNL Adobe Target], accédez à la page **[!UICONTROL Activities]**, puis sélectionnez **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**.
 
-![image alternative](assets/asset-ab.png)
+![alt image](assets/asset-ab.png)
 
-Dans le **[!UICONTROL Créer une activité de test A/B]** modale, conservez la valeur par défaut **[!UICONTROL Web]** option sélectionnée (1), sélectionnez **[!UICONTROL Formulaire]** en tant que compositeur d’expérience (2), sélectionnez **[!UICONTROL Espace de travail par défaut]** avec Non **[!UICONTROL Restrictions de propriété]** (3), puis cliquez sur **[!UICONTROL Suivant]** (4).
+Dans le modal **[!UICONTROL Create A/B Test Activity]**, laissez l’option **[!UICONTROL Web]** par défaut sélectionnée (1), sélectionnez **[!UICONTROL Form]** comme compositeur d’expérience (2), sélectionnez **[!UICONTROL Default Workspace]** avec No **[!UICONTROL Property Restrictions]** (3), puis cliquez sur **[!UICONTROL Next]** (4).
 
-![image alternative](assets/asset-form.png)
+![alt image](assets/asset-form.png)
 
 ## 3. Définissez vos A et B
 
-1. Dans le **[!UICONTROL Expériences]** étape de création de l’activité, attribuez un nom à votre activité (1) et ajoutez une deuxième expérience, l’expérience B, en cliquant sur l’option **[!UICONTROL Ajouter une expérience]** (2). Saisissez le nom de l’emplacement (3) dans l’application où vous souhaitez exécuter votre test A/B. Dans l’exemple ci-dessous, la page d’accueil est l’emplacement défini pour l’expérience A (il s’agit également de l’emplacement défini pour l’expérience B).
+1. À l’étape **[!UICONTROL Experiences]** de la création de l’activité, donnez un nom à votre activité (1) et ajoutez une seconde expérience, l’expérience B, en cliquant sur le bouton **[!UICONTROL Add Experience]** (2). Saisissez le nom de l’emplacement (3) dans l’application où vous souhaitez exécuter votre test A/B. Dans l’exemple ci-dessous, la page d’accueil est l’emplacement défini pour l’expérience A (il s’agit également de l’emplacement défini pour l’expérience B).
 
    L’expérience A définit le contrôle, qui est la conception actuelle de la page d’accueil.
 
-   ![image alternative](assets/asset-exp-a.png)
+   ![alt image](assets/asset-exp-a.png)
 
    L’expérience B définit l’expérience concurrente, qui représente une page d’accueil repensée. Cliquez sur pour modifier le contenu par défaut (1).
 
-   ![image alternative](assets/asset-exp-b.png)
+   ![alt image](assets/asset-exp-b.png)
 
-1. Dans l’expérience B, cliquez sur pour modifier le contenu de **[!UICONTROL Contenu par défaut]** pour accéder au contenu reconçu en sélectionnant **[!UICONTROL Création d’une offre JSON]** comme illustré ci-dessous (1).
+1. Dans l’expérience B, cliquez pour remplacer le contenu **[!UICONTROL Default Content]** par le contenu reconçu en sélectionnant **[!UICONTROL Create JSON Offer]** comme illustré ci-dessous (1).
 
-   ![image alternative](assets/asset-offer.png)
+   ![alt image](assets/asset-offer.png)
 
 1. Définissez le fichier JSON avec des attributs qui seront utilisés comme indicateurs pour permettre à la logique métier de rendre la nouvelle page d’accueil repensée, plutôt que la page d’accueil actuelle en production.
 
 
    >[!NOTE]
    >
-   >When [!DNL Adobe Target] regroupe un utilisateur afin d’afficher l’expérience B (la page d’accueil repensée). Le fichier JSON avec les attributs définis dans l’exemple est renvoyé. Dans votre code, vous devez vérifier les valeurs d’attribut pour décider d’exécuter la logique métier pour effectuer le rendu de la page d’accueil repensée. Vous pouvez définir les noms, les valeurs et le nombre d’attributs dans cette réponse JSON.
+   >Lorsque [!DNL Adobe Target] regroupe un utilisateur pour afficher l’expérience B (la page d’accueil repensée), le fichier JSON avec les attributs définis dans l’exemple est renvoyé. Dans votre code, vous devez vérifier les valeurs d’attribut pour décider d’exécuter la logique métier pour effectuer le rendu de la page d’accueil repensée. Vous pouvez définir les noms, les valeurs et le nombre d’attributs dans cette réponse JSON.
 
-   ![image alternative](assets/asset-homepage.png)
+   ![alt image](assets/asset-homepage.png)
 
 ## 4. Ajout d’une audience
 
 Supposons que vous souhaitiez d’abord tester la reconception sur vos clients fidèles, que vous pouvez identifier selon qu’ils sont connectés ou non.
 
-1. Dans le **[!UICONTROL Ciblage]** , cliquez sur pour remplacer l’étape **[!UICONTROL Tous les visiteurs]** audience, comme indiqué.
+1. À l’étape **[!UICONTROL Targeting]**, cliquez pour remplacer l’audience **[!UICONTROL All Visitors]**, comme indiqué.
 
-   ![image alternative](assets/asset-all-audiences.png)
+   ![alt image](assets/asset-all-audiences.png)
 
-1. Dans le **[!UICONTROL Création d’une audience]** modale, définissez une règle personnalisée où `logged-in = true`. Cela définit le groupe d’utilisateurs connectés. Utilisez cette audience dans votre activité.
+1. Dans le modal **[!UICONTROL Create Audience]**, définissez une règle personnalisée où `logged-in = true`. Cela définit le groupe d’utilisateurs connectés. Utilisez cette audience dans votre activité.
 
-   ![image alternative](assets/asset-audience.png)
+   ![alt image](assets/asset-audience.png)
 
 ## 5. Définition de l’affectation du trafic
 
 Définissez le pourcentage de vos utilisateurs connectés par rapport auxquels vous souhaitez tester la nouvelle conception de votre page d’accueil. En d’autres termes, à quel pourcentage de vos utilisateurs souhaitez-vous déployer ce test ? Dans cet exemple, pour déployer ce test sur tous les utilisateurs connectés, conservez l’affectation du trafic à 100 %.
 
-![image alternative](assets/asset-allocation.png)
+![alt image](assets/asset-allocation.png)
 
 ## 6. Définir la distribution du trafic sur des variations
 
 Définissez le pourcentage des utilisateurs connectés qui visualiseront la conception actuelle de la page d’accueil ou la toute nouvelle conception. Dans cet exemple, conservez la distribution du trafic sous la forme d’une répartition 50/50 entre les expériences A et B.
 
-![image alternative](assets/asset-traffic-distribution.png)
+![alt image](assets/asset-traffic-distribution.png)
 
 ## 7. Configuration de la création de rapports
 
-Dans le **[!UICONTROL Objectifs et paramètres]** étape, choisissez **[!UICONTROL Adobe Target]** comme la propriété **[!UICONTROL Source de création de rapports]** pour afficher les résultats de l’activité dans la variable [!DNL Adobe Target] Interface utilisateur ou choisissez **[!UICONTROL Adobe Analytics]** pour les afficher dans l’interface utilisateur Adobe Analytics.
+À l’étape **[!UICONTROL Goals & Settings]**, choisissez **[!UICONTROL Adobe Target]** comme **[!UICONTROL Reporting Source]** pour afficher les résultats de l’activité dans l’interface utilisateur de [!DNL Adobe Target] ou sélectionnez **[!UICONTROL Adobe Analytics]** pour les afficher dans l’interface utilisateur d’Adobe Analytics.
 
-![image alternative](assets/asset-reporting.png)
+![alt image](assets/asset-reporting.png)
 
 ## 8. Ajout de mesures pour les indicateurs clés de performance de suivi
 
-Choisissez une **[!UICONTROL Mesure de l’objectif]** pour mesurer le test A/B. Dans cet exemple, une conversion réussie dépend de si l’utilisateur atteint le bas de la page, indiquant un engagement. Par conséquent, **[!UICONTROL Conversion]** est déterminé en fonction de si l’utilisateur a consulté l’emplacement nommé bas de page.
+Sélectionnez un **[!UICONTROL Goal Metric]** pour mesurer le test A/B. Dans cet exemple, une conversion réussie dépend de si l’utilisateur atteint le bas de la page, indiquant un engagement. Par conséquent, **[!UICONTROL Conversion]** est déterminé en fonction de si l’utilisateur a consulté l’emplacement nommé bas de la page.
 
 ## 9. Implémentez du code pour exécuter des tests A/B avec des indicateurs de fonctionnalité dans votre application.
 
@@ -137,7 +137,7 @@ function targetClientReady() {
 }
 ```
 
->[!TAB Java ]
+>[!TAB Java]
 
 ```java {line-numbers="true"}
 import com.adobe.target.edge.client.ClientConfig;
@@ -167,4 +167,4 @@ String flag = attributes.getString("homepage", "feature-flag");
 
 ## 10. Activez votre test A/B avec l’indicateur de fonctionnalité.
 
-![image alternative](assets/asset-activate.png)
+![alt image](assets/asset-activate.png)

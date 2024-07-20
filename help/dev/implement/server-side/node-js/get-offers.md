@@ -1,16 +1,16 @@
 ---
-title: Utilisation [!UICONTROL getOffers()] in [!DNL Adobe Target] lors de l’utilisation du SDK Node.js
-description: Découvrez comment utiliser [!UICONTROL getOffers()] pour exécuter une décision et récupérer une expérience d’ [!DNL Adobe Target].
+title: Utilisation de [!UICONTROL getOffers()] dans  [!DNL Adobe Target]  lors de l’utilisation du SDK Node.js
+description: Découvrez comment utiliser [!UICONTROL getOffers()] pour exécuter une décision et récupérer une expérience de [!DNL Adobe Target].
 feature: APIs/SDKs
 exl-id: 3c4125ea-68d4-405e-9b9a-5fa832743153
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '313'
 ht-degree: 22%
 
 ---
 
-# [!UICONTROL Obtention d’offres] (Node.js)
+# [!UICONTROL Get Offers] (Node.js)
 
 ## Description
 
@@ -27,51 +27,51 @@ TargetClient.getOffers(options: Object): Promise
 
 ## Paramètres
 
-La variable `options` possède la structure suivante :
+L’objet `options` possède la structure suivante :
 
 | Nom | Type | Requis | Par défaut | Description |
 | --- |--- | --- | --- | --- |
-| Demande | Objet | Oui | None | Se conforme à la variable [[!DNL Target] API de diffusion](/help/dev/implement/delivery-api/overview.md) requête |
+| Demande | Objet | Oui | None | Se conforme à la requête [[!DNL Target] API de diffusion](/help/dev/implement/delivery-api/overview.md) |
 | visitorCookie | Chaîne | Non | None | Cookie ECID (VisitorId) |
-| targetCookie | Chaîne | Non | None | [!DNL Target] cookie |
-| targetLocationHint | Chaîne | Non | None | [!DNL Target] indicateur de location |
-| consumerId | Chaîne | Non | None | consumerIds pour [!UICONTROL Analytics pour Target] (A4T) assemblage |
+| targetCookie | Chaîne | Non | None | cookie [!DNL Target] |
+| targetLocationHint | Chaîne | Non | None | [!DNL Target] indicateur d’emplacement |
+| consumerId | Chaîne | Non | None | consumerIds pour le groupement [!UICONTROL Analytics for Target] (A4T) |
 | CustomerIds | Tableau | Non | None | ID de client au format compatible avec VisitorId |
-| sessionId | Chaîne | Non | None | Utilisé pour lier plusieurs [!DNL Target] requests |
+| sessionId | Chaîne | Non | None | Utilisé pour lier plusieurs requêtes [!DNL Target] |
 | visiteur | Objet | Non | new VisitorId | Fournir une instance VisitorId externe |
 
 ## Promesse
 
-`Promise` La valeur renvoyée présente la structure suivante :
+`Promise` renvoyé présente la structure suivante :
 
 | Nom | Type | Description |
 | --- | --- | --- |
-| events | Objet | [[!UICONTROL API de diffusion Target]](/help/dev/implement/delivery-api/overview.md) requête |
-| response | Objet | [[!UICONTROL API de diffusion Target]](/help/dev/implement/delivery-api/overview.md) response |
+| events | Objet | requête [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) |
+| response | Objet | Réponse [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) |
 | visitorState | Objet | Objet qui doit être transmis à l’API visiteur `getInstance()` |
-| targetCookie | Objet | [!DNL Target] cookie |
-| targetLocationHintCookie | Objet | [!DNL Target] cookie d’indicateur d’emplacement |
+| targetCookie | Objet | cookie [!DNL Target] |
+| targetLocationHintCookie | Objet | cookie d’indicateur d’emplacement [!DNL Target] |
 | analyticsDetails | Tableau | Charge utile Analytics, en cas d’utilisation d’Analytics côté client |
-| responseTokens | Tableau | Une liste de [Jetons de réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?). |
+| responseTokens | Tableau | Liste de [jetons de réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?). |
 | trace | Tableau | Données de suivi agrégées pour toutes les mbox/vues de requête |
 | status | Objet | Objet contenant l’état de la réponse. |
 | decisioningMethod | Chaîne | Détermine la méthode de prise de décision à utiliser ([on-device](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), côté serveur, hybride) |
 
-`targetCookie` et `targetLocationHintCookie` les objets utilisés pour renvoyer les données au navigateur présentent la structure suivante :
+Les objets `targetCookie` et `targetLocationHintCookie` utilisés pour renvoyer les données au navigateur ont la structure suivante :
 
 | Nom | Type | Description |
 | --- | --- | --- |
 | name | Chaîne | Nom du cookie |
 | value | Quelconque | Valeur du cookie, qui sera convertie en chaîne |
-| maxAge | Nombre | La variable `maxAge` est pratique pour définir les expirations par rapport à l’heure actuelle en secondes. |
+| maxAge | Nombre | L’option `maxAge` est pratique pour définir les expirations par rapport à l’heure actuelle en secondes. |
 
-La variable `status` L’objet utilisé pour indiquer l’état de la réponse cible présente la structure suivante :
+L’objet `status` utilisé pour indiquer l’état de la réponse cible possède la structure suivante :
 
 | Nom | Type | Description |
 | --- | --- | --- |
 | status | Nombre | Code d’état HTTP |
-| message | Chaîne | Un message à propos de la réponse. Par exemple, il peut indiquer si la réponse a été décidée. [on-device](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md) ou côté serveur |
-| remoteMboxes | Tableau | Lorsque la méthode de prise de décision est `on-device`, un tableau de noms de mbox qui n’ont pas pu être entièrement décidés sur l’appareil est fourni. En d’autres termes, une [[!UICONTROL API de diffusion Target]](/help/dev/implement/delivery-api/overview.md) est nécessaire. |
+| message | Chaîne | Un message à propos de la réponse. Par exemple, il peut indiquer si la réponse a été décidée [sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md) ou côté serveur. |
+| remoteMboxes | Tableau | Lorsque la méthode de prise de décision est `on-device`, un tableau de noms de mbox qui n’ont pas pu être entièrement décidés sur l’appareil est donné. En d’autres termes, une requête [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) est nécessaire. |
 
 ## Exemple
 

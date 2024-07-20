@@ -1,19 +1,19 @@
 ---
 keywords: adobe.target.sendNotifications, sendNotifications, envoyer des notifications, envoyer des notifications, des notifications, at.js, fonctions, fonction, 9 $
-description: Utilisation [!UICONTROL adobe.target.sendNotifications()] pour at.js d’envoyer des notifications à la variable [!DNL Target] edge lorsqu’une expérience est générée sans utiliser [!UICONTROL applyOffer](s). (at.js.2.1 +)
+description: Utilisez [!UICONTROL adobe.target.sendNotifications()] pour at.js pour envoyer des notifications à la périphérie  [!DNL Target]  lorsqu’une expérience est générée sans utiliser [!UICONTROL applyOffer](s). (at.js.2.1 +)
 title: Comment utiliser la fonction adobe.target.sendNotifications() ?
 feature: at.js
 exl-id: 1a08da10-31a0-4b0b-af7d-91ed7d32c308
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '627'
-ht-degree: 84%
+source-wordcount: '640'
+ht-degree: 83%
 
 ---
 
 # [!UICONTROL adobe.target.sendNotifications(options)]
 
-Cette fonction envoie une notification à [!DNL Target] edge lorsqu’une expérience est générée sans utiliser `[!UICONTROL adobe.target.applyOffer()]` ou `[!UICONTROL adobe.target.applyOffers()]`.
+Cette fonction envoie une notification à la périphérie [!DNL Target] lorsqu’une expérience est rendue sans utiliser `[!UICONTROL adobe.target.applyOffer()]` ou `[!UICONTROL adobe.target.applyOffers()]`.
 
 >[!NOTE]
 >
@@ -48,7 +48,7 @@ Cette fonction envoie une notification à [!DNL Target] edge lorsqu’une expér
 | Request > notifications > timestamp | Nombre`<int64>` | Oui |  | Horodatage de la notification en millisecondes écoulées depuis l’époque UNIX considérée. |
 | Request > notifications > tokens | Tableau de chaîne | Oui |  | Liste des jetons pour le contenu affiché ou les sélecteurs cliqués, en fonction du type de notification. |
 | Request > notifications > mbox | Objet | Non |  | Notifications pour la mbox. |
-| Request > notifications > mbox > name | Chaîne | Non | Aucune valeur vide n’est autorisée.<p>Caractères autorisés : Voir la remarque ci-dessous. | nom de mbox. |
+| Request > notifications > mbox > name | Chaîne | Non | Aucune valeur vide n’est autorisée.<p>Caractères autorisés : voir la remarque ci-dessous. | nom de mbox. |
 | Request > notifications > mbox > state | Chaîne | Non |  | jeton d’état de mbox. |
 | Request > notifications > view | Objet | Non |  |  |
 | Request > notifications > view > id | Entier `<int64>` | Non |  | Id de la vue. ID affecté à la vue lorsque la vue a été créée via l’API d’affichage. |
@@ -56,7 +56,7 @@ Cette fonction envoie une notification à [!DNL Target] edge lorsqu’une expér
 | Request > notifications > view > key | Chaîne | Non | `<=` 512 caractères. | Clé de la vue. Clé qui a été définie avec la vue via l’API. |
 | Request > notifications > view > state | Chaîne | Non |  | jeton d’état de la vue. |
 
-**Remarque**: les caractères suivants sont *not* autorisé pour `Request > notifications > mbox > name`:
+**Remarque** : les caractères suivants sont *not* autorisés pour `Request > notifications > mbox > name` :
 
 ```
 - '-, ./=`:;&!@#$%^&*()+|?~[]{}'
@@ -118,4 +118,4 @@ adobe.target.getOffers({
 
 >[!NOTE]
 >
->Si vous utilisez [!DNL Adobe Analytics], `[!UICONTROL getOffers()]` avec prérécupération uniquement et `[!UICONTROL sendNotifications()]`, la variable [!DNL Analytics] doit être déclenchée après `[!UICONTROL sendNotifications()]` est exécutée. Cela permet de s’assurer que le SDID généré par `[!UICONTROL sendNotifications()]` correspond au SDID envoyé à [!DNL Analytics] et [!DNL Target].
+>Si vous utilisez [!DNL Adobe Analytics], `[!UICONTROL getOffers()]` avec prérécupération uniquement et `[!UICONTROL sendNotifications()]`, la requête [!DNL Analytics] doit être déclenchée après l’exécution de `[!UICONTROL sendNotifications()]`. L’objectif est de s’assurer que le SDID généré par `[!UICONTROL sendNotifications()]` correspond au SDID envoyé à [!DNL Analytics] et [!DNL Target].
