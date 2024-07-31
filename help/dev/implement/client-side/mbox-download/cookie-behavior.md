@@ -4,7 +4,7 @@ description: Découvrez le comportement des cookies Target (cookie propriétaire
 title: Où Trouver Des Informations Sur Les Cookies Target ?
 feature: at.js
 role: Developer
-source-git-commit: 34e8625798121e236a04646dfcf049f9c2b6f9d0
+source-git-commit: 39f390a0e5eedf8c6957333759d31d96ed11b321
 workflow-type: tm+mt
 source-wordcount: '1580'
 ht-degree: 53%
@@ -118,6 +118,7 @@ Le cookie conserve différentes valeurs afin de gérer la manière dont vos visi
 |--- |--- |
 | Domaines propriétaires | Mise en oeuvre standard pour les clients Target. Les cookies « mbox » sont définis dans le domaine du client. |
 | Suivi tiers | Le suivi tiers est important pour les cas d’utilisation de publicité et de ciblage dans Target et dans Adobe Audience Manager (AAM). Le suivi tiers nécessite des techniques de script intersite. Target utilise deux cookies, « mboxSession » et « mboxPC », définis dans le domaine `clientcode.tt.omtrd.net`. |
+
 **Quelle est l’approche d’Apple ?**
 
 Extrait d’Apple :
