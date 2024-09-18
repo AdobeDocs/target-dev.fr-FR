@@ -4,9 +4,9 @@ description: Découvrez comment utiliser [!DNL Adobe Target] [!UICONTROL Bulk Pr
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 2934fbaa1dc3cd92bc5a434937e5db9a617009a9
+source-git-commit: bee8752dd212a14f8414879e03565867eb87f6b9
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '829'
 ht-degree: 8%
 
 ---
@@ -64,7 +64,7 @@ Vous référencez ce fichier dans l’appel du POST aux serveurs [!DNL Target] p
 * Si vous utilisez [!UICONTROL Bulk Profile Update API] v2, vous n’avez pas besoin de spécifier toutes les valeurs de paramètre pour chaque `pcId`. Les profils sont créés pour tout `pcId` ou `mbox3rdPartyId` introuvable dans [!DNL Target]. Si vous utilisez la version 1, les profils ne sont pas créés pour les pcIds manquants ou mbox3rdPartyIds.
 * La taille du fichier de traitement par lot doit être inférieure à 50 Mo. En outre, le nombre total de lignes ne doit pas dépasser 500 000. Cette limite garantit que les serveurs ne sont pas inondés de requêtes trop nombreuses.
 * Vous pouvez envoyer plusieurs fichiers. Cependant, la somme totale des lignes de tous les fichiers que vous envoyez par jour ne doit pas dépasser un million pour chaque client.
-* Le nombre d’attributs que vous chargez n’est pas limité. Toutefois, la taille globale d’un profil, y compris les données système, ne doit pas dépasser 2 000 Ko. [!DNL Adobe] recommande d’utiliser moins de 1 000 Ko de stockage pour les attributs de profil.
+* Il n’existe aucune restriction quant au nombre d’attributs que vous pouvez transférer. Toutefois, la taille totale des données de profil externes, qui incluent les attributs du client, l’API de profil, les paramètres de profil internes à la mbox et la sortie du script de profil, ne doit pas dépasser 64 Ko.
 * Les paramètres et valeurs sont sensibles à la casse.
 
 ## requête de POST HTTP

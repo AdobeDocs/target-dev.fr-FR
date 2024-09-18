@@ -4,10 +4,10 @@ description: Affichez les détails des modifications dans chaque version de la b
 title: Que comprend chaque version d’at.js ?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: 9999c1b5f603e6607bd81f6ad6a06a7f74e76acb
+source-git-commit: bee8752dd212a14f8414879e03565867eb87f6b9
 workflow-type: tm+mt
-source-wordcount: '4904'
-ht-degree: 65%
+source-wordcount: '4967'
+ht-degree: 64%
 
 ---
 
@@ -25,7 +25,16 @@ Informations détaillées sur les modifications apportées à chaque version de 
 >
 >Vous devez effectuer la mise à niveau vers les dernières versions de l’une ou l’autre des versions 1.*x* ou 2.*x* pour obtenir des correctifs de bogues et de sécurité pour les problèmes détectés dans une version mineure précédente de la version majeure correspondante.
 
-Les balises dans [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode préférée pour mettre à niveau at.js. Les développeurs d’extensions ajoutent continuellement de nouvelles fonctionnalités à leurs extensions et corrigent fréquemment les bogues. Ces mises à jour sont incluses dans de nouvelles versions d’une extension et mises à disposition dans le catalogue Adobe Experience Platform sous forme de mises à niveau. Pour plus d’informations, reportez-vous à la section [Mise à niveau d’extension](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) du *guide de présentation des balises*.6+
+Les balises dans [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode préférée pour mettre à niveau at.js. Les développeurs d’extensions ajoutent continuellement de nouvelles fonctionnalités à leurs extensions et corrigent fréquemment les bogues. Ces mises à jour sont incluses dans de nouvelles versions d’une extension et mises à disposition dans le catalogue Adobe Experience Platform sous forme de mises à niveau. Pour plus d’informations, voir [Mise à niveau des extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) dans le guide *Présentation des balises* .
+
+## at.js version 2.11.6 (29 septembre 2024)
+
+* Correction d’un problème qui empêchait [!DNL Target] de fonctionner correctement avec les offres de redirection dans le [!UICONTROL Visual Experience Composer] (VEC) ou [!UICONTROL Form-Based Experience Composer].
+
+## at.js version 2.11.5 (14 août 2024)
+
+* Mise en cache pour les opérations de lecture et d’écriture de cookies afin de réduire la surcharge d’analyse et de manipulation de chaînes répétées et coûteuses.
+* Mise en oeuvre de la nouvelle API de paramètres de recherche d’URL lorsqu’elle est disponible, car elle est plus rapide que l’analyse et la manipulation manuelles des chaînes.
 
 ## at.js version 2.11.4 (jeudi 24 janvier 2024)
 
