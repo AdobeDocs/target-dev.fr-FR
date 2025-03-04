@@ -1,10 +1,10 @@
 ---
-keywords: service à la clientèle, cname, programme de certificat, nom canonique, cookies, certificat, amc, certificat géré adobe, digicert, validation du contrôle de domaine, dcv, service à la clientèle2
-description: Travaillez avec [!UICONTROL Adobe Client Care] pour mettre en oeuvre la prise en charge de CNAME (nom canonique) dans  [!DNL Adobe Target]  pour gérer les problèmes de blocage des publicités.
+keywords: assistance clientèle, cname, programme de certificat, nom canonique, cookies, certificat, amc, certificat géré par adobe, digicert, validation du contrôle de domaine, dcv, assistance clientèle2
+description: Travaillez avec [!UICONTROL Adobe Client Care] pour implémenter la prise en charge de CNAME (nom canonique) dans  [!DNL Adobe Target]  pour gérer les problèmes de blocage des publicités.
 title: Comment utiliser CNAME dans Target ?
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 31d7de17530c14a392cbeef777937c07a214e07a
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 1%
@@ -13,15 +13,15 @@ ht-degree: 1%
 
 # CNAME et Target
 
-Instructions pour travailler avec [!DNL Adobe Client Care] pour mettre en oeuvre la prise en charge de CNAME (nom canonique) dans [!DNL Adobe Target]. Utilisez CNAME pour gérer les problèmes de blocage des publicités ou les stratégies de cookies liées à ITP (Intelligent Tracking Prevention). Avec CNAME, les appels sont effectués vers un domaine détenu par le client plutôt qu’un domaine détenu par l’Adobe.
+Instructions relatives à l’utilisation de [!DNL Adobe Client Care] pour implémenter la prise en charge de CNAME (nom canonique) dans [!DNL Adobe Target]. Utilisez CNAME pour gérer les problèmes de blocage des publicités ou les politiques de cookies liées à ITP (Intelligent Tracking Prevention). Avec CNAME, les appels sont effectués vers un domaine détenu par le client plutôt que vers un domaine détenu par Adobe.
 
-## Demande de la prise en charge du CNAME dans Target
+## Demande de prise en charge CNAME dans Target
 
 1. Déterminez la liste des noms d’hôtes dont vous avez besoin pour votre certificat SSL (voir la FAQ ci-dessous).
 
-1. Pour chaque nom d’hôte, créez un enregistrement CNAME dans votre DNS pointant vers votre nom d’hôte [!DNL Target] habituel `clientcode.tt.omtrdc.net`.
+1. Pour chaque nom d’hôte, créez un enregistrement CNAME dans votre DNS pointant vers votre `clientcode.tt.omtrdc.net` de nom d’hôte [!DNL Target] standard.
 
-   Par exemple, si votre code client est &quot;client&quot; et que votre nom d’hôte proposé est `target.example.com`, votre enregistrement CNAME DNS ressemble à :
+   Par exemple, si votre code client est « cnamecustomer » et que votre nom d’hôte proposé est `target.example.com`, votre enregistrement CNAME DNS ressemble à ce qui suit :
 
    ```
    target.example.com.  IN  CNAME  cnamecustomer.tt.omtrdc.net.
@@ -29,25 +29,25 @@ Instructions pour travailler avec [!DNL Adobe Client Care] pour mettre en oeuvre
 
    >[!WARNING]
    >
-   >L’autorité de certification de l’Adobe, DigiCert, ne peut pas émettre de certificat tant que cette étape n’est pas terminée. Par conséquent, Adobe ne peut pas répondre à votre demande d’implémentation CNAME tant que cette étape n’est pas terminée.
+   >L’autorité de certification d’Adobe, DigiCert, ne peut pas émettre de certificat tant que cette étape n’est pas terminée. Par conséquent, Adobe ne peut pas répondre à votre demande d’implémentation CNAME tant que cette étape n’est pas terminée.
 
-1. [Remplissez ce formulaire](assets/FPC_Request_Form.xlsx) et incluez-le lorsque vous [  ouvrez un ticket Adobe Client Care pour demander la prise en charge CNAME](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C) :
+1. [Remplissez ce formulaire](assets/FPC_Request_Form.xlsx) puis incluez-le lorsque vous [ouvrez un ticket d’assistance clientèle Adobe demandant une prise en charge CNAME](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C) :
 
-   * [!DNL Adobe Target] code client :
-   * Noms d’hôtes de certificat SSL (exemple : `target.example.com target.example.org`) :
-   * Acheteur de certificat SSL (l’Adobe est vivement recommandé, voir FAQ : Adobe/client)
-   * Si le client achète le certificat, également appelé &quot;Apportez votre propre certificat&quot; (BYOC), renseignez les détails supplémentaires suivants :
-      * Organisation de certificats (exemple : Exemple Entreprise Inc) :
-      * Entité organisationnelle du certificat (optionnel, exemple : marketing) :
+   * Code client [!DNL Adobe Target] :
+   * Noms d&#39;hôtes de certificat SSL (exemple : `target.example.com target.example.org`) :
+   * Acheteur du certificat SSL (Adobe est vivement recommandé, voir la FAQ) : Adobe/client
+   * Si le client achète le certificat, également appelé « Apportez votre propre certificat » (BYOC), renseignez les informations supplémentaires suivantes :
+      * Organisme de certification (exemple : Société Inc) :
+      * Entité organisationnelle du certificat (facultatif, exemple : Marketing) :
       * Pays du certificat (exemple : États-Unis) :
       * État/région du certificat (exemple : Californie) :
-      * Ville du certificat (exemple : San Jose) :
+      * Ville du certificat (exemple : San José) :
 
-1. Si Adobe achète le certificat, Adobe travaille avec DigiCert pour acheter et déployer le certificat sur les serveurs de production d’Adobe.
+1. Si Adobe achète le certificat, Adobe travaille avec DigiCert pour acheter et déployer votre certificat sur les serveurs de production Adobe.
 
-   Si le client achète le certificat (BYOC), le service à la clientèle Adobe vous envoie la demande de signature de certificat (CSR). Utilisez la demande de signature de certificat lors de l’achat du certificat par l’intermédiaire de votre autorité de certification de votre choix. Une fois le certificat émis, envoyez une copie du certificat et de tous les certificats intermédiaires à l’assistance clientèle Adobe pour le déploiement.
+   Si le client achète le certificat (BYOC), l’Assistance clientèle Adobe vous envoie la demande de signature de certificat (CSR). Utilisez la CSR lors de l’achat du certificat par l’intermédiaire de l’autorité de certification de votre choix. Une fois le certificat émis, envoyez une copie du certificat et des certificats intermédiaires à l’assistance clientèle d’Adobe pour déploiement.
 
-   Adobe Client Care vous avertit lorsque votre mise en oeuvre est prête.
+   L’assistance clientèle Adobe vous avertit lorsque votre implémentation est prête.
 
 1. Mettez à jour la `serverDomain` [documentation](../implement/client-side/atjs/atjs-functions/targetglobalsettings.md#serverdomain) vers le nouveau nom d’hôte CNAME et définissez `overrideMboxEdgeServer` sur `false` [documentation](../implement/client-side/atjs/atjs-functions/targetglobalsettings.md#overridemboxedgeserver) dans votre configuration at.js.
 
@@ -55,61 +55,59 @@ Instructions pour travailler avec [!DNL Adobe Client Care] pour mettre en oeuvre
 
 Les informations suivantes répondent aux questions fréquentes sur la demande et l’implémentation de la prise en charge CNAME dans Target :
 
-### Puis-je fournir mon propre certificat (Bring Your own Certificate ou BYOC) ?
+### Puis-je fournir mon propre certificat (Apporter votre propre certificat ou BYOC) ?
 
-Vous pouvez fournir votre propre certificat. Cependant, l’Adobe ne recommande pas cette pratique. La gestion du cycle de vie du certificat SSL est plus facile pour l’Adobe et pour vous si l’Adobe achète et contrôle le certificat. Les certificats SSL doivent être renouvelés chaque année. Par conséquent, le service à la clientèle d’Adobe doit vous contacter chaque année pour obtenir un nouveau certificat en temps voulu. Certains clients peuvent avoir des difficultés à produire un certificat renouvelé dans les délais impartis. Votre mise en oeuvre de [!DNL Target] est mise en danger lorsque le certificat expire, car les navigateurs refusent les connexions.
+Vous pouvez fournir votre propre certificat. Cependant, Adobe ne recommande pas cette pratique. La gestion du cycle de vie du certificat SSL est plus facile pour Adobe et pour vous si Adobe achète et contrôle le certificat. Les certificats SSL doivent être renouvelés chaque année. Par conséquent, l’assistance clientèle Adobe doit vous contacter chaque année pour obtenir un nouveau certificat dans les délais impartis. Certains clients peuvent avoir des difficultés à produire un certificat renouvelé dans les délais impartis. Votre implémentation [!DNL Target] est compromise lorsque le certificat expire, car les navigateurs refusent les connexions.
 
 >[!WARNING]
 >
->Si vous demandez une mise en oeuvre CNAME avec votre propre certificat [!DNL Target], vous devez fournir des certificats renouvelés au service à la clientèle d’Adobe chaque année. Le fait d’autoriser votre certificat CNAME à expirer avant que l’Adobe puisse déployer un certificat renouvelé entraîne une interruption de votre mise en oeuvre [!DNL Target] spécifique.
+>Si vous demandez une implémentation CNAME [!DNL Target] apportez votre propre certificat, vous êtes responsable de fournir des certificats renouvelés à l’assistance clientèle d’Adobe chaque année. Le fait de laisser votre certificat CNAME expirer avant qu’Adobe puisse déployer un certificat renouvelé entraîne une panne de votre implémentation [!DNL Target] spécifique.
 
 ### Combien de temps avant l’expiration de mon nouveau certificat SSL ?
 
-Tous les certificats achetés par Adobe sont valides pendant un an. Pour plus d’informations, consultez l’ [article de DigiCert sur les certificats d’un an](https://www.digicert.com/blog/position-on-1-year-certificates) .
+Tous les certificats achetés par Adobe sont valides pendant un an. Pour plus d’informations, consultez l’article de [DigiCert sur les certificats d’un an](https://www.digicert.com/blog/position-on-1-year-certificates).
 
 ### Quels noms d’hôtes dois-je choisir ? Combien de noms d’hôtes par domaine dois-je choisir ?
 
-Les implémentations CNAME de Target ne nécessitent qu’un seul nom d’hôte par domaine sur le certificat SSL et dans le DNS du client. Adobe recommande un nom d’hôte par domaine. Certains clients ont besoin de davantage de noms d’hôtes par domaine à leurs propres fins (test dans l’évaluation, par exemple), qui est pris en charge.
+Les implémentations CNAME de Target ne nécessitent qu’un seul nom d’hôte par domaine sur le certificat SSL et dans le DNS du client. Adobe recommande un nom d’hôte par domaine. Certains clients nécessitent plus de noms d’hôtes par domaine pour leurs propres besoins (test lors de l’évaluation, par exemple), ce qui est pris en charge.
 
-La plupart des clients choisissent un nom d’hôte tel que `target.example.com`. Adobe recommande de suivre cette pratique, mais le choix est finalement le vôtre. Ne demandez pas de nom d’hôte d’un enregistrement DNS existant. Cela provoque un conflit et retarde la résolution de votre demande CNAME [!DNL Target].
+La plupart des clients choisissent un nom d’hôte tel que `target.example.com`. Adobe recommande de suivre cette pratique, mais le choix vous appartient en fin de compte. Ne demandez pas un nom d’hôte d’un enregistrement DNS existant. Cela entraîne un conflit et retarde la résolution de votre requête CNAME [!DNL Target].
 
-### J’ai déjà une implémentation CNAME pour Adobe Analytics. Puis-je utiliser le même certificat ou nom d’hôte ?
+### J’ai déjà une implémentation CNAME pour Adobe Analytics, puis-je utiliser le même certificat ou nom d’hôte ?
 
 Non, [!DNL Target] nécessite un nom d’hôte et un certificat distincts.
 
-### Mon implémentation actuelle de [!DNL Target] est-elle affectée par ITP 2.x ?
+### Mon implémentation actuelle d’[!DNL Target] est-elle affectée par ITP 2.x ?
 
-ITP (Intelligent Tracking Prevention) version 2.3 d’Apple a introduit sa fonctionnalité de limitation du cloaking CNAME, qui est capable de détecter les mises en oeuvre CNAME [!DNL Target] et réduit l’expiration du cookie à sept jours. Actuellement, [!DNL Target] n’a aucune solution pour la limitation CNAME de cloaking ITP. Pour plus d’informations sur ITP, voir [Apple Intelligent Tracking Prevention (ITP) 2.x](../before-implement/privacy/apple-itp-2x.md).
+La version 2.3 d’Apple Intelligent Tracking Prevention (ITP) a introduit sa fonctionnalité de limitation du cloaking CNAME, qui permet de détecter les implémentations CNAME [!DNL Target] et de réduire l’expiration du cookie à sept jours. Actuellement, [!DNL Target] ne dispose d’aucune solution pour l’atténuation du cloaking CNAME d’ITP. Pour plus d’informations sur ITP, voir [ITP (Intelligent Tracking Prevention) 2.x](../before-implement/privacy/apple-itp-2x.md) d’Apple.
 
-### À quel type de interruption de service puis-je m’attendre lorsque mon implémentation CNAME est déployée ?
+### À quel type d’interruption de service puis-je m’attendre lorsque mon implémentation CNAME est déployée ?
 
-Il n’y a aucune interruption de service lorsque le certificat est déployé (y compris les renouvellements de certificat).
+Le déploiement du certificat n’entraîne aucune interruption de service (y compris les renouvellements de certificat).
 
-Cependant, après avoir remplacé le nom d’hôte dans votre code d’implémentation [!DNL Target] (`serverDomain` dans at.js) par le nouveau nom d’hôte CNAME (`target.example.com`), les navigateurs Web traitent les visiteurs récurrents comme de nouveaux visiteurs. Les données de profil des visiteurs récurrents sont perdues car le cookie précédent est inaccessible sous l’ancien nom d’hôte (`clientcode.tt.omtrdc.net`). Le cookie précédent est inaccessible en raison des modèles de sécurité du navigateur. Cette interruption se produit uniquement lors de la coupure initiale du nouveau CNAME. Les renouvellements de certificats n’ont pas le même effet, car le nom d’hôte ne change pas.
+Cependant, une fois que vous avez remplacé le nom d’hôte dans votre code d’implémentation [!DNL Target] (`serverDomain` dans at.js) par le nouveau nom d’hôte CNAME (`target.example.com`), les navigateurs web traitent les visiteurs récurrents comme de nouveaux visiteurs. Les données de profil des visiteurs récurrents sont perdues, car le cookie précédent est inaccessible sous l’ancien nom d’hôte (`clientcode.tt.omtrdc.net`). Le cookie précédent est inaccessible en raison des modèles de sécurité du navigateur. Cette interruption ne se produit qu’au moment du basculement initial vers le nouveau CNAME. Les renouvellements de certificat n’ont pas le même effet, car le nom d’hôte ne change pas.
 
-### Quel type de clé et quel algorithme de signature de certificat sont utilisés pour mon implémentation CNAME ?
+### Quel type de clé et algorithme de signature de certificat est utilisé pour mon implémentation CNAME ?
 
-Tous les certificats sont RSA SHA-256 et les clés sont RSA 2048 bits, par défaut. Les tailles de clés supérieures à 2 048 bits ne sont actuellement pas prises en charge.
+Tous les certificats sont RSA SHA-256 et les clés sont RSA 2048 bits, par défaut. Les tailles de clé supérieures à 2 048 bits ne sont actuellement pas prises en charge.
 
 ### Comment puis-je vérifier que mon implémentation CNAME est prête pour le trafic ?
 
-Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de commande macOS ou Linux, à l’aide de bash et curl >=7.49) :
+Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de commande macOS ou Linux, en utilisant bash et curl >=7.49) :
 
-1. Copiez et collez cette fonction bash dans votre terminal ou collez-la dans votre fichier de script de démarrage bash (généralement `~/.bash_profile` ou `~/.bashrc`) afin que la fonction soit disponible sur toutes les sessions de terminal :
+1. Copiez et collez cette fonction bash dans votre terminal ou collez-la dans votre fichier de script de démarrage bash (généralement `~/.bash_profile` ou `~/.bashrc`) afin qu’elle soit disponible dans toutes les sessions de terminal :
 
    ```
-   function adobeTargetCnameValidation {
+      function adobeTargetCnameValidation {
      local hostname="$1"
      if [ -z "$hostname" ]; then
        echo "ERROR: no hostname specified"
        return 1
-     fi
-   
-     local service="Adobe Target CNAME implementation"
-     local edges="31 32 34 35 36 37 38"
+     fi  local service="Adobe Target CNAME implementation"
+     local edges="41 42 44 45 46 47 48"
      local edgeDomain="tt.omtrdc.net"
      local edgeFormat="mboxedge%d%s.$edgeDomain"
-     local shardFormat="-alb%02d"
+     local poolDomain="pool.data.adobedc.net"
      local shards=5
      local shardsFoundCount=0
      local shardsFound
@@ -119,7 +117,7 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
      local curlResponseValidation='"OK"'
      local curlEndpoint="/uptime?mboxClient=uptime3"
      local url="https://$hostname$curlEndpoint"
-     local sslLabsUrl="https://ssllabs.com/ssltest/analyze.html?hideResults=on&latest&d=$hostname"
+     local sslShopperUrl="https://www.sslshopper.com/ssl-checker.html#hostname=$hostname"
      local success="✅"
      local failure="🚫"
      local info="🔎"
@@ -129,44 +127,28 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
      local curlVersion="$(curl --version | head -1 | cut -d' ' -f2 )"
      local curlVersionRequired=">=7.49"
      local edgeCount="$(wc -w <<< "$edges" | tr -d ' ')"
-     local edge
      local shard
-     local currEdgeShard
+     local currShard
      local dnsOutput
      local cnameExists
      local endToEndTestSucceeded
-     local curlResult
-   
-     for shard in $(seq $shards); do
-       if [ "$shardsFoundCount" -eq 0 ]; then
-         for edge in $edges; do
-           if [ "$shard" -eq 1 ]; then
-             currEdgeShard="$(printf "$edgeFormat" "$edge" "")"
-           else
-             currEdgeShard="$(
-               printf "$edgeFormat" "$edge" "$(
-                 printf -- "$shardFormat" "$shard"
-               )"
-             )"
-           fi
-           curlResult="$(curl -vsm20 --connect-to "$hostname:443:$currEdgeShard:443" "$url" 2>&1)"
-           if grep -q "$curlValidation" <<< "$curlResult"; then
-             shardsFound+=" $currEdgeShard"
-             if grep -q "$curlResponseValidation" <<< "$curlResult"; then
-               shardsFoundCount=$((shardsFoundCount+1))
-               shardsFoundOutput+="\n\n$miniRule $success $hostname [edge shard: $currEdgeShard] $miniRule\n"
-             else
-               shardsFoundOutput+="\n\n$miniRule $failure $hostname [edge shard: $currEdgeShard] $miniRule\n"
-             fi
-             shardsFoundOutput+="$(grep -E "$curlRegex" <<< "$curlResult" | sort)"
-             if ! grep -q "$curlResponseValidation" <<< "$curlResult"; then
-               shardsFoundOutput+="\nERROR: unexpected HTTP response from this shard using $url"
-             fi
-           fi
-         done
+     local curlResult  for region in IRL1 IND1 SIN OR SYD VA TYO; do
+       currShard="${region}-${poolDomain}"
+       curlResult="$(curl -vsm20 --connect-to "$hostname:443:$currShard:443" "$url" 2>&1)"
+       if grep -q "$curlValidation" <<< "$curlResult"; then
+         shardsFound+=" $currShard"
+         if grep -q "$curlResponseValidation" <<< "$curlResult"; then
+           shardsFoundCount=$((shardsFoundCount+1))
+           shardsFoundOutput+="\n\n$miniRule $success $hostname [edge shard: $currShard] $miniRule\n"
+         else
+           shardsFoundOutput+="\n\n$miniRule $failure $hostname [edge shard: $currShard] $miniRule\n"
+         fi
+         shardsFoundOutput+="$(grep -E "$curlRegex" <<< "$curlResult" | sort)"
+         if ! grep -q "$curlResponseValidation" <<< "$curlResult"; then
+           shardsFoundOutput+="\nERROR: unexpected HTTP response from this shard using $url"
+         fi
        fi
      done
-   
      echo
      echo "$horizontalRule"
      echo
@@ -182,56 +164,50 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
        else
          echo "required DNS CNAME record pointing to <target-client-code>.$edgeDomain not found"
        fi
-     fi
-   
-     curlResult="$(curl -vsm20 "$url" 2>&1)"
-     if grep -q "$curlValidation" <<< "$curlResult"; then
-       if grep -q "$curlResponseValidation" <<< "$curlResult"; then
-         echo -en "$success $hostname passes TLS and HTTP response validation"
-         if [ -n "$cnameExists" ]; then
-           echo
+     fi  for region in IRL1 IND1 SIN OR SYD VA TYO; do
+       curlResult="$(curl -vsm20 --connect-to "$hostname:443:${region}-pool.data.adobedc.net:443" "https://$hostname$curlEndpoint" 2>&1)"
+       if grep -q "$curlValidation" <<< "$curlResult"; then
+         if grep -q "$curlResponseValidation" <<< "$curlResult"; then
+           echo -en "$success $hostname passes TLS and HTTP response validation for region $region"
+           if [ -n "$cnameExists" ]; then
+             echo
+           else
+             echo " -- the DNS CNAME is not pointing to the correct subdomain for ${service}s with Adobe-managed certificates" \
+               "(bring-your-own-certificate implementations don't have this requirement), but this test passes as configured"
+           fi
+           endToEndTestSucceeded=true
          else
-           echo " -- the DNS CNAME is not pointing to the correct subdomain for ${service}s with Adobe-managed certificates" \
-             "(bring-your-own-certificate implementations don't have this requirement), but this test passes as configured"
+           echo -n "$failure $hostname FAILED HTTP response validation for region $region --" \
+             "unexpected response from $url -- "
+           if [ -n "$cnameExists" ]; then
+             echo "DNS is NOT pointing to the correct shard, notify Adobe Client Care"
+           else
+             echo "the required DNS CNAME record is missing, see above"
+           fi
          fi
-         endToEndTestSucceeded=true
        else
-         echo -n "$failure $hostname FAILED HTTP response validation --" \
-           "unexpected response from $url -- "
+         echo -n "$failure $hostname FAILED TLS validation for region $region -- "
          if [ -n "$cnameExists" ]; then
-           echo "DNS is NOT pointing to the correct shard, notify Adobe Client Care"
+           echo "DNS is likely NOT pointing to the correct shard or there's a validation issue with the certificate or" \
+             "protocols, see curl output below and optionally SSL Shopper ($sslShopperUrl):"
+           echo ""
+           echo "$horizontalRule"
+           echo "$curlResult" | sed 's/^/    /g'
+           echo "$horizontalRule"
+           echo ""
          else
            echo "the required DNS CNAME record is missing, see above"
          fi
        fi
-     else
-   
-       echo -n "$failure $hostname FAILED TLS validation -- "
-       if [ -n "$cnameExists" ]; then
-         echo "DNS is likely NOT pointing to the correct shard or there's a validation issue with the certificate or" \
-           "protocols, see curl output below and optionally SSL Labs ($sslLabsUrl):"
-         echo ""
-         echo "$horizontalRule"
-         echo "$curlResult" | sed 's/^/    /g'
-         echo "$horizontalRule"
-         echo ""
-       else
-         echo "the required DNS CNAME record is missing, see above"
-       fi
-     fi
-   
-     if [ "$shardsFoundCount" -ge "$edgeCount" ]; then
+     done  if [ "$shardsFoundCount" -ge "$edgeCount" ]; then
        echo -n "$success $hostname passes shard validation for the following $shardsFoundCount edge shards:"
        echo -e "$shardsFoundOutput"
-       echo
-   
-       if [ -n "$cnameExists" ] && [ -n "$endToEndTestSucceeded" ]; then
+       echo    if [ -n "$cnameExists" ] && [ -n "$endToEndTestSucceeded" ]; then
          echo "$horizontalRule"
          echo ""
-         echo "  For additional TLS/SSL validation, including detailed browser/client support,"
-         echo "  see SSL Labs (click the first IP address if prompted):"
+         echo "  For additional TLS/SSL validation, see SSL Shopper:"
          echo ""
-         echo "    $info  $sslLabsUrl"
+         echo "    $info  $sslShopperUrl"
          echo ""
          echo "  To check DNS propagation around the world, see whatsmydns.net:"
          echo ""
@@ -244,7 +220,7 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
        if bc -l <<< "$(cut -d. -f1,2 <<< "$curlVersion") $curlVersionRequired" 2>/dev/null | grep -q 0; then
          echo -n " -- insufficient curl version installed: $curlVersion, but this script requires curl version" \
            "$curlVersionRequired because it uses the curl --connect-to flag to bypass DNS and directly test" \
-           "each Adobe Target edge shards' SNI confirguation for $hostname"
+           "each Adobe Target edge shards' SNI configuration for $hostname"
        fi
        if [ -n "$shardsFoundOutput" ]; then
          echo -e ":\n$shardsFoundOutput"
@@ -257,86 +233,62 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
    }
    ```
 
-1. Collez la commande suivante (en remplaçant `target.example.com` par votre nom d’hôte) :
+1. Collez cette commande (en remplaçant `target.example.com` par votre nom d’hôte) :
 
    ```
    adobeTargetCnameValidation target.example.com
    ```
 
-   Si l’implémentation est prête, la sortie s’affiche comme ci-dessous. La partie importante est que toutes les lignes d’état de validation affichent `✅` plutôt que `🚫`. Chaque partage CNAME Target Edge doit afficher `CN=target.example.com`, qui correspond au nom d’hôte principal sur le certificat demandé (les noms d’hôtes SAN supplémentaires sur le certificat ne sont pas imprimés dans cette sortie).
+   Si l’implémentation est prête, vous voyez une sortie comme ci-dessous. La partie importante est que toutes les lignes d’état de validation affichent `✅` plutôt que `🚫`. Chaque partition CNAME Edge de Target doit afficher `CN=target.example.com`, qui correspond au nom d&#39;hôte principal sur le certificat demandé (les noms d&#39;hôtes SAN supplémentaires sur le certificat ne sont pas imprimés dans cette sortie).
 
    ```
-   $ adobeTargetCnameValidation target.example.com
-   
-   ==========================================================
-   
-   Adobe Target CNAME implementation validation for hostname target.example.com:
-   ✅ target.example.com passes DNS CNAME validation
-   ✅ target.example.com passes TLS and HTTP response validation
-   ✅ target.example.com passes shard validation for the following 7 edge shards:
-   
-   ===== ✅ target.example.com [edge shard: mboxedge31-alb02.tt.omtrdc.net] =====
-   *  expire date: Jul 22 23:59:59 2022 GMT
-   *  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
-   *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com
-   
-   ===== ✅ target.example.com [edge shard: mboxedge32-alb02.tt.omtrdc.net] =====
-   *  expire date: Jul 22 23:59:59 2022 GMT
-   *  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
-   *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com
-   
-   ===== ✅ target.example.com [edge shard: mboxedge34-alb02.tt.omtrdc.net] =====
-   *  expire date: Jul 22 23:59:59 2022 GMT
-   *  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
-   *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com
-   
-   ===== ✅ target.example.com [edge shard: mboxedge35-alb02.tt.omtrdc.net] =====
-   *  expire date: Jul 22 23:59:59 2022 GMT
-   *  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
-   *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com
-   
-   ===== ✅ target.example.com [edge shard: mboxedge36-alb02.tt.omtrdc.net] =====
-   *  expire date: Jul 22 23:59:59 2022 GMT
-   *  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
-   *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com
-   
-   ===== ✅ target.example.com [edge shard: mboxedge37-alb02.tt.omtrdc.net] =====
-   *  expire date: Jul 22 23:59:59 2022 GMT
-   *  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
-   *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com
-   
-   ===== ✅ target.example.com [edge shard: mboxedge38-alb02.tt.omtrdc.net] =====
-   *  expire date: Jul 22 23:59:59 2022 GMT
-   *  issuer: C=US; O=DigiCert Inc; CN=DigiCert TLS RSA SHA256 2020 CA1
-   *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com
-   
-   ==========================================================
-   
-     For additional TLS/SSL validation, including detailed browser/client support,
-     see SSL Labs (click the first IP address if prompted):
-   
-       🔎  https://ssllabs.com/ssltest/analyze.html?hideResults=on&latest&d=target.example.com
-   
-     To check DNS propagation around the world, see whatsmydns.net:
-   
-       🔎  DNS A records:     https://whatsmydns.net/#A/target.example.com
-       🔎  DNS CNAME record:  https://whatsmydns.net/#CNAME/target.example.com
-   
-   ==========================================================
+      $ adobeTargetCnameValidation 
+    target.example.com==========================================================Adobe Target CNAME implementation validation for hostname target.example.com:
+    ✅ target.example.com passes DNS CNAME validation
+    ✅ target.example.com passes TLS and HTTP response validation for region IRL1
+    ✅ target.example.com passes TLS and HTTP response validation for region IND1
+    ✅ target.example.com passes TLS and HTTP response validation for region SIN
+    ✅ target.example.com passes TLS and HTTP response validation for region OR
+    ✅ target.example.com passes TLS and HTTP response validation for region SYD
+    ✅ target.example.com passes TLS and HTTP response validation for region VA
+    ✅ target.example.com passes TLS and HTTP response validation for region TYO
+    ✅ target.example.com passes shard validation for the following 7 edge shards:===== ✅ target.example.com [edge shard: IRL1-pool.data.adobedc.net] =====
+    *  expire date: Feb 20 23:59:59 2026 GMT
+    *  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+    *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== ✅ target.example.com [edge shard: IND1-pool.data.adobedc.net] =====
+    *  expire date: Feb 20 23:59:59 2026 GMT
+    *  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+    *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== ✅ target.example.com [edge shard: SIN-pool.data.adobedc.net] =====
+    *  expire date: Feb 20 23:59:59 2026 GMT
+    *  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+    *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== ✅ target.example.com [edge shard: OR-pool.data.adobedc.net] =====
+    *  expire date: Feb 20 23:59:59 2026 GMT
+    *  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+    *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== ✅ target.example.com [edge shard: SYD-pool.data.adobedc.net] =====
+    *  expire date: Feb 20 23:59:59 2026 GMT
+    *  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+    *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== ✅ target.example.com [edge shard: VA-pool.data.adobedc.net] =====
+    *  expire date: Feb 20 23:59:59 2026 GMT
+    *  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+    *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== ✅ target.example.com [edge shard: TYO-pool.data.adobedc.net] =====
+    *  expire date: Feb 20 23:59:59 2026 GMT
+    *  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
+    *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com==========================================================  For additional TLS/SSL validation, see SSL Shopper:    🔎  https://www.sslshopper.com/ssl-checker.html#hostname=target.example.com  To check DNS propagation around the world, see whatsmydns.net:    🔎  DNS A records:     https://whatsmydns.net/#A/target.example.com
+        🔎  DNS CNAME record:  https://whatsmydns.net/#CNAME/target.example.com 
    ```
 
 >[!NOTE]
 >
->Si cette commande de validation échoue lors de la validation DNS, mais que vous avez déjà apporté les modifications DNS nécessaires, vous devrez peut-être attendre que vos mises à jour DNS se propagent complètement. Les enregistrements DNS sont associés à un [TTL (time-to-live)](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) qui détermine le délai d’expiration du cache pour les réponses DNS de ces enregistrements. Par conséquent, vous devrez peut-être attendre au moins aussi longtemps que vos TTL. Vous pouvez utiliser la commande `dig target.example.com` ou [la boîte à outils G Suite](https://toolbox.googleapps.com/apps/dig/#CNAME) pour rechercher vos TTL spécifiques. Pour vérifier la propagation DNS dans le monde, voir [whatsmydns.net](https://whatsmydns.net/#CNAME).
+>Si cette commande de validation échoue lors de la validation DNS, mais que vous avez déjà effectué les modifications DNS nécessaires, vous devrez peut-être attendre que vos mises à jour DNS se propagent complètement. Les enregistrements DNS sont associés à une [durée de vie)](https://en.wikipedia.org/wiki/Time_to_live#DNS_records) qui détermine le délai d’expiration du cache pour les réponses DNS de ces enregistrements. Par conséquent, il se peut que vous deviez attendre au moins aussi longtemps que vos TTL. Vous pouvez utiliser la commande `dig target.example.com` ou [la boîte à outils G Suite](https://toolbox.googleapps.com/apps/dig/#CNAME) pour rechercher vos TTL spécifiques. Pour vérifier la propagation DNS dans le monde entier, consultez [whatsmydns.net](https://whatsmydns.net/#CNAME).
 
 ### Comment utiliser un lien d’exclusion avec CNAME ?
 
-Si vous utilisez CNAME, le lien d’exclusion doit contenir le paramètre &quot;client=`clientcode`&quot;, par exemple :
+Si vous utilisez CNAME, le lien d’opt-out doit contenir le paramètre « client=`clientcode` », par exemple :
 `https://my.cname.domain/optout?client=clientcode`.
 
-Remplacez `clientcode` par votre code client, puis ajoutez le texte ou l’image à lier à l’ [URL d’exclusion](privacy/privacy.md).
+Remplacez `clientcode` par votre code client, puis ajoutez le texte ou l’image à lier à l’[URL d’exclusion](privacy/privacy.md).
 
 ## Limites connues
 
-* Le mode AQ n’est pas attractif lorsque vous utilisez CNAME et at.js 1.x, car il est basé sur un cookie tiers. La solution consiste à ajouter les paramètres d’aperçu à chaque URL à laquelle vous accédez. Le mode AQ est attractif lorsque vous disposez de CNAME et at.js 2.x.
-* Lors de l’utilisation de CNAME, il devient plus probable que la taille de l’en-tête de cookie pour les appels [!DNL Target] augmente. Adobe recommande de conserver la taille du cookie sous 8 Ko.
+* Le mode assurance qualité n’est pas contigu lorsque vous disposez de CNAME et d’at.js 1.x, car il est basé sur un cookie tiers. La solution consiste à ajouter les paramètres d’aperçu à chaque URL à laquelle vous accédez. Le mode assurance qualité est contigu lorsque vous disposez de CNAME et d’at.js 2.x.
+* Lors de l’utilisation de CNAME, il est plus probable que la taille de l’en-tête du cookie pour les appels [!DNL Target] augmente. Adobe recommande de conserver la taille du cookie inférieure à 8 Ko.
