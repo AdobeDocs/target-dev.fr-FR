@@ -4,10 +4,10 @@ description: Découvrez les navigateurs Internet pris  [!DNL Adobe Target]  char
 title: Quels Navigateurs Est [!DNL Target] Il Pris En Charge ?
 feature: Implementation
 exl-id: 1d778e14-26b0-477b-ac28-d304db70a133
-source-git-commit: f194c6de43070443b78c9a69b4233c27d70b8858
+source-git-commit: 1b6dcb24d677b758ed1daf85dc0a7e9e5b42680d
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 23%
+source-wordcount: '421'
+ht-degree: 20%
 
 ---
 
@@ -21,10 +21,24 @@ Pour obtenir des informations plus importantes sur le protocole TLS, voir [Modif
 
 L’interface [!DNL Target] prend en charge les navigateurs et appareils suivants :
 
+>[!NOTE]
+>
+>Target prend en charge la dernière version de chaque navigateur répertorié et la dernière version moins 1.
+
+
 | Type d&#39;appareil | Version du navigateur |
 |--- |--- |
-| Windows | <ul><li>Microsoft Edge</li><li>Google Chrome (dernier, dernier moins 1)</li><li>Mozilla Firefox (le plus récent, le plus récent moins 1)</li></ul> |
-| Mac | <ul><li>Firefox (le plus récent, le plus récent moins 1)</li><li>Chrome (la plus récente, la plus récente moins 1)</li></ul> |
+| [!DNL Windows] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li></ul> |
+| [!DNL Mac] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li></ul> |
+
+## Exigences en matière d’édition visuelle
+
+Pour pouvoir ouvrir, créer et prévisualiser vos pages web de manière fiable dans le [!UICONTROL Visual Experience Composer] (VEC), l’extension de navigateur [Adobe Experience Cloud Visual Editing Helper](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} doit être installée sur votre navigateur web ou vous pouvez utiliser [!UICONTROL Enhanced Experience Composer (EEC)].
+
+>[!NOTE]
+>
+>[!DNL Google Chrome] et [!DNL Microsoft Edge] sont actuellement les seuls navigateurs qui prennent en charge la modification visuelle des pages web dans [!DNL Adobe Target].
+
 
 ## Diffusion de contenu
 
