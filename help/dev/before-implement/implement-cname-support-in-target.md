@@ -4,7 +4,7 @@ description: Travaillez avec [!UICONTROL Adobe Client Care] pour implémenter la
 title: Comment utiliser CNAME dans Target ?
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: 31d7de17530c14a392cbeef777937c07a214e07a
+source-git-commit: dd99cf1753e4fa5033ee463b79a31c6eddcd02b5
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 1%
@@ -98,7 +98,7 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
 1. Copiez et collez cette fonction bash dans votre terminal ou collez-la dans votre fichier de script de démarrage bash (généralement `~/.bash_profile` ou `~/.bashrc`) afin qu’elle soit disponible dans toutes les sessions de terminal :
 
    ```
-      function adobeTargetCnameValidation {
+   function adobeTargetCnameValidation {
      local hostname="$1"
      if [ -z "$hostname" ]; then
        echo "ERROR: no hostname specified"
@@ -242,7 +242,7 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
    Si l’implémentation est prête, vous voyez une sortie comme ci-dessous. La partie importante est que toutes les lignes d’état de validation affichent `✅` plutôt que `🚫`. Chaque partition CNAME Edge de Target doit afficher `CN=target.example.com`, qui correspond au nom d&#39;hôte principal sur le certificat demandé (les noms d&#39;hôtes SAN supplémentaires sur le certificat ne sont pas imprimés dans cette sortie).
 
    ```
-      $ adobeTargetCnameValidation 
+      $ adobeTargetCnameValidation
     target.example.com==========================================================Adobe Target CNAME implementation validation for hostname target.example.com:
     ✅ target.example.com passes DNS CNAME validation
     ✅ target.example.com passes TLS and HTTP response validation for region IRL1
@@ -274,7 +274,7 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
     *  expire date: Feb 20 23:59:59 2026 GMT
     *  issuer: C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1
     *  subject: C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com==========================================================  For additional TLS/SSL validation, see SSL Shopper:    🔎  https://www.sslshopper.com/ssl-checker.html#hostname=target.example.com  To check DNS propagation around the world, see whatsmydns.net:    🔎  DNS A records:     https://whatsmydns.net/#A/target.example.com
-        🔎  DNS CNAME record:  https://whatsmydns.net/#CNAME/target.example.com 
+        🔎  DNS CNAME record:  https://whatsmydns.net/#CNAME/target.example.com
    ```
 
 >[!NOTE]
