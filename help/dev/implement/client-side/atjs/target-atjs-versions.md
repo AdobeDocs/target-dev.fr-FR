@@ -4,9 +4,9 @@ description: Affichez les détails des modifications apportées dans chaque vers
 title: Que comprend chaque version d’at.js ?
 feature: at.js
 exl-id: 609dacba-2ab8-45e9-b189-928d59938c98
-source-git-commit: 3deeee2838d02d578bb653a4911313463b962050
+source-git-commit: 1a9b43142319ace8fa04aff209b8b639c7512e3f
 workflow-type: tm+mt
-source-wordcount: '4994'
+source-wordcount: '5018'
 ht-degree: 64%
 
 ---
@@ -26,6 +26,10 @@ Informations détaillées sur les modifications apportées à chaque version de 
 >Vous devez effectuer une mise à niveau vers les dernières versions de 1.*x* ou 2 *x* pour obtenir des correctifs de bugs et de sécurité pour les problèmes découverts dans n’importe quelle version mineure précédente de la version majeure correspondante.
 
 Les balises dans [Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode privilégiée pour mettre à niveau at.js. Les développeurs d’extensions ajoutent continuellement de nouvelles fonctionnalités à leurs extensions et corrigent fréquemment les bogues. Ces mises à jour sont incluses dans de nouvelles versions d’une extension et mises à disposition dans le catalogue Adobe Experience Platform sous forme de mises à niveau. Pour plus d’informations, voir [Mises à niveau d’extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) dans le guide *Présentation des balises*.
+
+## at.js version 2.11.8 (31 mars 2025)
+
+* Résolution d’une vulnérabilité identifiée par CodeQL dans la validation du suffixe de chaîne pour empêcher les cas Edge lors des opérations de redimensionnement et de déplacement. (TNT-51516)
 
 ## at.js version 2.11.7 (26 février 2025)
 
