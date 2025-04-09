@@ -4,9 +4,9 @@ description: Travaillez avec [!UICONTROL Adobe Client Care] pour implémenter la
 title: Comment utiliser CNAME dans Target ?
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: a36826202c5baa47f95a88c7b29c0d114901e6fa
+source-git-commit: 1a78a1e2750ae906338e91ff24ac16cdc99323ba
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1165'
 ht-degree: 1%
 
 ---
@@ -89,7 +89,7 @@ Cependant, une fois que vous avez remplacé le nom d’hôte dans votre code d�
 
 ### Quel type de clé et algorithme de signature de certificat est utilisé pour mon implémentation CNAME ?
 
-Tous les certificats sont RSA SHA-256 et les clés sont RSA 2048 bits, par défaut. Les tailles de clé supérieures à 2 048 bits ne sont actuellement pas prises en charge.
+Tous les certificats sont RSA SHA-256 et les clés sont RSA 2048 bits, par défaut. Les tailles de clé supérieures à 2 048 bits doivent être demandées explicitement via [!UICONTROL Customer Care].
 
 ### Comment puis-je vérifier que mon implémentation CNAME est prête pour le trafic ?
 
