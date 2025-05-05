@@ -1,6 +1,6 @@
 ---
 keywords: adobe.target.sendNotifications, sendNotifications, envoyer des notifications, envoyer des notifications, des notifications, at.js, fonctions, fonction, 9 $
-description: Utilisez [!UICONTROL adobe.target.sendNotifications()] pour at.js pour envoyer des notifications à la périphérie  [!DNL Target]  lorsqu’une expérience est générée sans utiliser [!UICONTROL applyOffer](s). (at.js.2.1 +)
+description: Utilisez [!UICONTROL adobe.target.sendNotifications()] pour at.js pour envoyer des notifications à la périphérie  [!DNL Target]  lorsqu’une expérience est générée sans utiliser [!UICONTROL applyOffer] (s). (at.js.2.1 +)
 title: Comment utiliser la fonction adobe.target.sendNotifications() ?
 feature: at.js
 exl-id: 1a08da10-31a0-4b0b-af7d-91ed7d32c308

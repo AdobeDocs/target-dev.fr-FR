@@ -130,7 +130,7 @@ Le fichier at.js fait environ 109 Ko une fois téléchargé. Cependant, comme l
 
 ## Pourquoi le fichier at.js est-il plus volumineux que le fichier mbox.js ?
 
-Les implémentations d’at.js utilisent une seule bibliothèque ( at.js), tandis que les implémentations de mbox.js utilisent en fait deux bibliothèques ( mbox.js et target.js). Il serait donc préférable donc de comparer at.js à mbox.js *et* `target.js`. Si l’on compare la taille des fichiers gzip des deux versions, at.js version 1.2 fait 34 Ko, tandis mbox.js version 63 fait 26,2 Ko. ``
+Les implémentations d’at.js utilisent une seule bibliothèque ( at.js), tandis que les implémentations de mbox.js utilisent en fait deux bibliothèques ( mbox.js et target.js). Il serait donc préférable donc de comparer at.js à mbox.js *et* `target.js`. Si l’on compare la taille des fichiers gzip des deux versions, at.js version 1.2 fait 34 Ko, tandis mbox.js version 63 fait 26,2 Ko. &grave;&grave;
 
 Le fichier at.js est plus volumineux, car il effectue beaucoup plus d’analyses DOM que le fichier mbox.js, du fait que le fichier at.js doit interpréter les données « brutes » qu’il récupère dans la réponse JSON. mbox.js utilisait `document.write()` et toute l’analyse était effectuée par le navigateur.
 

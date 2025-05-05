@@ -68,6 +68,7 @@ La syntaxe de l’[API de diffusion](/help/dev/implement/delivery-api/overview.m
    * les objets **browser** et **address** ont été supprimés de la **Body**, car ils ne sont pas nécessaires pour les cas d’utilisation non HTML
    * *api_charter* est répertorié comme nom d’emplacement dans cet exemple
    * entity.id est spécifié, car cette recommandation est basée sur la similarité de contenu, qui nécessite la transmission d’une clé d’élément active à Target.
+
      ![server-side-Delivery-API-call.png](assets/server-side-delivery-api-call2.png)
 N’oubliez pas de configurer correctement vos paramètres de requête. Par exemple, veillez à spécifier `{{CLIENT_CODE}}` si nécessaire. &lt;!— Q : Dans la syntaxe d’appel mise à jour, entity.id est répertorié en tant que profileParameter au lieu d’un mboxParameter comme dans les versions plus anciennes. —> &lt;!— Q : Ancienne image ![server-side-create-recs-post.png](assets/server-side-create-recs-post.png) Ancien texte d’accompagnement : « Notez que cette recommandation est basée sur des produits Content Similary basés sur entity.id envoyés via mboxParameters. » —>
      ![code-client3](assets/client-code3.png)

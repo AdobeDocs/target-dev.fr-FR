@@ -19,7 +19,7 @@ Pour que les notifications soient déclenchées pour la mbox ou la vue appropri�
 
 ## Notifications des mbox prérécupérées
 
-Une ou plusieurs notifications peuvent être envoyées via un seul appel de diffusion. Déterminez si la mesure qui doit faire l’objet d’un suivi est `click` ou `display` pour chaque mbox, de sorte que l’ `type` de la notification puisse être correctement reflétée. Transmettez également un `id` pour chaque notification afin que vous puissiez déterminer si une notification a été correctement envoyée via le [!UICONTROL  Adobe Target Delivery API]. `timestamp` doit également être transféré vers [!DNL Target] pour indiquer le moment où `click` ou `display` s’est produit pour une mbox donnée à des fins de création de rapports.
+Une ou plusieurs notifications peuvent être envoyées via un seul appel de diffusion. Déterminez si la mesure qui doit faire l’objet d’un suivi est `click` ou `display` pour chaque mbox, de sorte que l’ `type` de la notification puisse être correctement reflétée. Transmettez également un `id` pour chaque notification afin que vous puissiez déterminer si une notification a été correctement envoyée via le [!UICONTROL &#x200B; Adobe Target Delivery API]. `timestamp` doit également être transféré vers [!DNL Target] pour indiquer le moment où `click` ou `display` s’est produit pour une mbox donnée à des fins de création de rapports.
 
 ```
 curl -X POST \

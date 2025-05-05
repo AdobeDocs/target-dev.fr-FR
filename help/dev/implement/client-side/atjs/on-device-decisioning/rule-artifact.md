@@ -1,6 +1,6 @@
 ---
 keywords: implémentation, bibliothèque javascript, js, atjs, prise de décision sur l’appareil, prise de décision sur l’appareil, artefact de règle, 8 $
-description: Découvrez l’artefact de règle JSON utilisé par [!UICONTROL on-device decisioning]].
+description: Découvrez l’artefact de règle JSON utilisé par [!UICONTROL on-device decisioning]&rbrack;.
 title: Que fait l’artefact de règle JSON dans la prise de décision sur le périphérique ?
 feature: at.js
 exl-id: 14413ccf-b55e-48a8-a474-4401eb1b50fc

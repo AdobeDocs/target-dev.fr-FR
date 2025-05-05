@@ -1,6 +1,6 @@
 ---
 keywords: côté serveur, côté serveur, sdk, sdk, on-device, prise de décision, on device, ondevice, zero latency, quasi-zero, node.js, server side3
-description: Découvrez comment utiliser [!UICONTROL [!UICONTROL on-device decisioning] pour mettre en cache vos activités  [!DNL Target] A/B et MVT sur votre serveur afin d’effectuer une prise de décision en mémoire à une latence proche de zéro.
+description: Découvrez comment utiliser [!UICONTROL on-device decisioning] pour mettre en cache vos activités  [!DNL Target] A/B et MVT sur votre serveur afin d’effectuer une prise de décision en mémoire à une latence proche de zéro.
 title: Qu’est-ce que la prise de décision sur appareil ?
 feature: Implement Server-side
 exl-id: 22ed3072-56f0-4075-9d1a-d642afe3b649

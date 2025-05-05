@@ -42,7 +42,7 @@ Pour at.js versions 1.*x*, le comportement du cookie varie selon qu’il s’agi
 
 ### Quand utiliser les cookies propriétaires ou tiers
 
-La configuration de votre site détermine le type de cookies que vous allez utiliser. Il est utile de comprendre le fonctionnement de [!DNL Target] lorsque vous essayez de comprendre les cookies propriétaires et tiers. Pour plus d’informations, voir [Fonctionnement de  [!DNL Adobe Target] 2} .](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html)
+La configuration de votre site détermine le type de cookies que vous allez utiliser. Il est utile de comprendre le fonctionnement de [!DNL Target] lorsque vous essayez de comprendre les cookies propriétaires et tiers. Pour plus d’informations, voir [Fonctionnement de  [!DNL Adobe Target] 2&rbrace; .](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html)
 
 Il existe trois principaux cas d’utilisation des cookies :
 

@@ -39,7 +39,7 @@ L’illustration suivante présente les appels à Masquer/Afficher le corps dans
 
 (Cliquez sur l’image pour agrandir l’image en largeur réelle.)
 
-![ Flux cible : flux cible créé automatiquement : flux cible créé automatiquement : mbox globale créée automatiquement "){zoomable="yes"}](/help/dev/implement/client-side/atjs/how-atjs-works/assets/target-flow2.png "
+![ Flux cible : flux cible créé automatiquement : flux cible créé automatiquement : mbox globale créée automatiquement "){zoomable="yes"}] (/help/dev/implement/client-side/atjs/how-atjs-works/assets/target-flow2.png "
 
 Pour plus d’informations sur le remplacement de `bodyHiddenStyle`, voir [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
 

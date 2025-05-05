@@ -25,7 +25,7 @@ Les SDK mobiles Adobe Experience Platform prennent actuellement en charge iOS, A
 
 ## Quelle est la fréquence de la fonction basée sur l’emplacement, en termes de vérification de la latitude et de la longitude ?
 
-Pour plus d’informations, consultez la [ ](https://experienceleague.adobe.com/docs/places/using/home.html){target=_blank} de la documentation sur les Adobes.
+Pour plus d’informations, consultez la [&#128279;](https://experienceleague.adobe.com/docs/places/using/home.html){target=_blank} de la documentation sur les Adobes.
 
 ## Ai-je besoin d’at.js pour que les SDK Adobe Experience Platform Mobile fonctionnent ?
 
