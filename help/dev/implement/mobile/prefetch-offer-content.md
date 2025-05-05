@@ -26,7 +26,7 @@ Ce processus réduit le délai de chargement, évite la multiplication des appel
 Tenez compte des restrictions suivantes lors de l’utilisation de la méthode de prérécupération avec les SDK mobiles iOS et Android :
 
 * Le contenu de la prérécupération n’est pas conservé d’une exécution à l’autre. Il reste dans le cache tant que l’application est active ou jusqu’à ce que la méthode `clearPrefetchCache()` soit invoquée.
-* La fonctionnalité de prérécupération n’est pas prise en charge pour les méthodes d’affectation du trafic [!UICONTROL Auto-Allocate] et [!UICONTROL Auto-Target], pour les types d’activité [!UICONTROL Automated Personalization] ou [!UICONTROL Recommendations], ou pour les offres [recommandations dans une activité A/B ou XT](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-as-an-offer.html).
+* La fonctionnalité de prérécupération n’est pas prise en charge pour les méthodes d’affectation du trafic [!UICONTROL Auto-Allocate] et [!UICONTROL Auto-Target], pour les types d’activité [!UICONTROL Automated Personalization] ou [!UICONTROL Recommendations], ou pour les offres [recommandations dans une activité A/B ou XT](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-as-an-offer.html?lang=fr).
 
 Pour plus d’informations, notamment sur les méthodes de prérécupération, les classes publiques et les échantillons de code, voir :
 

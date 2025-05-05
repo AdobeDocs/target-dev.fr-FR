@@ -49,7 +49,7 @@ Vous n’avez pas besoin d’inclure les attributs de conversion de commande dan
    * `orderTotal` : total de la commande pour l’achat.
    * `orderId` : identifiant de la commande de l’achat.
 
-  L’illustration suivante présente une [règle pour [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html){target=_blank} qui doit être déclenchée uniquement sur la page [!UICONTROL Confirmation].
+  L’illustration suivante présente une [règle pour [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html?lang=fr){target=_blank} qui doit être déclenchée uniquement sur la page [!UICONTROL Confirmation].
 
   ![Page de configuration de l’action](/help/dev/patterns/recs-atjs/assets/action-configuration.png){width="400" zoomable="yes"}
 
@@ -58,7 +58,7 @@ Vous n’avez pas besoin d’inclure les attributs de conversion de commande dan
 **Lectures**
 
 * [méthode adobe.target.trackEvent()](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md)
-* [cartIds pour les critères basés sur le panier](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key.html?lang=en#cart-based){target=_blank}
+* [cartIds pour les critères basés sur le panier](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key.html?lang=fr#cart-based){target=_blank}
 
 **Actions**
 

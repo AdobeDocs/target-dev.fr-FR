@@ -14,7 +14,7 @@ ht-degree: 2%
 
 L’API Modèles, également appelée API de Liste bloquée, permet aux utilisateurs d’afficher et de gérer la liste des fonctionnalités utilisées dans les modèles d’apprentissage automatique pour les activités [!UICONTROL Automated Personalization] (AP) et [!DNL Auto-Target] (AT). Si un utilisateur souhaite exclure une fonctionnalité des modèles utilisés pour les activités AP ou AT, il peut utiliser l’API Modèles pour ajouter cette fonctionnalité à la &quot;liste bloquée&quot;.
 
-Un **[!UICONTROL blocklist]** définit l’ensemble des fonctionnalités qui seront exclues par [!DNL Adobe Target] de ses modèles d’apprentissage automatique. Pour plus d’informations sur les fonctionnalités, voir [Données utilisées par [!DNL Target] les algorithmes d’apprentissage automatique](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html).
+Un **[!UICONTROL blocklist]** définit l’ensemble des fonctionnalités qui seront exclues par [!DNL Adobe Target] de ses modèles d’apprentissage automatique. Pour plus d’informations sur les fonctionnalités, voir [Données utilisées par [!DNL Target] les algorithmes d’apprentissage automatique](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html?lang=fr).
 
 Les Listes bloquées peuvent être définies par activité (niveau activité) ou pour toutes les activités au sein d’un compte [!DNL Target] (niveau global).
 
@@ -100,7 +100,7 @@ Dans l’exemple illustré ici, l’utilisateur vérifie la liste des fonctionna
 >
 >Pour trouver l’ID d’activité de votre activité, accédez à la Liste des activités dans l’interface utilisateur de [!DNL Target]. Cliquez sur l’activité qui vous intéresse. L’ID d’activité s’affiche dans le corps de la page d’aperçu des activités qui en résulte, ainsi qu’à la fin de l’URL de cette page.
 
-**[!UICONTROL externalName]** est un nom convivial pour une fonctionnalité. Il est créé par [!DNL Target] et il est possible que cette valeur change au fil du temps. Les utilisateurs peuvent afficher ces noms conviviaux dans le [rapport Personalization Insights](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html).
+**[!UICONTROL externalName]** est un nom convivial pour une fonctionnalité. Il est créé par [!DNL Target] et il est possible que cette valeur change au fil du temps. Les utilisateurs peuvent afficher ces noms conviviaux dans le [rapport Personalization Insights](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html?lang=fr).
 
 **[!UICONTROL internalName]** est l’identifiant réel de la fonctionnalité. Il est également créé par [!DNL Target], mais il ne peut pas être modifié. Il s’agit de la valeur à référencer pour identifier la ou les fonctionnalités que vous souhaitez placer sur la liste bloquée.
 

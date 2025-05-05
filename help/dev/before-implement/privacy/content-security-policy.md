@@ -37,7 +37,7 @@ Il est prévu que [!DNL Target] soit accessible depuis n’importe quel domaine 
 
 ### Comment puis-je autoriser ou empêcher mon site d’être incorporé en tant qu’iFrame sous des domaines étrangers ?
 
-Pour permettre au [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank} (VEC) d’incorporer votre site web dans un iFrame, la CSP (si elle est définie) doit être modifiée dans le paramètre de votre serveur web. Les domaines [!DNL Adobe] doivent être mis en liste blanche et configurés.
+Pour permettre au [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=fr){target=_blank} (VEC) d’incorporer votre site web dans un iFrame, la CSP (si elle est définie) doit être modifiée dans le paramètre de votre serveur web. Les domaines [!DNL Adobe] doivent être mis en liste blanche et configurés.
 
 Pour des raisons de sécurité, vous pouvez empêcher votre site d’être incorporé en tant qu’iFrame sous des domaines étrangers.
 

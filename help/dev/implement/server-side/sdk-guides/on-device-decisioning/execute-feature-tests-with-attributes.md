@@ -38,7 +38,7 @@ L’activation de la prise de décision sur l’appareil garantit qu’une activ
 
 >[!NOTE]
 >
->Vous devez disposer du rôle d’administrateur ou d’approbateur [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) pour activer ou désactiver le bouton d’activation/désactivation de **[!UICONTROL On-Device Decisioning]**.
+>Vous devez disposer du rôle d’administrateur ou d’approbateur [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=fr) pour activer ou désactiver le bouton d’activation/désactivation de **[!UICONTROL On-Device Decisioning]**.
 
 Après avoir activé le bouton d’activation **[!UICONTROL On-Device Decisioning]**, [!DNL Adobe Target] commence à générer des *artefacts de règle* pour votre client.
 

@@ -61,7 +61,7 @@ target_client.send_notifications(options)
 | target_location_hint_cookie | dict | cookie d’indicateur d’emplacement [!DNL Target] |
 | analytics_details | list[AnalyticsResponse] | Charge utile [!DNL Analytics], en cas d’utilisation de [!DNL Analytics] côté client |
 | trace |  | list[dict] | Données de suivi agrégées pour toutes les mbox/vues de requête |
-| response_tokens | list[dict] | Liste de [ &#x200B; jetons de réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) |
+| response_tokens | list[dict] | Liste de [ &#x200B; jetons de réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr) |
 | meta | dict | Métadonnées de prise de décision supplémentaires à utiliser avec la prise de décision sur appareil |
 
 ## Exemple

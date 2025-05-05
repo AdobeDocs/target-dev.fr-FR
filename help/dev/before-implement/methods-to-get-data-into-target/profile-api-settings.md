@@ -36,11 +36,11 @@ Pour plus de sécurité, vous pouvez exiger que l’appel de l’API de mise à 
 
    * Rôle d’administrateur ou au moins droits d’approbateur
 
-     Pour plus d’informations sur les clients Target Standard, voir [Spécification des rôles et autorisations](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html#roles-permissions) dans *Utilisateurs*. Pour plus d’informations concernant les clients [!DNL Target Premium], consultez [Configuration des autorisations d’Enterprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+     Pour plus d’informations sur les clients Target Standard, voir [Spécification des rôles et autorisations](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html?lang=fr#roles-permissions) dans *Utilisateurs*. Pour plus d’informations concernant les clients [!DNL Target Premium], consultez [Configuration des autorisations d’Enterprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=fr).
 
    * Rôle d’administrateur au niveau de l’espace de travail/du profil de produit
 
-     Les espaces de travail sont disponibles uniquement pour les clients [!DNL Target Premium]. Pour plus d’informations, consultez [Configuration des autorisations d’Enterprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+     Les espaces de travail sont disponibles uniquement pour les clients [!DNL Target Premium]. Pour plus d’informations, consultez [Configuration des autorisations d’Enterprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=fr).
 
    * Droits d’administrateur (autorisation Sysadmin) au niveau du produit [!DNL Adobe Target]
 

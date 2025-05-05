@@ -33,7 +33,7 @@ L’interface [!DNL Target] prend en charge les navigateurs et appareils suivant
 
 ## Exigences en matière d’édition visuelle
 
-Pour pouvoir ouvrir, créer et prévisualiser vos pages web de manière fiable dans le [!UICONTROL Visual Experience Composer] (VEC), l’extension de navigateur [Adobe Experience Cloud Visual Editing Helper](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} doit être installée sur votre navigateur web ou vous pouvez utiliser [!UICONTROL Enhanced Experience Composer (EEC)].
+Pour pouvoir ouvrir, créer et prévisualiser vos pages web de manière fiable dans le [!UICONTROL Visual Experience Composer] (VEC), l’extension de navigateur [Adobe Experience Cloud Visual Editing Helper](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} doit être installée sur votre navigateur web ou vous pouvez utiliser [!UICONTROL Enhanced Experience Composer (EEC)].
 
 >[!NOTE]
 >

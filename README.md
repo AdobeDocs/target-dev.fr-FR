@@ -15,13 +15,13 @@ Ce projet a adopté le [code de conduite Adobe Open Source](code-of-conduct.md) 
 
 ## À propos de vos contributions au contenu Adobe
 
-Consultez le [Guide du contributeur d’Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Consultez le [Guide du contributeur d’Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
 
 La façon de contribuer dépend de qui vous êtes et du type de modification que vous souhaitez proposer :
 
 ### Modifications mineures
 
-Si vous proposez des mises à jour mineures par pure générosité, consultez l’article et cliquez sur le lien **Modifier** qui renvoie à la source GitHub pour cet article. Utilisez ensuite l’interface utilisateur GitHub pour effectuer vos mises à jour. Pour plus d’informations, voir le [Guide du contributeur d’Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Si vous proposez des mises à jour mineures par pure générosité, consultez l’article et cliquez sur le lien **Modifier** qui renvoie à la source GitHub pour cet article. Utilisez ensuite l’interface utilisateur GitHub pour effectuer vos mises à jour. Pour plus d’informations, voir le [Guide du contributeur d’Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
 
 Les corrections mineures ou les clarifications que vous envoyez pour la documentation et les exemples de code dans ce référentiel sont couvertes par les conditions d’utilisation d’Adobe.
 
@@ -43,7 +43,7 @@ Si vous êtes rédacteur technique, chef de programme ou développeur de l’éq
 
 Les contributeurs de la communauté peuvent utiliser l’interface utilisateur GitHub pour effectuer des modifications de base ou dupliquer le référentiel pour y apporter des contributions importantes.
 
-Pour plus d’informations, consultez le [Guide du contributeur d’Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Pour plus d’informations, consultez le [Guide du contributeur d’Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
 
 ## Utilisation des marqueurs pour formater votre rubrique
 

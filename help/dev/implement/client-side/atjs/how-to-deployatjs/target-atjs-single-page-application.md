@@ -220,7 +220,7 @@ Désormais, où que soit implémenté `triggerView()` sur votre application d’
 
 ## Compositeur d’expérience visuelle pour les applications monopages
 
-Après avoir installé le fichier at.js 2.x et l’avoir ajouté `triggerView()` à votre site, utilisez VEC pour exécuter les activités AB et XT. Pour plus d’informations, reportez-vous au [Compositeur d’expérience visuelle pour application d’une seule page (SPA)](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
+Après avoir installé le fichier at.js 2.x et l’avoir ajouté `triggerView()` à votre site, utilisez VEC pour exécuter les activités AB et XT. Pour plus d’informations, reportez-vous au [Compositeur d’expérience visuelle pour application d’une seule page (SPA)](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html?lang=fr).
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ Après avoir installé le fichier at.js 2.x et l’avoir ajouté `triggerView()`
 
 ## Utilisez TriggerView pour vous assurer que A4T fonctionne correctement avec at.js 2.x et SPA
 
-Pour vous assurer que [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) fonctionne correctement avec at.js 2.x, veillez à envoyer le même SDID dans la requête [!DNL Target] et dans la requête [!DNL Analytics].
+Pour vous assurer que [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) (A4T) fonctionne correctement avec at.js 2.x, veillez à envoyer le même SDID dans la requête [!DNL Target] et dans la requête [!DNL Analytics].
 
 En tant que bonnes pratiques liées aux applications monopages :
 
@@ -311,16 +311,16 @@ Les vidéos suivantes comprennent davantage d’informations :
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-Pour plus d’informations, consultez la page [Fonctionnement d’at.js 2.x](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html).
+Pour plus d’informations, consultez la page [Fonctionnement d’at.js 2.x](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=fr).
 
 ### Implémentation d’at.js 2 dans une application d’une seule page
 
 >[!VIDEO](https://video.tv.adobe.com/v/26248/?quality=12)
 
-Pour plus d’informations, voir [Mise en oeuvre d’Adobe Target at.js 2.x dans une application d’une seule page (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) .
+Pour plus d’informations, voir [Mise en oeuvre d’Adobe Target at.js 2.x dans une application d’une seule page (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html?lang=fr) .
 
 ### Utilisation du VEC pour SPA dans [!DNL Adobe Target]
 
 >[!VIDEO](https://video.tv.adobe.com/v/26249/?quality=12)
 
-Pour plus d’informations, voir [Utilisation du compositeur d’expérience visuelle pour application d’une seule page (SPA VEC) dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) .
+Pour plus d’informations, voir [Utilisation du compositeur d’expérience visuelle pour application d’une seule page (SPA VEC) dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html?lang=fr) .

@@ -68,8 +68,8 @@ targetPageParams (ajoute les paramètres à la mbox globale sur la page) :
 
 ## Liens vers les informations pertinentes
 
-Recommandations : [implémentation selon le type de page](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html)
+Recommandations : [implémentation selon le type de page](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=fr)
 
 Confirmation de commande : [suivi des conversions](../../implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions)
 
-Affinité catégorielle : [affinité catégorielle](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html)
+Affinité catégorielle : [affinité catégorielle](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=fr)

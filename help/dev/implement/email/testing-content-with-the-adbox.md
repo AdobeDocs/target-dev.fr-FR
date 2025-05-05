@@ -39,7 +39,7 @@ Pour obtenir de l’aide sur la sélection de la configuration appropriée, voir
 
      Elle doit être en codage URL et il doit s’agir d’une référence absolue. Vous pouvez utiliser la [référence de codage d’URL d’HTML](https://www.w3schools.com/tags/ref_urlencode.asp) pour coder rapidement vos URL.
 
-1. Créez [des offres de redirection](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html) pour chaque image alternative.
+1. Créez [des offres de redirection](https://experienceleague.adobe.com/docs/target/using/experiences/offers/offer-redirect.html?lang=fr) pour chaque image alternative.
 
    >[!NOTE]
    >

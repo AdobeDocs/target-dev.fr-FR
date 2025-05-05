@@ -124,7 +124,7 @@ Dans la réponse, vous voyez le champ `content` contenant l’expérience à pr�
 
 ## Prérécupération des mbox avec des mesures `clickTrack` lors de l’utilisation de [!UICONTROL Analytics for Target] (A4T)
 
-[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T) est une intégration intersolutions qui vous permet de créer des activités basées sur [!DNL Analytics] mesures de conversion et segments d’audience.
+[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr){target=_blank} (A4T) est une intégration intersolutions qui vous permet de créer des activités basées sur [!DNL Analytics] mesures de conversion et segments d’audience.
 
 Le fragment de code suivant est une réponse d’une prérécupération d’une mbox contenant des mesures `clickTrack` pour informer [!DNL Analytics] qu’un utilisateur a cliqué sur une offre :
 
@@ -169,7 +169,7 @@ Le fragment de code suivant est une réponse d’une prérécupération d’une 
 
 ## Prérécupération des vues
 
-Les vues prennent en charge les applications d’une seule page (SPA) et les applications mobiles de manière plus transparente. Les vues peuvent être considérées comme un groupe logique d’éléments visuels qui, ensemble, constituent une expérience SPA ou mobile. Désormais, grâce à l’API de diffusion, les activités [[!UICONTROL A/B Test]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html){target=_blank} et [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html){target=_blank} (X)T créées par le VEC avec des modifications sur les [vues pour SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) peuvent être prérécupérées.
+Les vues prennent en charge les applications d’une seule page (SPA) et les applications mobiles de manière plus transparente. Les vues peuvent être considérées comme un groupe logique d’éléments visuels qui, ensemble, constituent une expérience SPA ou mobile. Désormais, grâce à l’API de diffusion, les activités [[!UICONTROL A/B Test]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=fr){target=_blank} et [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=fr){target=_blank} (X)T créées par le VEC avec des modifications sur les [vues pour SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) peuvent être prérécupérées.
 
 ```shell  {line-numbers="true"}
 curl -X POST \

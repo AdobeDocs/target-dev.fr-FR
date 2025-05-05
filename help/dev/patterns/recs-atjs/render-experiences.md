@@ -58,8 +58,8 @@ Ajoutez des éléments en promotion et contrôlez leur placement dans votre conc
 **Options disponibles**
 
 * Promouvoir par les identifiants
-* [Promouvoir par collection](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html){target=_blank}
-* [Promouvoir par attribut](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
+* [Promouvoir par collection](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/collections.html?lang=fr){target=_blank}
+* [Promouvoir par attribut](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=fr){target=_blank}
 
 **Paramètres d’entité requis**
 
@@ -67,7 +67,7 @@ Ajoutez des éléments en promotion et contrôlez leur placement dans votre conc
 
 **Lectures**
 
-* [Ajouter des promotions](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/adding-promotions.html){target=_blank}
+* [Ajouter des promotions](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/adding-promotions.html?lang=fr){target=_blank}
 
 +++
 
@@ -91,7 +91,7 @@ Effectuez des recommandations en fonction du contenu du panier de l’utilisateu
 
 **Lectures**
 
-* [Basé sur le panier](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Basé sur le panier](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=fr#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -120,7 +120,7 @@ Effectuez des recommandations en fonction de la popularité globale d’un élé
 
 **Lectures**
 
-* [Popularity-based](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Popularity-based](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=fr#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -146,7 +146,7 @@ Effectuez des recommandations sur la base de la recherche d’éléments similai
 
 **Lectures**
 
-* [Élément basé ](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Élément basé ](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=fr#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -169,7 +169,7 @@ Effectuez des recommandations en fonction du comportement de l’utilisateur.
 
 **Lectures**
 
-* [Basé sur l’utilisateur](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Basé sur l’utilisateur](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=fr#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -191,7 +191,7 @@ Faites des recommandations en fonction d’un fichier personnalisé que vous cha
 
 **Lectures**
 
-* [Critères personnalisés](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=en#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Critères personnalisés](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=fr#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -203,7 +203,7 @@ Faites des recommandations en fonction d’un fichier personnalisé que vous cha
 
 **Lectures**
 
-* [Utilisation de règles d’inclusion dynamiques et statiques](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/use-dynamic-and-static-inclusion-rules.html){target=_blank}
+* [Utilisation de règles d’inclusion dynamiques et statiques](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/dynamic-static/use-dynamic-and-static-inclusion-rules.html?lang=fr){target=_blank}
 
 +++
 
@@ -217,7 +217,7 @@ Transmettez les identifiants d’entité pour les entités que vous souhaitez ex
 
 **Lectures**
 
-* [Puis-je exclure dynamiquement une entité ?](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=en#exclude){target=_blank}
+* [Puis-je exclure dynamiquement une entité ?](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/recommendations-faq.html?lang=fr#exclude){target=_blank}
 
 +++
 
@@ -229,9 +229,9 @@ Transmettez les identifiants d’entité pour les entités que vous souhaitez ex
 
 **Lectures**
 
-* [Attributs d’entité](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
+* [Attributs d’entité](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=fr){target=_blank}
 
-Vous pouvez également accomplir cette étape en créant des [flux de produit](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html){target=_blank} à l’aide de l’interface utilisateur [!DNL Target] pour mettre à jour le catalogue de produits pour [!DNL Recommendations].
+Vous pouvez également accomplir cette étape en créant des [flux de produit](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html?lang=fr){target=_blank} à l’aide de l’interface utilisateur [!DNL Target] pour mettre à jour le catalogue de produits pour [!DNL Recommendations].
 
 +++
 
@@ -245,7 +245,7 @@ Fournissez les attributs de profil utilisés comme clés pour les règles d’in
 
 **Lectures**
 
-* [Attributs de profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html){target=_blank}
+* [Attributs de profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=fr){target=_blank}
 
 +++
 
@@ -253,7 +253,7 @@ Fournissez les attributs de profil utilisés comme clés pour les règles d’in
 
 ## 3.11 : Déclenchement de la requête de chargement de page {#fire}
 
-Cette étape déclenche un appel [!DNL Delivery API] avec la charge utile `execute` > `pageLoad` dans la requête. La méthode `getOffers()` récupère l’expérience et `applyOffers()` effectue le rendu de l’expérience sur la page. La requête `pageLoad` est nécessaire pour le rendu des expériences créées dans le [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank} (VEC).
+Cette étape déclenche un appel [!DNL Delivery API] avec la charge utile `execute` > `pageLoad` dans la requête. La méthode `getOffers()` récupère l’expérience et `applyOffers()` effectue le rendu de l’expérience sur la page. La requête `pageLoad` est nécessaire pour le rendu des expériences créées dans le [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=fr){target=_blank} (VEC).
 
 +++Voir les détails
 

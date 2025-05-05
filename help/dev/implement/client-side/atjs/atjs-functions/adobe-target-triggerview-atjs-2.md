@@ -72,7 +72,7 @@ adobe.target.getOffers({
 
 ## Exemple : meilleure compatibilité pour `triggerView()` avec [!UICONTROL Adobe Visual Editing Helper extension]
 
-Tenez compte de ce qui suit lors de l’utilisation de l’extension [Adobe Visual Editing Helper extension](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} :
+Tenez compte de ce qui suit lors de l’utilisation de l’extension [Adobe Visual Editing Helper extension](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} :
 
 En raison des nouvelles stratégies de manifeste V3 de [!DNL Googl] pour les extensions [!DNL Chrome], [!UICONTROL Visual Editing Helper extension] doit attendre l’événement `DOMContentLoaded` avant de charger les bibliothèques [!DNL Target] dans le VEC. Ce délai peut entraîner le déclenchement de l’appel `triggerView()` par les pages web avant que les bibliothèques de création ne soient prêtes, ce qui entraîne le fait que la vue ne soit pas renseignée au chargement.
 

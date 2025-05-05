@@ -17,7 +17,7 @@ Les balises dans [!DNL Adobe Experience Platform] représentent la nouvelle gén
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch a été rebaptisé en tant que suite de technologies de collecte de données dans [!DNL Adobe Experience Platform]. Plusieurs modifications terminologiques ont par conséquent été déployées dans la documentation du produit. Reportez-vous au [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?) suivant pour obtenir une référence consolidée des modifications terminologiques.
+>Adobe Experience Platform Launch a été rebaptisé en tant que suite de technologies de collecte de données dans [!DNL Adobe Experience Platform]. Plusieurs modifications terminologiques ont par conséquent été déployées dans la documentation du produit. Reportez-vous au [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=fr&) suivant pour obtenir une référence consolidée des modifications terminologiques.
 
 Le tableau suivant répertorie les différentes sources fournissant plus d’informations :
 

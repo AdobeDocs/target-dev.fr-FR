@@ -25,7 +25,7 @@ Les SDK mobiles Adobe Experience Platform prennent actuellement en charge iOS, A
 
 ## Quelle est la fréquence de la fonction basée sur l’emplacement, en termes de vérification de la latitude et de la longitude ?
 
-Pour plus d’informations, consultez la [&#128279;](https://experienceleague.adobe.com/docs/places/using/home.html){target=_blank} de la documentation sur les Adobes.
+Pour plus d’informations, consultez la [&#128279;](https://experienceleague.adobe.com/docs/places/using/home.html?lang=fr){target=_blank} de la documentation sur les Adobes.
 
 ## Ai-je besoin d’at.js pour que les SDK Adobe Experience Platform Mobile fonctionnent ?
 
@@ -33,8 +33,8 @@ Non, vous n’avez pas besoin d’at.js pour utiliser les SDK mobiles. at.js est
 
 ## [!DNL Target] Mobile est-il une fonctionnalité du SKU du produit [!DNL Adobe Target] Premium uniquement ?
 
-Non. Pour les clients [!DNL Adobe Target Standard], vous pouvez utiliser nos SDK mobiles pour les activités [!UICONTROL A/B Test] et [!UICONTROL Experience Targeting] (XT) uniquement avec le module complémentaire [!DNL Target Standard] Mobile App. Si vous souhaitez utiliser des fonctionnalités [!UICONTROL Recommendations] ou optimisées par l&#39;IA dans l&#39;application mobile, vous avez besoin d&#39;une licence [Adobe Target Premium](https://experienceleague.adobe.com/docs/target/using/introduction/intro.html#premium).
+Non. Pour les clients [!DNL Adobe Target Standard], vous pouvez utiliser nos SDK mobiles pour les activités [!UICONTROL A/B Test] et [!UICONTROL Experience Targeting] (XT) uniquement avec le module complémentaire [!DNL Target Standard] Mobile App. Si vous souhaitez utiliser des fonctionnalités [!UICONTROL Recommendations] ou optimisées par l&#39;IA dans l&#39;application mobile, vous avez besoin d&#39;une licence [Adobe Target Premium](https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=fr#premium).
 
 ## Existe-t-il une intégration d’applications mobiles entre les activités mobiles [!DNL Adobe Experience Manager] (AEM) et [!DNL Target] ?
 
-Actuellement, vous pouvez partager des [fragments d’expérience](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html){target=_blank} JSON de l’AEM vers [!DNL Target] et il est possible de les utiliser ensuite dans une activité d’application mobile.
+Actuellement, vous pouvez partager des [fragments d’expérience](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=fr){target=_blank} JSON de l’AEM vers [!DNL Target] et il est possible de les utiliser ensuite dans une activité d’application mobile.

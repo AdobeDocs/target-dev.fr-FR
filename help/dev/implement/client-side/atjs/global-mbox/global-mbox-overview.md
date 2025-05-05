@@ -24,6 +24,6 @@ Il existe plusieurs différences entre une mbox ordinaire (mbox non globale) et
 | Généralement, une mbox ordinaire encapsule le contenu à l’aide d’une balise `<DIV>`. | La mbox globale est « vide » et n’encapsule aucun contenu. |
 | Le contenu d’une seule activité peut être distribué dans une mbox ordinaire. | Le contenu de plusieurs activités peut être distribué dans une réponse à une mbox globale. |
 
-Si plusieurs activités sont diffusées via la mbox globale ou via plusieurs mbox ordinaires, Target [ détermine la priorité](https://experienceleague.adobe.com/docs/target/using/activities/priority.html) par laquelle l’activité (ou les activités) sont diffusées vers une page web.
+Si plusieurs activités sont diffusées via la mbox globale ou via plusieurs mbox ordinaires, Target [ détermine la priorité](https://experienceleague.adobe.com/docs/target/using/activities/priority.html?lang=fr) par laquelle l’activité (ou les activités) sont diffusées vers une page web.
 
 D’autres données au niveau de la page peuvent être envoyées à [!DNL Target] avec la mbox globale, en utilisant la fonction `[!UICONTROL targetPageParams]`. Ceci est similaire à la fonctionnalité du paramètre de mbox. Pour plus d’informations, veuillez consulter la section [Transfert de paramètres vers une mbox globale](/help/dev/implement/client-side/atjs/global-mbox/pass-parameters-to-global-mbox.md).

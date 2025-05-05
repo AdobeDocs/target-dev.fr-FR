@@ -19,4 +19,4 @@ La localisation est un contexte important pour comprendre et interagir avec les 
 
 Vous pouvez utiliser [!DNL Location Service] avec [!DNL Target] pour utiliser des règles avec des [balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) afin de joindre vos données [!UICONTROL Places] à vos événements de SDK [!DNL Adobe Target].
 
-Pour plus d’informations, voir [Utilisation de [!UICONTROL Location Service] avec [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/places/using/use-places-with-other-solutions/places-target/places-target.html) dans le [guide du service de localisation Adobe Experience Platform](https://experienceleague.adobe.com/docs/places/using/home.html).
+Pour plus d’informations, voir [Utilisation de [!UICONTROL Location Service] avec [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/places/using/use-places-with-other-solutions/places-target/places-target.html?lang=fr) dans le [guide du service de localisation Adobe Experience Platform](https://experienceleague.adobe.com/docs/places/using/home.html?lang=fr).

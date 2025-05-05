@@ -42,9 +42,9 @@ Pour utiliser l’API de diffusion afin de diffuser des expériences Target (y c
 
 ## Créer une recommandation à l’aide du compositeur d’expérience d’après les formulaires
 
-Pour créer des recommandations à utiliser avec l’API de diffusion, utilisez le [compositeur basé sur les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html).
+Pour créer des recommandations à utiliser avec l’API de diffusion, utilisez le [compositeur basé sur les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=fr).
 
-1. Tout d’abord, créez et enregistrez une conception basée sur JSON à utiliser dans votre recommandation. Pour obtenir un exemple JSON, ainsi que des informations générales sur la manière dont les réponses JSON peuvent être renvoyées lors de la configuration d’une activité basée sur des formulaires, consultez la documentation sur la [Création de conceptions de recommandations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html). Dans cet exemple, la conception est nommée *JSON simple.*
+1. Tout d’abord, créez et enregistrez une conception basée sur JSON à utiliser dans votre recommandation. Pour obtenir un exemple JSON, ainsi que des informations générales sur la manière dont les réponses JSON peuvent être renvoyées lors de la configuration d’une activité basée sur des formulaires, consultez la documentation sur la [Création de conceptions de recommandations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html?lang=fr). Dans cet exemple, la conception est nommée *JSON simple.*
    ![server-side-create-recs-json-design.png](assets/server-side-create-recs-json-design.png)
 
 1. Dans Target, accédez à **[!UICONTROL Activities]** > **[!UICONTROL Create Activity]** > **[!UICONTROL Recommendations]**, puis sélectionnez **[!UICONTROL Form]**.
@@ -54,7 +54,7 @@ Pour créer des recommandations à utiliser avec l’API de diffusion, utilisez 
 1. Sélectionnez une propriété, puis cliquez sur **[!UICONTROL Next]**.
 1. Définissez l’emplacement où vous souhaitez que les utilisateurs reçoivent la réponse de la recommandation. L’exemple ci-dessous utilise un emplacement nommé *api_charter*. Sélectionnez votre conception basée sur JSON, créée précédemment, nommée *JSON simple.*
    ![server-side-create-recs-form.png](assets/server-side-create-recs-form1.png)
-1. Enregistrez et activez la recommandation. Cela produira des résultats. [Une fois les résultats prêts](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html) vous pouvez utiliser l’API de diffusion pour les récupérer.
+1. Enregistrez et activez la recommandation. Cela produira des résultats. [Une fois les résultats prêts](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html?lang=fr) vous pouvez utiliser l’API de diffusion pour les récupérer.
 
 ## Utilisation de l’API de diffusion
 
@@ -116,7 +116,7 @@ Dans une [section précédente](manage-catalog.md) nous avons appris à gérer l
 ## Documentation de référence
 
 * [Documentation sur l’API de diffusion Adobe Target](/help/dev/implement/delivery-api/overview.md)
-* [Intégration de Recommendations dans la messagerie électronique](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html)
+* [Intégration de Recommendations dans la messagerie électronique](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html?lang=fr)
 
 ## Résumé et révision
 

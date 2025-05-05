@@ -49,6 +49,6 @@ L’ `clientCode` peut être récupéré à partir de l’interface utilisateur 
 
 Avant d’effectuer un appel [!UICONTROL Target Delivery API], procédez comme suit pour vous assurer qu’une réponse contient l’expérience appropriée pour afficher les utilisateurs finaux :
 
-1. Créez une activité [!DNL Target] (A/B, XT, AP ou Recommendations) à l’aide du [compositeur d’après les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=en) ou du [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html).
+1. Créez une activité [!DNL Target] (A/B, XT, AP ou Recommendations) à l’aide du [compositeur d’après les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=fr) ou du [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=fr).
 1. Utilisez l’API de diffusion pour obtenir une réponse pour les mbox utilisées dans l’activité [!DNL Target] créée à l’étape 2.
 1. Présenter l’expérience au visiteur.

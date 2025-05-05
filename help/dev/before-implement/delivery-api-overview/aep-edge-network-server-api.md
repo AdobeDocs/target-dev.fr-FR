@@ -17,4 +17,4 @@ ht-degree: 0%
 
 L’ [!UICONTROL Edge Network Server API] peut être utilisé pour divers cas d’utilisation de la collecte de données, de la personnalisation, de la publicité et du marketing. L’API serveur peut être utilisée sur des serveurs, des appareils IoT, des décodeurs et sur divers autres appareils.
 
-Pour plus d’informations, consultez la [présentation de l’API de serveur Edge Network](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html){target=_blank} dans la *documentation de l’API de serveur Edge*.
+Pour plus d’informations, consultez la [présentation de l’API de serveur Edge Network](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=fr){target=_blank} dans la *documentation de l’API de serveur Edge*.

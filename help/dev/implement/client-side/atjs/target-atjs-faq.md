@@ -148,7 +148,7 @@ Pour prendre en charge les visiteurs Safari, un meilleur domaine X serait &quot;
 
 ## Puis-je utiliser Target [!UICONTROL Visual Experience Composer] (VEC) dans mes applications d’une seule page ?
 
-Oui, vous pouvez utiliser le VEC pour votre SPA si vous utilisez at.js 2.x. Pour plus d’informations, consultez [Compositeur d’expérience visuelle monopage (SPA)](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
+Oui, vous pouvez utiliser le VEC pour votre SPA si vous utilisez at.js 2.x. Pour plus d’informations, consultez [Compositeur d’expérience visuelle monopage (SPA)](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html?lang=fr).
 
 ## Puis-je utiliser le débogueur Adobe Experience Cloud avec les implémentations d’at.js ?
 
@@ -239,7 +239,7 @@ Notez que pour les jetons de réponse et les identifiants de session transmis da
 * Ils effectuent le suivi des sessions de communication.
 * Ils sont composés de caractères aléatoires.
 * Les ID de session sont valides pendant 30 minutes
-* Les jetons de réponse peuvent être désactivés ([Jetons de réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html))
+* Les jetons de réponse peuvent être désactivés ([Jetons de réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr))
 * Elles ne sont utiles que dans l’environnement des solutions d’Adobe.
 
 Il est prévu que l’en-tête `Access-Control-Allow-Origin` avec la valeur &quot;*&quot; apparaisse dans les requêtes at.js, en raison de leur caractère public, de l’authentification non requise et de l’accès au réseau Adobe Edge depuis n’importe quel domaine via des appels JavaScript.

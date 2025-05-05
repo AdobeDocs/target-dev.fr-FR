@@ -38,7 +38,7 @@ L’activation de la prise de décision sur l’appareil garantit qu’une activ
 
 >[!NOTE]
 >
->Vous devez disposer du [rôle d’utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) administrateur ou approbateur pour activer ou désactiver le bouton de prise de décision sur périphérique.
+>Vous devez disposer du [rôle d’utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=fr) administrateur ou approbateur pour activer ou désactiver le bouton de prise de décision sur périphérique.
 
 Après avoir activé le bouton bascule **[!UICONTROL On-Device Decisioning]**, [!DNL Adobe Target] commence à générer des artefacts de règle pour votre client.
 

@@ -19,7 +19,7 @@ vous devez respecter ce code. Veuillez signaler tout comportement inacceptable �
 
 ## Guide du contributeur
 
-Voir [Guide du contributeur](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
+Voir [Guide du contributeur](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
 
 ## Vous avez une question ?
 
@@ -56,4 +56,4 @@ n’hésitez pas à contacter les committers existants pour discuter de ce sujet
 
 ## Problèmes de sécurité
 
-Les problèmes de sécurité ne doivent pas être signalés dans ce suivi d’incidents. Au lieu de cela, [soumettre un problème à nos experts en sécurité ;](https://helpx.adobe.com/security/alertus.html)
+Les problèmes de sécurité ne doivent pas être signalés dans ce suivi d’incidents. Au lieu de cela, [soumettre un problème à nos experts en sécurité ;](https://helpx.adobe.com/fr/security/alertus.html)

@@ -149,7 +149,7 @@ Si vous recevez une erreur indiquant que l’entité est introuvable, comme illu
 
    >[!NOTE]
    >
-   >Si aucun environnement n’est explicitement spécifié, Get Entity tente d’obtenir l’entité de votre [environnement par défaut](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) uniquement. Si vous souhaitez extraire de tout environnement autre que votre environnement par défaut, vous devez spécifier l’identifiant de l’environnement.
+   >Si aucun environnement n’est explicitement spécifié, Get Entity tente d’obtenir l’entité de votre [environnement par défaut](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=fr) uniquement. Si vous souhaitez extraire de tout environnement autre que votre environnement par défaut, vous devez spécifier l’identifiant de l’environnement.
 
 1. Si nécessaire, ajoutez le paramètre `environmentId` et renvoyez la demande.
 

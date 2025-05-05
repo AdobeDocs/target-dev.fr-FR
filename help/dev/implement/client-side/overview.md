@@ -13,7 +13,7 @@ ht-degree: 28%
 
 # Présentation : implémentation de [!DNL Target] pour le web côté client
 
-Dans une implémentation côté client de [!DNL Adobe Target], [!DNL Target] fournit les expériences associées directement à une activité dans le navigateur client. Le navigateur décide de l’expérience à afficher et l’affiche. Avec une implémentation côté client, vous pouvez utiliser un éditeur WYSIWYG, le [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html) (VEC) ou une interface non visuelle, le [compositeur d’expérience basé sur les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html), pour créer vos expériences d’activité et de personnalisation.
+Dans une implémentation côté client de [!DNL Adobe Target], [!DNL Target] fournit les expériences associées directement à une activité dans le navigateur client. Le navigateur décide de l’expérience à afficher et l’affiche. Avec une implémentation côté client, vous pouvez utiliser un éditeur WYSIWYG, le [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=fr) (VEC) ou une interface non visuelle, le [compositeur d’expérience basé sur les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=fr), pour créer vos expériences d’activité et de personnalisation.
 
 Pour implémenter [!DNL Target] côté client, vous devez utiliser l’une des bibliothèques JavaScript suivantes :
 
@@ -26,4 +26,4 @@ Pour implémenter [!DNL Target] côté client, vous devez utiliser l’une des b
   La bibliothèque JavaScript at.js réduit les délais de chargement des pages pour les implémentations web, renforce la sécurité et offre des options d’implémentation optimisées pour les applications d’une seule page. Si vous choisissez de migrer vers at.js, reportez-vous aux sections [Fonctionnement d’at.js](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md) et [[!DNL Adobe Target] Skill Builder : Chat du développeur, mbox.js d’Adobe Target vers at.js](https://seminars.adobeconnect.com/ptdo6mfo6qn6/?proto=true).
 
 
-Voir [Comparaison de la bibliothèque at.js avec le SDK Web](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/adobe-target/web-sdk-atjs-comparison){target=_blank} pour en savoir plus sur les différences entre les deux approches d’implémentation.
+Voir [Comparaison de la bibliothèque at.js avec le SDK Web](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/personalization/adobe-target/web-sdk-atjs-comparison){target=_blank} pour en savoir plus sur les différences entre les deux approches d’implémentation.

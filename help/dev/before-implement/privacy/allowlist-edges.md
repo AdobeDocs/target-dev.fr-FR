@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Informations et liste actualisée des hôtes pour vous aider à placer sur la liste autorisée les [!DNL Adobe Target] périphéries.
 
-Une périphérie est une architecture de diffusion géographiquement répartie qui assure un temps de réponse optimal pour les utilisateurs qui demandent du contenu, où qu’ils se trouvent. Chaque noeud de périphérie contient toutes les informations nécessaires pour répondre à la requête de contenu de l’utilisateur et pour effectuer le suivi des données d’analyse de cette requête. Les requêtes des utilisateurs sont acheminées vers le noeud de périphérie le plus proche. Pour plus d’informations, voir [The edge network](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html#concept_0AE2ED8E9DE64288A8B30FCBF1040934).
+Une périphérie est une architecture de diffusion géographiquement répartie qui assure un temps de réponse optimal pour les utilisateurs qui demandent du contenu, où qu’ils se trouvent. Chaque noeud de périphérie contient toutes les informations nécessaires pour répondre à la requête de contenu de l’utilisateur et pour effectuer le suivi des données d’analyse de cette requête. Les requêtes des utilisateurs sont acheminées vers le noeud de périphérie le plus proche. Pour plus d’informations, voir [The edge network](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=fr#concept_0AE2ED8E9DE64288A8B30FCBF1040934).
 
 Si vous le souhaitez, vous pouvez placer sur la liste autorisée [!DNL Target] noeuds périphériques.
 
@@ -23,7 +23,7 @@ Si vous le souhaitez, vous pouvez placer sur la liste autorisée [!DNL Target] n
 >
 >Outre le fait de placer sur la liste autorisée les adresses IP NAT (Network Address Translation) des [!DNL Target] périphéries et des [!DNL Target] edge IP addresses mentionnées dans l’article, vous devez également placer sur la liste autorisée tous les blocs d’adresses IP [!DNL Adobe Analytics].
 >
->Pour plus d’informations, voir [Tous les blocs d’adresse IP Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=en#all-adobe-analytics-ip-address-blocks){target=_blank} dans la documentation *Notes techniques Adobe Analytics*.
+>Pour plus d’informations, voir [Tous les blocs d’adresse IP Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/technotes/ip-addresses.html?lang=fr#all-adobe-analytics-ip-address-blocks){target=_blank} dans la documentation *Notes techniques Adobe Analytics*.
 >
 >L’infrastructure [!DNL Adobe Target] est en cours de mise à jour et les clients qui souhaitent placer sur la liste autorisée des adresses doivent utiliser les deux ensembles d’adresses IP. Sinon, les clients qui utilisent des implémentations côté serveur ou hybrides, dans lesquelles les appels d’API Target pour récupérer des expériences sont issus d’un réseau derrière un pare-feu configuré pour utiliser une liste autorisée, seront affectés.
 >
