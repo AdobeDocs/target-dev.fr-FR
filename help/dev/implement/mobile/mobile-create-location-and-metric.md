@@ -21,11 +21,11 @@ Pour utiliser [!DNL Target] dans votre application mobile, créez un emplacement
 >
 >Le [SDK Adobe Experience Platform pour les applications mobiles](https://developer.adobe.com/client-sdks/documentation/){target=_blank} est la solution recommandée pour alimenter les services et solutions [!DNL Adobe Experience Cloud] de vos applications mobiles.
 
-Cette section comprend un exemple de code pouvant être utilisé comme modèle pour votre application. Les exemples de cette section contiennent un code pour iOS. Les mêmes modèles s’appliquent à Android. La syntaxe spécifique à Android est disponible dans le guide [Android SDK 4.x pour solutions Experience Cloud](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/target-main.html) .
+Cette section comprend un exemple de code pouvant être utilisé comme modèle pour votre application. Les exemples de cette section contiennent un code pour iOS. Les mêmes modèles s’appliquent à Android. La syntaxe spécifique à Android est disponible dans le guide [Android SDK 4.x pour solutions Experience Cloud](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/target-main.html?lang=fr) .
 
 >[!NOTE]
 >
->Pour obtenir la liste de toutes les méthodes [!DNL Target] disponibles, reportez-vous à la [documentation mobile](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-target-methods.html) .
+>Pour obtenir la liste de toutes les méthodes [!DNL Target] disponibles, reportez-vous à la [documentation mobile](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-target-methods.html?lang=fr) .
 
 Pour créer un emplacement [!DNL Target] dans votre application et effectuer une requête, il existe deux méthodes principales :
 
