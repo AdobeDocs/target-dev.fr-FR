@@ -2,9 +2,9 @@
 user-guide-title: Guide du développeur d’Adobe Target
 breadcrumb-title: Guide du développeur de Target
 user-guide-description: Découvrez comment personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques.
-source-git-commit: c963a070a7a4c5e7dc2915eb5ac7d60895340705
+source-git-commit: ac13e0dd7f67de50b77778921c90a95f12c2b9e4
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '769'
 ht-degree: 45%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 45%
       + [Attributs de profil de script](before-implement/methods-to-get-data-into-target/script-profile-attributes.md)
       + [Fournisseurs de données](before-implement/methods-to-get-data-into-target/data-providers.md)
       + [API de mise à jour des profils en masse](before-implement/methods-to-get-data-into-target/bulk-profile-update-api.md)
-      + [API de mise à jour de profil unique](before-implement/methods-to-get-data-into-target/single-profile-update-api.md)
+      + [API de mise à jour de profil individuel](before-implement/methods-to-get-data-into-target/single-profile-update-api.md)
       + [Attributs du client](before-implement/methods-to-get-data-into-target/customer-attributes.md)
       + [Paramètres de l’API de profil](before-implement/methods-to-get-data-into-target/profile-api-settings.md)
    + [Présentation de la sécurité de Target](before-implement/target-security-overview.md)
@@ -43,7 +43,9 @@ ht-degree: 45%
    + [CNAME et Adobe Target](before-implement/implement-cname-support-in-target.md)
 + Implémentation côté client {#client-side}
    + [Aperçu : implémentation de Target pour le web côté client](implement/client-side/overview.md)
-   + [Mise en oeuvre du SDK Web Adobe Experience Platform - Aperçu](implement/client-side/aep-web-sdk.md)
+   + Adobe Experience Platform Web SDK {#web-sdk}
+      + [Présentation de l’implémentation de Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)
+      + [Utiliser Adobe Target et Web SDK pour la personnalisation](/help/dev/implement/client-side/aep-web-sdk/target-overview.md)
    + Implémentation d’at.js {#at-js-implementation}
       + [Présentation d’at.js](implement/client-side/atjs/how-atjs-works/overview.md)
       + Fonctionnement d’at.js {#at-js}
@@ -83,7 +85,7 @@ ht-degree: 45%
       + [Informations détaillées sur les versions du fichier at.js](implement/client-side/atjs/target-atjs-versions.md)
       + [Mise à niveau d’at.js 1.x vers at.js 2.x](implement/client-side/atjs/upgrading-from-atjs-1x-to-atjs-20.md)
       + [cookies at.js](implement/client-side/atjs/atjs-cookies.md)
-   + [Conseils sur l’agent utilisateur et le client](implement/client-side/atjs/user-agent-and-client-hints.md)
+   + [User-agent et client hints](implement/client-side/atjs/user-agent-and-client-hints.md)
    + Présentation de la mbox globale {#global-mbox}
       + [Présentation de la mbox globale](implement/client-side/atjs/global-mbox/global-mbox-overview.md)
       + [Personnalisation d’une mbox globale](implement/client-side/atjs/global-mbox/customize-global-mbox.md)
@@ -92,93 +94,93 @@ ht-degree: 45%
       + [Questions fréquentes relatives aux mboxes globales](implement/client-side/atjs/global-mbox/global-mbox-faq.md)
 + Implémentation côté serveur {#server-side}
    + [Aperçu de l’implémentation de Target côté serveur](implement/server-side/server-side-overview.md)
-   + [Prise en main des SDK Target](implement/server-side/sdk-guides/getting-started/getting-started.md)
+   + [Prise en main des SDK de Target](implement/server-side/sdk-guides/getting-started/getting-started.md)
    + [Exemples d’applications](implement/server-side/sdk-guides/sample-apps/sample-apps.md)
    + [Transition des API héritées de Target vers Adobe I/O](implement/server-side/transition-from-target-classic-apis.md)
-   + Principes de base {#core-principles}
+   + Principes fondamentaux {#core-principles}
       + [Présentation des principes de base](implement/server-side/sdk-guides/core-principles/overview.md)
-      + [Identifiant utilisateur et regroupement](implement/server-side/sdk-guides/core-principles/user-identification-and-bucketing.md)
-      + [Ciblage de l’audience](implement/server-side/sdk-guides/core-principles/audience-targeting.md)
+      + [ID utilisateur et regroupement](implement/server-side/sdk-guides/core-principles/user-identification-and-bucketing.md)
+      + [Ciblage des audiences](implement/server-side/sdk-guides/core-principles/audience-targeting.md)
       + [Suivi des événements](implement/server-side/sdk-guides/core-principles/event-tracking.md)
-      + [Autorisations et propriétés des utilisateurs](implement/server-side/sdk-guides/core-principles/user-permissions-and-properties.md)
+      + [Autorisations et propriétés de l’utilisateur](implement/server-side/sdk-guides/core-principles/user-permissions-and-properties.md)
    + Intégration {#integration}
       + [Présentation de l’intégration](implement/server-side/sdk-guides/integration-with-experience-cloud/overview.md)
-      + [Service d’ID Experience Cloud (ECID)](implement/server-side/sdk-guides/integration-with-experience-cloud/ecid.md)
+      + [Service Experience Cloud ID (ECID)](implement/server-side/sdk-guides/integration-with-experience-cloud/ecid.md)
       + [Rapports Analytics for Target (A4T)](implement/server-side/sdk-guides/integration-with-experience-cloud/a4t-reporting.md)
       + [Segments AAM](implement/server-side/sdk-guides/integration-with-experience-cloud/aam-segments.md)
-   + Prise de décision sur appareil {#on-device-decisioning}
+   + Prise De Décision Sur L’Appareil {#on-device-decisioning}
       + [Présentation de la prise de décision sur l’appareil](implement/server-side/sdk-guides/on-device-decisioning/overview.md)
       + Artefact de règle {#rule-artifact}
          + [Aperçu de l’artefact de règle](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md)
-         + [Téléchargement via le SDK Adobe Target](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-sdk.md)
-         + [Téléchargement via la payload JSON](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-json.md)
+         + [Télécharger via Adobe Target SDK](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-sdk.md)
+         + [Télécharger via une payload JSON](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-json.md)
          + [Exemple d’artefact de règle](implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-example.md)
-      + [Exécution de tests A/B avec des indicateurs de fonctionnalité](implement/server-side/sdk-guides/on-device-decisioning/execute-ab-tests-with-feature-flags.md)
-      + [Exécution de tests de fonctionnalités avec des attributs](implement/server-side/sdk-guides/on-device-decisioning/execute-feature-tests-with-attributes.md)
-      + [Gestion des déploiements pour les tests de fonctionnalités](implement/server-side/sdk-guides/on-device-decisioning/manage-rollouts-for-feature-tests.md)
+      + [Exécuter des tests A/B avec des indicateurs de fonctionnalité](implement/server-side/sdk-guides/on-device-decisioning/execute-ab-tests-with-feature-flags.md)
+      + [Exécuter des tests de fonctionnalité avec des attributs](implement/server-side/sdk-guides/on-device-decisioning/execute-feature-tests-with-attributes.md)
+      + [Gestion des déploiements pour les tests de fonctionnalité](implement/server-side/sdk-guides/on-device-decisioning/manage-rollouts-for-feature-tests.md)
       + [Personnalisation de la diffusion](implement/server-side/sdk-guides/on-device-decisioning/deliver-personalization.md)
       + [Présentation des fonctionnalités prises en charge](implement/server-side/sdk-guides/on-device-decisioning/supported-features.md)
-      + [Dépannage de la prise de décision sur appareil](implement/server-side/sdk-guides/on-device-decisioning/troubleshooting.md)
+      + [Résolution des problèmes de prise de décision sur l’appareil](implement/server-side/sdk-guides/on-device-decisioning/troubleshooting.md)
       + [Bonnes pratiques](implement/server-side/sdk-guides/best-practices/best-practices.md)
    + Référence du SDK Node.js {#node-js}
-      + [Présentation du SDK Node.js](implement/server-side/node-js/overview.md)
+      + [Présentation de Node.js SDK](implement/server-side/node-js/overview.md)
       + [Installation du SDK Node.js](implement/server-side/node-js/install-sdk.md)
-      + [Initialisation du SDK Node.js](implement/server-side/node-js/initialize-sdk.md)
-      + [Obtention d’offres (Node.js)](implement/server-side/node-js/get-offers.md)
-      + [Obtention d’attributs (Node.js)](implement/server-side/node-js/get-attributes.md)
+      + [Initialiser le SDK Node.js](implement/server-side/node-js/initialize-sdk.md)
+      + [Obtenir des offres (Node.js)](implement/server-side/node-js/get-offers.md)
+      + [Obtenir les attributs (Node.js)](implement/server-side/node-js/get-attributes.md)
       + [Envoi de notifications (Node.js)](implement/server-side/node-js/send-notifications.md)
       + [Événements SDK (Node.js)](implement/server-side/node-js/sdk-events.md)
       + [Enregistreur (Node.js)](implement/server-side/node-js/logger.md)
       + [Configuration du proxy (Node.js)](implement/server-side/node-js/proxy-configuration.md)
-   + Référence du SDK Java {#java}
-      + [Présentation du SDK Java](implement/server-side/java/overview.md)
-      + [Installation du SDK Java](implement/server-side/java/install-sdk.md)
-      + [Initialisation du SDK Java](implement/server-side/java/initialize-sdk.md)
-      + [Obtention d’offres (Java)](implement/server-side/java/get-offers.md)
-      + [Obtenir des attributs (Java)](implement/server-side/java/get-attributes.md)
-      + [Envoi de notifications (Java)](implement/server-side/java/send-notifications.md)
+   + Référence SDK Java {#java}
+      + [Présentation de Java SDK](implement/server-side/java/overview.md)
+      + [Installation de Java SDK](implement/server-side/java/install-sdk.md)
+      + [Initialiser le SDK Java](implement/server-side/java/initialize-sdk.md)
+      + [Obtenir Des Offres (Java)](implement/server-side/java/get-offers.md)
+      + [Obtenir Les Attributs (Java)](implement/server-side/java/get-attributes.md)
+      + [Envoyer des notifications (Java)](implement/server-side/java/send-notifications.md)
       + [Événements SDK (Java)](implement/server-side/java/sdk-events.md)
       + [Enregistreur (Java)](implement/server-side/java/logger.md)
-      + [Requêtes asynchrones (Java)](implement/server-side/java/asynchronous-requests.md)
-      + [Configuration du proxy (Java)](implement/server-side/java/proxy-configuration.md)
-      + [Configuration client HTTP personnalisée (Java)](implement/server-side/java/custom-http-client.md)
-      + [Méthodes d’utilitaire (Java)](implement/server-side/java/utility-methods.md)
-   + Référence du SDK .NET {#net}
-      + [Présentation du SDK .NET](implement/server-side/net/overview.md)
-      + [Installation du SDK .Net](implement/server-side/net/install-sdk.md)
-      + [Initialisation du SDK .NET](implement/server-side/net/initialize-sdk.md)
-      + [Obtention d’offres (.NET)](implement/server-side/net/get-offers.md)
-      + [Obtention des attributs (.NET)](implement/server-side/net/get-attributes.md)
-      + [Envoi de notifications (.NET)](implement/server-side/net/send-notifications.md)
+      + [Requêtes Asynchrones (Java)](implement/server-side/java/asynchronous-requests.md)
+      + [Configuration Du Proxy (Java)](implement/server-side/java/proxy-configuration.md)
+      + [Configuration personnalisée du client HTTP (Java)](implement/server-side/java/custom-http-client.md)
+      + [Méthodes Utilitaires (Java)](implement/server-side/java/utility-methods.md)
+   + Référence SDK .NET {#net}
+      + [Présentation de .NET SDK](implement/server-side/net/overview.md)
+      + [Installer .Net SDK](implement/server-side/net/install-sdk.md)
+      + [Initialiser le SDK .NET](implement/server-side/net/initialize-sdk.md)
+      + [Obtenir les offres (.NET)](implement/server-side/net/get-offers.md)
+      + [Obtenir les attributs (.NET)](implement/server-side/net/get-attributes.md)
+      + [Envoyer des notifications (.NET)](implement/server-side/net/send-notifications.md)
       + [Événements SDK (.NET)](implement/server-side/net/sdk-events.md)
-      + [Requêtes asynchrones (.NET)](implement/server-side/net/asynchronous-requests.md)
-   + Référence du SDK Python {#python}
-      + [Présentation du SDK Python](implement/server-side/python/overview.md)
+      + [Demandes asynchrones (.NET)](implement/server-side/net/asynchronous-requests.md)
+   + Référence SDK Python {#python}
+      + [Présentation de Python SDK](implement/server-side/python/overview.md)
       + [Installation du SDK Python](implement/server-side/python/install-sdk.md)
-      + [Initialisation du SDK Python](implement/server-side/python/initialize-sdk.md)
-      + [Obtention d’offres (Python)](implement/server-side/python/get-offers.md)
-      + [Obtenir des attributs (Python)](implement/server-side/python/get-attributes.md)
-      + [Envoyer des notifications (Python)](implement/server-side/python/send-notifications.md)
+      + [Initialiser le SDK Python](implement/server-side/python/initialize-sdk.md)
+      + [Obtenir Des Offres (Python)](implement/server-side/python/get-offers.md)
+      + [Obtenir Les Attributs (Python)](implement/server-side/python/get-attributes.md)
+      + [Envoyer Des Notifications (Python)](implement/server-side/python/send-notifications.md)
       + [Événements SDK (Python)](implement/server-side/python/sdk-events.md)
-      + [Requêtes asynchrones (Python)](implement/server-side/python/asynchronous-requests.md)
+      + [Requêtes Asynchrones (Python)](implement/server-side/python/asynchronous-requests.md)
       + [Enregistreur (Python)](implement/server-side/python/logger.md)
 + [Implémentation hybride](implement/hybrid/hybrid-overview.md)
-+ [Implémentation Recommendations](implement/recommendations/recommendations.md)
-+ [bêta de mise en oeuvre de Recommendations](/help/dev/implement/recommendations/recommendations-beta.md)
-+ Implémentation de l&#39;application mobile {#mobile-apps}
++ [Implémentation de Recommendations](implement/recommendations/recommendations.md)
++ [Implémentation de Recommendations bêta](/help/dev/implement/recommendations/recommendations-beta.md)
++ Implémentation des applications mobiles {#mobile-apps}
    + [Target pour les applications mobiles](implement/mobile/overview.md)
    + [Aperçu de Target Mobile](implement/mobile/target-mobile-preview.md)
    + [Utilisation du service de localisation](implement/mobile/use-location-service.md)
    + [FAQ sur Target pour les applications mobiles](implement/mobile/mobile-faq.md)
-   + [Mise en oeuvre de Target avec le SDK AEP Mobile dans une application native avec des vues web](/help/dev/implement/mobile/native-app.md)
-+ Implémentation des emails {#implement-email}
+   + [Implémentation de Target avec AEP Mobile SDK dans une application native avec vues web](/help/dev/implement/mobile/native-app.md)
++ Implémentation par e-mail {#implement-email}
    + [Message électronique : implémentation de Target](implement/email/overview.md)
    + [Création d’une adbox pour une image](implement/email/testing-content-with-the-adbox.md)
    + [Test d’une adbox d’image de courrier électronique](implement/email/testing-email-image-adbox.md)
    + [Fonctionnement avec un redirecteur](implement/email/working-with-redirectors.md)
-+ Guides de l’API {#api}
++ Guides d’API {#api}
    + [Présentation de l’API Target](/help/dev/before-administer/target-api-overview.md)
-   + [Configuration de l’authentification pour les API Target](/help/dev/before-administer/configure-authentication.md)
+   + [Configurer l’authentification pour les API Target](/help/dev/before-administer/configure-authentication.md)
    + Guide de l’API de diffusion {#delivery-api}
       + [Présentation de l’API de diffusion](/help/dev/implement/delivery-api/overview.md)
       + [SDK pour interagir avec l’API de diffusion](/help/dev/before-implement/delivery-api-overview/sdks.md)
@@ -188,38 +190,38 @@ ht-degree: 45%
       + [Diffusion unique ou par lots](/help/dev/before-implement/delivery-api-overview/single-or-batch.md)
       + [Prérécupération](/help/dev/before-implement/delivery-api-overview/prefetch.md)
       + [Notifications](/help/dev/before-implement/delivery-api-overview/notifications.md)
-      + [Intégration à Experience Cloud](before-implement/delivery-api-overview/integration.md)
+      + [Intégration avec Experience Cloud](before-implement/delivery-api-overview/integration.md)
       + [Considérations et limites connues](/help/dev/before-implement/delivery-api-overview/known-limitations.md)
-      + [Conseils au client](/help/dev/before-implement/delivery-api-overview/client-hints.md)
+      + [Client Hints](/help/dev/before-implement/delivery-api-overview/client-hints.md)
       + [API de diffusion](/help/dev/implement/delivery-api/delivery-api.md)
-   + API d’administration {#admin-api}
-      + [API d’administration - Aperçu](before-administer/admin-api-overview/admin-api-overview.md)
+   + API Admin {#admin-api}
+      + [Présentation de l’API d’administration](before-administer/admin-api-overview/admin-api-overview.md)
       + [API d’administration Adobe Target](/help/dev/administer/admin-api/admin-api-overview-new.md)
-   + API de profil {#profile-apis}
-      + [Présentation de l’API Profiles](/help/dev/administer/profile-api/profiles-api.md)
-      + [Récupération de profils](/help/dev/administer/profile-api/profile-fetch.md)
+   + API Profile {#profile-apis}
+      + [Présentation de l’API de profils](/help/dev/administer/profile-api/profiles-api.md)
+      + [Récupération des profils](/help/dev/administer/profile-api/profile-fetch.md)
       + [Mettre à jour les profils](/help/dev/administer/profile-api/profile-api-overview.md)
-      + [API de mise à jour de profil unique](/help/dev/administer/profile-api/profile-single-api.md)
+      + [API de mise à jour de profil individuel](/help/dev/administer/profile-api/profile-single-api.md)
       + [API de mise à jour des profils en masse](/help/dev/administer/profile-api/profile-bulk-api.md)
    + [API de création de rapports](/help/dev/administer/reporting-api/reporting-api.md)
    + API Recommendations {#recommendations-api}
       + [Présentation de l’API Recommendations](before-administer/recs-api/overview.md)
-      + [Gestion de votre catalogue avec les API](before-administer/recs-api/manage-catalog.md)
+      + [Gestion de votre catalogue à l’aide d’API](before-administer/recs-api/manage-catalog.md)
       + [Gestion des critères personnalisés](before-administer/recs-api/manage-custom-criteria.md)
       + [Utilisation de l’API de diffusion avec Recommendations](before-administer/recs-api/fetch-recs-server-side-delivery-api.md)
-      + [API RECOMMENDATIONS](/help/dev/administer/recommendations-api/recommendations-api.md)
-   + API de modèles {#models-api}
-      + [Présentation de l’API Modèles (Liste bloquée)](before-administer/models-api.md)
-      + [API de modèles](/help/dev/administer/models-api/models-api-overview.md)
+      + [API Recommendations](/help/dev/administer/recommendations-api/recommendations-api.md)
+   + API Modèles {#models-api}
+      + [Présentation de l’API Modèles (Plaçant sur la liste bloquée)](before-administer/models-api.md)
+      + [API Modèles](/help/dev/administer/models-api/models-api-overview.md)
    + [API ADOBE ADMIN CONSOLE](/help/dev/before-implement/delivery-api-overview/adobe-console-api.md)
-   + [API du serveur Edge Network Adobe Experience Platform](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
+   + [API du serveur Adobe Experience Platform Edge Network](/help/dev/before-implement/delivery-api-overview/aep-edge-network-server-api.md)
 + Modèles d’implémentation {#implementation-patterns}
-   + [Présentation des modèles d’implémentation](/help/dev/patterns/pattern-overview.md)
-   + Modèle de mise en oeuvre Recommendations utilisant at.js {#atjs}
-      + [Modèle de mise en oeuvre Recommendations à l’aide de la présentation d’at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
+   + [Modèles d’implémentation - Aperçu](/help/dev/patterns/pattern-overview.md)
+   + Modèle d’implémentation de Recommendations utilisant at.js {#atjs}
+      + [Modèle d’implémentation de Recommendations à l’aide d’at.js](/help/dev/patterns/recs-atjs/recs-implementation-pattern-atjs.md)
       + [Initialisation des SDK](/help/dev/patterns/recs-atjs/initialize-sdk.md)
-      + [Configuration de la collecte de données](/help/dev/patterns/recs-atjs/data-collection.md)
-      + [Rendu d’expériences](/help/dev/patterns/recs-atjs/render-experiences.md)
+      + [Configurer la collecte de données](/help/dev/patterns/recs-atjs/data-collection.md)
+      + [Rendu des expériences](/help/dev/patterns/recs-atjs/render-experiences.md)
       + [Notifier Target](/help/dev/patterns/recs-atjs/notify-target.md)
 
 
