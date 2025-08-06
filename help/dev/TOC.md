@@ -2,7 +2,7 @@
 user-guide-title: Guide du développeur d’Adobe Target
 breadcrumb-title: Guide du développeur de Target
 user-guide-description: Découvrez comment personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques.
-source-git-commit: 777feec0cd9b2bd6a9c7167acf1371fa1184af89
+source-git-commit: 8f24ffe82e16de0dbbd86d3baf0e76d826a98a9a
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 43%
@@ -40,7 +40,7 @@ ht-degree: 43%
    + [Présentation de la sécurité de Target](before-implement/target-security-overview.md)
    + [Navigateurs pris en charge](before-implement/supported-browsers.md)
    + [Modifications du chiffrement de TLS (Transport Layer Security)](before-implement/tls-transport-layer-security-encryption.md)
-   + [CNAME et Adobe Target](before-implement/implement-cname-support-in-target.md)
+   + [CNAME et Adobe Target](before-implement/implement-cname-support-in-target.md)
 + Implémentation côté client {#client-side}
    + [Aperçu : implémentation de Target pour le web côté client](implement/client-side/overview.md)
    + Implémentation de Adobe Experience Platform Web SDK {#aep}
