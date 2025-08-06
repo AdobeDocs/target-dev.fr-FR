@@ -14,13 +14,13 @@ ht-degree: 16%
 
 Dans [!DNL Adobe Target], le `mbox3rdPartyId` représente l’identifiant visiteur de votre société. Il s’agit par exemple de l’identifiant d’abonnement pour le programme de fidélité de votre société.
 
-Lorsqu’un visiteur se connecte au site d’une entreprise, l’entreprise crée généralement un identifiant lié au compte du visiteur, à la carte de fidélité, au numéro d’abonnement ou à d’autres identifiants applicables de cette entreprise. [En savoir plus](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html)
+Lorsqu’un visiteur se connecte au site d’une entreprise, l’entreprise crée généralement un identifiant lié au compte du visiteur, à la carte de fidélité, au numéro d’abonnement ou à d’autres identifiants applicables de cette entreprise. [En savoir plus](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=fr)
 
 ## Comment utiliser `mbox3rdPartyId` avec le [!DNL Platform Web SDK]
 
 ### Étape 1 : configurer le `Target Third Party ID Namespace`
 
-Configurez le `Target Third Party ID Namespace` dans votre [flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) en utilisant l’espace de noms d’identifiant que vous souhaitez utiliser comme identifiant tiers de mbox. [En savoir plus sur les espaces de noms d’ID](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html)
+Configurez le `Target Third Party ID Namespace` dans votre [flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview) en utilisant l’espace de noms d’identifiant que vous souhaitez utiliser comme identifiant tiers de mbox. [En savoir plus sur les espaces de noms d’ID](https://experienceleague.adobe.com/docs/experience-platform/identity/namespaces.html?lang=fr)
 
 ![Interface utilisateur d’Experience Platform affichant le champ Espace de noms de l’identifiant tiers cible.](/help/dev/implement/client-side/aep-web-sdk/assets/mbox3rdpartyid.png)
 
