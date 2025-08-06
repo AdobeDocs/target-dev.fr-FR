@@ -815,7 +815,7 @@ Lorsque cette option est configurée, le format de la payload renvoyée est le s
 }
 ```
 
-La payload peut ensuite être transmise à [!DNL Analytics] via l’[!DNL  Data Insertion API] .
+La payload peut ensuite être transmise à [!DNL Analytics] via l’[!DNL &#x200B; Data Insertion API] .
 
 Exemple 2 : le configurer dans chaque fonction `getOffers` :
 
