@@ -4,7 +4,7 @@ description: Découvrez comment utiliser  [!DNL Adobe Target] [!UICONTROL Bulk P
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 39f0ab4a6b06d0b3415be850487552714f51b4a2
+source-git-commit: 8cab20a7842b0a05c5b2a845662a7ab5f60393bd
 workflow-type: tm+mt
 source-wordcount: '929'
 ht-degree: 7%
@@ -26,7 +26,7 @@ Le [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] vous permet de mettr
 >
 >La version 2 (v2) du [!DNL Bulk Profile Update API] est la version actuelle. Toutefois, [!DNL Target] continue de prendre en charge la version 1 (v1).
 >
->* **Implémentations autonomes qui ne reposent pas sur `PCID`, utilisez la version 2** : si votre implémentation [!DNL Target] utilise [!DNL Experience Cloud ID] (ECID) comme identifiant de profil pour les visiteurs anonymes, vous ne devez pas utiliser `pcId` comme clé dans un fichier de commandes de la version 2 (v2). L’utilisation de `pcId` avec la version 2 de l’[!DNL Bulk Profile Update API] est destinée aux implémentations [!DNL Target] autonomes qui ne reposent pas sur `ECID`.
+>* **Implémentations autonomes qui ne reposent pas sur `ECID`, utilisez la version 2** : si votre implémentation [!DNL Target] utilise [!DNL Experience Cloud ID] (ECID) comme identifiant de profil pour les visiteurs anonymes, vous ne devez pas utiliser `pcId` comme clé dans un fichier de commandes de la version 2 (v2). L’utilisation de `pcId` avec la version 2 de l’[!DNL Bulk Profile Update API] est destinée aux implémentations [!DNL Target] autonomes qui ne reposent pas sur `ECID`.
 >
 >* **Implémentations qui reposent sur `thirdPartID`, utilisez la version 1** : les implémentations qui utilisent `ECID` pour l’identification des profils doivent utiliser la version 1 (v1) de l’API si vous souhaitez utiliser `pcId` comme clé dans le fichier de commandes. Si votre implémentation utilise `thirdPartyId` pour l’identification de profil, la version 2 (v2) est recommandée avec `thirdPartyId` comme clé.
 
@@ -47,13 +47,13 @@ Le [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] vous permet de mettr
 
 Pour mettre à jour les données de profil en bloc, créez un fichier de commandes. Le fichier de commandes est un fichier texte dont les valeurs sont séparées par des virgules, semblable au fichier d’exemple suivant.
 
-``` ```
+``````
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+``````
 
 >[!NOTE]
 >
@@ -75,9 +75,9 @@ Vous référencez ce fichier dans l’appel POST aux serveurs [!DNL Target] pour
 
 Envoyez une requête HTTP POST aux serveurs Edge de [!DNL Target] pour traiter le fichier. Voici un exemple de requête HTTP POST pour le fichier batch.txt à l’aide de la commande curl :
 
-``` ```
+``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+``````
 
 Où :
 
