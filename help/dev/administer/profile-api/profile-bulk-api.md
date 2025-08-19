@@ -1,79 +1,83 @@
 ---
-title: API de mise à jour du profil en bloc d’Adobe Target
-description: Découvrez comment utiliser [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] pour envoyer les données de profil de plusieurs visiteurs à  [!DNL Target]  en vue de les utiliser dans le ciblage.
+title: API de mise à jour du profil en bloc Adobe Target
+description: Découvrez comment utiliser  [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] pour envoyer les données de profil de plusieurs visiteurs à afin  [!DNL Target]  les utiliser dans le ciblage.
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: bee8752dd212a14f8414879e03565867eb87f6b9
+source-git-commit: 39f0ab4a6b06d0b3415be850487552714f51b4a2
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 8%
+source-wordcount: '929'
+ht-degree: 7%
 
 ---
 
 # [!DNL Adobe Target Bulk Profile Update API]
 
-Le [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] permet de mettre à jour en masse les profils utilisateur de plusieurs visiteurs d’un site web à l’aide d’un fichier de commandes.
+Le [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] vous permet de mettre à jour en bloc les profils utilisateur de plusieurs visiteurs d’un site web à l’aide d’un fichier de commandes.
 
-Grâce à [!UICONTROL Bulk Profile Update API], vous pouvez facilement envoyer des données détaillées sur le profil du visiteur sous la forme de paramètres de profil pour de nombreux utilisateurs à [!DNL Target] à partir de n’importe quelle source externe. Les sources externes peuvent inclure des systèmes de gestion de la relation client (CRM) ou de point de vente (POS), qui ne sont généralement pas disponibles sur une page web.
+À l’aide de l’[!UICONTROL Bulk Profile Update API] , vous pouvez envoyer des données de profil de visiteur détaillées sous la forme de paramètres de profil à de nombreux utilisateurs à [!DNL Target] de n’importe quelle source externe. Les sources externes peuvent inclure les systèmes de gestion de la relation client (CRM) ou de point de vente (POS), qui ne sont généralement pas disponibles sur une page web.
 
 | Version | Exemple d’URL | Fonctionnalités |
 | --- | --- | --- |
-| v1 | `http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/profile/batchUpdate` | Prise en charge de la mise à jour des profils en masse uniquement. |
-| v2 | `http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate` | <ul><li>Créez un profil s’il est introuvable.</li><li>Mise à jour de l’état par ligne.</li></ul> |
+| v1 | `http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/profile/batchUpdate` | Prise en charge de la mise à jour de profil en masse uniquement. |
+| v2 | `http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate` | <ul><li>Créer le profil s’il est introuvable.</li><li>Mise à jour du statut par ligne.</li></ul> |
 
 >[!NOTE]
 >
->La version 2 (v2) de [!UICONTROL Bulk Profile Update API] est la version actuelle. Cependant, [!DNL Target] prend toujours en charge la version 1 (v1).
+>La version 2 (v2) du [!DNL Bulk Profile Update API] est la version actuelle. Toutefois, [!DNL Target] continue de prendre en charge la version 1 (v1).
+>
+>* **Implémentations autonomes qui ne reposent pas sur `PCID`, utilisez la version 2** : si votre implémentation [!DNL Target] utilise [!DNL Experience Cloud ID] (ECID) comme identifiant de profil pour les visiteurs anonymes, vous ne devez pas utiliser `pcId` comme clé dans un fichier de commandes de la version 2 (v2). L’utilisation de `pcId` avec la version 2 de l’[!DNL Bulk Profile Update API] est destinée aux implémentations [!DNL Target] autonomes qui ne reposent pas sur `ECID`.
+>
+>* **Implémentations qui reposent sur `thirdPartID`, utilisez la version 1** : les implémentations qui utilisent `ECID` pour l’identification des profils doivent utiliser la version 1 (v1) de l’API si vous souhaitez utiliser `pcId` comme clé dans le fichier de commandes. Si votre implémentation utilise `thirdPartyId` pour l’identification de profil, la version 2 (v2) est recommandée avec `thirdPartyId` comme clé.
 
-## Avantages de l’API de mise à jour du profil en bloc
+## Avantages du [!UICONTROL Bulk Profile Update API]
 
 * Nombre d’attributs de profil illimité.
-* Les attributs de profil envoyés via le site peuvent être mis à jour via l’API et de la manière inverse.
+* Les attributs de profil envoyés via le site peuvent être mis à jour via l’API et inversement.
 
 ## Avertissements
 
 * La taille du fichier de traitement par lot doit être inférieure à 50 Mo. En outre, le nombre total de lignes ne doit pas dépasser 500 000 lignes par téléchargement.
-* Les mises à jour surviennent généralement en moins d’une heure, mais peuvent prendre jusqu’à 24 heures pour être répercutées.
-* Le nombre de lignes que vous pouvez transférer sur une période de 24 heures dans les lots suivants n’est pas limité. Cependant, le processus d’assimilation peut être ralenti pendant les heures ouvrables pour s’assurer que les autres processus s’exécutent efficacement.
-* Les appels de mise à jour de lots v2 consécutifs sans appels de mbox intermédiaires pour le même thirdPartyIds remplacent les propriétés mises à jour lors du premier appel de mise à jour de lots.
-* [!DNL Adobe] ne garantit pas que 100 % des données de profil de lot seront intégrées et conservées dans Target et, par conséquent, seront disponibles pour une utilisation dans le ciblage. Dans la conception actuelle, il est possible qu’un faible pourcentage de données (jusqu’à 0,1 % des grands lots de production) ne soient pas intégrées ou conservées.
+* Les mises à jour se produisent généralement en moins d’une heure, mais leur prise en compte peut prendre jusqu’à 24 heures.
+* Le nombre de lignes que vous pouvez charger sur une période de 24 heures dans les lots suivants n’est pas limité. Cependant, le processus d’assimilation peut être ralenti pendant les heures ouvrables pour s’assurer que les autres processus s’exécutent efficacement.
+* Les appels de mise à jour par lots v2 consécutifs sans appels de mbox entre les deux pour le même thirdPartyIds remplacent les propriétés mises à jour dans le premier appel de mise à jour par lots.
+* [!DNL Adobe] ne garantit pas que 100 % des données de profil par lot seront intégrées et conservées dans Target et pourront donc être utilisées dans le ciblage. Dans la conception actuelle, il est possible qu’un petit pourcentage de données (jusqu’à 0,1 % des grands lots de production) ne soit pas intégré ou conservé.
 
-## Fichier batch
+## Fichier de commandes
 
-Pour mettre à jour les données de profil en bloc, créez un fichier de commandes. Le fichier de commandes est un fichier texte dont les valeurs sont séparées par des virgules, comme dans l’exemple de fichier suivant.
+Pour mettre à jour les données de profil en bloc, créez un fichier de commandes. Le fichier de commandes est un fichier texte dont les valeurs sont séparées par des virgules, semblable au fichier d’exemple suivant.
 
-``` ```
+``````
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+``````
 
 >[!NOTE]
 >
->Le paramètre `batch=` est requis et doit être spécifié au début du fichier.
+>Le paramètre `batch=` est obligatoire et doit être spécifié au début du fichier.
 
-Vous référencez ce fichier dans l’appel du POST aux serveurs [!DNL Target] pour traiter le fichier. Lors de la création du fichier de commandes, tenez compte des points suivants :
+Vous référencez ce fichier dans l’appel POST aux serveurs [!DNL Target] pour le traiter. Lors de la création du fichier de commandes, tenez compte des points suivants :
 
 * La première ligne du fichier doit spécifier les en-têtes de colonne.
-* Le premier en-tête doit être `pcId` ou `thirdPartyId`. [!UICONTROL Marketing Cloud visitor ID] n’est pas pris en charge. [!UICONTROL pcId] est un identifiant visiteur généré par [!DNL Target]. `thirdPartyId` est un identifiant spécifié par l’application cliente, qui est transmis à [!DNL Target] par le biais d’un appel de mbox en tant que `mbox3rdPartyId`. Il doit être désigné ici sous le nom `thirdPartyId`.
-* Pour des raisons de sécurité, les paramètres et valeurs que vous spécifiez dans le fichier de lot doivent être codés au format URL à l’aide du codage UTF-8. Les paramètres et valeurs peuvent être transférés vers d’autres noeuds périphériques pour traitement via des requêtes HTTP.
-* Les paramètres doivent être au format `paramName` uniquement. Les paramètres sont affichés dans [!DNL Target] sous la forme `profile.paramName`.
-* Si vous utilisez [!UICONTROL Bulk Profile Update API] v2, vous n’avez pas besoin de spécifier toutes les valeurs de paramètre pour chaque `pcId`. Les profils sont créés pour tout `pcId` ou `mbox3rdPartyId` introuvable dans [!DNL Target]. Si vous utilisez la version 1, les profils ne sont pas créés pour les pcIds manquants ou mbox3rdPartyIds.
-* La taille du fichier de traitement par lot doit être inférieure à 50 Mo. En outre, le nombre total de lignes ne doit pas dépasser 500 000. Cette limite garantit que les serveurs ne sont pas inondés de requêtes trop nombreuses.
-* Vous pouvez envoyer plusieurs fichiers. Cependant, la somme totale des lignes de tous les fichiers que vous envoyez par jour ne doit pas dépasser un million pour chaque client.
-* Il n’existe aucune restriction quant au nombre d’attributs que vous pouvez transférer. Toutefois, la taille totale des données de profil externes, qui incluent les attributs du client, l’API de profil, les paramètres de profil internes à la mbox et la sortie du script de profil, ne doit pas dépasser 64 Ko.
-* Les paramètres et valeurs sont sensibles à la casse.
+* Le premier en-tête doit être un `pcId` ou un `thirdPartyId`. Le [!UICONTROL Marketing Cloud visitor ID] n’est pas pris en charge. [!UICONTROL pcId] est un visitorID généré par [!DNL Target]. `thirdPartyId` est un identifiant spécifié par l’application cliente et transmis à [!DNL Target] par le biais d’un appel de mbox, selon les `mbox3rdPartyId`. Il faut l&#39;appeler ici `thirdPartyId`.
+* Pour des raisons de sécurité, les paramètres et valeurs que vous spécifiez dans le fichier par lot doivent être encodés en URL à l’aide d’UTF-8. Les paramètres et les valeurs peuvent être transférés vers d’autres nœuds Edge pour traitement via des requêtes HTTP.
+* Les paramètres doivent être au format `paramName` uniquement. Les paramètres s’affichent dans [!DNL Target] sous la forme `profile.paramName`.
+* Si vous utilisez [!UICONTROL Bulk Profile Update API] v2, il n’est pas nécessaire de spécifier toutes les valeurs de paramètre pour chaque `pcId`. Les profils sont créés pour tout `pcId` ou `mbox3rdPartyId` introuvable dans [!DNL Target]. Si vous utilisez v1, les profils ne sont pas créés pour les pcIds ou mbox3rdPartyIds manquants.
+* La taille du fichier de traitement par lot doit être inférieure à 50 Mo. En outre, le nombre total de lignes ne doit pas dépasser 500 000. Cette limite permet de s’assurer que les serveurs ne sont pas submergés par un trop grand nombre de requêtes.
+* Vous pouvez envoyer plusieurs fichiers. Cependant, la somme totale des lignes de tous les fichiers que vous envoyez au cours d’une journée ne doit pas dépasser un million pour chaque client.
+* Le nombre d’attributs que vous pouvez charger n’est pas limité. Cependant, la taille totale des données de profil externes, qui comprennent les attributs du client, l’API de profil, les paramètres de profil In-Mbox et la sortie de script de profil, ne doit pas dépasser 64 Ko.
+* Les paramètres et les valeurs sont sensibles à la casse.
 
-## requête de POST HTTP
+## Requête HTTP POST
 
-Effectuez une requête de POST HTTP aux serveurs Edge [!DNL Target] pour traiter le fichier. Voici un exemple de requête de POST HTTP pour le fichier batch.txt à l’aide de la commande curl :
+Envoyez une requête HTTP POST aux serveurs Edge de [!DNL Target] pour traiter le fichier. Voici un exemple de requête HTTP POST pour le fichier batch.txt à l’aide de la commande curl :
 
-``` ```
+``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+``````
 
 Où :
 
@@ -81,13 +85,13 @@ BATCH.TXT est le nom du fichier. CLIENTCODE est le code client [!DNL Target].
 
 Si vous ne connaissez pas votre code client, dans l’interface utilisateur [!DNL Target], cliquez sur **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. Le code client s’affiche dans la section [!UICONTROL Account Details] .
 
-### Inspect de la réponse
+### Inspecter la réponse
 
-L’API Profiles renvoie l’état d’envoi du lot à traiter avec un lien sous &quot;batchStatus&quot; vers une URL différente qui indique l’état global de la tâche par lots spécifique.
+L’API Profiles renvoie le statut d’envoi du lot à traiter, ainsi qu’un lien sous « batchStatus » vers une autre URL qui indique le statut global du traitement par lots spécifique.
 
-### Exemple de réponse API
+### Exemple de réponse d’API
 
-Le code ci-dessous est un exemple de réponse de l’API Profiles :
+Le code suivant extrait est un exemple de réponse de l’API Profiles :
 
 ```
 <response>
@@ -97,27 +101,27 @@ Le code ci-dessous est un exemple de réponse de l’API Profiles :
 </response>
 ```
 
-En cas d’erreur, la réponse contient `success=false` et un message détaillé pour l’erreur.
+En cas d’erreur, la réponse contient `success=false` et un message détaillé correspondant.
 
-### Réponse d’état du lot par défaut
+### Réponse par défaut au statut du lot
 
-Une réponse par défaut réussie lorsque l’utilisateur clique sur le lien d’URL `batchStatus` ci-dessus ressemble à ce qui suit :
+Une réponse par défaut réussie lorsque l’utilisateur clique sur le lien URL `batchStatus` ci-dessus ressemble à ce qui suit :
 
 ```
 <response><batchId>demo4-1701473848678-13029383</batchId><status>complete</status><batchSize>1</batchSize></response>
 ```
 
-Les valeurs attendues pour les champs d’état sont les suivantes :
+Les valeurs attendues pour les champs de statut sont les suivantes :
 
 | État | Détails |
 | --- | --- |
-| [!UICONTROL complete] | La requête de mise à jour du lot de profils a été effectuée avec succès. |
-| [!UICONTROL incomplete] | La demande de mise à jour du lot de profils est toujours en cours de traitement et n’est pas terminée. |
-| [!UICONTROL stuck] | La demande de mise à jour du lot de profils est bloquée et n’a pas pu être exécutée. |
+| [!UICONTROL complete] | La demande de mise à jour du lot de profils a été effectuée avec succès. |
+| [!UICONTROL incomplete] | La demande de mise à jour par lots de profils est toujours en cours de traitement et n’est pas terminée. |
+| [!UICONTROL stuck] | La demande de mise à jour par lots du profil est bloquée et n’a pas pu être terminée. |
 
-### Réponse détaillée à l’URL d’état du lot
+### Réponse détaillée d’URL de statut du lot
 
-Une réponse plus détaillée peut être récupérée en transmettant un paramètre `showDetails=true` à l’URL `batchStatus` ci-dessus.
+Une réponse plus détaillée peut être récupérée en transmettant un `showDetails=true` de paramètre à l’URL `batchStatus` ci-dessus.
 
 Par exemple :
 
