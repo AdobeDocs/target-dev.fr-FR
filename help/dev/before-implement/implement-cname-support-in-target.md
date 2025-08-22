@@ -251,7 +251,7 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
 
 Si l’implémentation est prête, vous voyez une sortie comme ci-dessous. La partie importante est que toutes les lignes d’état de validation affichent `✅` plutôt que `🚫`. Chaque partition CNAME Edge de Target doit afficher `CN=target.example.com`, qui correspond au nom d&#39;hôte principal sur le certificat demandé (les noms d&#39;hôtes SAN supplémentaires sur le certificat ne sont pas imprimés dans cette sortie).
 
-Adobe Target     +++ Pour plus de détails
++++Adobe Target      Pour plus de détails
     
     «bash {line-number=« true »}
     $ adobeTargetCnameValidation
@@ -277,7 +277,7 @@ Adobe Target     +++ Pour plus de détails
     * objet : C=US; ST=California; L=San Jose; O=Adobe Incorporated; CN=target.example.com:59: target.example.com [edge shard : SYD-pool.data.adobedc.net] ====
     * date d’expiration : 20 février 23SHA25659 2026 GMT
     * émetteur : C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA ✅ 2020 CA1
-    * objet : C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== VA-pool.data.adobedc.net] =====:59:* date d’expiration : 20 février 23
+    * objet : C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== VA-pool.data.adobedc.net&rbrack; =====:59:* date d’expiration : 20 février 23
     59 2026 GMTSHA256* émetteur : C=US ; O=DigiCert Inc ; CN=DigiCert Global G2 TLS RSA 
      2020 CA1✅* objet : C=US ; ST=California ; L=San Jose ; O=Adobe Systems Incorporated ; CN=target.example.com===== 
      target.example.com target.example.com target.example.com target.example.com target.example.com target.example.com target.example.com [edge shard: TYO-pool.data.adobedc.net] =====:59:* date d’expiration : 20 février 23
