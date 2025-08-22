@@ -4,9 +4,9 @@ description: Travaillez avec [!UICONTROL Adobe Client Care] pour implémenter la
 title: Comment utiliser CNAME dans Target ?
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: f894122217529cb40369c003a3b4ed5419fb0505
+source-git-commit: 353597cbbd3478e9598bd42303619440b3b478fd
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1580'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Instructions relatives à l’utilisation de [!DNL Adobe Client Care] pour impl�
    >
    >L’autorité de certification d’Adobe, DigiCert, ne peut pas émettre de certificat tant que cette étape n’est pas terminée. Par conséquent, Adobe ne peut pas répondre à votre demande d’implémentation CNAME tant que cette étape n’est pas terminée.
 
-1. [Remplissez ce formulaire](assets/FPC_Request_Form.xlsx) puis incluez-le lorsque vous [ouvrez un ticket d’assistance clientèle Adobe demandant une prise en charge CNAME](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=fr&#reference_ACA3391A00EF467B87930A450050077C) :
+1. [Remplissez ce formulaire](assets/FPC_Request_Form.xlsx) puis incluez-le lorsque vous [ouvrez un ticket d’assistance clientèle Adobe demandant une prise en charge CNAME](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C) :
 
    * Code client [!DNL Adobe Target] :
    * Noms d&#39;hôtes de certificat SSL (exemple : `target.example.com target.example.org`) :
@@ -96,8 +96,6 @@ Tous les certificats sont RSA SHA-256 et les clés sont RSA 2048 bits, par défa
 Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de commande macOS ou Linux, en utilisant bash et curl >=7.49) :
 
 1. Copiez et collez cette fonction bash dans votre terminal ou collez-la dans votre fichier de script de démarrage bash (généralement `~/.bash_profile` ou `~/.bashrc`) afin qu’elle soit disponible dans toutes les sessions de terminal :
-
-   +++ Afficher les détails
 
    ```bash {line-numbers="true"}
     function adobeTargetCnameValidation {
@@ -243,15 +241,13 @@ Utilisez l’ensemble de commandes suivant (dans le terminal de ligne de command
    }
    ```
 
-   +++
-
 1. Collez cette commande (en remplaçant `target.example.com` par votre nom d’hôte) :
 
    ```adobeTargetCnameValidation target.example.com```
 
 Si l’implémentation est prête, vous voyez une sortie comme ci-dessous. La partie importante est que toutes les lignes d’état de validation affichent `✅` plutôt que `🚫`. Chaque partition CNAME Edge de Target doit afficher `CN=target.example.com`, qui correspond au nom d&#39;hôte principal sur le certificat demandé (les noms d&#39;hôtes SAN supplémentaires sur le certificat ne sont pas imprimés dans cette sortie).
 
-+++Adobe Target      Pour plus de détails
+Adobe Target     +++ Pour plus de détails
     
     «bash {line-number=« true »}
     $ adobeTargetCnameValidation
@@ -277,7 +273,7 @@ Si l’implémentation est prête, vous voyez une sortie comme ci-dessous. La pa
     * objet : C=US; ST=California; L=San Jose; O=Adobe Incorporated; CN=target.example.com:59: target.example.com [edge shard : SYD-pool.data.adobedc.net] ====
     * date d’expiration : 20 février 23SHA25659 2026 GMT
     * émetteur : C=US; O=DigiCert Inc; CN=DigiCert Global G2 TLS RSA ✅ 2020 CA1
-    * objet : C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== VA-pool.data.adobedc.net&rbrack; =====:59:* date d’expiration : 20 février 23
+    * objet : C=US; ST=California; L=San Jose; O=Adobe Systems Incorporated; CN=target.example.com===== VA-pool.data.adobedc.net] =====:59:* date d’expiration : 20 février 23
     59 2026 GMTSHA256* émetteur : C=US ; O=DigiCert Inc ; CN=DigiCert Global G2 TLS RSA 
      2020 CA1✅* objet : C=US ; ST=California ; L=San Jose ; O=Adobe Systems Incorporated ; CN=target.example.com===== 
      target.example.com target.example.com target.example.com target.example.com target.example.com target.example.com target.example.com [edge shard: TYO-pool.data.adobedc.net] =====:59:* date d’expiration : 20 février 23
