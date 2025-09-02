@@ -4,7 +4,7 @@ description: Travaillez avec [!UICONTROL Adobe Client Care] pour implémenter la
 title: Comment utiliser CNAME dans Target ?
 feature: Privacy & Security
 exl-id: 5709df5b-6c21-4fea-b413-ca2e4912d6cb
-source-git-commit: 71a8a2d9d324cd31452a4400d76052432efbfdd4
+source-git-commit: 4f28018a55d484f45ebbbce319d580450d3db68b
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 1%
@@ -31,12 +31,13 @@ Instructions relatives à l’utilisation de [!DNL Adobe Client Care] pour impl�
    >
    >L’autorité de certification d’Adobe, DigiCert, ne peut pas émettre de certificat tant que cette étape n’est pas terminée. Par conséquent, Adobe ne peut pas répondre à votre demande d’implémentation CNAME tant que cette étape n’est pas terminée.
 
-1. [Remplissez ce formulaire](assets/FPC_Request_Form.xlsx) puis incluez-le lorsque vous [ouvrez un ticket d’assistance clientèle Adobe demandant une prise en charge CNAME](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=fr&#reference_ACA3391A00EF467B87930A450050077C) :
+1. [Remplissez ce formulaire](assets/FPC_Request_Form.xlsx) puis incluez-le lorsque vous [ouvrez un ticket d’assistance clientèle Adobe demandant une prise en charge CNAME](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C) :
 
    * Code client [!DNL Adobe Target] :
    * Noms d&#39;hôtes de certificat SSL (exemple : `target.example.com target.example.org`) :
    * Acheteur du certificat SSL (Adobe est vivement recommandé, voir la FAQ) : Adobe/client
    * Si le client achète le certificat, également appelé « Apportez votre propre certificat » (BYOC), renseignez les informations supplémentaires suivantes :
+
       * Organisme de certification (exemple : Société Inc) :
       * Entité organisationnelle du certificat (facultatif, exemple : Marketing) :
       * Pays du certificat (exemple : États-Unis) :
@@ -306,3 +307,4 @@ Remplacez `clientcode` par votre code client, puis ajoutez le texte ou l’image
 
 * Le mode assurance qualité n’est pas contigu lorsque vous disposez de CNAME et d’at.js 1.x, car il est basé sur un cookie tiers. La solution consiste à ajouter les paramètres d’aperçu à chaque URL à laquelle vous accédez. Le mode assurance qualité est contigu lorsque vous disposez de CNAME et d’at.js 2.x.
 * Lors de l’utilisation de CNAME, il est plus probable que la taille de l’en-tête du cookie pour les appels [!DNL Target] augmente. Adobe recommande de conserver la taille du cookie inférieure à 8 Ko.
+
