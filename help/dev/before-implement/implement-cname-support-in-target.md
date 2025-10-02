@@ -19,7 +19,7 @@ Instructions relatives à la collaboration avec l’assistance clientèle [!DNL 
 ## Demande de prise en charge CNAME dans [!DNL Target]
 
 1. Déterminez la liste des noms d’hôtes dont vous avez besoin pour votre certificat SSL (voir la FAQ ci-dessous).
-1. [Remplissez ce formulaire](/help/dev/implement/assets/FPC_Request_Form.xlsx) et incluez-le lorsque vous [ouvrez un ticket d’assistance clientèle demandant une prise en charge  [!DNL Adobe]  CNAME](https://experienceleague.adobe.com/en/docs/target/using/cmp-resources-and-contact-information#reference_ACA3391A00EF467B87930A450050077C) :
+1. [Remplissez ce formulaire](/help/dev/implement/assets/FPC_Request_Form.xlsx) et incluez-le lorsque vous [ouvrez un ticket d’assistance clientèle demandant une prise en charge  [!DNL Adobe]  CNAME](https://experienceleague.adobe.com/fr/docs/target/using/cmp-resources-and-contact-information#reference_ACA3391A00EF467B87930A450050077C) :
 
    * Code client [!DNL Adobe Target] :
    * Noms d&#39;hôtes de certificat SSL (exemple : `target.example.com target.example.org`) :
