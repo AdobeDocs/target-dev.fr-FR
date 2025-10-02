@@ -72,7 +72,7 @@ Jusqu’au 15 mars 2026, la durée de vie maximale d’un certificat TLS est de 
 Depuis le 15 mars 2026, la durée de vie maximale d’un certificat TLS est de 200 jours.
 Depuis le 15 mars 2027, la durée de vie maximale d’un certificat TLS est de 100 jours.
 Depuis le 15 mars 2029, la durée de vie maximale d’un certificat TLS est de 47 jours.
-Pour plus d’informations, consultez l’article de [ DigiCert sur la réduction de la durée de vie des certificats](https://www.digicert.com/blog/tls-certificate-lifetimes-will-officially-reduce-to-47-days)
+Pour plus d’informations, consultez l’article de [&#x200B; DigiCert sur la réduction de la durée de vie des certificats](https://www.digicert.com/blog/tls-certificate-lifetimes-will-officially-reduce-to-47-days)
 
 ### Quels noms d’hôtes dois-je choisir ? Combien de noms d’hôtes par domaine dois-je choisir ?
 
