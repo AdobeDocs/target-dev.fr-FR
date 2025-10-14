@@ -14,7 +14,7 @@ ht-degree: 3%
 
 ## Description
 
-Lorsque [ initialise le SDK ](initialize-sdk.md), l’objet `options["logger"]` est un objet facultatif. Par défaut, un enregistreur de niveau INFO sera créé sous l’espace de noms `adobe.target`. Cependant, pour personnaliser le niveau de journalisation ou déboguer efficacement en cas de problème, un objet `logger` peut être fourni lors de l’initialisation du SDK.
+Lorsque [&#x200B; initialise le SDK &#x200B;](initialize-sdk.md), l’objet `options["logger"]` est un objet facultatif. Par défaut, un enregistreur de niveau INFO sera créé sous l’espace de noms `adobe.target`. Cependant, pour personnaliser le niveau de journalisation ou déboguer efficacement en cas de problème, un objet `logger` peut être fourni lors de l’initialisation du SDK.
 
 L’objet `logger` doit avoir une méthode `debug()` et une méthode `error()`. Lorsqu’un journal approprié est fourni, [!DNL Target] requêtes et réponses seront consignées.
 

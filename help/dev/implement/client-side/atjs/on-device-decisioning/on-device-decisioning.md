@@ -66,7 +66,7 @@ Le diagramme suivant illustre l’interaction entre votre visiteur, le navigateu
 
 (Cliquez sur l’image pour agrandir l’image en largeur réelle.)
 
-![ Diagramme de flux côté serveur uniquement](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/server-side-only.png "Diagramme de flux côté serveur uniquement"){zoomable="yes"}
+![&#x200B; Diagramme de flux côté serveur uniquement](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/server-side-only.png "Diagramme de flux côté serveur uniquement"){zoomable="yes"}
 
 La liste suivante correspond aux nombres du diagramme :
 
@@ -193,7 +193,7 @@ Le diagramme suivant illustre l’interaction entre votre visiteur, le navigateu
 
 (Cliquez sur l’image pour agrandir l’image en largeur réelle.)
 
-![ Diagramme de flux hybride pour la navigation suivante sur une page et les visites répétées](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/hybrid-subsequent.png "Diagramme de flux hybride pour la navigation suivante sur une page et les visites répétées"){zoomable="yes"}
+![&#x200B; Diagramme de flux hybride pour la navigation suivante sur une page et les visites répétées](/help/dev/implement/client-side/atjs/on-device-decisioning/assets/hybrid-subsequent.png "Diagramme de flux hybride pour la navigation suivante sur une page et les visites répétées"){zoomable="yes"}
 
 La liste suivante correspond aux nombres du diagramme :
 
@@ -315,7 +315,7 @@ Lors des visites suivantes sur votre site, le navigateur vérifie automatiquemen
 
 Une fois que vous avez créé une activité [!UICONTROL on-device decisioning] éligible, un libellé qui indique Prise de décision sur l’appareil éligible est visible dans la page Aperçu de l’activité.
 
-![ Libellé éligible de la prise de décision sur l’appareil sur la page Aperçu de l’activité.](assets/on-device-decisioning-eligible-label.png)
+![&#x200B; Libellé éligible de la prise de décision sur l’appareil sur la page Aperçu de l’activité.](assets/on-device-decisioning-eligible-label.png)
 
 Ce libellé ne signifie pas que l’activité sera toujours diffusée via [!UICONTROL on-device decisioning]. Cette activité ne sera exécutée sur l’appareil que lorsque at.js 2.5.0+ est configuré pour utiliser [!UICONTROL on-device decisioning]. Si at.js 2.5.0+ n’est pas configuré pour utiliser sur l’appareil, cette activité sera toujours diffusée via un appel au serveur effectué à partir d’at.js.
 

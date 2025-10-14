@@ -31,7 +31,7 @@ Si vous avez déjà mappé des données pendant la [phase d’initialisation du 
 
 Les numéros des étapes de l’illustration suivante correspondent aux sections ci-dessous.
 
-![ Diagramme de collecte de données](/help/dev/patterns/recs-atjs/assets/data-collection-diagram.png){width="600" zoomable="yes"}
+![&#x200B; Diagramme de collecte de données](/help/dev/patterns/recs-atjs/assets/data-collection-diagram.png){width="600" zoomable="yes"}
 
 Cliquez sur les liens suivants pour accéder aux sections de votre choix :
 
@@ -45,7 +45,7 @@ Cette étape permet de s’assurer que toutes les données qui doivent être env
 
 +++Voir les détails
 
-![ Configuration du diagramme de mappage de données ](/help/dev/patterns/recs-atjs/assets/configure-data-mapping-combined.png){width="400" zoomable="yes"}
+![&#x200B; Configuration du diagramme de mappage de données &#x200B;](/help/dev/patterns/recs-atjs/assets/configure-data-mapping-combined.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
@@ -89,7 +89,7 @@ Cette étape permet de s’assurer que toutes les données qui doivent être env
 
 +++Voir les détails
 
-![ Déclenchement du diagramme de l’API de suivi Adobe Target ](/help/dev/patterns/recs-atjs/assets/fire-track-api-combined.png){width="400" zoomable="yes"}
+![&#x200B; Déclenchement du diagramme de l’API de suivi Adobe Target &#x200B;](/help/dev/patterns/recs-atjs/assets/fire-track-api-combined.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 

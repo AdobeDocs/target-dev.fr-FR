@@ -30,5 +30,5 @@ Tenez compte des restrictions suivantes lors de l’utilisation de la méthode d
 
 Pour plus d’informations, notamment sur les méthodes de prérécupération, les classes publiques et les échantillons de code, voir :
 
-* **iOS :** [ Prérécupération du contenu des offres dans iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-mob-target-prefetch-ios.html?lang=fr) dans l’ *aide du SDK iOS Mobile Services*.
-* **Android :** [ Prérécupération du contenu des offres dans Android](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/c-mob-target-prefetch-android.html?lang=fr) dans l’ *aide du SDK Android Mobile Services*.
+* **iOS :** [&#x200B; Prérécupération du contenu des offres dans iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-mob-target-prefetch-ios.html?lang=fr) dans l’ *aide du SDK iOS Mobile Services*.
+* **Android :** [&#x200B; Prérécupération du contenu des offres dans Android](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/c-mob-target-prefetch-android.html?lang=fr) dans l’ *aide du SDK Android Mobile Services*.

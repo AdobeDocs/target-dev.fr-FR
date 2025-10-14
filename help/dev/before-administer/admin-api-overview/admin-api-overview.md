@@ -56,7 +56,7 @@ Message d’erreur pour les fonctionnalités non prises en charge
 
 Collecte Postman d’administration
 
-Postman est une application qui permet de déclencher facilement des appels API. Cette [ collection Postman de l’API d’administration Target ](https://developers.adobetarget.com/api/#admin-postman-collection) contient tous les appels de l’API d’administration Target qui nécessitent une authentification à l’aide des activités, audiences, offres, rapports, mbox et environnements.
+Postman est une application qui permet de déclencher facilement des appels API. Cette [&#x200B; collection Postman de l’API d’administration Target &#x200B;](https://developers.adobetarget.com/api/#admin-postman-collection) contient tous les appels de l’API d’administration Target qui nécessitent une authentification à l’aide des activités, audiences, offres, rapports, mbox et environnements.
 
 ## Codes de réponse
 

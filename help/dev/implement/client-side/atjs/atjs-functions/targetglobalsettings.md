@@ -35,7 +35,7 @@ Vous pouvez remplacer les paramètres suivants :
 
 * **Type** : String
 * **Valeur par défaut** : aucune
-* **Description** : URL complète de l’artefact [ de règle de prise de décision sur l’appareil ](../../../server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md)
+* **Description** : URL complète de l’artefact [&#x200B; de règle de prise de décision sur l’appareil &#x200B;](../../../server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md)
 
 ### bodyHiddenStyle
 

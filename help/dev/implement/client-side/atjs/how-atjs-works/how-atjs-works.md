@@ -57,7 +57,7 @@ Désormais, partout où `triggerView()` est implémenté sur votre SPA, les acti
 
 (Cliquez sur l’image pour agrandir l’image en largeur réelle.)
 
-![ Déclencheur d’affichage at.js 2.x du flux Target](/help/dev/implement/client-side/assets/atjs-20-triggerview.png "Déclencheur d’affichage at.js 2.x du flux Target"){zoomable="yes"}
+![&#x200B; Déclencheur d’affichage at.js 2.x du flux Target](/help/dev/implement/client-side/assets/atjs-20-triggerview.png "Déclencheur d’affichage at.js 2.x du flux Target"){zoomable="yes"}
 
 | Étape | Détails |
 | --- | --- |

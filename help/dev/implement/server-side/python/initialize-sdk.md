@@ -38,9 +38,9 @@ TargetClient.create(options)
 | target_location_hint | str | Non | None | [!DNL Target] indicateur d’emplacement |
 | property_token | str | Non | None | [!DNL Target] Jeton de propriété. Si spécifié ici, tous les appels get_offer utiliseront cette valeur. |
 | decisioning_method | str | Non | côté serveur | Détermine la méthode de prise de décision à utiliser ([on-device](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), côté serveur, hybride) |
-| polling_interval | int | Non | 300000 (5 minutes) | Intervalle d’interrogation de l’[ artefact de règle de prise de décision sur périphérique](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) (en ms) |
-| artifact_location | str | Non | None | URL complète à l’artefact de règle de prise de décision sur l’appareil [. ](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) Permet de remplacer un emplacement déterminé en interne. |
-| artifact_payload | objet | Non | None | Charge JSON de l’artefact de règle de prise de décision sur l’appareil [. ](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) S’il est spécifié, il est utilisé au lieu d’en demander un à partir d’une URL. |
+| polling_interval | int | Non | 300000 (5 minutes) | Intervalle d’interrogation de l’[&#x200B; artefact de règle de prise de décision sur périphérique](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) (en ms) |
+| artifact_location | str | Non | None | URL complète à l’artefact de règle de prise de décision sur l’appareil [. &#x200B;](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) Permet de remplacer un emplacement déterminé en interne. |
+| artifact_payload | objet | Non | None | Charge JSON de l’artefact de règle de prise de décision sur l’appareil [. &#x200B;](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) S’il est spécifié, il est utilisé au lieu d’en demander un à partir d’une URL. |
 | [events](sdk-events.md) | dict &lt;str, callable> | Non | None | Objet facultatif avec clés de nom d’événement et valeurs de fonction de rappel |
 | environment_id | int | Non | production | ID d’environnement [!DNL Target] |
 | environnement | str | Non | production | Nom de l’environnement [!DNL Target] |

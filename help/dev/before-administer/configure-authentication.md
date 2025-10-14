@@ -36,7 +36,7 @@ Voici les étapes préliminaires requises pour générer les jetons d’authenti
 | Ressource | Détails |
 | --- | --- |
 | Postman | Pour réussir ces étapes, obtenez l’ [application Postman](https://www.postman.com/downloads/) pour votre système d’exploitation. Postman basic est gratuit avec la création de compte. Bien que cela ne soit pas nécessaire pour utiliser les API [!DNL Adobe Target] en général, Postman facilite les processus d’API et [!DNL Adobe Target] fournit plusieurs collections Postman pour aider à exécuter ses API et apprendre à les utiliser. Le reste de ce guide suppose des connaissances opérationnelles de Postman. Pour obtenir de l’aide, reportez-vous à la [documentation Postman](https://learning.getpostman.com/). |
-| Références | Le reste de ce guide se familiarisera avec les ressources suivantes :<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[ Documentation sur l’administrateur et l’API de profil Target ](../administer/admin-api/admin-api-overview-new.md)</li><li>[Documentation de l’API Recommendations](https://developer.adobe.com/target/administer/recommendations-api/)</li></ul> |
+| Références | Le reste de ce guide se familiarisera avec les ressources suivantes :<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[&#x200B; Documentation sur l’administrateur et l’API de profil Target &#x200B;](../administer/admin-api/admin-api-overview-new.md)</li><li>[Documentation de l’API Recommendations](https://developer.adobe.com/target/administer/recommendations-api/)</li></ul> |
 
 ## Création d’un projet Adobe I/O
 
@@ -95,7 +95,7 @@ Il existe de nombreuses façons de spécifier les détails de votre projet dans 
 
 >[!NOTE]
 >
->Pour obtenir des instructions vidéo applicables à toute solution Experience Cloud, y compris [!DNL Target], voir [ Utilisation de Postman avec les API Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=fr). Les sections suivantes concernent les API [!DNL Target] : 1. Créez et exportez l’API Experience Platform vers Postman 2. Générez un jeton d’accès avec Postman. Ces étapes sont également fournies ci-dessous.
+>Pour obtenir des instructions vidéo applicables à toute solution Experience Cloud, y compris [!DNL Target], voir [&#x200B; Utilisation de Postman avec les API Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=fr). Les sections suivantes concernent les API [!DNL Target] : 1. Créez et exportez l’API Experience Platform vers Postman 2. Générez un jeton d’accès avec Postman. Ces étapes sont également fournies ci-dessous.
 
 1. Toujours dans le [Adobe Developer Console](https://developer.adobe.com/console/home), accédez aux **[!UICONTROL Service Account (JWT)]** informations d’identification de votre nouveau projet. Utilisez le volet de navigation de gauche ou la section **[!UICONTROL Credentials]** comme indiqué.
 
@@ -149,9 +149,9 @@ Il existe de nombreuses façons de spécifier les détails de votre projet dans 
 
 ## Génération du jeton d’accès au porteur
 
-Dans cette section, vous générez votre jeton d’accès au porteur, nécessaire pour authentifier votre interaction avec les API [!DNL Adobe Target]. Pour générer votre jeton d’accès au porteur, vous devez envoyer les détails de votre intégration (définis dans les sections précédentes) au [ Adobe Identity Management Service (IMS)](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md). Il existe plusieurs façons de procéder, mais dans ce guide, nous profitons d’une collection Postman contenant un appel IMS prédéfini qui rend le processus direct et facile. Une fois la collection importée, vous pouvez la réutiliser si nécessaire, afin de générer de nouveaux jetons non seulement pour [!DNL Adobe Target], mais également pour d’autres API d’Adobe.
+Dans cette section, vous générez votre jeton d’accès au porteur, nécessaire pour authentifier votre interaction avec les API [!DNL Adobe Target]. Pour générer votre jeton d’accès au porteur, vous devez envoyer les détails de votre intégration (définis dans les sections précédentes) au [&#x200B; Adobe Identity Management Service (IMS)](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/AuthenticationOverview/AuthenticationGuide.md). Il existe plusieurs façons de procéder, mais dans ce guide, nous profitons d’une collection Postman contenant un appel IMS prédéfini qui rend le processus direct et facile. Une fois la collection importée, vous pouvez la réutiliser si nécessaire, afin de générer de nouveaux jetons non seulement pour [!DNL Adobe Target], mais également pour d’autres API d’Adobe.
 
-1. Accédez aux [ exemples d’appels de l’API Adobe Identity Management Service ](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims).
+1. Accédez aux [&#x200B; exemples d’appels de l’API Adobe Identity Management Service &#x200B;](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims).
 
    ![token1](assets/configure-io-target-generatetoken1.png)
 
@@ -231,4 +231,4 @@ Dans cet exercice, vous utiliserez votre nouveau jeton d’accès au porteur en 
 
    ![testtoken6](assets/configure-io-target-testtoken6.png)
 
-Maintenant que vous avez vérifié votre authentification d’Adobe, vous pouvez l’utiliser pour interagir avec les API [!DNL Adobe Target] (ainsi qu’avec d’autres API d’Adobe). Par exemple, vous pouvez [utiliser les API Recommendations](recs-api/overview.md) pour créer ou gérer des recommandations, ou vous pouvez l’utiliser avec l’ [ API de diffusion Target](/help/dev/implement/delivery-api/overview.md).
+Maintenant que vous avez vérifié votre authentification d’Adobe, vous pouvez l’utiliser pour interagir avec les API [!DNL Adobe Target] (ainsi qu’avec d’autres API d’Adobe). Par exemple, vous pouvez [utiliser les API Recommendations](recs-api/overview.md) pour créer ou gérer des recommandations, ou vous pouvez l’utiliser avec l’ [&#x200B; API de diffusion Target](/help/dev/implement/delivery-api/overview.md).

@@ -33,7 +33,7 @@ L’illustration suivante présente les appels à Masquer/Afficher le corps dans
 
 (Cliquez sur l’image pour agrandir l’image en largeur réelle.)
 
-![ Flux cible : requête de chargement de page at.js](/help/dev/implement/client-side/assets/atjs-20-flow-page-load-request.png "Flux cible : requête de chargement de page at.js"){zoomable="yes"}
+![&#x200B; Flux cible : requête de chargement de page at.js](/help/dev/implement/client-side/assets/atjs-20-flow-page-load-request.png "Flux cible : requête de chargement de page at.js"){zoomable="yes"}
 
 **at.js 1.*x***
 

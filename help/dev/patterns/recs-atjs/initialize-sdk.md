@@ -55,7 +55,7 @@ Cette étape permet de s’assurer que la bibliothèque `VisitorAPI.js` est char
 
 +++Voir les détails
 
-![ Diagramme de chargement du SDK de l’API visiteur ](/help/dev/patterns/recs-atjs/assets/load-visitor-combined.png){width="400" zoomable="yes"}
+![&#x200B; Diagramme de chargement du SDK de l’API visiteur &#x200B;](/help/dev/patterns/recs-atjs/assets/load-visitor-combined.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
@@ -77,7 +77,7 @@ Pour plus d’informations, voir [Mise en oeuvre du service Experience Cloud pou
 **Actions**
 
 * Incorporez le fichier `VisitorAPI.js` sur vos pages web.
-* Découvrez les [ configurations disponibles pour le service d’identification des visiteurs/API](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?lang=fr){target=_blank}.
+* Découvrez les [&#x200B; configurations disponibles pour le service d’identification des visiteurs/API](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?lang=fr){target=_blank}.
 * Une fois le fichier `VisitorAPI.js` chargé, utilisez la méthode `Visitor.getInstance` pour l’initialisation à l’aide des configurations nécessaires.
 * Familiarisez-vous avec les [méthodes disponibles](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/get-set.html?lang=fr){target=_blank}.
 
@@ -102,7 +102,7 @@ Pour plus d’informations, voir [setCustomerIDs](https://experienceleague.adobe
 
 **Lectures**
 
-* [ Synchronisation des profils en temps réel pour mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=fr){target=_blank}
+* [&#x200B; Synchronisation des profils en temps réel pour mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=fr){target=_blank}
 
 **Actions**
 
@@ -147,7 +147,7 @@ Cette étape permet de s’assurer qu’il n’y a pas de scintillement de page 
 
 +++Voir les détails
 
-![ Configuration du diagramme de gestion du scintillement ](/help/dev/patterns/recs-atjs/assets/flicker-handling-combined.png){width="400" zoomable="yes"}
+![&#x200B; Configuration du diagramme de gestion du scintillement &#x200B;](/help/dev/patterns/recs-atjs/assets/flicker-handling-combined.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
@@ -180,7 +180,7 @@ Cette étape permet de s’assurer que toutes les données qui doivent être env
 
 +++Voir les détails
 
-![ Diagramme de mappage de données](/help/dev/patterns/recs-atjs/assets/data-mapping-combined.png){width="400" zoomable="yes"}
+![&#x200B; Diagramme de mappage de données](/help/dev/patterns/recs-atjs/assets/data-mapping-combined.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 
@@ -303,7 +303,7 @@ Effectuez des recommandations sur la base de la recherche d’éléments similai
 
 **Lectures**
 
-* [Élément basé ](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=fr#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Élément basé &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=fr#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 
@@ -400,7 +400,7 @@ Cette étape garantit que toutes les données qui doivent être envoyées à [!D
 
 +++Voir les détails
 
-![ Diagramme de mappage de données distant](/help/dev/patterns/recs-atjs/assets/remote-data-mapping-combined.png){width="400" zoomable="yes"}
+![&#x200B; Diagramme de mappage de données distant](/help/dev/patterns/recs-atjs/assets/remote-data-mapping-combined.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 

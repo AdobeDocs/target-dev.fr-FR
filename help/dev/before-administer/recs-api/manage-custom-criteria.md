@@ -25,7 +25,7 @@ Pour créer des critères personnalisés, définissez et importez le mappage sou
 
 ## Création de critères personnalisés
 
-Pour créer des critères personnalisés à l’aide de l’ [ API Créer des critères personnalisés](https://developer.adobe.com/target/administer/recommendations-api/#operation/createCriteriaCustom), la syntaxe est la suivante :
+Pour créer des critères personnalisés à l’aide de l’ [&#x200B; API Créer des critères personnalisés](https://developer.adobe.com/target/administer/recommendations-api/#operation/createCriteriaCustom), la syntaxe est la suivante :
 
 `POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom`
 
@@ -55,7 +55,7 @@ Dans ce cas, nous avons une erreur. Examinons l’erreur en examinant de plus pr
 
 ## Liste des critères personnalisés
 
-Pour récupérer une liste de tous vos critères personnalisés avec des détails pour chacun d’eux, utilisez l’ [ API Liste de critères personnalisés](https://developer.adobe.com/target/administer/recommendations-api/#operation/getAllCriteriaCustom). La syntaxe est la suivante :
+Pour récupérer une liste de tous vos critères personnalisés avec des détails pour chacun d’eux, utilisez l’ [&#x200B; API Liste de critères personnalisés](https://developer.adobe.com/target/administer/recommendations-api/#operation/getAllCriteriaCustom). La syntaxe est la suivante :
 
 `GET https://mc.adobe.io/{{TENANT_ID}}/target/recs/criteria/custom`
 

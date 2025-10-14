@@ -48,7 +48,7 @@ Pour fournir des recommandations de haute qualité, [!UICONTROL Target] doit con
 | --- | --- | --- | --- |
 | Flux de catalogue | Planifiez un flux (CSV, [!DNL Google] Product XML ou [!UICONTROL Analytics Product Classifications]) à charger et à ingérer quotidiennement. | Pour envoyer des informations sur plusieurs éléments à la fois. Pour envoyer des informations qui changent rarement. | Voir [Flux](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/entities/feeds). |
 | API Entités | Appelez une API pour envoyer des mises à jour instantanées pour un seul élément. | Pour envoyer des mises à jour lorsqu’elles surviennent sur un élément à la fois. Pour envoyer des informations qui changent fréquemment (par exemple, le prix, le stock/le niveau de stock). | Consultez la [documentation destinée aux développeurs de l’API Entities](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities). |
-| Transmission des mises à jour sur la page | Envoyez les mises à jour instantanées d’un seul élément à l’aide de JavaScript sur la page ou de l’API de diffusion. | Pour envoyer des mises à jour lorsqu’elles surviennent sur un élément à la fois. Pour envoyer des informations qui changent fréquemment (par exemple, le prix, le stock/le niveau de stock). | Voir [ consultations d’éléments/pages de produits](#item-views-or-product-pages) ci-dessous. |
+| Transmission des mises à jour sur la page | Envoyez les mises à jour instantanées d’un seul élément à l’aide de JavaScript sur la page ou de l’API de diffusion. | Pour envoyer des mises à jour lorsqu’elles surviennent sur un élément à la fois. Pour envoyer des informations qui changent fréquemment (par exemple, le prix, le stock/le niveau de stock). | Voir [&#x200B; consultations d’éléments/pages de produits](#item-views-or-product-pages) ci-dessous. |
 
 La plupart des clients doivent mettre en oeuvre au moins un flux. Vous pouvez ensuite choisir de compléter votre flux avec des mises à jour pour les attributs ou éléments fréquemment modifiés à l’aide de l’API Entités ou de la méthode sur la page.
 
@@ -239,4 +239,4 @@ Cliquez sur **[!UICONTROL Add]** pour créer une configuration, indiquez un nom 
 
 ## 6. (Facultatif) Administrez [!UICONTROL Recommendations] à l’aide des API d’administration
 
-Consultez le guide pratique [ Utilisation des API [!UICONTROL Recommendations]](../../before-administer/recs-api/overview.md) pour découvrir comment configurer et utiliser les API d’administration et de diffusion [!UICONTROL Target] pour [!UICONTROL Recommendations].
+Consultez le guide pratique [&#x200B; Utilisation des API [!UICONTROL Recommendations]](../../before-administer/recs-api/overview.md) pour découvrir comment configurer et utiliser les API d’administration et de diffusion [!UICONTROL Target] pour [!UICONTROL Recommendations].

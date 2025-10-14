@@ -18,7 +18,7 @@ Suivez les étapes du diagramme *Render Experiences* pour vous assurer que toute
 
 >[!NOTE]
 >
->Si vous avez activé la requête de chargement de page automatique lors de l’[ étape de configuration de la requête de chargement de page automatique](/help/dev/patterns/recs-atjs/initialize-sdk.md#automatic) dans *Initialiser le SDK* , vous pouvez ignorer cette activité sauf si vous souhaitez appeler le SDK Adobe Target pour effectuer le rendu d’expériences supplémentaires à l’aide d’une requête de localisation régionale.
+>Si vous avez activé la requête de chargement de page automatique lors de l’[&#x200B; étape de configuration de la requête de chargement de page automatique](/help/dev/patterns/recs-atjs/initialize-sdk.md#automatic) dans *Initialiser le SDK* , vous pouvez ignorer cette activité sauf si vous souhaitez appeler le SDK Adobe Target pour effectuer le rendu d’expériences supplémentaires à l’aide d’une requête de localisation régionale.
 
 >[!TIP]
 >
@@ -32,7 +32,7 @@ La gestion automatique du scintillement prêt à l’emploi disponible avec at.j
 >
 >Les numéros des étapes de l’illustration suivante correspondent aux sections ci-dessous. Les numéros des étapes ne sont pas dans un ordre particulier et ne reflètent pas l’ordre des étapes effectuées dans l’interface utilisateur de [!DNL Target] lors de la création de l’activité.
 
-![ Diagramme des expériences de rendu ](/help/dev/patterns/recs-atjs/assets/diagram-render-experiences-new.png){width="600" zoomable="yes"}
+![&#x200B; Diagramme des expériences de rendu &#x200B;](/help/dev/patterns/recs-atjs/assets/diagram-render-experiences-new.png){width="600" zoomable="yes"}
 
 Cliquez sur les liens suivants pour accéder aux sections de votre choix :
 
@@ -146,7 +146,7 @@ Effectuez des recommandations sur la base de la recherche d’éléments similai
 
 **Lectures**
 
-* [Élément basé ](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=fr#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
+* [Élément basé &#x200B;](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/algorithms.html?lang=fr#section_885B3BB1B43048A88A8926F6B76FC482){target=_blank}
 
 +++
 

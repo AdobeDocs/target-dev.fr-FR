@@ -14,7 +14,7 @@ ht-degree: 5%
 
 ## Description
 
-Lorsque [ initialise le SDK ](initialize-sdk.md), un délégué facultatif `OnDeviceDecisioningReady` peut être fourni sur l’objet `TargetClientConfig`, qui sera appelé lorsque le SDK est prêt pour les appels de méthode sur l’appareil. Quelques autres délégués sont également disponibles pour gérer le téléchargement d’artefact [!UICONTROL on-device decisioning].
+Lorsque [&#x200B; initialise le SDK &#x200B;](initialize-sdk.md), un délégué facultatif `OnDeviceDecisioningReady` peut être fourni sur l’objet `TargetClientConfig`, qui sera appelé lorsque le SDK est prêt pour les appels de méthode sur l’appareil. Quelques autres délégués sont également disponibles pour gérer le téléchargement d’artefact [!UICONTROL on-device decisioning].
 
 ## Requête 
 

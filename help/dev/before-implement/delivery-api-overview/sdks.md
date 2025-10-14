@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # SDK
 
-[!DNL Adobe Target] propose des [ SDK côté serveur ](../../implement/server-side/server-side-overview.md) pour interagir avec [!DNL Target Delivery API] et faciliter l’intégration de [!UICONTROL Target] avec d’autres solutions [!DNL Adobe Experience Cloud] telles que [!UICONTROL Adobe Analytics] et [!DNL Adobe Audience Manager].
+[!DNL Adobe Target] propose des [&#x200B; SDK côté serveur &#x200B;](../../implement/server-side/server-side-overview.md) pour interagir avec [!DNL Target Delivery API] et faciliter l’intégration de [!UICONTROL Target] avec d’autres solutions [!DNL Adobe Experience Cloud] telles que [!UICONTROL Adobe Analytics] et [!DNL Adobe Audience Manager].
 
 Les SDK vous aident à suivre les bonnes pratiques en matière de gestion des sessions et des cookies. Il est vivement recommandé d’utiliser un SDK pour atténuer toute complexité et empêcher une utilisation incorrecte de l’API.
 

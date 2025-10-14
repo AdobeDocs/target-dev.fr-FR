@@ -27,9 +27,9 @@ Les avantages de [!UICONTROL Single Profile Update API] incluent :
 * [!UICONTROL Single Profile Update API] est limité à l’exécution d’1 million de mises à jour par période variable de 24 heures.
 * Les mises à jour surviennent généralement en moins d’une heure, mais peuvent prendre jusqu’à 24 heures pour être répercutées.
 
-  Si vous devez envoyer d’autres mises à jour ou exiger que les mises à jour soient traitées dans des délais plus courts, envisagez d’envoyer des mises à jour de profil transactionnel par le biais d’une mise à jour côté client (préférée) ou via l’ [!DNL Adobe Target] API de diffusion [ côté serveur ](/help/dev/implement/delivery-api/overview.md).
+  Si vous devez envoyer d’autres mises à jour ou exiger que les mises à jour soient traitées dans des délais plus courts, envisagez d’envoyer des mises à jour de profil transactionnel par le biais d’une mise à jour côté client (préférée) ou via l’ [!DNL Adobe Target] API de diffusion [&#x200B; côté serveur &#x200B;](/help/dev/implement/delivery-api/overview.md).
 
-* [!UICONTROL Single Profile Update API] est une API serveur à serveur qui n’est pas conçue pour fonctionner dans une page web. Pour mettre à jour un profil du visiteur depuis votre page web, vous pouvez utiliser la fonction [trackEvent()](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md) ou l’ [ API de diffusion](/help/dev/implement/delivery-api/overview.md).
+* [!UICONTROL Single Profile Update API] est une API serveur à serveur qui n’est pas conçue pour fonctionner dans une page web. Pour mettre à jour un profil du visiteur depuis votre page web, vous pouvez utiliser la fonction [trackEvent()](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md) ou l’ [&#x200B; API de diffusion](/help/dev/implement/delivery-api/overview.md).
 
 ## Format
 

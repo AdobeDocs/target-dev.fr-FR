@@ -67,7 +67,7 @@ Pour plus d’informations, voir [Extension d’assistance du compositeur d’ex
 
 ## Rendu de contenu personnalisé
 
-Pour plus d’informations, consultez [ Rendu de contenu de personnalisation ](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/personalization/rendering-personalization-content) .
+Pour plus d’informations, consultez [&#x200B; Rendu de contenu de personnalisation &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/personalization/rendering-personalization-content) .
 
 ## Audiences dans XDM
 

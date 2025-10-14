@@ -24,7 +24,7 @@ Pour plus d’informations sur les API [!DNL Target], voir [[!DNL Target] APIs](
 | Terme | Description |
 |--- |--- |
 | API classique | API liées à votre compte [!DNL Target Classic]. Les appels de ces API sont basés sur une authentification par nom d’utilisateur et mot de passe et utilisent le nom d’hôte `testandtarget.omniture.com`. Si vos appels API contiennent un nom d’utilisateur et un mot de passe dans l’URL de demande, vous devez passer aux API [!DNL Adobe Developer Console]. |
-| [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/home) | [!DNL Adobe Developer Console] est la passerelle des API [!DNL Target]. Ces API sont connectées à votre compte [!DNL Target Standard/Premium]. Les API [!DNL Target] de [!DNL Adobe Developer Console] utilisent une [ authentification basée sur JWT ](../../before-administer/configure-authentication.md), qui est la norme du secteur pour les API d’entreprise sécurisées. |
+| [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/home) | [!DNL Adobe Developer Console] est la passerelle des API [!DNL Target]. Ces API sont connectées à votre compte [!DNL Target Standard/Premium]. Les API [!DNL Target] de [!DNL Adobe Developer Console] utilisent une [&#x200B; authentification basée sur JWT &#x200B;](../../before-administer/configure-authentication.md), qui est la norme du secteur pour les API d’entreprise sécurisées. |
 
 ## Journal
 

@@ -26,7 +26,7 @@ Pour découvrir comment commencer à utiliser le SDK Node.js, accédez au [Guide
 
 Testez le SDK Node.js :
 
-* En visitant le [[!DNL Adobe Target]  site de démonstration de prise de décision sur périphérique ](https://github.com/adobe/on-device-decisioning-demo-site)
+* En visitant le [[!DNL Adobe Target]  site de démonstration de prise de décision sur périphérique &#x200B;](https://github.com/adobe/on-device-decisioning-demo-site)
 * Dans un [exemple d’application](../sdk-guides/sample-apps/sample-apps.md).
 
 ## Référence

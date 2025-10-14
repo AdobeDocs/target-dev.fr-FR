@@ -25,7 +25,7 @@ Le diagramme suivant illustre les performances de chargement de page avec mbox.j
 
 (Cliquez sur l’image pour agrandir l’image en largeur réelle.)
 
-![ Diagramme de performances de page comparant mbox.js à at.js](/help/dev/implement/client-side/atjs/assets/atjs_versus_mboxjs.png "Diagramme de performances de page comparant mbox.js à at.js"){zoomable="yes"}
+![&#x200B; Diagramme de performances de page comparant mbox.js à at.js](/help/dev/implement/client-side/atjs/assets/atjs_versus_mboxjs.png "Diagramme de performances de page comparant mbox.js à at.js"){zoomable="yes"}
 
 Comme illustré ci-dessus, avec mbox.js, le contenu de la page ne commençait à charger qu’une fois l’appel [!DNL Target] terminé. Avec at.js, le contenu de la page commence à charger dès que l’appel de [!DNL Target] est initié, sans attendre qu’il soit terminé.
 

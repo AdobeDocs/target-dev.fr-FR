@@ -25,7 +25,7 @@ Le tableau suivant répertorie les différentes sources fournissant plus d’inf
 |--- |--- |
 | [Ajouter Adobe Target](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/target.html?lang=fr#implement-solutions) | Ce tutoriel fournit des instructions détaillées relatives à l’implémentation de [!DNL Target] dans un site web avec des balises dans [!DNL Adobe Experience Platform]. Les rubriques incluent l’ajout de la bibliothèque JavaScript at.js, le déclenchement de la mbox globale, l’ajout de paramètres et l’intégration à d’autres solutions. Cet article fait partie d’un tutoriel plus volumineux qui vous explique comment mettre en oeuvre Adobe Experience Platform et d’autres solutions Adobe Experience Cloud. |
 | [Guide de démarrage rapide](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=fr) | Informations sur le déploiement et la gestion des balises d’analyse, de marketing et de publicité nécessaires pour proposer des expériences client pertinentes. |
-| [Présentation de l’extension Adobe  [!DNL Target] ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=fr) | Informations sur l’implémentation de [!DNL Target] avec [!DNL Adobe Experience Platform]. |
+| [Présentation de l’extension Adobe  [!DNL Target] &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=fr) | Informations sur l’implémentation de [!DNL Target] avec [!DNL Adobe Experience Platform]. |
 
 ## Avantages de l’implémentation d’at.js à l’aide de l’extension [!DNL Target]
 

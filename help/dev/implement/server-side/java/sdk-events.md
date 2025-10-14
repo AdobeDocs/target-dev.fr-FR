@@ -14,7 +14,7 @@ ht-degree: 5%
 
 ## Description
 
-Lorsque [ initialise le SDK ](initialize-sdk.md), un objet `OnDeviceDecisioningHandler` facultatif peut être fourni sur l’objet `ClientConfig`. Il peut être utilisé pour s’abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `onDeviceDecisioningReady` peut être utilisé avec une fonction de rappel qui sera appelée lorsque le SDK est prêt pour les appels de méthode.
+Lorsque [&#x200B; initialise le SDK &#x200B;](initialize-sdk.md), un objet `OnDeviceDecisioningHandler` facultatif peut être fourni sur l’objet `ClientConfig`. Il peut être utilisé pour s’abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `onDeviceDecisioningReady` peut être utilisé avec une fonction de rappel qui sera appelée lorsque le SDK est prêt pour les appels de méthode.
 
 ## Requête 
 

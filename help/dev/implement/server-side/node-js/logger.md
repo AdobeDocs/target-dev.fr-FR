@@ -14,7 +14,7 @@ ht-degree: 2%
 
 ## Description
 
-Lorsque [ initialise le SDK ](initialize-sdk.md), l’objet `options.logger` est un objet facultatif. Cependant, pour déboguer efficacement en cas de problème, un objet `logger` doit être fourni lors de l’initialisation du SDK.
+Lorsque [&#x200B; initialise le SDK &#x200B;](initialize-sdk.md), l’objet `options.logger` est un objet facultatif. Cependant, pour déboguer efficacement en cas de problème, un objet `logger` doit être fourni lors de l’initialisation du SDK.
 
 L’objet `logger` doit avoir une méthode `debug()` et une méthode `error()`. Lorsqu’un journal approprié est fourni, par exemple `console`, les requêtes et réponses [!DNL Target] seront consignées.
 

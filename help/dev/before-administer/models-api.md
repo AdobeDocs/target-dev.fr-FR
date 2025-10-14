@@ -26,7 +26,7 @@ Affichez la spécification de l’API Modèles [ici](../administer/models-api/mo
 
 ## Conditions préalables
 
-Pour utiliser l’API Modèles, vous devez configurer l’authentification à l’aide de [Adobe Developer Console](https://developer.adobe.com/console/home), comme vous le feriez avec l’[ API d’administration Target](../administer/admin-api/admin-api-overview-new.md). Pour plus d’informations, voir [Configuration de l’authentification](../before-administer/configure-authentication.md).
+Pour utiliser l’API Modèles, vous devez configurer l’authentification à l’aide de [Adobe Developer Console](https://developer.adobe.com/console/home), comme vous le feriez avec l’[&#x200B; API d’administration Target](../administer/admin-api/admin-api-overview-new.md). Pour plus d’informations, voir [Configuration de l’authentification](../before-administer/configure-authentication.md).
 
 ## Directives d’utilisation de l’API de modèles
 

@@ -34,7 +34,7 @@ Cette étape vous permet de vous assurer que tous les événements qui doivent �
 
 +++Voir les détails
 
-![ Déclenchement du diagramme de l’API de suivi Adobe Target ](/help/dev/patterns/recs-atjs/assets/fire-adobe-target-track-api-diagram-combined.png){width="400" zoomable="yes"}
+![&#x200B; Déclenchement du diagramme de l’API de suivi Adobe Target &#x200B;](/help/dev/patterns/recs-atjs/assets/fire-adobe-target-track-api-diagram-combined.png){width="400" zoomable="yes"}
 
 Vous envoyez les attributs de conversion de commande comme indiqué dans la section *Conditions préalables* ci-dessous. Le nom de la mbox n’a pas d’importance, mais la conversion doit utiliser `orderConfirmPage`.
 

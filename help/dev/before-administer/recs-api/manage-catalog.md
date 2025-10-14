@@ -21,7 +21,7 @@ Vous pouvez désormais utiliser les [API Recommendations](https://developer.adob
 
 >[!NOTE]
 >
->Envoyez la requête **[!UICONTROL IMS: JWT Generate + Auth via User Token]** chaque fois que vous devez actualiser votre jeton d’accès pour authentification, puisqu’il expire après 24 heures. Voir [ Configuration de l’authentification de l’API d’Adobe ](../configure-authentication.md) pour obtenir des instructions.
+>Envoyez la requête **[!UICONTROL IMS: JWT Generate + Auth via User Token]** chaque fois que vous devez actualiser votre jeton d’accès pour authentification, puisqu’il expire après 24 heures. Voir [&#x200B; Configuration de l’authentification de l’API d’Adobe &#x200B;](../configure-authentication.md) pour obtenir des instructions.
 
 ![JWT3ff](assets/configure-io-target-jwt3ff.png)
 
