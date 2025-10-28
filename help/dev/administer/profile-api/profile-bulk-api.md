@@ -4,9 +4,9 @@ description: Découvrez comment utiliser  [!DNL Adobe Target] [!UICONTROL Bulk P
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 76b4add132d3e98f241b887dbce4170c90445be2
+source-git-commit: 892de7c241a165b55a5cf85ce8f472ad8e200ac3
 workflow-type: tm+mt
-source-wordcount: '1076'
+source-wordcount: '1086'
 ht-degree: 6%
 
 ---
@@ -49,13 +49,13 @@ Le [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] vous permet de mettr
 
 Pour mettre à jour les données de profil en bloc, créez un fichier de commandes. Le fichier de commandes est un fichier texte dont les valeurs sont séparées par des virgules, semblable au fichier d’exemple suivant.
 
-``` ```
+``````
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+``````
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Vous référencez ce fichier dans l’appel POST aux serveurs [!DNL Target] pour
 * Le premier en-tête doit être un `pcId` ou un `thirdPartyId`. Le [!UICONTROL Marketing Cloud visitor ID] n’est pas pris en charge. [!UICONTROL pcId] est un visitorID généré par [!DNL Target]. `thirdPartyId` est un identifiant spécifié par l’application cliente et transmis à [!DNL Target] par le biais d’un appel de mbox, selon les `mbox3rdPartyId`. Il faut l&#39;appeler ici `thirdPartyId`.
 * Pour des raisons de sécurité, les paramètres et valeurs que vous spécifiez dans le fichier par lot doivent être encodés en URL à l’aide d’UTF-8. Les paramètres et les valeurs peuvent être transférés vers d’autres nœuds Edge pour traitement via des requêtes HTTP.
 * Les paramètres doivent être au format `paramName` uniquement. Les paramètres s’affichent dans [!DNL Target] sous la forme `profile.paramName`.
-* Si vous utilisez [!UICONTROL Bulk Profile Update API] v2, il n’est pas nécessaire de spécifier toutes les valeurs de paramètre pour chaque `pcId`. Les profils sont créés pour tout `pcId` ou `mbox3rdPartyId` introuvable dans [!DNL Target]. Si vous utilisez v1, les profils ne sont pas créés pour les pcIds ou mbox3rdPartyIds manquants.
+* Si vous utilisez [!UICONTROL Bulk Profile Update API] v2, il n’est pas nécessaire de spécifier toutes les valeurs de paramètre pour chaque `pcId`. Les profils sont créés pour tout `pcId` ou `mbox3rdPartyId` introuvable dans [!DNL Target]. Si vous utilisez v1, les profils ne sont pas créés pour les pcIds ou mbox3rdPartyIds manquants. Pour plus d’informations, voir [Gestion des valeurs vides dans le  [!DNL Bulk Profile Update API]](#empty) ci-dessous.
 * La taille du fichier de traitement par lot doit être inférieure à 50 Mo. En outre, le nombre total de lignes ne doit pas dépasser 500 000. Cette limite permet de s’assurer que les serveurs ne sont pas submergés par un trop grand nombre de requêtes.
 * Vous pouvez envoyer plusieurs fichiers. Cependant, la somme totale des lignes de tous les fichiers que vous envoyez au cours d’une journée ne doit pas dépasser un million pour chaque client.
 * Le nombre d’attributs que vous pouvez charger n’est pas limité. Cependant, la taille totale des données de profil externes, qui comprennent les attributs du client, l’API de profil, les paramètres de profil In-Mbox et la sortie de script de profil, ne doit pas dépasser 64 Ko.
@@ -77,9 +77,9 @@ Vous référencez ce fichier dans l’appel POST aux serveurs [!DNL Target] pour
 
 Envoyez une requête HTTP POST aux serveurs Edge de [!DNL Target] pour traiter le fichier. Voici un exemple de requête HTTP POST pour le fichier batch.txt à l’aide de la commande curl :
 
-``` ```
+``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+``````
 
 Où :
 
@@ -145,7 +145,7 @@ http://mboxedge45.tt.omtrdc.net/m2/demo/profile/batchStatus?batchId=demo-1701473
 </response>
 ```
 
-## Gérer les valeurs vides dans le [!DNL Bulk Profile Update API]
+## Gérer les valeurs vides dans le [!DNL Bulk Profile Update API] {#empty}
 
 Lors de l’utilisation du [!DNL Target] [!DNL Bulk Profile Update API] (v1 ou v2), il est important de comprendre comment le système gère les valeurs de paramètre ou d’attribut vides.
 
@@ -153,11 +153,11 @@ Lors de l’utilisation du [!DNL Target] [!DNL Bulk Profile Update API] (v1 ou v
 
 L’envoi de valeurs vides (champs « », nuls ou manquants) pour des paramètres ou attributs existants ne réinitialise pas ou ne supprime pas ces valeurs dans la banque de profils. C&#39;est intentionnel.
 
-**Les valeurs vides sont ignorées** : l’API filtre les valeurs vides pendant le traitement pour éviter les mises à jour inutiles ou dénuées de sens.
+* **Les valeurs vides sont ignorées** : l’API filtre les valeurs vides pendant le traitement pour éviter les mises à jour inutiles ou dénuées de sens.
 
-**Pas d’effacement des données existantes** : si un paramètre possède déjà une valeur, l’envoi d’une valeur vide la laisse inchangée.
+* **Pas d’effacement des données existantes** : si un paramètre possède déjà une valeur, l’envoi d’une valeur vide la laisse inchangée.
 
-**Les lots vides uniquement sont ignorés** : si un lot ne contient que des valeurs vides ou nulles, il est entièrement ignoré et aucune mise à jour n’est appliquée.
+* **Les lots vides uniquement sont ignorés** : si un lot ne contient que des valeurs vides ou nulles, il est entièrement ignoré et aucune mise à jour n’est appliquée.
 
 ### Remarques supplémentaires
 
