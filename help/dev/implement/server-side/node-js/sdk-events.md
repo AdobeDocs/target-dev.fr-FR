@@ -1,9 +1,9 @@
 ---
-title: Abonnez-vous aux événements dans le kit SDK  [!DNL Adobe Target] Node.js
+title: Abonnement aux événements dans le SDK Node [!DNL Adobe Target] js
 description: Découvrez comment vous abonner à divers événements qui se produisent dans le SDK Node.js à l’aide de l’objet [!UICONTROL OnDeviceDecisioningHandler].
 feature: APIs/SDKs
 exl-id: 40c53840-a560-4819-ae04-f527c36b22fe
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 2%
@@ -14,16 +14,16 @@ ht-degree: 2%
 
 ## Description
 
-Lorsque [&#x200B; initialise le SDK &#x200B;](initialize-sdk.md), l’objet `options.events` est un objet facultatif avec des clés de nom d’événement et des valeurs de fonction de rappel. Il peut être utilisé pour s’abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `clientReady` peut être utilisé avec une fonction de rappel qui sera appelée lorsque le SDK est prêt pour les appels de méthode.
+Lors de l’initialisation [ du SDK](initialize-sdk.md), l’objet `options.events` est un objet facultatif avec des clés de nom d’événement et des valeurs de fonction de rappel. Il peut être utilisé pour vous abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `clientReady` peut être utilisé avec une fonction de rappel appelée lorsque le SDK est prêt pour les appels de méthode.
 
-Lorsque la fonction de rappel est appelée, un objet d’événement est transmis. Chaque événement comporte un `type` correspondant au nom de l’événement. Certains événements incluent des propriétés supplémentaires avec des informations pertinentes.
+Lorsque la fonction de rappel est appelée, un objet d’événement est transmis. Chaque événement possède un `type` correspondant au nom de l’événement. Certains événements incluent des propriétés supplémentaires avec des informations pertinentes.
 
 ## Requête 
 
 | Nom de l’événement (type) | Description | Propriétés d’événement supplémentaires |
 | --- | --- | --- |
-| clientReady | Émis lorsque l’artefact a été téléchargé et que le SDK est prêt pour les appels `getOffers`. Recommandé lors de l’utilisation de la méthode de prise de décision sur l’appareil. |
-| artifactDownloadSucceeded | Émis à chaque téléchargement d’un nouvel artefact. | artifactPayload, artifactLocation |
+| clientReady | Émis lorsque l’artefact a été téléchargé et que le SDK est prêt pour les appels `getOffers`. Recommandé lors de l’utilisation de la méthode de prise de décision sur l’appareil. |  |
+| artifactDownloadSuccessfully | Émis chaque fois qu’un nouvel artefact est téléchargé. | artifactPayload, artifactLocation |
 | artifactDownloadFailed | Émis chaque fois qu’un artefact ne parvient pas à être téléchargé. | artifactLocation, erreur |
 
 ## Exemple

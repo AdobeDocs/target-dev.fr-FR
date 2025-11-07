@@ -1,10 +1,10 @@
 ---
-keywords: at.js, agent utilisateur du navigateur, agent utilisateur, conseils client, agent utilisateur
-description: Découvrez comment Adobe Target utilise l’agent-utilisateur et les astuces client pour qualifier les visiteurs pour la segmentation et la personnalisation.
+keywords: at.js, user agent de navigateur, user agent, client hints, user-agent
+description: Découvrez comment Adobe Target utilise user-agent et les Client Hints pour qualifier les visiteurs pour la segmentation et la personnalisation.
 title: User agent et Client Hints
 feature: at.js
 exl-id: e0d87d95-ee95-4ca9-8632-222ae1fb9a91
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 72%
@@ -13,13 +13,13 @@ ht-degree: 72%
 
 # User-agent et Client Hints
 
-Adobe Target utilise l’agent-utilisateur pour qualifier les visiteurs pour la segmentation et la personnalisation.
+Adobe Target utilise user-agent pour qualifier les visiteurs pour la segmentation et la personnalisation.
 
 >[!NOTE]
 >
 >Les informations contenues dans cet article s’appliquent à [at.js version 2.9.0](target-atjs-versions.md) (ou ultérieure).
 
-Chaque fois qu’un navigateur web envoie une requête à un serveur, des informations sur le navigateur et l’environnement dans lequel le navigateur s’exécute sont incluses dans l’en-tête de la requête. Depuis les tous premiers jours d’Internet, ces données se sont agglomérées en une seule chaîne appelée user-agent.
+Chaque fois qu’un navigateur web envoie une requête à un serveur, des informations sur le navigateur et l’environnement dans lequel il s’exécute sont incluses dans l’en-tête de la requête. Depuis les tous premiers jours d’Internet, ces données se sont agglomérées en une seule chaîne appelée user-agent.
 
 Le texte suivant est un échantillon user-agent d’un ordinateur Mac OS X utilisant un navigateur Safari :
 
@@ -44,21 +44,21 @@ Au fil des ans, la quantité d’informations sur le navigateur et l’appareil 
 
 ## Cas d’utilisation de User-Agent
 
-Les agents utilisateur ont longtemps été utilisés pour fournir aux équipes de marketing et de développement des informations importantes sur la manière dont les navigateurs, les systèmes d’exploitation et les périphériques affichent le contenu du site, ainsi que sur la manière dont les utilisateurs interagissent avec les sites web. Les User-agents sont également utilisés pour bloquer les spams et filtrer les bots qui explorent les sites à diverses fins supplémentaires.
+Les User-agents ont longtemps été utilisés pour fournir aux équipes de marketing et de développement des informations importantes sur la manière dont les navigateurs, les systèmes d’exploitation et les appareils affichent le contenu du site, ainsi que sur la manière dont les utilisateurs interagissent avec les sites web. Les User-agents sont également utilisés pour bloquer les spams et filtrer les bots qui explorent les sites à diverses fins supplémentaires.
 
 Cependant, au cours des dernières années, certains propriétaires de site et vendeurs marketing ont utilisé user-agent avec d’autres informations incluses dans les en-têtes de requête pour créer des empreintes numériques qui peuvent être utilisées pour identifier les utilisateurs à leur insu. Malgré l’objectif important que remplit user-agent pour les propriétaires de site, les développeurs de navigateur ont décidé de modifier la manière dont les user-agents fonctionnent afin de limiter les éventuels problèmes de confidentialité pour les visiteurs du site.
 
-Les développeurs de navigateur ont créé des conseils client User-Agent en tant que solution à ce problème. Les conseils aux clients permettent toujours aux sites de collecter les informations nécessaires sur le navigateur, le système d’exploitation et le périphérique, tout en offrant une protection accrue contre les méthodes de suivi secrètes, telles que l’empreinte digitale.
+Les développeurs et développeuses de navigateurs ont créé la chaîne Agent-utilisateur Client Hints comme solution à ce défi. Les Client Hints permettent toujours aux sites de collecter les informations nécessaires sur le navigateur, le système d’exploitation et l’appareil utilisé, tout en offrant une protection accrue contre les méthodes de suivi secrètes, telles que l’empreinte numérique.
 
-## Conseils au client
+## Client Hints
 
 Les User-Agent Client Hints permettent aux propriétaires de site web d’accéder aux mêmes informations que celles disponibles dans user-agent, mais de manière plus respectueuse de la vie privée. Lorsque les navigateurs modernes envoient un user-agent à un serveur web, user-agent complet est envoyé à chaque requête, même si ce dernier n’est pas requis. Les Client Hints, en revanche, appliquent un modèle dans lequel le serveur doit demander au navigateur les informations supplémentaires qu’il souhaite connaître sur le client. Lors de la réception de cette requête, le navigateur peut appliquer ses propres politiques ou sa propre configuration utilisateur pour déterminer les données renvoyées. Au lieu d’exposer l’ensemble de user-agent par défaut sur toutes les requêtes, l’accès est désormais géré de manière explicite et auditable.
 
 User-Agent Client Hints est disponible dans Chrome depuis la version 89. Les versions récentes des navigateurs Chromium, tels que Microsoft Edge, Opera, Brave, Chrome Android, Opera Android et Samsung Internet prennent également en charge l’API Client Hints.
 
-Les Client Hints contenus dans les en-têtes de la première requête envoyée par le navigateur à un serveur web contiennent la marque du navigateur, la version majeure du navigateur et un indicateur indiquant si le client est un appareil mobile. Chaque élément de données possède sa propre valeur d’en-tête, plutôt que d’être regroupé en une seule chaîne agent-utilisateur.
+Les Client Hints contenus dans les en-têtes de la première requête envoyée par le navigateur à un serveur web contiennent la marque du navigateur, la version majeure du navigateur et un indicateur indiquant si le client est un appareil mobile. Chaque élément de données possède sa propre valeur d’en-tête, plutôt que de les regrouper en une seule chaîne user-agent.
 
-Par exemple, voici quelques conseils sur le client :
+Par exemple, voici quelques Client Hints :
 
 ```
 Sec-CH-UA: "Chromium";v="101", "Google Chrome";v="101", " Not;A Brand";v="99" 
@@ -66,7 +66,7 @@ Sec-CH-UA-Mobile: ?0
 Sec-CH-UA-Platform: "macOS"
 ```
 
-...alors qu’il s’agit de l’agent-utilisateur pour le même navigateur :
+...alors qu’il s’agit de user-agent pour le même navigateur :
 
 ```
 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.54 Safari/537.36 
@@ -133,13 +133,13 @@ Les valeurs à entropie élevée incluent plusieurs informations supplémentaire
 Actuellement, les navigateurs basés sur Chromium continuent d’envoyer user-agent
  avec les Client Hints dans les en-têtes des requêtes effectuées aux serveurs web. Toutefois, la quantité de données contenue dans la chaîne user-agent sera réduite entre avril 2022 et février 2023. D’autres navigateurs, tels que Safari et Firefox, continueront à utiliser la chaîne user-agent, mais ils réduiront eux aussi la quantité d’informations qu’elles contiennent.
 
-## Cas d’utilisation de Target nécessitant des conseils client
+## Cas d’utilisation de Target nécessitant des Client Hints
 
 Les cas d’utilisation suivants dans Target nécessitent des Client Hints :
 
 ### Attributs d’audience
 
-Si vous utilisez les audiences Target et l’un des attributs d’audience suivants, Target exige que les conseils au client effectuent la segmentation correcte :
+Si vous utilisez les audiences Target et utilisez l’un des attributs d’audience suivants, Target requiert que la segmentation correcte soit effectuée par les Client Hints :
 
 * Navigateur
 * Système d’exploitation
@@ -157,9 +157,9 @@ L’exemple suivant montre comment détecter correctement un système d’exploi
 (user.clientHint('sec-ch-ua-platform') === 'Windows')));" 
 ```
 
-Voici un tableau des conseils client et de leur sémantique d’utilisation de script de profil correspondante.
+Voici un tableau des Client Hints et la sémantique d’utilisation du script de profil correspondant.
 
-| En-tête de conseil client | Entropy | Attribut d’audience | Utilisation du script de profil |
+| En-tête Client Hint | Entropie | Attribut d’audience | Utilisation du script de profil |
 | --- | --- | --- | --- |
 | [Sec-CH-UA](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA?lang=fr) | Faible | Navigateur | `user.clientHint('sec-ch-ua')` |
 | [Sec-CH-UA-Arch](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Arch?lang=fr) | Élevé | Exposé aux utilisateurs via des scripts de profil | `user.clientHint('sec-ch-ua-arch')` |
@@ -170,13 +170,13 @@ Voici un tableau des conseils client et de leur sémantique d’utilisation de s
 | [Sec-CH-UA-Platform](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform?lang=fr) | Faible | Système d’exploitation | `user.clientHint('sec-ch-ua-platform')` |
 | [Sec-CH-UA-Platform-Version](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform-Version?lang=fr) | Élevé | Exposé aux utilisateurs via des scripts de profil | `user.clientHint('sec-ch-ua-platform-version')` |
 
-## Comment transmettre des conseils au client à Adobe Target
+## Comment transmettre des Client Hints à Adobe Target
 
-Les sections suivantes contiennent plus d’informations sur la manière de transmettre des conseils au client, en fonction de votre mise en oeuvre Target.
+Les sections suivantes contiennent des informations supplémentaires sur la manière de transmettre des Client Hints, en fonction de votre implémentation de Target.
 
 ### at.js version 2.9.0 (ou ultérieure)
 
-À compter d’at.js 2.9.0, les conseils client de l’agent utilisateur seront collectés automatiquement à partir du navigateur et envoyés à Target lors de l’appel de `getOffer/getOffers()`. Par défaut, at.js collecte uniquement les Client Hints « à entropie faible ». Si vous effectuez une segmentation de l’audience ou utilisez des scripts de profil basés sur des données dites « à entropie élevée » des sections précédentes, vous devez configurer at.js pour collecter les Client Hints « à entropie élevée » à partir du navigateur via `targetGlobalSettings`.
+À compter d’at.js version 2.9.0, les User Agent Client Hints seront collectés automatiquement à partir du navigateur et envoyés à Target lors de l’appel de `getOffer/getOffers()`. Par défaut, at.js collecte uniquement les Client Hints « à entropie faible ». Si vous effectuez une segmentation de l’audience ou utilisez des scripts de profil basés sur des données dites « à entropie élevée » des sections précédentes, vous devez configurer at.js pour collecter les Client Hints « à entropie élevée » à partir du navigateur via `targetGlobalSettings`.
 
 ```
 window.targetGlobalSettings = { allowHighEntropyClientHints: true };
@@ -184,4 +184,4 @@ window.targetGlobalSettings = { allowHighEntropyClientHints: true };
 
 ### SDK côté serveur
 
-Pour plus d’informations sur la manière de transmettre des conseils client via des SDK côté serveur, voir [Conseils client](../../server-side/sdk-guides/core-principles/audience-targeting.md#client-hints) sous la documentation de mise en oeuvre côté serveur.
+Pour plus d’informations sur la manière de transmettre des Client Hints via des SDK côté serveur, consultez [Client Hints](../../server-side/sdk-guides/core-principles/audience-targeting.md#client-hints) dans la documentation Implémentation côté serveur.
