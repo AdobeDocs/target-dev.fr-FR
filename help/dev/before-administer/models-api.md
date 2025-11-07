@@ -100,7 +100,7 @@ Dans l’exemple illustré ici, l’utilisateur vérifie la liste des fonctionna
 >
 >Pour trouver l’identifiant d’activité de votre activité, accédez à la liste des activités dans l’interface utilisateur de [!DNL Target]. Cliquez sur l’activité qui vous intéresse. L’ID d’activité s’affiche dans le corps de la page d’aperçu des activités qui en résulte, ainsi qu’à la fin de l’URL de cette page.
 
-Le **[!UICONTROL externalName]** est un nom convivial pour une fonctionnalité. Elle est créée par [!DNL Target], et il est possible que cette valeur change au fil du temps. Les utilisateurs peuvent afficher ces noms conviviaux dans le rapport Personalization Insights [](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html).
+Le **[!UICONTROL externalName]** est un nom convivial pour une fonctionnalité. Elle est créée par [!DNL Target], et il est possible que cette valeur change au fil du temps. Les utilisateurs peuvent afficher ces noms conviviaux dans le rapport Personalization Insights [&#128279;](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html).
 
 L’**[!UICONTROL internalName]** est l’identifiant réel de la fonction. Il est également créé par [!DNL Target], mais il ne peut pas être modifié. Il s’agit de la valeur que vous devez référencer pour identifier la ou les fonctionnalités que vous souhaitez placer sur la liste bloquée.
 
@@ -241,7 +241,7 @@ Comme toujours, après avoir modifié la place sur la liste bloquée, il est rec
 
 Placer sur la liste bloquée Question : Comment supprimer une partie, mais pas la totalité, d’une ?
 
-Réponse : pour supprimer un sous-ensemble distinct de fonctionnalités placées sur la liste bloquée d’une liste bloquée à fonctionnalités multiples, les utilisateurs et utilisatrices peuvent simplement envoyer la liste mise à jour des fonctionnalités qu’ils ou elles souhaitent bloquer dans [la demande de suppression de la liste bloquée place sur la liste bloquée ](#step3), plutôt que d’effacer l’intégralité de la grille et de rajouter les fonctionnalités souhaitées. En d’autres termes, envoyez la liste des fonctionnalités mise à jour (comme indiqué à l’[étape 3](#step3)) en veillant à exclure les fonctionnalités que vous souhaitez « supprimer » de la place sur la liste bloquée.
+Réponse : pour supprimer un sous-ensemble distinct de fonctionnalités placées sur la liste bloquée d’une liste bloquée à fonctionnalités multiples, les utilisateurs et utilisatrices peuvent simplement envoyer la liste mise à jour des fonctionnalités qu’ils ou elles souhaitent bloquer dans [la demande de suppression de la liste bloquée place sur la liste bloquée &#x200B;](#step3), plutôt que d’effacer l’intégralité de la grille et de rajouter les fonctionnalités souhaitées. En d’autres termes, envoyez la liste des fonctionnalités mise à jour (comme indiqué à l’[étape 3](#step3)) en veillant à exclure les fonctionnalités que vous souhaitez « supprimer » de la place sur la liste bloquée.
 
 ## Étape 5 : (facultatif) gérer la liste bloquée globale {#step5}
 

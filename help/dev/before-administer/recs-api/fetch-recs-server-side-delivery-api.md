@@ -102,14 +102,14 @@ Dans une [section précédente](manage-catalog.md) nous avons appris à gérer l
 | [Collections](https://developer.adobe.com/target/administer/recommendations-api/#tag/Collections) | Répertorier, créer, obtenir, modifier et supprimer des collections |
 | [Critères](https://developer.adobe.com/target/administer/recommendations-api/#tag/Criteria) | Répertoriez et obtenez des critères. |
 | [Conceptions](https://developer.adobe.com/target/administer/recommendations-api/#tag/Designs) | Répertorier, créer, obtenir, modifier, supprimer et valider des conceptions. |
-| [ Entités ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities) | Enregistrer, supprimer et obtenir des entités. |
-| [Promotions ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Promotions) | Répertorier, créer, obtenir, modifier et supprimer des promotions. |
+| [&#x200B; Entités &#x200B;](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities) | Enregistrer, supprimer et obtenir des entités. |
+| [Promotions &#x200B;](https://developer.adobe.com/target/administer/recommendations-api/#tag/Promotions) | Répertorier, créer, obtenir, modifier et supprimer des promotions. |
 | [Critères de catégorie](https://developer.adobe.com/target/administer/recommendations-api/#tag/Category-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères de catégorie. |
 | [Critères personnalisés](https://developer.adobe.com/target/administer/recommendations-api/#tag/Custom-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères personnalisés. |
 | [Critères d’élément](https://developer.adobe.com/target/administer/recommendations-api/#tag/Item-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères d’élément. |
 | [Critères de popularité](https://developer.adobe.com/target/administer/recommendations-api/#tag/Popularity-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères de popularité. |
 | [Critères d’attribut de profil](https://developer.adobe.com/target/administer/recommendations-api/#tag/Profile-Attribute-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères d’attribut de profil. |
-| [ Critères récents ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Recent-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères récents. |
+| [&#x200B; Critères récents &#x200B;](https://developer.adobe.com/target/administer/recommendations-api/#tag/Recent-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères récents. |
 | [Critères de séquence](https://developer.adobe.com/target/administer/recommendations-api/#tag/Sequence-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères de séquence. |
 
 ## Documentation de référence

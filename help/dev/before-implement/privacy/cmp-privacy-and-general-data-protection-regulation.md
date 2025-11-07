@@ -32,7 +32,7 @@ Pour obtenir plus d’informations, voir :
 
 * [Présentation d’Adobe Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr)
 * [Guide de l’API Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/api/overview.html?lang=fr)
-* Présentation de l’interface utilisateur de Privacy Service [](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=fr)
+* Présentation de l’interface utilisateur de Privacy Service [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/privacy/ui/overview.html?lang=fr)
 
 ## Présentation du CCPA (California Consumer Privacy Act)
 
@@ -53,7 +53,7 @@ Si vous vous prépariez l’année dernière pour le règlement européen sur la
 
 ## Fonctionnalité de souscription (opt-in) Adobe Target et Adobe Experience Platform
 
-Target fournit une prise en charge de la fonctionnalité de souscription par le biais des balises dans Adobe Experience Platform afin de vous aider à appliquer votre stratégie de gestion du consentement. La fonctionnalité d’opt-in permet aux clients de décider comment et à quel moment la balise Target est déclenchée. Il existe également une option via Adobe Experience Platform pour préapprouver la balise Target. Pour permettre l’utilisation de la fonctionnalité d’accord préalable dans la bibliothèque at.js de Target, vous devez utiliser `targetGlobalSettings` et ajouter le paramètre `optinEnabled=true` . Dans Adobe Experience Platform, sélectionnez « activer » dans la liste déroulante d’accord préalable RGPD dans la vue d’installation de l’extension. Voir [ Implémentation de Target à l’aide de Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) pour plus d’informations.
+Target fournit une prise en charge de la fonctionnalité de souscription par le biais des balises dans Adobe Experience Platform afin de vous aider à appliquer votre stratégie de gestion du consentement. La fonctionnalité d’opt-in permet aux clients de décider comment et à quel moment la balise Target est déclenchée. Il existe également une option via Adobe Experience Platform pour préapprouver la balise Target. Pour permettre l’utilisation de la fonctionnalité d’accord préalable dans la bibliothèque at.js de Target, vous devez utiliser `targetGlobalSettings` et ajouter le paramètre `optinEnabled=true` . Dans Adobe Experience Platform, sélectionnez « activer » dans la liste déroulante d’accord préalable RGPD dans la vue d’installation de l’extension. Voir [&#x200B; Implémentation de Target à l’aide de Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) pour plus d’informations.
 
 L’extrait de code suivant montre comment activer le paramètre `optinEnabled=true` :
 

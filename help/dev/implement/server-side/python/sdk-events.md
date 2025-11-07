@@ -14,7 +14,7 @@ ht-degree: 3%
 
 ## Description
 
-Lors de l’initialisation [ du SDK](initialize-sdk.md), le dictionnaire de `options["events"]` est un objet facultatif avec des clés de nom d’événement et des valeurs de fonction de rappel. Il peut être utilisé pour vous abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `client_ready` peut être utilisé avec une fonction de rappel appelée lorsque le SDK est prêt pour les appels de méthode.
+Lors de l’initialisation [&#x200B; du SDK](initialize-sdk.md), le dictionnaire de `options["events"]` est un objet facultatif avec des clés de nom d’événement et des valeurs de fonction de rappel. Il peut être utilisé pour vous abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `client_ready` peut être utilisé avec une fonction de rappel appelée lorsque le SDK est prêt pour les appels de méthode.
 
 Lorsque la fonction `callback` est appelée, un objet événement est transmis. Chaque événement possède un `type` correspondant au nom de l’événement, et certains événements incluent des propriétés supplémentaires avec des informations pertinentes.
 
