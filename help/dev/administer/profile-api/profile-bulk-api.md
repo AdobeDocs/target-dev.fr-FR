@@ -4,9 +4,9 @@ description: Découvrez comment utiliser  [!DNL Adobe Target] [!UICONTROL Bulk P
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 892de7c241a165b55a5cf85ce8f472ad8e200ac3
+source-git-commit: c2300ad6affdf3c1028e5c52ccaceb577a289227
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1056'
 ht-degree: 6%
 
 ---
@@ -49,13 +49,13 @@ Le [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] vous permet de mettr
 
 Pour mettre à jour les données de profil en bloc, créez un fichier de commandes. Le fichier de commandes est un fichier texte dont les valeurs sont séparées par des virgules, semblable au fichier d’exemple suivant.
 
-``` ```
+``````
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+``````
 
 >[!NOTE]
 >
@@ -69,7 +69,6 @@ Vous référencez ce fichier dans l’appel POST aux serveurs [!DNL Target] pour
 * Les paramètres doivent être au format `paramName` uniquement. Les paramètres s’affichent dans [!DNL Target] sous la forme `profile.paramName`.
 * Si vous utilisez [!UICONTROL Bulk Profile Update API] v2, il n’est pas nécessaire de spécifier toutes les valeurs de paramètre pour chaque `pcId`. Les profils sont créés pour tout `pcId` ou `mbox3rdPartyId` introuvable dans [!DNL Target]. Si vous utilisez v1, les profils ne sont pas créés pour les pcIds ou mbox3rdPartyIds manquants. Pour plus d’informations, voir [Gestion des valeurs vides dans le  [!DNL Bulk Profile Update API]](#empty) ci-dessous.
 * La taille du fichier de traitement par lot doit être inférieure à 50 Mo. En outre, le nombre total de lignes ne doit pas dépasser 500 000. Cette limite permet de s’assurer que les serveurs ne sont pas submergés par un trop grand nombre de requêtes.
-* Vous pouvez envoyer plusieurs fichiers. Cependant, la somme totale des lignes de tous les fichiers que vous envoyez au cours d’une journée ne doit pas dépasser un million pour chaque client.
 * Le nombre d’attributs que vous pouvez charger n’est pas limité. Cependant, la taille totale des données de profil externes, qui comprennent les attributs du client, l’API de profil, les paramètres de profil In-Mbox et la sortie de script de profil, ne doit pas dépasser 64 Ko.
 * Les paramètres et les valeurs sont sensibles à la casse.
 
@@ -77,9 +76,9 @@ Vous référencez ce fichier dans l’appel POST aux serveurs [!DNL Target] pour
 
 Envoyez une requête HTTP POST aux serveurs Edge de [!DNL Target] pour traiter le fichier. Voici un exemple de requête HTTP POST pour le fichier batch.txt à l’aide de la commande curl :
 
-``` ```
+``````
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+``````
 
 Où :
 
