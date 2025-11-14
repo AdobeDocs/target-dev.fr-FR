@@ -4,7 +4,7 @@ description: Découvrez comment utiliser  [!DNL Adobe Target] [!UICONTROL Bulk P
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: c2300ad6affdf3c1028e5c52ccaceb577a289227
+source-git-commit: 23cbece45828cf057594445b010a353d865d36ed
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 6%
@@ -49,13 +49,13 @@ Le [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] vous permet de mettr
 
 Pour mettre à jour les données de profil en bloc, créez un fichier de commandes. Le fichier de commandes est un fichier texte dont les valeurs sont séparées par des virgules, semblable au fichier d’exemple suivant.
 
-``` ```
+```
 batch=pcId,param1,param2,param3,param4
 123,value1
 124,value1,,,value4
 125,,value2
 126,value1,value2,value3,value4
-``` ```
+```
 
 >[!NOTE]
 >
@@ -76,9 +76,9 @@ Vous référencez ce fichier dans l’appel POST aux serveurs [!DNL Target] pour
 
 Envoyez une requête HTTP POST aux serveurs Edge de [!DNL Target] pour traiter le fichier. Voici un exemple de requête HTTP POST pour le fichier batch.txt à l’aide de la commande curl :
 
-``` ```
+```
 curl -X POST --data-binary @BATCH.TXT http://CLIENTCODE.tt.omtrdc.net/m2/CLIENTCODE/v2/profile/batchUpdate
-``` ```
+```
 
 Où :
 
