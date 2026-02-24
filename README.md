@@ -7,4 +7,4 @@ ht-degree: 0%
 ---
 # ARCHIVÉ
 
-Ce référentiel est migré vers <https://github.com/Adobe-Enterprise-Docs/target-dev.en>.
+Ce référentiel est migré vers <https://github.com/Adobe-Enterprise-Docs/target-dev.fr-FR>.
