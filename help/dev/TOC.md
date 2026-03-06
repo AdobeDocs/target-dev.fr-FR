@@ -2,7 +2,7 @@
 user-guide-title: Guide du développeur d’Adobe Target
 breadcrumb-title: Guide du développeur de Target
 user-guide-description: Découvrez comment personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques.
-source-git-commit: b1b0424bfe61fb8b4e88723e6bb2c565d75f8351
+source-git-commit: d161a60be0e9acbdd217f1acde5987b839dd78de
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 41%
@@ -174,7 +174,7 @@ ht-degree: 41%
    + [Journalisation côté client pour les données A4T dans Experience Platform Web SDK](/help/dev/implement/a4t/client-side-logging.md)
    + [Journalisation côté serveur des données A4T dans Experience Platform Web SDK](/help/dev/implement/a4t/server-side-a4t.md)
 + [Implémentation de Recommendations](implement/recommendations/recommendations.md)
-+ [Implémentation de Recommendations bêta](/help/dev/implement/recommendations/recommendations-beta.md)
++ [hide-from-tocImplémentation de Recommendations bêta](/help/dev/implement/recommendations/recommendations-beta.md)
 + Implémentation des applications mobiles {#mobile-apps}
    + [Target pour les applications mobiles](implement/mobile/overview.md)
    + [Aperçu de Target Mobile](implement/mobile/target-mobile-preview.md)
