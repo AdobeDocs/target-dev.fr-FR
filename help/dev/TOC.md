@@ -174,7 +174,7 @@ ht-degree: 41%
    + [Journalisation côté client pour les données A4T dans Experience Platform Web SDK](/help/dev/implement/a4t/client-side-logging.md)
    + [Journalisation côté serveur des données A4T dans Experience Platform Web SDK](/help/dev/implement/a4t/server-side-a4t.md)
 + [Implémentation de Recommendations](implement/recommendations/recommendations.md)
-+ {hide-from-toc}[Implémentation de Recommendations bêta](/help/dev/implement/recommendations/recommendations-beta.md)
++ [hide-from-tocImplémentation de Recommendations bêta](/help/dev/implement/recommendations/recommendations-beta.md)
 + Implémentation des applications mobiles {#mobile-apps}
    + [Target pour les applications mobiles](implement/mobile/overview.md)
    + [Aperçu de Target Mobile](implement/mobile/target-mobile-preview.md)

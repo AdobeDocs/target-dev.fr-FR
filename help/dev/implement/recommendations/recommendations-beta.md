@@ -31,7 +31,7 @@ Avant de configurer votre première activité [!UICONTROL Recommendations] dans 
 
 ## &#x200B;1. Implémenter [!UICONTROL Target]
 
-[!DNL Target Recommendations] nécessite l’implémentation de [!DNL Adobe Experience Platform Web SDK] ou d’at.js 0.9.2 (ou version ultérieure). Pour plus d’informations[[!UICONTROL Target] consultez les guides de mise en œuvre côté client ](../client-side/overview.md) .
+[!DNL Target Recommendations] nécessite l’implémentation de [!DNL Adobe Experience Platform Web SDK] ou d’at.js 0.9.2 (ou version ultérieure). Pour plus d’informations[[!UICONTROL Target] consultez les guides de mise en œuvre côté client &#x200B;](../client-side/overview.md) .
 
 ## &#x200B;2. Configurer votre catalogue [!UICONTROL Recommendations]
 
