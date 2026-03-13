@@ -6,9 +6,9 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
-source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
+source-git-commit: 0681f89bbebb9e79ab042ae6cfbab989d846cb70
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1243'
 ht-degree: 1%
 
 ---
@@ -69,7 +69,7 @@ La syntaxe de l’[API de diffusion](/help/dev/implement/delivery-api/overview.m
    * *api_charter* est répertorié comme nom d’emplacement dans cet exemple
    * entity.id est spécifié, car cette recommandation est basée sur la similarité de contenu, qui nécessite la transmission d’une clé d’élément active à Target.
      ![server-side-Delivery-API-call.png](assets/server-side-delivery-api-call2.png)
-N’oubliez pas de configurer correctement vos paramètres de requête. Par exemple, veillez à spécifier `{{CLIENT_CODE}}` si nécessaire. &lt;!— Q : Dans la syntaxe d’appel mise à jour, entity.id est répertorié en tant que profileParameter au lieu d’un mboxParameter comme dans les versions plus anciennes. —> &lt;!— Q : Ancienne image ![server-side-create-recs-post.png](assets/server-side-create-recs-post.png) Ancien texte d’accompagnement : « Notez que cette recommandation est basée sur des produits Content Similary basés sur entity.id envoyés via mboxParameters. » —>
+N’oubliez pas de configurer correctement vos paramètres de requête. Par exemple, veillez à spécifier `{{CLIENT_CODE}}` si nécessaire. <!-- Q: In the updated call syntax, entity.id is listed as a profileParameter instead of an mboxParameter as in older versions. Q: Old image ![server-side-create-recs-post.png](assets/server-side-create-recs-post.png) Old accompanying text: "Note this recommendation is based on Content Similar products based on the entity.id sent via mboxParameters." -->
      ![code-client3](assets/client-code3.png)
 1. Envoyez la demande. Cette opération s’exécute à l’emplacement *api_charter*, où s’exécute une recommandation active, définie avec votre conception JSON et qui génère une liste des entités recommandées.
 1. Recevez une réponse basée sur la conception JSON.
@@ -115,7 +115,7 @@ Dans une [section précédente](manage-catalog.md) nous avons appris à gérer l
 ## Documentation de référence
 
 * [Documentation sur l’API de diffusion Adobe Target](/help/dev/implement/delivery-api/overview.md)
-* [Intégration de Recommendations dans la messagerie électronique](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html?lang=fr)
+* [Intégration de Recommandations dans la messagerie électronique](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html?lang=fr)
 
 ## Résumé et révision
 
