@@ -5,7 +5,7 @@ title: Comment Mettre En Œuvre [!UICONTROL Recommendations] Activités ?
 feature: Recommendations
 hide: true
 exl-id: 0a9c9649-195b-44e2-987e-d02eaf98cc54
-source-git-commit: d161a60be0e9acbdd217f1acde5987b839dd78de
+source-git-commit: 760e6425fc2a32ec5c405094d144f173de1b6c07
 workflow-type: tm+mt
 source-wordcount: '1550'
 ht-degree: 18%
@@ -18,7 +18,7 @@ Informations destinées à vous aider à planifier et à implémenter des [!DNL 
 
 >[!NOTE]
 >
->Outre cet article, le [Guide du professionnel Adobe Target](https://experienceleague.adobe.com/fr/docs/target/using/target-home){target=_blank} contient des informations détaillées sur [Target Recommendations](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/recommendations){target=_blank}.
+>Outre cet article, le [Guide du professionnel &#x200B;](https://experienceleague.adobe.com/fr/docs/target/using/target-home){target=_blank} contient des informations détaillées sur [Target Recommendations](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/recommendations){target=_blank}.
 
 Avant de configurer votre première activité [!UICONTROL Recommendations] dans [!DNL Adobe Target], procédez comme suit :
 
@@ -154,7 +154,7 @@ Si vous ne connaissez pas votre [!UICONTROL client code], dans l’interface uti
 
 #### Jeton d’authentification
 
-Les API [!DNL Adobe Target] Admin, y compris les API [!DNL Recommendations Admin], sont sécurisées par authentification afin de s’assurer que seuls les utilisateurs autorisés les utilisent pour accéder aux [!DNL Adobe Target]. Utilisez [Adobe Developer Console](https://developer.adobe.com/console/home) pour gérer cette authentification pour tous les [!DNL Adobe Experience Cloud solutions], y compris les [!DNL Adobe Target].
+Les API [!DNL Adobe Target] Admin, y compris les API [!DNL Recommendations Admin], sont sécurisées par authentification afin de s’assurer que seuls les utilisateurs autorisés les utilisent pour accéder aux [!DNL Adobe Target]. Utilisez [&#128279;](https://developer.adobe.com/console/home) pour gérer cette authentification pour tous les [!DNL Adobe Experience Cloud solutions], y compris les [!DNL Adobe Target].
 
 Pour plus d’informations, voir [Configuration de l’authentification pour les API Adobe Target](/help/dev/before-administer/configure-authentication.md).
 
