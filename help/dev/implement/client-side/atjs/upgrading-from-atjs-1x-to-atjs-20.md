@@ -65,7 +65,7 @@ Déployer at.js 2.*x* via les balises dans l’extension [Adobe Experience Platf
 >
 >Ou
 >
->Téléchargez manuellement at.js 2.*x* à l’aide de l’interface utilisateur [!DNL Target] et déployez-la à l’aide de la méthode [ de votre choix](/help/dev/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
+>Téléchargez manuellement at.js 2.*x* à l’aide de l’interface utilisateur [!DNL Target] et déployez-la à l’aide de la méthode [&#x200B; de votre choix](/help/dev/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
 
 ## Fonctions d’at.js obsolètes
 
@@ -317,7 +317,7 @@ Les clients peuvent spécifier un nom de mbox global via **[!UICONTROL Target]**
 
 Oui, les événements personnalisés at.js s’appliquent à `triggerView()` également.
 
-### Elle indique que lorsque j’appelle `triggerView()` avec &amp;lbrace;`"page" : "true"`&amp;rbrace;, une notification est envoyée au serveur principal [!DNL Target] et l’impression est augmentée. Cela entraîne-t-il également l’exécution des scripts de profil ?
+### Elle indique que lorsque j’appelle `triggerView()` avec &lbrace;`"page" : "true"`&rbrace;, une notification est envoyée au serveur principal [!DNL Target] et l’impression est augmentée. Cela entraîne-t-il également l’exécution des scripts de profil ?
 
 Lorsqu’un appel de pré-récupération est effectué au [!DNL Target] principal, les scripts de profil sont exécutés. Ensuite, les données de profil impactées seront chiffrées et retransmises côté client. Après l’appel de `triggerView()` avec `{"page": "true"}`, une notification est envoyée avec les données de profil chiffrées. C’est alors que l’arrière-plan [!DNL Target] déchiffrera les données de profil et les stockera dans les bases de données.
 
@@ -371,7 +371,7 @@ Les tableaux suivants décrivent at.js. compatibilité 2.*x* avec différents ty
 | Audiences | Oui |
 | Attributs du client | Oui |
 | Fragments d’expérience AEM | Oui |
-| [Extension ](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) | Oui |
+| [Extension &#x200B;](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) | Oui |
 | Débogueur | Oui |
 | Auditeur | Les règles n’ont pas encore été mises à jour pour at.js 2.*x* |
 | Prise en charge de l’Opt-in pour le [RGPD](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) | Cette fonctionnalité est prise en charge dans [at.js version 2.1.0](/help/dev/implement/client-side/atjs/target-atjs-versions.md#atjs-version-210-june-3-2019) ou ultérieure. |
