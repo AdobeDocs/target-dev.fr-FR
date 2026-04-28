@@ -2,10 +2,11 @@
 user-guide-title: Guide du développeur d’Adobe Target
 breadcrumb-title: Guide du développeur de Target
 user-guide-description: Découvrez comment personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques.
-source-git-commit: 04de08103591059481ee996123f4c5bae8e1fa0a
+nudge: true
+source-git-commit: ca53593287a5a58e6e0b9fe02b6e8b28788f9ff9
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 41%
+source-wordcount: '850'
+ht-degree: 42%
 
 ---
 
