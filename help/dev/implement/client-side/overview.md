@@ -23,7 +23,7 @@ Pour implémenter [!DNL Target] côté client, vous devez utiliser l’une des b
 
 * [Bibliothèque JavaScript at.js [!DNL Target]](/help/dev/implement/client-side/atjs/how-atjs-works/how-atjs-works.md)
 
-  La bibliothèque JavaScript at.js réduit les temps de chargement des pages pour les implémentations web, améliore la sécurité et fournit de meilleures options d’implémentation pour les applications d’une seule page. Si vous choisissez de migrer vers at.js, voir [Fonctionnement d’At.js ](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md) et [[!DNL Adobe Target] Développement des compétences : conversations avec les développeurs, migrez mbox.js Adobe Target vers at.js](https://seminars.adobeconnect.com/ptdo6mfo6qn6/?proto=true).
+  La bibliothèque JavaScript at.js réduit les temps de chargement des pages pour les implémentations web, améliore la sécurité et fournit de meilleures options d’implémentation pour les applications d’une seule page. Si vous choisissez de migrer vers at.js, voir [Fonctionnement d’At.js &#x200B;](/help/dev/implement/client-side/atjs/how-atjs-works/overview.md) et [[!DNL Adobe Target] Développement des compétences : conversations avec les développeurs, migrez mbox.js Adobe Target vers at.js](https://seminars.adobeconnect.com/ptdo6mfo6qn6/?proto=true).
 
 
 Voir [Comparaison de la bibliothèque at.js à la SDK Web](/help/dev/implement/client-side/aep-web-sdk/web-sdk-atjs-comparison.md) pour en savoir plus sur les différences entre les deux approches d’implémentation.
