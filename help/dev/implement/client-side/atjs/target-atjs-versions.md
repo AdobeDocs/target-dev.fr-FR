@@ -25,7 +25,7 @@ Informations détaillées sur les modifications apportées à chaque version de 
 >
 >Vous devez effectuer une mise à niveau vers les dernières versions de 1.*x* ou 2.*x* pour obtenir des correctifs de bugs et de sécurité pour les problèmes découverts dans toute version mineure précédente de la version majeure correspondante.
 
-Les balises dans [](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode privilégiée pour mettre à niveau at.js. Les développeurs d’extensions ajoutent continuellement de nouvelles fonctionnalités à leurs extensions et corrigent fréquemment les bogues. Ces mises à jour sont incluses dans de nouvelles versions d’une extension et mises à disposition dans le catalogue Adobe Experience Platform sous forme de mises à niveau. Pour plus d’informations, voir [Mises à niveau d’extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) dans le guide *Présentation des balises*.
+Les balises dans [&#128279;](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode privilégiée pour mettre à niveau at.js. Les développeurs d’extensions ajoutent continuellement de nouvelles fonctionnalités à leurs extensions et corrigent fréquemment les bogues. Ces mises à jour sont incluses dans de nouvelles versions d’une extension et mises à disposition dans le catalogue Adobe Experience Platform sous forme de mises à niveau. Pour plus d’informations, voir [Mises à niveau d’extensions](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/extension-upgrade.html) dans le guide *Présentation des balises*.
 
 ## at.js version 2.11.8 (31 mars 2025)
 
@@ -242,7 +242,7 @@ Cette version comprend les fonctionnalités et améliorations suivantes :
 
 * **Journalisation de l’analyse côté client** : permet aux clients de contrôler entièrement la manière dont ils souhaitent envoyer les données d’analyse à [!DNL Adobe Analytics], que ce soit côté client ou côté serveur.
 
-  Pour plus d’informations, voir [Journalisation côté client [!DNL Analytics] ](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html#client-side).
+  Pour plus d’informations, voir [Journalisation côté client [!DNL Analytics] &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html#client-side).
 
 * **Envoi de notifications** : Permet aux développeurs d’envoyer des notifications lorsqu’une expérience est générée par leur code au lieu d’utiliser `applyOffer()` ou `applyOffers()`.
 
