@@ -1,13 +1,13 @@
 ---
-keywords: instances cloud, liste de suffixes publics, suffixe public, cookie, cookie propriétaire, cookie propriétaire, azurewebsites.net, cloudapp.net, amazonaws.com, cloudfront.net, firebaseapp.com, herokuapp.com,,, aucuns, targetGlobalSettings, cookieDomain, instances cloud5, instances cloud6, instances cloud7, instances cloud8, instances cloud9, liste de suffixes publics0, liste de suffixes publics1, liste de suffixes publics2, liste3, liste de suffixes publics liste de suffixes publics5
-description: Explorez les problèmes (avec les solutions) auxquels les clients sont confrontés lors de l’utilisation d’instances basées sur le cloud pour tester [!DNL Adobe Target] ou à des fins de preuve de concept.
-title: Puis-je utiliser  [!DNL Target]  avec des instances basées sur le cloud ?
+keywords: instances cloud, liste des suffixes publics, suffixe public, cookie, cookie propriétaire, cookie propriétaire, azurewebsites.net, cloudapp.net, amazonaws.com, cloudfront.net, herokuapp.com, firebaseapp.com, targetGlobalSettings, cookieDomain, instances cloud5, instances cloud6, instances cloud7, instances cloud8, instances cloud9, liste des suffixes publics0, liste des suffixes publics1, liste des suffixes publics2, liste des suffixes publics3, liste des suffixes publics4, liste des suffixes publics5
+description: Explorez les problèmes (avec les solutions) auxquels les clients sont confrontés lorsqu’ils utilisent des instances basées sur le cloud à des fins de test [!DNL Adobe Target] ou de preuve de concept.
+title: Puis [!DNL Target] je utiliser avec des instances basées sur le cloud ?
 feature: at.js
 exl-id: 4b24fdc0-6c74-4b29-bbf9-7a761d4564a2
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+source-git-commit: a85cbaafb3c666478dd4d283661ff4b1125aa0dd
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 45%
+source-wordcount: '203'
+ht-degree: 46%
 
 ---
 
@@ -23,6 +23,7 @@ Ces domaines, et de nombreux autres, font partie de la [liste des suffixes publi
 
 **Problème :** Les navigateurs modernes n’enregistrent pas les cookies si vous utilisez ces domaines.
 
-La bibliothèque JavaScript at.js utilise des cookies pour effectuer le suivi des utilisateurs afin de s’assurer que [!DNL [!DNL Target]] présente toujours une expérience cohérente. Si la bibliothèque JavaScript [!DNL Target] ne peut pas enregistrer de cookies, les demandes Target sont désactivées.
+La bibliothèque JavaScript at.js utilise des cookies pour suivre les utilisateurs afin de s’assurer que [!DNL [!DNL Target]] présente toujours une expérience cohérente. Si la bibliothèque JavaScript [!DNL Target] ne peut pas enregistrer de cookies, les requêtes Target sont désactivées.
 
 **Solution :** Pour respecter les bonnes pratiques, si vous envisagez d’utiliser des instances basées sur le cloud avec des domaines inclus dans la liste des suffixes publics, veillez à personnaliser le paramètre `cookieDomain`. Pour plus d’informations, voir [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
+
