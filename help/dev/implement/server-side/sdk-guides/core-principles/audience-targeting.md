@@ -4,10 +4,16 @@ description: Les audiences peuvent être utilisées pour cibler vos activités d
 exl-id: df1bd856-e848-452c-90a0-abf29e7a2313
 feature: Implement Server-side
 TQID: https://experienceleague.adobe.com/BmKrCmWIkEkNHiipZ-DqDlhzOT7bVmKHl9de5uXhJQU
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eeb
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 1069
@@ -82,7 +88,7 @@ Pour plus d’informations, voir [Paramètres personnalisés](https://experience
 
 ### Système d’exploitation
 
-Pour plus d’informations, voir [ Système d’exploitation ](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html).
+Pour plus d’informations, voir [&#x200B; Système d’exploitation &#x200B;](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html).
 
 * Linux
 * Macintosh
@@ -131,7 +137,7 @@ Pour plus d’informations, voir [Période](https://experienceleague.adobe.com/d
 
 ## Client Hints
 
-[!DNL Adobe Target] nécessite des Client Hints pour la segmentation correcte des attributs de navigateur, de système d’exploitation et d’audience mobile, ainsi que de certaines instances de scripts de profil. Pour plus d’informations d’arrière-plan, voir [ Agent utilisateur et Client Hints](../../../client-side/atjs/user-agent-and-client-hints.md).
+[!DNL Adobe Target] nécessite des Client Hints pour la segmentation correcte des attributs de navigateur, de système d’exploitation et d’audience mobile, ainsi que de certaines instances de scripts de profil. Pour plus d’informations d’arrière-plan, voir [&#x200B; Agent utilisateur et Client Hints](../../../client-side/atjs/user-agent-and-client-hints.md).
 
 ### Comment transmettre des Client Hints à [!DNL Adobe Target]
 
@@ -212,7 +218,7 @@ Le tableau suivant indique les règles d’audience prises en charge ou non pour
 | [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Non |
 | [Sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Non |
 | [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Oui |
-| [Audiences ](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Non |
+| [Audiences &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Non |
 
 ### Ciblage géographique pour la prise de décision sur l’appareil
 
@@ -339,4 +345,4 @@ Le tableau suivant indique les règles d’audience prises en charge ou non pour
 | [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Oui |
 | [Sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Oui |
 | [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Oui |
-| [Audiences ](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Oui |
+| [Audiences &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Oui |

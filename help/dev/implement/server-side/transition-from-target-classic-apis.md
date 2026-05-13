@@ -5,10 +5,17 @@ title: Comment passer des API  [!DNL Target Classic]  aux API  [!DNL Target]  su
 feature: APIs/SDKs
 exl-id: b84e3767-89ad-4e2d-9bb4-7e31bffbc285
 TQID: https://experienceleague.adobe.com/cIWcraU0O9Ut1VBbD5ScKOyBrXniyIEM5XEVZMJvffk
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ceid: f7c7de77-382f-4f48-8b36-61a170f06d3d
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 595
@@ -29,7 +36,7 @@ Pour plus d’informations sur les API [!DNL Target], voir [[!DNL Target] API](/
 | Terme | Description |
 |--- |--- |
 | API classique | API liées à votre compte [!DNL Target Classic]. Les appels de ces API sont basés sur une authentification par nom d’utilisateur et mot de passe et utilisent le nom d’hôte `testandtarget.omniture.com`. Si vos appels API contiennent un nom d’utilisateur et un mot de passe dans l’URL de la requête, vous devez passer aux API [!DNL Adobe Developer Console]. |
-| [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/home) | Le [!DNL Adobe Developer Console] est la passerelle pour les API [!DNL Target]. Ces API sont connectées à votre compte [!DNL Target Standard/Premium]. Les API [!DNL Target] sur le [!DNL Adobe Developer Console] utilisent une [ authentification basée sur JWT](../../before-administer/configure-authentication.md), qui est la norme du secteur pour les API d’entreprise sécurisées. |
+| [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/home) | Le [!DNL Adobe Developer Console] est la passerelle pour les API [!DNL Target]. Ces API sont connectées à votre compte [!DNL Target Standard/Premium]. Les API [!DNL Target] sur le [!DNL Adobe Developer Console] utilisent une [&#x200B; authentification basée sur JWT](../../before-administer/configure-authentication.md), qui est la norme du secteur pour les API d’entreprise sécurisées. |
 
 ## Journal
 

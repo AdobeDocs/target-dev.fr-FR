@@ -6,11 +6,16 @@ feature: Implement Mobile
 role: Developer
 exl-id: 3dd2e1d7-c744-4ba8-aaa4-6c2fe64d01fa
 TQID: https://experienceleague.adobe.com/JrbjPpq3ds0sl4rkMnuzF9SYk2PI4r676hHqN-Pvn78
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2: id: d051910f-2bda-47ea-a969-6ade9fcd71f1
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: d051910f-2bda-47ea-a969-6ade9fcd71f1
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 611
@@ -30,7 +35,7 @@ Dans le monde réel, votre application d’entreprise utilise probablement des v
 
 Pour commencer à utiliser le [!DNL Adobe Experience Platform Mobile SDK], vous devez effectuer certaines tâches préalables.
 
-Pour plus d’informations, voir [](https://developer.adobe.com/client-sdks/documentation/adobe-target/){target=_blank} dans la documentation [[!DNL Adobe Experience Platform Mobile SDK]](https://developer.adobe.com/client-sdks/documentation/){target=_blank}.
+Pour plus d’informations, voir [&#128279;](https://developer.adobe.com/client-sdks/documentation/adobe-target/){target=_blank} dans la documentation [[!DNL Adobe Experience Platform Mobile SDK]](https://developer.adobe.com/client-sdks/documentation/){target=_blank}.
 
 ## Synchroniser le code natif avec les vues web
 

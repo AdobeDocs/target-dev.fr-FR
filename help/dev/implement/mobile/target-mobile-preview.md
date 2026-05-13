@@ -5,8 +5,10 @@ title: Comment utiliser les liens d’aperçu mobiles dans  [!DNL Adobe Target] 
 feature: Implement Mobile
 exl-id: c0c4237a-de1f-4231-b085-f8f1e96afc13
 TQID: https://experienceleague.adobe.com/ISZJ4lc8hhsQc3a-Mwz07US4fuEHobuvzCciFhmxEJk
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 552
@@ -33,7 +35,7 @@ La fonctionnalité d’aperçu mobile vous permet de tester entièrement les act
    Les liens suivants contiennent des informations supplémentaires :
 
    * **iOs** : pour plus d’informations sur la définition de schémas d’URL pour iOS, voir [Définition d’un schéma d’URL personnalisé pour votre application](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank} sur le site web *Apple Developer*.
-   * **** : pour plus d’informations sur la définition de schémas d’URL pour Android, consultez la section [Créer des liens profonds vers le contenu de l’application](https://developer.android.com/training/app-links/deep-linking){target=_blank} sur le site web *Android Developers*.
+   * **&#x200B;**&#x200B;: pour plus d’informations sur la définition de schémas d’URL pour Android, consultez la section [Créer des liens profonds vers le contenu de l’application](https://developer.android.com/training/app-links/deep-linking){target=_blank} sur le site web *Android Developers*.
 
 1. **Configurer l’API `collectLaunchInfo` (i0S uniquement)**
 

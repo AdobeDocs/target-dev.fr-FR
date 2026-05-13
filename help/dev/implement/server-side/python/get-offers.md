@@ -4,9 +4,12 @@ description: Découvrez comment utiliser getOffers() pour exécuter une décisio
 feature: APIs/SDKs
 exl-id: 9539b806-e070-430e-80cf-cf632ce3f207
 TQID: https://experienceleague.adobe.com/b7t1NfE5Gcsj86w4u3Cfl5-Eb7a6HG1Hg8vi6-ViQFg
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 357
@@ -55,7 +58,7 @@ Renvoie un `TargetDeliveryResponse` s’il est appelé de manière synchrone (pa
 | target_location_hint_cookie | dictionnaire | [!DNL Target] cookie d’indice d’emplacement |
 | analytics_details | list[AnalyticsResponse] | Payload Analytics, en cas d’utilisation d’Analytics côté client |
 | trace | list[dict] | Données de suivi agrégées pour toutes les mbox/vues de requête |
-| response_tokens | list[dict] | Une liste de &#x200B;jetons [ réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) |
+| response_tokens | list[dict] | Une liste de &#x200B;jetons [&#x200B; réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) |
 | méta | dictionnaire | Métadonnées de prise de décision supplémentaires à utiliser avec la prise de décision sur l’appareil |
 
 Les objets `target_cookie` et `target_location_hint_cookie` utilisés pour transmettre des données au navigateur ont la structure suivante :

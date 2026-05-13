@@ -4,10 +4,15 @@ description: Découvrez comment utiliser la méthode create pour initialiser le 
 feature: APIs/SDKs
 exl-id: 71516e44-508a-4d8d-9f2b-7c54243e9c60
 TQID: https://experienceleague.adobe.com/uawle0-l5bcv-FuXMLkPc8kIf8DvbkRqAYelr-ehNLk
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 321
@@ -47,7 +52,7 @@ TargetClient.create(options: Object): TargetClient
 | propertyToken | Chaîne | Non | None | **Jeton de propriété cible**. S’il est spécifié ici, tous les appels `getOffers` utiliseront cette valeur. **Pour la prise de décision sur l’appareil**, le SDK télécharge uniquement l’artefact qui contient les activités qualifiées pour le jeton de propriété défini dans `propertyToken` |
 | decisioningMethod | Chaîne | Non | côté serveur | Détermine la méthode de prise de décision à utiliser ([sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), côté serveur, hybride). |
 | pollingInterval | Nombre | Non | 300000 (5 minutes) | Intervalle d’interrogation de l’artefact [règle de prise de décision sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) (en millisecondes) |
-| artifactLocation | Chaîne | Non | None | Une URL complète vers l’artefact de règle de prise de décision [ sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Il remplace l’emplacement déterminé en interne. |
+| artifactLocation | Chaîne | Non | None | Une URL complète vers l’artefact de règle de prise de décision [&#x200B; sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Il remplace l’emplacement déterminé en interne. |
 | artifactPayload | Objet | Non | None | Payload JSON de l’artefact de règle de prise de décision [sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Si spécifié, il est utilisé au lieu d’en demander un à partir d’une URL. |
 | [events](sdk-events.md) | Object&lt;String,Function> | Non | None | Objet facultatif avec clés de nom d’événement et valeurs de fonction de rappel |
 | telemetryEnabled | Booléen | Non | true | Lorsqu’il est activé, Adobe collecte des données télémétriques sur l’utilisation des fonctionnalités et les performances de SDK. Les données personnelles ne sont pas collectées. |

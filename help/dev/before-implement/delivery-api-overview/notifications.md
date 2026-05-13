@@ -5,9 +5,12 @@ keywords: API de diffusion
 exl-id: 711388fd-2c1f-4ca4-939f-c56dc4bdc04a
 feature: APIs/SDKs
 TQID: https://experienceleague.adobe.com/rooWLG-bh7lu7eBELTQys3KoNtS-6ZicxfHoQcU6TU0
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 414
@@ -23,7 +26,7 @@ Pour que les notifications soient déclenchées pour la mbox ou la vue appropri�
 
 ## Notifications pour les mBox prérécupérées
 
-Une ou plusieurs notifications peuvent être envoyées via un seul appel de diffusion. Déterminez si la mesure qui doit être suivie est un `click` ou un `display` pour chaque mbox afin que le `type` de la notification puisse être correctement reflété. En outre, transmettez un `id` pour chaque notification afin que vous puissiez déterminer si une notification a été correctement envoyée via [!UICONTROL  Adobe Target Delivery API]. Il est également important de transmettre le `timestamp` à [!DNL Target] pour indiquer le moment où le `click` ou le `display` s’est produit pour une mbox donnée à des fins de création de rapports.
+Une ou plusieurs notifications peuvent être envoyées via un seul appel de diffusion. Déterminez si la mesure qui doit être suivie est un `click` ou un `display` pour chaque mbox afin que le `type` de la notification puisse être correctement reflété. En outre, transmettez un `id` pour chaque notification afin que vous puissiez déterminer si une notification a été correctement envoyée via [!UICONTROL &#x200B; Adobe Target Delivery API]. Il est également important de transmettre le `timestamp` à [!DNL Target] pour indiquer le moment où le `click` ou le `display` s’est produit pour une mbox donnée à des fins de création de rapports.
 
 ```
 curl -X POST \

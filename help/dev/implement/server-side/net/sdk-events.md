@@ -4,8 +4,10 @@ description: Découvrez comment vous abonner à divers événements qui se produ
 feature: APIs/SDKs
 exl-id: 7578033f-3de5-4d13-9739-46ad1269ec5f
 TQID: https://experienceleague.adobe.com/oeGknU-pW1-XjVrxn8JNEPoFBF8Gntt-vaVnqjdyTC8
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 120
@@ -17,7 +19,7 @@ ht-degree: 5%
 
 ## Description
 
-Lors de l’initialisation [ du SDK](initialize-sdk.md), un délégué `OnDeviceDecisioningReady` facultatif peut être fourni sur l’objet `TargetClientConfig`, qui sera appelé lorsque le SDK est prêt pour les appels de méthode sur l’appareil. D’autres délégués sont également disponibles pour gérer le téléchargement des artefacts [!UICONTROL on-device decisioning].
+Lors de l’initialisation [&#x200B; du SDK](initialize-sdk.md), un délégué `OnDeviceDecisioningReady` facultatif peut être fourni sur l’objet `TargetClientConfig`, qui sera appelé lorsque le SDK est prêt pour les appels de méthode sur l’appareil. D’autres délégués sont également disponibles pour gérer le téléchargement des artefacts [!UICONTROL on-device decisioning].
 
 ## Requête
 
