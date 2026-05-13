@@ -4,16 +4,21 @@ description: Découvrez comment utiliser  [!DNL Adobe Target] [!UICONTROL Bulk P
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-source-git-commit: 23cbece45828cf057594445b010a353d865d36ed
+TQID: https://experienceleague.adobe.com/EVlP71oFI-NIFoTe9fyx2Xzsr9v-sZq0JGdpti1XI64
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 6%
+source-wordcount: 1063
+ht-degree: 7%
 
 ---
 
 # [!DNL Adobe Target Bulk Profile Update API]
 
-Le [!DNL Adobe Target] [!UICONTROL Bulk Profile Update API] vous permet de mettre à jour en bloc les profils utilisateur de plusieurs visiteurs d’un site web à l’aide d’un fichier de commandes.
+Le [!UICONTROL Bulk Profile Update API] [!DNL Adobe Target] vous permet de mettre à jour en bloc les profils utilisateur de plusieurs visiteurs d’un site web à l’aide d’un fichier de commandes.
 
 À l’aide de l’[!UICONTROL Bulk Profile Update API] , vous pouvez envoyer des données de profil de visiteur détaillées sous la forme de paramètres de profil à de nombreux utilisateurs à [!DNL Target] de n’importe quelle source externe. Les sources externes peuvent inclure les systèmes de gestion de la relation client (CRM) ou de point de vente (POS), qui ne sont généralement pas disponibles sur une page web.
 
@@ -146,7 +151,7 @@ http://mboxedge45.tt.omtrdc.net/m2/demo/profile/batchStatus?batchId=demo-1701473
 
 ## Gérer les valeurs vides dans le [!DNL Bulk Profile Update API] {#empty}
 
-Lors de l’utilisation du [!DNL Target] [!DNL Bulk Profile Update API] (v1 ou v2), il est important de comprendre comment le système gère les valeurs de paramètre ou d’attribut vides.
+Lors de l’utilisation du [!DNL Bulk Profile Update API] [!DNL Target] (v1 ou v2), il est important de comprendre comment le système gère les valeurs de paramètre ou d’attribut vides.
 
 ### Comportement attendu
 

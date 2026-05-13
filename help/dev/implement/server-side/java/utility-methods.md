@@ -1,18 +1,21 @@
 ---
-title: Utilisation des méthodes d’utilitaire dans le kit SDK Java  [!DNL Adobe Target]
-description: Découvrez comment utiliser des méthodes d’assistance, qui sont réutilisables sur plusieurs contrôleurs et peuvent être déplacées vers une classe d’utilitaire distincte.
+title: 'Utilisation de méthodes d’utilitaire dans le SDK Java [!DNL Adobe Target] '
+description: Découvrez comment utiliser des méthodes d'assistance, qui sont réutilisables sur plusieurs contrôleurs et peuvent être déplacées vers une classe utilitaire distincte.
 feature: APIs/SDKs
 exl-id: 19418126-c4d8-4e6b-bb84-036b7fe0e6ec
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/bAifzGxPwAw-N8x4yG-FxbtECVDZSRu0aglSibBZcfk
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '47'
+source-wordcount: 46
 ht-degree: 2%
 
 ---
 
-# Méthodes d’utilitaire (Java)
+# Méthodes Utilitaires (Java)
 
-Ces méthodes d’assistance sont réutilisables sur plusieurs contrôleurs et peuvent être déplacées vers une classe d’utilitaire distincte.
+Ces méthodes d&#39;assistance sont réutilisables entre les contrôleurs et peuvent être déplacées vers une classe utilitaire distincte.
 
 ## Méthodes
 

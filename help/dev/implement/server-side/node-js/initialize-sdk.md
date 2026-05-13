@@ -1,24 +1,29 @@
 ---
-title: Initialisation du SDK Node.js à l’aide de la méthode create
-description: Découvrez comment utiliser la méthode create pour initialiser le SDK Node.js et instancier le client  [!DNL Target] pour effectuer des appels à [!DNL Adobe Target] pour des expériences et des expériences personnalisées.
+title: Initialisez le SDK Node.js à l’aide de la méthode create
+description: Découvrez comment utiliser la méthode create pour initialiser le SDK Node.js et instancier le client pour effectuer des appels vers  [!DNL Target]  expériences et  [!DNL Adobe Target]  expériences personnalisées.
 feature: APIs/SDKs
 exl-id: 71516e44-508a-4d8d-9f2b-7c54243e9c60
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/uawle0-l5bcv-FuXMLkPc8kIf8DvbkRqAYelr-ehNLk
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 19%
+source-wordcount: 321
+ht-degree: 18%
 
 ---
 
-# Initialisation du SDK Node.js
+# Initialiser le SDK Node.js
 
 ## Description
 
-Utilisez la méthode `create` pour initialiser le SDK Node.js et instancier le client [!UICONTROL Target] afin d’effectuer des appels vers [!DNL Adobe Target] pour des expériences et des expériences personnalisées.
+Utilisez la méthode `create` afin d’initialiser le SDK Node.js et d’instancier le client [!UICONTROL Target] pour effectuer des appels vers [!DNL Adobe Target] pour des expériences et des expériences personnalisées.
 
 ## Méthode
 
-**create**
+**créer**
 
 ```js {line-numbers="true"}
 TargetClient.create(options: Object): TargetClient
@@ -26,7 +31,7 @@ TargetClient.create(options: Object): TargetClient
 
 ## Paramètres
 
-`options` a la structure suivante :
+`options` présente la structure suivante :
 
 | Nom | Type | Requis | Par défaut | Description |
 | --- | --- | --- | --- | --- |
@@ -35,17 +40,17 @@ TargetClient.create(options: Object): TargetClient
 | environnement | Chaîne | Non | production | Nom de l’environnement cible. Dans l’interface utilisateur de [!DNL Target], [!UICONTROL Administration] > [!UICONTROL Environments]. |
 | timeout | Nombre | Non | 3000 | Timeout en millisecondes |
 | serverDomain | Chaîne | Non | `*client*.tt.omtrdc.net` | Remplace le nom d’hôte par défaut |
-| secure | Booléen | Non | true | Non défini pour appliquer le schéma HTTP |
-| logger | Objet | Non | Enregistreur NOOP | Remplace le journal par défaut NOOP |
-| targetLocationHint | Chaîne | Non | None | Conseil sur l’emplacement cible |
-| fetchApi | Fonction | Non | global.fetch ou window.fetch | [fetch](https://fetch.spec.whatwg.org/) est utilisé par le SDK pour les requêtes http. Par défaut, node-fetch ou l’implémentation de la récupération dans le navigateur est utilisée. Mais une autre implémentation peut être fournie en utilisant `fetchApi` |
-| propertyToken | Chaîne | Non | None | **Jeton de propriété Target**. Si spécifié ici, tous les appels `getOffers` utiliseront cette valeur. **Pour la prise de décision sur l’appareil**, le SDK ne télécharge que l’artefact qui contient les activités qualifiées pour le jeu de jetons de propriété dans `propertyToken` |
-| decisioningMethod | Chaîne | Non | côté serveur | Détermine la méthode de prise de décision à utiliser ([on-device](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), côté serveur, hybride) |
-| pollingInterval | Nombre | Non | 300000 (5 minutes) | Intervalle d’interrogation de l’[&#x200B; artefact de règle de prise de décision sur l’appareil &#x200B;](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) (en millisecondes) |
-| artifactLocation | Chaîne | Non | None | URL complète à l’artefact de règle de prise de décision sur l’appareil [. &#x200B;](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) Permet de remplacer un emplacement déterminé en interne. |
-| artifactPayload | Objet | Non | None | Charge JSON de l’artefact de règle de prise de décision sur l’appareil [. &#x200B;](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) S’il est spécifié, il est utilisé au lieu d’en demander un à partir d’une URL. |
-| [events](sdk-events.md) | Objet&lt;String,Function> | Non | None | Objet facultatif avec clés de nom d’événement et valeurs de fonction de rappel |
-| telemetryEnabled | Booléen | Non | true | Lorsqu’il est activé, Adobe collecte les données de télémétrie des performances et de l’utilisation des fonctionnalités du SDK. Les données personnelles ne sont pas collectées. |
+| sécuriser | Booléen | Non | true | Annuler l’application du schéma HTTP |
+| bûcheron | Objet | Non | Enregistreur NOOP | Remplace l’enregistreur NOOP par défaut |
+| targetLocationHint | Chaîne | Non | None | Indicateur d’emplacement cible |
+| fetchApi | Fonction | Non | global.fetch ou window.fetch | [fetch](https://fetch.spec.whatwg.org/) est utilisé par le SDK pour les requêtes http. Par défaut, la récupération des nœuds ou l’implémentation du navigateur de la récupération est utilisée. Mais une autre implémentation peut être fournie à l’aide de `fetchApi` |
+| propertyToken | Chaîne | Non | None | **Jeton de propriété cible**. S’il est spécifié ici, tous les appels `getOffers` utiliseront cette valeur. **Pour la prise de décision sur l’appareil**, le SDK télécharge uniquement l’artefact qui contient les activités qualifiées pour le jeton de propriété défini dans `propertyToken` |
+| decisioningMethod | Chaîne | Non | côté serveur | Détermine la méthode de prise de décision à utiliser ([sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), côté serveur, hybride). |
+| pollingInterval | Nombre | Non | 300000 (5 minutes) | Intervalle d’interrogation de l’artefact [règle de prise de décision sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) (en millisecondes) |
+| artifactLocation | Chaîne | Non | None | Une URL complète vers l’artefact de règle de prise de décision [ sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Il remplace l’emplacement déterminé en interne. |
+| artifactPayload | Objet | Non | None | Payload JSON de l’artefact de règle de prise de décision [sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Si spécifié, il est utilisé au lieu d’en demander un à partir d’une URL. |
+| [events](sdk-events.md) | Object&lt;String,Function> | Non | None | Objet facultatif avec clés de nom d’événement et valeurs de fonction de rappel |
+| telemetryEnabled | Booléen | Non | true | Lorsqu’il est activé, Adobe collecte des données télémétriques sur l’utilisation des fonctionnalités et les performances de SDK. Les données personnelles ne sont pas collectées. |
 
 ## Exemple
 

@@ -1,35 +1,39 @@
 ---
-title: Envoyez des notifications d’affichage ou de clic à  [!DNL Adobe Target] à l’aide du SDK .NET
-description: Découvrez comment utiliser sendNotifications() pour envoyer des notifications d’affichage ou de clic à  [!DNL Adobe Target] pour la mesure et la création de rapports.
+title: Envoyez des notifications d’affichage ou de clic à à  [!DNL Adobe Target] ’aide de .NET SDK
+description: Découvrez comment utiliser sendNotifications() pour envoyer des notifications d’affichage ou de clic à des  [!DNL Adobe Target]  de mesure et de création de rapports.
 feature: APIs/SDKs
 exl-id: 724e787c-af53-4152-8b20-136f7b5452e1
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/4lJvfqWv6vDehZ-CmO7xj61-ZFS9-3nOAcA7vlbg-3c
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: 230
 ht-degree: 1%
 
 ---
 
-# Envoi de notifications (.NET)
+# Envoyer des notifications (.NET)
 
 ## Description
 
-`SendNotifications()` est utilisé pour envoyer des notifications d’affichage ou de clic à [!DNL Adobe Target] pour la mesure et la création de rapports.
+`SendNotifications()` sert à envoyer des notifications d’affichage ou de clic aux [!DNL Adobe Target] pour la mesure et le compte rendu des performances.
 
 >[!NOTE]
 >
->Lorsqu’un objet `Execute` avec les paramètres requis se trouve dans la requête elle-même, l’impression est incrémentée automatiquement pour les activités admissibles.
+>Lorsqu’un objet `Execute` avec les paramètres requis se trouve dans la requête elle-même, l’impression est incrémentée automatiquement pour les activités de qualification.
 
-Les méthodes du SDK qui incrémenteront automatiquement une impression sont les suivantes :
+Les méthodes SDK qui incrémentent automatiquement une impression sont les suivantes :
 
 * `GetOffers()`
 * `GetAttributes()`
 
-Lorsqu’un objet `Prefetch` est transmis dans la requête, l’impression n’est pas automatiquement incrémentée pour les activités comportant des mbox dans l’objet `Prefetch`. `SendNotifications()` doit être utilisé pour les expériences prérécupérées afin d’incrémenter les impressions et les conversions.
+Lorsqu’un objet `Prefetch` est transmis dans la requête, l’impression n’est pas automatiquement incrémentée pour les activités comportant des mbox au sein de l’objet `Prefetch`. `SendNotifications()` doit être utilisé pour les expériences prérécupérées afin d’incrémenter les impressions et les conversions.
 
 ## Méthode
 
-### Créer 
+### Créer
 
 ```dotnet {line-numbers="true"}
 TargetDeliveryResponse TargetClient.SendNotifications(TargetDeliveryRequest request)
@@ -37,7 +41,7 @@ TargetDeliveryResponse TargetClient.SendNotifications(TargetDeliveryRequest requ
 
 ## Exemple
 
-Commençons par créer la requête [!UICONTROL Target Delivery API] pour la prérécupération de contenu pour les mbox `home` et `product1`.
+Tout d’abord, nous allons créer la requête [!UICONTROL Target Delivery API] pour la prérécupération du contenu des mbox `home` et `product1`.
 
 ### \.NET
 
@@ -56,7 +60,7 @@ var targetDeliveryRequest = new TargetDeliveryRequest.Builder()
 var targetResponse = targetClient.GetOffers(targetDeliveryRequest);
 ```
 
-Une réponse réussie contient un objet de réponse [!DNL Target Delivery API], qui contient le contenu prérécupéré pour les mbox demandées. Un exemple d’objet `targetResponse.Response` peut se présenter comme suit :
+Une réponse réussie contient un objet de réponse [!DNL Target Delivery API], qui contient du contenu prérécupéré pour les mbox demandées. Un exemple d’objet `targetResponse.Response` peut se présenter comme suit :
 
 ### \.NET
 
@@ -114,7 +118,7 @@ Une réponse réussie contient un objet de réponse [!DNL Target Delivery API], 
 }
 ```
 
-Notez les champs `mbox` name et `state`, ainsi que le champ `eventToken`, dans chacune des options de contenu [!DNL Target]. Elles doivent être fournies dans la requête `SendNotifications()`, dès que chaque option de contenu est affichée. Supposons que la mbox `product1` ait été affichée sur un périphérique autre que le navigateur. La demande de notification s’affiche comme suit :
+Notez le nom du `mbox` et les champs `state`, ainsi que le champ `eventToken`, dans chacune des options de contenu [!DNL Target]. Ils doivent être fournis dans la requête `SendNotifications()`, dès que chaque option de contenu est affichée. Supposons que la mbox `product1` ait été affichée sur un appareil qui n’est pas un navigateur. La demande de notifications se présente comme suit :
 
 ### \.NET
 
@@ -131,7 +135,7 @@ var mboxNotificationRequest = new TargetDeliveryRequest.Builder()
     .Build();
 ```
 
-Notez que nous avons inclus à la fois l’état mbox et le jeton d’événement correspondant à l’offre [!DNL Target] fournie dans la réponse de prérécupération. Une fois la requête de notifications créée, nous pouvons l’envoyer à [!DNL Target] via la méthode d’API `SendNotifications()` :
+Notez que nous avons inclus l’état de la mbox et le jeton d’événement correspondant à l’offre [!DNL Target] diffusée dans la réponse de prérécupération. Après avoir créé la requête de notifications, nous pouvons l’envoyer à [!DNL Target] via la méthode de l’API `SendNotifications()` :
 
 ### \.NET
 

@@ -1,11 +1,14 @@
 ---
-title: Abonnez-vous aux événements dans le kit SDK Java [!DNL Adobe Target]
-description: Découvrez comment vous abonner à divers événements qui se produisent dans le SDK Java à l’aide de l’objet [!UICONTROL OnDeviceDecisioningHandler].
+title: 'Abonnement aux événements dans le SDK Java [!DNL Adobe Target] '
+description: Découvrez comment vous abonner à divers événements qui se produisent dans Java SDK à l’aide de l’objet [!UICONTROL OnDeviceDecisioningHandler].
 feature: APIs/SDKs
 exl-id: f2d56762-6bf7-4c6b-9c14-fb20e5cfd60d
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/x3aig-jM-GXzmLNcUNclZUK9Y49tuSF9-sdkxzJFtiM
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: 134
 ht-degree: 5%
 
 ---
@@ -14,17 +17,17 @@ ht-degree: 5%
 
 ## Description
 
-Lorsque [&#x200B; initialise le SDK &#x200B;](initialize-sdk.md), un objet `OnDeviceDecisioningHandler` facultatif peut être fourni sur l’objet `ClientConfig`. Il peut être utilisé pour s’abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `onDeviceDecisioningReady` peut être utilisé avec une fonction de rappel qui sera appelée lorsque le SDK est prêt pour les appels de méthode.
+Lors de l’initialisation [ du SDK](initialize-sdk.md), un objet `OnDeviceDecisioningHandler` facultatif peut être fourni sur l’objet `ClientConfig`. Il peut être utilisé pour vous abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `onDeviceDecisioningReady` peut être utilisé avec une fonction de rappel appelée lorsque le SDK est prêt pour les appels de méthode.
 
-## Requête 
+## Requête
 
 L’objet `OnDeviceDecisioningHandler` contient les rappels suivants, qui sont appelés pour certains événements :
 
 | Nom | Arguments | Description |
 | --- | --- | --- |
-| onDeviceDecisioningReady | None | Appelé une seule fois que le client est prêt pour [!UICONTROL on-device decisioning] |
-| artifactDownloadSucceeded | contenu byte[] du fichier d’artefact | Appelé à chaque téléchargement d’un artefact [!UICONTROL on-device decisioning] |
-| artifactDownloadFailed | Exception | Appelé chaque fois qu’il y a un échec de téléchargement d’un artefact [!UICONTROL on-device decisioning] |
+| onDeviceDecisioningReady | None | Appelé une seule fois la première fois que le client est prêt pour la [!UICONTROL on-device decisioning] |
+| artifactDownloadSuccessfully | byte [] contenu du fichier d&#39;artefact | Appelé à chaque téléchargement d’un artefact [!UICONTROL on-device decisioning] |
+| artifactDownloadFailed | Exception | Appelé chaque fois qu’un artefact de [!UICONTROL on-device decisioning] ne parvient pas à être téléchargé |
 
 ## Exemple
 

@@ -1,31 +1,35 @@
 ---
 keywords: application mobile, emplacement d’application mobile, cibler une application mobile, emplacements cibles des applications mobiles, mesures de succès des applications mobiles
-description: Affichez un exemple de code pour vous aider à apprendre à créer des emplacements et des mesures de succès dans les applications iOS afin que vous puissiez utiliser  [!DNL Adobe Target] pour personnaliser et optimiser votre application.
-title: Comment créer [!DNL Target] des emplacements et des mesures de succès dans une application iOS ?
+description: 'Affichez un exemple de code pour apprendre à créer des emplacements et des mesures de succès dans les applications iOS afin de pouvoir utiliser pour personnaliser et optimiser votre application [!DNL Adobe Target] '
+title: Comment créer des emplacements et  [!DNL Target]  mesures de succès dans une application iOS ?
 feature: Implement Mobile
 exl-id: 755c8b26-5c60-48fc-9e7e-5e97a25edb78
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/frolzqCgdL0iz5Z3E8OaJmP6yiVq7jEYiWn6LD4bocA
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 66%
+source-wordcount: 469
+ht-degree: 63%
 
 ---
 
-# iOS : créez un emplacement [!DNL Target] et une mesure de succès.
+# iOS - Création d’un emplacement [!DNL Target] et d’une mesure de succès
 
 Pour utiliser [!DNL Target] dans votre application mobile, créez un emplacement et une mesure de succès.
 
 >[!IMPORTANT]
 >
->Prise en charge de la version 4 de [!DNL Adobe Mobile].Les SDK *x* ont pris fin le 31 août 2021 et ne sont plus recommandés pour les utilisateurs mobiles [!DNL Adobe Target].
+>La prise en charge des SDK [!DNL Adobe Mobile] version 4.*x* a pris fin le 31 août 2021 et n’est plus recommandée pour les utilisateurs d’[!DNL Adobe Target] mobile.
 >
->Le [SDK Adobe Experience Platform pour les applications mobiles](https://developer.adobe.com/client-sdks/documentation/){target=_blank} est la solution recommandée pour alimenter les services et solutions [!DNL Adobe Experience Cloud] de vos applications mobiles.
+>[Adobe Experience Platform SDK pour les applications mobiles](https://developer.adobe.com/client-sdks/documentation/){target=_blank} est la solution recommandée pour alimenter les solutions et services [!DNL Adobe Experience Cloud] dans vos applications mobiles.
 
-Cette section comprend un exemple de code pouvant être utilisé comme modèle pour votre application. Les exemples de cette section contiennent un code pour iOS. Les mêmes modèles s’appliquent à Android. La syntaxe spécifique à Android est disponible dans le guide [Android SDK 4.x pour solutions Experience Cloud](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/target-main.html?lang=fr) .
+Cette section comprend un exemple de code pouvant être utilisé comme modèle pour votre application. Les exemples de cette section contiennent un code pour iOS. Les mêmes modèles s’appliquent à Android. Vous trouverez la syntaxe spécifique à Android dans le guide [Android SDK 4.x pour les solutions Experience Cloud](https://experienceleague.adobe.com/docs/mobile-services/android/target-android/target-main.html) .
 
 >[!NOTE]
 >
->Pour obtenir la liste de toutes les méthodes [!DNL Target] disponibles, reportez-vous à la [documentation mobile](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-target-methods.html?lang=fr) .
+>Consultez la [Documentation mobile](https://experienceleague.adobe.com/docs/mobile-services/ios/target-ios/c-target-methods.html) pour obtenir une liste de toutes les méthodes de [!DNL Target] disponibles.
 
 Pour créer un emplacement [!DNL Target] dans votre application et effectuer une requête, il existe deux méthodes principales :
 
@@ -64,7 +68,7 @@ Pour créer un emplacement [!DNL Target] dans votre application et effectuer une
    |---|---|
    | `targetLoadRequest:myRequest` | Remplacez `myRequest` par le nom de votre `targetLocation` dans l’application. |
    | `NSString *content` | Remplacez le contenu par le contenu actuel provenant d’Adobe. La chaîne peut être au format XML, JSON ou brut. Utilisez cette section du code pour définir les variables, configurer les chemins des images, afficher les commandes de flux, les points de transaction ou toute autre action de votre choix. Target rendra le contenu saisi au niveau de l’interface utilisateur exactement au même format. |
-   | `heroImage.image = [UIImage imageNamed:content];` | Par exemple : définissez le contenu et configurez le chemin d’une image à forte identification. |
+   | `heroImage.image = [UIImage imageNamed:content];` | Par exemple : définissez le contenu et configurez le chemin d’une image principale. |
 
 1. Création d’une mesure de succès.
 

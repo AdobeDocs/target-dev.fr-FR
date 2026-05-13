@@ -1,23 +1,26 @@
 ---
-title: Récupération de profils
-description: Découvrez comment utiliser les API de profil Adobe Target pour récupérer les données de visiteur à utiliser dans  [!DNL Target].
+title: Récupération des profils
+description: Découvrez comment utiliser les API de profil Adobe Target pour récupérer les données du visiteur à utiliser dans  [!DNL Target].
 contributors: https://github.com/icaraps
 feature: APIs/SDKs
 exl-id: b422ae68-49b3-4d60-9ea4-0fa67b6934b0
-source-git-commit: b8ccfdcaff6aa17a325727df0a9ffd716e44519b
+TQID: https://experienceleague.adobe.com/sCVfAY8W0oYu2ak-W4MYvcWSoUiAuaU3762JEhocZSE
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: 294
 ht-degree: 0%
 
 ---
 
-# Récupération de profils
+# Récupération des profils
 
-Un profil [!DNL Target] peut être récupéré de trois façons : en utilisant un `[!DNL Experience Cloud Visitor ID]` (`ECID`), un `tntid` ou un `thirdPartyId`.
+Un profil de [!DNL Target] peut être récupéré de trois façons : à l’aide d’un `[!DNL Experience Cloud Visitor ID]` (`ECID`), `tntid` ou `thirdPartyId`.
 
 ## Utilisation d’un [!DNL Experience Cloud Visitor ID] (ECID)
 
-Vous pouvez récupérer un profil en fonction de `ECID`. La méthode HTTP doit être GET.
+Vous pouvez récupérer un profil en fonction de la `ECID`. La méthode HTTP doit être GET.
 
 L’URL ressemble à l’exemple suivant :
 
@@ -25,11 +28,11 @@ L’URL ressemble à l’exemple suivant :
 https://<clientCode>.tt.omtrdc.net/rest/v1/profiles/marketingCloudVisitorId/<ECID>?client=<clientCode>
 ```
 
-Remplacez `<clientCode>` par vos [!DNL Target] [!UICONTROL Client Code] et `<ECID>` avec vos [!DNL Experience Cloud Visitor ID] ([!DNL Marketing Cloud Visitor ID]).
+Remplacez `<clientCode>` par votre [!UICONTROL Client Code] [!DNL Target] et `<ECID>` par votre [!DNL Experience Cloud Visitor ID] ([!DNL Marketing Cloud Visitor ID]).
 
 ## Utilisation d’un tntid
 
-[!DNL Target] affecte automatiquement un `tntid` à chaque demande.
+[!DNL Target] attribue automatiquement un `tntid` pour chaque demande.
 
 L’exemple suivant illustre le format de requête pour récupérer un profil à l’aide d’un `tntid` :
 
@@ -37,7 +40,7 @@ L’exemple suivant illustre le format de requête pour récupérer un profil à
 https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/your-tnt-id?client=<your-client-code>
 ```
 
-Remplacez `<your-client-code>` et `your-tnt-id` et déclenchez une demande de GET. Voici un exemple d’appel de récupération de profil utilisant un `tntid` :
+Remplacez `<your-client-code>` et `your-tnt-id`, puis déclenchez une requête GET. Voici un exemple d’appel de récupération de profil à l’aide d’un `tntid` :
 
 ```
 https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046?client=<your-client-code>
@@ -45,9 +48,9 @@ https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/111492025094307-353046
 
 ## Utilisation d’un thirdPartyId
 
-Les profils [!DNL Adobe Target] peuvent être augmentés avec votre propre identifiant (par exemple : identifiant CRM, `uuid`, numéro de membre, etc.).
+[!DNL Adobe Target] profils peuvent être augmentés avec votre propre identifiant (par exemple : identifiant CRM, `uuid`, numéro d’abonnement, etc.).
 
-Voir [Mise à jour de profils](/help/dev/administer/profile-api/profile-api-overview.md) pour savoir comment joindre un `thirdPartyId` à votre profil.
+Voir [Mettre à jour les profils](/help/dev/administer/profile-api/profile-api-overview.md) pour savoir comment joindre un `thirdPartyId` à votre profil.
 
 L’exemple suivant illustre le format de requête pour récupérer un profil à l’aide d’un `thirdPartyId` :
 
@@ -55,31 +58,31 @@ L’exemple suivant illustre le format de requête pour récupérer un profil à
 https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/your-thirdpartyid?client=<your-client-code>
 ```
 
-Remplacez `<your-client-code>` et `your-thirdpartyid` et déclenchez une demande de GET. Voici un exemple d’appel de récupération de profil utilisant un [!UICONTROL thirdpartyid] :
+Remplacez `<your-client-code>` et `your-thirdpartyid`, puis déclenchez une requête GET. Voici un exemple d’appel de récupération de profil à l’aide d’un [!UICONTROL thirdpartyid] :
 
 ```
 https://<your-client-code>.tt.omtrdc.net/rest/v1/profiles/thirdPartyId/a1-mbox3rdPartyId?client=<your-client-code>
 ```
 
-Lorsque cet appel est effectué, [!DNL Target] tente de localiser le profil en premier dans la grappe indiquée dans la requête Edge, ou partout où le profil est situé et de renvoyer le contenu. Le contenu du profil est renvoyé au format JSON.
+Lorsque cet appel est effectué, [!DNL Target] tente de localiser le profil en premier dans le cluster noté dans la requête Edge, ou à l’endroit où se trouve le profil et de renvoyer le contenu. Le contenu du profil est renvoyé au format JSON.
 
 ## Authentification
 
-[!DNL Target Profile API] peut être sécurisé en activant l’authentification à partir de l’interface utilisateur [!DNL Target], comme décrit ici. Une fois l’authentification activée, le jeton d’authentification de profil doit être défini dans les en-têtes de requête pour toutes les requêtes d’API de profil. Le jeton lui-même peut être généré à l’aide de l’interface utilisateur [!DNL Target] ou en suivant les étapes décrites ci-dessus dans la section [Jeton d’authentification de profil](https://developers.adobetarget.com/api/#authentication-tokens){target=_blank} .
+Le [!DNL Target Profile API] peut être sécurisé en activant l’authentification à partir de l’interface utilisateur de [!DNL Target], comme décrit ici. Une fois l’authentification ACTIVÉE, le jeton d’authentification du profil doit être défini dans les en-têtes de toutes les requêtes API de profil. Le jeton lui-même peut être généré à l’aide de l’interface utilisateur de [!DNL Target] ou en suivant les étapes décrites ci-dessus dans la section [Jeton d’authentification de profil](https://developers.adobetarget.com/api/#authentication-tokens){target=_blank}.
 
-## Mesures
+## Mesure
 
 Ces appels ne sont pas pris en compte dans vos appels de mbox.
 
 ## Gestion des erreurs
 
-Dans le cas d&#39;un appel à `/thirdPartyId` avec un `thirdPartyId` non valide ou un  expiré spécifié :
+Dans le cas d&#39;un appel à `/thirdPartyId` avec un `thirdPartyId` spécifié non valide ou expiré :
 
 ```
 {"status" : 404, "message" : "No profile found for client <client_code> with third party id=<third_party_id>"}
 ```
 
-Si le profil ne peut pas être localisé ou a expiré :
+Si le profil est introuvable ou a expiré :
 
 ```
 {"status" : 404, "message" : "No profile found for client <client_code> with mboxPC=<mbox_pc>"}

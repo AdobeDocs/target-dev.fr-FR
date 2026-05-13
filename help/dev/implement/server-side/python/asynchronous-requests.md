@@ -1,20 +1,23 @@
 ---
-title: Utilisation de requêtes asynchrones dans le kit SDK  [!DNL Adobe Target] Python
-description: Découvrez comment le SDK Python  [!DNL Target] prend en charge les requêtes asynchrones, ce qui peut réduire le temps cible effectif à zéro.
+title: Utilisation des requêtes asynchrones dans le SDK  [!DNL Adobe Target]  Python
+description: Découvrez comment  [!DNL Target]  SDK Python prend en charge les requêtes asynchrones, ce qui peut réduire le temps cible effectif à zéro.
 feature: APIs/SDKs
 exl-id: 44ab74e5-3c1a-49cf-9fff-fe523b0c2592
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/ZWRw2OlSbuEHorY0MXPOaBw3uePIW5dzpsuqho0Jtqk
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: 142
 ht-degree: 4%
 
 ---
 
-# Requêtes asynchrones (Python)
+# Requêtes Asynchrones (Python)
 
 ## Description
 
-L’un des avantages de l’intégration côté serveur est que vous pouvez exploiter l’énorme bande passante et les ressources informatiques disponibles côté serveur en utilisant le parallélisme. [!DNL Target] Le SDK Python prend en charge les requêtes asynchrones, ce qui peut réduire le temps cible effectif à zéro.
+L’un des avantages de l’intégration côté serveur est que vous pouvez tirer parti de l’énorme bande passante et des ressources informatiques disponibles côté serveur en utilisant le parallélisme. [!DNL Target] Python SDK prend en charge les requêtes asynchrones, ce qui peut réduire le temps cible effectif à zéro.
 
 ## Méthodes prises en charge
 
@@ -28,7 +31,7 @@ get_attributes(mbox_names, options)
 
 ## Exemple
 
-Voici un exemple d’application qui utilise le module `asyncio` async/attente en Python 3.9+ :
+Voici à quoi pourrait ressembler un exemple d&#39;application qui utilise la fonction async/await du module `asyncio` dans Python 3.9+ :
 
 ### Python
 
@@ -52,4 +55,4 @@ mboxes = [MboxRequest(name="a1-serverside-ab", index=1)]
 return asyncio.run(get_target_delivery_response(mboxes)
 ```
 
-Cet exemple suppose que vous utilisez Python 3.9+. Si vous utilisez une ancienne version de Python, vous pouvez toujours envoyer des requêtes asynchrones en transmettant `options.callback` à `get_offers`. Consultez l’exemple d’application Flask pour plus d’informations sur l’exécution asynchrone à l’aide de rappels ou async/attente, [ici](https://github.com/adobe/target-python-sdk/blob/main/samples/app.py).
+Cet exemple suppose que vous utilisez Python 3.9+. Si vous utilisez une ancienne version de Python, vous pouvez toujours envoyer des requêtes asynchrones en transmettant des `options.callback` à `get_offers`. Consultez l’exemple d’application Flask pour plus d’informations sur l’exécution asynchrone à l’aide de rappels ou async/await, [ici](https://github.com/adobe/target-python-sdk/blob/main/samples/app.py).

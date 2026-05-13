@@ -3,9 +3,14 @@ title: Présentation de l’API d’administration Adobe Target
 description: Vue d’ensemble du  [!DNL Adobe Target Admin API]
 exl-id: 1168d376-c95b-4c5a-b7a2-c7815799a787
 feature: APIs/SDKs
-source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
+TQID: https://experienceleague.adobe.com/pJIaDbvs5sAFD8KPsnaNAMQAoq-lowmLs-B0zRAGzDY
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: 1400
 ht-degree: 2%
 
 ---
@@ -16,7 +21,7 @@ Cet article présente les informations générales nécessaires pour comprendre 
 
 >[!NOTE]
 >
->Si vous souhaitez administrer [!DNL Target] via l’interface utilisateur, consultez la section [&#x200B; administration du *Guide du professionnel Adobe Target*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=fr).
+>Si vous souhaitez administrer [!DNL Target] via l’interface utilisateur, consultez la section [ administration du *Guide du professionnel Adobe Target*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
 >
 >Les API Admin et Profile sont souvent désignées collectivement (« API Admin et Profile »), mais peuvent également être désignées séparément (« API Admin » et « API Profile »). L’API Recommendations est une implémentation spécifique d’une API d’administration [!DNL Target].
 
@@ -64,21 +69,21 @@ Voici les codes de réponse courants pour les API Target Admin.
 
 | État | Signification | Description |
 | --- | --- | --- |
-| 200 | [&#x200B; OK &#x200B;](https://www.rfc-editor.org/rfc/rfc7231#section-6.3.1) | OK |
+| 200 | [ OK ](https://www.rfc-editor.org/rfc/rfc7231#section-6.3.1) | OK |
 | 400 | [Requête incorrecte](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.1) | Requête incorrecte. Les données fournies dans la requête ne sont probablement pas valides. |
 | 401 | [Non Autorisé](https://www.rfc-editor.org/rfc/rfc7235#section-3.1) | L’utilisateur n’est pas autorisé à effectuer cette opération. |
 | 403 | [Interdit](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.3) | L’accès à cette ressource est interdit. |
-| 404 | [&#x200B; Introuvable &#x200B;](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.4) | La ressource référencée est introuvable. |
+| 404 | [ Introuvable ](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.4) | La ressource référencée est introuvable. |
 
 ## Activités
 
 Une activité vous permet de tester ou de personnaliser du contenu pour vos utilisateurs et utilisatrices. Les activités peuvent être de l’un des types suivants :
 
-* [&#x200B; A/B &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=fr)
-* [Ciblage d’expérience (XT)](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=fr)
-* [Recommendations](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html?lang=fr)
-* [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=fr)
-* [Test multivarié (MVT)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=fr)
+* [A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html)
+* [Ciblage d’expérience (XT)](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html)
+* [Recommandations](https://experienceleague.adobe.com/docs/target/using/activities/recommendations-activity.html)
+* [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html)
+* [Test multivarié (MVT)](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html)
 
 ## Mises à jour par lots
 
@@ -110,7 +115,7 @@ Le traitement par lots se termine lorsque toutes les opérations sont terminées
 
 | Attribut | Description | Limites | Par défaut |
 | --- | --- | --- | --- |
-| corps | corps pour l’opération HTTP par lots. sera ignoré pour toutes les actions à l’exception de POST et PUT. peuvent faire référence aux identifiants d’actions par lots précédentes, par exemple : « offerId » : « {operationIdResponse:0} », « segmentId » : « {operationIdResponse:1} » | doit être un JSON valide. Dans le cas du référencement d’un operationIdResponse, la réponse operationId référencée doit être un ID valide et la méthode sur cette action doit être POST. | {} d’objet vide |
+| corps | corps pour l’opération HTTP par lots. sera ignoré pour toutes les actions à l’exception de POST et PUT. peuvent faire référence aux identifiants d’actions par lots précédentes, par exemple : « offerId » : « {operationIdResponse:0} », « segmentId » : « {operationIdResponse:1} » | doit être un JSON valide. Dans le cas du référencement d’un operationIdResponse, la réponse operationId référencée doit être un ID valide et la méthode sur cette action doit être POST. | objet vide {} |
 | dependanceOperationIds | liste des identifiants de contrainte qui garantissent que l&#39;opération en cours ne s&#39;exécutera que si les opérations spécifiées sont terminées avec succès. Peut être utilisé pour réaliser un chaînage d’opérations. | 255 opérations au maximum sont autorisées ; les valeurs uniques ne sont autorisées que ; elles doivent pointer vers un operationId valide dans le tableau ; les dépendances cycliques ne sont pas autorisées |  |
 | en-têtes | tableau des en-têtes clé-valeur à envoyer avec une opération particulière. Si l’authentification pour l’API par lots a été effectuée via l’en-tête d’autorisation , elle sera également copiée pour les opérations individuelles. | le nombre maximal d’en-têtes dans le tableau autorisé est de 50 | Type de contenu : application/json |
 | headers->name | nom de l’en-tête | doit être unique parmi les autres noms d’en-tête. les en-têtes ne respectent pas la casse définie par rfc, sinon les valeurs se remplacent les unes les autres. |  |

@@ -1,18 +1,21 @@
 ---
 title: Installation du SDK Python
-description: Découvrez comment installer le  [!DNL Adobe Target] SDK Python.
+description: Découvrez comment installer le SDK  [!DNL Adobe Target]  Python.
 feature: APIs/SDKs
 exl-id: e4371cc4-2965-4253-9b5d-13fa6835ce67
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/rnzXo6mrdyK9EWeB0zls-WjwXIZPdZb7Es-rrkOejyc
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '47'
-ht-degree: 2%
+source-wordcount: 61
+ht-degree: 11%
 
 ---
 
 # Installation du SDK Python
 
-Le SDK Python est distribué par [pypi](https://pypi.org/project/target-python-sdk). Pour commencer, ajoutez-la en tant que dépendance en l’installant via pip :
+Le SDK Python est distribué par [pypi](https://pypi.org/project/target-python-sdk). Pour commencer, ajoutez-le en tant que dépendance en l’installant via pip :
 
 ## Install
 
@@ -20,4 +23,4 @@ Le SDK Python est distribué par [pypi](https://pypi.org/project/target-python-s
 pip install target-python-sdk
 ```
 
-Le code open source se trouve à l’adresse [https://github.com/adobe/target-python-sdk](https://github.com/adobe/target-python-sdk)
+Le code open source se trouve à l’adresse [](https://github.com/adobe/target-python-sdk)

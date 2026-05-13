@@ -1,27 +1,33 @@
 ---
-keywords: paramètres de mbox globale, targetPageParams, chaîne de requête, tableau, json, dtm
-description: Découvrez comment utiliser la fonction [!UICONTROL targetPageParams] pour transmettre des informations de ciblage ou de contexte supplémentaires à la mbox globale  [!DNL Adobe Target] .
-title: Comment transférer des paramètres à une mbox globale ?
+keywords: paramètres mbox globaux, targetPageParams, chaîne de requête, tableau, json, dtm
+description: Découvrez comment utiliser la fonction [!UICONTROL targetPageParams] pour transmettre des informations supplémentaires de ciblage ou de contexte dans la mbox  [!DNL Adobe Target] .
+title: Comment transmettre des paramètres à une mbox globale ?
 feature: at.js
 exl-id: 2a6be3e4-a618-4812-9e87-b01789705c40
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/MRdqU23ARg1E-gf8QDbXOpaVJWd9Fx1pqJ4QXjsBdtA
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: 377
 ht-degree: 61%
 
 ---
 
 # Transfert de paramètres à une mbox globale
 
-La fonction JavaScript `targetPageParams` est utilisée pour transmettre des paramètres à la mbox globale dans [!DNL Adobe Target]. Cela est nécessaire dans tout scénario où des informations de ciblage/contexte supplémentaires doivent être transmises à [!DNL Target].
+La fonction `targetPageParams` de JavaScript permet de transmettre des paramètres à la mbox globale dans [!DNL Adobe Target]. Cela est nécessaire dans tous les scénarios où des informations de ciblage/contexte supplémentaires doivent être transmises à [!DNL Target].
 
 Par exemple, dans une activité de recommandations, utilisez les paramètres pour représenter le produit ou la catégorie actuelle qui est consultée.
 
-Le code permettant d’appeler la fonction JavaScript doit être placé avant la mbox globale sur la page, que la mbox globale soit déclenchée dans le cadre d’at.js ou qu’elle soit incluse manuellement dans le code de page.
+Le code permettant d’appeler la fonction JavaScript doit précéder la mbox globale de la page, que la mbox globale soit déclenchée dans le cadre d’at.js ou incluse manuellement dans le code de page.
 
 >[!NOTE]
 >
->Si vous souhaitez ajouter des paramètres à toutes les mbox de la page et pas seulement à la mbox globale, utilisez la fonction [targetPageParamsAll()](/help/dev/implement/client-side/atjs/atjs-functions/targetpageparamsall.md) .
+>Si vous souhaitez ajouter des paramètres à toutes les mbox de la page, et pas seulement à la mbox globale, utilisez la fonction [targetPageParamsAll()](/help/dev/implement/client-side/atjs/atjs-functions/targetpageparamsall.md).
 
 Vous pouvez transférer des paramètres à `target-global-mbox` à l’aide de la fonction `targetPageParams()` de l’une des façons suivantes :
 
@@ -29,7 +35,7 @@ Vous pouvez transférer des paramètres à `target-global-mbox` à l’aide de l
 * Un objet JSON
 * Une liste délimitée par des esperluettes
 
-Utilisez ces trois méthodes pour vérifier que les paramètres sont transférés correctement. Vous pouvez également être en mesure de vérifier le transfert des paramètres en utilisant le [Débogueur d’Adobe Experience Cloud](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=fr).
+Utilisez ces trois méthodes pour vérifier que les paramètres sont transférés correctement. Vous pouvez également être en mesure de vérifier le transfert des paramètres en utilisant le [Débogueur d’Adobe Experience Cloud](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
 Vous devez définir la fonction JavaScript avant d’ajouter la mbox globale à la page. Le nom doit être `targetPageParams`.
 
@@ -46,7 +52,7 @@ p1=v1&p2=v2&p3=hello%20world
 
   Dans cet exemple, p3 a la valeur `hello world`, qui est codée en URL.
 
-Examinez l’exemple de code de page suivant :
+Examinons l’exemple de code de page suivant :
 
 ```html {line-numbers="true"}
 <html> 
@@ -88,7 +94,7 @@ Cet exemple envoie les données suivantes dans le bord de mbox :
 
 ## JSON
 
-JSON est un moyen puissant de transférer des paramètres. [!DNL Target] utilise les clés d’objet JSON pour aplatir les structures complexes en paramètres simples.
+JSON est un moyen puissant de transférer des paramètres. [!DNL Target] utilise les clés d’objet JSON pour aplatir des structures complexes en paramètres simples.
 
 ```json {line-numbers="true"}
 <!--window.-->targetPageParams = function() { 

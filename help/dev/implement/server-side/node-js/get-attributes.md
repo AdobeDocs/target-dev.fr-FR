@@ -1,20 +1,24 @@
 ---
-title: Utilisation de requêtes asynchrones dans le kit SDK  [!DNL Adobe Target] Node.js
-description: Découvrez comment le SDK  [!DNL Target] Node.js prend en charge les requêtes asynchrones, ce qui peut réduire le temps cible effectif à zéro.
+title: Utilisation des requêtes asynchrones dans le SDK Node [!DNL Adobe Target] js
+description: Découvrez comment  [!DNL Target]  Node.js SDK prend en charge les requêtes asynchrones, ce qui peut réduire à zéro le temps cible effectif.
 feature: APIs/SDKs
 exl-id: aa06f3ca-7d2a-4334-8092-730a8705dfb0
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/cIoEnAinSLl-TO2vunG164i97Y2h-9NdE487ZyXJSzs
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: 116
 ht-degree: 18%
 
 ---
 
-# Obtention d’attributs (Node.js)
+# Obtenir les attributs (Node.js)
 
 ## Description
 
-`[!UICONTROL getAttributes()]` est utilisé pour récupérer l’expérimentation et les expériences personnalisées de [!DNL Target] et extraire des valeurs d’attribut.
+`[!UICONTROL getAttributes()]` est utilisé pour récupérer des expériences et des expériences personnalisées à partir de [!DNL Target] et extraire des valeurs d’attribut.
 
 ## Méthode
 
@@ -33,13 +37,13 @@ TargetClient.getAttributes(mboxNames: Array, options: Object): Promise
 
 ## Promesse
 
-`Promise` renvoyé par `TargetClient.getAttributes()` résout un objet avec les méthodes suivantes :
+Le `Promise` renvoyé par `TargetClient.getAttributes()` résout un objet avec les méthodes suivantes :
 
 | Méthode | Type de retour | Description |
 | --- | --- | --- |
-| getValue(mboxName, key) | Quelconque | Renvoie la valeur d’un nom de mbox et d’une clé d’attribut spécifiés |
+| getValue(mboxName, key) | Quelconque | Renvoie la valeur du nom de mbox et de la clé d’attribut spécifiés |
 | asObject(mboxName) | Objet | Renvoie un objet json simple avec des paires clé-valeur |
-| getResponse() | [Réponse getOffers](https://github.com/jasonwaters/target-nodejs-sdk#targetclientgetoffers) | Renvoie l’objet de réponse normalement renvoyé par `getOffers` |
+| getResponse() | [getOffers Response](https://github.com/jasonwaters/target-nodejs-sdk#targetclientgetoffers) | Renvoie l’objet de réponse normalement renvoyé par `getOffers` |
 
 ## Exemple
 

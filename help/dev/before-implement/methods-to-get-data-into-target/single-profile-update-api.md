@@ -1,23 +1,28 @@
 ---
 keywords: implémentation, implémentation, configuration, configuration, mise à jour de profil unique
-description: Récupérez des données dans  [!DNL Target]  à l’aide de l’API de mise à jour de profil unique.
-title: Comment obtenir des données dans  [!DNL Target] à l’aide de [!UICONTROL Single Profile Update API] ?
+description: Transférez des données dans  [!DNL Target]  à l’aide de l’API de mise à jour de profil unique.
+title: Comment puis-je intégrer des données dans  [!DNL Target]  à l’aide de l’[!UICONTROL Single Profile Update API] ?
 feature: Implementation
 exl-id: e6c394cb-74a3-4991-b656-5ae601f2d5e2
-source-git-commit: 946e9431e6bde30f564b4ba1a4cf0a78d8c5c6bf
+TQID: https://experienceleague.adobe.com/tkh7YEJ9Vr5eMynNYYxYKZZDOXZTVJNxwUSCxiwPfzI
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: 132
 ht-degree: 3%
 
 ---
 
 # [!UICONTROL Single Profile Update API]
 
-[!DNL Adobe Target] [!UICONTROL Single Profile Update API] permet d&#39;envoyer une mise à jour de profil pour un utilisateur unique. [!UICONTROL Single Profile Update API] est presque identique à [!UICONTROL Bulk Profile Update API], mais un profil du visiteur est mis à jour à la fois, en ligne avec l’appel API au lieu d’un fichier .cvs.
+Le [!UICONTROL Single Profile Update API] [!DNL Adobe Target] vous permet d’envoyer une mise à jour de profil pour un seul utilisateur. Le [!UICONTROL Single Profile Update API] est presque identique au [!UICONTROL Bulk Profile Update API], mais un profil de visiteur est mis à jour à la fois, en ligne avec l’appel API plutôt qu’avec un fichier .cvs.
 
-Le [!UICONTROL Single Profile Update API] et est généralement utilisé lorsqu’une mise à jour doit se produire par rapport à une transaction survenant dans un canal qui n’a pas implémenté [!DNL Target]. Par exemple, vous souhaitez mettre à jour le profil d’un visiteur unique qui effectue une action hors ligne. Les actions peuvent inclure l’accès à un centre d’appel, le financement d’un prêt, l’utilisation d’une carte de fidélité en magasin, l’accès à un kiosque, etc.
+Le [!UICONTROL Single Profile Update API] et est généralement utilisé lorsqu’une mise à jour doit se produire en relation avec une transaction se produisant dans un canal qui n’a pas implémenté [!DNL Target]. Par exemple, vous souhaitez mettre à jour le profil d’un seul visiteur qui effectue une action hors ligne. Il peut s’agir de contacter un centre d’appel, d’obtenir un prêt, d’utiliser une carte de fidélité en magasin, d’accéder à un kiosque, etc.
 
-Comparez le [!UICONTROL Single Profile Update API] à [[!DNL Adobe Target Single Profile Update API]](/help/dev/administer/profile-api/profile-single-api.md).
+Mettez le [!UICONTROL Single Profile Update API] en contraste avec le [[!DNL Adobe Target Single Profile Update API]](/help/dev/administer/profile-api/profile-single-api.md).
 
 ## Ressources
 

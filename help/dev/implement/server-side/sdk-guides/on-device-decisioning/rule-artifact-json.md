@@ -1,26 +1,31 @@
 ---
 title: Télécharger, stocker et mettre à jour l’artefact de règle de prise de décision sur l’appareil via la payload JSON
-description: Cette approche est préférable si votre application est structurée de manière à ce que le SDK soit initialisé sur chaque fichier dans lequel il utilise des méthodes SDK.
+description: Cette approche est préférable si votre application est structurée de manière à nécessiter l’initialisation du SDK sur chaque fichier dans lequel elle utilise les méthodes SDK.
 feature: APIs/SDKs
 exl-id: 4ccfb455-f813-4bdb-a9c1-d576a110a9bb
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/knFQFgPKL-DBOtBnWUIz2-7usi35DPtxd-FSINqHHhY
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e7840a7b-a94f-4256-aed0-4e94b08e157bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 0%
+source-wordcount: 298
+ht-degree: 1%
 
 ---
 
-# Téléchargement, stockage et mise à jour de l’artefact de règle via la charge utile JSON
+# Télécharger, stocker et mettre à jour l’artefact de règle via la payload JSON
 
-Cette approche est préférable si votre application est structurée de manière à ce que le SDK soit initialisé sur chaque fichier dans lequel il utilise des méthodes SDK. Avant que votre application web puisse utiliser la charge utile JSON de l’artefact de règle lors de l’initialisation du SDK, vous devez vous assurer que la charge utile JSON est téléchargée et disponible pour que votre application l’utilise.
+Cette approche est préférable si votre application est structurée de manière à nécessiter l’initialisation du SDK sur chaque fichier dans lequel elle utilise les méthodes SDK. Avant que votre application web puisse utiliser la payload JSON de l’artefact de règle lors de l’initialisation de SDK, vous devez vous assurer que la payload JSON est téléchargée et disponible pour que votre application puisse l’utiliser.
 
 ## Résumé des étapes
 
 1. Installation du SDK
-1. Initialisation du SDK
-1. Stocker et utiliser la charge utile JSON
+1. Initialiser le SDK
+1. Stocker et utiliser la payload JSON
 
-## 1. Installation du SDK
+## &#x200B;1. Installation du SDK
 
 >[!BEGINTABS]
 
@@ -30,7 +35,7 @@ Cette approche est préférable si votre application est structurée de manière
 npm i @adobe/target-nodejs-sdk -P
 ```
 
->[!TAB MVN]
+>[!TAB  MVN ]
 
 ```javascript {line-numbers="true"}
 <dependency>
@@ -42,9 +47,9 @@ npm i @adobe/target-nodejs-sdk -P
 
 >[!ENDTABS]
 
-## 2. Initialisation du SDK
+## &#x200B;2. Initialiser le SDK
 
-1. Importez tout d’abord le SDK. Importez dans le fichier à partir duquel vous pouvez contrôler le démarrage de votre serveur.
+1. Tout d’abord, importez le SDK. Effectuez une importation dans le même fichier à partir duquel vous pouvez contrôler le démarrage de votre serveur.
 
    **Node.js**
 
@@ -113,14 +118,14 @@ npm i @adobe/target-nodejs-sdk -P
    TargetClient targetClient = TargetClient.create(config);
    ```
 
-1. Le client et `organizationId` peuvent être récupérés à partir de [!DNL Adobe Target] en accédant à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**, comme illustré ici.
+1. Le client et `organizationId` peuvent être récupérés à partir de [!DNL Adobe Target]en accédant à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**, comme illustré ici.
 
    &lt;!— Insérer image-client-code.png —>
-   ![alt image](assets/asset-rule-artifact-3.png)
+   ![image alternative](assets/asset-rule-artifact-3.png)
 
-## 3. Stocker et utiliser à nouveau la charge utile JSON
+## &#x200B;3. Stocker et réinitialiser la payload JSON
 
-Le mécanisme que vous utilisez pour stocker la charge utile JSON dépend de l’architecture de votre système. Vous pouvez utiliser un fichier local, une base de données ou un système de mise en cache d’objets mémoire, tel que Memcached. Vous devez être en mesure de lire ce fichier JSON à partir de votre application à des fins d’utilisation. Dans ce guide, nous utilisons un fichier local comme stockage.
+Le mécanisme que vous utilisez pour stocker la payload JSON dépend de l’architecture de votre système. Vous pouvez utiliser un fichier local, une base de données ou un système de mise en cache d’objets de mémoire tel que Memcached. Vous devez être en mesure de lire ce fichier JSON à partir de votre application pour la consommation. Dans ce guide, nous utilisons un fichier local comme stockage.
 
 >[!BEGINTABS]
 
@@ -162,7 +167,7 @@ TargetDeliveryResponse response = targetClient.getOffers(request);
 
 >[!NOTE]
 >
->En initialisant le SDK [!DNL Adobe Target]par le biais de la charge utile JSON, votre serveur est prêt à traiter immédiatement les requêtes avec les activités de prise de décision sur l’appareil, puisque le SDK [!DNL Adobe Target]n’a pas besoin d’attendre que l’artefact de règle soit téléchargé.
+>En initialisant le [!DNL Adobe Target]SDK via la payload JSON, votre serveur est prêt à traiter immédiatement les requêtes avec des activités de prise de décision sur l’appareil, car le [!DNL Adobe Target]SDK n’a pas besoin d’attendre que l’artefact de règle soit téléchargé.
 
 Voici un exemple illustrant la fonctionnalité d’initialisation de la payload JSON.
 

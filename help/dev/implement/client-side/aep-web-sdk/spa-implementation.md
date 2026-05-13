@@ -4,9 +4,14 @@ description: Découvrez comment créer une implémentation d’application sur u
 keywords: target;adobe target;vues xdm;vues;applications monopages;SPA;cycle de vie SPA;côté client;AB testing;AB;Ciblage d’expérience;XT;VEC
 feature: AEP Web SDK
 exl-id: 17e71e47-c7cc-421a-bc9c-53f45f587449
-source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
+TQID: https://experienceleague.adobe.com/Kp5fxEhLaXUNi6GOXXnET-1ueGQVLC0tPFhYzShk0cQ
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '1680'
+source-wordcount: 1747
 ht-degree: 2%
 
 ---
@@ -61,7 +66,7 @@ Le concept de [!UICONTROL Views] peut être étendu bien au-delà de ce scénari
 
 [!UICONTROL XDM Views] peut être utilisé dans [!DNL Target] pour permettre aux marketeurs d’exécuter des tests A/B et XT sur des SPA via [!UICONTROL Visual Experience Composer]. Pour ce faire, les étapes suivantes doivent être effectuées afin de terminer une configuration de développeur ponctuelle :
 
-1. Installez [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/overview).
+1. Installez [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview).
 2. Déterminez toutes les [!UICONTROL XDM Views] de votre application monopage que vous souhaitez personnaliser.
 3. Après avoir défini la [!UICONTROL XDM Views], pour diffuser des activités A/B ou XT VEC, implémentez la fonction `sendEvent()` avec `renderDecisions` définie sur `true` et la [!UICONTROL XDM View] correspondante dans votre application d’une seule page. Le [!UICONTROL XDM View] doit être transmis en `xdm.web.webPageDetails.viewName`. Cette étape permet aux spécialistes du marketing d’exploiter le [!UICONTROL Visual Experience Composer] pour lancer des tests A/B et XT pour ces XDM.
 
@@ -221,7 +226,7 @@ Une fois la définition de vos [!UICONTROL XDM Views] et les `sendEvent()` impl�
 
 >[!NOTE]
 >
->Pour utiliser le VEC pour votre SPA, vous devez installer et activer l’extension d’assistance du VEC [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) ou [Chrome](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension).
+>Pour utiliser le VEC pour votre SPA, vous devez installer et activer l’extension d’assistance du VEC [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) ou [Chrome](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension).
 
 ### panneau [!UICONTROL Modifications]
 
@@ -235,7 +240,7 @@ Cliquez sur une action pour mettre en surbrillance l’élément sur le site où
 |---|---|
 | Informations | Affiche les détails de cette action. |
 | Modifier | Permet de modifier directement les propriétés de cette action. |
-| Dupliquer | Clonez l’action sur une ou plusieurs [!UICONTROL Views] qui existent dans le panneau de [!UICONTROL Modifications] ou sur une ou plusieurs [!UICONTROL Views] que vous avez parcourues et auxquelles vous avez accédé dans le compositeur d’expérience visuelle. L’action n’a pas nécessairement à exister dans le panneau [!UICONTROL Modifications].<br/><br/>**Remarque :** une fois une opération de clonage effectuée, vous devez accéder au [!UICONTROL View] dans le VEC via [!UICONTROL Browse] pour voir si l’action clonée était une opération valide. Si l’action ne peut pas être appliquée au [!UICONTROL View], une erreur s’affiche. |
+| Dupliquer | Clonez l’action sur une ou plusieurs [!UICONTROL Views] qui existent dans le panneau de [!UICONTROL Modifications] ou sur une ou plusieurs [!UICONTROL Views] que vous avez parcourues et auxquelles vous avez accédé dans le compositeur d’expérience visuelle. L’action n’a pas nécessairement à exister dans le panneau [!UICONTROL Modifications].<br/><br/>**Remarque :** une fois l’opération de clonage effectuée, vous devez accéder au [!UICONTROL View] dans le VEC via [!UICONTROL Browse] pour voir si l’action clonée était une opération valide. Si l’action ne peut pas être appliquée au [!UICONTROL View], une erreur s’affiche. |
 | Déplacer | Déplace l’action vers un [!UICONTROL Page Load Event] ou tout autre [!UICONTROL View] existant déjà dans le panneau [!UICONTROL Modifications].<br/><br/>**Événement de chargement de page :** toutes les actions correspondant à l’événement de chargement de page sont appliquées au chargement initial de la page de votre application web. <br/><br/>**Remarque :** une fois l’opération de déplacement effectuée, vous devez accéder au [!UICONTROL View] dans le compositeur d’expérience visuelle via [!UICONTROL Browse] pour vérifier si le déplacement était une opération valide. Si l’action ne peut pas être appliquée au [!UICONTROL View], une erreur s’affiche. |
 | Supprimer | Supprime l’action. |
 

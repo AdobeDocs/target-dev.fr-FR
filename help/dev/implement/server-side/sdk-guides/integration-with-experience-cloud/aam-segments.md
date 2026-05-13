@@ -1,19 +1,24 @@
 ---
-title: Intégration avec les segments AAM Experience Cloud
-description: Intégration avec l’intégration Experience Cloud et Audience Manager
+title: Intégration avec les segments Experience Cloud AAM
+description: Intégration à Experience Cloud, intégration à Audience Manager
 keywords: api de diffusion, côté serveur, côté serveur, intégration, audience manager, aam
 exl-id: c21e0200-23ba-4a0b-adf4-38e03c087f00
 feature: Implement Server-side
-source-git-commit: e3f14e97fa48ffb1f07b29aca5711d16e75faa80
+TQID: https://experienceleague.adobe.com/mc55SxaUU8BJ81hKLji9xi0-OHCux3W4R0syuVoGrIo
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: 431
 ht-degree: 4%
 
 ---
 
 # Segments AAM
 
-[!DNL Adobe Audience Manager] segments peuvent être utilisés par le biais de [!DNL Adobe Target] SDK. Pour exploiter les segments d’AAM, les champs suivants doivent être fournis :
+[!DNL Adobe Audience Manager] segments peuvent être utilisés via les SDK [!DNL Adobe Target]. Afin d’exploiter les segments AAM, les champs suivants doivent être fournis :
 
 >[!NOTE]
 >
@@ -21,39 +26,39 @@ ht-degree: 4%
 
 | Nom du champ | Requis | Description |
 | --- | --- | --- |
-| `locationHint` | Oui | DCS Location Hint est utilisé pour déterminer le point de terminaison DCS AAM auquel accéder afin de récupérer le profil. Doit être >= 1. |
+| `locationHint` | Oui | L’indicateur d’emplacement du serveur de collecte de données est utilisé pour déterminer le point d’entrée du serveur de collecte de données AAM à atteindre afin de récupérer le profil. Doit être >= 1. |
 | `marketingCloudVisitorId` | Oui | Identifiant visiteur Marketing Cloud |
-| `blob` | Oui | AAM Blob est utilisé pour envoyer des données supplémentaires à AAM. Ne doit pas être vide et la taille &lt;= 1024. |
+| `blob` | Oui | L’objet Blob d’AAM est utilisé pour envoyer des données supplémentaires à AAM. Ne doit pas être vide et la taille &lt;= 1024. |
 
-Le SDK renseigne automatiquement ces champs lors d’un appel de méthode `getOffers`, mais vous devez vous assurer qu’un cookie visiteur valide est fourni. Pour obtenir ce cookie, vous devez implémenter VisitorAPI.js dans le navigateur.
+Le SDK renseigne automatiquement ces champs pour vous lors d’un appel de méthode `getOffers`, mais vous devez vous assurer qu’un cookie visiteur valide est fourni. Pour obtenir ce cookie, vous devez implémenter VisitorAPI.js dans le navigateur.
 
 ## Guide de mise en œuvre
 
 ### Utilisation des cookies
 
-Les cookies sont utilisés pour corréler des requêtes [!DNL Adobe Audience Manager] avec des requêtes [!DNL Adobe Target]. Il s’agit des cookies utilisés dans cette implémentation.
+Les cookies sont utilisés pour corréler les requêtes [!DNL Adobe Audience Manager] aux requêtes [!DNL Adobe Target]. Il s’agit des cookies utilisés dans cette implémentation.
 
 | Cookie | Nom | Description |
 | --- | --- | --- |
-| cookie du visiteur | `AMCVS_XXXXXXXXXXXXXXXXXXXXXXXX%40AdobeOrg` | Ce cookie est défini par `VisitorAPI.js` lorsqu’il est initialisé avec `visitorState` à partir de la réponse `getOffers` cible. |
-| cookie target | `mbox` | Votre serveur web doit définir ce cookie en utilisant le nom et la valeur `targetCookie` de la réponse `getOffers` cible. |
+| cookie visiteur | `AMCVS_XXXXXXXXXXXXXXXXXXXXXXXX%40AdobeOrg` | Ce cookie est défini par `VisitorAPI.js` lorsqu’il est initialisé avec `visitorState` à partir de la réponse `getOffers` cible. |
+| cookie target | `mbox` | Votre serveur web doit définir ce cookie à l’aide du nom et de la valeur de `targetCookie` de la réponse `getOffers` cible. |
 
 ### Présentation des étapes
 
-Supposons qu’un utilisateur saisisse une URL dans un navigateur qui envoie une demande à votre serveur web. Lorsque vous effectuez cette requête :
+Supposons qu’un utilisateur saisisse une URL dans un navigateur qui envoie une requête à votre serveur web. Lorsque vous répondez à cette demande :
 
-1. Le serveur lit le visiteur et cible les cookies de la requête.
-1. Le serveur effectue un appel à la méthode `getOffers` du SDK [!DNL Target], en spécifiant les cookies de visiteur et de cible s’ils sont disponibles.
-1. Lorsque l’appel `getOffers` est rempli, les valeurs de `targetCookie` et `visitorState` de la réponse sont utilisées.
-   1. Un cookie est défini sur la réponse avec des valeurs issues de `targetCookie`. Pour ce faire, utilisez l’en-tête de réponse `Set-Cookie`, qui indique au navigateur de conserver le cookie cible.
-   1. Une réponse HTML est préparée qui initialise `VisitorAPI.js` et transmet `visitorState` à partir de la réponse cible.
-1. La réponse HTML est chargée dans le navigateur...
+1. Le serveur lit les cookies visiteur et cible à partir de la requête.
+1. Le serveur effectue un appel à la méthode `getOffers` du SDK [!DNL Target], en spécifiant les cookies visiteur et cible, le cas échéant.
+1. Lorsque l’appel `getOffers` est terminé, les valeurs de `targetCookie` et de `visitorState` de la réponse sont utilisées.
+   1. Un cookie est défini sur la réponse avec des valeurs issues de `targetCookie`. Cette opération s’effectue à l’aide de l’en-tête de réponse `Set-Cookie`, qui indique au navigateur de conserver le cookie cible.
+   1. Une réponse HTML est préparée qui initialise le `VisitorAPI.js` et transmet le `visitorState` à partir de la réponse cible.
+1. La réponse d’HTML est chargée dans le navigateur......................................................................................................................................................................................................................................................................................................................
    1. `VisitorAPI.js` est inclus dans l’en-tête du document.
-   1. VisitorAPI est initialisé avec `visitorState` à partir de la réponse du SDK `getOffers`. Le cookie visiteur est alors défini dans le navigateur, de sorte qu’il soit envoyé au serveur lors des demandes ultérieures.
+   1. VisitorAPI est initialisé avec `visitorState` à partir de la réponse SDK `getOffers`. Le cookie du visiteur sera alors défini dans le navigateur afin d’être envoyé au serveur lors des requêtes ultérieures.
 
 ### Exemple de code
 
-L’exemple de code suivant met en oeuvre chacune des étapes décrites ci-dessus. Chaque étape apparaît dans le code sous la forme d’un commentaire intégré en regard de son implémentation.
+L’exemple de code suivant met en œuvre chacune des étapes décrites ci-dessus. Chaque étape apparaît dans le code sous la forme d’un commentaire intégré en regard de son implémentation.
 
 #### Node.js
 
@@ -175,7 +180,7 @@ app.listen(3000, function () {
 
 #### Java
 
-Cet exemple utilise [printemps, un framework web Java](https://spring.io/).
+Cet exemple utilise [spring, un framework web Java](https://spring.io/).
 
 >[!BEGINTABS]
 
@@ -298,4 +303,4 @@ public class TargetClientService {
 
 >[!ENDTABS]
 
-Pour plus d’informations sur `TargetRequestUtils.java`, voir [Méthodes d’utilitaire (Java)](https://experienceleague.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html?lang=fr){target=_blank}
+Pour plus d’informations sur `TargetRequestUtils.java`, voir [Méthodes utilitaires (Java) ](https://experienceleague.adobe.com/docs/target-dev/developer/server-side/java/utility-methods.html){target=_blank}
