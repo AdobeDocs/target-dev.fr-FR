@@ -81,11 +81,11 @@ Lier aux attributs d’entité pour mettre à jour le catalogue de produits pour
 
 **Lectures**
 
-* [Attributs d’entité](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html){target=_blank}
+* [Attributs d’entité](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=fr){target=_blank}
 
 **Considérations**
 
-* Pour transmettre les attributs d’entité, une autre méthode consiste à mettre à jour le catalogue de produits dans l’interface utilisateur de [!DNL Target] pour utiliser les [flux de produits Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html){target=_blank}.
+* Pour transmettre les attributs d’entité, une autre méthode consiste à mettre à jour le catalogue de produits dans l’interface utilisateur de [!DNL Target] pour utiliser les [flux de produits Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/feeds.html?lang=fr){target=_blank}.
 * La transmission des attributs d’entité s’applique uniquement aux pages où les données du catalogue de produits sont disponibles dans la couche de données.
 * La transmission du paramètre `entity.event.detailsOnly=true` dans un appel est prioritaire.
 

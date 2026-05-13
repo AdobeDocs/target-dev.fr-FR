@@ -52,8 +52,8 @@ Cette méthode requiert l’implémentation de l’Experience Cloud ID (ECID).
 
 ## Exemples de code
 
-Vous trouverez des détails dans [Création d’une source d’attributs du client et chargement du fichier de données](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html).
+Vous trouverez des détails dans [Création d’une source d’attributs du client et chargement du fichier de données](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=fr).
 
 ### Liens vers des informations pertinentes
 
-[Créer une source d’attributs du client et charger le fichier de données](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html).
+[Créer une source d’attributs du client et charger le fichier de données](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=fr).

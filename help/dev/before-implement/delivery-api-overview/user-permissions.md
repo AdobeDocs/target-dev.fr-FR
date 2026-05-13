@@ -1,7 +1,7 @@
 ---
 title: Autorisations utilisateur de l’API de diffusion Adobe Target
 description: Autorisations utilisateur de l’API de diffusion Adobe Target
-badgePremium: label="Premium" type="Positive" url="https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=en#premium newtab=true" tooltip="Voir ce qui est inclus dans Target Premium."
+badgePremium: label="Premium" type="Positive" url="https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=fr#premium newtab=true" tooltip="Voir ce qui est inclus dans Target Premium."
 keywords: API de diffusion
 exl-id: 332f90bd-4079-4653-aa38-b35837631c94
 feature: APIs/SDKs
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Autorisations utilisateur (Premium)
 
-[!DNL Adobe] permet aux clients de gérer les autorisations de leurs utilisateurs lorsqu’ils utilisent Adobe Target. Pour réussir l’appel [!UICONTROL Adobe Target Delivery API], vous devez transmettre un jeton disposant des autorisations appropriées dans l’appel API. Pour en savoir plus sur les autorisations des utilisateurs et la récupération du jeton, consultez [cette documentation](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
+[!DNL Adobe] permet aux clients de gérer les autorisations de leurs utilisateurs lorsqu’ils utilisent Adobe Target. Pour réussir l’appel [!UICONTROL Adobe Target Delivery API], vous devez transmettre un jeton disposant des autorisations appropriées dans l’appel API. Pour en savoir plus sur les autorisations des utilisateurs et la récupération du jeton, consultez [cette documentation](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=fr).
 
 ```
 curl -X POST \

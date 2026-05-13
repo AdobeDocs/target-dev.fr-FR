@@ -72,7 +72,7 @@ Le concept de [!UICONTROL Views] peut être étendu bien au-delà de ce scénari
 
 [!UICONTROL XDM Views] peut être utilisé dans [!DNL Target] pour permettre aux marketeurs d’exécuter des tests A/B et XT sur des SPA via [!UICONTROL Visual Experience Composer]. Pour ce faire, les étapes suivantes doivent être effectuées afin de terminer une configuration de développeur ponctuelle :
 
-1. Installez [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview).
+1. Installez [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/overview).
 2. Déterminez toutes les [!UICONTROL XDM Views] de votre application monopage que vous souhaitez personnaliser.
 3. Après avoir défini la [!UICONTROL XDM Views], pour diffuser des activités A/B ou XT VEC, implémentez la fonction `sendEvent()` avec `renderDecisions` définie sur `true` et la [!UICONTROL XDM View] correspondante dans votre application d’une seule page. Le [!UICONTROL XDM View] doit être transmis en `xdm.web.webPageDetails.viewName`. Cette étape permet aux spécialistes du marketing d’exploiter le [!UICONTROL Visual Experience Composer] pour lancer des tests A/B et XT pour ces XDM.
 
@@ -232,7 +232,7 @@ Une fois la définition de vos [!UICONTROL XDM Views] et les `sendEvent()` impl�
 
 >[!NOTE]
 >
->Pour utiliser le VEC pour votre SPA, vous devez installer et activer l’extension d’assistance du VEC [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) ou [Chrome](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension).
+>Pour utiliser le VEC pour votre SPA, vous devez installer et activer l’extension d’assistance du VEC [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) ou [Chrome](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension).
 
 ### panneau [!UICONTROL Modifications]
 

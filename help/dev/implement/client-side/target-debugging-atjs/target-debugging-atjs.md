@@ -28,7 +28,7 @@ Informations sur l’utilisation de l’extension [!UICONTROL Adobe Experience C
 
 Vous pouvez rapidement afficher la configuration de votre bibliothèque, examiner les requêtes pour vous assurer que vos paramètres personnalisés sont transmis correctement, activer la journalisation de la console et désactiver toutes les requêtes [!DNL Target]. Authentifiez-vous dans l’[!DNL Experience Cloud] et utilisez le puissant outil Mbox Trace pour inspecter vos qualifications d’activité et d’audience ainsi que votre profil de visiteur.
 
-Consultez la présentation de Adobe Experience Cloud Debugger [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html){target=_blank}.
+Consultez la présentation de Adobe Experience Cloud Debugger [&#128279;](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=fr){target=_blank}.
 
 ## Vidéos de formation
 

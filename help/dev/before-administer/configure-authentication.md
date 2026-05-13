@@ -54,7 +54,7 @@ Dans cette section, vous accéderez au [!DNL Adobe Developer Console] et créere
 
 &lt;!---(1. Générez votre clé privée et votre certificat public, conformément à la [documentation sur l’authentification](https://developer.adobe.com/developer-console/docs/guides/authentication/). // [//] : # (comme décrit dans **Étape 1** de [Comment configurer Adobe IO : Authentification - Étape par étape](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html). Après avoir terminé l’étape 1, revenez à ce guide et reprenez avec l’étape 2 ci-dessous. // Le résultat de cette étape doit être la création d&#39;un fichier `private.key` et d&#39;un fichier `certificate_pub.crt`. Revenez à ce guide une fois que vous avez généré ces deux fichiers.)—>
 
-1. Dans le [&#128279;](https://adminconsole.adobe.com/), vérifiez que votre compte utilisateur [!DNL Adobe] a reçu l’accès de niveau [Administrateur de produit](https://helpx.adobe.com/enterprise/using/admin-roles.html) et [Développeur](https://helpx.adobe.com/enterprise/using/manage-developers.html) à [!DNL Target].
+1. Dans le [&#128279;](https://adminconsole.adobe.com/), vérifiez que votre compte utilisateur [!DNL Adobe] a reçu l’accès de niveau [Administrateur de produit](https://helpx.adobe.com/fr/enterprise/using/admin-roles.html) et [Développeur](https://helpx.adobe.com/fr/enterprise/using/manage-developers.html) à [!DNL Target].
 
 1. Dans [&#128279;](https://developer.adobe.com/console/home), sélectionnez le [!UICONTROL Experience Cloud Organization] pour lequel vous souhaitez créer cette intégration. (Notez qu’il est probable que vous n’ayez accès qu’à une seule [!UICONTROL Experience Cloud Organization].)
 
@@ -105,7 +105,7 @@ Il existe de nombreuses façons de spécifier les détails de votre projet dans 
 
 >[!NOTE]
 >
->Pour obtenir des instructions vidéo applicables à toute solution Experience Cloud, y compris [!DNL Target], consultez [Utilisation de Postman avec les API Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html). Les sections suivantes concernent les API [!DNL Target] : 1. Création et exportation de l’API Experience Platform vers Postman 2. Générez un jeton d’accès avec Postman. Ces étapes sont également fournies ci-dessous.
+>Pour obtenir des instructions vidéo applicables à toute solution Experience Cloud, y compris [!DNL Target], consultez [Utilisation de Postman avec les API Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=fr). Les sections suivantes concernent les API [!DNL Target] : 1. Création et exportation de l’API Experience Platform vers Postman 2. Générez un jeton d’accès avec Postman. Ces étapes sont également fournies ci-dessous.
 
 1. Toujours dans [&#128279;](https://developer.adobe.com/console/home), accédez à pour afficher les informations d&#39;identification **[!UICONTROL Service Account (JWT)]** de votre nouveau projet. Utilisez le volet de navigation de gauche ou la section **[!UICONTROL Credentials]**, comme indiqué.
 

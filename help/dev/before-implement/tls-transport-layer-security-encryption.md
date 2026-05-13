@@ -44,7 +44,7 @@ TLS 1.2 est la valeur par défaut à compter du 1er mars 2020 et TLS 1.1 ne sera
 
 Adobe fera évoluer progressivement les clients vers TLS 1.2. Pour ceux dont les domaines sont déjà conformes à la version 1.2, nous les déplacerons vers TLS 1.2 sans que vous ayez besoin d’apporter de modifications. La plupart des domaines clients prennent déjà en charge TLS 1.2. Cependant, si votre domaine ne prend pas en charge TLS 1.2, nous conserverons ces domaines sur TLS 1.1 comme aujourd’hui (jusqu’en mars 2020).
 
-Aucun problème ne devrait se poser pendant cette phase de migration. Si le compositeur d’expérience visuelle a arrêté de charger un site qui fonctionnait auparavant, [ouvrez un ticket d’assistance clientèle](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C) en citant cette migration comme cause possible.
+Aucun problème ne devrait se poser pendant cette phase de migration. Si le compositeur d’expérience visuelle a arrêté de charger un site qui fonctionnait auparavant, [ouvrez un ticket d’assistance clientèle](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=fr&#reference_ACA3391A00EF467B87930A450050077C) en citant cette migration comme cause possible.
 
 Cependant, si vous êtes l’un de ces clients qui utilisent TSL 1.1 sans prendre en charge TLS 1.2, vous devez planifier le déplacement de vos domaines/infrastructures vers TLS 1.2. Nous continuerons à prendre en charge le protocole TLS 1.1 jusqu’au 1er mars 2020. À compter du 1er mars 2020, [!DNL Target] ne prendra pas en charge le protocole TLS 1.1 à utiliser pour le compositeur d’expérience visuelle via la fonctionnalité Enhanced Experience Composer.
 
