@@ -4,7 +4,7 @@ description: Découvrez comment intégrer la fonction  [!DNL Adobe Target] Prehi
 title: Aperçu du guide d’intégration de SDK
 feature: Implementation
 hide: true
-source-git-commit: 2a992af7a1a8bbc6dba4ce23263d7af7db773333
+source-git-commit: 81818370d32ee8c3f3538e5d8d942f66c13e6a13
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Une minuscule bibliothèque JavaScript synchrone qui empêche le scintillement v
 
 1. (Facultatif) Congédiez le consentement.
 
-   Si votre mise en œuvre utilise une plateforme de gestion du consentement (CMP), appelez le `window.Prehide.setConsent(...)` dès que l’état du consentement est connu. Voir [&#x200B; Gestion du consentement &#x200B;](#consent-management).
+   Si votre mise en œuvre utilise une plateforme de gestion du consentement (CMP), appelez le `window.Prehide.setConsent(...)` dès que l’état du consentement est connu. Voir [ Gestion du consentement ](#consent-management).
 
 1. Vérifiez.
 
@@ -138,7 +138,7 @@ Pour les lots auto-hébergés ou non modifiés, déclarez un objet config avant 
 | Champ | Type | Requis | Description |
 | --- | --- | --- | --- |
 | `org` | string | Oui (sauf si cuit) | Votre code client. Utilisé comme segment d’organisation de l’URL du réseau CDN à partir duquel les règles de prévisualisation sont récupérées. |
-| `sdk` | `"alloy"` \| `"atjs"` | Non | SDK Adobe chargé sur la page. Voir la sélection [&#128279;](#sdk-selection). |
+| `sdk` | `"alloy"` \| `"atjs"` | Non | SDK Adobe chargé sur la page. Voir la sélection [](#sdk-selection). |
 
 ## SDK selection {#sdk-selection}
 
