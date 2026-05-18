@@ -3,10 +3,10 @@ user-guide-title: Guide du développeur d’Adobe Target
 breadcrumb-title: Guide du développeur de Target
 user-guide-description: Découvrez comment personnaliser l’expérience de vos clients afin de maximiser les recettes de vos sites web et mobiles, de vos applications, de vos médias sociaux et de vos autres canaux numériques.
 nudge: true
-source-git-commit: ca53593287a5a58e6e0b9fe02b6e8b28788f9ff9
+source-git-commit: 2a992af7a1a8bbc6dba4ce23263d7af7db773333
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 42%
+source-wordcount: '854'
+ht-degree: 41%
 
 ---
 
@@ -43,7 +43,9 @@ ht-degree: 42%
    + [Modifications du chiffrement de TLS (Transport Layer Security)](before-implement/tls-transport-layer-security-encryption.md)
    + [CNAME et Adobe Target](before-implement/implement-cname-support-in-target.md)
 + Implémentation côté client {#client-side}
-   + [Aperçu : implémentation de Target pour le web côté client](implement/client-side/overview.md)
+   + [Aperçu : implémentation de Target pour le web côté client](implement/client-side/overview.md)
+     <!--+ Prehide SDK {#prehide-sdk}-->
+   + {hide-from-toc}[Guide d’intégration de SDK](implement/client-side/prehide-sdk/prehide-sdk.md)
    + Implémentation de Adobe Experience Platform Web SDK {#aep}
       + [Présentation de l’implémentation de Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md)
       + [Utiliser Adobe Target et Web SDK pour la personnalisation](/help/dev/implement/client-side/aep-web-sdk/target-overview.md)
