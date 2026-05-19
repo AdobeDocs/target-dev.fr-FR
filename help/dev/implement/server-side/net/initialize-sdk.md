@@ -3,10 +3,15 @@ title: Initialisez le SDK .NET à l’aide de la méthode create
 description: Découvrez comment utiliser la méthode create pour initialiser le SDK Java et instancier l’[!UICONTROL TargetClient] afin d’effectuer des appels vers  [!DNL Adobe Target]  expériences et des expériences personnalisées.
 feature: APIs/SDKs
 exl-id: 501010c3-22f4-49a8-b2ac-c7307232d180
-source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
+TQID: https://experienceleague.adobe.com/uOEojoWWjXmcDl2yY1UmSRD-EXL0j9p-p-eE8PXa7Rk
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: b18c88053a47a97d6718a69cb72cb4e5d99969c8
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 16%
+source-wordcount: 359
+ht-degree: 15%
 
 ---
 
@@ -24,7 +29,7 @@ Ensuite, utilisez la méthode `Initialize` du SDK pour configurer le SDK et term
 
 `TargetClient` est créé à l’aide de `TargetClient.Create`.
 
-## C\#
+## C&#35;
 
 ```csharp {line-numbers="true"}
 TargetClient TargetClient.Create(TargetClientConfig clientConfig)
@@ -32,7 +37,7 @@ TargetClient TargetClient.Create(TargetClientConfig clientConfig)
 
 `ClientConfig` est créé à l’aide de ClientConfig.Builder.
 
-## C\#
+## C&#35;
 
 ```csharp {line-numbers="true"}
 TargetClientConfig.Builder TargetClientConfig.Builder()
@@ -46,7 +51,7 @@ TargetClientConfig.Builder TargetClientConfig.Builder()
 | --- | --- | --- | --- | --- |
 | Client ou cliente | string | Oui | None | [!UICONTROL Target Client Id] |
 | OrganizationId | string | Oui | None | [!UICONTROL Experience Cloud Organization ID] |
-| Expiration | int | Non | 10000 | Timeout de toutes les requêtes en millisecondes |
+| Délai d’expiration | int | Non | 10000 | Timeout de toutes les requêtes en millisecondes |
 | Proxy | WebProxy | Non | valeur nulle | Proxy pour toutes les requêtes [!DNL Target] |
 | RetryPolicy | Politiques | Non | valeur nulle | Stratégie de reprise pour toutes les requêtes [!DNL Target] |
 | AsyncRetryPolicy | AsyncPolicy | Non | valeur nulle | Stratégie de reprise asynchrone pour toutes les requêtes [!DNL Target] |
@@ -66,7 +71,7 @@ TargetClientConfig.Builder TargetClientConfig.Builder()
 
 ## Exemple
 
-## C\#
+## C&#35;
 
 ```csharp {line-numbers="true"}
 var targetClientConfig = new TargetClientConfig.Builder("acmeclient", "ABCDEF012345677890ABCDEF0@AdobeOrg")

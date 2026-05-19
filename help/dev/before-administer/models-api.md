@@ -3,9 +3,20 @@ title: Présentation de l’API Modèles Adobe
 description: Présentation de l’API Modèles, que les utilisateurs et utilisatrices peuvent utiliser pour bloquer l’inclusion de fonctionnalités dans les modèles de machine learning.
 exl-id: e34b9b03-670b-4f7c-a94e-0c3cb711d8e4
 feature: APIs/SDKs, Recommendations, Administration & Configuration
-source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
+TQID: https://experienceleague.adobe.com/1Q28459Ct9BcEynSmD6oBPnGaEY2Hgnp9frKhWB4M-Q
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: 1316
 ht-degree: 2%
 
 ---
@@ -26,7 +37,7 @@ Affichez la spécification de l’API Modèles [ici](../administer/models-api/mo
 
 ## Conditions préalables
 
-Pour utiliser l’API Modèles, vous devez configurer l’authentification à l’aide de [Adobe Developer Console](https://developer.adobe.com/console/home) comme vous le feriez avec l’API [Target Admin](../administer/admin-api/admin-api-overview-new.md). Pour plus d’informations, voir [Configuration de l’authentification](../before-administer/configure-authentication.md).
+Pour utiliser l’API Modèles, vous devez configurer l’authentification à l’aide de [&#128279;](https://developer.adobe.com/console/home) comme vous le feriez avec l’API [Target Admin](../administer/admin-api/admin-api-overview-new.md). Pour plus d’informations, voir [Configuration de l’authentification](../before-administer/configure-authentication.md).
 
 ## Instructions d’utilisation de l’API Modèles
 
@@ -139,7 +150,7 @@ Dans l’exemple illustré ici, l’utilisateur vérifie la liste des fonctionna
 
 >[!NOTE]
 >
->Il se peut que des résultats vides comme celui-ci s’affichent la première fois que vous vérifiez la place sur la liste bloquée complète, avant d’y ajouter des fonctionnalités. Cependant, une fois que vous avez ajouté (et ensuite supprimé) des fonctionnalités d’un tableau de fonctionnalités, vous pouvez voir des résultats légèrement différents, dans lesquels un tableau de fonctionnalités vide et placer sur la liste bloquée placé sur la liste bloquée est renvoyé. Poursuivez la lecture pour voir un exemple à ce sujet à [étape 4](#step4).
+>Il se peut que des résultats vides comme celui-ci s’affichent la première fois que vous vérifiez la place sur la liste bloquée complète, avant d’y ajouter des fonctionnalités. Cependant, une fois que vous avez ajouté (et ensuite supprimé) des fonctionnalités d’un tableau de fonctionnalités, vous pouvez voir des résultats légèrement différents, dans lesquels un tableau de fonctionnalités vide et placé sur la liste bloquée est renvoyé. Poursuivez la lecture pour voir un exemple à ce sujet à [étape 4](#step4).
 
 ## Étape 3 : ajout de fonctionnalités à la place sur la liste bloquée de l&#39;activité {#step3}
 
@@ -231,7 +242,7 @@ PUT https://mc.adobe.io/<tenant>/target/models/features/blockList/<campaignId>
 
 >[!ENDTABS]
 
-Placer sur la liste bloquée Dans l’exemple illustré ici, l’utilisateur efface son pour l’activité dont l’ID d’activité est 260840. Notez que la réponse confirme l’existence de tableaux vides pour les fonctionnalités bloquées et leurs sources (`blockedFeatureSources` et `blockedFeatures`, respectivement).
+Dans l’exemple illustré ici, l’utilisateur efface son pour l’activité dont l’ID d’activité est 260840. Notez que la réponse confirme l’existence de tableaux vides pour les fonctionnalités bloquées et leurs sources (`blockedFeatureSources` et `blockedFeatures`, respectivement).
 
 ![Étape 4](assets/models-api-step-4.png)
 
@@ -239,9 +250,9 @@ Comme toujours, après avoir modifié la place sur la liste bloquée, il est rec
 
 ![Étape 4b](assets/models-api-step-4b.png)
 
-Placer sur la liste bloquée Question : Comment supprimer une partie, mais pas la totalité, d’une ?
+Question : Comment supprimer une partie, mais pas la totalité, d’une ?
 
-Réponse : pour supprimer un sous-ensemble distinct de fonctionnalités placées sur la liste bloquée d’une liste bloquée à fonctionnalités multiples, les utilisateurs et utilisatrices peuvent simplement envoyer la liste mise à jour des fonctionnalités qu’ils ou elles souhaitent bloquer dans [la demande de suppression de la liste bloquée place sur la liste bloquée &#x200B;](#step3), plutôt que d’effacer l’intégralité de la grille et de rajouter les fonctionnalités souhaitées. En d’autres termes, envoyez la liste des fonctionnalités mise à jour (comme indiqué à l’[étape 3](#step3)) en veillant à exclure les fonctionnalités que vous souhaitez « supprimer » de la place sur la liste bloquée.
+Réponse : pour supprimer un sous-ensemble distinct de fonctionnalités placées sur la liste bloquée d’une liste bloquée à fonctionnalités multiples, les utilisateurs et utilisatrices peuvent simplement envoyer la liste mise à jour des fonctionnalités qu’ils ou elles souhaitent bloquer dans [la demande de suppression de la liste bloquée &#x200B;](#step3), plutôt que d’effacer l’intégralité de la grille et de rajouter les fonctionnalités souhaitées. En d’autres termes, envoyez la liste des fonctionnalités mise à jour (comme indiqué à l’[étape 3](#step3)) en veillant à exclure les fonctionnalités que vous souhaitez « supprimer » de la place sur la liste bloquée.
 
 ## Étape 5 : (facultatif) gérer la liste bloquée globale {#step5}
 

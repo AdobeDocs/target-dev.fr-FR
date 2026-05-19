@@ -1,47 +1,56 @@
 ---
 title: Suivi des événements
-description: Utilisez les fonctionnalités de suivi d’événement de  [!DNL Adobe Target] pour mesurer efficacement les mesures qui comptent le plus pour votre entreprise et vos cas d’utilisation.
+description: Utilisez les fonctionnalités de suivi des événements de  [!DNL Adobe Target] pour mesurer efficacement les mesures les plus importantes pour votre entreprise et vos cas d’utilisation.
 exl-id: a47fa692-c633-4c53-82da-878b1e451a3f
 feature: Implement Server-side
-source-git-commit: 09a50aa67ccd5c687244a85caad24df56c0d78f5
+TQID: https://experienceleague.adobe.com/swckm7EdKlSkC2xl1P57EAyiuGz18rucZOAxcudzYpo
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: 528
 ht-degree: 2%
 
 ---
 
 # Suivi des événements
 
-Utilisez les fonctionnalités de suivi d’événement de [!DNL Adobe Target] pour mesurer efficacement les mesures qui comptent le plus pour votre entreprise et vos cas d’utilisation. Le suivi des événements est essentiel pour mesurer le succès de vos activités d’expérimentation ou de personnalisation, puisqu’il vous indique la variation ou l’expérience qui gagne ou perd. Comprendre cela vous aidera à comprendre comment vos utilisateurs interagissent avec votre produit ou évoluent dans un paysage en constante évolution.
+Utilisez les fonctionnalités de suivi des événements de [!DNL Adobe Target] pour mesurer efficacement les mesures les plus importantes pour votre entreprise et vos cas d’utilisation. Le suivi des événements est essentiel pour mesurer le succès de vos activités d’expérimentation ou de personnalisation, car ils vous indiquent quelle variation ou expérience gagne ou perd. En comprenant cela, vous comprendrez mieux comment vos utilisateurs interagissent avec votre produit ou évoluent dans un paysage en constante évolution.
 
-Pour effectuer le suivi des événements par le biais des SDK de [!DNL Adobe Target], procédez comme suit en 2 étapes :
+Pour effectuer le suivi des événements par le biais des SDK d’[!DNL Adobe Target], suivez ce processus en 2 étapes :
 
-1. Installez le SDK et déployez le code qui envoie des événements à [!DNL Adobe Target].
+1. Installez SDK et déployez le code qui envoie des événements à [!DNL Adobe Target].
 
 1. Créez et activez une activité [!DNL Adobe Target] avec une mesure d’objectif dans l’interface utilisateur.
 
-   ![alt image](./assets/report-settings.png)
+   ![image alternative](./assets/report-settings.png)
 
 ## Mesures et événements d’objectif
 
 Le tableau suivant définit la combinaison d’objectifs et d’événements que vous pouvez définir et mesurer avec une activité [!DNL Target] à l’aide des fonctionnalités de création de rapports de [!DNL Target] :
 
-| Objectif Principal | Événement |
+| Objectif du Principal | Événement |
 | --- | --- |
-| Conversion | Affichage d’une page, affichage d’une mbox et clic sur une mbox |
-| Recettes | Affichage d’une mbox et clic sur la mbox |
-| Engagement | Pages vues, note du client et temps passé sur le site |
+| Conversion | Page affichée, mbox affichée et clic sur mbox |
+| Recettes | mbox affichée et cliquée dessus |
+| Engagement | Pages vues, score client et temps passé sur le site |
 
 ## Déclenchement des impressions
 
-Les SDK Target appellent l’ [API de diffusion](/help/dev/implement/delivery-api/overview.md) sous-jacent. Lorsqu’un objet d’exécution avec les paramètres requis se trouve dans la requête elle-même, l’impression est incrémentée automatiquement pour les activités admissibles. Les méthodes du SDK qui incrémentent automatiquement une impression sont les suivantes :
+Les SDK Target appellent l’[API de diffusion](/help/dev/implement/delivery-api/overview.md) sous-jacente. Lorsqu’un objet d’exécution avec les paramètres requis se trouve dans la requête elle-même, l’impression est incrémentée automatiquement pour les activités de qualification. Les méthodes SDK qui incrémentent automatiquement une impression sont les suivantes :
 
 * getOffers()
 * getAttributes()
 
 >[!NOTE]
 >
->Lorsqu’un objet de prérécupération est transmis dans la requête, l’impression n’est pas automatiquement incrémentée pour les activités comportant des mbox dans l’objet de prérécupération.
+>Lorsqu’un objet de prérécupération est transmis dans la requête, l’impression n’est pas automatiquement incrémentée pour les activités comportant des mbox au sein de l’objet de prérécupération.
 
 La méthode `sendNotifications` peut être utilisée pour envoyer manuellement des événements à [!DNL Adobe Target] et déclencher une impression.
 
@@ -63,17 +72,17 @@ ResponseStatus TargetClient.sendNotifications(TargetDeliveryRequest request)
 
 ## Exemple de code
 
-Les exemples de code suivants fonctionnent pour tous les types de mesures d’objectif, qu’il s’agisse de conversion, de recettes ou d’engagement.
+Les exemples de code suivants fonctionnent pour tous les types de mesures d’objectif, qu’il s’agisse de conversion, de chiffre d’affaires ou d’engagement.
 
-### A affiché une page ou une mbox
+### Page ou mbox affichée
 
-Cet exemple obtient d’abord une offre mbox cible à l’aide de `getOffers`. Il crée ensuite une requête avec une notification basée sur cette offre de mbox.
+Cet exemple obtient d’abord une offre de mbox cible à l’aide de `getOffers`. Il crée ensuite une requête avec une notification basée sur cette offre de mbox.
 
-La propriété de notification `type` est définie sur `display`.
+La propriété `type` de notification est définie sur `display`.
 
-Pour indiquer qu’une page a été consultée, il est important de spécifier l’objet address dans la payload de notification. Veillez à définir l’URL en conséquence.
+Pour indiquer qu’une page a été consultée, il est important de spécifier l’objet d’adresse dans la payload de notification. Veillez à définir l’URL en conséquence.
 
-Pour les mbox, vous devez définir la propriété mbox sur l’objet de notification et fournir un tableau de jetons basé sur le tableau d’options dans le `targetResult`.
+Pour les mbox, vous devez définir la propriété mbox sur l’objet de notification et fournir un tableau de jetons en fonction du tableau d’options du `targetResult`.
 
 >[!BEGINTABS]
 
@@ -182,13 +191,13 @@ targetJavaClient.sendNotifications(notificationRequest);
 
 >[!ENDTABS]
 
-### Clic sur une mbox
+### A cliqué sur une mbox
 
-Cet exemple obtient d’abord une offre mbox cible à l’aide de `getOffers`. Il crée ensuite une requête avec une notification basée sur cette offre de mbox.
+Cet exemple obtient d’abord une offre de mbox cible à l’aide de `getOffers`. Il crée ensuite une requête avec une notification basée sur cette offre de mbox.
 
-La propriété de notification `type` est définie sur `click`.
+La propriété `type` de notification est définie sur `click`.
 
-Vous devez définir la propriété `mbox` sur l’objet de notification et fournir un tableau de jetons basé sur le tableau de mesures dans `targetResult`.
+Vous devez définir la propriété `mbox` sur l’objet de notification et fournir un tableau de jetons en fonction du tableau de mesures dans le `targetResult`.
 
 >[!BEGINTABS]
 
@@ -302,13 +311,13 @@ targetJavaClient.sendNotifications(notificationRequest);
 
 >[!ENDTABS]
 
-### Affichage d’une vue
+### A affiché une vue
 
 Cet exemple obtient d’abord les vues cibles à l’aide de `getOffers`. Il crée ensuite une requête avec une notification basée sur ces vues.
 
-La propriété de notification `type` est définie sur `display`.
+La propriété `type` de notification est définie sur `display`.
 
-Pour les vues, vous devez définir la propriété `view` sur l’objet de notification et fournir un tableau de jetons basé sur le tableau options de targetResult.
+Pour les vues, vous devez définir la propriété `view` sur l’objet de notification et fournir un tableau de jetons en fonction du tableau d’options de targetResult.
 
 >[!BEGINTABS]
 
@@ -412,11 +421,11 @@ targetJavaClient.sendNotifications(notificationRequest);
 
 >[!ENDTABS]
 
-### Clic sur une vue
+### A cliqué sur une vue
 
-Cet exemple obtient d’abord les vues cibles à l’aide de `getOffers`. Il crée ensuite une requête avec des notifications en fonction de ces vues.
+Cet exemple obtient d’abord les vues cibles à l’aide de `getOffers`. Il crée ensuite une requête avec des notifications basées sur ces vues.
 
-La propriété de notification `type` est définie sur `click`.
+La propriété `type` de notification est définie sur `click`.
 
 Vous devez définir la propriété `view` sur l’objet de notification et fournir un tableau de jetons en fonction du tableau de mesures dans le targetResult.
 

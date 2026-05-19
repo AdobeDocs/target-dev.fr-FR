@@ -1,13 +1,24 @@
 ---
-keywords: registerExtension, registerExtension, registerExtension, at.js, fonctions, fonction, clientCode, serverDomain, globalMboxName, globalMboxAutoCreate, timeout, registerExtension2
-description: Utilisez la fonction [!UICONTROL registerExtension()] de la bibliothèque  [!DNL Adobe Target] at.js JavaScript pour enregistrer une extension spécifique. (at.js 1.x)
+keywords: registerExtension, registerextension, register extension, at.js, functions, function, clientCode, serverDomain, globalMboxName, globalMboxAutoCreate, timeout, registerExtension2
+description: Utilisez la fonction [!UICONTROL registerExtension()] pour la bibliothèque JavaScript at [!DNL Adobe Target] js afin d’enregistrer une extension spécifique. (at.js 1.x)
 title: Comment utiliser la fonction [!UICONTROL registerExtension()] ?
 feature: at.js
 exl-id: 71decf00-84c5-4914-b0cd-bb061fa6265f
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/qTWubp0dNesN-8vsooz8pdbjfSw1W1ktm-0bG6YRzJw
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 69%
+source-wordcount: 274
+ht-degree: 63%
 
 ---
 
@@ -17,7 +28,7 @@ Propose une méthode standard pour enregistrer une extension spécifique.
 
 >[!NOTE]
 >
->Cette fonction est disponible pour at.js versions 1.*x* uniquement. Cette fonction a été abandonnée avec la version d’at.js 2.*x*. Cette fonction renvoie le contenu par défaut s’il est utilisé avec at.js 2.x.
+>Cette fonction est disponible uniquement pour les versions 1.*x* d’at.js. Cette fonction a été abandonnée avec la publication d’at.js 2.*x*. Cette fonction renvoie le contenu par défaut s’il est utilisé avec at.js 2.x.
 
 Le paramètre options est obligatoire et possède la structure suivante :
 
@@ -32,7 +43,7 @@ Remarques :
 * Si l’un des paramètres n’est pas fourni, une exception est déclenchée.
 * Si le tableau de modules est vide, une exception est déclenchée.
 
-Pour plus d’informations et d’exemples sur l’utilisation de `[!UICONTROL registerExtension]`, consultez la page [Adobe Experience Cloud Target atjs Extensions](https://github.com/Adobe-Marketing-Cloud/target-atjs-extensions) sur GitHub.
+Pour plus d’informations et d’exemples sur l’utilisation de `[!UICONTROL registerExtension]`, consultez la page [Extensions atjs de Adobe Experience Cloud Target](https://github.com/Adobe-Marketing-Cloud/target-atjs-extensions) sur GitHub.
 
 ## Méthodes de module Paramètres
 

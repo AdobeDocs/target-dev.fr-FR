@@ -1,11 +1,16 @@
 ---
-title: Initialisation du kit SDK  [!DNL Adobe Target] Node.js pour consigner les requêtes
-description: Découvrez comment consigner des requêtes dans le kit SDK  [!DNL Adobe Target] Node.js.
+title: Initialisez le SDK Node [!DNL Adobe Target] js pour consigner les requêtes.
+description: Découvrez comment consigner les requêtes dans le SDK Node [!DNL Adobe Target] js.
 feature: APIs/SDKs
 exl-id: 5db3e301-47b3-4330-b185-c0c03f72e790
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/tC6xT-eAHOO17h1BK-PwWTBmwg3Dy0Wj8KYrV3W-VR4
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: 83
 ht-degree: 2%
 
 ---
@@ -14,9 +19,9 @@ ht-degree: 2%
 
 ## Description
 
-Lorsque [&#x200B; initialise le SDK &#x200B;](initialize-sdk.md), l’objet `options.logger` est un objet facultatif. Cependant, pour déboguer efficacement en cas de problème, un objet `logger` doit être fourni lors de l’initialisation du SDK.
+Lors de [initialisation du SDK](initialize-sdk.md), l’objet `options.logger` est un objet facultatif. Cependant, pour un débogage efficace en cas de problème, un objet `logger` doit être fourni lors de l’initialisation du SDK.
 
-L’objet `logger` doit avoir une méthode `debug()` et une méthode `error()`. Lorsqu’un journal approprié est fourni, par exemple `console`, les requêtes et réponses [!DNL Target] seront consignées.
+L’objet `logger` doit comporter un `debug()` et une méthode `error()`. Lorsqu’un enregistreur approprié est fourni, tel que `console`, [!DNL Target] requêtes et réponses sont consignées.
 
 ## Exemple
 
@@ -44,4 +49,4 @@ const request = {
 const response = await targetClient.getOffers({ request, targetCookie });
 ```
 
-Vous devriez voir les requêtes et les réponses imprimées dans la console.
+Les requêtes et les réponses doivent s’afficher en cours d’impression dans la console.

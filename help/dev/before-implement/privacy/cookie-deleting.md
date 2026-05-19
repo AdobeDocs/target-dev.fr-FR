@@ -1,25 +1,38 @@
 ---
-keywords: cookie, cookies, supprimer un cookie, supprimer [!DNL Target] cookie, google chrome, mozilla firefox, firefox, microsoft edge, safari, cookie1
-description: Découvrez comment supprimer les cookies de navigateur  [!DNL Target] pour pouvoir valider vos expériences.
-title: Comment supprimer le cookie  [!DNL Target] ?
+keywords: cookie, cookies, supprimer cookie, delete [!DNL Target] cookie, google chrome, chrome, mozilla firefox, firefox, microsoft edge, safari, cookie1
+description: Découvrez comment supprimer les cookies  [!DNL Target]  navigateur afin de pouvoir valider vos expériences.
+title: Comment supprimer le cookie  [!DNL Target]  ?
 feature: Privacy & Security
 exl-id: c975c47f-8d81-4abe-aa89-f65275a73002
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/t4ieDzmphu8NHTM9eGnaZMoeXk-Y1G05E4K6spdSs6Y
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: 352
 ht-degree: 3%
 
 ---
 
 # Suppression du cookie [!DNL Target]
 
-Vous pouvez supprimer le cookie de votre navigateur [!DNL Adobe Target] (mbox) afin de pouvoir valider toutes vos expériences lors du test.
+Vous pouvez supprimer votre cookie de navigateur [!DNL Adobe Target] (mbox) afin de pouvoir valider toutes vos expériences au cours des tests.
 
-S’il n’existe pas de cookie [!DNL Target] (mbox), vous êtes considéré comme un nouveau visiteur et une nouvelle expérience vous est présentée. Il existe plusieurs façons de supprimer votre mbox sans supprimer tous les cookies de navigateur.
+S’il n’existe aucun cookie [!DNL Target] (mbox), vous êtes considéré comme un nouveau visiteur et une nouvelle expérience vous est présentée. Il existe plusieurs façons de supprimer votre mbox sans supprimer tous les cookies de votre navigateur.
 
 >[!NOTE]
 >
->Les instructions suivantes sont correctes pour les navigateurs et les versions répertoriés. Recherchez sur Internet des instructions relatives à votre navigateur ou version spécifique.
+>Les instructions suivantes sont correctes pour les navigateurs et versions répertoriés. Recherchez des instructions sur votre navigateur ou votre version spécifique sur Internet.
 
 ## Suppression du cookie [!DNL Target] de Google Chrome
 
@@ -29,7 +42,7 @@ Version 84.0.4147,105
 1. Cliquez sur l’onglet **[!UICONTROL Privacy and Security]** .
 1. Cliquez sur **[!UICONTROL Cookies and other site data]**.
 1. Cliquez sur **[!UICONTROL See all cookies and site data]**.
-1. Développez la section `adobe.com`, sélectionnez le cookie **mbox**, puis cliquez sur l’icône de suppression (X).
+1. Développez la section `adobe.com` , sélectionnez le cookie **mbox**, puis cliquez sur l’icône de suppression (X).
 
 ## Suppression du cookie [!DNL Target] de Mozilla Firefox
 
@@ -39,7 +52,7 @@ Version 79.0
 
 1. Cliquez sur le menu **[!UICONTROL Firefox]** > **[!UICONTROL Preferences]**.
 1. Cliquez sur l’onglet **[!UICONTROL Privacy and Security]** .
-1. Sous **Cookies et données du site*, cliquez sur &#x200B;** [!UICONTROL Manage Data]**.
+1. Sous **&#x200B; Cookies et données de site*, cliquez sur &#x200B;** [!UICONTROL Manage Data]**.
 1. Sélectionnez le site `adobe.com`, puis cliquez sur **[!UICONTROL Remove Selected]**.
 
 >[!WARNING]
@@ -50,7 +63,7 @@ Version 79.0
 
 1. Dans Firefo, cliquez sur **[!UICONTROL Tools]** > **[!UICONTROL Web Developer]** > **[!UICONTROL Storage Inspector]**.
 1. Cliquez sur l’onglet **[!UICONTROL Advanced]** .
-1. Accédez à la page web qui contient le cookie que vous souhaitez supprimer.
+1. Accédez à la page web qui contient le cookie à supprimer.
 1. Développez la section **[!UICONTROL Cookies]**, puis cliquez sur `https://experience.adobe.com`.
 1. Cliquez avec le bouton droit sur le cookie **[!UICONTROL mbox]**, puis cliquez sur **[!UICONTROL Delete]**.
 
@@ -62,9 +75,9 @@ Version 84.0.522.52
 1. Cliquez sur l’onglet **[!UICONTROL Site Permissions]** .
 1. Cliquez sur **[!UICONTROL Cookies and site data]**.
 1. Cliquez sur **[!UICONTROL See all cookies and site data]**.
-1. Développez la section `adobe.com`, sélectionnez le cookie **mbox**, puis cliquez sur l’icône de suppression (X).
+1. Développez la section `adobe.com` , sélectionnez le cookie **mbox**, puis cliquez sur l’icône de suppression (X).
 
-## Suppression du cookie [!DNL Target] d’Apple Safari
+## Supprimez le cookie [!DNL Target] d’Apple Safari
 
 Version 13.1.2
 
@@ -73,7 +86,7 @@ Version 13.1.2
 1. Cliquez sur le menu **[!UICONTROL Safari]** > **[!UICONTROL Preferences]**.
 1. Cliquez sur l’onglet **[!UICONTROL Privacy]** .
 1. Cliquez sur **[!UICONTROL Manage Website Data]**.
-1. Sélectionnez les sites des cookies que vous souhaitez supprimer, puis cliquez sur **[!UICONTROL Remove]**.
+1. Sélectionnez les sites pour les cookies que vous souhaitez supprimer, puis cliquez sur **[!UICONTROL Remove]**.
 
 >[!WARNING]
 >
@@ -84,7 +97,7 @@ Version 13.1.2
 1. Cliquez sur le menu **[!UICONTROL Safari]** > **[!UICONTROL Preferences]**.
 1. Cliquez sur l’onglet **[!UICONTROL Advanced]** .
 1. Sélectionnez l’option **[!UICONTROL Show Develop menu in menu bar]** .
-1. Accédez à la page web qui contient le cookie que vous souhaitez supprimer.
+1. Accédez à la page web qui contient le cookie à supprimer.
 1. Cliquez sur le menu **[!UICONTROL Develop]** > **[!UICONTROL Show Web Inspector]**.
 1. Cliquez sur l’onglet **[!UICONTROL Storage]** .
 1. Développez la section **[!UICONTROL Cookies]**, puis cliquez sur `www.adobe.com`.

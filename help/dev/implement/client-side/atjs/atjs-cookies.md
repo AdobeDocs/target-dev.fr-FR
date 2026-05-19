@@ -4,20 +4,36 @@ description: Informations détaillées sur la façon dont  [!DNL Adobe Target] .
 title: Cookies at.js
 feature: at.js
 exl-id: 154a844a-6855-4af7-8aed-0719b4c389f5
-source-git-commit: 16132bc7a624ab4849651b183bde9b3064b4a676
+TQID: https://experienceleague.adobe.com/BRauW1ppIMya4aX-vTJDGZFCv1fijYgDuxbHjXCI6D8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 72%
+source-wordcount: 1830
+ht-degree: 67%
 
 ---
 
 # cookies at.js
 
-Informations concernant at.js 2.x et at.js 1.comportement du cookie *x*.
+Informations sur le comportement des cookies at.js 2.x et at.js 1.*x*.
 
 ## Comportement des cookies at.js 2.x
 
-Pour at.js version 2.x (jusqu’à la version 2.10.0, mais sans l’inclure), *seuls les cookies propriétaires sont pris en charge*. Comme pour at.js 1.*x*, le cookie propriétaire « mbox » est stocké dans `clientdomain.com`, où `clientdomain` correspond à votre domaine.
+Pour at.js version 2.x (jusqu’à la version 2.10.0, mais sans l’inclure), *seuls les cookies propriétaires sont pris en charge*. Tout comme dans at.js 1.*x*, le cookie propriétaire « mbox » est stocké dans `clientdomain.com`, où `clientdomain` correspond à votre domaine.
 
 at.js génère un ID de session et le stocke dans le cookie. La première réponse contient les informations d’activité, ainsi que le `TNT` ou le `PC ID` générés par les serveurs [!DNL Target]. at.js écrit ensuite le `TNT/PC ID` dans le cookie.
 
@@ -29,20 +45,20 @@ Le cookie propriétaire `AMCV_###@AdobeOrg` est toujours défini par le service 
 
 ### Prise en charge des cookies tiers et du suivi inter-domaines
 
-Le suivi inter-domaines permet d’afficher les sessions sur deux sites associés, mais avec des domaines différents, dans une session unique. Vous pourriez créer une activité [!DNL Target] qui couvre `siteA.com` et `siteB.com`, et le visiteur resterait dans la même expérience en changeant de domaine. Cette fonctionnalité est liée au comportement de at.js 1.*x* tiers et comportement du cookie de première partie.
+Le suivi inter-domaines permet d’afficher les sessions sur deux sites associés, mais avec des domaines différents, dans une session unique. Vous pourriez créer une activité [!DNL Target] qui couvre `siteA.com` et `siteB.com`, et le visiteur resterait dans la même expérience en changeant de domaine. Cette fonctionnalité est liée au comportement des cookies tiers et propriétaires d’at.js 1.*x*.
 
 >[!NOTE]
 >
 >Pour at.js versions 2.10.0 et ultérieures, les cookies tiers et le suivi inter-domaines sont pris en charge.
 
 
-## at.js 1.*x* comportement des cookies
+## comportement des cookies at.js 1.*x*
 
-Pour at.js versions 1.*x*, le comportement du cookie varie selon qu’il s’agit d’un cookie propriétaire, d’un cookie tiers avec un cookie propriétaire ou d’un cookie tiers seul.
+Pour les versions 1.*x* d’at.js, le comportement du cookie dépend du cookie propriétaire, du cookie tiers avec cookie propriétaire ou du cookie tiers seul.
 
 ### Quand utiliser les cookies propriétaires ou tiers
 
-La configuration de votre site détermine le type de cookies que vous allez utiliser. Il est utile de comprendre comment fonctionne [!DNL Target] lorsque vous essayez de comprendre les cookies propriétaires et tiers. Pour plus d’informations[&#x200B; consultez la section  [!DNL Adobe Target]  Fonctionnement &#x200B;](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=fr) .
+La configuration de votre site détermine le type de cookies que vous allez utiliser. Il est utile de comprendre comment fonctionne [!DNL Target] lorsque vous essayez de comprendre les cookies propriétaires et tiers. Pour plus d’informations [!DNL Adobe Target]  consultez la section [&#x200B; Fonctionnement &#x200B;](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=fr) .
 
 Il existe trois principaux cas d’utilisation des cookies :
 
@@ -134,7 +150,7 @@ Gardez à l’esprit les éléments suivants :
 | Cookies | Détails |
 |--- |--- |
 | Domaines propriétaires | Il s’agit de l’implémentation standard pour les clients [!DNL Target].  Les cookies « mbox » sont définis dans le domaine du client. |
-| Suivi tiers | Le suivi tiers est important pour les cas d’utilisation de publicité et de ciblage dans [!DNL Target] et dans [!DNL Adobe Audience Manager] (AAM).  Le suivi tiers nécessite des techniques de script de site à site. [!DNL Target] utilise deux cookies, « mboxSession » et « mboxPC » définis dans le domaine `clientcode.tt.omtrd.net`. |
+| Suivi tiers | Le suivi tiers est important pour les cas d’utilisation de publicité et de ciblage dans [!DNL Target] et dans [!DNL Adobe Audience Manager] (AAM).  Le suivi tiers nécessite des techniques de script entre sites.  [!DNL Target] utilise deux cookies, « mboxSession » et « mboxPC » définis dans le domaine `clientcode.tt.omtrd.net`. |
 
 ### Quelle est l’approche d’Apple ?
 

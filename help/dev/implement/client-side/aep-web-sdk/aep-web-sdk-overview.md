@@ -4,10 +4,27 @@ description: Découvrez comment utiliser l’[!UICONTROL Adobe Experience Platfo
 title: Comment effectuer une implémentation avec le [!UICONTROL Experience Platform Web SDK] ?
 feature: AEP Web SDK
 exl-id: 35ee60d2-3d6d-4169-9f22-b2aef4c6548b
-source-git-commit: ac03d5d15875ab4945b07b3e95037ce9ecde1044
+TQID: https://experienceleague.adobe.com/j3-KSuCkcyyTB2KG4Icm2E7xpAfcuPkaOlhxitd5q-4
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2:
+  - id: df62f171-ac37-440f-8f0f-f41a72ebdd34
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 8%
+source-wordcount: 714
+ht-degree: 11%
 
 ---
 
@@ -28,9 +45,9 @@ Les tutoriels suivants vous aident à mettre en œuvre :
 
 Découvrez comment implémenter des applications [!DNL Experience Cloud] à l’aide de [!DNL Adobe Experience Platform Web SDK] avec [ce tutoriel](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=fr). Pour plus d’informations spécifiques à [!DNL Target], consultez la section du tutoriel intitulée [Configuration d [!DNL Target] avec Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=fr).
 
-### Migration de [!DNL Target] à partir d’at.js 2.*x* à [!DNL Platform Web SDK]
+### Migration de [!DNL Target] d’at.js 2.*x* vers [!DNL Platform Web SDK]
 
-Découvrez comment migrer votre implémentation [!DNL Target] à partir d’at.js 2.*x* au [!DNL Adobe Experience Platform Web SDK] avec [ce tutoriel](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=fr).
+Découvrez comment migrer votre implémentation [!DNL Target] d’at.js 2.*x* vers le [!DNL Adobe Experience Platform Web SDK] à l’aide de [ce tutoriel](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html?lang=fr).
 
 ## Documentation recommandée
 

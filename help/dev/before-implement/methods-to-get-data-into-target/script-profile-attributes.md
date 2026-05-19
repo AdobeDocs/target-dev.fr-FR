@@ -1,13 +1,23 @@
 ---
 keywords: implémentation, implémentation, configuration, configuration, attributs de profil de script
-description: Récupérez des données dans  [!DNL Target]  à l’aide d’attributs de profil de script.
-title: Comment obtenir des données dans  [!DNL Target] à l’aide d’attributs de profil de script ?
+description: Transformez les données en  [!DNL Target]  à l’aide d’attributs de profil de script.
+title: Comment puis-je importer des données dans  [!DNL Target]  à l’aide d’attributs de profil de script ?
 feature: Implementation
 exl-id: ba11f1de-e68b-4505-8e3e-cd4d46ef59a2
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/bRsl4ipgw0OeuVD0d69wmnHmrVvcGt9o0KmkhrEECZQ
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 74%
+source-wordcount: 292
+ht-degree: 71%
 
 ---
 
@@ -19,7 +29,7 @@ Les utilisateurs écrivent de petits fragments de code qui s’exécutent à cha
 
 ## Format
 
-Les attributs de profil de script sont créés dans la section Audiences de Target. Tout nom d’attribut est valide et la valeur est le résultat d’une fonction JavaScript écrite par l’utilisateur [!DNL Target]. Les noms d’attributs sont automatiquement précédés du préfixe « user. &quot; dans [!DNL Target] pour les distinguer des attributs de profil internes à la page.
+Les attributs de profil de script sont créés dans la section Audiences de Target. Tout nom d’attribut est valide et la valeur est le résultat d’une fonction JavaScript écrite par l’utilisateur [!DNL Target]. Les noms d’attributs sont automatiquement précédés du préfixe « user. » dans [!DNL Target] de les distinguer des attributs de profil sur la page.
 
 Les fragments de code sont écrits dans le langage JavaScript Rhino et peuvent référencer des jetons et d’autres valeurs.
 
@@ -52,6 +62,6 @@ Les scripts de profil sont assez souples :
 user.purchase_recency: var dayInMillis = 3600 * 24 * 1000; if (mbox.name == 'orderThankyouPage') {  user.setLocal('lastPurchaseTime', new Date().getTime()); } var lastPurchaseTime = user.getLocal('lastPurchaseTime'); if (lastPurchaseTime) {  return ((new Date()).getTime()-lastPurchaseTime)/dayInMillis; }
 ```
 
-### Liens vers les informations pertinentes
+### Liens vers des informations pertinentes
 
 [Attributs de script de profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=fr#concept_8C07AEAB0A144FECA8B4FEB091AED4D2)

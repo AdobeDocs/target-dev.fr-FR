@@ -3,9 +3,18 @@ title: Envoyer des notifications d’affichage ou de clic à à à l [!DNL Adobe
 description: Découvrez comment utiliser sendNotifications() pour envoyer des notifications d’affichage ou de clic à des  [!DNL Adobe Target]  de mesure et de création de rapports.
 feature: APIs/SDKs
 exl-id: 03827b18-a546-4ec8-8762-391fcb3ac435
-source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
+TQID: https://experienceleague.adobe.com/r7j2MaCmcZBEsx7TmTlKL9R-IKlncZJw5DhSfcKmVNU
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: 411
 ht-degree: 8%
 
 ---
@@ -61,7 +70,7 @@ target_client.send_notifications(options)
 | target_location_hint_cookie | dictionnaire | [!DNL Target] cookie d’indice d’emplacement |
 | analytics_details | list[AnalyticsResponse] | Payload [!DNL Analytics], en cas d’utilisation du [!DNL Analytics] côté client |
 | trace | list[dict] | Données de suivi agrégées pour toutes les mbox/vues de requête |
-| response_tokens | list[dict] | Une liste de [&#x200B;jetons de réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr) |
+| response_tokens | list[dict] | Une liste de &#x200B;jetons de réponse[&#128279;](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr) |
 | méta | dictionnaire | Métadonnées de prise de décision supplémentaires à utiliser avec la prise de décision sur l’appareil |
 
 ## Exemple

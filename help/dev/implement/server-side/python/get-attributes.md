@@ -1,20 +1,27 @@
 ---
-title: Utilisation de requêtes asynchrones dans le kit SDK  [!DNL Adobe Target] Python
-description: Découvrez comment le SDK Python  [!DNL Target] prend en charge les requêtes asynchrones, ce qui peut réduire le temps cible effectif à zéro.
+title: Utilisation des requêtes asynchrones dans le SDK  [!DNL Adobe Target]  Python
+description: Découvrez comment  [!DNL Target]  SDK Python prend en charge les requêtes asynchrones, ce qui peut réduire le temps cible effectif à zéro.
 feature: APIs/SDKs
 exl-id: fafb9e28-5ac5-41c1-8e7f-f40550b6749f
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/CFfT7Amoca2yqYkkt9AviTmWi-RCjGdABYYuWHxvqC8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 16%
+source-wordcount: 130
+ht-degree: 15%
 
 ---
 
-# Obtenir des attributs (Python)
+# Obtenir Les Attributs (Python)
 
 ## Description
 
-`get_attributes()` est utilisé pour récupérer l’expérimentation et les expériences personnalisées de [!DNL Target] et extraire des valeurs d’attribut.
+`get_attributes()` est utilisé pour récupérer des expériences et des expériences personnalisées à partir de [!DNL Target] et extraire des valeurs d’attribut.
 
 
 ## Méthode
@@ -29,17 +36,17 @@ target_client_instance.get_attributes(mbox_names, options)
 
 | Nom | Type | Requis | Par défaut | Description |
 | --- | --- | --- | --- | --- |
-| mbox_names | list[str] | Oui | None | Liste des noms de mbox |
-| Options | dict | Non | None | Les mêmes options que pour [Obtenir des offres](get-offers.md) |
+| mbox_names | list[str] | Oui | None | Une liste de noms de mbox |
+| Options | dictionnaire | Non | None | Les mêmes options que pour [Obtenir les offres](get-offers.md) |
 
 ## AttributesProvider
 
-L’ `AttributesProvider` renvoyé par `target_client.get_attributes()` possède les méthodes suivantes :
+La `AttributesProvider` renvoyée par `target_client.get_attributes()` comporte les méthodes suivantes :
 
 | Méthode | Type de retour | Description |
 | --- | --- | --- |
-| get_value(mbox_name, key) | any | Renvoie la valeur d’un nom de mbox et d’une clé d’attribut spécifiés |
-| as_object(mbox_name) | dict | Renvoie un objet json simple avec des paires clé-valeur |
+| get_value(mbox_name, key) | any | Renvoie la valeur du nom de mbox et de la clé d’attribut spécifiés |
+| as_object(mbox_name) | dictionnaire | Renvoie un objet json simple avec des paires clé-valeur |
 | get_response() | [TargetDeliveryResponse](https://github.com/adobe/target-python-sdk/blob/main/target_python_sdk/types/target_delivery_response.py) | Renvoie l’objet de réponse normalement renvoyé par `get_offers` |
 
 ## Exemple

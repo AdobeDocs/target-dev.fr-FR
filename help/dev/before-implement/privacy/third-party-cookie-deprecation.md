@@ -1,18 +1,30 @@
 ---
-keywords: Présentation et référence, cookies, propriétaires, tiers, propriétaires, tiers, tiers, propriétaires, tiers, tiers, tiers, tiers, tiers, propriétaires, propriétaires, tiers, tiers, tiers, at.js
-description: En savoir plus sur l’impact de l’obsolescence des cookies tiers sur [!DNL Adobe Target] (at.js)
-title: Impact de l’obsolescence des cookies tiers sur  [!DNL Adobe Target]  (at.js)
+keywords: Présentation et référence, cookies, propriétaires, tiers, tiers, tiers, tiers, propriétaires, tiers, tiers, tiers, tiers, tiers, tiers, tiers, tiers, at.js
+description: Découvrez l’impact de l’abandon des cookies tiers sur  [!DNL Adobe Target] (at.js)
+title: Impact de l’obsolescence des cookies tiers sur  [!DNL Adobe Target] (at.js)
 feature: at.js
 exl-id: 3827abff-aeb9-40cc-99c1-72409d4082dd
-source-git-commit: 309e5b94cb580ce07d6900f0fcab1a585f7ce694
+TQID: https://experienceleague.adobe.com/EeMMYhrNz3K7qcgV3FQLtNi5vRDlXNrJHIzNFaXvizo
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: 110
 ht-degree: 0%
 
 ---
 
 # Impact de l’obsolescence des cookies tiers sur Target (at.js)
 
-Découvrez ce que signifie l’obsolescence future des cookies tiers pour votre implémentation d’ [!DNL Adobe Target] at.js .
+Découvrez ce que la future obsolescence des cookies tiers signifie pour votre implémentation d’at.js [!DNL Adobe Target].
 
-Pour plus d’informations, voir [Impact of Third Party Cookie Deprecation on Adobe Target (at.js)](https://experienceleaguecommunities.adobe.com/t5/adobe-target-blogs/the-impact-of-third-party-cookie-deprecation-on-adobe-target-at/ba-p/661615?profile.language=fr&search=Third%20Party%20Cookie%20Deprecation){target=_blank} dans la communauté Adobe Target.
+Pour plus d’informations, voir [Impact de l’obsolescence des cookies tiers sur Adobe Target (at.js)](https://experienceleaguecommunities.adobe.com/t5/adobe-target-blogs/the-impact-of-third-party-cookie-deprecation-on-adobe-target-at/ba-p/661615?profile.language=fr&search=Third%20Party%20Cookie%20Deprecation){target=_blank} dans la communauté Adobe Target.

@@ -4,9 +4,29 @@ description: Découvrez comment effectuer des [!UICONTROL on-device decisioning]
 title: Comment la prise de décision sur l’appareil fonctionne-t-elle avec la bibliothèque JavaScript at.js ?
 feature: at.js
 exl-id: bd0e062f-c259-46f3-adba-e380af058ac8
-source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
+TQID: https://experienceleague.adobe.com/5cYQQDwAwUbKanR3Wbt7ckKnGwHvz3arqn0zjdz6SBc
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '3478'
+source-wordcount: 3621
 ht-degree: 4%
 
 ---
@@ -25,10 +45,10 @@ ht-degree: 4%
 
 Les avantages de la [!UICONTROL on-device decisioning] sont les suivants :
 
-* **Offrez des décisions et des expériences incroyablement rapides.Le regroupement et la prise de décision des** sont effectués en mémoire et sur le navigateur pour éviter de bloquer les requêtes réseau.
+* **Offrez des décisions et des expériences incroyablement rapides.** Le regroupement et la prise de décision sont effectués en mémoire et sur le navigateur pour éviter de bloquer les requêtes réseau.
 * **Amélioration des performances des applications.** Exécutez des expériences et offrez une personnalisation à vos clients et utilisateurs sans compromettre les expériences des utilisateurs finaux.
-* **Améliorez le score de qualité du site Google.** Une fois la prise de décision effectuée en mémoire, améliorez le score de qualité du site Google de votre entreprise en ligne pour la rendre plus détectable par les consommateurs.
-* **En savoir plus sur l’analyse en temps réel.** Obtenez des informations sur les performances de votre activité en temps réel grâce aux rapports [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) (A4T). A4T vous permet de faire pivoter votre stratégie aux moments critiques.
+* **Amélioration du score de qualité du site Google.** Une fois la prise de décision en mémoire, améliorez le score de qualité du site Google de votre entreprise en ligne pour la rendre plus détectable par les consommateurs.
+* **En savoir plus sur l’analyse en temps réel.** Obtenez des informations sur les performances de votre activité en temps réel via les rapports [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) (A4T). A4T vous permet de faire pivoter votre stratégie aux moments critiques.
 
 ## Fonctionnalités prises en charge
 
@@ -72,11 +92,11 @@ La liste suivante correspond aux nombres du diagramme :
 
 | Étape | Description |
 | --- | --- |
-| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr&). |
+| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr ?). |
 | 2 | La bibliothèque at.js se charge de manière synchrone et masque le corps du document.<br />   La bibliothèque at.js peut également être chargée de manière asynchrone avec un fragment de code de masquage préalable facultatif implémenté sur la page. |
 | 3 | La bibliothèque at.js masque le corps pour éviter le scintillement. |
 | 4 | Une requête de chargement de page est effectuée et inclut tous les paramètres configurés, tels que (ECID, ID de client, paramètres personnalisés, profil utilisateur, etc.). |
-| 5 | Les scripts de profil s’exécutent, puis se dirigent vers le magasin de profils.<br />Le magasin de profils demande des audiences qualifiées à la bibliothèque d’audiences (par exemple, les audiences partagées à partir d’Adobe Analytics, de Adobe Audience Manager, etc.).<br />Les attributs du client sont envoyés par lot dans le magasin de profils. |
+| 5 | Les scripts de profil s’exécutent, puis se propagent dans la banque de profils. <br />La banque de profils demande des audiences qualifiées à la bibliothèque d’audiences (par exemple, les audiences partagées à partir d’Adobe Analytics, de Adobe Audience Manager, etc.). <br />Les attributs du client sont envoyés à la banque de profils dans un traitement par lots. |
 | 6 | Le magasin de profils est utilisé pour la qualification d’audience et le regroupement afin de filtrer les activités. |
 | 7 | Le contenu qui en résulte est sélectionné une fois l’expérience déterminée à partir des activités de Live [!DNL Target]. |
 | 8 | La bibliothèque at.js masque sur la page les éléments correspondants associés à l’expérience qui doit être rendue. |

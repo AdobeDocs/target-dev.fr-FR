@@ -1,18 +1,23 @@
 ---
-title: Prise en main du kit SDK Java [!DNL Adobe Target]
-description: Découvrez comment les clients  [!DNL Adobe Target] peuvent installer, initialiser et utiliser le SDK Java.
+title: 'Prise en main du SDK Java [!DNL Adobe Target] '
+description: Découvrez comment  [!DNL Adobe Target]  clients peuvent installer, initialiser et utiliser Java SDK.
 feature: APIs/SDKs
 exl-id: ccdd33f5-a9c7-4832-beba-b9692203d42c
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/BtTvCc3i4bYN5rujWFkp-h6TNewSovwrxC8UKvEYZpI
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 4%
+source-wordcount: 120
+ht-degree: 9%
 
 ---
 
-# Présentation du SDK Java
+# Présentation de Java SDK
 
-Ce guide de référence explique comment les clients [!DNL Adobe Target] peuvent installer, initialiser et utiliser le SDK Java.
+Ce guide de référence explique comment [!DNL Adobe Target] clients peuvent installer, initialiser et utiliser Java SDK.
 
 ## Conditions requises
 
@@ -21,20 +26,20 @@ Ce guide de référence explique comment les clients [!DNL Adobe Target] peuvent
 
 ## Prise en main
 
-Pour découvrir comment commencer à utiliser le SDK Java, accédez au [[!DNL Target] Guide de prise en main du SDK](../sdk-guides/getting-started/getting-started.md).
+Pour découvrir comment commencer à utiliser Java SDK, accédez au [[!DNL Target] Guide de prise en main de SDK](../sdk-guides/getting-started/getting-started.md).
 
 ## Exemple d’application
 
 Testez le SDK Java :
 
-* En visitant le [[!DNL Adobe Target] [!UICONTROL on-device decisioning] site de démonstration](https://github.com/adobe/on-device-decisioning-demo-site)
-* Dans un [exemple d’application](../sdk-guides/sample-apps/sample-apps.md).
+* En visitant le site de démonstration [&#128279;](https://github.com/adobe/on-device-decisioning-demo-site) [!DNL Adobe Target] [!UICONTROL on-device decisioning]
+* Dans un [&#x200B; exemple d’application &#x200B;](../sdk-guides/sample-apps/sample-apps.md).
 
 ## Référence
 
-Pour lire et comprendre la documentation de référence du SDK Java, commencez à [Installer le SDK](install-sdk.md).
+Pour lire et comprendre la documentation de référence de Java SDK, commencez par [Installer SDK](install-sdk.md).
 
 ## Fichiers Source
 
-* [Java SDK Github Repo](https://github.com/adobe/target-java-sdk)
-* [Changelog](https://github.com/adobe/target-java-sdk/blob/master/CHANGELOG.md)
+* [Référentiel Github Java SDK](https://github.com/adobe/target-java-sdk)
+* [Journal des modifications](https://github.com/adobe/target-java-sdk/blob/master/CHANGELOG.md)

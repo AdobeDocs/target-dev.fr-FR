@@ -1,19 +1,30 @@
 ---
-keywords: adobe.target.triggerView, triggerView, déclencheur vue, at.js, fonctions, fonction, viewName, nom de la vue, adobe.target.triggerView1
-description: Utilisez la fonction adobe.target.triggerView() pour la bibliothèque JavaScript  [!DNL Adobe Target] at.js à utiliser dans les applications d’une seule page (SPA). (at.js 2.x)
+keywords: adobe.target.triggerView, triggerView, trigger view, trigger view, at.js, functions, function, viewName, viewname, nom de la vue, adobe.target.triggerView1
+description: Utilisez la fonction adobe.target.triggerView() pour la bibliothèque JavaScript at [!DNL Adobe Target] js à utiliser dans les applications d’une seule page (SPA). (at.js 2.x)
 title: Comment utiliser la fonction adobe.target.triggerView() ?
 feature: at.js
 exl-id: d6130c56-4e77-4668-ad21-a5b335f8b234
-source-git-commit: fe4e607173c760f782035a10f52936d96e9db300
+TQID: https://experienceleague.adobe.com/pBC1GRKG0mxeaZ1hfaByKv2tu-XScrSJfm7lUw-3yKw
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 21%
+source-wordcount: 423
+ht-degree: 20%
 
 ---
 
 # adobe.target.triggerView (viewName, options) - at.js 2.x
 
-Cette fonction peut être appelée à chaque chargement d’une nouvelle page ou lorsqu’un composant fait l’objet d’un nouveau rendu sur une page. `adobe.target.triggerView()` doit être implémenté pour les applications d’une seule page (SPA) afin d’utiliser le [!UICONTROL Visual Experience Composer] (VEC) pour créer des activités [!UICONTROL A/B Test] et [!UICONTROL Experience Targeting] (XT). Si `[!UICONTROL adobe.target.triggerView()]` n’est pas implémenté sur le site, le VEC ne peut pas être utilisé pour SPA. Pour plus d’informations, voir [Implémentation d’application monopage](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
+Cette fonction peut être appelée à chaque chargement d’une nouvelle page ou lorsqu’un composant fait l’objet d’un nouveau rendu sur une page. `adobe.target.triggerView()` doit être implémenté pour que les applications monopages (SPA) utilisent le [!UICONTROL Visual Experience Composer] (VEC) pour créer des activités [!UICONTROL A/B Test] et [!UICONTROL Experience Targeting] (XT). Si `[!UICONTROL adobe.target.triggerView()]` n’est pas implémenté sur le site, le compositeur d’expérience visuelle ne peut pas être utilisé pour les SPA. Pour plus d’informations, voir [Implémentation d’application monopage](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
 
 >[!NOTE]
 >
@@ -21,13 +32,13 @@ Cette fonction peut être appelée à chaque chargement d’une nouvelle page ou
 
 | Paramètre | Type | Obligatoire ? | Description |
 | --- | --- | --- | --- |
-| viewName | Chaîne | Oui | Transmettez n’importe quel nom en tant que type de chaîne que vous souhaitez représenter votre vue. Ce nom d’affichage apparaît dans le panneau [!UICONTROL Modifications] du VEC pour que les marketeurs puissent créer des actions et exécuter leurs activités [!UICONTROL A/B Test] et [!UICONTROL Experience Targeting] XT. |
+| viewName | Chaîne | Oui | Transmettez n’importe quel nom en tant que type de chaîne que vous souhaitez représenter votre vue. Ce nom d’affichage s’affiche dans le panneau [!UICONTROL Modifications] du compositeur d’expérience visuelle pour que les marketeurs puissent créer des actions et exécuter leurs activités [!UICONTROL A/B Test] et [!UICONTROL Experience Targeting] XT. |
 | Options | Objet | Non |  |
-| options > page | Booléen | Non | **TRUE :** La valeur par défaut de la page est vrai. Lorsque page = vrai, les notifications sont envoyées au serveur principal [!DNL Target] pour incrémenter le nombre d’impressions.<P>Une notification est toujours envoyée par défaut lors de l’appel d’un `[!UICONTROL triggerView]`, sauf si options > page est défini sur false.<P>**FALSE :** Lorsque page = false, les notifications ne sont pas envoyées pour incrémenter le nombre d’impressions. Cette approche doit être utilisée lorsque vous souhaitez uniquement effectuer le rendu d’un composant sur une page avec une offre.<P>**Remarque** : Les offres de code personnalisé dans le VEC ne sont pas rendues à nouveau lorsque `[!UICONTROL triggerView()]` est appelé avec `{page: false}` comme option. |
+| options > page | Booléen | Non | **TRUE :** La valeur par défaut de la page est vrai. Lorsque page = vrai, les notifications sont envoyées au serveur principal [!DNL Target] pour incrémenter le nombre d’impressions.<P>Une notification est toujours envoyée par défaut lorsqu’une `[!UICONTROL triggerView]` est appelée, sauf lorsque options > page est défini sur false.<P>**FALSE :** lorsque page=false, les notifications ne sont pas envoyées pour incrémenter le nombre d’impressions. Cette approche doit être utilisée lorsque vous souhaitez effectuer uniquement le rendu d’un composant sur une page avec une offre.<P>**Remarque** : les offres de code personnalisé dans le VEC ne sont pas rendues de nouveau lorsque `[!UICONTROL triggerView()]` est appelé avec `{page: false}` comme option. |
 
 ## Exemple : True
 
-`[!UICONTROL triggerView()]` appel pour envoyer une notification au serveur principal [!DNL Target] pour incrémenter les impressions d’activité et d’autres mesures.
+`[!UICONTROL triggerView()]` appel pour envoyer une notification au serveur principal [!DNL Target] afin d’incrémenter les impressions d’activité et d’autres mesures.
 
 ```javascript {line-numbers="true"}
 adobe.target.triggerView("homeView")
@@ -35,15 +46,15 @@ adobe.target.triggerView("homeView")
 
 ## Exemple : False
 
-Appel `[!UICONTROL triggerView()]` pour ne pas envoyer de notifications au serveur principal [!DNL Target] pour le comptage d’impression.
+`[!UICONTROL triggerView()]` appel pour que les notifications ne soient pas envoyées au serveur principal [!DNL Target] pour le comptage d’impressions.
 
 ```javascript {line-numbers="true"}
 adobe.target.triggerView("homeView", {page: false})
 ```
 
-## Exemple : promesse d’un chaînage avec `getoffers()` et `applyOffers()`
+## Exemple : Chaînage de promesses avec `getoffers()` et `applyOffers()`
 
-Pour exécuter `triggerView()` lorsque la promesse `getOffers()` est résolue, il est important d’exécuter `triggerView()` sur le bloc final, comme illustré dans l’exemple ci-dessous. Cela est nécessaire pour que le VEC détecte `Views` en mode création.
+Pour exécuter `triggerView()` lorsque la promesse de `getOffers()` est résolue, il est important d’exécuter `triggerView()` sur le bloc final, comme illustré dans l’exemple ci-dessous. Cela est nécessaire pour que le compositeur d’expérience visuelle détecte les `Views` en mode création.
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({
@@ -70,15 +81,15 @@ adobe.target.getOffers({
 });
 ```
 
-## Exemple : meilleure compatibilité pour `triggerView()` avec [!UICONTROL Adobe Visual Editing Helper extension]
+## Exemple : meilleure compatibilité pour les `triggerView()` avec le [!UICONTROL Adobe Visual Editing Helper extension]
 
-Tenez compte de ce qui suit lors de l’utilisation de l’extension [Adobe Visual Editing Helper extension](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} :
+Tenez compte des points suivants lors de l’utilisation de l’extension Visual Editing Helper d’Adobe [&#128279;](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} :
 
-En raison des nouvelles stratégies de manifeste V3 de [!DNL Googl] pour les extensions [!DNL Chrome], [!UICONTROL Visual Editing Helper extension] doit attendre l’événement `DOMContentLoaded` avant de charger les bibliothèques [!DNL Target] dans le VEC. Ce délai peut entraîner le déclenchement de l’appel `triggerView()` par les pages web avant que les bibliothèques de création ne soient prêtes, ce qui entraîne le fait que la vue ne soit pas renseignée au chargement.
+En raison des nouvelles politiques de manifeste V3 de [!DNL Googl]e pour les extensions [!DNL Chrome], le [!UICONTROL Visual Editing Helper extension] doit attendre l’événement `DOMContentLoaded` avant de charger les bibliothèques [!DNL Target] dans le VEC. Ce délai peut entraîner le déclenchement de l’appel `triggerView()` aux pages web avant que les bibliothèques de création ne soient prêtes, ce qui fait que la vue n’est pas renseignée au chargement.
 
-Pour atténuer ce problème, utilisez un écouteur pour l’événement de page `load`.
+Pour atténuer ce problème, utilisez un écouteur pour l’événement de `load` de page.
 
-Voici un exemple de mise en oeuvre :
+Voici un exemple d’implémentation :
 
 ```javascript
 function triggerViewIfLoaded() {

@@ -1,12 +1,19 @@
 ---
 title: Notifications de l’API de diffusion Adobe Target
-description: Comment déclencher des notifications à l’aide de [!UICONTROL Adobe Target Delivery API] ?
-keywords: api de diffusion
+description: Comment déclencher des notifications à l’aide de l’[!UICONTROL Adobe Target Delivery API] ?
+keywords: API de diffusion
 exl-id: 711388fd-2c1f-4ca4-939f-c56dc4bdc04a
 feature: APIs/SDKs
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/rooWLG-bh7lu7eBELTQys3KoNtS-6ZicxfHoQcU6TU0
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: 414
 ht-degree: 0%
 
 ---
@@ -15,11 +22,11 @@ ht-degree: 0%
 
 Les notifications doivent être déclenchées lorsqu’une mbox ou une vue prérécupérée a été visitée ou rendue à l’utilisateur final.
 
-Pour que les notifications soient déclenchées pour la mbox ou la vue appropriée, veillez à suivre le `eventToken` correspondant pour chaque mbox ou vue. Les notifications comportant le `eventToken` correct pour les mbox ou vues correspondantes doivent être déclenchées afin que la création de rapports soit correctement reflétée.
+Pour que les notifications soient déclenchées pour la mbox ou la vue appropriée, assurez-vous de conserver une trace du `eventToken` correspondant pour chaque mbox ou vue. Les notifications avec le `eventToken` correct pour les mbox ou les vues correspondantes doivent être déclenchées pour que les rapports soient correctement reflétés.
 
-## Notifications des mbox prérécupérées
+## Notifications pour les mBox prérécupérées
 
-Une ou plusieurs notifications peuvent être envoyées via un seul appel de diffusion. Déterminez si la mesure qui doit faire l’objet d’un suivi est `click` ou `display` pour chaque mbox, de sorte que l’ `type` de la notification puisse être correctement reflétée. Transmettez également un `id` pour chaque notification afin que vous puissiez déterminer si une notification a été correctement envoyée via le [!UICONTROL &#x200B; Adobe Target Delivery API]. `timestamp` doit également être transféré vers [!DNL Target] pour indiquer le moment où `click` ou `display` s’est produit pour une mbox donnée à des fins de création de rapports.
+Une ou plusieurs notifications peuvent être envoyées via un seul appel de diffusion. Déterminez si la mesure qui doit être suivie est un `click` ou un `display` pour chaque mbox afin que le `type` de la notification puisse être correctement reflété. En outre, transmettez un `id` pour chaque notification afin que vous puissiez déterminer si une notification a été correctement envoyée via [!UICONTROL &#x200B; Adobe Target Delivery API]. Il est également important de transmettre le `timestamp` à [!DNL Target] pour indiquer le moment où le `click` ou le `display` s’est produit pour une mbox donnée à des fins de création de rapports.
 
 ```
 curl -X POST \
@@ -81,7 +88,7 @@ curl -X POST \
   }'
 ```
 
-L’exemple d’appel ci-dessus entraînera une réponse indiquant que la requête `notifications` a été traitée avec succès.
+L’exemple d’appel ci-dessus entraîne une réponse indiquant que la demande `notifications` a été traitée avec succès.
 
 ```
 {
@@ -106,11 +113,11 @@ L’exemple d’appel ci-dessus entraînera une réponse indiquant que la requê
 }
 ```
 
-Si tous les `notifications` envoyés à [!DNL Target] sont correctement traités, ils apparaîtront dans le tableau `notifications` de la réponse. Cependant, si un `notifications` `id` est manquant, cet `notification` particulier n&#39;a pas été parcouru. Dans ce scénario, une logique de reprise peut être mise en place jusqu’à ce qu’une réponse `notification` réussie soit récupérée. Assurez-vous que le délai d’expiration de la logique de reprise est spécifié afin que l’appel de l’API ne bloque pas et n’entraîne pas de retards en termes de performances.
+Si toutes les `notifications` envoyées à [!DNL Target] sont correctement traitées, elles apparaîtront dans le tableau `notifications` dans la réponse. Toutefois, si un `id` de `notifications` est manquant, ce `notification` n&#39;a pas été adopté. Dans ce scénario, une logique de reprise peut être mise en place jusqu’à ce qu’une réponse `notification` réussie soit récupérée. Assurez-vous que la logique de reprise a un délai d’expiration spécifié afin que l’appel API ne se bloque pas et ne provoque pas de retards de performances.
 
-## Notifications des vues prérécupérées
+## Notifications pour les vues prérécupérées
 
-Une ou plusieurs notifications peuvent être envoyées via un seul appel de diffusion. Déterminez si la mesure qui doit faire l’objet d’un suivi est `click` ou `display` pour chaque mbox afin que le type de notification puisse être correctement reflété. Transmettez également un `id` pour chaque notification afin que vous puissiez déterminer si une notification a été correctement envoyée via le [!UICONTROL Adobe Target Delivery API]. L’horodatage est également important à transférer vers [!DNL Target] pour indiquer quand `click` ou `display` s’est produit pour une vue donnée à des fins de création de rapports.
+Une ou plusieurs notifications peuvent être envoyées via un seul appel de diffusion. Déterminez si la mesure qui doit être suivie est un `click` ou un `display` pour chaque mbox afin que le type de notification puisse être reflété correctement. Transmettez également un `id` pour chaque notification afin que vous puissiez déterminer si une notification a été correctement envoyée par l’intermédiaire du [!UICONTROL Adobe Target Delivery API]. L’horodatage est également important à transmettre à [!DNL Target] pour indiquer le moment où la `click` ou la `display` s’est produite pour une vue donnée à des fins de création de rapports.
 
 ```
 curl -X POST \
@@ -161,7 +168,7 @@ curl -X POST \
 }'
 ```
 
-L’exemple d’appel ci-dessus entraînera une réponse indiquant que la requête `notifications` a été traitée avec succès.
+L’exemple d’appel ci-dessus entraîne une réponse indiquant que la demande `notifications` a été traitée avec succès.
 
 ```
 {
@@ -186,4 +193,4 @@ L’exemple d’appel ci-dessus entraînera une réponse indiquant que la requê
 }
 ```
 
-Si tous les `notifications` envoyés à [!DNL Target] sont correctement traités, ils apparaîtront dans le tableau `notifications` de la réponse. Cependant, si un `notifications` `id` est manquant, cette notification particulière n&#39;a pas été envoyée. Dans ce scénario, une logique de reprise peut être mise en place jusqu’à ce qu’une réponse de notification réussie soit récupérée. Assurez-vous que le délai d’expiration de la logique de reprise est spécifié afin que l’appel de l’API ne bloque pas et n’entraîne pas de retards en termes de performances.
+Si toutes les `notifications` envoyées à [!DNL Target] sont correctement traitées, elles apparaîtront dans le tableau `notifications` dans la réponse. Toutefois, si un `id` de `notifications` est manquant, cette notification particulière n&#39;a pas été transmise. Dans ce scénario, une logique de reprise peut être mise en place jusqu’à ce qu’une réponse de notification réussie soit récupérée. Assurez-vous que la logique de reprise a un délai d’expiration spécifié afin que l’appel API ne se bloque pas et ne provoque pas de retards de performances.

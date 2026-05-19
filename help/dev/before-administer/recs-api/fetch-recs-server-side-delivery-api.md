@@ -6,9 +6,19 @@ kt: 3815
 thumbnail: null
 author: Judy Kim
 exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
-source-git-commit: 0681f89bbebb9e79ab042ae6cfbab989d846cb70
+TQID: https://experienceleague.adobe.com/K94vITD8ZSDXLkC42Vm02eC5RmHudBvukXNcdPFVjzk
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: 1449
 ht-degree: 1%
 
 ---
@@ -38,7 +48,7 @@ Pour utiliser l’API de diffusion afin de diffuser des expériences Target (y c
 1. Créez une activité Target (A/B, XT, AP ou Recommendations) à l’aide du compositeur d’après les formulaires (et non du compositeur d’expérience visuelle).
 1. Utilisez l’API de diffusion pour obtenir une réponse aux requêtes générées par l’activité Target que vous venez de créer.
 
-&lt;!— Q : Pourquoi les DEUX étapes sont-elles nécessaires pour cela ? Si vous avez défini une recommandation basée sur un formulaire pour une mbox, à quoi sert-il de faire en sorte que l’API de diffusion intervienne également pour récupérer les résultats ? Pourquoi ne pouvez-vous pas simplement laisser l’enregistrement basé sur les formulaires fournir les résultats dans l’appareil de destination...?? R : Voir le cas d’utilisation ci-dessous... c’est lorsque vous souhaitez « intercepter » les résultats en attente afin d’effectuer d’autres opérations avant d’afficher les résultats. Par exemple, des comparaisons en temps réel avec les niveaux d&#39;inventaire. —>
+&lt;!—!— Q : Pourquoi les DEUX étapes sont-elles nécessaires pour cela ? Si vous avez défini une recommandation basée sur un formulaire pour une mbox, à quoi sert-il de faire en sorte que l’API de diffusion intervienne également pour récupérer les résultats ? Pourquoi ne pouvez-vous pas simplement laisser l’enregistrement basé sur les formulaires fournir les résultats dans l’appareil de destination...?? R : Voir le cas d’utilisation ci-dessous... c’est lorsque vous souhaitez « intercepter » les résultats en attente afin d’effectuer d’autres opérations avant d’afficher les résultats. Par exemple, des comparaisons en temps réel avec les niveaux d&#39;inventaire. --->
 
 ## Créer une recommandation à l’aide du compositeur d’expérience d’après les formulaires
 
@@ -95,7 +105,7 @@ Les ressources suivantes fournissent des exemples de diverses implémentations n
 
 La plupart du temps, les recommandations sont configurées dans l’interface utilisateur d’Adobe Target, puis utilisées ou accessibles via les API Target, pour des raisons telles que celles mentionnées dans les sections ci-dessus. Cette coordination interface utilisateur-API est courante. Cependant, il arrive que les utilisateurs souhaitent effectuer toutes les actions par le biais d’API, à la fois la configuration et l’utilisation des résultats. Bien que cela soit beaucoup moins courant, les utilisateurs peuvent absolument configurer, exécuter *et exploiter* résultats des recommandations entièrement à l’aide des API.
 
-Dans une [section précédente](manage-catalog.md) nous avons appris à gérer les entités Adobe Target Recommendations et à les diffuser côté serveur. De même, le [Adobe Developer Console](https://developer.adobe.com/console/home) vous permet de gérer les critères, les promotions, les collections et les modèles de conception sans avoir à vous connecter à Adobe Target. Vous trouverez une liste complète de toutes les API Recommendations [ici](https://developer.adobe.com/target/administer/recommendations-api/), mais voici un résumé à titre de référence.
+Dans une [section précédente](manage-catalog.md) nous avons appris à gérer les entités Adobe Target Recommendations et à les diffuser côté serveur. De même, le [&#128279;](https://developer.adobe.com/console/home) vous permet de gérer les critères, les promotions, les collections et les modèles de conception sans avoir à vous connecter à Adobe Target. Vous trouverez une liste complète de toutes les API Recommendations [ici](https://developer.adobe.com/target/administer/recommendations-api/), mais voici un résumé à titre de référence.
 
 | Ressource | Détails |
 | --- | --- |

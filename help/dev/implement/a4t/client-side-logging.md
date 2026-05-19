@@ -5,9 +5,22 @@ seo-title: Client-side logging for A4T data in the Experience Platform Web SDK
 seo-description: Learn how to enable client-side logging for Adobe Analytics for Target (A4T) using the Experience Platform Web SDK.
 keywords: target;a4t;journalisation;sdk web;experience;platform;
 feature: Implementation
-source-git-commit: 4d4ca7dcffdbaee5770084bd85c3109df0d6a8d4
+exl-id: fef34eec-128f-4433-a557-42f1347cf2c3
+TQID: https://experienceleague.adobe.com/A-6Z757zzqoIW12ICTs9WBwXjHbapgLArhGSoIgMulo
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: 1139
 ht-degree: 0%
 
 ---
@@ -30,7 +43,7 @@ Ce tutoriel suppose que vous connaissez les concepts et processus fondamentaux l
 
 * [Configuration du SDK Web](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/configure/overview)
 * [Envoi d’événements](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/sendevent/overview)
-* [Rendu du contenu de personnalisation](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+* [Effectuer le rendu du contenu de personnalisation](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## Configurer [!DNL Analytics] journalisation côté client {#set-up-client-side-logging}
 
@@ -511,7 +524,7 @@ alloy("sendEvent", {
 
 À l’aide des activités [!DNL Adobe Target], vous pouvez configurer différentes mesures sur la page, soit manuellement rattachées au modèle DOM, soit automatiquement rattachées au modèle DOM (activités créées par le compositeur d’expérience visuelle). Les deux types correspondent à une interaction différée de l’utilisateur final sur la page web.
 
-Pour en tenir compte, il est recommandé de collecter les payloads [!DNL Analytics] à l’aide du hook de `onBeforeEventSend` [!DNL Adobe Experience Platform Web SDK]. Le hook `onBeforeEventSend` doit être configuré à l’aide de la commande `configure` et est reflété sur tous les événements envoyés par le biais du flux de données.
+Pour en tenir compte, il est recommandé de collecter les payloads [!DNL Analytics] à l’aide du hook de [!DNL Adobe Experience Platform Web SDK] `onBeforeEventSend`. Le hook `onBeforeEventSend` doit être configuré à l’aide de la commande `configure` et est reflété sur tous les événements envoyés par le biais du flux de données.
 
 Voici un exemple de configuration d’`onBeforeEventSent` pour déclencher des accès [!DNL Analytics] :
 
@@ -538,4 +551,4 @@ alloy("configure", {
 
 ## Étapes suivantes {#next-steps}
 
-Ce guide couvre la journalisation côté client pour les données A4T dans le [!DNL Platform Web SDK] . Pour plus d’informations sur la gestion des données A4T sur Edge Network[&#x200B; consultez le guide sur la &#x200B;](/help/dev/implement/a4t/server-side-a4t.md) journalisation côté serveur .
+Ce guide couvre la journalisation côté client pour les données A4T dans le [!DNL Platform Web SDK] . Pour plus d’informations sur la gestion des données A4T sur [&#128279;](/help/dev/implement/a4t/server-side-a4t.md) consultez le guide sur la  journalisation côté serveur .

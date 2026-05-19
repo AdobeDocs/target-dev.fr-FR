@@ -3,9 +3,14 @@ title: Abonnement aux événements dans le SDK Node [!DNL Adobe Target] js
 description: Découvrez comment vous abonner à divers événements qui se produisent dans le SDK Node.js à l’aide de l’objet [!UICONTROL OnDeviceDecisioningHandler].
 feature: APIs/SDKs
 exl-id: 40c53840-a560-4819-ae04-f527c36b22fe
-source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
+TQID: https://experienceleague.adobe.com/KWuJT-p-Er-1mx766Y-itlFn7REZnqkUksdHKCy-2-U
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: 163
 ht-degree: 2%
 
 ---
@@ -18,7 +23,7 @@ Lors de l’initialisation [&#x200B; du SDK](initialize-sdk.md), l’objet `opti
 
 Lorsque la fonction de rappel est appelée, un objet d’événement est transmis. Chaque événement possède un `type` correspondant au nom de l’événement. Certains événements incluent des propriétés supplémentaires avec des informations pertinentes.
 
-## Requête 
+## Requête
 
 | Nom de l’événement (type) | Description | Propriétés d’événement supplémentaires |
 | --- | --- | --- |

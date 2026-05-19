@@ -5,9 +5,22 @@ title: Comment Mettre En Œuvre [!UICONTROL Recommendations] Activités ?
 feature: Recommendations
 hide: true
 exl-id: 0a9c9649-195b-44e2-987e-d02eaf98cc54
-source-git-commit: 760e6425fc2a32ec5c405094d144f173de1b6c07
+TQID: https://experienceleague.adobe.com/A7j0oJbyO3oei-a2l02I58o9I0vCPrRcqWC-QgQUxBo
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: 1644
 ht-degree: 18%
 
 ---
@@ -29,9 +42,9 @@ Avant de configurer votre première activité [!UICONTROL Recommendations] dans 
 1. [Configurer [!UICONTROL Recommendations] paramètres](#configure-recommendations-settings).
 1. (Facultatif) [Administrer des [!UICONTROL Recommendations] à l’aide des API d’administration](#administer-recommendations-using-admin-apis).
 
-## &#x200B;1. Implémenter [!UICONTROL Target]
+## &#x200B;1. Implémentation de [!UICONTROL Target]
 
-[!DNL Target Recommendations] nécessite l’implémentation de [!DNL Adobe Experience Platform Web SDK] ou d’at.js 0.9.2 (ou version ultérieure). Pour plus d’informations[[!UICONTROL Target] consultez les guides de mise en œuvre côté client &#x200B;](../client-side/overview.md) .
+[!DNL Target Recommendations] nécessite l’implémentation de [!DNL Adobe Experience Platform Web SDK] ou d’at.js 0.9.2 (ou version ultérieure). Pour plus d’informations[&#128279;](../client-side/overview.md) consultez les guides de mise en œuvre côté client [!UICONTROL Target] .
 
 ## &#x200B;2. Configurer votre catalogue [!UICONTROL Recommendations]
 
@@ -148,7 +161,7 @@ Les options suivantes sont disponibles dans la section [!UICONTROL Recommendatio
 
 #### [!UICONTROL Client code]
 
-La [!DNL Target] [!UICONTROL client code].
+La [!UICONTROL client code] [!DNL Target].
 
 Si vous ne connaissez pas votre [!UICONTROL client code], dans l’interface utilisateur [!DNL Target], cliquez sur **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. Le [!UICONTROL client code] s’affiche dans la section [!UICONTROL Account Details] .
 
@@ -166,7 +179,7 @@ Pour plus d’informations, voir [Configuration de l’authentification pour les
 
 Connaître le secteur vertical de votre site permet à Target de choisir les critères de vos recommandations.
 
-Les critères de [!DNL Recommendations] sont des règles qui déterminent quels produits ou contenus recommander selon un ensemble prédéterminé de comportements de visiteurs. Les critères peuvent être basés sur des tendances populaires, les comportements actuels et passés d’un visiteur ou des produits et contenus similaires. Vous pouvez tester plusieurs types de recommandations les uns par rapport aux autres en ajoutant plusieurs critères.
+Les critères de [!DNL Recommendations] sont des règles qui déterminent quels produits ou contenus recommander selon un ensemble prédéterminé de comportements de visiteurs. Les critères peuvent être basés sur des tendances populaires, les comportements actuel et passé d’un visiteur ou des produits et contenus similaires. Vous pouvez tester plusieurs types de recommandations les uns par rapport aux autres en ajoutant plusieurs critères.
 
 Pour plus d’informations, voir [Critères](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/criteria/algorithms){target=_blank} dans le *Guide du professionnel Adobe Target.*
 

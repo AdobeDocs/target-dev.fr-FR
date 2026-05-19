@@ -4,27 +4,40 @@ description: Utilisez la fonction [!UICONTROL adobe.target.getOffers()] et ses o
 title: Comment utiliser la fonction [!UICONTROL adobe.target.getOffers()] ?
 feature: at.js
 exl-id: b96a3018-93eb-49e7-9aed-b27bd9ae073a
-source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
+TQID: https://experienceleague.adobe.com/jJXcWyQzJ48GNCNcOT165vxcO-CLExTj-t-3kbR2FZ0
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '1317'
-ht-degree: 62%
+source-wordcount: 1340
+ht-degree: 60%
 
 ---
 
 # [!UICONTROL adobe.target.getOffers()] - at.js 2.x
 
-Cette fonction permet de récupérer plusieurs offres en transmettant plusieurs mbox. De plus, plusieurs offres peuvent être extraites pour toutes les vues des activités actives.
+Cette fonction permet de récupérer plusieurs offres en transmettant plusieurs mbox. De plus, plusieurs offres peuvent être récupérées pour toutes les vues des activités actives.
 
 >[!NOTE]
 >
->Cette fonction a été introduite avec at.js 2.x. Cette fonction n’est pas disponible pour at.js version 1.*x*.
+>Cette fonction a été introduite avec at.js 2.x. Cette fonction n’est pas disponible pour at.js version 1.*x*.
 
 | Clé | Type | Obligatoire ? | Description |
 | --- | --- | --- | --- |
 | `consumerId` | Chaîne | Non | La valeur par défaut est la mbox globale du client si elle n’est pas fournie. Cette clé est utilisée pour générer le SDID (Supplemental Data ID) utilisé pour l’intégration d’A4T.<P>Lors de l’utilisation de `getOffers()`, chaque appel génère un nouveau SDID. Si plusieurs requêtes de mbox se trouvent sur la même page et que vous souhaitez conserver le SDID (afin qu’il corresponde au SDID de la target-global-mbox et du SDID [!DNL Adobe Analytics]), utilisez le paramètre `consumerId` .<P>Si `getOffers()` inclut trois mbox (nommées « mbox1 », « mbox2 » et « mbox3 »), incluez : `consumerId: "mbox1, mbox2, mbox3"` dans l’appel `getOffers()`. |
 | `decisioningMethod` | Chaîne | Non | « côté serveur », « sur l’appareil », « hybride » |
-| `request` | Objet | Oui | Consultez les requêtes ci-dessous. |
-| `timeout` | Nombre | Non | Délai d’attente de requête. Si cette valeur n’est pas spécifiée, c’est le délai d’attente par défaut d’at.js qui sera utilisé. |
+| `request` | Objet | Oui | Voir Requêtes ci-dessous. |
+| `timeout` | Nombre | Non | Délai d’expiration de requête. Si cette valeur n’est pas spécifiée, c’est le délai d’expiration par défaut d’at.js qui sera utilisé. |
 
 ## Demande
 

@@ -4,10 +4,22 @@ description: Découvrez les navigateurs Internet pris  [!DNL Adobe Target]  char
 title: Quels Navigateurs Est [!DNL Target] Il Pris En Charge ?
 feature: Implementation
 exl-id: 1d778e14-26b0-477b-ac28-d304db70a133
-source-git-commit: 1b6dcb24d677b758ed1daf85dc0a7e9e5b42680d
+TQID: https://experienceleague.adobe.com/xYilaZkJzo4zLIJ4uvIxkuRkhl5E1D52OFmf1eZNtDs
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 20%
+source-wordcount: 436
+ht-degree: 19%
 
 ---
 
@@ -46,7 +58,7 @@ La diffusion de contenu a été testée sur les navigateurs et les périphériqu
 
 | Type d&#39;appareil | Version du navigateur |
 |--- |--- |
-| Windows | <ul><li>Microsoft Internet Explorer 9 et 10. Testé en mode d’émulation. **Remarque** : la diffusion de contenu sur IE 9 n’est plus prise en charge avec at.js 1.3.0 et les versions ultérieures. La diffusion de contenu sur IE 10, 11 et toutes les versions antérieures n’est plus prise en charge avec at.js 2.5.0 et les versions ultérieures.</li><li>Internet Explorer 11. **Remarque** : la diffusion de contenu sur IE 10, 11 et toutes les versions antérieures n’est plus prise en charge avec at.js 2.5.0 (et versions ultérieures).</li><li>Microsoft Edge</li><li>Chrome (la plus récente, la plus récente moins 1)</li><li>Firefox (le plus récent, le plus récent moins 1)</li></ul> |
+| Windows | <ul><li>Microsoft Internet Explorer 9 et 10. Testé en mode d’émulation. **Remarque** : la diffusion de contenu sur IE 9 n’est plus prise en charge avec at.js 1.3.0 et les versions ultérieures. La diffusion de contenu sur IE 10, 11 et toutes les versions antérieures n’est plus prise en charge avec at.js 2.5.0 et les versions ultérieures.</li><li>Internet Explorer 11. **Remarque** : la diffusion de contenu sur IE 10, 11 et toutes les versions antérieures n’est plus prise en charge avec at.js 2.5.0 (et versions ultérieures).</li><li>Microsoft Edge</li><li>Chrome (la plus récente, la plus récente moins 1)</li><li>Firefox (le plus récent, le plus récent moins 1)</li></ul> |
 | Mac | <ul><li>Apple Safari (la plus récente). **Remarque** : pour plus d’informations sur la façon dont Safari gère les cookies propriétaires et tiers, voir [Cookie Target](../implement/client-side/atjs/atjs-cookies.md).</li><li>Firefox (le plus récent, le plus récent moins 1)</li><li>Chrome (la plus récente, la plus récente moins 1)</li></ul> |
 | Mobile/Tablette | <ul><li>Apple iOS (la plus récente)</li><li>Appareils et tablettes Android (Android 4 et versions ultérieures)</li><li>Microsoft Surface (Windows 8.1)</li></ul> |
 

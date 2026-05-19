@@ -1,20 +1,27 @@
 ---
-title: Utilisation de getAttributes dans  [!DNL Adobe Target]  avec le SDK .NET
-description: Découvrez comment utiliser getAttributes() pour récupérer des expériences d’expérimentation et personnalisées à partir de [!DNL Target]  et extraire des valeurs d’attribut.
+title: Utilisez getAttributes dans [!DNL Adobe Target] avec le SDK .NET
+description: Découvrez comment utiliser getAttributes() pour récupérer des expériences d’expérimentation et des expériences personnalisées depuis et extraire  [!DNL Target]  valeurs d’attribut.
 feature: APIs/SDKs
 exl-id: 808da83d-3077-468b-a2ad-e35c25905f7d
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+TQID: https://experienceleague.adobe.com/aflHPozCwJ-6fB7X-2jLaBvs42Ohz6OzwZ7AvkahCE8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 9%
+source-wordcount: 209
+ht-degree: 10%
 
 ---
 
-# Obtention des attributs (.NET)
+# Obtenir les attributs (.NET)
 
 ## Description
 
-`GetAttributes()` est utilisé pour récupérer l’expérimentation et les expériences personnalisées de [!DNL Target] et extraire des valeurs d’attribut.
+`GetAttributes()` est utilisé pour récupérer des expériences et des expériences personnalisées à partir de [!DNL Target] et extraire des valeurs d’attribut.
 
 ## Méthode
 
@@ -28,23 +35,23 @@ TargetAttributes TargetClient.GetAttributes(TargetDeliveryRequest targetRequest,
 
 | Nom | Type | Requis | Par défaut | Description |
 | --- | --- | --- | --- | --- |
-| targetRequest | TargetDeliveryRequest | Non | valeur nulle | Même requête [!DNL Target] utilisée pour [Obtenir des offres &#x200B;](get-offers.md) |
-| mboxNames | chaîne params[] | Non | valeur nulle | Tableau de paramètres de noms de mbox |
+| targetRequest | TargetDeliveryRequest | Non | valeur nulle | La même requête [!DNL Target] que celle utilisée pour [Obtenir les offres&#x200B;](get-offers.md) |
+| mboxNames | params string[] | Non | valeur nulle | Tableau de paramètres de noms de mbox |
 
 ## Résultats
 
 Un objet `TargetAttributes` est renvoyé par `TargetClient.GetAttributes()` qui possède les propriétés et méthodes suivantes :
 
-| Propriété/méthode | Type de retour | Description |
+| Propriété/Méthode | Type de retour | Description |
 | --- | --- | --- |
-| Réponse | TargetDeliveryResponse | Renvoie l’objet de réponse normalement renvoyé par [Obtenir des offres](get-offers.md) |
+| Réponse | TargetDeliveryResponse | Renvoie l’objet de réponse normalement renvoyé par [Get Offers](get-offers.md) |
 | ToDictionary | IReadOnlyDictionary | Renvoie un dictionnaire de dictionnaires avec des paires clé-valeur regroupées par noms de mbox |
 | ToMboxDictionary(mboxName) | IReadOnlyDictionary | Renvoie un dictionnaire avec des paires clé-valeur pour la mbox fournie |
-| GetBoolean(mboxName, key, defaultValue) | bool | Renvoie la valeur d’un nom de mbox et d’une clé d’attribut spécifiés |
-| GetString(mboxName, key, defaultValue) | string | Renvoie la valeur d’un nom de mbox et d’une clé d’attribut spécifiés |
-| GetInteger(mboxName, key, defaultValue) | int | Renvoie la valeur d’un nom de mbox et d’une clé d’attribut spécifiés |
-| GetDouble(mboxName, key, defaultValue) | double | Renvoie la valeur d’un nom de mbox et d’une clé d’attribut spécifiés |
-| GetValue(mboxName, key, defaultValue) | T   | Renvoie la valeur d’un nom de mbox et d’une clé d’attribut spécifiés |
+| GetBoolean(mboxName, key, defaultValue) | booléen | Renvoie la valeur du nom de mbox et de la clé d’attribut spécifiés |
+| GetString(mboxName, key, defaultValue) | string | Renvoie la valeur du nom de mbox et de la clé d’attribut spécifiés |
+| GetInteger(mboxName, key, defaultValue) | int | Renvoie la valeur du nom de mbox et de la clé d’attribut spécifiés |
+| GetDouble(mboxName, key, defaultValue) | Double | Renvoie la valeur du nom de mbox et de la clé d’attribut spécifiés |
+| GetValue(mboxName, key, defaultValue) | T | Renvoie la valeur du nom de mbox et de la clé d’attribut spécifiés |
 
 ## Exemple
 

@@ -4,9 +4,26 @@ description: Découvrez comment les fonctionnalités d’at.js se comparent à  
 keywords: target;adobe target;activity.id;experience.id;renderDecisions;portées de décision;masquage préalable du fragment de code;vec;Compositeur d’expérience d’après les formulaires;xdm;audiences;décisions;portée;schéma;diagramme système;diagramme
 feature: AEP Web SDK
 exl-id: 31c9722b-5d92-4653-aa20-4183d166c097
-source-git-commit: 158c45b824df8d3bd565ac7c654b65f1fd631e2c
+TQID: https://experienceleague.adobe.com/Ly2ytp87gfQ5mCES-43K5tU4-4fhTjdcdk-OxRRL-II
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: 2303
 ht-degree: 5%
 
 ---
@@ -215,7 +232,7 @@ adobe.target.getOffers({
 .catch(console.error);
 ```
 
-[En savoir plus](https://experienceleague.adobe.com/fr/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions)
+[En savoir plus](https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions)
 
 ### Utilisation de [!DNL Platform Web SDK]
 
@@ -298,7 +315,7 @@ adobe.target.getOffers({
 .catch(console.error);
 ```
 
-[En savoir plus](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions.html?lang=fr)
+[En savoir plus](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-functions.html)
 
 ### Utilisation de [!DNL Platform Web SDK]
 
@@ -436,7 +453,7 @@ adobe.target.getOffers({...})
   .catch(error => console.log("Error", error));
 ```
 
-En savoir plus sur la commande `applyOffers` dans la [documentation dédiée](https://experienceleague.adobe.com/fr/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffers-atjs-2).
+En savoir plus sur la commande `applyOffers` dans la [documentation dédiée](https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffers-atjs-2).
 
 ### Utilisation de [!DNL Platform Web SDK]
 
@@ -486,16 +503,16 @@ adobe.target.sendNotifications({
 });
 ```
 
-[En savoir plus](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html?lang=fr)
+[En savoir plus](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html)
 
 ### Utilisation de [!DNL Platform Web SDK]
 
-Vous pouvez effectuer le suivi des événements et des actions des utilisateurs et utilisatrices en appelant la commande `sendEvent`, en renseignant le `_experience.decisioning.propositions` XDM `fieldgroup` et en définissant la `eventType` sur l’une des deux valeurs :
+Vous pouvez effectuer le suivi des événements et des actions des utilisateurs et utilisatrices en appelant la commande `sendEvent`, en renseignant le `fieldgroup` XDM `_experience.decisioning.propositions` et en définissant la `eventType` sur l’une des deux valeurs :
 
 * `decisioning.propositionDisplay` : signale le rendu de l’activité de [!DNL Target].
 * `decisioning.propositionInteract` : signale une interaction de l’utilisateur avec l’activité, comme un clic de souris.
 
-Le `_experience.decisioning.propositions` XDM `fieldgroup` est un tableau d’objets . Les propriétés de chaque objet sont dérivées de la `result.propositions` renvoyée dans la commande `sendEvent` : `{ id, scope, scopeDetails }.`
+Le `fieldgroup` XDM `_experience.decisioning.propositions` est un tableau d’objets . Les propriétés de chaque objet sont dérivées de la `result.propositions` renvoyée dans la commande `sendEvent` : `{ id, scope, scopeDetails }.`
 
 **Exemple 1 - Suivi d’un événement `decisioning.propositionDisplay` après le rendu d’une activité**
 
@@ -961,7 +978,7 @@ window.targetGlobalSettings = {
 };
 ```
 
-[En savoir plus](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetgobalsettings.html?lang=fr)
+[En savoir plus](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetgobalsettings.html)
 
 ### Utilisation de [!DNL Platform Web SDK]
 
@@ -1061,7 +1078,7 @@ adobe.target.getOffers({
 .catch(console.error);
 ```
 
-[En savoir plus](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-getoffers-atjs-2.html?lang=fr)
+[En savoir plus](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/adobe-target-getoffers-atjs-2.html)
 
 ### Utilisation de [!DNL Platform Web SDK]
 
@@ -1141,7 +1158,7 @@ window.targetPageParams = function() {
 };
 ```
 
-[En savoir plus](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetpageparams.html?lang=fr)
+[En savoir plus](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js-implementation/functions-overview/targetpageparams.html)
 
 ### Utilisation de [!DNL Platform Web SDK]
 
@@ -1209,7 +1226,7 @@ Cela signifie que chaque appel [!DNL Target] pour cette configuration de flux de
 
 ### Utiliser at.js
 
-Cette fonctionnalité est disponible uniquement dans at.js 2.x. at.js 2.x possède une nouvelle fonction appelée `getOffers`. La fonction `getOffers` permet aux utilisateurs de prérécupérer du contenu pour une ou plusieurs mbox. Voici un exemple :
+Cette fonctionnalité est disponible uniquement dans at.js 2.x. at.js 2.x comporte une nouvelle fonction appelée `getOffers`. La fonction `getOffers` permet aux utilisateurs de prérécupérer du contenu pour une ou plusieurs mbox. Voici un exemple :
 
 ```javascript
 adobe.target.getOffers({
@@ -1252,14 +1269,14 @@ La bibliothèque at.js expose ces fonctionnalités de débogage :
 
 >[!NOTE]
 >
->Toutes ces fonctionnalités de débogage sont disponibles avec des fonctionnalités améliorées dans [Adobe Experience Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob).
+>Toutes ces fonctionnalités de débogage sont disponibles avec des fonctionnalités améliorées dans [&#128279;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob).
 
 ### Utilisation de [!DNL Platform Web SDK]
 
 Vous disposez de plusieurs fonctionnalités de débogage lors de l’utilisation de [!DNL Platform Web SDK] :
 
-* Utilisation de [Assurance](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home)
+* Utilisation de [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home)
 * [Débogage de Web SDK activé](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home)
 * Utilisation des [hooks de surveillance Web SDK](https://github.com/adobe/alloy/wiki/Monitoring-Hooks)
-* Utiliser [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/fr/docs/experience-platform/debugger/home)
+* Utiliser [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/debugger/home)
 * Target Trace
