@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Parfois, les algorithmes fournis par Recommendations ne permettent pas de faire apparaître des éléments spécifiques que vous souhaitez promouvoir. Dans ce cas, les critères personnalisés vous permettent de fournir un ensemble spécifique d’éléments recommandés pour un élément ou une catégorie clé donnée.
 
-Pour créer des critères personnalisés, définissez et importez le mappage souhaité entre l’élément ou la catégorie clé et les éléments recommandés. Ce processus est décrit dans la [documentation sur les critères personnalisés](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html). Comme indiqué dans cette documentation, vous pouvez créer, modifier et supprimer des critères personnalisés via l’interface utilisateur (IU) de Target. Cependant, Target fournit également un ensemble d’API de critères personnalisés qui permettent une gestion plus détaillée de vos critères personnalisés.
+Pour créer des critères personnalisés, définissez et importez le mappage souhaité entre l’élément ou la catégorie clé et les éléments recommandés. Ce processus est décrit dans la [documentation sur les critères personnalisés](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html?lang=fr). Comme indiqué dans cette documentation, vous pouvez créer, modifier et supprimer des critères personnalisés via l’interface utilisateur (IU) de Target. Cependant, Target fournit également un ensemble d’API de critères personnalisés qui permettent une gestion plus détaillée de vos critères personnalisés.
 
 >[!WARNING]
 >
@@ -38,7 +38,7 @@ Pour créer des critères personnalisés à l’aide de l’API [Create Custom C
 
 >[!WARNING]
 >
->Les critères personnalisés créés à l’aide de l’API Créer des critères personnalisés, comme décrit dans cet exercice, s’affichent dans l’interface utilisateur, où ils persistent. Vous ne pourrez pas les modifier ni les supprimer de l’interface utilisateur. Vous pouvez les modifier ou les supprimer **via l’API**, mais ils continueront à apparaître dans l’interface utilisateur de Target. Pour conserver la possibilité de modifier ou de supprimer des éléments de l’interface utilisateur, créez les critères personnalisés à l’aide de l’interface utilisateur conformément [&#x200B; la documentation](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html), plutôt qu’à l’aide de l’API Créer des critères personnalisés.
+>Les critères personnalisés créés à l’aide de l’API Créer des critères personnalisés, comme décrit dans cet exercice, s’affichent dans l’interface utilisateur, où ils persistent. Vous ne pourrez pas les modifier ni les supprimer de l’interface utilisateur. Vous pouvez les modifier ou les supprimer **via l’API**, mais ils continueront à apparaître dans l’interface utilisateur de Target. Pour conserver la possibilité de modifier ou de supprimer des éléments de l’interface utilisateur, créez les critères personnalisés à l’aide de l’interface utilisateur conformément [&#x200B; la documentation](https://experienceleague.adobe.com/docs/target/using/recommendations/criteria/recommendations-csv.html?lang=fr), plutôt qu’à l’aide de l’API Créer des critères personnalisés.
 
 N’effectuez les étapes suivantes qu’après avoir lu l’avertissement ci-dessus et que vous êtes à l’aise pour créer des critères personnalisés qui ne peuvent pas être supprimés de l’interface utilisateur par la suite.
 
