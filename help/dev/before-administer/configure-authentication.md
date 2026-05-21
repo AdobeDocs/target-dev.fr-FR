@@ -13,9 +13,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: addda914fcf7ba1616ae9a9d49118e737b3ad923
 workflow-type: tm+mt
-source-wordcount: 1937
+source-wordcount: 1849
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Voici les étapes préliminaires requises pour générer les jetons d’authenti
 
 Dans cette section, vous accéderez au [!DNL Adobe Developer Console] et créerez un projet à [!DNL Adobe Target]. Pour plus d’informations, consultez la [documentation sur les projets](https://developer.adobe.com/developer-console/docs/guides/projects/).
 
-&lt;!---(1. Générez votre clé privée et votre certificat public, conformément à la [documentation sur l’authentification](https://developer.adobe.com/developer-console/docs/guides/authentication/). // [//] : # (comme décrit dans **Étape 1** de [Comment configurer Adobe IO : Authentification - Étape par étape](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html). Après avoir terminé l’étape 1, revenez à ce guide et reprenez avec l’étape 2 ci-dessous. // Le résultat de cette étape doit être la création d&#39;un fichier `private.key` et d&#39;un fichier `certificate_pub.crt`. Revenez à ce guide une fois que vous avez généré ces deux fichiers.)—>
+<!--(1. Generate your private key and public certificate, per the [documentation on authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/). // [//]: # (as described in **Step 1** of [How to set up Adobe IO: Authentication - Step by Step](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html). After completing Step 1, return to this guide and resume with Step 2, below. // The outcome of this step should be the creation of a `private.key` file and a `certificate_pub.crt` file. Return to this guide once you have generated these two files.)-->
 
 1. Dans le [&#128279;](https://adminconsole.adobe.com/), vérifiez que votre compte utilisateur [!DNL Adobe] a reçu l’accès de niveau [Administrateur de produit](https://helpx.adobe.com/fr/enterprise/using/admin-roles.html) et [Développeur](https://helpx.adobe.com/fr/enterprise/using/manage-developers.html) à [!DNL Target].
 

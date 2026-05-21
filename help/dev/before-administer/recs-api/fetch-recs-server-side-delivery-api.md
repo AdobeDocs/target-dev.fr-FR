@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
+source-git-commit: 129298289889a3b133eb07d0caeade2fd0b5568e
 workflow-type: tm+mt
-source-wordcount: 1449
+source-wordcount: 1366
 ht-degree: 1%
 
 ---
@@ -48,7 +48,7 @@ Pour utiliser l’API de diffusion afin de diffuser des expériences Target (y c
 1. Créez une activité Target (A/B, XT, AP ou Recommendations) à l’aide du compositeur d’après les formulaires (et non du compositeur d’expérience visuelle).
 1. Utilisez l’API de diffusion pour obtenir une réponse aux requêtes générées par l’activité Target que vous venez de créer.
 
-&lt;!—!— Q : Pourquoi les DEUX étapes sont-elles nécessaires pour cela ? Si vous avez défini une recommandation basée sur un formulaire pour une mbox, à quoi sert-il de faire en sorte que l’API de diffusion intervienne également pour récupérer les résultats ? Pourquoi ne pouvez-vous pas simplement laisser l’enregistrement basé sur les formulaires fournir les résultats dans l’appareil de destination...?? R : Voir le cas d’utilisation ci-dessous... c’est lorsque vous souhaitez « intercepter » les résultats en attente afin d’effectuer d’autres opérations avant d’afficher les résultats. Par exemple, des comparaisons en temps réel avec les niveaux d&#39;inventaire. --->
+<!-- Q: Why are BOTH steps necessary for this? If you have a Form-based recommendation defined for an mbox, what's the point/benefit of ALSO having the Delivery API step in to retrieve results? Why can't you just have the Form-based Rec deliver the results in the destination device...?? A: See use case below... it's when you want to "intercept" the pending results in order to do more stuff prior to displaying the results. Things like real-time comparisons to inventory levels. -->
 
 ## Créer une recommandation à l’aide du compositeur d’expérience d’après les formulaires
 

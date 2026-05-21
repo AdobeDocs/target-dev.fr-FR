@@ -13,9 +13,9 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: f05a93102cc0f9b86a6521ff8007aa59f2af3c1a
 workflow-type: tm+mt
-source-wordcount: 930
+source-wordcount: 921
 ht-degree: 0%
 
 ---
@@ -123,4 +123,4 @@ Dans ce cas, l’erreur 404 attendue indique que les critères supprimés sont i
 
 Félicitations ! Vous pouvez désormais créer, répertorier, modifier, supprimer des critères personnalisés et obtenir des détails à leur sujet à l’aide de l’API Recommendations. Dans la section suivante, vous allez utiliser l’API de diffusion Target pour récupérer des recommandations.
 
-&lt;!— [Suite : « Récupérer des recommandations avec l’API de diffusion côté serveur » >](fetch-recs-server-side-delivery-api.md) —>
+<!-- [Next "Fetch Recommendations with the Server-side Delivery API" >](fetch-recs-server-side-delivery-api.md) -->

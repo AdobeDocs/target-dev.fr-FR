@@ -14,9 +14,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 86209eb483ca69d40615c632ba435d27fec78f36
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 266
 ht-degree: 0%
 
 ---
@@ -38,12 +38,12 @@ L’activation des traces génère des informations supplémentaires à partir d
 
 1. Accédez à l’interface utilisateur de Target.
 
-   &lt;!— Insérer image-target-ui-1.png —>
+   <!-- Insert image-target-ui-1.png -->
    ![image alternative](assets/asset-rule-artifact-1.png)
 
 1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** et cliquez sur **[!UICONTROL Generate New Authorization Token]**.
 
-   &lt;!— Insérer image-target-ui-2.png —>
+   <!-- Insert image-target-ui-2.png -->
    ![image alternative](assets/asset-rule-artifact-2.png)
 
 1. Copiez le jeton d’autorisation nouvellement généré dans le presse-papiers et ajoutez-le à votre requête Target.
