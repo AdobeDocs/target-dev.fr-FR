@@ -5,11 +5,21 @@ title: Comment Target gère-t-il les réglementations relatives à la confidenti
 feature: Privacy & Security
 exl-id: 40bac3c5-8e6f-4a90-ac0c-eddce1dbe6c0
 TQID: https://experienceleague.adobe.com/W-aYBengoNH5uKTcFZNHARelgAFX3-QrZixh09n0FU0
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 2432
@@ -59,7 +69,7 @@ Si vous vous prépariez l’année dernière pour le règlement européen sur la
 
 ## Fonctionnalité de souscription (opt-in) Adobe Target et Adobe Experience Platform
 
-Target fournit une prise en charge de la fonctionnalité de souscription par le biais des balises dans Adobe Experience Platform afin de vous aider à appliquer votre stratégie de gestion du consentement. La fonctionnalité d’opt-in permet aux clients de décider comment et à quel moment la balise Target est déclenchée. Il existe également une option via Adobe Experience Platform pour préapprouver la balise Target. Pour permettre l’utilisation de la fonctionnalité d’accord préalable dans la bibliothèque at.js de Target, vous devez utiliser `targetGlobalSettings` et ajouter le paramètre `optinEnabled=true` . Dans Adobe Experience Platform, sélectionnez « activer » dans la liste déroulante d’accord préalable RGPD dans la vue d’installation de l’extension. Voir [ Implémentation de Target à l’aide de Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) pour plus d’informations.
+Target fournit une prise en charge de la fonctionnalité de souscription par le biais des balises dans Adobe Experience Platform afin de vous aider à appliquer votre stratégie de gestion du consentement. La fonctionnalité d’opt-in permet aux clients de décider comment et à quel moment la balise Target est déclenchée. Il existe également une option via Adobe Experience Platform pour préapprouver la balise Target. Pour permettre l’utilisation de la fonctionnalité d’accord préalable dans la bibliothèque at.js de Target, vous devez utiliser `targetGlobalSettings` et ajouter le paramètre `optinEnabled=true` . Dans Adobe Experience Platform, sélectionnez « activer » dans la liste déroulante d’accord préalable RGPD dans la vue d’installation de l’extension. Voir [&#x200B; Implémentation de Target à l’aide de Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) pour plus d’informations.
 
 L’extrait de code suivant montre comment activer le paramètre `optinEnabled=true` :
 
