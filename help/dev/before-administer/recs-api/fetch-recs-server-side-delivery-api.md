@@ -7,15 +7,10 @@ thumbnail: null
 author: Judy Kim
 exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
 TQID: https://experienceleague.adobe.com/K94vITD8ZSDXLkC42Vm02eC5RmHudBvukXNcdPFVjzk
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 129298289889a3b133eb07d0caeade2fd0b5568e
 workflow-type: tm+mt
 source-wordcount: 1366
@@ -52,9 +47,9 @@ Pour utiliser l’API de diffusion afin de diffuser des expériences Target (y c
 
 ## Créer une recommandation à l’aide du compositeur d’expérience d’après les formulaires
 
-Pour créer des recommandations à utiliser avec l’API de diffusion, utilisez le [compositeur basé sur les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=fr).
+Pour créer des recommandations à utiliser avec l’API de diffusion, utilisez le [compositeur basé sur les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html).
 
-1. Tout d’abord, créez et enregistrez une conception basée sur JSON à utiliser dans votre recommandation. Pour obtenir un exemple JSON, ainsi que des informations générales sur la manière dont les réponses JSON peuvent être renvoyées lors de la configuration d’une activité basée sur des formulaires, consultez la documentation sur la [Création de conceptions de recommandations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html?lang=fr). Dans cet exemple, la conception est nommée *JSON simple.*
+1. Tout d’abord, créez et enregistrez une conception basée sur JSON à utiliser dans votre recommandation. Pour obtenir un exemple JSON, ainsi que des informations générales sur la manière dont les réponses JSON peuvent être renvoyées lors de la configuration d’une activité basée sur des formulaires, consultez la documentation sur la [Création de conceptions de recommandations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-design/create-design.html). Dans cet exemple, la conception est nommée *JSON simple.*
    ![server-side-create-recs-json-design.png](assets/server-side-create-recs-json-design.png)
 
 1. Dans Target, accédez à **[!UICONTROL Activities]** > **[!UICONTROL Create Activity]** > **[!UICONTROL Recommendations]**, puis sélectionnez **[!UICONTROL Form]**.
@@ -64,7 +59,7 @@ Pour créer des recommandations à utiliser avec l’API de diffusion, utilisez 
 1. Sélectionnez une propriété, puis cliquez sur **[!UICONTROL Next]**.
 1. Définissez l’emplacement où vous souhaitez que les utilisateurs reçoivent la réponse de la recommandation. L’exemple ci-dessous utilise un emplacement nommé *api_charter*. Sélectionnez votre conception basée sur JSON, créée précédemment, nommée *JSON simple.*
    ![server-side-create-recs-form.png](assets/server-side-create-recs-form1.png)
-1. Enregistrez et activez la recommandation. Cela produira des résultats. [Une fois les résultats prêts](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html?lang=fr) vous pouvez utiliser l’API de diffusion pour les récupérer.
+1. Enregistrez et activez la recommandation. Cela produira des résultats. [Une fois les résultats prêts](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-activity/previewing-and-launching-your-recommendations-activity.html) vous pouvez utiliser l’API de diffusion pour les récupérer.
 
 ## Utilisation de l’API de diffusion
 
@@ -105,27 +100,27 @@ Les ressources suivantes fournissent des exemples de diverses implémentations n
 
 La plupart du temps, les recommandations sont configurées dans l’interface utilisateur d’Adobe Target, puis utilisées ou accessibles via les API Target, pour des raisons telles que celles mentionnées dans les sections ci-dessus. Cette coordination interface utilisateur-API est courante. Cependant, il arrive que les utilisateurs souhaitent effectuer toutes les actions par le biais d’API, à la fois la configuration et l’utilisation des résultats. Bien que cela soit beaucoup moins courant, les utilisateurs peuvent absolument configurer, exécuter *et exploiter* résultats des recommandations entièrement à l’aide des API.
 
-Dans une [section précédente](manage-catalog.md) nous avons appris à gérer les entités Adobe Target Recommendations et à les diffuser côté serveur. De même, le [&#128279;](https://developer.adobe.com/console/home) vous permet de gérer les critères, les promotions, les collections et les modèles de conception sans avoir à vous connecter à Adobe Target. Vous trouverez une liste complète de toutes les API Recommendations [ici](https://developer.adobe.com/target/administer/recommendations-api/), mais voici un résumé à titre de référence.
+Dans une [section précédente](manage-catalog.md) nous avons appris à gérer les entités Adobe Target Recommendations et à les diffuser côté serveur. De même, le [](https://developer.adobe.com/console/home) vous permet de gérer les critères, les promotions, les collections et les modèles de conception sans avoir à vous connecter à Adobe Target. Vous trouverez une liste complète de toutes les API Recommendations [ici](https://developer.adobe.com/target/administer/recommendations-api/), mais voici un résumé à titre de référence.
 
 | Ressource | Détails |
 | --- | --- |
 | [Collections](https://developer.adobe.com/target/administer/recommendations-api/#tag/Collections) | Répertorier, créer, obtenir, modifier et supprimer des collections |
 | [Critères](https://developer.adobe.com/target/administer/recommendations-api/#tag/Criteria) | Répertoriez et obtenez des critères. |
 | [Conceptions](https://developer.adobe.com/target/administer/recommendations-api/#tag/Designs) | Répertorier, créer, obtenir, modifier, supprimer et valider des conceptions. |
-| [&#x200B; Entités &#x200B;](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities) | Enregistrer, supprimer et obtenir des entités. |
-| [Promotions &#x200B;](https://developer.adobe.com/target/administer/recommendations-api/#tag/Promotions) | Répertorier, créer, obtenir, modifier et supprimer des promotions. |
+| [ Entités ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities) | Enregistrer, supprimer et obtenir des entités. |
+| [Promotions ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Promotions) | Répertorier, créer, obtenir, modifier et supprimer des promotions. |
 | [Critères de catégorie](https://developer.adobe.com/target/administer/recommendations-api/#tag/Category-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères de catégorie. |
 | [Critères personnalisés](https://developer.adobe.com/target/administer/recommendations-api/#tag/Custom-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères personnalisés. |
 | [Critères d’élément](https://developer.adobe.com/target/administer/recommendations-api/#tag/Item-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères d’élément. |
 | [Critères de popularité](https://developer.adobe.com/target/administer/recommendations-api/#tag/Popularity-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères de popularité. |
 | [Critères d’attribut de profil](https://developer.adobe.com/target/administer/recommendations-api/#tag/Profile-Attribute-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères d’attribut de profil. |
-| [&#x200B; Critères récents &#x200B;](https://developer.adobe.com/target/administer/recommendations-api/#tag/Recent-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères récents. |
+| [ Critères récents ](https://developer.adobe.com/target/administer/recommendations-api/#tag/Recent-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères récents. |
 | [Critères de séquence](https://developer.adobe.com/target/administer/recommendations-api/#tag/Sequence-Criteria) | Répertorier, créer, obtenir, modifier et supprimer des critères de séquence. |
 
 ## Documentation de référence
 
 * [Documentation sur l’API de diffusion Adobe Target](/help/dev/implement/delivery-api/overview.md)
-* [Intégration de Recommandations dans la messagerie électronique](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html?lang=fr)
+* [Intégration de Recommandations dans la messagerie électronique](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations-faq/integrating-recs-email.html)
 
 ## Résumé et révision
 
