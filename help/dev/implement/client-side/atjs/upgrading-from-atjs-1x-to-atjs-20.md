@@ -5,24 +5,11 @@ title: Comment effectuer une mise à niveau d’at.js version 1.x vers la versio
 feature: at.js
 exl-id: fbfa5743-0fa5-44c6-89b3-fdee9b50e126
 TQID: https://experienceleague.adobe.com/JGsuogzhCvThr4QGHJ5g4d8ZqGVZ8ClAf7hXuoh7X0Q
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
-subfeature_v2:
-  - id: df62f171-ac37-440f-8f0f-f41a72ebdd34
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ceid: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2: id: df62f171-ac37-440f-8f0f-f41a72ebdd34id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
 workflow-type: tm+mt
 source-wordcount: 3037
@@ -84,7 +71,7 @@ Déployez at.js 2.*x* via les balises dans l’extension [Adobe Experience Platf
 >
 >Ou
 >
->Téléchargez at.js 2.*x* manuellement à l’aide de l’interface utilisateur [!DNL Target] et déployez-le à l’aide de la méthode [&#x200B; de votre choix](/help/dev/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
+>Téléchargez at.js 2.*x* manuellement à l’aide de l’interface utilisateur [!DNL Target] et déployez-le à l’aide de la méthode [ de votre choix](/help/dev/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
 
 ## Fonctions d’at.js obsolètes
 
@@ -309,7 +296,7 @@ Le suivi inter-domaines permet de regrouper les visiteurs dans différents domai
 
 En [!DNL Target], le cookie tiers est stocké dans `<CLIENTCODE>.tt.omtrdc.net`. Le cookie propriétaire est stocké dans `clientdomain.com`. Première requête de renvoi des en-têtes de réponse HTTP qui tentent de définir des cookies tiers nommés `mboxSession` et `mboxPC` tandis qu’une requête de redirection est renvoyée avec un paramètre supplémentaire (`mboxXDomainCheck=true`). Si le navigateur accepte les cookies tiers, la requête de redirection inclut ces cookies et l’expérience est renvoyée. Ce processus est possible car nous utilisons la méthode HTTP GET.
 
-Toutefois, dans at.js 2.*x*, le GET HTTP n’est pas utilisé. Au lieu de cela, la requête HTTP POST est utilisée via at.js 2.*x* pour envoyer des payloads JSON aux serveurs [!DNL Target] Edge. L’utilisation de la requête HTTP POST signifie que la requête de redirection visant à vérifier si un navigateur prend en charge les cookies tiers sera interrompue. Cela est dû au fait que les requêtes HTTP GET sont des transactions idempotentes, tandis que HTTP POST est non idempotent et ne doit pas être répété arbitrairement. Par conséquent, le suivi inter-domaines dans at.js 2.*x* (antérieur à la version 2.10) n’est pas pris en charge prêt à l’emploi. Seul at.js 1.*x* prend en charge le suivi inter-domaines prêt à l’emploi.
+Toutefois, dans at.js 2.*x*, la méthode HTTP GET n’est pas utilisée. Au lieu de cela, la requête HTTP POST est utilisée via at.js 2.*x* pour envoyer des payloads JSON aux serveurs [!DNL Target] Edge. L’utilisation de la requête HTTP POST signifie que la requête de redirection visant à vérifier si un navigateur prend en charge les cookies tiers sera interrompue. Cela est dû au fait que les requêtes HTTP GET sont des transactions idempotentes, tandis que HTTP POST est non idempotent et ne doit pas être répété arbitrairement. Par conséquent, le suivi inter-domaines dans at.js 2.*x* (antérieur à la version 2.10) n’est pas pris en charge prêt à l’emploi. Seul at.js 1.*x* prend en charge le suivi inter-domaines prêt à l’emploi.
 
 Pour utiliser le suivi inter-domaines pour at.js v2.10 ou une version ultérieure, vous pouvez effectuer l’une des opérations suivantes :
 
@@ -336,7 +323,7 @@ Les clients peuvent spécifier un nom de mbox global via **[!UICONTROL Target]**
 
 Oui, les événements personnalisés at.js s’appliquent à `triggerView()` également.
 
-### Elle indique que lorsque j’appelle `triggerView()` avec &lbrace;`"page" : "true"`&rbrace;, une notification est envoyée au serveur principal [!DNL Target] et l’impression est augmentée. Cela entraîne-t-il également l’exécution des scripts de profil ?
+### Elle indique que lorsque j’appelle `triggerView()` avec &amp;lbrace;`"page" : "true"`&amp;rbrace;, une notification est envoyée au serveur principal [!DNL Target] et l’impression est augmentée. Cela entraîne-t-il également l’exécution des scripts de profil ?
 
 Lorsqu’un appel de pré-récupération est effectué au [!DNL Target] principal, les scripts de profil sont exécutés. Ensuite, les données de profil impactées seront chiffrées et retransmises côté client. Après l’appel de `triggerView()` avec `{"page": "true"}`, une notification est envoyée avec les données de profil chiffrées. C’est alors que l’arrière-plan [!DNL Target] déchiffrera les données de profil et les stockera dans les bases de données.
 
@@ -390,7 +377,7 @@ Les tableaux suivants décrivent at.js. compatibilité 2.*x* avec différents ty
 | Audiences | Oui |
 | Attributs du client | Oui |
 | Fragments d’expérience AEM | Oui |
-| [Extension &#x200B;](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) | Oui |
+| [Extension ](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) | Oui |
 | Débogueur | Oui |
 | Auditeur | Les règles n’ont pas encore été mises à jour pour at.js 2.*x* |
 | Prise en charge de l’Opt-in pour le [RGPD](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) | Cette fonctionnalité est prise en charge dans [at.js version 2.1.0](/help/dev/implement/client-side/atjs/target-atjs-versions.md#atjs-version-210-june-3-2019) ou ultérieure. |
@@ -424,7 +411,7 @@ Les tableaux suivants décrivent at.js. compatibilité 2.*x* avec différents ty
 
 ## Jetons de réponse
 
-at.js 2.*x*, tout comme at.js 1.*x*, utilise le `at-request-succeeded` d’événement personnalisé pour faire apparaître les jetons de réponse. Pour des exemples de code utilisant l’événement `at-request-succeeded` personnalisé, voir [Jetons réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr).
+at.js 2.*x*, tout comme at.js 1.*x*, utilise le `at-request-succeeded` d’événement personnalisé pour faire apparaître les jetons de réponse. Pour des exemples de code utilisant l’événement `at-request-succeeded` personnalisé, voir [Jetons réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html).
 
 ## Paramètres at.js 1.*x* pour le mappage de la payload vers at.js 2.*x*
 
@@ -791,5 +778,5 @@ at.js 2.*x* améliore la prise en charge des SPA par Adobe [!DNL Target] et s’
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=fr) voir  Fonctionnement d’at.js 2.*x* .
+Pour plus d’informations](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) voir [ Fonctionnement d’at.js 2.*x* .
 
