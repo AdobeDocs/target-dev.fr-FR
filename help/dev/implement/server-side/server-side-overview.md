@@ -35,7 +35,7 @@ Informations sur [!DNL Adobe Target] API de diffusion côté serveur, les SDK et
 >
 >Si votre implémentation utilise at.js et [!DNL AppMeasurement] côté client, vous devez utiliser les SDK [!UICONTROL Target Delivery API] et côté serveur décrits ci-dessous.
 >
->Si votre implémentation utilise le [!UICONTROL Adobe Experience Platform Web SDK] , vous devez utiliser le [!UICONTROL Edge Network Server API][&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank} [!UICONTROL Adobe Experience Platform] .
+>Si votre implémentation utilise le [!UICONTROL Adobe Experience Platform Web SDK] , vous devez utiliser le [!UICONTROL Edge Network Server API][&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/edge-network-server-api/overview){target=_blank} [!UICONTROL Adobe Experience Platform] .
 
 Le processus suivant se produit dans une implémentation côté serveur de [!DNL Target] :
 
