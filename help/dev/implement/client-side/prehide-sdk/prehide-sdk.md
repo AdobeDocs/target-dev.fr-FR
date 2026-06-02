@@ -4,10 +4,10 @@ description: Découvrez comment intégrer la fonction  [!DNL Adobe Target] Prehi
 title: Aperçu du guide d’intégration de SDK
 feature: Implementation
 hide: true
-source-git-commit: 81818370d32ee8c3f3538e5d8d942f66c13e6a13
+source-git-commit: 2f7a53b667990474dfab7ca66a8ea93d2e946548
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 1%
+source-wordcount: '1007'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +43,6 @@ Une minuscule bibliothèque JavaScript synchrone qui empêche le scintillement v
    ```html
    <script>
      window.PrehideConfig = {
-       org: "your-client-code",
        sdk: "alloy"            // or "atjs" (defaults to "alloy")
      };
    </script>
@@ -53,7 +52,7 @@ Une minuscule bibliothèque JavaScript synchrone qui empêche le scintillement v
 
 1. (Facultatif) Congédiez le consentement.
 
-   Si votre mise en œuvre utilise une plateforme de gestion du consentement (CMP), appelez le `window.Prehide.setConsent(...)` dès que l’état du consentement est connu. Voir [&#x200B; Gestion du consentement &#x200B;](#consent-management).
+   Si votre mise en œuvre utilise une plateforme de gestion du consentement (CMP), appelez le `window.Prehide.setConsent(...)` dès que l’état du consentement est connu. Voir [ Gestion du consentement ](#consent-management).
 
 1. Vérifiez.
 
@@ -110,26 +109,13 @@ Il existe deux manières d’inclure `prehide.min.js` :
 
 Le SDK accepte la configuration de deux sources, par ordre de priorité. Il lit ce qui est disponible en premier.
 
-### A : espaces réservés au moment du téléchargement (pas de configuration d’exécution)
-
-Lorsque vous téléchargez `prehide.min.js` à partir de l’interface utilisateur de Flicker Manager, le serveur remplace trois espaces réservés dans le lot :
-
-| Espace réservé | Remplacé par | Secours en cas de non remplacement |
-| --- | --- | --- |
-| `__FM_CLIENT_CODE__` | Votre code client (par exemple, `"acmecorp"`) | Lit `window.PrehideConfig.org` |
-| `__FM_TIMEOUT__` | Durée du minuteur de garde en ms (par exemple, `"3000"`) | `5000` ms |
-| `__FM_VERSION__` | Version de SDK (par exemple, `"1.0.0"`) | `"0.0.0-dev"` |
-
-Si vous utilisez le lot téléchargé par l’interface utilisateur, aucun bloc `PrehideConfig` n’est nécessaire. Insérez simplement le script.
-
-### B : `window.PrehideConfig` d’exécution (intégration manuelle)
+### `window.PrehideConfig` d’exécution (intégration manuelle)
 
 Pour les lots auto-hébergés ou non modifiés, déclarez un objet config avant l’exécution du script de prévisualisation :
 
 ```html
 <script>
   window.PrehideConfig = {
-    org: "acmecorp",        // required (or rely on baked-in __FM_CLIENT_CODE__)
     sdk: "alloy"             // optional: "alloy" (default) or "atjs"
   };
 </script>
@@ -137,8 +123,7 @@ Pour les lots auto-hébergés ou non modifiés, déclarez un objet config avant 
 
 | Champ | Type | Requis | Description |
 | --- | --- | --- | --- |
-| `org` | string | Oui (sauf si cuit) | Votre code client. Utilisé comme segment d’organisation de l’URL du réseau CDN à partir duquel les règles de prévisualisation sont récupérées. |
-| `sdk` | `"alloy"` \| `"atjs"` | Non | SDK Adobe chargé sur la page. Voir la sélection [&#128279;](#sdk-selection). |
+| `sdk` | `"alloy"` \| `"atjs"` | Non | SDK Adobe chargé sur la page. Voir la sélection [](#sdk-selection). |
 
 ## SDK selection {#sdk-selection}
 
@@ -149,12 +134,16 @@ Pour les lots auto-hébergés ou non modifiés, déclarez un objet config avant 
 | `"alloy"` *(par défaut)* | `<style id="alloy-prehiding">` | Alloy SDK sur personalize-complete | Vous chargez Alloy / Adobe Web SDK sur cette page. |
 | `"atjs"` | `<style id="at-body-style">` | at.js sur personalize-complete | Vous chargez la bibliothèque at.js classique sur cette page. |
 
+>[!NOTE]
+>
+>Pour le SDK at.js, seules les versions 2.x et ultérieures sont prises en charge.
+
 ### Comment le définir
 
 ```html
 <!-- For at.js -->
 <script>
-  window.PrehideConfig = { org: "acmecorp", sdk: "atjs" };
+  window.PrehideConfig = { sdk: "atjs" };
 </script>
 <script> /* prehide.min.js inline */ </script>
 <script src="https://cdn.adobe.com/.../at.js"></script>
