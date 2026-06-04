@@ -23,7 +23,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 2303
+source-wordcount: 2308
 ht-degree: 5%
 
 ---
@@ -38,7 +38,7 @@ Cet article présente les différences entre la bibliothèque `at.js` et le SDK 
 
 ### Installation d’at.js
 
-[!DNL Adobe] permet aux clients de télécharger la bibliothèque directement à partir de l’onglet [!DNL Adobe Experience Cloud], [!UICONTROL Implementation] . La bibliothèque at.js est personnalisée avec des paramètres tels que clientCode, imsOrgId, etc.
+[!DNL Adobe] permet aux clients de télécharger la bibliothèque directement à partir de l’onglet [!DNL Adobe Experience Cloud], [!UICONTROL &#x200B; Implémentation &#x200B;]. La bibliothèque at.js est personnalisée avec des paramètres tels que clientCode, imsOrgId, etc.
 
 ### Installation du SDK Web
 
@@ -319,7 +319,7 @@ adobe.target.getOffers({
 
 ### Utilisation de [!DNL Platform Web SDK]
 
-Vous pouvez récupérer des activités basées sur des [!UICONTROL Form-Based Composer] à l’aide de la commande `sendEvent` et en transmettant les noms des mbox sous l’option `decisionScopes` . La commande `sendEvent` renvoie une promesse qui est résolue avec un objet contenant les activités/propositions demandées :
+Vous pouvez récupérer des activités basées sur le [!UICONTROL compositeur basé sur les formulaires] à l’aide de la commande `sendEvent` et en transmettant les noms des mbox sous l’option `decisionScopes`. La commande `sendEvent` renvoie une promesse qui est résolue avec un objet contenant les activités/propositions demandées :
 
 Ce fragment de code est présenté comme suit pour le tableau `propositions` :
 
@@ -670,7 +670,7 @@ alloy("sendEvent", {
 
 ### Utiliser at.js
 
-Utilisez la fonction `adobe.target.triggerView`. Cette fonction peut être appelée à chaque chargement d’une nouvelle page ou lorsqu’un composant fait l’objet d’un nouveau rendu sur une page. La fonction `adobe.target.triggerView()` doit être implémentée pour que les applications monopages (SPA) utilisent le [!UICONTROL Visual Experience Composer] (VEC) pour créer des activités [!UICONTROL A/B Test] et [!UICONTROL Experience Targeting] (XT). Si `adobe.target.triggerView()` n’est pas implémenté sur le site, le compositeur d’expérience visuelle ne peut pas être utilisé pour les SPA.
+Utilisez la fonction `adobe.target.triggerView`. Cette fonction peut être appelée à chaque chargement d’une nouvelle page ou lorsqu’un composant fait l’objet d’un nouveau rendu sur une page. La fonction `adobe.target.triggerView()` doit être implémentée pour que les applications monopages (SPA) utilisent le [!UICONTROL compositeur d’expérience visuelle] (VEC) afin de créer des activités [!UICONTROL test A/B] et [!UICONTROL ciblage d’expérience] (XT). Si `adobe.target.triggerView()` n’est pas implémenté sur le site, le compositeur d’expérience visuelle ne peut pas être utilisé pour les SPA.
 
 **Exemple**
 
@@ -682,7 +682,7 @@ adobe.target.triggerView("homeView")
 
 ### Utilisation de [!DNL Platform Web SDK]
 
-Pour déclencher ou signaler un [!UICONTROL View Change] d’application sur une seule page, définissez la propriété `web.webPageDetails.viewName` sous l’option `xdm` de la commande `sendEvent`. Le [!DNL Platform Web SDK] vérifie le cache de vue, s’il existe des offres pour les `viewName` spécifiés dans `sendEvent` il les exécute et envoie un événement de notification d’affichage.
+Pour déclencher ou signaler une application sur une seule page [!UICONTROL Modifier l’affichage], définissez la propriété `web.webPageDetails.viewName` sous l’option `xdm` de la commande `sendEvent`. Le [!DNL Platform Web SDK] vérifie le cache de vue, s’il existe des offres pour les `viewName` spécifiés dans `sendEvent` il les exécute et envoie un événement de notification d’affichage.
 
 **Exemple**
 
@@ -701,7 +701,7 @@ alloy("sendEvent", {
 
 [En savoir plus](/help/dev/implement/client-side/aep-web-sdk/spa-implementation.md)
 
-## Comment tirer parti des [!UICONTROL Response Tokens]
+## Comment tirer parti de [!UICONTROL &#x200B; jetons de réponse &#x200B;]
 
 Le contenu Personalization renvoyé par [!DNL Target] inclut des [jetons de réponse](https://experienceleague.adobe.com/fr/docs/target/using/administer/response-tokens). Les jetons de réponse sont des détails sur l’activité, l’offre, l’expérience, le profil utilisateur, les informations géographiques, etc. Ces informations peuvent être partagées avec des outils tiers ou utilisées à des fins de débogage. Les jetons de réponse peuvent être configurés dans l’interface utilisateur d’[!DNL Target].
 

@@ -11,7 +11,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 294
+source-wordcount: 297
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ L’URL ressemble à l’exemple suivant :
 https://<clientCode>.tt.omtrdc.net/rest/v1/profiles/marketingCloudVisitorId/<ECID>?client=<clientCode>
 ```
 
-Remplacez `<clientCode>` par votre [!UICONTROL Client Code] [!DNL Target] et `<ECID>` par votre [!DNL Experience Cloud Visitor ID] ([!DNL Marketing Cloud Visitor ID]).
+Remplacez `<clientCode>` par votre [!DNL Target] [!UICONTROL Code client] et `<ECID>` par votre [!DNL Experience Cloud Visitor ID] ([!DNL Marketing Cloud Visitor ID]).
 
 ## Utilisation d’un tntid
 

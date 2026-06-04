@@ -10,8 +10,8 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 134
-ht-degree: 5%
+source-wordcount: 144
+ht-degree: 4%
 
 ---
 
@@ -27,9 +27,9 @@ L’objet `OnDeviceDecisioningHandler` contient les rappels suivants, qui sont a
 
 | Nom | Arguments | Description |
 | --- | --- | --- |
-| onDeviceDecisioningReady | None | Appelé une seule fois la première fois que le client est prêt pour la [!UICONTROL on-device decisioning] |
+| onDeviceDecisioningReady | None | Appelé uniquement la première fois que le client est prêt pour la [!UICONTROL prise de décision sur l’appareil] |
 | artifactDownloadSuccessfully | byte [] contenu du fichier d&#39;artefact | Appelé à chaque téléchargement d’un artefact [!UICONTROL on-device decisioning] |
-| artifactDownloadFailed | Exception | Appelé chaque fois qu’un artefact de [!UICONTROL on-device decisioning] ne parvient pas à être téléchargé |
+| artifactDownloadFailed | Exception | Appelé chaque fois qu’un artefact [!UICONTROL prise de décision sur l’appareil] n’est pas téléchargé |
 
 ## Exemple
 

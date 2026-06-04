@@ -16,12 +16,12 @@ topic_v2:
   - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 278
+source-wordcount: 282
 ht-degree: 0%
 
 ---
 
-# Indications du client et [!UICONTROL Adobe Target Delivery API]
+# Client Hints et [!UICONTROL API de diffusion &#x200B;]
 
 Les Client Hints doivent être envoyés à [!DNL Adobe Target] lors de la demande d’offres.
 

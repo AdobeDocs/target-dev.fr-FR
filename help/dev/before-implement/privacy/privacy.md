@@ -20,8 +20,8 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 799
-ht-degree: 44%
+source-wordcount: 814
+ht-degree: 43%
 
 ---
 
@@ -43,11 +43,11 @@ Adobe a développé un paramètre de confidentialité dès la conception que les
 
 Si cette fonction est activée, l’adresse IP est suffisamment anonyme pour ne plus être identifiable en tant qu’information personnelle. Par conséquent, [!DNL Target] peut être utilisé conformément aux lois sur la confidentialité des données dans les pays qui ne permettent pas la collecte d’informations personnelles. L’obtention d’informations sur les villes sera considérablement entravée par l’obscurcissement de l’adresse IP, tandis que l’obtention des informations sur les régions et les pays ne sera que légèrement entravée.
 
-Les paramètres suivants sont disponibles dans l’interface utilisateur de [!DNL Target] en accédant à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** :
+Les paramètres suivants sont disponibles dans l’interface utilisateur de [!DNL Target] en accédant à **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]** :
 
-* [!UICONTROL Last octet obfuscation] : [!DNL Target] masque le dernier octet de l&#39;adresse IP.
-* [!UICONTROL Entire IP obfuscation] : [!DNL Target] masque l’adresse IP complète.
-* [!UICONTROL None] : [!DNL Target] ne masque aucune partie de l’adresse IP.
+* [!UICONTROL Obfuscation du dernier octet] : [!DNL Target] masque le dernier octet de l’adresse IP.
+* [!UICONTROL Obfuscation de l’intégralité de l’adresse IP] : [!DNL Target] masque l’intégralité de l’adresse IP.
+* [!UICONTROL Aucune] : [!DNL Target] ne masque aucune partie de l’adresse IP.
 
   ![obfuscate-ip-options](assets/obfuscate-ip.png)
 
@@ -55,9 +55,9 @@ Les paramètres suivants sont disponibles dans l’interface utilisateur de [!DN
 
 ### Obfuscation des adresses IP au niveau du flux de données lors de l’utilisation de l’[!DNL Adobe Experience Platform Web SDK] {#aep}
 
-Lors de l’utilisation de l’[!DNL Platform Web SDK] (version 23.4 ou ultérieure), le paramètre d’obscurcissement de l’adresse IP au niveau du train de données est prioritaire sur toute option d’obscurcissement d’adresse IP définie dans [!DNL Target]. Par exemple, si l’option d’obscurcissement d’IP au niveau du train de données est définie sur [!UICONTROL Full] et que l’option d’obscurcissement d’IP [!DNL Target] est définie sur [!UICONTROL Last octet obfuscation], [!DNL Target] reçoit une adresse IP entièrement obscurcie.
+Lors de l’utilisation de l’[!DNL Platform Web SDK] (version 23.4 ou ultérieure), le paramètre d’obscurcissement de l’adresse IP au niveau du train de données est prioritaire sur toute option d’obscurcissement d’adresse IP définie dans [!DNL Target]. Par exemple, si l’option d’obscurcissement de l’adresse IP au niveau du train de données est définie sur [!UICONTROL Complet] et l’option d’obscurcissement de l’adresse IP [!DNL Target] sur [!UICONTROL Obfuscation du dernier octet], [!DNL Target] reçoit une adresse IP entièrement obscurcie.
 
-Pour plus d’informations, voir [!UICONTROL IP Obfuscation] dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr){target=_blank} dans le Guide *[!DNL Adobe Experience Platfrom]flux de données*.
+Pour plus d’informations, voir [!UICONTROL Obscurcissement d’IP] dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=fr){target=_blank} dans le guide des flux de données *[!DNL Adobe Experience Platfrom]*.
 
 ## Géosegmentation
 

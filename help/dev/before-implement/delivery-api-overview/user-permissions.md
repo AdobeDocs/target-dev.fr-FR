@@ -12,14 +12,14 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 180
+source-wordcount: 184
 ht-degree: 1%
 
 ---
 
 # Autorisations utilisateur (Premium)
 
-[!DNL Adobe] permet aux clients de gérer les autorisations de leurs utilisateurs lorsqu’ils utilisent Adobe Target. Pour réussir l’appel [!UICONTROL Adobe Target Delivery API], vous devez transmettre un jeton disposant des autorisations appropriées dans l’appel API. Pour en savoir plus sur les autorisations des utilisateurs et la récupération du jeton, consultez [cette documentation](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=fr).
+[!DNL Adobe] permet aux clients de gérer les autorisations de leurs utilisateurs lorsqu’ils utilisent Adobe Target. Pour réussir un appel API de diffusion , un jeton disposant des autorisations appropriées doit être transmis dans l’appel API. Pour en savoir plus sur les autorisations des utilisateurs et la récupération du jeton, consultez [cette documentation](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=fr).
 
 ```
 curl -X POST \

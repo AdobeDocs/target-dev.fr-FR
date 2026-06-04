@@ -22,7 +22,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 262
+source-wordcount: 265
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Si vous utilisez la création de rapports [!DNL Analytics], [!DNL Target] devez 
 * Quelle expérience ont-ils vécue ?
 * Quelle conversion a été atteinte
 
-Le [!DNL Adobe Experience Platform Web SDK] prend en charge deux types de journaux de [!DNL Analytics] pour les cas d’utilisation [!UICONTROL Analytics for Target] (A4T) :
+Le [!DNL Adobe Experience Platform Web SDK] prend en charge deux types de journalisation [!DNL Analytics] pour les cas d’utilisation [!UICONTROL Analytics for Target] (A4T) :
 
 | Méthode de consignation | Description |
 | --- | --- |

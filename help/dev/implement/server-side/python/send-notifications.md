@@ -14,7 +14,7 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 411
+source-wordcount: 420
 ht-degree: 8%
 
 ---
@@ -50,7 +50,7 @@ target_client.send_notifications(options)
 
 | Nom | Type | Requis | Par défaut | Description |
 | --- | --- | --- | --- | --- |
-| events | DeliveryRequest | Oui | None | Conforme à la requête [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) |
+| events | DeliveryRequest | Oui | None | Conforme à la requête [[!UICONTROL API de diffusion Target]](/help/dev/implement/delivery-api/overview.md) |
 | target_cookie | str | non | None | cookie [!DNL Target] |
 | target_location_hint | str | non | None | [!DNL Target] l’indicateur d’emplacement |
 | consumer_id | str | non | None | Lors du regroupement de plusieurs appels, différents ID de client doivent être fournis |
@@ -75,7 +75,7 @@ target_client.send_notifications(options)
 
 ## Exemple
 
-Tout d’abord, nous allons créer la requête [!UICONTROL Target Delivery API] pour la prérécupération du contenu des mbox `home` et `product1`.
+Tout d’abord, nous allons créer la requête [!UICONTROL API de diffusion Target] pour prérécupérer du contenu pour les mbox `home` et `product1`.
 
 ### Python
 
@@ -89,7 +89,7 @@ delivery_request = DeliveryRequest(prefetch=prefetch)
 response = target_client.get_offers({ "request": delivery_request })
 ```
 
-Une réponse réussie contient un objet de réponse [!UICONTROL Target Delivery API], qui contient du contenu prérécupéré pour les mbox demandées. Un exemple d’objet `target_response["response"]` (au format dict) peut se présenter comme suit :
+Une réponse réussie contient un objet de réponse [!UICONTROL API de diffusion Target], qui contient du contenu prérécupéré pour les mbox demandées. Un exemple d’objet `target_response["response"]` (au format dict) peut se présenter comme suit :
 
 ### Python
 

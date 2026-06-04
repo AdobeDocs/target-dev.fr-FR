@@ -15,7 +15,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 7a5aae2510a014c6efaeee63080cde3e7746f91c
 workflow-type: tm+mt
-source-wordcount: 350
+source-wordcount: 352
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ npm i @adobe/target-nodejs-sdk -P
    TargetClient targetClient = TargetClient.create(config);
    ```
 
-1. Les paramètres client et organizationId peuvent être récupérés à partir de [!DNL Adobe Target] en accédant à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**, comme illustré ici.
+1. Les paramètres client et organizationId peuvent être récupérés à partir de [!DNL Adobe Target] en accédant à **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]**, comme illustré ici.
 
    <!-- Insert image-client-code.png -->
    ![Page Implémentation sous Administration dans Target](assets/asset-rule-artifact-3.png)

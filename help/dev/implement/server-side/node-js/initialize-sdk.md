@@ -15,7 +15,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 321
+source-wordcount: 332
 ht-degree: 18%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 18%
 
 ## Description
 
-Utilisez la méthode `create` afin d’initialiser le SDK Node.js et d’instancier le client [!UICONTROL Target] pour effectuer des appels vers [!DNL Adobe Target] pour des expériences et des expériences personnalisées.
+Utilisez la méthode `create` afin d’initialiser le SDK Node.js et d’instancier le client [!UICONTROL Target] pour effectuer des appels vers [!DNL Adobe Target] afin d’obtenir des expériences et des expériences personnalisées.
 
 ## Méthode
 
@@ -40,9 +40,9 @@ TargetClient.create(options: Object): TargetClient
 
 | Nom | Type | Requis | Par défaut | Description |
 | --- | --- | --- | --- | --- |
-| client | Chaîne | Oui | None | [!UICONTROL Adobe Target Client ID] |
-| organizationId | Chaîne | Oui | None | [!UICONTROL Experience Cloud Organization ID] |
-| environnement | Chaîne | Non | production | Nom de l’environnement cible. Dans l’interface utilisateur de [!DNL Target], [!UICONTROL Administration] > [!UICONTROL Environments]. |
+| client | Chaîne | Oui | None | [!UICONTROL Identifiant client &#x200B;] |
+| organizationId | Chaîne | Oui | None | [!UICONTROL ID d’organisation Experience Cloud] |
+| environnement | Chaîne | Non | production | Nom de l’environnement cible. Dans l’interface utilisateur de [!DNL Target], [!UICONTROL Administration] > [!UICONTROL Environnements]. |
 | timeout | Nombre | Non | 3000 | Timeout en millisecondes |
 | serverDomain | Chaîne | Non | `*client*.tt.omtrdc.net` | Remplace le nom d’hôte par défaut |
 | sécuriser | Booléen | Non | true | Annuler l’application du schéma HTTP |

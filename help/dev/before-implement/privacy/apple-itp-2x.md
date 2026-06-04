@@ -53,4 +53,4 @@ Apple ITP 2.x a un impact sur le [!DNL Target] dans les domaines suivants :
 
 ## Mon implémentation actuelle de [!DNL Target] est-elle impactée ?
 
-Si vous utilisez la bibliothèque Experience Cloud ID (ECID) en plus de la bibliothèque [!DNL Target] JavaScript, votre implémentation sera affectée des manières répertoriées dans cet article : [Impact d’ITP 2.1 de Safari sur les clients Adobe Experience Cloud et Experience Platform](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
+Si vous utilisez la bibliothèque d’Experience Cloud ID (ECID) en plus de la bibliothèque [!DNL Target] JavaScript, votre implémentation sera affectée des manières répertoriées dans cet article : [Impact d’ITP 2.1 de Safari sur les clients Adobe Experience Cloud et Experience Platform](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).

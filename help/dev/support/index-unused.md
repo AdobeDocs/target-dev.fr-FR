@@ -3,8 +3,8 @@ title: Assistance - Adobe Analytics
 description: Il s’agit de la page d’assistance d’Adobe Analytics
 source-git-commit: f139f5b910b5d23ea8cf4ee5b00ea5f6fd3c39b2
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 6%
+source-wordcount: '97'
+ht-degree: 9%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 6%
 
 Découvrez où poser des questions, signaler des bogues, effectuer des demandes de fonctionnalités et susciter des discussions.
 
-## Commentaires 
+## Commentaires
 
 Tu as un endroit pour commencer les discussions.
 
@@ -21,7 +21,7 @@ Tu as un endroit pour commencer les discussions.
 
 ### Forum des développeurs
 
-[Commencer](https://adobe.io)
+[Prise en main](https://adobe.io)
 
 Discussion ouverte et assistance avec les experts de la communauté et le personnel d’Adobe.
 
@@ -41,7 +41,7 @@ Tu as un endroit pour participer à la conversation.
 
 ### Débordement de pile
 
-[Explorer](https://adobe.io)
+[Exploration](https://adobe.io)
 
 Questions et réponses des développeurs à l’aide d’une balise spécifique.
 

@@ -17,14 +17,14 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 261
+source-wordcount: 273
 ht-degree: 0%
 
 ---
 
 # Service [!UICONTROL Experience Cloud ID] (ECID)
 
-## Intégration d’[!UICONTROL Experience Cloud ID] (ECID)
+## Intégration de l’[!UICONTROL Experience Cloud ID] (ECID)
 
 Bien que l’utilisation des SDK [!DNL Target] pour récupérer du contenu de [!DNL Target] puisse s’avérer puissante, la valeur ajoutée de l’utilisation de l’[!UICONTROL Experience Cloud ID] (ECID) pour le suivi des utilisateurs et utilisatrices va au-delà de [!DNL Adobe Target]. L’ECID vous permet d’exploiter les produits et fonctionnalités [!DNL Adobe Experience Cloud], tels que les segments de rapports et de [!DNL Adobe Audience Manager] A4T (AAM).
 

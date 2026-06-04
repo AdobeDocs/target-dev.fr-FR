@@ -17,8 +17,8 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 335
-ht-degree: 68%
+source-wordcount: 337
+ht-degree: 67%
 
 ---
 
@@ -40,7 +40,7 @@ Pour obtenir de l’aide sur la sélection de la configuration appropriée, voir
 
    * Où `myClientCode` est le code client de votre société. Le code client de votre entreprise est en minuscules et ne comporte pas de caractères spéciaux.
 
-     Votre code client est disponible en haut de la page **[!UICONTROL Administation]** > **[!UICONTROL Implementation]** de l’interface [!DNL Target].
+     Votre code client est disponible en haut de la page **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]** de l’interface [!DNL Target].
 
    * Où `image` est le type d’appel. Dans ce cas, il s’agit d’une image.
 

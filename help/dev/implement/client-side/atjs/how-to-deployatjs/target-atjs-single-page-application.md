@@ -24,7 +24,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 2848
+source-wordcount: 2851
 ht-degree: 53%
 
 ---
@@ -87,7 +87,7 @@ Maintenant que nous avons décrit les vues [!DNL Adobe Target], nous pouvons exp
 
    Tout d’abord, nous devons installer at.js 2.*x*. Cette version d’at.js a été développée en tenant compte des SPA. Les versions précédentes d’at.js ne prennent pas en charge les vues [!DNL Adobe Target] et le VEC pour les SPA.
 
-   Téléchargez at.js 2.*x* via l’interface utilisateur [!DNL Adobe Target] située sous **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. at.js 2.*x* peut également être déployé à l’aide de balises dans [!DNL Adobe Experience Platform].
+   Téléchargez at.js 2.*x* via l’interface utilisateur [!DNL Adobe Target] disponible dans **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]**. at.js 2.*x* peut également être déployé à l’aide de balises dans [!DNL Adobe Experience Platform].
 
 1. Mettez en œuvre la fonction 2.*x* d’at.js `[triggerView()](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-triggerview-atjs-2.md)` sur vos sites.
 
@@ -101,7 +101,7 @@ Maintenant que nous avons décrit les vues [!DNL Adobe Target], nous pouvons exp
 
    | Paramètre | Type | Obligatoire ? | Validation | Description |
    | --- | --- | --- | --- | --- |
-   | viewName | Chaîne | Oui | &#x200B;1. Pas d’espaces de fin.<br />2. Ne peut pas être vide.<br />3. Le nom de la vue doit être unique pour toutes les pages.<br />4. **Avertissement** : le nom de l’affichage ne doit pas commencer ou se terminer par « `/` ». Cela est dû au fait que le client extrait généralement le nom de la vue à partir du chemin d’URL. Pour nous, « maison » et « `/home` » sont différents.<br />5. **Avertissement** : la même vue ne doit pas être déclenchée plusieurs fois avec l’option `{page: true}`. | Transmettez n’importe quel nom en tant que type de chaîne que vous souhaitez représenter votre vue. Ce nom de vue s’affiche dans le panneau **[!UICONTROL Modifications]** du compositeur d’expérience visuelle pour que les marketeurs puissent créer des actions et exécuter leurs activités A/B et XT. |
+   | viewName | Chaîne | Oui | &#x200B;1. Pas d’espaces de fin.<br />2. Ne peut pas être vide.<br />3. Le nom de la vue doit être unique pour toutes les pages.<br />4. **Avertissement** : le nom de l’affichage ne doit pas commencer ou se terminer par « `/` ». Cela est dû au fait que le client extrait généralement le nom de la vue à partir du chemin d’URL. Pour nous, « maison » et « `/home` » sont différents.<br />5. **Avertissement** : la même vue ne doit pas être déclenchée plusieurs fois avec l’option `{page: true}`. | Transmettez n’importe quel nom en tant que type de chaîne que vous souhaitez représenter votre vue. Ce nom d’affichage s’affiche dans le panneau **[!UICONTROL Modifications]** du compositeur d’expérience visuelle pour que les marketeurs puissent créer des actions et exécuter leurs activités A/B et XT. |
    | Options | Objet | Non |  |  |
    | options > page | Booléen | Non |  | **TRUE** : la valeur par défaut de la page est true. Lorsqu’elles sont `page=true`, les notifications sont envoyées aux serveurs Edge pour incrémenter le nombre d’impressions.<br />**FALSE** : lorsqu’elles sont `page=false`, les notifications ne sont pas envoyées pour incrémenter le nombre d’impressions. Cette opération ne doit être utilisée que si vous souhaitez recréer un composant sur une page avec une offre. |
 

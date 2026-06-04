@@ -13,7 +13,7 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 230
+source-wordcount: 233
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ TargetDeliveryResponse TargetClient.SendNotifications(TargetDeliveryRequest requ
 
 ## Exemple
 
-Tout d’abord, nous allons créer la requête [!UICONTROL Target Delivery API] pour la prérécupération du contenu des mbox `home` et `product1`.
+Tout d’abord, nous allons créer la requête [!UICONTROL API de diffusion Target] pour prérécupérer du contenu pour les mbox `home` et `product1`.
 
 ### \.NET
 

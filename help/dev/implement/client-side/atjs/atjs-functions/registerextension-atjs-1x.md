@@ -17,8 +17,8 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 274
-ht-degree: 63%
+source-wordcount: 277
+ht-degree: 62%
 
 ---
 
@@ -43,7 +43,7 @@ Remarques :
 * Si l’un des paramètres n’est pas fourni, une exception est déclenchée.
 * Si le tableau de modules est vide, une exception est déclenchée.
 
-Pour plus d’informations et d’exemples sur l’utilisation de `[!UICONTROL registerExtension]`, consultez la page [Extensions atjs de Adobe Experience Cloud Target](https://github.com/Adobe-Marketing-Cloud/target-atjs-extensions) sur GitHub.
+Pour plus d’informations et d’exemples sur l’utilisation de `[!UICONTROL registerExtension]`, consultez la page [Extensions atjs Adobe Experience Cloud Target](https://github.com/Adobe-Marketing-Cloud/target-atjs-extensions) sur GitHub.
 
 ## Méthodes de module Paramètres
 

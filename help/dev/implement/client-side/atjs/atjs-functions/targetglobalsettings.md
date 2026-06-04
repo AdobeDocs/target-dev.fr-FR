@@ -1,6 +1,6 @@
 ---
 keywords: serverstate, targetGlobalSettings, targetglobalsettings, globalSettings, globalsettings, paramètres globaux, at.js, fonctions, fonction, clientCode, clientcode, serverDomain, serverdomain, cookieDomain, serverstate5, serverstate6, serverstate7, serverstate8, serverstate9, targetGlobalSettings0, targetGlobalSettings1, targetGlobalSettings2, targetGlobalSettings3, targetGlobalSettings4, targetGlobalSettings5, cookiedomain, crossDomain, crossdomain, timeout, globalMboxAutoCreate, visitorApiTimeout, defaultContentHiddenStyle, defaultContentVisibleStyle, bodyHiddenStyle, bodyHiddenEnabled, imsOrgId, secureOnly, overrideMboxEdgeServer, overrideMboxEdgeServerTimeout, cookiedomain5, cookiedomain6, cookiedomain7, cookiedomain8, cookiedomain9, crossDomain0, crossDomain1, crossDomain2, crossDomain3, crossDomain4, crossDomain5, optoutEnabled, optout out, selectorsPollingTimeout, dataProviders, Hybrid Personalization, deviceIdLifetime
-description: Utilisez la fonction [!UICONTROL targetGlobalSettings()] pour que la bibliothèque JavaScript at [!DNL Adobe Target] js remplace les paramètres au lieu d’utiliser l’interface utilisateur  [!DNL Target]  ou les API REST.
+description: Utilisez la fonction [!UICONTROL targetGlobalSettings()] pour que la bibliothèque JavaScript at [!DNL Adobe Target] js remplace les paramètres au lieu d’utiliser les API  [!DNL Target] UI ou REST.
 title: Comment utiliser la fonction [!UICONTROL targetGlobalSettings()] ?
 feature: at.js
 exl-id: f6218313-6a70-448e-8555-b7b039e64b2c
@@ -24,7 +24,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 2702
+source-wordcount: 2705
 ht-degree: 56%
 
 ---

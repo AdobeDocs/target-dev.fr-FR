@@ -23,7 +23,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1797
+source-wordcount: 1879
 ht-degree: 4%
 
 ---
@@ -75,7 +75,7 @@ Cette étape permet de s’assurer que la bibliothèque `VisitorAPI.js` est char
 
 **Conditions préalables**
 
-* Pour utiliser le service d’ID visiteur/API, votre entreprise doit être activée pour le [!DNL Adobe Experience Cloud] et disposer d’une [!UICONTROL Organization ID]. Pour plus d’informations, voir [Conditions requises pour Experience Cloud : ID d’organisation](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?lang=fr ?){target=_blank} dans le guide *Aide d’Identity Service*.
+* Pour utiliser le service d’ID de visiteur/API, votre société doit être activée pour le [!DNL Adobe Experience Cloud] et disposer d’un [!UICONTROL ID d’organisation]. Pour plus d’informations, voir [Conditions requises pour Experience Cloud : ID d’organisation](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html?lang=fr ?){target=_blank} dans le guide *Aide d’Identity Service*.
 * Vous avez besoin du fichier `VisitorAPI.js`. Vous devriez déjà disposer de ce fichier si vous l’avez [!DNL Adobe Analytics] implémenté. Ce fichier peut également être ajouté via l’extension [[!DNL Adobe Experience Platform] tags](https://experienceleague.adobe.com/docs/tags.html?lang=fr){target=_blank} ou téléchargé à partir du [Gestionnaire de code Adobe Analytics](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=fr){target=_blank}.
 
 **Configuration et renvoi de VisitorAPI.js**
@@ -87,7 +87,7 @@ Pour plus d’informations, voir [Implémentation du service Experience Cloud po
 * [Présentation d’Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=fr){target=_blank}
 * [À propos du service d’ID](https://experienceleague.adobe.com/docs/id-service/using/intro/about-id-service.html?lang=fr){target=_blank}
 * [Cookies et Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/cookies.html?lang=fr){target=_blank}
-* [Requête et définition d’ID par Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/intro/id-request.html?lang=fr){target=_blank}
+* [Requête et définition d’ID par le service Experience Cloud Identity](https://experienceleague.adobe.com/docs/id-service/using/intro/id-request.html?lang=fr){target=_blank}
 * [Comprendre la synchronisation des identifiants et les taux de correspondance](https://experienceleague.adobe.com/docs/id-service/using/intro/match-rates.html?lang=fr){target=_blank}
 
 **Actions**
@@ -255,9 +255,9 @@ Faites des recommandations en fonction du contenu du panier de l’utilisateur.
 
 **Critères disponibles**
 
-* [!UICONTROL People Who Viewed These, Viewed Those]
-* [!UICONTROL People Who Viewed These, Bought Those]
-* [!UICONTROL People Who Bought These, Bought Those]
+* [!UICONTROL Les personnes qui ont consulté ces , ont consulté ces &#x200B;]
+* [!UICONTROL Les Personnes Qui Les Ont Consultés Les Ont Achetés]
+* [!UICONTROL Les gens qui ont acheté ceci, ont acheté cela]
 
 **Paramètres d’entité requis**
 
@@ -279,13 +279,13 @@ Faites des recommandations en fonction de la popularité globale d’un élémen
 
 **Critères disponibles**
 
-* [!UICONTROL Most Viewed Across the Site]
-* [!UICONTROL Most Viewed by Category]
-* [!UICONTROL Most Viewed by Item Attribute]
-* [!UICONTROL Top Sellers Across the Site]
-* [!UICONTROL Top Sellers by Category]
-* [!UICONTROL Top Sellers by Item Attribute]
-* [!UICONTROL Top by Analytics Metric]
+* [!UICONTROL Les plus consultés sur le site]
+* [!UICONTROL Les plus consultés par catégorie]
+* [!UICONTROL Éléments les plus consultés par attribut d’élément]
+* [!UICONTROL Meilleurs vendeurs sur le site]
+* [!UICONTROL Meilleurs vendeurs par catégorie]
+* [!UICONTROL Meilleurs vendeurs par attribut d&#39;article]
+* [!UICONTROL En tête par mesure Analytics]
 
 **Paramètres d’entité requis**
 
@@ -308,10 +308,10 @@ Faites des recommandations basées sur la recherche d’éléments similaires à
 
 **Critères disponibles**
 
-* [!UICONTROL People Who Viewed This, Viewed That]
-* [!UICONTROL People Who Viewed This, Bought That]
-* [!UICONTROL People Who Bought This, Bought That]
-* [!UICONTROL Items with Similar Attributes]
+* [!UICONTROL Les personnes qui ont consulté ceci ont consulté cela]
+* [!UICONTROL Les personnes qui ont consulté ceci ont acheté cela]
+* [!UICONTROL Les personnes qui ont acheté ceci ont acheté cela]
+* [!UICONTROL Éléments avec des attributs similaires]
 
 **Paramètres d’entité requis**
 
@@ -333,8 +333,8 @@ Faites des recommandations basées sur le comportement de l’utilisateur.
 
 **Critères disponibles**
 
-* [!UICONTROL Recently Viewed Items]
-* [!UICONTROL Recommended for You]
+* [!UICONTROL Éléments récemment consultés]
+* [!UICONTROL Recommandé]
 
 **Paramètres d’entité requis**
 
@@ -356,7 +356,7 @@ Faites des recommandations basées sur un fichier personnalisé que vous téléc
 
 **Critères disponibles**
 
-* [!UICONTROL Custom algorithm]
+* [!UICONTROL Algorithme personnalisé]
 
 **Paramètres d’entité requis**
 

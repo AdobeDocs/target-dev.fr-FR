@@ -17,14 +17,14 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 153
+source-wordcount: 161
 ht-degree: 0%
 
 ---
 
 # Journalisation côté serveur pour les données A4T dans [!DNL Experience Platform Web SDK]
 
-Le [!DNL Adobe Experience Platform Web SDK] vous permet d’implémenter [!UICONTROL Adobe Analytics for Target] fonctionnalité (A4T) sur [!UICONTROL Experience Platform Edge Network]. Lorsque la journalisation côté serveur est activée, tous les accès [!DNL Analytics] envoyés par le biais d’Edge Network sont complétés par des détails [!DNL Target] côté serveur, sans avoir à passer par le processus d’assemblage des accès.
+Le [!DNL Adobe Experience Platform Web SDK] vous permet de mettre en œuvre la fonctionnalité [!UICONTROL Adobe Analytics for Target] (A4T) sur [!UICONTROL Experience Platform Edge Network]. Lorsque la journalisation côté serveur est activée, tous les accès [!DNL Analytics] envoyés par le biais d’Edge Network sont complétés par des détails [!DNL Target] côté serveur, sans avoir à passer par le processus d’assemblage des accès.
 
 La journalisation côté serveur pour [!DNL Analytics] est activée lorsque [!DNL Analytics] est activé dans la configuration du flux de données :
 

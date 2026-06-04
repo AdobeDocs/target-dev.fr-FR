@@ -16,7 +16,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 368
+source-wordcount: 369
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Il n’est pas nécessaire d’inclure les attributs de conversion de commande d
    * `orderTotal` : total de la commande pour l&#39;achat.
    * `orderId` : ID de commande de l’achat.
 
-  L’illustration suivante présente une [règle for [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html?lang=fr){target=_blank} qui ne doit être déclenchée que sur la page [!UICONTROL Confirmation].
+  L’illustration suivante présente une [règle pour [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html?lang=fr){target=_blank} qui ne doit être déclenchée que sur la page [!UICONTROL Confirmation].
 
   ![Page de configuration de l’action](/help/dev/patterns/recs-atjs/assets/action-configuration.png){width="400" zoomable="yes"}
 

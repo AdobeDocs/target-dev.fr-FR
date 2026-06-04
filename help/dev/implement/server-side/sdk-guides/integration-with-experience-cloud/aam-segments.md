@@ -1,6 +1,6 @@
 ---
 title: Intégration avec les segments Experience Cloud AAM
-description: Intégration à Experience Cloud, intégration à Audience Manager
+description: Intégration avec Experience Cloud, intégration à Audience Manager
 keywords: api de diffusion, côté serveur, côté serveur, intégration, audience manager, aam
 exl-id: c21e0200-23ba-4a0b-adf4-38e03c087f00
 feature: Implement Server-side

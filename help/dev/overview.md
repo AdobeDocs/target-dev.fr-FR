@@ -33,7 +33,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 501
+source-wordcount: 510
 ht-degree: 11%
 
 ---
@@ -60,7 +60,7 @@ Ce guide du développeur *[!DNL Adobe Target]* fournit des ressources et des gui
 
 ## Implémentation côté client
 
-[**Adobe Experience Platform Web SDK**](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md) : le [!DNL Adobe Experience Platform Web SDK] permet d&#39;interagir avec les différents services de la [!DNL Experience Cloud] ([!DNL Target] compris) à travers le [!UICONTROL Adobe Experience Edge Network].
+[**Adobe Experience Platform Web SDK**](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md) : le [!DNL Adobe Experience Platform Web SDK] permet d&#39;interagir avec les différents services du [!DNL Experience Cloud] (y compris [!DNL Target]) via [!UICONTROL Adobe Experience Edge Network].
 
 [**Bibliothèque JavaScript at.js Target**](/help/dev/implement/client-side/overview.md) : la bibliothèque JavaScript at.js réduit les temps de chargement des pages pour les implémentations web, améliore la sécurité et fournit de meilleures options d’implémentation pour les applications d’une seule page.
 
@@ -104,7 +104,7 @@ Ce guide du développeur *[!DNL Adobe Target]* fournit des ressources et des gui
 
 [**[!DNL Target Profile API]**](/help/dev/administer/profile-api/profiles-api.md) : récupération des informations de profil utilisateur [!DNL Adobe Target].
 
-[**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports) : récupérez les données des rapports d’activité [!UICONTROL A/B Test] et [!UICONTROL Automated Personalization].
+[**[!DNL Target Reporting API]**](https://developer.adobe.com/target/administer/admin-api/#tag/Reports) : récupérez les données des rapports d’activité [!UICONTROL Test A/B] et [!UICONTROL Automated Personalization].
 
 [**[!DNL Target Recommendations API]**](https://developer.adobe.com/target/administer/recommendations-api/) : utiliser l’API [!DNL Target Recommendations].
 

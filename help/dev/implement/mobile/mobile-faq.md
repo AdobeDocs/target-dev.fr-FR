@@ -15,7 +15,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 310
+source-wordcount: 316
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ Le SDK est disponible sur le git [Adobe Marketing Cloud](https://github.com/Adob
 
 ## Quels SDK sont disponibles aujourd’hui ?
 
-Les SDK mobiles Adobe Experience Platform prennent actuellement en charge iOS, Android et React. Pour plus d’informations, consultez le guide des SDK mobiles de Adobe Experience Cloud Platform [&#128279;](https://experienceleague.adobe.com/docs/mobile.html?lang=fr){target=_blank}.
+Les SDK mobiles Adobe Experience Platform prennent actuellement en charge iOS, Android et React. Pour plus d’informations, consultez le [guide des SDK mobiles d’Adobe Experience Cloud Platform](https://experienceleague.adobe.com/docs/mobile.html?lang=fr){target=_blank}.
 
 ## Quelle est la fréquence de la fonction de localisation, en termes de vérification de la latitude et de la longitude ?
 
@@ -42,7 +42,7 @@ Non, vous n’avez pas besoin d’at.js pour utiliser les SDK mobiles. at.js est
 
 ## [!DNL Target] Mobile est-il une fonctionnalité [!DNL Adobe Target] SKU du produit Premium uniquement ?
 
-Non. Pour les clients [!DNL Adobe Target Standard], vous pouvez utiliser nos SDK Mobile pour les activités [!UICONTROL A/B Test] et [!UICONTROL Experience Targeting] (XT) uniquement avec le module complémentaire de l’application mobile [!DNL Target Standard]. Si vous souhaitez utiliser des fonctionnalités [!UICONTROL Recommendations] ou basées sur l’IA dans l’application mobile, vous avez besoin d’une licence [Adobe Target Premium](https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=fr#premium).
+Non. Pour les clients [!DNL Adobe Target Standard], vous pouvez utiliser nos SDK mobiles pour les activités [!UICONTROL Test A/B] et [!UICONTROL Ciblage d’expérience] (XT) uniquement avec le module complémentaire de l’application mobile [!DNL Target Standard]. Si vous souhaitez utiliser des fonctionnalités [!UICONTROL Recommendations] ou optimisées par l’IA dans l’application mobile, vous avez besoin d’une licence [Adobe Target Premium](https://experienceleague.adobe.com/docs/target/using/introduction/intro.html?lang=fr#premium).
 
 ## Existe-t-il une intégration d’application mobile entre les activités [!DNL Adobe Experience Manager] (AEM) et [!DNL Target] ?
 

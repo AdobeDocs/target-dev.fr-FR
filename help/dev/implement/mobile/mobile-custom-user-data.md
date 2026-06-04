@@ -1,12 +1,12 @@
 ---
 keywords: application mobile, envoi de données d’application mobile, données utilisateur personnalisées mobiles, données personnalisées d’application mobile
-description: Découvrez comment envoyer des informations supplémentaires sur l’emplacement ou l’utilisateur à  [!DNL Adobe Target] en tant que paires nom-valeur pour vous aider à créer des audiences personnalisées.
+description: Découvrez comment envoyer des informations supplémentaires sur l’emplacement ou l’utilisateur vers sous forme de paires nom [!DNL Adobe Target] valeur afin de vous aider à créer des audiences personnalisées.
 title: Comment envoyer des données utilisateur personnalisées dans une application iOS ?
 feature: Implement Mobile
 exl-id: 9cf8e8fd-1898-43b1-b339-d7a21cb35d57
 source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '417'
 ht-degree: 55%
 
 ---
@@ -17,16 +17,16 @@ Vous pouvez envoyer des informations supplémentaires sur l’emplacement ou l�
 
 >[!IMPORTANT]
 >
->Prise en charge de la version 4 de [!DNL Adobe Mobile].Les SDK *x* ont pris fin le 31 août 2021 et ne sont plus recommandés pour les utilisateurs mobiles [!DNL Adobe Target].
+>La prise en charge des SDK [!DNL Adobe Mobile] version 4.*x* a pris fin le 31 août 2021 et n’est plus recommandée pour les utilisateurs d’[!DNL Adobe Target] mobile.
 >
->Le [SDK Adobe Experience Platform pour les applications mobiles](https://developer.adobe.com/client-sdks/documentation/){target=_blank} est la solution recommandée pour alimenter les services et solutions [!DNL Adobe Experience Cloud] de vos applications mobiles.
+>[Adobe Experience Platform SDK pour les applications mobiles](https://developer.adobe.com/client-sdks/documentation/){target=_blank} est la solution recommandée pour alimenter les solutions et services [!DNL Adobe Experience Cloud] dans vos applications mobiles.
 
 Ces informations peuvent être utilisées pour créer des audiences personnalisées (par exemple, utilisateurs disposant de plus de 25 000 miles) et créer des rapports.
 
 Vous pouvez envoyer deux types de paramètres avec un appel [!DNL Target] :
 
-* **Paramètres mbox** : les paramètres mbox ne sont pas persistants entre les sessions.
-* **Paramètres de profil** : les paramètres de profil sont stockés dans la banque de profils du visiteur et persistent entre les sessions. Les paramètres de mbox ne sont pas conservés. Tandis que certaines clés sont réservées, les paramètres de profil et mbox peuvent être des paires personnalisées de type clé-valeur.
+* **paramètres de mbox** : les paramètres de mbox ne sont pas persistants entre les sessions.
+* **Paramètres de profil** : les paramètres de profil sont stockés dans la banque de profils du visiteur et sont persistants entre les sessions. Les paramètres de mbox ne sont pas conservés. Tandis que certaines clés sont réservées, les paramètres de profil et mbox peuvent être des paires personnalisées de type clé-valeur.
 
 Bien que certaines clés soient réservées, les paramètres de profil et mbox peuvent contenir des paires clé-valeur personnalisées.
 
@@ -67,8 +67,8 @@ Bien que certaines clés soient réservées, les paramètres de profil et mbox p
 
       Recherchez le nom de votre emplacement cible dans la console de débogage. Vous remarquerez un appel vers `YOUR-CLIENT-CODE.tt.omtrdc.net` contenant l’ensemble des paramètres que vous venez de transférer.
 
-      (Cliquez sur l’image pour agrandir l’image en largeur réelle.)
+      (Cliquez sur l’image pour l’agrandir sur toute la largeur.)
 
-      ![Emplacement de la cible dans la console de débogage](/help/dev/implement/mobile/assets/mobile-debug.png "Emplacement de la cible dans la console de débogage"){zoomable="yes"}
+      ![Emplacement cible dans la console &#x200B;](/help/dev/implement/mobile/assets/mobile-debug.png " débogageEmplacement cible dans la console de débogage"){zoomable="yes"}
 
    Vous pouvez créer des audiences et restreindre ou cibler l’affichage du contenu à l’aide de ces paramètres dans [!DNL Target].

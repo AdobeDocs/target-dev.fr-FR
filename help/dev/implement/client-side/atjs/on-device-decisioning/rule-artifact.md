@@ -1,6 +1,6 @@
 ---
 keywords: implémentation, bibliothèque javascript, js, atjs, prise de décision sur l’appareil, prise de décision sur l’appareil, artefact de règle, 8 $
-description: Découvrez l’artefact de règle JSON utilisé par [!UICONTROL on-device decisioning]&rbrack;.
+description: Découvrez l’artefact de règle JSON utilisé par [!UICONTROL la prise de décision sur l’appareil]&rbrack;.
 title: Que fait l’artefact de règle JSON dans la prise de décision sur l’appareil ?
 feature: at.js
 exl-id: 14413ccf-b55e-48a8-a474-4401eb1b50fc
@@ -19,14 +19,14 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 116
+source-wordcount: 125
 ht-degree: 0%
 
 ---
 
-# Artefact de règle [!UICONTROL On-device decisioning]
+# [!UICONTROL Prise de décision sur l’appareil] artefact de règle
 
-L’artefact de règle est une représentation JSON de vos activités de [!UICONTROL on-device decisioning] [!DNL Adobe Target]. L’artefact de règle est généré par [!DNL Target] et propagé sur le réseau CDN Akamai afin de s’assurer qu’un artefact de règle est disponible aussi près que possible de vos visiteurs. L’artefact de règle contient des métadonnées qui assurent une exécution et une diffusion précises de vos activités, tout en permettant l’analyse en temps réel via le suivi d’événement.
+L’artefact de règle est une représentation JSON de vos activités [!DNL Adobe Target] [!UICONTROL prise de décision sur l’appareil]. L’artefact de règle est généré par [!DNL Target] et propagé sur le réseau CDN Akamai afin de s’assurer qu’un artefact de règle est disponible aussi près que possible de vos visiteurs. L’artefact de règle contient des métadonnées qui assurent une exécution et une diffusion précises de vos activités, tout en permettant l’analyse en temps réel via le suivi d’événement.
 
 * Cliquez [ici](../../../../implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) pour plus d’informations sur l’artefact de règle.
 * Cliquez [ici](../../../../implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-example.md) pour afficher un exemple d’artefact de règle JSON.

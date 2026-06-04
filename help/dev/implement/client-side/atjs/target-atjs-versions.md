@@ -27,7 +27,7 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
 workflow-type: tm+mt
-source-wordcount: 5144
+source-wordcount: 5174
 ht-degree: 61%
 
 ---
@@ -58,7 +58,7 @@ Les balises dans [&#128279;](/help/dev/implement/client-side/atjs/how-to-deploya
 
 ## at.js version 2.11.6 (29 septembre 2024)
 
-* Correction d’un problème qui empêchait [!DNL Target] de fonctionner correctement avec les offres de redirection dans le [!UICONTROL Visual Experience Composer] (VEC) ou le [!UICONTROL Form-Based Experience Composer].
+* Correction d’un problème qui empêchait le bon fonctionnement des [!DNL Target] avec les offres de redirection dans le [!UICONTROL Compositeur d’expérience visuelle] (VEC) ou le [!UICONTROL Compositeur d’expérience d’après les formulaires].
 
 ## at.js version 2.11.5 (14 août 2024)
 
@@ -141,7 +141,7 @@ Les modifications suivantes ont été apportées à cette version :
 * Ajout d’un attribut sécurisé aux cookies chaque fois que les paramètres at.js `secureOnly` sont définis sur `true`.
 * Des jetons de réponse sont désormais disponibles lors de l’utilisation de `triggerView()`.
 * Correction d’un problème relatif à l’événement `CONTENT_RENDERING_NO_OFFERS`. Désormais, cet événement est correctement déclenché lorsque [!DNL Target] ne renvoie aucun contenu.
-* Les informations détaillées des mesures de clics [!UICONTROL Analytics for Target] (A4T) sont correctement renvoyées lors de l’utilisation de requêtes `prefetch`.
+* Les détails des mesures de clics [!UICONTROL Analytics for Target] (A4T) sont correctement renvoyés lors de l’utilisation de requêtes `prefetch`.
 * La génération de l’UUID n’utilise plus `Math.random()`, mais repose sur `window.crypto`.
 * L’expiration du cookie `sessionId` est correctement étendue à chaque appel réseau.
 * L’initialisation de l’affichage du cache des Applications à page unique (SPA) est désormais correctement gérée et respecte les paramètres `viewsEnabled`. La définition de `viewsEnabled` sur la valeur `false` désactive désormais la fonction `triggerView()`. Voir [Ordre des opérations pour le chargement initial de la page](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md#order).
@@ -447,7 +447,7 @@ at.js version 1.2 est désormais disponible en tant que version de maintenance c
 * Correction d’un problème lors du suivi des clics sur un lien avec `target="_blank"` qui empêchait [!DNL Target] d’ouvrir le lien dans un nouvel onglet. (TNT-28072)
 * Les adresses IP peuvent être utilisées comme domaine de cookie. (TNT-28002)
 * Correction d’un problème qui provoquait un scintillement des offres de redirection dotées d’une mbox globale ou de mbox régionales. (TNT-27978)
-* Correction d’un problème dans [!UICONTROL Experience Targeting] configuration de l’activité échouant dans le VEC lors du changement entre Parcourir et Composer. (TNT-27942)
+* Correction d’un problème dans la configuration de l’activité [!UICONTROL Ciblage d’expérience] dans le VEC lors du changement entre Parcourir et Composer. (TNT-27942)
 * Correction de la gestion incorrecte des classes de style de scintillement pour les éléments de suivi des clics. (TNT-27896)
 * Correction d’un problème en raison duquel les paramètres des mbox globales se mélangeaient à l’ensemble des paramètres de mbox. (TNT-27846)
 * Apport de modifications pour garantir que Handlebars, Mustache et d’autres bibliothèques de création de modèles côté client sont correctement gérés par at.js. (TNT-27831)
@@ -494,7 +494,7 @@ Les améliorations et correctifs suivants sont inclus dans at.js version 0.9.7 :
 
 Les améliorations et correctifs suivants sont inclus dans at.js version 0.9.6 :
 
-* Prise en charge de l’offre de redirection pour A4T. Après avoir téléchargé et installé at.js version 0.9.6, vous pouvez utiliser des offres de redirection dans les activités qui utilisent [!UICONTROL Adobe Analytics as the Reporting Source for Target] (A4T). Outre at.js version 0.9.6, il existe d’autres exigences minimales auxquelles votre implémentation doit répondre pour utiliser les offres de redirection et A4T. Pour en savoir plus et obtenir d’autres informations importantes, voir [FAQ sur les offres de redirection (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html?lang=fr).
+* Prise en charge de l’offre de redirection pour A4T. Après avoir téléchargé et installé at.js version 0.9.6, vous pouvez utiliser des offres de redirection dans les activités qui utilisent [!UICONTROL Adobe Analytics comme Source de création de rapports pour Target] (A4T). Outre at.js version 0.9.6, il existe d’autres exigences minimales auxquelles votre implémentation doit répondre pour utiliser les offres de redirection et A4T. Pour en savoir plus et obtenir d’autres informations importantes, voir [FAQ sur les offres de redirection (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t-faq/a4t-faq-redirect-offers.html?lang=fr).
 * Avant la version 0.9.6 d’at.js , lorsque l’API visiteur était présente sur la page et que le paramètre `visitorApiTimeout` était trop agressif, [!DNL Target] ne pouvions pas dans une situation où aucune donnée ECID n’était envoyée dans la requête [!DNL Target]. Il pouvait en résulter certains problèmes, par exemple des accès désassemblés dans [!DNL Analytics] lors de l’utilisation d’A4T.
 
   Ce comportement a été modifié dans la version 0.9.6 d’at.js. Même si la `visitorApiTimeout` est définie sur 1 ms, [!DNL Target] tenterez de collecter les données de SDID, de serveurs de suivi et d’ID de client et de les envoyer dans la requête [!DNL Target].
@@ -583,7 +583,7 @@ at.js contient les composants qui étaient inclus dans target.js. Il n’y a don
 Lors de l’implémentation de la bibliothèque at.js, souvenez-vous des points suivants :
 
 * Les versions d’Internet Explorer antérieures à la version 8 ne sont pas prises en charge.
-* L’implémentation asynchrone signifie que les intégrations héritées telles que le plug-in [!UICONTROL Test&Target to SiteCatalyst] peuvent ne pas fonctionner.
+* L’implémentation asynchrone signifie que les intégrations héritées telles que le plug-in [!UICONTROL Test&amp;Target à SiteCatalyst] peuvent ne pas fonctionner.
 * Les modules externes [!DNL Target] qui référencent des objets et des méthodes mbox.js ne sont pas pris en charge.
 * Tous les appels à [!DNL Target] sont effectués via XMLHTTPRequest et le contenu est renvoyé via JSON.
 

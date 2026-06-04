@@ -19,8 +19,8 @@ topic_v2:
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 2981
-ht-degree: 66%
+source-wordcount: 2994
+ht-degree: 64%
 
 ---
 
@@ -61,9 +61,9 @@ Les sections suivantes décrivent la séquence d’actions pour les nouveaux vis
 1. Si la fonction de création automatique de mbox globale est activée, la bibliothèque JavaScript de [!DNL Target] :
 
    * instancie l’objet visiteur ;
-   * La bibliothèque [!DNL Target] tente de récupérer les données de l’identifiant visiteur Experience Cloud.
+   * La bibliothèque [!DNL Target] tente de récupérer les données d’identifiant visiteur Experience Cloud.
    * Comme il s’agit d’un nouveau visiteur, l’API visiteur déclenche une requête inter-domaines sur demdex.net.
-   * Une fois les données d’identifiant visiteur Experience Cloud récupérées, une requête de [!DNL Target] est déclenchée.
+   * Une fois les données d’identifiant visiteur Experience Cloud récupérées, une requête à [!DNL Target] est déclenchée.
 
 ### Visiteurs récurrents
 
@@ -72,13 +72,13 @@ Les sections suivantes décrivent la séquence d’actions pour les nouveaux vis
 1. Si la fonction de création automatique de mbox globale est activée, la bibliothèque JavaScript de [!DNL Target] :
 
    * instancie l’objet visiteur ;
-   * La bibliothèque [!DNL Target] tente de récupérer les données de l’identifiant visiteur Experience Cloud.
+   * La bibliothèque [!DNL Target] tente de récupérer les données d’identifiant visiteur Experience Cloud.
    * l’API visiteur récupère les données du cookies ;
-   * Une fois les données d’identifiant visiteur Experience Cloud récupérées, une requête de [!DNL Target] est déclenchée.
+   * Une fois les données d’identifiant visiteur Experience Cloud récupérées, une requête à [!DNL Target] est déclenchée.
 
 >[!NOTE]
 >
->Pour les nouveaux visiteurs, lorsque l’API visiteur est présente, [!DNL Target] doit se connecter plusieurs fois pour s’assurer que les requêtes [!DNL Target] contiennent les données de l’identifiant visiteur Experience Cloud. Pour les visiteurs réguliers, [!DNL Target] se connecte uniquement à [!DNL Target] pour récupérer le contenu personnalisé.
+>Pour les nouveaux visiteurs, si l’API visiteur est présente, [!DNL Target] devez se connecter plusieurs fois pour s’assurer que les requêtes [!DNL Target] contiennent les données d’identifiant visiteur Experience Cloud. Pour les visiteurs réguliers, [!DNL Target] se connecte uniquement à [!DNL Target] pour récupérer le contenu personnalisé.
 
 ## Pourquoi les temps de réponse semblent-ils plus lents après la mise à niveau d’une version précédente d’at.js vers la version 1.0.0 ?
 
@@ -123,7 +123,7 @@ Le chargement d’at.js de manière asynchrone est un excellent moyen d’évite
 
 Vous pouvez éviter le scintillement à l’aide d’un extrait de code de masquage préalable qui masque la page (ou les parties spécifiées), puis la révèle après le chargement d’at.js et de la requête globale. Vous devez ajouter le fragment de code avant le chargement d’at.js.
 
-Si vous déployez at.js par le biais d’une implémentation [!UICONTROL Adobe Experience Platform] asynchrone, assurez-vous d’inclure le fragment de code de masquage préalable directement sur vos pages, avant le code intégré d’implémentation de [!DNL Target] avec [!UICONTROL Adobe Experience Platform].
+Si vous déployez at.js par le biais d’une implémentation  asynchrone, veillez à inclure le fragment de code de masquage préalable directement sur vos pages, avant le code intégré Implémenter [!DNL Target] à l’aide de [!UICONTROL Adobe Experience Platform].
 
 Si vous déployez at.js par le biais d’une implémentation synchrone de la gestion dynamique des balises, le fragment de code prémasqué peut être ajouté au moyen d’une règle de chargement de page déclenchée en haut de la page.
 
@@ -159,7 +159,7 @@ Non, si le suivi inter-domaines est défini sur x-uniquement et que les cookies 
 
 Pour prendre en charge les visiteurs Safari, il est préférable d’avoir un X-Domain « désactivé » (définit uniquement un cookie propriétaire) ou « activé » (définit uniquement un cookie propriétaire sur Safari, ainsi que des cookies propriétaires et tiers sur les autres navigateurs).
 
-## Puis-je utiliser le [!UICONTROL Visual Experience Composer] Target (VEC) dans mes applications monopages ?
+## Puis-je utiliser le compositeur d’expérience visuelle [!UICONTROL VEC] de Target dans mes applications monopages ?
 
 Oui, vous pouvez utiliser le VEC pour votre SPA si vous utilisez at.js 2.x. Pour plus d’informations, voir [&#x200B; Compositeur d’expérience visuelle monopage (SPA)](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html?lang=fr).
 

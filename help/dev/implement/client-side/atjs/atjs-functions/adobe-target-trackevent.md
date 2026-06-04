@@ -17,8 +17,8 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 324
-ht-degree: 58%
+source-wordcount: 336
+ht-degree: 56%
 
 ---
 
@@ -32,7 +32,7 @@ Voici les détails de l’API :
 
 | Clé | Type | Requis | Description |
 |--- |--- |--- |--- |
-| mbox | Chaîne | Oui | Nom de mbox<P>**Remarque** : si un appel [!UICONTROL trackEvent()] est déclenché avec un nom de mbox déjà déclenché sur la page, le SDID de [!UICONTROL trackEvent()] est réinitialisé et est différent des appels [!DNL Target] sur la page. Cependant, le déclenchement d’un appel [!UICONTROL trackEvent()] avec un nom de mbox différent maintient le SDID de l’appel [!UICONTROL trackEvent()] cohérent avec les appels [!UICONTROL Page Load Request]/[!UICONTROL triggerView()] sur la page. |
+| mbox | Chaîne | Oui | Nom de mbox<P>**Remarque** : si un appel [!UICONTROL trackEvent()] est déclenché avec un nom de mbox déjà déclenché sur la page, le SDID de [!UICONTROL trackEvent()] est réinitialisé et sera différent des appels [!DNL Target] sur la page. Cependant, le déclenchement d’un appel [!UICONTROL trackEvent()] avec un nom de mbox différent maintient le SDID de l’appel [!UICONTROL trackEvent()] cohérent avec les appels [!UICONTROL Page Load Request]/[!UICONTROL triggerView()] sur la page. |
 | selector | Chaîne | Non | Sélecteurs CSS utilisés pour rechercher les éléments HTML. Les écouteurs d’événement seront associés aux éléments trouvés. |
 | type | Chaîne | Non | Représente un type d’événement enregistré. Il peut s’agir d’événements HTML connus (click, mousedown, etc.) et d’événements HTML personnalisés. |
 | preventDefault | Booléen | Non | Indique si `[!UICONTROL event.preventDefault()]` () doit être utilisé dans le rappel des détecteurs d’événements. La valeur par défaut est false.<P>**Remarque** : seuls `[!UICONTROL form[submit]]` et `a[click]` sont pris en charge. D’autres scénarios ne sont pas pris en charge pour des raisons de complexité et parce que le nombre de scénarios possibles est trop élevé. |

@@ -13,13 +13,13 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 52
+source-wordcount: 57
 ht-degree: 0%
 
 ---
 
 # API ADOBE ADMIN CONSOLE
 
-Gérez les utilisateurs et les droits des produits par le biais des [!UICONTROL Adobe User Management] et des [!UICONTROL User Sync API].
+Gérez les utilisateurs et les droits sur les produits par le biais des API [!UICONTROL User Management] et [!UICONTROL User Sync d]Adobe.
 
 Pour plus d’informations, consultez [Gestion des utilisateurs et des droits sur les produits, via l’API](https://developer.adobe.com/umapi/){target=_blank} sur le site web *Adobe Developer*.

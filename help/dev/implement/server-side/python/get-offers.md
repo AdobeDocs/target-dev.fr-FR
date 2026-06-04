@@ -12,7 +12,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 357
+source-wordcount: 366
 ht-degree: 12%
 
 ---
@@ -53,7 +53,7 @@ Renvoie un `TargetDeliveryResponse` s’il est appelé de manière synchrone (pa
 
 | Nom | Type | Description |
 | --- | --- | --- |
-| réponse | DeliveryResponse | Conforme à la réponse [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) |
+| réponse | DeliveryResponse | Conforme à la réponse [[!UICONTROL API de diffusion Target]](/help/dev/implement/delivery-api/overview.md) |
 | target_cookie | dictionnaire | cookie [!DNL Target] |
 | target_location_hint_cookie | dictionnaire | [!DNL Target] cookie d’indice d’emplacement |
 | analytics_details | list[AnalyticsResponse] | Payload Analytics, en cas d’utilisation d’Analytics côté client |
@@ -74,8 +74,8 @@ L’objet `meta` utilisé pour indiquer le statut de la réponse cible possède 
 | Nom | Type | Description |
 | --- | --- | --- |
 | decisioning_method | str | La méthode de prise de décision utilisée : sur l’appareil ou côté serveur |
-| remote_mboxes | list`[str]` | Lorsque la méthode de prise de décision est `on-device`, un tableau de noms de mbox qui n’ont pas pu être entièrement décidés sur l’appareil est fourni. En d’autres termes, une requête [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) est nécessaire. |
-| remote_views | list`[str]` | Lorsque la méthode de prise de décision est sur l’appareil, un tableau de noms de vue qui n’ont pas pu être entièrement décidés sur l’appareil est fourni. En d’autres termes, une requête [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) est nécessaire. |
+| remote_mboxes | list`[str]` | Lorsque la méthode de prise de décision est `on-device`, un tableau de noms de mbox qui n’ont pas pu être entièrement décidés sur l’appareil est fourni. En d’autres termes, une requête [[!UICONTROL API de diffusion Target]](/help/dev/implement/delivery-api/overview.md) est nécessaire. |
+| remote_views | list`[str]` | Lorsque la méthode de prise de décision est sur l’appareil, un tableau de noms de vue qui n’ont pas pu être entièrement décidés sur l’appareil est fourni. En d’autres termes, une requête [[!UICONTROL API de diffusion Target]](/help/dev/implement/delivery-api/overview.md) est nécessaire. |
 
 ## Exemple
 

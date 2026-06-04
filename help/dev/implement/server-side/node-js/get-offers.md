@@ -1,5 +1,5 @@
 ---
-title: Utiliser [!UICONTROL getOffers()] in [!DNL Adobe Target] lors de l’utilisation du SDK Node.js
+title: Utilisez [!UICONTROL getOffers()] in [!DNL Adobe Target] lors de l’utilisation du SDK Node.js.
 description: Découvrez comment utiliser [!UICONTROL getOffers()] pour exécuter une décision et récupérer une expérience depuis  [!DNL Adobe Target].
 feature: APIs/SDKs
 exl-id: 3c4125ea-68d4-405e-9b9a-5fa832743153
@@ -10,12 +10,12 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 326
-ht-degree: 21%
+source-wordcount: 342
+ht-degree: 20%
 
 ---
 
-# [!UICONTROL Get Offers] (Node.js)
+# [!UICONTROL Obtenir les offres] (Node.js)
 
 ## Description
 
@@ -40,7 +40,7 @@ L’objet `options` présente la structure suivante :
 | visitorCookie | Chaîne | Non | None | Cookie ECID (VisitorId) |
 | targetCookie | Chaîne | Non | None | cookie [!DNL Target] |
 | targetLocationHint | Chaîne | Non | None | [!DNL Target] l’indicateur d’emplacement |
-| consumerId | Chaîne | Non | None | assemblage de consumerIds for [!UICONTROL Analytics for Target] (A4T) |
+| consumerId | Chaîne | Non | None | assemblage de consumerIds pour [!UICONTROL &#x200B; Analytics for Target &#x200B;] (A4T) |
 | CustomerIds | Tableau | Non | None | ID de client au format compatible avec les VisitorId |
 | sessionId | Chaîne | Non | None | Utilisé pour lier plusieurs requêtes [!DNL Target] |
 | visiteur | Objet | Non | new VisitorId | Fournir une instance externe VisitorId |
@@ -51,8 +51,8 @@ L’objet `options` présente la structure suivante :
 
 | Nom | Type | Description |
 | --- | --- | --- |
-| events | Objet | [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) la demande |
-| réponse | Objet | [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) réponse |
+| events | Objet | Requête [[!UICONTROL API de diffusion Target]](/help/dev/implement/delivery-api/overview.md) |
+| réponse | Objet | Réponse [[!UICONTROL API de diffusion Target]](/help/dev/implement/delivery-api/overview.md) |
 | visitorState | Objet | Objet qui doit être transmis à l’API visiteur `getInstance()` |
 | targetCookie | Objet | cookie [!DNL Target] |
 | targetLocationHintCookie | Objet | [!DNL Target] cookie d’indice d’emplacement |
@@ -76,7 +76,7 @@ L’objet `status` utilisé pour indiquer le statut de la réponse cible possèd
 | --- | --- | --- |
 | status | Nombre | Code d’état HTTP |
 | message | Chaîne | Un message sur la réponse. Par exemple, il peut indiquer si la réponse a été décidée [sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md) ou côté serveur |
-| remoteMboxes | Tableau | Lorsque la méthode de prise de décision est `on-device`, un tableau de noms de mbox qui n’ont pas pu être entièrement décidés sur l’appareil est fourni. En d’autres termes, une requête [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) est nécessaire. |
+| remoteMboxes | Tableau | Lorsque la méthode de prise de décision est `on-device`, un tableau de noms de mbox qui n’ont pas pu être entièrement décidés sur l’appareil est fourni. En d’autres termes, une requête [[!UICONTROL API de diffusion Target]](/help/dev/implement/delivery-api/overview.md) est nécessaire. |
 
 ## Exemple
 

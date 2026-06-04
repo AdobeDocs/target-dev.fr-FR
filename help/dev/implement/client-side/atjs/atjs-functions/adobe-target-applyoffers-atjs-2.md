@@ -18,7 +18,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 820
+source-wordcount: 825
 ht-degree: 78%
 
 ---
@@ -82,7 +82,7 @@ Cette fonction vous permet d’appliquer plusieurs offres récupérées par `ado
 | réponse > exécuter > pageLoad > suivi | Objet contenant toutes les données de suivi pour la requête pageLoad. |
 | réponse > exécuter > pageLoad > analytics > charge | [!DNL Analytics] payload pour l’intégration côté client qui doit être envoyée à [!DNL Analytics] après l’application du contenu de chargement de la page. (Voir la section Campagnes compatibles avec A4T). |
 
-## Exemple d’appel [!UICONTROL applyOffers()]
+## Exemple d&#39;appel [!UICONTROL applyOffers()]
 
 ```javascript {line-numbers="true"}
 adobe.target.applyOffers({response:{

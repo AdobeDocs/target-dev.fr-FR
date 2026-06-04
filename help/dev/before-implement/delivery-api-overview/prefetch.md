@@ -1,6 +1,6 @@
 ---
 title: Prérécupération de l’API de diffusion Adobe Target
-description: Comment utiliser la prérécupération dans le [!UICONTROL Adobe Target Delivery API] ?
+description: Comment utiliser la prérécupération dans l’API de diffusion [!UICONTROL Adobe Target &#x200B;] ?
 keywords: API de diffusion
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
@@ -18,7 +18,7 @@ topic_v2:
   - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 548
+source-wordcount: 578
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Lors de l’utilisation de la prérécupération, il est important de connaître
 
 ## Prérécupération des mbox
 
-Les clients, tels que les applications mobiles et les serveurs, peuvent prérécupérer plusieurs mbox pour un visiteur donné au cours d’une session et les mettre en cache pour éviter plusieurs appels au [!UICONTROL Adobe Target Delivery API].
+Les clients, tels que les applications mobiles et les serveurs, peuvent prérécupérer plusieurs mbox pour un visiteur donné au cours d’une session et les mettre en cache pour éviter plusieurs appels à l’API de diffusion .
 
 ```shell shell-session
 curl -X POST \
@@ -132,9 +132,9 @@ Dans le champ `prefetch` , ajoutez une ou plusieurs `mboxes` que vous souhaitez 
 }
 ```
 
-Dans la réponse, vous voyez le champ `content` contenant l’expérience à afficher au visiteur pour une `mbox` particulière. Cette fonctionnalité est très utile lorsque vous la mettez en cache sur votre serveur. Ainsi, lorsqu’un visiteur interagit avec votre application web ou mobile au cours d’une session et visite une `mbox` sur une page particulière de votre application, l’expérience peut être diffusée à partir du cache au lieu d’effectuer un autre appel [!UICONTROL Adobe Target Delivery API]. Cependant, lorsqu’une expérience est diffusée au visiteur à partir du `mbox`, un `notification` est envoyé via un appel d’API de diffusion pour que la journalisation des impressions se produise. Cela est dû au fait que la réponse des appels `prefetch` est mise en cache, ce qui signifie que le visiteur n’a pas vu les expériences au moment où l’appel `prefetch` se produit. Pour en savoir plus sur le processus de `notification`, voir [Notifications](notifications.md).
+Dans la réponse, vous voyez le champ `content` contenant l’expérience à afficher au visiteur pour une `mbox` particulière. Cette méthode est très utile lorsque vous la mettez en cache sur votre serveur. Ainsi, lorsqu’un visiteur interagit avec votre application web ou mobile au cours d’une session et visite une `mbox` sur une page particulière de votre application, l’expérience peut être diffusée à partir du cache au lieu d’effectuer un autre appel de l’API de diffusion Adobe Target. Cependant, lorsqu’une expérience est diffusée au visiteur à partir du `mbox`, un `notification` est envoyé via un appel d’API de diffusion pour que la journalisation des impressions se produise. Cela est dû au fait que la réponse des appels `prefetch` est mise en cache, ce qui signifie que le visiteur n’a pas vu les expériences au moment où l’appel `prefetch` se produit. Pour en savoir plus sur le processus de `notification`, voir [Notifications](notifications.md).
 
-## Prérécupération des mbox avec des mesures `clickTrack` lors de l’utilisation de [!UICONTROL Analytics for Target] (A4T)
+## Prérécupération des mbox avec des mesures `clickTrack` lors de l’utilisation d’[!UICONTROL Analytics for Target] (A4T)
 
 [[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr){target=_blank} (A4T) est une intégration intersolutions qui vous permet de créer des activités basées sur des mesures de conversion [!DNL Analytics] et des segments d’audience.
 
@@ -181,7 +181,7 @@ Le fragment de code suivant est une réponse d’une prérécupération d’une 
 
 ## Prérécupération des vues
 
-Les vues prennent en charge les applications sur une seule page (SPA) et les applications mobiles de manière plus transparente. Les vues peuvent être considérées comme un groupe logique d’éléments visuels qui, ensemble, constituent une SPA ou une expérience mobile. Désormais, via l’API de diffusion, les activités [[!UICONTROL A/B Test]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=fr){target=_blank} et [[!UICONTROL Experience Targeting]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=fr){target=_blank} (X)T créées par le VEC avec des modifications sur [Vues pour SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) peuvent être prérécupérées.
+Les vues prennent en charge les applications sur une seule page (SPA) et les applications mobiles de manière plus transparente. Les vues peuvent être considérées comme un groupe logique d’éléments visuels qui, ensemble, constituent une SPA ou une expérience mobile. Désormais, grâce à l’API de diffusion, les activités [[!UICONTROL Test A/B]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=fr){target=_blank} et [[!UICONTROL Ciblage d’expérience]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=fr){target=_blank} (X)T créées par le VEC et comportant des modifications sur [Vues pour SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) peuvent être prérécupérées.
 
 ```shell  {line-numbers="true"}
 curl -X POST \
@@ -211,7 +211,7 @@ curl -X POST \
 }'
 ```
 
-L’exemple d’appel ci-dessus prérécupère toutes les vues créées par le biais du VEC SPA pour que les activités [!UICONTROL A/B Test] et XT s’affichent pour le `channel` web. Notez que l’appel prérécupère toutes les vues des activités [!UICONTROL A/B Test] ou XT pour lesquelles un visiteur avec `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131` qui visite le `url`:`https://target.enablementadobe.com/react/demo/#/` est éligible.
+L’exemple d’appel ci-dessus prérécupère toutes les vues créées par le biais du VEC SPA pour les activités [!UICONTROL Test A/B] et XT à afficher pour le `channel` web. Notez que l’appel prérécupère toutes les vues des activités [!UICONTROL Test A/B] ou XT pour lesquelles un visiteur avec `tntId`:`84e8d0e211054f18af365d65f45e902b.28_131` qui visite le `url`:`https://target.enablementadobe.com/react/demo/#/` est éligible.
 
 ```JSON  {line-numbers="true"}
 {

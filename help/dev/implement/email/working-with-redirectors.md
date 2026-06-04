@@ -19,8 +19,8 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 689
-ht-degree: 63%
+source-wordcount: 697
+ht-degree: 62%
 
 ---
 
@@ -57,7 +57,7 @@ Pour pouvoir utiliser un redirecteur, vous devez le créer.
 
    * Où `yourclientcode` est le code client de votre société. Le code client de votre entreprise est en minuscules et ne comporte pas de caractères spéciaux.
 
-     Votre code client est disponible en haut de la page **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** de l’interface [!DNL Target].
+     Votre code client est disponible en haut de la page **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]** de l’interface [!DNL Target].
 
    * `redirectorlink_456` est le nom de la mbox Redirecteur qui s’affiche dans votre compte pour être utilisée dans des campagnes et des tests.
 
@@ -107,7 +107,7 @@ Utilisez un redirecteur pour transmettre les coûts par clic.
 
 >[!NOTE]
 >
->Il est recommandé de déterminer la valeur de coût à l’aide de la mesure d’engagement **[!UICONTROL Score per visit]**.
+>Une bonne pratique consiste à déterminer la valeur de coût à l’aide de la mesure d’engagement **[!UICONTROL Score par visite]**.
 
 Ajoutez `&mboxPageValue=-value` à l’URL. Nous attirons votre attention sur la valeur négative.
 
@@ -124,7 +124,7 @@ Utilisez un redirecteur pour transmettre les recettes par clic.
 
 >[!NOTE]
 >
->Une bonne pratique consiste à déterminer la valeur du chiffre d’affaires à l’aide de la mesure d’engagement **[!UICONTROL Score per visit]**.
+>Une bonne pratique consiste à déterminer la valeur du chiffre d’affaires à l’aide de la mesure d’engagement **[!UICONTROL Score par visite]**.
 
 Ajoutez `&mboxPageValue=value` à l’URL.
 

@@ -16,7 +16,7 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1316
+source-wordcount: 1321
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 L’API Modèles, également appelée API de Place sur la liste bloquée, permet aux utilisateurs d’afficher et de gérer la liste des fonctionnalités utilisées dans les modèles de machine learning pour les activités [!UICONTROL Automated Personalization] (AP) et [!DNL Auto-Target] (AT). Si un utilisateur souhaite exclure une fonctionnalité de l’utilisation des modèles pour les activités AP ou AT, il peut utiliser l’API Modèles pour ajouter cette fonctionnalité au « place sur la liste bloquée ».
 
-Un **[!UICONTROL blocklist]** définit l’ensemble des fonctionnalités qui seront exclues par [!DNL Adobe Target] de ses modèles de machine learning. Pour plus d’informations sur les fonctionnalités de , consultez [Données utilisées par les algorithmes  [!DNL Target]  machine learning](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html?lang=fr).
+Une **[!UICONTROL liste bloquée]** définit l’ensemble des fonctionnalités qui seront exclues par [!DNL Adobe Target] de ses modèles de machine learning. Pour plus d’informations sur les fonctionnalités de , consultez [Données utilisées par les algorithmes  [!DNL Target]  machine learning](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/ap-data.html?lang=fr).
 
 Les Places sur la liste bloquée peuvent être définies par activité (niveau d’activité) ou pour toutes les activités d’un compte [!DNL Target] (niveau global).
 
@@ -113,7 +113,7 @@ Dans l’exemple illustré ici, l’utilisateur vérifie la liste des fonctionna
 
 Le **[!UICONTROL externalName]** est un nom convivial pour une fonctionnalité. Elle est créée par [!DNL Target], et il est possible que cette valeur change au fil du temps. Les utilisateurs peuvent afficher ces noms conviviaux dans le rapport Personalization Insights [&#128279;](https://experienceleague.adobe.com/docs/target/using/reports/insights/personalization-insights-reports.html?lang=fr).
 
-L’**[!UICONTROL internalName]** est l’identifiant réel de la fonction. Il est également créé par [!DNL Target], mais il ne peut pas être modifié. Il s’agit de la valeur que vous devez référencer pour identifier la ou les fonctionnalités que vous souhaitez placer sur la liste bloquée.
+Le **[!UICONTROL internalName]** est l’identifiant réel de la fonctionnalité. Il est également créé par [!DNL Target], mais il ne peut pas être modifié. Il s’agit de la valeur que vous devez référencer pour identifier la ou les fonctionnalités que vous souhaitez placer sur la liste bloquée.
 
 Notez que pour que la liste des fonctionnalités soit renseignée avec des valeurs (c’est-à-dire pour qu’elle soit non nulle), une activité :
 
@@ -154,7 +154,7 @@ Dans l’exemple illustré ici, l’utilisateur vérifie la liste des fonctionna
 
 ## Étape 3 : ajout de fonctionnalités à la place sur la liste bloquée de l&#39;activité {#step3}
 
-Pour ajouter des fonctionnalités à la place sur la liste bloquée, remplacez la requête de GET par PUT, puis modifiez le corps de la requête pour spécifier la `blockedFeatureSources` ou le `blockedFeatures` selon vos besoins.
+Pour ajouter des fonctionnalités à la place sur la liste bloquée, remplacez la requête GET par PUT et modifiez le corps de la requête pour spécifier la `blockedFeatureSources` ou le `blockedFeatures` selon vos besoins.
 
 * Le corps de la requête nécessite `blockedFeatures` ou `blockedFeatureSources`. Les deux peuvent être inclus.
 * Renseignez les `blockedFeatures` avec des valeurs identifiées à partir de `internalName`. Voir [Étape 1](#step1).
@@ -212,7 +212,7 @@ Dans l’exemple illustré ici, l’utilisateur bloque deux fonctionnalités, `S
 
 ![Étape 3](assets/models-api-step-3.png)
 
-Notez qu’après avoir placé sur la liste bloquée une fonctionnalité, il est recommandé de vérifier la place sur la liste bloquée mise à jour en effectuant à nouveau [Étape 2](#step2) (GET la liste bloquée). Vérifiez que les résultats s’affichent comme prévu (vérifiez que les résultats incluent les fonctionnalités ajoutées à partir de la dernière demande PUT).
+Notez qu’après avoir placé sur la liste bloquée une fonctionnalité, il est recommandé de vérifier la place sur la liste bloquée mise à jour en effectuant à nouveau [Étape 2](#step2) (GET la liste bloquée). Vérifiez que les résultats s’affichent comme prévu (vérifiez que les résultats incluent les fonctionnalités ajoutées à partir de la dernière requête PUT).
 
 ## Étape 4 : (Facultatif) Débloquer {#step4}
 
@@ -246,7 +246,7 @@ Dans l’exemple illustré ici, l’utilisateur efface son pour l’activité do
 
 ![Étape 4](assets/models-api-step-4.png)
 
-Comme toujours, après avoir modifié la place sur la liste bloquée, il est recommandé d’effectuer à nouveau l’[étape 2](#step2) (GET la liste bloquée pour vérifier que la liste inclut les fonctionnalités comme prévu). Dans l’exemple illustré ici, l’utilisateur vérifie que sa liste bloquée est maintenant vide.
+Comme toujours, après avoir modifié la place sur la liste bloquée, il est recommandé d’effectuer à nouveau l’[étape 2](#step2) (OBTENEZ la liste bloquée pour vérifier que la liste inclut les fonctionnalités comme prévu). Dans l’exemple illustré ici, l’utilisateur vérifie que sa liste bloquée est maintenant vide.
 
 ![Étape 4b](assets/models-api-step-4b.png)
 

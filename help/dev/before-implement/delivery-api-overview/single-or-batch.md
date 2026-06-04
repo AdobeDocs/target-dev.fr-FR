@@ -1,6 +1,6 @@
 ---
 title: API de diffusion Adobe Target Diffusion unique ou par lots
-description: Comment utiliser [!UICONTROL Adobe Target Delivery API] appels de diffusion unique ou par lots ?
+description: Comment utiliser l’[!UICONTROL API de diffusion &#x200B;] les appels de diffusion uniques ou par lots ?
 keywords: API de diffusion
 exl-id: 525cd1f2-616a-486c-8f49-8117615500bb
 feature: APIs/SDKs
@@ -11,20 +11,20 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 448
+source-wordcount: 460
 ht-degree: 0%
 
 ---
 
 # Diffusion unique ou par lots
 
-Le [!UICONTROL Adobe Target Delivery API] prend en charge un appel de diffusion unique ou par lots. Vous pouvez effectuer une requête de serveur pour du contenu pour une ou plusieurs mbox.
+L’API de diffusion  prend en charge un appel de diffusion unique ou par lots. Vous pouvez effectuer une requête de serveur pour du contenu pour une ou plusieurs mbox.
 
 Évaluez les coûts de performance lorsque vous décidez d’effectuer un seul appel par rapport à un appel par lots. Si vous connaissez tout le contenu à afficher pour un utilisateur, la bonne pratique consiste à récupérer le contenu de toutes les mbox avec un seul appel de diffusion par lots, afin d’éviter d’effectuer plusieurs appels de diffusion uniques.
 
 ## Appel de diffusion unique
 
-Vous pouvez récupérer une expérience à afficher à l’utilisateur pour une mbox via l’[!UICONTROL Adobe Target Delivery API] . Notez que si vous effectuez un seul appel de diffusion, vous devez lancer un autre appel au serveur pour récupérer du contenu supplémentaire pour une mbox pour un utilisateur. Cela peut devenir très coûteux au fil du temps. Veillez donc à évaluer votre approche lors de l’utilisation de l’appel API de diffusion unique.
+Vous pouvez récupérer une expérience à afficher à l’utilisateur pour une mbox via l’API de diffusion . Notez que si vous effectuez un seul appel de diffusion, vous devez lancer un autre appel au serveur pour récupérer du contenu supplémentaire pour une mbox pour un utilisateur. Cela peut devenir très coûteux au fil du temps. Veillez donc à évaluer votre approche lors de l’utilisation de l’appel API de diffusion unique.
 
 ```
 curl -X POST \

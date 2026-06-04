@@ -17,8 +17,8 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 347
-ht-degree: 33%
+source-wordcount: 363
+ht-degree: 31%
 
 ---
 
@@ -32,12 +32,12 @@ Pour plus de sécurité, vous pouvez exiger que l’appel de l’API de mise à 
 
 **Pour exiger une authentification et générer un jeton d’accès à l’aide de l’interface utilisateur [!DNL Target] :**
 
-1. Cliquez sur **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**.
-1. Sous **[!UICONTROL Profile API]** diapositive, basculez le bouton **[!UICONTROL Require Authentication]** vers la position activée ou désactivée.
+1. Cliquez sur **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]**.
+1. Sous **[!UICONTROL API Profile]** faites glisser le bouton **[!UICONTROL Exiger une authentification]** vers la position activée ou désactivée.
 
    ![image alternative](assets/profile_api_settings.png)
 
-1. (Conditionnel) Si vous avez activé l’exigence d’authentification, cliquez sur **[!UICONTROL Generate New Profile Authentication Token]**.
+1. (Conditionnel) Si vous avez activé l’exigence d’authentification, cliquez sur **[!UICONTROL Générer un nouveau jeton d’authentification de profil]**.
 
    ![image alternative](assets/profile_api_settings_2.png)
 
@@ -59,7 +59,7 @@ Vous pouvez également générer un jeton d’authentification de profil via l�
 
 1. Copiez le jeton et incluez-le dans l’en-tête de la requête au format : « Authorization » : « Porteur ».
 
-1. Cliquez sur **[!UICONTROL Generate New Profile Authentication Token]** pour régénérer le jeton si nécessaire.
+1. Cliquez sur **[!UICONTROL Générer un nouveau jeton d’authentification de profil]** pour régénérer le jeton si nécessaire.
 
 >[!WARNING]
 >

@@ -14,7 +14,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 789
+source-wordcount: 797
 ht-degree: 9%
 
 ---
@@ -81,11 +81,11 @@ L’exemple d’appel ci-dessus montre qu’un `tntId` n’a pas besoin d’êtr
 }
 ```
 
-La `tntId` générée est `10abf6304b2714215b1fd39a870f01afc.28_20`. Notez que cette `tntId` doit être utilisée lors de l’appel de la [!UICONTROL Adobe Target Delivery API] pour le même utilisateur entre les sessions.
+La `tntId` générée est `10abf6304b2714215b1fd39a870f01afc.28_20`. Notez que ce `tntId` doit être utilisé lors de l’appel de l’API de diffusion [!UICONTROL Adobe Target] pour le même utilisateur entre les sessions.
 
 ## Identifiant visiteur Marketing Cloud
 
-Le `marketingCloudVisitorId` est un identifiant universel et persistant qui identifie vos visiteurs dans toutes les solutions d’Experience Cloud. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud telles qu’Adobe Target, Adobe Analytics ou Adobe Audience Manager. Notez que la `marketingCloudVisitorId` est requise lors de l’utilisation et de l’intégration d’Analytics et d’Audience Manager.
+Le `marketingCloudVisitorId` est un identifiant universel et persistant qui identifie vos visiteurs dans toutes les solutions Experience Cloud. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud telles qu’Adobe Target, Adobe Analytics ou Adobe Audience Manager. Notez que la `marketingCloudVisitorId` est requise lors de l’utilisation et de l’intégration d’Analytics et d’Audience Manager.
 
 ```
 curl -X POST \
@@ -124,7 +124,7 @@ L’exemple d’appel ci-dessus montre comment un `marketingCloudVisitorId` réc
 
 ## ID tiers
 
-Si votre organisation utilise un identifiant pour identifier votre visiteur, vous pouvez utiliser `thirdPartyID` pour diffuser du contenu. Cependant, vous devez fournir la `thirdPartyID` pour chaque appel [!UICONTROL Adobe Target Delivery API].
+Si votre organisation utilise un identifiant pour identifier votre visiteur, vous pouvez utiliser `thirdPartyID` pour diffuser du contenu. Cependant, vous devez fournir le `thirdPartyID` pour chaque appel de l’API de diffusion [!UICONTROL Adobe Target] que vous effectuez.
 
 ```
 curl -X POST \

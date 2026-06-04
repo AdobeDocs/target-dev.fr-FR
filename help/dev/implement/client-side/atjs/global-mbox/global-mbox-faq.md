@@ -19,8 +19,8 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 309
-ht-degree: 32%
+source-wordcount: 316
+ht-degree: 31%
 
 ---
 
@@ -34,7 +34,7 @@ Une seule mbox globale est prise en charge pour l’ensemble du compte.
 
 Vous pouvez limiter l’exécution des activités en ajoutant des règles d’URL à ces dernières. Pour plus d’informations, voir [Inclure la même expérience sur des pages similaires](https://experienceleague.adobe.com/docs/target/using/experiences/vec/temtest.html?lang=fr).
 
-Vous pouvez également transmettre un paramètre sur la page à l’aide de [targetPageParams](/help/dev/implement/client-side/atjs/atjs-functions/targetpageparams.md), puis sélectionner ces paramètres dans la section « Configurer l’URL » du [!UICONTROL Visual Experience Composer] (VEC) ou en ajoutant les paramètres en tant que « affinements » dans le [!UICONTROL Form-Based Experience Composer].
+Vous pouvez également transmettre un paramètre sur la page à l’aide de [targetPageParams](/help/dev/implement/client-side/atjs/atjs-functions/targetpageparams.md), puis sélectionner ces paramètres dans la section « Configurer l’URL » du [!UICONTROL Compositeur d’expérience visuelle] (VEC) ou en ajoutant les paramètres en tant que « affinements » dans le [!UICONTROL Compositeur d’expérience d’après les formulaires].
 
 ## Comment transmettre les données de chiffre d’affaires sur une mbox globale [!DNL Target] ?
 

@@ -10,7 +10,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 102
+source-wordcount: 84
 ht-degree: 0%
 
 ---
@@ -39,5 +39,5 @@ client = TargetClient.create({
 ```
 
 Notez que cela ne fonctionne que pour les versions de nœud 18.2+, dans lesquelles `undici.fetch` est la `fetch` par défaut pour le nœud .
-Consultez le référentiel d’exemples [Node SDK).](https://github.com/adobe/target-nodejs-sdk-samples/tree/master/proxy-configuration)
+Consultez le référentiel d’exemples [Node SDK](https://github.com/adobe/target-nodejs-sdk-samples/tree/master/proxy-configuration)
 pour obtenir des exemples de configuration du proxy pour des versions plus anciennes du nœud et plus d’informations.

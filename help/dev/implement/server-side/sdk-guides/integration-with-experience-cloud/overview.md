@@ -1,6 +1,6 @@
 ---
 title: Présentation de l [!DNL Experience Cloud] intégration à
-description: 'Les SDK côté serveur dAdobe prennent en charge une intégration transparente à Adobe Analytics et Adobe Audience Manager afin que vous puissiez exploiter la puissance de Adobe Experience Cloud. [!DNL Target] '
+description: 'Les SDK côté serveur dAdobe prennent en charge une intégration transparente à Adobe Analytics et Adobe Audience Manager afin que vous puissiez tirer parti de la puissance d’Adobe Experience Cloud. [!DNL Target] '
 exl-id: 3645114e-320f-4cee-93ec-d75ae25d2c9b
 feature: Implement Server-side
 TQID: https://experienceleague.adobe.com/dKR2224IPWCqivRDs-B--Q6eaqo1VgNLTZsoozSsPEg

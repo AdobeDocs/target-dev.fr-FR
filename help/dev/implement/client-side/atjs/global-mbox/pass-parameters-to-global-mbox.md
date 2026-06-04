@@ -1,6 +1,6 @@
 ---
 keywords: paramètres mbox globaux, targetPageParams, chaîne de requête, tableau, json, dtm
-description: Découvrez comment utiliser la fonction [!UICONTROL targetPageParams] pour transmettre des informations supplémentaires de ciblage ou de contexte dans la mbox  [!DNL Adobe Target] .
+description: Découvrez comment utiliser la fonction [!UICONTROL targetPageParams] pour transmettre des informations de ciblage ou de contexte supplémentaires dans la mbox  [!DNL Adobe Target] .
 title: Comment transmettre des paramètres à une mbox globale ?
 feature: at.js
 exl-id: 2a6be3e4-a618-4812-9e87-b01789705c40
@@ -17,8 +17,8 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 377
-ht-degree: 61%
+source-wordcount: 378
+ht-degree: 60%
 
 ---
 

@@ -13,7 +13,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1172
+source-wordcount: 1173
 ht-degree: 4%
 
 ---
@@ -175,7 +175,7 @@ Dans ce scénario, [!DNL Adobe Target] générera un `tntId` puisqu’il n’a p
 
 ## Identifiant visiteur Marketing Cloud (marketingCloudVisitorId)
 
-Le `marketingCloudVisitorId` est un identifiant universel et persistant qui identifie vos visiteurs dans toutes les solutions de Adobe Experience Cloud. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud, notamment [!DNL Adobe Target], Adobe Analytics et Adobe Audience Manager. Notez que la `marketingCloudVisitorId` est requise lors de l’intégration de [!DNL Target] à [!DNL Adobe Analytics] et [!DNL Adobe Audience Manager].
+Le `marketingCloudVisitorId` est un identifiant universel et persistant qui identifie vos visiteurs dans toutes les solutions d’Adobe Experience Cloud. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud, notamment [!DNL Adobe Target], Adobe Analytics et Adobe Audience Manager. Notez que la `marketingCloudVisitorId` est requise lors de l’intégration de [!DNL Target] à [!DNL Adobe Analytics] et [!DNL Adobe Audience Manager].
 
 L’exemple d’appel suivant montre comment un `marketingCloudVisitorId` récupéré à partir du service Experience Cloud ID est transmis à [!DNL Target].
 

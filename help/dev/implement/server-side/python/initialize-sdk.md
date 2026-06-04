@@ -1,6 +1,6 @@
 ---
 title: Initialisez le SDK Python à l’aide de la méthode create
-description: Découvrez comment utiliser la méthode create pour initialiser le SDK Python et instancier le [!UICONTROL TargetClient] pour effectuer des appels vers  [!DNL Adobe Target]  expériences et des expériences personnalisées.
+description: Découvrez comment utiliser la méthode create pour initialiser le SDK Python et instancier le [!UICONTROL TargetClient] pour effectuer des appels vers [!DNL Adobe Target] pour des expériences et des expériences personnalisées.
 feature: APIs/SDKs
 exl-id: 3e231e8e-696d-45c7-b733-79bf99da5bec
 TQID: https://experienceleague.adobe.com/la4hiAeSKSTgV7-WPLuW-MudsVJAm3qbq1vT7rnzymQ
@@ -10,15 +10,15 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 276
-ht-degree: 17%
+source-wordcount: 287
+ht-degree: 16%
 
 ---
 
 # Initialiser le SDK Python
 
 Description
-Utilisez la méthode `create` afin d’initialiser le SDK Python et d’instancier le [!UICONTROL Target Client] pour effectuer des appels vers [!DNL Adobe Target] pour des expériences et des expériences personnalisées.
+Utilisez la méthode `create` afin d’initialiser le SDK Python et d’instancier le [!UICONTROL client Target] pour effectuer des appels vers [!DNL Adobe Target] pour des expériences et des expériences personnalisées.
 
 ## Méthode
 
@@ -34,8 +34,8 @@ TargetClient.create(options)
 
 | Nom | Type | Requis | Par défaut | Description |
 | --- | --- | --- | --- | --- |
-| client | str | Oui | None | [!UICONTROL Adobe Target client ID] |
-| organization_id | str | Oui | None | [!UICONTROL Experience Cloud Organization ID] |
+| client | str | Oui | None | [!UICONTROL Identifiant client &#x200B;] |
+| organization_id | str | Oui | None | [!UICONTROL ID d’organisation Experience Cloud] |
 | timeout | int | Non | 3000 | Timeout en millisecondes |
 | server_domain | str | Non | `client.tt.omtrdc.net` | Remplace le nom d’hôte par défaut |
 | sécuriser | booléen | Non | true | Annuler l’application du schéma HTTP |

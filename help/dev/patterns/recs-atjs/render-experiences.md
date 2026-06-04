@@ -20,7 +20,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1060
+source-wordcount: 1144
 ht-degree: 3%
 
 ---
@@ -39,7 +39,7 @@ Suivez les étapes du diagramme *Rendu d’expériences* pour vous assurer que t
 
 ## Diagramme d’expériences de rendu {#diagram}
 
-La gestion automatique du scintillement prête à l’emploi disponible avec at.js n’a de sens que lorsque les [!UICONTROL Automatic Page Load Request] sont activées. Cette option masque l’ensemble du corps d’HTML lors de la récupération des expériences à partir de [!DNL Target]. Dans ce cas, il est de votre responsabilité de gérer le scintillement. Recherchez des modèles d’implémentation disponibles pour la gestion du scintillement à titre indicatif.
+La gestion automatique du scintillement prête à l’emploi disponible avec at.js n’a de sens que lorsque la fonction [!UICONTROL Demande de chargement automatique de page] est activée. Cette option masque l’ensemble du corps d’HTML lors de la récupération des expériences à partir de [!DNL Target]. Dans ce cas, il est de votre responsabilité de gérer le scintillement. Recherchez des modèles d’implémentation disponibles pour la gestion du scintillement à titre indicatif.
 
 >[!NOTE]
 >
@@ -94,9 +94,9 @@ Faites des recommandations en fonction du contenu du panier de l’utilisateur.
 
 **Critères disponibles**
 
-* [!UICONTROL People Who Viewed These, Viewed Those]
-* [!UICONTROL People Who Viewed These, Bought Those]
-* [!UICONTROL People Who Bought These, Bought Those]
+* [!UICONTROL Les personnes qui ont consulté ces , ont consulté ces &#x200B;]
+* [!UICONTROL Les Personnes Qui Les Ont Consultés Les Ont Achetés]
+* [!UICONTROL Les gens qui ont acheté ceci, ont acheté cela]
 
 **Paramètres d’entité requis**
 
@@ -118,13 +118,13 @@ Faites des recommandations en fonction de la popularité globale d’un élémen
 
 **Critères disponibles**
 
-* [!UICONTROL Most Viewed Across the Site]
-* [!UICONTROL Most Viewed by Category]
-* [!UICONTROL Most Viewed by Item Attribute]
-* [!UICONTROL Top Sellers Across the Site]
-* [!UICONTROL Top Sellers by Category]
-* [!UICONTROL Top Sellers by Item Attribute]
-* [!UICONTROL Top by Analytics Metric]
+* [!UICONTROL Les plus consultés sur le site]
+* [!UICONTROL Les plus consultés par catégorie]
+* [!UICONTROL Éléments les plus consultés par attribut d’élément]
+* [!UICONTROL Meilleurs vendeurs sur le site]
+* [!UICONTROL Meilleurs vendeurs par catégorie]
+* [!UICONTROL Meilleurs vendeurs par attribut d&#39;article]
+* [!UICONTROL En tête par mesure Analytics]
 
 **Paramètres d’entité requis**
 
@@ -147,10 +147,10 @@ Faites des recommandations basées sur la recherche d’éléments similaires à
 
 **Critères disponibles**
 
-* [!UICONTROL People Who Viewed This, Viewed That]
-* [!UICONTROL People Who Viewed This, Bought That]
-* [!UICONTROL People Who Bought This, Bought That]
-* [!UICONTROL Items with Similar Attributes]
+* [!UICONTROL Les personnes qui ont consulté ceci ont consulté cela]
+* [!UICONTROL Les personnes qui ont consulté ceci ont acheté cela]
+* [!UICONTROL Les personnes qui ont acheté ceci ont acheté cela]
+* [!UICONTROL Éléments avec des attributs similaires]
 
 **Paramètres d’entité requis**
 
@@ -173,8 +173,8 @@ Faites des recommandations basées sur le comportement de l’utilisateur.
 
 **Critères disponibles**
 
-* [!UICONTROL Recently Viewed Items]
-* [!UICONTROL Recommended for You]
+* [!UICONTROL Éléments récemment consultés]
+* [!UICONTROL Recommandé]
 
 **Paramètres d’entité requis**
 
@@ -196,7 +196,7 @@ Faites des recommandations basées sur un fichier personnalisé que vous téléc
 
 **Critères disponibles**
 
-* [!UICONTROL Custom algorithm]
+* [!UICONTROL Algorithme personnalisé]
 
 **Paramètres d’entité requis**
 

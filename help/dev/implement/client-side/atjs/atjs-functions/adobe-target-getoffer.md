@@ -1,6 +1,6 @@
 ---
 keywords: adobe.target.getOffer, getOffer, getOffer, getOffer, at.js, fonctions, fonction, 8 $
-description: Utilisez la fonction [!UICONTROL adobe.target.getOffer()] et ses options pour que la bibliothèque at [!DNL Adobe Target] js déclenche des requêtes pour obtenir une offre  [!DNL Target] .
+description: Utilisez la fonction [!UICONTROL adobe.target.getOffer()] et ses options pour que la bibliothèque  [!DNL Adobe Target] at.js déclenche des requêtes pour obtenir une  [!DNL Target] .
 title: Comment utiliser la fonction [!UICONTROL adobe.target.getOffer()] ?
 feature: at.js
 exl-id: 7b917d42-06e8-4838-a09d-0c4872c9beaa
@@ -19,8 +19,8 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 463
-ht-degree: 74%
+source-wordcount: 472
+ht-degree: 72%
 
 ---
 
@@ -36,7 +36,7 @@ Utilisez avec `[!UICONTROL adobe.target.applyOffer()]` pour traiter la réponse 
 | params | Objet | Non | Paramètres mbox. Objet de paires clé-valeur qui possède la structure suivante :<P>`{ "param1": "value1", "param2": "value2"}` |
 | success | Fonction | Oui | Rappel à exécuter lors de l’obtention d’une réponse du serveur. La fonction de rappel de succès reçoit un seul paramètre qui représente un tableau des objets d’offre. Voici un exemple de rappel de succès :<P>`function handleSuccess(response){......}`<P>Pour plus d’informations, voir les réponses ci-dessous. |
 | error | Fonction | Oui | Rappel à exécuter lors d’une erreur. Quelques cas sont considérés comme des erreurs :<ul><li>Le code d’état HTTP est différent de 200 OK.</li><li>La réponse ne peut pas être analysée. Par exemple, le code JSON a été mal créé ou du code HTML a été utilisé à la place de JSON.</li><li>La réponse contient la clé error. Par exemple, une exception a été levée à la périphérie car une demande n’a pas pu être correctement traitée. Nous pourrions obtenir une erreur lorsqu’une mbox est bloquée et que nous ne parvenons pas à récupérer du contenu pour celle-ci, etc. La fonction de rappel d’erreur recevra deux paramètres : statut et erreur. Voici un exemple de rappel d’erreur : `function handleError(status, error){......}`</li></ul>Pour plus d’informations, voir les réponses d’erreur ci-dessous. |
-| timeout | Nombre | Non | Délai d’attente exprimé en secondes. Si cette valeur n’est pas spécifiée, le délai d’expiration par défaut d’at.js est utilisé.<P>Le délai d’expiration par défaut peut être défini à partir de l’interface utilisateur de [!DNL Target] sous [!UICONTROL Administration] > [!UICONTROL Implementation]. |
+| timeout | Nombre | Non | Délai d’attente exprimé en secondes. Si cette valeur n’est pas spécifiée, le délai d’expiration par défaut d’at.js est utilisé.<P>Le délai d’expiration par défaut peut être défini dans l’interface utilisateur de [!DNL Target] sous [!UICONTROL Administration] > [!UICONTROL Implémentation]. |
 
 ## Exemples
 
@@ -84,7 +84,7 @@ adobe.target.getOffer({
 });
 ```
 
-Utilisation du délai d’expiration et de la gestion de la réussite personnalisés avec [!UICONTROL getOffer()] :
+Utilisation d’une temporisation et d’une gestion des succès personnalisées avec [!UICONTROL getOffer()] :
 
 « YOUR_OWN_CUSTOM_HANDLING_FUNCTION » est un espace réservé pour une fonction définie par le client.
 

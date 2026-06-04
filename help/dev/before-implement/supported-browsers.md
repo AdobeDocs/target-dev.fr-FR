@@ -18,7 +18,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 436
+source-wordcount: 443
 ht-degree: 19%
 
 ---
@@ -45,7 +45,7 @@ L’interface [!DNL Target] prend en charge les navigateurs et appareils suivant
 
 ## Exigences en matière d’édition visuelle
 
-Pour pouvoir ouvrir, créer et prévisualiser vos pages web de manière fiable dans le [!UICONTROL Visual Experience Composer] (VEC), l’extension de navigateur [Adobe Experience Cloud Visual Editing Helper](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} doit être installée sur votre navigateur web ou vous pouvez utiliser [!UICONTROL Enhanced Experience Composer (EEC)].
+Pour pouvoir ouvrir, créer et prévisualiser vos pages web de manière fiable dans le [!UICONTROL compositeur d’expérience visuelle] (VEC), vous devez disposer de l’extension de navigateur [Visual Editing Helper d’Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} installée sur votre navigateur web ou utiliser le [!UICONTROL compositeur d’expérience amélioré (EEC)].
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ La diffusion de contenu a été testée sur les navigateurs et les périphériqu
 
 | Type d&#39;appareil | Version du navigateur |
 |--- |--- |
-| Windows | <ul><li>Microsoft Internet Explorer 9 et 10. Testé en mode d’émulation. **Remarque** : la diffusion de contenu sur IE 9 n’est plus prise en charge avec at.js 1.3.0 et les versions ultérieures. La diffusion de contenu sur IE 10, 11 et toutes les versions antérieures n’est plus prise en charge avec at.js 2.5.0 et les versions ultérieures.</li><li>Internet Explorer 11. **Remarque** : la diffusion de contenu sur IE 10, 11 et toutes les versions antérieures n’est plus prise en charge avec at.js 2.5.0 (et versions ultérieures).</li><li>Microsoft Edge</li><li>Chrome (la plus récente, la plus récente moins 1)</li><li>Firefox (le plus récent, le plus récent moins 1)</li></ul> |
+| Windows | <ul><li>Microsoft Internet Explorer 9 et 10. Testé en mode d’émulation. **Remarque** : la diffusion de contenu sur IE 9 n’est plus prise en charge avec at.js 1.3.0 et les versions ultérieures. La diffusion de contenu sur IE 10, 11 et toutes les versions antérieures n’est plus prise en charge avec at.js 2.5.0 et les versions ultérieures.</li><li>Internet Explorer 11. **Remarque** : la diffusion de contenu sur IE 10, 11 et toutes les versions antérieures n’est plus prise en charge avec at.js 2.5.0 (et versions ultérieures).</li><li>Microsoft Edge</li><li>Chrome (la plus récente, la plus récente moins 1)</li><li>Firefox (le plus récent, le plus récent moins 1)</li></ul> |
 | Mac | <ul><li>Apple Safari (la plus récente). **Remarque** : pour plus d’informations sur la façon dont Safari gère les cookies propriétaires et tiers, voir [Cookie Target](../implement/client-side/atjs/atjs-cookies.md).</li><li>Firefox (le plus récent, le plus récent moins 1)</li><li>Chrome (la plus récente, la plus récente moins 1)</li></ul> |
 | Mobile/Tablette | <ul><li>Apple iOS (la plus récente)</li><li>Appareils et tablettes Android (Android 4 et versions ultérieures)</li><li>Microsoft Surface (Windows 8.1)</li></ul> |
 

@@ -17,14 +17,14 @@ topic_v2:
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 710
+source-wordcount: 731
 ht-degree: 9%
 
 ---
 
 # Présentation des fonctionnalités prises en charge
 
-Les SDK côté serveur d’[!DNL Adobe Target] offrent aux développeurs et aux développeuses la possibilité de choisir entre les performances et la fraîcheur des données pour prendre des décisions. En d’autres termes, si la diffusion du contenu personnalisé le plus pertinent et le plus attrayant via le machine learning est la plus importante pour vous, un appel au serveur en direct doit être effectué. Mais lorsque les performances sont plus critiques, une décision doit être prise sur l’appareil. Pour [!UICONTROL on-device decisioning] à fonctionner, reportez-vous à la liste suivante des fonctionnalités prises en charge :
+Les SDK côté serveur d’[!DNL Adobe Target] offrent aux développeurs et aux développeuses la possibilité de choisir entre les performances et la fraîcheur des données pour prendre des décisions. En d’autres termes, si la diffusion du contenu personnalisé le plus pertinent et le plus attrayant via le machine learning est la plus importante pour vous, un appel au serveur en direct doit être effectué. Mais lorsque les performances sont plus critiques, une décision doit être prise sur l’appareil. Pour que la [!UICONTROL prise de décision sur l’appareil] fonctionne, reportez-vous à la liste suivante des fonctionnalités prises en charge :
 
 * Types d’activité
 * Ciblage d’audience
@@ -32,7 +32,7 @@ Les SDK côté serveur d’[!DNL Adobe Target] offrent aux développeurs et aux 
 
 ## Types d’activités
 
-Le tableau suivant indique quels [types d’activité](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html?lang=fr) créés à l’aide du [compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=fr ?) sont pris en charge ou non pour les [!UICONTROL on-device decisioning].
+Le tableau suivant indique quels [types d’activité](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html?lang=fr) créés à l’aide du [compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=fr ?) sont pris en charge ou non pour la prise de décision sur [!UICONTROL ’appareil].
 
 | Type d’activité | Pris en charge |
 | --- | --- |
@@ -48,7 +48,7 @@ Le tableau suivant indique quels [types d’activité](https://experienceleague.
 
 ## Ciblage des audiences
 
-Le tableau suivant indique les règles d’audience prises en charge ou non pour [!UICONTROL on-device decisioning].
+Le tableau suivant indique les règles d’audience prises ou non en charge pour la [!UICONTROL prise de décision sur l’appareil].
 
 | Règle d’audience | Prise de décision sur l’appareil |
 | --- | --- |
@@ -62,11 +62,11 @@ Le tableau suivant indique les règles d’audience prises en charge ou non pour
 | [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=fr) | Non |
 | [Sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=fr) | Non |
 | [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=fr) | Oui |
-| [Audiences &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=fr) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Non |
+| [&#x200B; Audiences Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=fr) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Non |
 
-### Ciblage géographique pour les [!UICONTROL on-device decisioning]
+### Ciblage géographique pour la prise de décision [!UICONTROL &#x200B; sur l’appareil]
 
-Afin de maintenir une latence proche de zéro pour [!UICONTROL on-device decisioning] activités avec des audiences basées sur la zone géographique, Adobe vous recommande de fournir vous-même les valeurs géographiques dans l’appel à l’`getOffers`. Pour ce faire, définissez l’objet `Geo` dans le `Context` de la requête. Cela signifie que votre serveur doit pouvoir déterminer l’emplacement de chaque utilisateur final. Par exemple, votre serveur peut effectuer une recherche IP/zone géographique à l’aide d’un service que vous configurez. Certains fournisseurs d’hébergement, tels que Google Cloud, proposent cette fonctionnalité via des en-têtes personnalisés dans chaque `HttpServletRequest`.
+Afin de maintenir une latence proche de zéro pour les activités de [!UICONTROL prise de décision sur l’appareil] avec des audiences basées sur la zone géographique, Adobe vous recommande de fournir vous-même les valeurs géographiques dans l’appel à l’`getOffers`. Pour ce faire, définissez l’objet `Geo` dans le `Context` de la requête. Cela signifie que votre serveur doit pouvoir déterminer l’emplacement de chaque utilisateur final. Par exemple, votre serveur peut effectuer une recherche IP/zone géographique à l’aide d’un service que vous configurez. Certains fournisseurs d’hébergement, tels que Google Cloud, proposent cette fonctionnalité via des en-têtes personnalisés dans chaque `HttpServletRequest`.
 
 >[!BEGINTABS]
 
@@ -126,7 +126,7 @@ public class TargetRequestUtils {
 
 >[!ENDTABS]
 
-Cependant, si vous ne pouvez pas effectuer de recherches IP à géolocalisation sur votre serveur, mais que vous souhaitez quand même effectuer des [!UICONTROL on-device decisioning] pour les requêtes `getOffers` qui contiennent des audiences géolocalisées, cela est également pris en charge. L’inconvénient de cette approche est qu’elle utilisera une recherche IP/géolocalisation à distance, ce qui ajoutera de la latence à chaque appel `getOffers`. Cette latence doit être inférieure à un appel de `getOffers` à distance, car elle atteint un réseau CDN situé près de votre serveur. Vous ne devez fournir le champ `ipAddress` que dans l’objet `Geo` dans la `Context` de votre requête, afin que le SDK récupère la géolocalisation de l’adresse IP de votre utilisateur. Si un autre champ en plus du `ipAddress` est fourni, le SDK [!DNL Target] ne récupère pas les métadonnées de géolocalisation pour la résolution.
+Cependant, si vous ne pouvez pas effectuer de recherches IP à géolocalisation sur votre serveur, mais que vous souhaitez toujours effectuer une [!UICONTROL prise de décision sur l’appareil] pour les requêtes `getOffers` qui contiennent des audiences géolocalisées, cela est également pris en charge. L’inconvénient de cette approche est qu’elle utilisera une recherche IP/géolocalisation à distance, ce qui ajoutera de la latence à chaque appel `getOffers`. Cette latence doit être inférieure à un appel de `getOffers` à distance, car elle atteint un réseau CDN situé près de votre serveur. Vous ne devez fournir le champ `ipAddress` que dans l’objet `Geo` dans la `Context` de votre requête, afin que le SDK récupère la géolocalisation de l’adresse IP de votre utilisateur. Si un autre champ en plus du `ipAddress` est fourni, le SDK [!DNL Target] ne récupère pas les métadonnées de géolocalisation pour la résolution.
 
 
 >[!BEGINTABS]
@@ -177,7 +177,7 @@ public class TargetRequestUtils {
 
 ## Méthode d&#39;allocation
 
-Le tableau suivant indique les méthodes d’attribution prises en charge ou non pour [!UICONTROL on-device decisioning].
+Le tableau suivant indique les méthodes d’attribution prises en charge ou non pour la [!UICONTROL prise de décision sur l’appareil].
 
 | Méthode d&#39;allocation | Pris en charge |
 | --- | --- |

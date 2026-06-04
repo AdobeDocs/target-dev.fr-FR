@@ -18,7 +18,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 611
+source-wordcount: 624
 ht-degree: 0%
 
 ---
@@ -71,8 +71,8 @@ https://vadymus.github.io/ateng/at-order-confirmation/index.html?a=1&b=2&adobe_m
 Comme vous pouvez le constater, `adobe_mc` paramètre est ajouté à l’URL. Ce paramètre contient les valeurs codées pour :
 
 * TS=1660667205 : date et heure actuelles. Cet horodatage garantit que l’affichage web ne reçoit pas de valeurs expirées.
-* MCMID=69624092487065093697422606480535692677 : [!UICONTROL Experience Cloud ID] (ECID). Également appelé MID ou [!UICONTROL Marketing Cloud ID] requis pour [!DNL Adobe] identification des visiteurs inter-solutions.
-* MCORGID=EB9CAE8B56E003697F000101@AdobeOrg : [!UICONTROL Adobe Organization ID].
+* MCMID=69624092487065093697422606480535692677 : [!UICONTROL &#x200B; Experience Cloud ID &#x200B;] (ECID). Également appelé MID ou [!UICONTROL Marketing Cloud ID] requis pour [!DNL Adobe] identification des visiteurs intersolutions.
+* MCORGID=EB9CAE8B56E003697F000101@AdobeOrg : [!UICONTROL ID d’organisation Adobe].
 
 L’`Identity.getUrlVariables` est une autre méthode de [!DNL Adobe Experience Platform Mobile SDK] qui renvoie une chaîne correctement formée contenant les variables d’URL [!DNL Experience Cloud Identity Service]. Pour plus d’informations, voir [getUrlVariables](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#geturlvariables){target=_blank} dans la référence de l’API *Identity*.
 
@@ -90,7 +90,7 @@ Target.getSessionId { (id, err) in
 
 ## Test dans les vues web
 
-Les liens d’aperçu web sont générés sur la page [!UICONTROL Activity detail] en cliquant sur le lien [[!UICONTROL Adobe QA] pour afficher un pop-up afin de copier chaque lien d’aperçu d’expérience](/help/dev/implement/mobile/target-mobile-preview.md) comme suit :
+Les liens d’aperçu web sont générés sur la page [!UICONTROL Détails de l’activité] en cliquant sur le lien [[!UICONTROL AQ Adobe]](/help/dev/implement/mobile/target-mobile-preview.md) pour afficher un pop-up afin de copier chaque lien d’aperçu d’expérience, comme suit :
 
 ```
 ?at_preview_token=mhFIzJSF7JWb-RsnakpBqi_s83Sl64hZp928VWpkwvI&at_preview_index=1_1&at_preview_listed_activities_only=true
