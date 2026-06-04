@@ -4,8 +4,10 @@ description: Découvrez comment utiliser [!UICONTROL getOffers()] pour exécuter
 feature: APIs/SDKs
 exl-id: 3c4125ea-68d4-405e-9b9a-5fa832743153
 TQID: https://experienceleague.adobe.com/WRGy74F1kUobRl1Pakse0VnXt3cT3-ntCljm4bHtiZ4
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 342
@@ -38,7 +40,7 @@ L’objet `options` présente la structure suivante :
 | visitorCookie | Chaîne | Non | None | Cookie ECID (VisitorId) |
 | targetCookie | Chaîne | Non | None | cookie [!DNL Target] |
 | targetLocationHint | Chaîne | Non | None | [!DNL Target] l’indicateur d’emplacement |
-| consumerId | Chaîne | Non | None | assemblage de consumerIds pour [!UICONTROL  Analytics for Target ] (A4T) |
+| consumerId | Chaîne | Non | None | assemblage de consumerIds pour [!UICONTROL &#x200B; Analytics for Target &#x200B;] (A4T) |
 | CustomerIds | Tableau | Non | None | ID de client au format compatible avec les VisitorId |
 | sessionId | Chaîne | Non | None | Utilisé pour lier plusieurs requêtes [!DNL Target] |
 | visiteur | Objet | Non | new VisitorId | Fournir une instance externe VisitorId |

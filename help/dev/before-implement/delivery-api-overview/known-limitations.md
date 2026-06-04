@@ -1,12 +1,14 @@
 ---
 title: Considérations sur l’API de diffusion Adobe Target et limites connues
-description: Quelles considérations et limites connues dois-je prendre en compte lors de l’utilisation de l’API de diffusion [!UICONTROL Adobe Target ] ?
+description: Quelles considérations et limites connues dois-je prendre en compte lors de l’utilisation de l’API de diffusion [!UICONTROL Adobe Target &#x200B;] ?
 keywords: API de diffusion
 exl-id: 49fe13b0-efcb-4b1c-a4cb-03b64fbd9214
 feature: APIs/SDKs
 TQID: https://experienceleague.adobe.com/LCgGZONQpYfw6JxNCNc2Iu13Mft8Zfx-3Uxvm2EeUVk
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 158

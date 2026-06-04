@@ -5,11 +5,18 @@ title: Quelles sont les questions et réponses fréquentes concernant at.js ?
 feature: at.js
 exl-id: 362ccc5b-8731-46c0-bc52-3e55c273e216
 TQID: https://experienceleague.adobe.com/wOC67fpxKtZKP3-o-T86oA-HqySuPGebT9W5LUHuxSA
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2:
+  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 2994
@@ -154,7 +161,7 @@ Pour prendre en charge les visiteurs Safari, il est préférable d’avoir un X-
 
 ## Puis-je utiliser le compositeur d’expérience visuelle [!UICONTROL VEC] de Target dans mes applications monopages ?
 
-Oui, vous pouvez utiliser le VEC pour votre SPA si vous utilisez at.js 2.x. Pour plus d’informations, voir [ Compositeur d’expérience visuelle monopage (SPA)](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
+Oui, vous pouvez utiliser le VEC pour votre SPA si vous utilisez at.js 2.x. Pour plus d’informations, voir [&#x200B; Compositeur d’expérience visuelle monopage (SPA)](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
 
 ## Puis-je utiliser le débogueur Adobe Experience Cloud avec les implémentations d’at.js ?
 
@@ -212,7 +219,7 @@ L’affichage de ce message d’avertissement peut s’expliquer par les causes 
 * La page sous-jacente fait partie d’une application monopage (SPA) ou la page contient des éléments qui apparaissent plus bas dans la page et le « mécanisme d’interrogation des sélecteurs » d’at.js ne parvient pas à trouver ces éléments. Augmenter le `selectorsPollingTimeout` peut aider. Pour plus d’informations, voir [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
 * Les mesures de suivi des clics tentent de s’ajouter à chaque page, indépendamment de l’URL à laquelle elles ont été configurées. Bien que sans danger, cette situation entraîne l’affichage répété de ces messages.
 
-  Pour de meilleurs résultats, téléchargez et utilisez la [dernière version d’at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md). Pour plus d’informations sur le téléchargement d’at.js, reportez-vous à la section  [!DNL Target]  Télécharger at.js à l’aide de l’interface](how-to-deployatjs/implement-target-without-a-tag-manager.md#download-atjs-using-the-target-interface) de l’article [*Comment déployer at.js* > *Implémenter [!DNL Target] sans gestionnaire de balises*](how-to-deployatjs/implement-target-without-a-tag-manager.md).[
+  Pour de meilleurs résultats, téléchargez et utilisez la [dernière version d’at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md). Pour plus d’informations sur le téléchargement d’at.js, reportez-vous à la section  [!DNL Target]  Télécharger at.js à l’aide de l’interface[&#128279;](how-to-deployatjs/implement-target-without-a-tag-manager.md#download-atjs-using-the-target-interface) de l’article [*Comment déployer at.js* > *Implémenter [!DNL Target] sans gestionnaire de balises*](how-to-deployatjs/implement-target-without-a-tag-manager.md).
 
 ## À quoi correspond le domaine tt.omtrdc.net auquel les appels au serveur de [!DNL Target] sont adressés ?
 
@@ -306,4 +313,4 @@ Le doctype HTML 5 garantit le chargement de la page en mode standard. Lors du c
 
 ## at.js fonctionne-t-il dans un environnement d’application ionique ?
 
-Cette implémentation n’a jamais été testée, car at.js n’était pas destiné à fonctionner dans un environnement non web. [!DNL Adobe] recommande ses [ SDK pour les implémentations mobiles](/help/dev/implement/mobile/overview.md).
+Cette implémentation n’a jamais été testée, car at.js n’était pas destiné à fonctionner dans un environnement non web. [!DNL Adobe] recommande ses [&#x200B; SDK pour les implémentations mobiles](/help/dev/implement/mobile/overview.md).

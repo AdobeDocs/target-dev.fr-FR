@@ -52,7 +52,7 @@ Une minuscule bibliothèque JavaScript synchrone qui empêche le scintillement v
 
 1. (Facultatif) Congédiez le consentement.
 
-   Si votre mise en œuvre utilise une plateforme de gestion du consentement (CMP), appelez le `window.Prehide.setConsent(...)` dès que l’état du consentement est connu. Voir [ Gestion du consentement ](#consent-management).
+   Si votre mise en œuvre utilise une plateforme de gestion du consentement (CMP), appelez le `window.Prehide.setConsent(...)` dès que l’état du consentement est connu. Voir [&#x200B; Gestion du consentement &#x200B;](#consent-management).
 
 1. Vérifiez.
 
@@ -123,7 +123,7 @@ Pour les lots auto-hébergés ou non modifiés, déclarez un objet config avant 
 
 | Champ | Type | Requis | Description |
 | --- | --- | --- | --- |
-| `sdk` | `"alloy"` \| `"atjs"` | Non | SDK Adobe chargé sur la page. Voir la sélection [](#sdk-selection). |
+| `sdk` | `"alloy"` \| `"atjs"` | Non | SDK Adobe chargé sur la page. Voir la sélection [&#128279;](#sdk-selection). |
 
 ## SDK selection {#sdk-selection}
 

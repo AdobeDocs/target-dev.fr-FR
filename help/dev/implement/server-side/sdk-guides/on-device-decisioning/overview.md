@@ -5,10 +5,23 @@ title: Présentation de la prise de décision sur l’appareil
 feature: Implement Server-side
 exl-id: 22ed3072-56f0-4075-9d1a-d642afe3b649
 TQID: https://experienceleague.adobe.com/-HHGn3lG5fOh2GLXQ6jOLRQmX7H24lN-2fseOg4y5H4
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 1349
@@ -20,7 +33,7 @@ ht-degree: 8%
 
 Les SDK [!DNL Adobe Target] nouvelle génération offrent désormais la prise de décision sur l’appareil [!UICONTROL on-device], qui permet de mettre en cache vos campagnes A/B et de ciblage d’expérience (XT) sur votre serveur et d’effectuer une prise de décision en mémoire à une latence proche de zéro, sans bloquer les requêtes réseau à l’Edge Network d’[!DNL Adobe Target].
 
-[!DNL Adobe Target] offre également la flexibilité de fournir l’expérience la plus pertinente et la plus récente à partir de vos campagnes d’expérimentation et de personnalisation pilotées par ML via un appel au serveur en direct. En d’autres termes, lorsque les performances sont les plus importantes, vous pouvez choisir d’utiliser la [!UICONTROL prise de décision sur l’appareil], mais lorsque l’expérience la plus pertinente et la plus récente est nécessaire, un appel serveur peut être effectué à la place. Consultez [quand utiliser la prise de décision sur l’appareil ou à la périphérie ](../../sdk-guides/on-device-decisioning/supported-features.md) pour en savoir plus sur les cas d’utilisation qui justifient l’utilisation de l’un plutôt que l’autre.
+[!DNL Adobe Target] offre également la flexibilité de fournir l’expérience la plus pertinente et la plus récente à partir de vos campagnes d’expérimentation et de personnalisation pilotées par ML via un appel au serveur en direct. En d’autres termes, lorsque les performances sont les plus importantes, vous pouvez choisir d’utiliser la [!UICONTROL prise de décision sur l’appareil], mais lorsque l’expérience la plus pertinente et la plus récente est nécessaire, un appel serveur peut être effectué à la place. Consultez [quand utiliser la prise de décision sur l’appareil ou à la périphérie &#x200B;](../../sdk-guides/on-device-decisioning/supported-features.md) pour en savoir plus sur les cas d’utilisation qui justifient l’utilisation de l’un plutôt que l’autre.
 
 >[!NOTE]
 >
@@ -74,7 +87,7 @@ La prise de décision sur l’appareil prend en charge les règles d’audience 
 | [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Non |
 | [Sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Non |
 | [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Oui |
-| [ Audiences Experience Cloud ](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Non |
+| [&#x200B; Audiences Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Non |
 
 ## Comment configurer mon client pour qu’il utilise [!UICONTROL la prise de décision sur l’appareil] ?
 
@@ -94,7 +107,7 @@ Après avoir activé le bouton (bascule) Prise de décision sur l’appareil , [
 
 ### Incluez toutes les activités qualifiées [!UICONTROL prise de décision sur l’appareil] existantes dans le bouton (bascule) des artefacts
 
-Activez ce bouton **activé** lorsque vous souhaitez que toutes vos activités Live [!DNL Target] qui remplissent les critères de la [!UICONTROL  prise de décision sur l’appareil] soient automatiquement incluses dans l’artefact.
+Activez ce bouton **activé** lorsque vous souhaitez que toutes vos activités Live [!DNL Target] qui remplissent les critères de la [!UICONTROL &#x200B; prise de décision sur l’appareil] soient automatiquement incluses dans l’artefact.
 
 Si vous laissez ce bouton **désactivé**, vous devrez recréer et activer toutes les activités [!UICONTROL prise de décision sur l’appareil] afin qu’elles soient incluses dans l’artefact de règles généré.
 

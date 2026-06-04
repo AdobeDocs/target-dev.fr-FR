@@ -1,14 +1,21 @@
 ---
 title: Prérécupération de l’API de diffusion Adobe Target
-description: Comment utiliser la prérécupération dans l’API de diffusion [!UICONTROL Adobe Target ] ?
+description: Comment utiliser la prérécupération dans l’API de diffusion [!UICONTROL Adobe Target &#x200B;] ?
 keywords: API de diffusion
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
 TQID: https://experienceleague.adobe.com/gthn2vJrIjEkmQdpsf4J818OrzFiLpeRvXXRAUp2SiY
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 578
@@ -125,7 +132,7 @@ Dans le champ `prefetch` , ajoutez une ou plusieurs `mboxes` que vous souhaitez 
 }
 ```
 
-Dans la réponse, vous voyez le champ `content` contenant l’expérience à afficher au visiteur pour une `mbox` particulière. Cette méthode est très utile lorsque vous la mettez en cache sur votre serveur. Ainsi, lorsqu’un visiteur interagit avec votre application web ou mobile au cours d’une session et visite une `mbox` sur une page particulière de votre application, l’expérience peut être diffusée à partir du cache au lieu d’effectuer un autre appel de l’API de diffusion Adobe Target]. [!UICONTROL Cependant, lorsqu’une expérience est diffusée au visiteur à partir du `mbox`, un `notification` est envoyé via un appel d’API de diffusion pour que la journalisation des impressions se produise. Cela est dû au fait que la réponse des appels `prefetch` est mise en cache, ce qui signifie que le visiteur n’a pas vu les expériences au moment où l’appel `prefetch` se produit. Pour en savoir plus sur le processus de `notification`, voir [Notifications](notifications.md).
+Dans la réponse, vous voyez le champ `content` contenant l’expérience à afficher au visiteur pour une `mbox` particulière. Cette méthode est très utile lorsque vous la mettez en cache sur votre serveur. Ainsi, lorsqu’un visiteur interagit avec votre application web ou mobile au cours d’une session et visite une `mbox` sur une page particulière de votre application, l’expérience peut être diffusée à partir du cache au lieu d’effectuer un autre appel de l’API de diffusion Adobe Target. Cependant, lorsqu’une expérience est diffusée au visiteur à partir du `mbox`, un `notification` est envoyé via un appel d’API de diffusion pour que la journalisation des impressions se produise. Cela est dû au fait que la réponse des appels `prefetch` est mise en cache, ce qui signifie que le visiteur n’a pas vu les expériences au moment où l’appel `prefetch` se produit. Pour en savoir plus sur le processus de `notification`, voir [Notifications](notifications.md).
 
 ## Prérécupération des mbox avec des mesures `clickTrack` lors de l’utilisation d’[!UICONTROL Analytics for Target] (A4T)
 

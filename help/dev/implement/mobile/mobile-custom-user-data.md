@@ -69,6 +69,6 @@ Bien que certaines clés soient réservées, les paramètres de profil et mbox p
 
       (Cliquez sur l’image pour l’agrandir sur toute la largeur.)
 
-      ![Emplacement cible dans la console ](/help/dev/implement/mobile/assets/mobile-debug.png " débogageEmplacement cible dans la console de débogage"){zoomable="yes"}
+      ![Emplacement cible dans la console &#x200B;](/help/dev/implement/mobile/assets/mobile-debug.png " débogageEmplacement cible dans la console de débogage"){zoomable="yes"}
 
    Vous pouvez créer des audiences et restreindre ou cibler l’affichage du contenu à l’aide de ces paramètres dans [!DNL Target].

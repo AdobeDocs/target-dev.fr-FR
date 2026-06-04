@@ -4,10 +4,17 @@ description: Présentation des différentes API d’Adobe Target, notamment l’
 exl-id: bf886103-36af-4061-b8be-2fe645f45ff3
 feature: APIs/SDKs
 TQID: https://experienceleague.adobe.com/GbrWhrZxH-sTtpxotpJGbr-sHuIXrX7rZFQhju76-vM
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 448
@@ -17,7 +24,7 @@ ht-degree: 0%
 
 # Présentation de l’API Target
 
-Cet article décrit les différentes API de Target en général, avant de se concentrer sur les exigences spécifiques aux API d’administration et de profil. Si vous souhaitez administrer Target via l’interface utilisateur, consultez la section [ administration du *Guide d’utilisation d’Adobe Target Business*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
+Cet article décrit les différentes API de Target en général, avant de se concentrer sur les exigences spécifiques aux API d’administration et de profil. Si vous souhaitez administrer Target via l’interface utilisateur, consultez la section [&#x200B; administration du *Guide d’utilisation d’Adobe Target Business*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
 
 ## Types d’API
 
@@ -35,7 +42,7 @@ Les API d&#39;Adobe Target peuvent être regroupées selon le type : Admin, Prof
 | Profil | Récupérez et modifiez les profils utilisateur stockés dans Adobe Target. | [Collection Postman de l’API Profil Target](https://developers.adobetarget.com/api/#profiles) |  |
 | [Livraison](../implement/delivery-api/overview.md) | Récupérez du contenu optimisé et personnalisé à partir de Target pour le diffuser à un utilisateur final. | [Collection Postman de l’API de diffusion Target](/help/dev/before-implement/delivery-api-overview/getting-started.md#postman) |  |
 | [Création de rapports](../administer/admin-api/admin-api-overview-new.md) | Exportez les résultats des activités et d’autres résultats de rapports. | Les API de création de rapports sont incluses dans la [collection Postman de l’API Target Admin](https://developers.adobetarget.com/api/#admin-postman-collection). |  |
-| [ Modèles ](../administer/models-api/models-api-overview.md) | Gérer la liste des fonctionnalités que Target doit exclure de ses modèles de machine learning (la « liste bloquée »). L’API Modèles est un type d’API d’administration, mais elle est répertoriée ici séparément en raison de ses opérations uniques sur des objets (places sur la liste bloquée) non accessibles via l’interface utilisateur. |  |  |
+| [&#x200B; Modèles &#x200B;](../administer/models-api/models-api-overview.md) | Gérer la liste des fonctionnalités que Target doit exclure de ses modèles de machine learning (la « liste bloquée »). L’API Modèles est un type d’API d’administration, mais elle est répertoriée ici séparément en raison de ses opérations uniques sur des objets (places sur la liste bloquée) non accessibles via l’interface utilisateur. |  |  |
 
 ## Différences d’API
 
@@ -45,4 +52,4 @@ Il existe des différences importantes entre les API d’administration de Targe
 
 * Les API de diffusion permettent de récupérer du contenu. Les API de diffusion ne nécessitent pas d’authentification.
 
-Pour utiliser les API d’administration Target, vous devez configurer l’authentification à l’aide de [](https://developer.adobe.com/console/home). Pour plus d’informations, voir [Configuration de l’authentification](../before-administer/configure-authentication.md).
+Pour utiliser les API d’administration Target, vous devez configurer l’authentification à l’aide de [&#128279;](https://developer.adobe.com/console/home). Pour plus d’informations, voir [Configuration de l’authentification](../before-administer/configure-authentication.md).

@@ -1,13 +1,20 @@
 ---
 title: Personnalisation à l’aide des SDK Adobe Target
-description: Découvrez comment offrir une personnalisation à l’aide de la [!UICONTROL  prise de décision sur l’appareil ].
+description: Découvrez comment offrir une personnalisation à l’aide de la [!UICONTROL &#x200B; prise de décision sur l’appareil &#x200B;].
 feature: APIs/SDKs
 exl-id: bac64c78-0d3a-40d7-ae2b-afa0f1b8dc4f
 TQID: https://experienceleague.adobe.com/IufE4ByFgQ8WwHZ5YVHbbyvN6jBBNGCK4IC98m9zGsc
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 587
@@ -27,7 +34,7 @@ ht-degree: 1%
 1. Ajout de mesures pour le suivi des KPI
 1. Mise en œuvre d’offres personnalisées dans votre application
 1. Implémenter le code pour suivre les événements de conversion
-1. Activez votre activité de personnalisation [!UICONTROL  Ciblage d’expérience ] (XT)
+1. Activez votre activité de personnalisation [!UICONTROL &#x200B; Ciblage d’expérience &#x200B;] (XT)
 
 Supposons que vous soyez une société itinérante. Vous souhaitez proposer une offre personnalisée de 25 % de réduction sur certains forfaits. Pour que l’offre résonne auprès de vos utilisateurs et utilisatrices, vous décidez de montrer un point de repère de la ville de destination. Vous devez également vous assurer que la diffusion de vos offres personnalisées est exécutée avec une latence proche de zéro, afin qu’elle n’ait pas d’impact négatif sur les expériences utilisateur et ne fausse pas les résultats.
 

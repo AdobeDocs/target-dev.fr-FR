@@ -4,8 +4,10 @@ description: Découvrez comment vous abonner à divers événements qui se produ
 feature: APIs/SDKs
 exl-id: 4e32e3b5-6072-4703-b09d-abb467aa1304
 TQID: https://experienceleague.adobe.com/iFtlxw8Wlc9EMtDTndtXD7a2gu1TzGM6ijXire9gHPk
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 166
@@ -17,7 +19,7 @@ ht-degree: 3%
 
 ## Description
 
-Lors de l’initialisation [ du SDK](initialize-sdk.md), le dictionnaire de `options["events"]` est un objet facultatif avec des clés de nom d’événement et des valeurs de fonction de rappel. Il peut être utilisé pour vous abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `client_ready` peut être utilisé avec une fonction de rappel appelée lorsque le SDK est prêt pour les appels de méthode.
+Lors de l’initialisation [&#x200B; du SDK](initialize-sdk.md), le dictionnaire de `options["events"]` est un objet facultatif avec des clés de nom d’événement et des valeurs de fonction de rappel. Il peut être utilisé pour vous abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `client_ready` peut être utilisé avec une fonction de rappel appelée lorsque le SDK est prêt pour les appels de méthode.
 
 Lorsque la fonction `callback` est appelée, un objet événement est transmis. Chaque événement possède un `type` correspondant au nom de l’événement, et certains événements incluent des propriétés supplémentaires avec des informations pertinentes.
 

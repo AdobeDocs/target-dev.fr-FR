@@ -4,8 +4,10 @@ description: Découvrez comment  [!DNL Adobe Target]  clients peuvent installer,
 feature: APIs/SDKs
 exl-id: 2ccd1b4e-d9af-4547-81fe-c70e6f00df3d
 TQID: https://experienceleague.adobe.com/yqURWV6x9TZblAgpXl-bay9ZReykHwCvUDIr0A45bQ0
-product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 132
@@ -29,8 +31,8 @@ Pour découvrir comment commencer à utiliser le SDK Python, accédez au Guide d
 
 Testez le SDK Python :
 
-* En consultant le site de démonstration [[!DNL Adobe Target] [!UICONTROL prise de décision sur l’appareil] ](https://github.com/adobe/on-device-decisioning-demo-site)
-* Dans un [ exemple d’application ](../sdk-guides/sample-apps/sample-apps.md).
+* En consultant le site de démonstration [[!DNL Adobe Target] [!UICONTROL prise de décision sur l’appareil] &#x200B;](https://github.com/adobe/on-device-decisioning-demo-site)
+* Dans un [&#x200B; exemple d’application &#x200B;](../sdk-guides/sample-apps/sample-apps.md).
 
 ## Référence
 
