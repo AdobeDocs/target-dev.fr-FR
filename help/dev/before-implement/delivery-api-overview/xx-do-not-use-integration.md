@@ -1,10 +1,10 @@
 ---
 title: Intégration avec Experience Cloud
 description: Intégration avec Experience Cloud
-keywords: api de diffusion
+keywords: API de diffusion
 source-git-commit: 67cc93cf697f8d5bca6fedb3ae974e4012347a0b
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '482'
 ht-degree: 7%
 
 ---
@@ -176,7 +176,7 @@ Une fois que vous avez spécifié `logging` = `client_side`, vous recevrez la pa
 }
 ```
 
-Si la réponse de Target contient des éléments dans la propriété `analytics` -> `payload` , transférez-la telle quelle à Adobe Analytics. Analytics sait comment traiter cette payload. Cette opération peut être effectuée dans une requête GET à l’aide du format suivant :
+Si la réponse de Target contient des éléments dans la propriété `analytics` -> `payload` , transférez-la telle quelle à Adobe Analytics. Analytics sait comment traiter cette payload. Cette opération peut être effectuée dans une requête GET au format suivant :
 
 ```
 https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/0/CODEVERSION?pe=tnt&tnta={payload}&mid={mid}&vid={vid}&aid={aid}

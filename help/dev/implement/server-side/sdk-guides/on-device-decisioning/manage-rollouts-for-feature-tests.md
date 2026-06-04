@@ -1,23 +1,16 @@
 ---
 title: Gestion des déploiements pour les tests de fonctionnalité
-description: Découvrez comment gérer les déploiements pour les tests de fonctionnalité à l’aide de [!UICONTROL on-device decisioning].
+description: Découvrez comment gérer les déploiements pour les tests de fonctionnalité à l’aide de la [!UICONTROL  prise de décision sur l’appareil ].
 feature: APIs/SDKs
 exl-id: caa91728-6ac0-4583-a594-0c8fe616342d
 TQID: https://experienceleague.adobe.com/soG8leVV3R4Y4FSns5oIJ43oziIhtOb2zJ5bkFYxeo0
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 525
+source-wordcount: 596
 ht-degree: 1%
 
 ---
@@ -26,63 +19,63 @@ ht-degree: 1%
 
 ## Résumé des étapes
 
-1. Activation de [!UICONTROL on-device decisioning] pour votre organisation
-1. Création d’une activité [!UICONTROL A/B Test]
+1. Activez la [!UICONTROL prise de décision sur l’appareil] pour votre organisation
+1. Création d’une activité [!UICONTROL Test A/B]
 1. Définition des paramètres de fonctionnalité et de déploiement
 1. Implémenter et générer la fonctionnalité dans votre application
 1. Implémenter le suivi des événements dans votre application
 1. Activer votre activité A/B
 1. Ajustez le déploiement et l’affectation du trafic selon les besoins
 
-## &#x200B;1. Activation de [!UICONTROL on-device decisioning] pour votre organisation
+## &#x200B;1. Activez la [!UICONTROL prise de décision sur l’appareil] pour votre organisation
 
-L’activation de la prise de décision sur l’appareil garantit l’exécution d’une activité A/B avec une latence proche de zéro. Pour activer cette fonctionnalité, accédez à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Account details]** dans [!DNL Adobe Target], puis activez le bouton (bascule) **[!UICONTROL On-Device Decisioning]**.
+L’activation de la prise de décision sur l’appareil garantit l’exécution d’une activité A/B avec une latence proche de zéro. Pour activer cette fonctionnalité, accédez à **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]** > **[!UICONTROL Détails du compte]** dans [!DNL Adobe Target], puis activez le bouton (bascule) **[!UICONTROL Prise de décision sur l’appareil]**.
 
 ![image alternative](assets/asset-odd-toggle.png)
 
 >[!NOTE]
 >
->Vous devez disposer du [rôle utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=fr) Administrateur ou Approbateur pour activer ou désactiver le bouton [!UICONTROL On-Device Decisioning].
+>Vous devez disposer du [rôle utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) Administrateur ou Approbateur pour activer ou désactiver le bouton [!UICONTROL Prise de décision sur l’appareil].
 
-Après avoir activé le bouton [!UICONTROL On-Device Decisioning], [!DNL Adobe Target] commence à générer des *artefacts de règle* pour votre client.
+Après avoir activé le bouton (bascule) [!UICONTROL Prise de décision sur l’appareil], [!DNL Adobe Target] commence à générer des *artefacts de règle* pour votre client.
 
-## &#x200B;2. Création d’une activité [!UICONTROL A/B Test]
+## &#x200B;2. Création d’une activité [!UICONTROL Test A/B]
 
-1. Dans [!DNL Adobe Target], accédez à la page **[!UICONTROL Activities]**, puis sélectionnez **[!UICONTROL Create Activity]** > **[!UICONTROL A/B test]**.
+1. Dans [!DNL Adobe Target], accédez à la page **[!UICONTROL Activités]**, puis sélectionnez **[!UICONTROL Créer une activité]** > **[!UICONTROL Test A/B]**.
 
    ![image alternative](assets/asset-ab.png)
 
-1. Dans la boîte de dialogue modale **[!UICONTROL Create A/B Test Activity]**, laissez l’option de **[!UICONTROL Web]** par défaut sélectionnée (1), sélectionnez **[!UICONTROL Form]** comme compositeur d’expérience (2), sélectionnez **[!UICONTROL Default Workspace]** avec **[!UICONTROL No Property Restrictions]** (3), puis cliquez sur **[!UICONTROL Next]** (4).
+1. Dans la boîte de dialogue modale **[!UICONTROL Créer une activité de test A/B]**, laissez l’option par défaut **[!UICONTROL Web]** sélectionnée (1), sélectionnez **[!UICONTROL Formulaire]** comme compositeur d’expérience (2), sélectionnez **[!UICONTROL Workspace par défaut]** avec **[!UICONTROL Aucune restriction de propriété]** (3), puis cliquez sur **[!UICONTROL Suivant]** (4).
 
    ![image alternative](assets/asset-form.png)
 
 ## &#x200B;3. Définition des paramètres de fonctionnalité et de déploiement
 
-À l’étape **[!UICONTROL Experiences]** de la création d’une activité, attribuez un nom à votre activité (1). Saisissez le nom de l’emplacement (2) dans votre application où vous souhaitez gérer les déploiements de votre fonctionnalité. Par exemple, `ondevice-rollout` ou `homepage-addtocart-rollout` sont des noms d’emplacement indiquant les destinations pour la gestion des déploiements de fonctionnalités. Dans l’exemple illustré ci-dessous, `ondevice-rollout` est l’emplacement défini pour l’expérience A. Vous pouvez éventuellement ajouter des ajustements d’audience (4) pour limiter la qualification à l’activité.
+À l’étape **[!UICONTROL Expériences]** de la création d’une activité, attribuez un nom à votre activité (1). Saisissez le nom de l’emplacement (2) dans votre application où vous souhaitez gérer les déploiements de votre fonctionnalité. Par exemple, `ondevice-rollout` ou `homepage-addtocart-rollout` sont des noms d’emplacement indiquant les destinations pour la gestion des déploiements de fonctionnalités. Dans l’exemple illustré ci-dessous, `ondevice-rollout` est l’emplacement défini pour l’expérience A. Vous pouvez éventuellement ajouter des ajustements d’audience (4) pour limiter la qualification à l’activité.
 
 ![image alternative](assets/asset-location-rollout.png)
 
-1. Dans la section **[!UICONTROL Content]** de la même page, sélectionnez **[!UICONTROL Create JSON Offer]** dans la liste déroulante (1), comme indiqué.
+1. Dans la section **[!UICONTROL Contenu]** de la même page, sélectionnez **[!UICONTROL Créer une offre JSON]** dans la liste déroulante (1), comme illustré.
 
    ![image alternative](assets/asset-offer.png)
 
-1. Dans la zone de texte **[!UICONTROL JSON Data]** qui s’affiche, saisissez la variable d’indicateur de fonctionnalité pour la fonctionnalité que vous prévoyez de déployer avec cette activité dans l’expérience A (1), à l’aide d’un objet JSON valide (2).
+1. Dans la zone de texte **[!UICONTROL Données JSON]** qui s’affiche, saisissez la variable d’indicateur de fonctionnalité pour la fonctionnalité que vous prévoyez de déployer avec cette activité dans l’expérience A (1), à l’aide d’un objet JSON valide (2).
 
    ![image alternative](assets/asset-json-a-rollout.png)
 
-1. Cliquez sur **[!UICONTROL Next]** (1) pour passer à l’étape **[!UICONTROL Targeting]** de création de l’activité.
+1. Cliquez sur **[!UICONTROL Suivant]** (1) pour passer à l’étape **[!UICONTROL Ciblage]** de création de l’activité.
 
    ![image alternative](assets/asset-next-2-t-rollout.png)
 
-1. Dans l’étape **[!UICONTROL Targeting]**, conservez l’audience **[!UICONTROL All Visitors]** (1) pour plus de simplicité. Mais ajustez l&#39;allocation du trafic (2) à 10%. Cette opération limitera la fonctionnalité à seulement 10 % des visiteurs de votre site. Cliquez sur Suivant (3) pour passer à l’étape **[!UICONTROL Goals & Settings]**.
+1. À l’étape **[!UICONTROL Ciblage]**, conservez l’audience **[!UICONTROL Tous les visiteurs]** (1) pour plus de simplicité. Mais ajustez l&#39;allocation du trafic (2) à 10%. Cette opération limitera la fonctionnalité à seulement 10 % des visiteurs de votre site. Cliquez sur Suivant (3) pour passer à l’étape **[!UICONTROL Objectifs et paramètres]**.
 
    ![image alternative](assets/asset-next-2-g-rollout.png)
 
-1. À l’étape **[!UICONTROL Goals & Settings]**, choisissez **[!UICONTROL Adobe Target]** (1) comme **[!UICONTROL Reporting Source]** d’affichage des résultats de votre activité dans l’interface utilisateur de [!DNL Adobe Target].
+1. À l’étape **[!UICONTROL Objectifs et paramètres]**, choisissez **[!UICONTROL Adobe Target]** (1) comme **[!UICONTROL Source de création de rapports]** pour afficher les résultats de votre activité dans l’interface utilisateur de [!DNL Adobe Target].
 
-1. Choisissez un **[!UICONTROL Goal Metric]** pour mesurer l’activité. Dans cet exemple, une conversion réussie dépend du fait que l’utilisateur achète ou non un article, comme indiqué par le fait qu’il a atteint ou non l’emplacement orderConfirm (2).
+1. Choisissez une **[!UICONTROL mesure d’objectif]** pour mesurer l’activité. Dans cet exemple, une conversion réussie dépend du fait que l’utilisateur achète ou non un article, comme indiqué par le fait qu’il a atteint ou non l’emplacement orderConfirm (2).
 
-1. Cliquez sur **[!UICONTROL Save & Close]** (3) pour enregistrer l’activité.
+1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** (3) pour enregistrer l’activité.
 
    ![image alternative](assets/asset-conv-rollout.png)
 

@@ -5,19 +5,11 @@ title: Comment  [!DNL Target]  gère-t-il les politiques de sécurité du conten
 feature: Privacy & Security
 exl-id: ec6942e5-36d8-4f88-b3d6-47f9eaca03a8
 TQID: https://experienceleague.adobe.com/gGNgYyblw6-D-RiHBtzAtrOOdhVOsIzYQ-HhkhCtyuI
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: e0eb8757-182f-49f3-94a4-1587d16f5094id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 610
@@ -27,7 +19,7 @@ ht-degree: 28%
 
 # Directives relatives aux politiques de sécurité du contenu (CSP)
 
-Si vous utilisez la [&#x200B; politique de sécurité du contenu &#x200B;](https://fr.wikipedia.org/wiki/Content_Security_Policy) (CSP) pour votre mise en œuvre [!DNL Adobe Target], vous devez ajouter les directives CSP suivantes lors de l’utilisation d’[at.js 2.1 ou version ultérieure &#x200B;](../../implement/client-side/atjs/target-atjs-versions.md) :
+Si vous utilisez la [ politique de sécurité du contenu ](https://fr.wikipedia.org/wiki/Content_Security_Policy) (CSP) pour votre mise en œuvre [!DNL Adobe Target], vous devez ajouter les directives CSP suivantes lors de l’utilisation d’[at.js 2.1 ou version ultérieure ](../../implement/client-side/atjs/target-atjs-versions.md) :
 
 * `connect-src` avec `*.tt.omtrdc.net` placé sur la liste autorisée. Nécessaire pour autoriser la requête réseau à [!DNL Target] edge.
 * `style-src unsafe-inline`. Obligatoire pour le prémasquage et le contrôle du scintillement.
@@ -51,7 +43,7 @@ Il est prévu que [!DNL Target] soit accessible depuis n’importe quel domaine 
 
 ### Comment puis-je autoriser ou empêcher l’incorporation de mon site en tant qu’iFrame sous des domaines étrangers ?
 
-Pour permettre au [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=fr){target=_blank} (VEC) d’incorporer votre site web dans un iFrame, la CSP (si elle est définie) doit être modifiée dans les paramètres de votre serveur web. Les domaines [!DNL Adobe] doivent être whitelistés et configurés.
+Pour permettre au [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html){target=_blank} (VEC) d’incorporer votre site web dans un iFrame, la CSP (si elle est définie) doit être modifiée dans les paramètres de votre serveur web. Les domaines [!DNL Adobe] doivent être whitelistés et configurés.
 
 Pour des raisons de sécurité, vous souhaiterez peut-être empêcher l’incorporation de votre site en tant qu’iFrame sous des domaines étrangers.
 

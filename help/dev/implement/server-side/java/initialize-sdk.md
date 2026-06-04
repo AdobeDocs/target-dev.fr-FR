@@ -1,19 +1,16 @@
 ---
 title: Initialisez le SDK Java à l’aide de la méthode create
-description: Découvrez comment utiliser la méthode create pour initialiser le SDK Java et instancier l’[!UICONTROL TargetClient] afin d’effectuer des appels vers  [!DNL Adobe Target]  expériences et des expériences personnalisées.
+description: Découvrez comment utiliser la méthode create pour initialiser le SDK Java et instancier le [!UICONTROL TargetClient] pour effectuer des appels vers [!DNL Adobe Target] pour des expériences et des expériences personnalisées.
 feature: APIs/SDKs
 exl-id: 0e0ddead-7de8-4549-b81c-e72598558e4b
 TQID: https://experienceleague.adobe.com/B1Ev7NnjlFMg4VoicF6Z4whyqfJYDjCwPeYRKEk2viY
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 460
-ht-degree: 17%
+source-wordcount: 471
+ht-degree: 16%
 
 ---
 
@@ -21,7 +18,7 @@ ht-degree: 17%
 
 ## Description
 
-Utilisez la méthode `create` afin d’initialiser le SDK Java et d’instancier l’[!UICONTROL Target Client] pour effectuer des appels vers [!DNL Adobe Target] pour des expériences et des expériences personnalisées.
+Utilisez la méthode `create` afin d’initialiser Java SDK et d’instancier le [!UICONTROL client Target] pour effectuer des appels vers [!DNL Adobe Target] pour des expériences et des expériences personnalisées.
 
 ## Méthode
 
@@ -45,8 +42,8 @@ ClientConfigBuilder ClientConfig.builder()
 
 | Nom | Type | Requis | Par défaut | Description |
 | --- | --- | --- | --- | --- |
-| client | Chaîne | Oui | None | [!UICONTROL Target Client Id] |
-| organizationId | Chaîne | Oui | None | [!UICONTROL Experience Cloud Organization ID] |
+| client | Chaîne | Oui | None | [!UICONTROL Identifiant Client Target] |
+| organizationId | Chaîne | Oui | None | [!UICONTROL ID d’organisation Experience Cloud] |
 | connectTimeout | Nombre | Non | 10000 | Délai d’expiration de connexion pour toutes les requêtes, en millisecondes |
 | socketTimeout | Nombre | Non | 10000 | Délai d’expiration du socket pour toutes les requêtes, en millisecondes |
 | maxConnectionsPerHost | Nombre | Non | 100 | Nbre max. de connexions par hôte [!DNL Target] |

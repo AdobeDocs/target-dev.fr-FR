@@ -6,20 +6,14 @@ level: Experienced
 role: Developer
 exl-id: 65fd369a-6034-4b51-8ddf-e53e526a795d
 TQID: https://experienceleague.adobe.com/H85u3UrJXqEeUPscsxTkbTJsF9kmSSpK-ExzCyZT8yE
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ceid: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 383
+source-wordcount: 398
 ht-degree: 0%
 
 ---
@@ -54,19 +48,19 @@ Pour aider l’équipe à créer de nouveaux modèles ou à améliorer les modè
    >
    >Vous devez être connecté à `github.com` pour ouvrir un événement dans [!DNL Experience League]. Consultez les instructions relatives aux contributions et au code de conduite si c’est la première fois que vous ouvrez un problème.
 
-1. (Conditionnel) Pour suggérer une idée de nouveau modèle ou d’amélioration de modèles existants, cliquez sur **[!UICONTROL Detailed feedback options]**, puis sur **[!UICONTROL Report an issue]**.
+1. (Conditionnel) Pour suggérer une idée de nouveau modèle ou d’amélioration des modèles existants, cliquez sur **[!UICONTROL Options de commentaires détaillées]**, puis sur **[!UICONTROL Signaler un problème]**.
 
    1. Fournissez un titre, puis saisissez vos commentaires dans la zone de texte.
 
       Joignez des fichiers ou des captures d’écran, si nécessaire.
 
-   1. Cliquez sur **[!UICONTROL Submit new issue]** lorsque vous avez terminé.
+   1. Cliquez sur **[!UICONTROL Soumettre le nouveau problème]** lorsque vous avez terminé.
 
-1. (Conditionnel) Pour modifier le texte d’un modèle existant, à partir du modèle Options de commentaires de l’article concerné, cliquez sur **[!UICONTROL Suggest an edit]**, puis sur l’icône **[!UICONTROL Edit]** (icône en forme de crayon).
+1. (Conditionnel) Pour modifier le texte d’un modèle existant, à partir du modèle d’options Commentaires de l’article concerné, cliquez sur **[!UICONTROL Suggérer une modification]**, puis cliquez sur l’icône **[!UICONTROL Modifier]** (icône représentant un crayon).
 
    1. Apportez des modifications en utilisant la syntaxe Markdown.
 
-   1. Cliquez sur **[!UICONTROL Commit changes]** lorsque vous avez terminé.
+   1. Cliquez sur **[!UICONTROL Valider les modifications]** lorsque vous avez terminé.
 
 L’équipe [!DNL Target] peut examiner vos commentaires ou vos modifications et communiquer avec vous à l’aide de cette fonctionnalité pour recueillir des informations supplémentaires ou obtenir des clarifications supplémentaires, si nécessaire.
 

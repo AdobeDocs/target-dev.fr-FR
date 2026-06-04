@@ -4,17 +4,12 @@ description: Découvrez comment utiliser sendNotifications() pour envoyer des no
 feature: APIs/SDKs
 exl-id: 03827b18-a546-4ec8-8762-391fcb3ac435
 TQID: https://experienceleague.adobe.com/r7j2MaCmcZBEsx7TmTlKL9R-IKlncZJw5DhSfcKmVNU
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 411
+source-wordcount: 420
 ht-degree: 8%
 
 ---
@@ -50,7 +45,7 @@ target_client.send_notifications(options)
 
 | Nom | Type | Requis | Par défaut | Description |
 | --- | --- | --- | --- | --- |
-| events | DeliveryRequest | Oui | None | Conforme à la requête [[!UICONTROL Target Delivery API]](/help/dev/implement/delivery-api/overview.md) |
+| events | DeliveryRequest | Oui | None | Conforme à la requête [[!UICONTROL API de diffusion Target]](/help/dev/implement/delivery-api/overview.md) |
 | target_cookie | str | non | None | cookie [!DNL Target] |
 | target_location_hint | str | non | None | [!DNL Target] l’indicateur d’emplacement |
 | consumer_id | str | non | None | Lors du regroupement de plusieurs appels, différents ID de client doivent être fournis |
@@ -70,12 +65,12 @@ target_client.send_notifications(options)
 | target_location_hint_cookie | dictionnaire | [!DNL Target] cookie d’indice d’emplacement |
 | analytics_details | list[AnalyticsResponse] | Payload [!DNL Analytics], en cas d’utilisation du [!DNL Analytics] côté client |
 | trace | list[dict] | Données de suivi agrégées pour toutes les mbox/vues de requête |
-| response_tokens | list[dict] | Une liste de &#x200B;jetons de réponse[&#128279;](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr) |
+| response_tokens | list[dict] | Une liste de &#x200B;jetons de réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)[ |
 | méta | dictionnaire | Métadonnées de prise de décision supplémentaires à utiliser avec la prise de décision sur l’appareil |
 
 ## Exemple
 
-Tout d’abord, nous allons créer la requête [!UICONTROL Target Delivery API] pour la prérécupération du contenu des mbox `home` et `product1`.
+Tout d’abord, nous allons créer la requête [!UICONTROL API de diffusion Target] pour prérécupérer du contenu pour les mbox `home` et `product1`.
 
 ### Python
 
@@ -89,7 +84,7 @@ delivery_request = DeliveryRequest(prefetch=prefetch)
 response = target_client.get_offers({ "request": delivery_request })
 ```
 
-Une réponse réussie contient un objet de réponse [!UICONTROL Target Delivery API], qui contient du contenu prérécupéré pour les mbox demandées. Un exemple d’objet `target_response["response"]` (au format dict) peut se présenter comme suit :
+Une réponse réussie contient un objet de réponse [!UICONTROL API de diffusion Target], qui contient du contenu prérécupéré pour les mbox demandées. Un exemple d’objet `target_response["response"]` (au format dict) peut se présenter comme suit :
 
 ### Python
 

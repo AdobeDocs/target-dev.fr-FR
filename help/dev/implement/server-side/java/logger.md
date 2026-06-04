@@ -4,14 +4,10 @@ description: Découvrez comment consigner les requêtes dans le SDK Java [!DNL A
 feature: APIs/SDKs
 exl-id: 85d1a6ef-0b08-4948-8133-740b7d6141dd
 TQID: https://experienceleague.adobe.com/xvduuV6cjVJu-yIoaxCvbPE-ZttfEViuM8B7sVczAC0
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
 source-wordcount: 120
@@ -30,7 +26,7 @@ Lors de l’initialisation [du SDK](initialize-sdk.md), plusieurs options s’of
 | `logRequests` | Consigne l’ensemble du corps de la requête ainsi que le corps de la réponse. |
 | `logRequestStatus` | Enregistre l’URL de la requête, le statut et le temps de réponse. |
 
-[!DNL Target] Java SDK utilise la journalisation `slf4j`. Vous devez fournir votre implémentation de l’enregistreur, telle que `java.util.logging`, `logback` et `log4j`. Pour plus d&#39;informations, voir [&#128279;](https://www.slf4j.org/manual.html). Tous les journaux seront imprimés en `debug`.
+[!DNL Target] Java SDK utilise la journalisation `slf4j`. Vous devez fournir votre implémentation de l’enregistreur, telle que `java.util.logging`, `logback` et `log4j`. Pour plus d&#39;informations, voir [](https://www.slf4j.org/manual.html). Tous les journaux seront imprimés en `debug`.
 
 ## Exemple
 

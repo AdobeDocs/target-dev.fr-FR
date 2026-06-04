@@ -5,21 +5,15 @@ title: Quelles fonctions puis-je utiliser avec at.js ?
 feature: at.js
 exl-id: 1efed365-8a74-4c85-bdb1-8daaaf53d642
 TQID: https://experienceleague.adobe.com/7uABK1rDaMpA7a0skEo3g1KxTnoc-gif-uHMkMnE8QE
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 515
-ht-degree: 44%
+source-wordcount: 557
+ht-degree: 38%
 
 ---
 
@@ -33,7 +27,7 @@ Liste des fonctions pouvant être utilisées avec la bibliothèque JavaScript at
 | [[!UICONTROL adobe.target.getOffers(options)]](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md)<P>(at.js 2.x) | Cette fonction permet de récupérer plusieurs offres en transmettant plusieurs mbox. De plus, plusieurs offres peuvent être récupérées pour toutes les vues des activités actives.<P>**Remarque :** cette fonction a été introduite avec at.js 2.x. Cette fonction n’est pas disponible pour at.js version 1.*x*. |
 | [[!UICONTROL adobe.target.applyOffer(options)]](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-applyoffer.md) | Cette fonction permet d’appliquer le contenu de la réponse. |
 | [[!UICONTROL adobe.target.applyOffers(options)]](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-applyoffers-atjs-2.md)<P>(at.js 2.x) | Cette fonction vous permet d’appliquer plusieurs offres récupérées par [!UICONTROL adobe.target.getOffers()].<P>**Remarque :** cette fonction a été introduite avec at.js 2.x. Cette fonction n’est pas disponible pour at.js version 1.*x*. |
-| [[!UICONTROL adobe.target.triggerView (viewName, options)]](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-triggerview-atjs-2.md)<P>(at.js 2.x) | Cette fonction peut être appelée à chaque chargement d’une nouvelle page ou lorsqu’un composant fait l’objet d’un nouveau rendu sur une page.<P> Cette fonction doit être implémentée pour les applications monopages (SPA) afin d’utiliser le [!UICONTROL Visual Experience Composer] (VEC) pour créer des activités [!UICONTROL A/B Test] et [!UICONTROL Experience Targeting] (XT). |
+| [[!UICONTROL adobe.target.triggerView (viewName, options)]](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-triggerview-atjs-2.md)<P>(at.js 2.x) | Cette fonction peut être appelée à chaque chargement d’une nouvelle page ou lorsqu’un composant fait l’objet d’un nouveau rendu sur une page.<P> Cette fonction doit être implémentée pour les applications monopages (SPA) afin d’utiliser le [!UICONTROL compositeur d’expérience visuelle] (VEC) pour créer des activités [!UICONTROL test A/B] et [!UICONTROL ciblage d’expérience] (XT). |
 | [[!UICONTROL adobe.target.trackEvent(options)]](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-trackevent.md) | Cette fonction déclenche une demande pour signaler les actions de l’utilisateur, telles que les clics et les conversions. Elle ne déclenche pas la diffusion d’activités dans le cadre de la réponse. |
 | [[!UICONTROL mboxCreate(mbox,params)]](/help/dev/implement/client-side/atjs/atjs-functions/mboxcreate-atjs.md)<P>(at.js 1.x) | Exécute une requête et applique l’offre au DIV le plus proche avec le nom de la classe mboxDefault.<P>**Remarque :** cette fonction est disponible uniquement pour les versions 1.*x* d’at.js. Cette fonction a été abandonnée avec la publication d’at.js 2.x. Cette fonction renvoie le contenu par défaut s’il est utilisé avec at.js 2.x. |
 | [[!UICONTROL mboxDefine(options)] et [!UICONTROL mboxUpdate(options)]](/help/dev/implement/client-side/atjs/atjs-functions/mboxdefine-mboxupdate-atjs-1x.md)<P>(at.js 1.x) | Définissent et mettent à jour une mbox.<P>**Remarque :** cette fonction est disponible uniquement pour les versions 1.*x* d’at.js. Cette fonction a été abandonnée avec la publication d’at.js 2.x. Cette fonction renvoie le contenu par défaut s’il est utilisé avec at.js 2.x. |
@@ -41,5 +35,5 @@ Liste des fonctions pouvant être utilisées avec la bibliothèque JavaScript at
 | [[!UICONTROL targetPageParams(options)]](/help/dev/implement/client-side/atjs/atjs-functions/targetpageparams.md) | Cette méthode permet de joindre des paramètres à la mbox globale depuis l’extérieur du code de demande. |
 | [[!UICONTROL targetPageParamsAll(options)]](/help/dev/implement/client-side/atjs/atjs-functions/targetpageparamsall.md) | Cette méthode permet de joindre des paramètres à toutes les mbox à l’extérieur du code de demande. |
 | [[!UICONTROL registerExtension(options)]](/help/dev/implement/client-side/atjs/atjs-functions/registerextension-atjs-1x.md)<P>(at.js 1.x) | Propose une méthode standard pour enregistrer une extension spécifique.<P>**Remarque :** cette fonction est disponible uniquement pour les versions 1.*x* d’at.js. Cette fonction a été abandonnée avec la publication d’at.js 2.x. Cette fonction renvoie le contenu par défaut s’il est utilisé avec at.js 2.x. |
-| [[!UICONTROL at.js custom events]](/help/dev/implement/client-side/atjs/atjs-functions/atjs-custom-events.md) | Les événements personnalisés at.js indiquent quand une requête ou une offre de mbox échoue ou réussit. |
+| [[!UICONTROL événements personnalisés at.js]](/help/dev/implement/client-side/atjs/atjs-functions/atjs-custom-events.md) | Les événements personnalisés at.js indiquent quand une requête ou une offre de mbox échoue ou réussit. |
 | [[!UICONTROL adobe.target.sendNotifications(options)]](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21.md)<P>(at.js 2.1.0) | Cette fonction envoie une notification à [!DNL Target] Edge lorsqu’une expérience est rendue sans utiliser de `[!UICONTROL adobe.target.applyOffer()]` ou de `[!UICONTROL adobe.target.applyOffers()]`.<P>**Remarque** : cette fonction a été introduite dans at.js 2.1.0 et sera disponible pour toutes les versions supérieures à 2.1.0. |

@@ -5,28 +5,15 @@ title: Comment effectuer une mise à niveau d’at.js version 1.x vers la versio
 feature: at.js
 exl-id: fbfa5743-0fa5-44c6-89b3-fdee9b50e126
 TQID: https://experienceleague.adobe.com/JGsuogzhCvThr4QGHJ5g4d8ZqGVZ8ClAf7hXuoh7X0Q
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
-subfeature_v2:
-  - id: df62f171-ac37-440f-8f0f-f41a72ebdd34
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ceid: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2: id: df62f171-ac37-440f-8f0f-f41a72ebdd34id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
 workflow-type: tm+mt
-source-wordcount: 3037
-ht-degree: 48%
+source-wordcount: 3100
+ht-degree: 47%
 
 ---
 
@@ -38,7 +25,7 @@ Voici quelques avantages d’utiliser at.js 2.*x* qui ne sont pas disponibles da
 
 * La capacité à mettre en cache toutes les offres au chargement de la page afin de réduire plusieurs appels serveur à un seul appel serveur.
 * Améliorez considérablement les expériences des utilisateurs finaux sur votre site. Les offres s’affichent immédiatement via le cache sans temps de latence que les appels serveur traditionnels imposent.
-* Une seule ligne de code et une configuration de développeur unique pour permettre à vos spécialistes marketing de créer et d’exécuter des activités de [!UICONTROL A/B Test] et de [!UICONTROL Experience Targeting] (XT) via le compositeur d’expérience visuelle (VEC) sur vos applications d’une seule page (SPA).
+* Une seule ligne de code et une configuration de développeur unique pour permettre à vos spécialistes marketing de créer et d’exécuter des activités [!UICONTROL Test A/B] et [!UICONTROL Ciblage d’expérience] (XT) via le compositeur d’expérience visuelle sur vos applications d’une seule page (SPA).
 
 ## Schémas système d’at.js 2.*x*
 
@@ -50,14 +37,14 @@ Les diagrammes suivants vous aident à comprendre le workflow d’at.js 2.*x* av
 
 | L’appel | Détails |
 | --- | --- |
-| 1 | L’appel renvoie le [!UICONTROL Experience Cloud ID] si l’utilisateur est authentifié. Un autre appel synchronise l’ID de client. |
+| 1 | L’appel renvoie l’[!UICONTROL Experience Cloud ID] si l’utilisateur est authentifié ; un autre appel synchronise l’ID client. |
 | 2 | La bibliothèque at.js se charge de manière synchrone et masque le corps du document.<P>at.js peut également être chargé de manière asynchrone avec une option de masquage préalable d’un fragment de code implémentée sur la page. |
 | 3 | Une demande de chargement de page est faite, incluant tous les paramètres configurés (MCID, SDID et ID client). |
 | 4 | Les scripts de profil s’exécutent, puis sont introduits dans le magasin de profils. Le magasin demande des audiences qualifiées à la bibliothèque d’audiences (par exemple, les audiences partagées depuis [!DNL Adobe Analytics], [!DNL Audience Manager], etc.).<P>Les attributs du client sont envoyés par lot dans le magasin de profils. |
 | 5 | Selon les paramètres de requête d’URL et les données de profil, [!DNL Target] décidez quelles activités et expériences renvoyer au visiteur pour la page active et les futures vues. |
 | 6 | Le contenu ciblé est renvoyé à la page, comprenant, éventuellement, les valeurs de profil pour une personnalisation plus poussée.<P>Le contenu ciblé sur la page active est révélé le plus rapidement possible sans scintillement du contenu par défaut.<P>Contenu ciblé pour les vues présentées à la suite d’actions de l’utilisateur dans une SPA mise en cache dans le navigateur, afin qu’elles puissent être appliquées instantanément sans appel au serveur supplémentaire lorsque les vues sont déclenchées via `triggerView()`. |
 | 7 | Les données [!UICONTROL Analytics] sont envoyées aux serveurs de collecte de données. |
-| 8 | Les données ciblées sont mises en correspondance avec les données [!UICONTROL Analytics] via le SDID et sont traitées dans le stockage des rapports [!UICONTROL Analytics].<P>[!UICONTROL Analytics] données peuvent ensuite être affichées dans [!UICONTROL Analytics] et [!DNL Target] via les rapports [!UICONTROL Analytics for Target] (A4T). |
+| 8 | Les données ciblées sont mises en correspondance avec les données [!UICONTROL Analytics] via le SDID et sont traitées dans le stockage de rapports [!UICONTROL Analytics].<P>Les données [!UICONTROL Analytics] peuvent ensuite être affichées dans les rapports [!UICONTROL Analytics] et [!DNL Target] via [!UICONTROL Analytics for Target] (A4T). |
 
 Désormais, où que soit implémenté `triggerView()` sur votre application d’une seule page, les vues et actions sont récupérées depuis le cache et présentées à l’utilisateur sans appel au serveur. `triggerView()` envoie également une demande de notification au serveur principal [!DNL Target] afin d’incrémenter et d’enregistrer le nombre d’impressions.
 
@@ -71,8 +58,8 @@ Désormais, où que soit implémenté `triggerView()` sur votre application d’
 | 2 | Le contenu ciblé pour la vue est lu à partir du cache. |
 | 3 | Le contenu ciblé s’affiche aussi rapidement que possible, sans scintillement du contenu par défaut. |
 | 4 | La demande de notification est envoyée au magasin de profils [!DNL Target] pour compter le visiteur dans l’activité et incrémenter les mesures. |
-| 5 | [!UICONTROL Analytics] les données envoyées aux serveurs de collecte de données. |
-| 6 | [!DNL Target] données sont mises en correspondance avec les données [!UICONTROL Analytics] via le SDID et sont traitées dans le stockage de rapports [!UICONTROL Analytics]. [!UICONTROL Analytics] données peuvent ensuite être affichées dans [!UICONTROL Analytics] et [!DNL Target] via les rapports A4T. |
+| 5 | Données [!UICONTROL Analytics] envoyées aux serveurs de collecte de données. |
+| 6 | [!DNL Target] données sont associées aux données [!UICONTROL Analytics] via le SDID et traitées dans le stockage de rapports [!UICONTROL Analytics]. Les données [!UICONTROL Analytics] peuvent ensuite être affichées dans [!UICONTROL Analytics] et [!DNL Target] via les rapports A4T. |
 
 ## Déployez at.js 2.*x*
 
@@ -84,7 +71,7 @@ Déployez at.js 2.*x* via les balises dans l’extension [Adobe Experience Platf
 >
 >Ou
 >
->Téléchargez at.js 2.*x* manuellement à l’aide de l’interface utilisateur [!DNL Target] et déployez-le à l’aide de la méthode [&#x200B; de votre choix](/help/dev/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
+>Téléchargez at.js 2.*x* manuellement à l’aide de l’interface utilisateur [!DNL Target] et déployez-le à l’aide de la méthode [ de votre choix](/help/dev/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
 
 ## Fonctions d’at.js obsolètes
 
@@ -271,7 +258,7 @@ Essentiellement, le concept de mbox globale a été introduit pour faire savoir 
 
 ### Le nom de la mbox globale dans at.js est-il plus volumineux ?
 
-Les clients peuvent spécifier un nom de mbox global via **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit at.js Settings]**. Ce paramètre est utilisé par les [!DNL Target] serveurs Edge pour convertir exécuter > pageload en nom de mbox globale, qui apparaît dans [!DNL Target] l’interface utilisateur. Ainsi, les clients peuvent continuer à utiliser les API côté serveur, le compositeur basé sur les formulaires, les scripts de profil et créer des audiences à l’aide du nom de mbox globale. Nous vous recommandons vivement de vous assurer que le même nom de mbox globale est également configuré sur la page **[!UICONTROL Administration]** > **[!UICONTROL Visual Experience Composer]** , au cas où vous auriez encore des pages utilisant at.js 1.*x*, comme illustré ci-dessous.
+Les clients peuvent spécifier un nom de mbox global via **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]** > **[!UICONTROL Modifier les paramètres at.js]**. Ce paramètre est utilisé par les [!DNL Target] serveurs Edge pour convertir exécuter > pageload en nom de mbox globale, qui apparaît dans [!DNL Target] l’interface utilisateur. Ainsi, les clients peuvent continuer à utiliser les API côté serveur, le compositeur basé sur les formulaires, les scripts de profil et créer des audiences à l’aide du nom de mbox globale. Nous vous recommandons vivement de vous assurer que le même nom de mbox globale est configuré sur la page **[!UICONTROL Administration]** > **[!UICONTROL Compositeur d’expérience visuelle]**, également, au cas où vous auriez encore des pages utilisant at.js 1.*x*, comme illustré dans les illustrations suivantes.
 
 ![Modification de la boîte de dialogue at.js](../assets/modify-atjs.png)
 
@@ -315,7 +302,7 @@ Pour utiliser le suivi inter-domaines pour at.js v2.10 ou une version ultérieur
 
 1. Installez la bibliothèque [ECID v4.3.0+](https://experienceleague.adobe.com/docs/id-service/using/release-notes/release-notes.html?lang=fr) conjointement avec at.js 2.*x*. Le but de la bibliothèque ECID est de gérer les ID persistants utilisés pour identifier un visiteur et ce même entre les domaines. Après avoir installé la bibliothèque ECID v4.3.0+ et at.js 2.*x*, vous pourrez créer des activités qui s’étendent sur des domaines uniques et effectuer le suivi des utilisateurs. Il est important de noter que cette fonctionnalité ne fonctionne qu’après l’expiration de la session.
 
-1. Au lieu d’installer la bibliothèque ECID, si vous disposez d’at.js version 2.10 ou ultérieure, vous pouvez activer le paramètre interdomaines dans l’interface utilisateur [!DNL Target] dans **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. (Vous pouvez également définir l’option _crossDomain_ sur _enabled_ dans le code at.js.)
+1. Au lieu d’installer la bibliothèque ECID, si vous disposez d’at.js version 2.10 ou ultérieure, vous pouvez activer le paramètre interdomaines dans l’interface utilisateur [!DNL Target] dans **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]**. (Vous pouvez également définir l’option _crossDomain_ sur _enabled_ dans le code at.js.)
 
 Pour utiliser le suivi inter-domaines pour les versions d’at.js v2.*x* antérieures à la version 2.10, vous pouvez implémenter l’option #1 ci-dessus (installer la bibliothèque ECID).
 
@@ -325,7 +312,7 @@ Ce paramètre indique à at.js 2.*x* de déclencher une requête aux serveurs Ed
 
 ### Le nom de la mbox globale est pris en charge
 
-Les clients peuvent spécifier un nom de mbox global via **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** > **[!UICONTROL Edit]**. Ce paramètre est utilisé par les serveurs Edge [!DNL Target] pour convertir exécuter > pageLoad en nom de la mbox globale saisi. Cela permet aux clients de continuer à utiliser les API côté serveur, le compositeur basé sur les formulaires, les scripts de profil et de créer les audiences qui ciblent la mbox globale.
+Les clients peuvent spécifier un nom de mbox global via **[!UICONTROL Target]** > **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]** > **[!UICONTROL Modifier]**. Ce paramètre est utilisé par les serveurs Edge [!DNL Target] pour convertir exécuter > pageLoad en nom de la mbox globale saisi. Cela permet aux clients de continuer à utiliser les API côté serveur, le compositeur basé sur les formulaires, les scripts de profil et de créer les audiences qui ciblent la mbox globale.
 
 ### Les événements personnalisés at.js ci-dessous sont-ils applicables à `triggerView()` ou n’est-ce que pour `applyOffer()` ou `applyOffers()` ?
 
@@ -336,7 +323,7 @@ Les clients peuvent spécifier un nom de mbox global via **[!UICONTROL Target]**
 
 Oui, les événements personnalisés at.js s’appliquent à `triggerView()` également.
 
-### Elle indique que lorsque j’appelle `triggerView()` avec &lbrace;`"page" : "true"`&rbrace;, une notification est envoyée au serveur principal [!DNL Target] et l’impression est augmentée. Cela entraîne-t-il également l’exécution des scripts de profil ?
+### Elle indique que lorsque j’appelle `triggerView()` avec &amp;lbrace;`"page" : "true"`&amp;rbrace;, une notification est envoyée au serveur principal [!DNL Target] et l’impression est augmentée. Cela entraîne-t-il également l’exécution des scripts de profil ?
 
 Lorsqu’un appel de pré-récupération est effectué au [!DNL Target] principal, les scripts de profil sont exécutés. Ensuite, les données de profil impactées seront chiffrées et retransmises côté client. Après l’appel de `triggerView()` avec `{"page": "true"}`, une notification est envoyée avec les données de profil chiffrées. C’est alors que l’arrière-plan [!DNL Target] déchiffrera les données de profil et les stockera dans les bases de données.
 
@@ -370,17 +357,17 @@ Les tableaux suivants décrivent at.js. compatibilité 2.*x* avec différents ty
 
 | Type | Pris en charge ? |
 | --- | --- |
-| [!UICONTROL A/B Test] | Oui |
-| [!UICONTROL Auto-Allocate] | Oui |
-| [!UICONTROL Auto-Target] | Oui |
-| [!UICONTROL Experience Targeting] | Oui |
-| [!UICONTROL Multivariate Test] | Oui |
+| [!UICONTROL Test A/B] | Oui |
+| [!UICONTROL affectation automatique] | Oui |
+| [!UICONTROL ciblage automatique] | Oui |
+| [!UICONTROL Ciblage d’expérience] | Oui |
+| [!UICONTROL Test multivarié] | Oui |
 | [!UICONTROL Automated Personalization] | Oui |
 | [!DNL Recommendations] | Oui |
 
 >[!NOTE]
 >
->[!UICONTROL Auto-Target] activités sont prises en charge par at.js 2.*x* et le VEC lorsque toutes les modifications sont appliquées au `Page Load Event`. Lorsque des modifications sont ajoutées à des vues spécifiques, seules les activités [!UICONTROL A/B Test], [!UICONTROL Auto-Allocate] et [!UICONTROL Experience Targeting] (XT) sont prises en charge.
+>Les activités de [!UICONTROL ciblage automatique] sont prises en charge par at.js 2.*x* et le compositeur d’expérience visuelle lorsque toutes les modifications sont appliquées au `Page Load Event`. Lorsque des modifications sont ajoutées à des vues spécifiques, les activités [!UICONTROL Test A/B], [!UICONTROL Affectation automatique] et [!UICONTROL Ciblage d’expérience] (XT) sont uniquement prises en charge.
 
 ### Intégrations
 
@@ -390,7 +377,7 @@ Les tableaux suivants décrivent at.js. compatibilité 2.*x* avec différents ty
 | Audiences | Oui |
 | Attributs du client | Oui |
 | Fragments d’expérience AEM | Oui |
-| [Extension &#x200B;](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) | Oui |
+| [Extension ](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) | Oui |
 | Débogueur | Oui |
 | Auditeur | Les règles n’ont pas encore été mises à jour pour at.js 2.*x* |
 | Prise en charge de l’Opt-in pour le [RGPD](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) | Cette fonctionnalité est prise en charge dans [at.js version 2.1.0](/help/dev/implement/client-side/atjs/target-atjs-versions.md#atjs-version-210-june-3-2019) ou ultérieure. |
@@ -424,7 +411,7 @@ Les tableaux suivants décrivent at.js. compatibilité 2.*x* avec différents ty
 
 ## Jetons de réponse
 
-at.js 2.*x*, tout comme at.js 1.*x*, utilise le `at-request-succeeded` d’événement personnalisé pour faire apparaître les jetons de réponse. Pour des exemples de code utilisant l’événement `at-request-succeeded` personnalisé, voir [Jetons réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr).
+at.js 2.*x*, tout comme at.js 1.*x*, utilise le `at-request-succeeded` d’événement personnalisé pour faire apparaître les jetons de réponse. Pour des exemples de code utilisant l’événement `at-request-succeeded` personnalisé, voir [Jetons réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html).
 
 ## Paramètres at.js 1.*x* pour le mappage de la payload vers at.js 2.*x*
 
@@ -791,5 +778,5 @@ at.js 2.*x* améliore la prise en charge des SPA par Adobe [!DNL Target] et s’
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=fr) voir  Fonctionnement d’at.js 2.*x* .
+Pour plus d’informations](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) voir [ Fonctionnement d’at.js 2.*x* .
 

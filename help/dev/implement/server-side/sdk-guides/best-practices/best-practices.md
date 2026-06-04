@@ -1,25 +1,22 @@
 ---
 title: Bonnes pratiques relatives à l’utilisation de la prise de décision sur l’appareil
-description: Découvrez les bonnes pratiques d’utilisation de [!UICONTROL on-device decisioning] dans  [!DNL Adobe Target]
+description: Découvrez les bonnes pratiques d’utilisation de la [!UICONTROL prise de décision sur l’appareil] dans  [!DNL Adobe Target]
 feature: Implement Server-side
 exl-id: a0ca014d-ad9f-4ecc-961d-cb7ba236507f
 TQID: https://experienceleague.adobe.com/GgVJaAal4uS1RqpCK3wNCVwPjAOaXzjXNV7EoqWhwcY
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 393
+source-wordcount: 399
 ht-degree: 3%
 
 ---
 
 # Bonnes pratiques
 
-[!DNL Adobe] recommande les bonnes pratiques suivantes lors de l’utilisation de [!UICONTROL on-device decisioning] :
+[!DNL Adobe] recommande les bonnes pratiques suivantes lors de l’utilisation de la [!UICONTROL prise de décision sur l’appareil] :
 
 ## Bonnes pratiques lorsque la méthode de prise de décision est « sur l’appareil »
 

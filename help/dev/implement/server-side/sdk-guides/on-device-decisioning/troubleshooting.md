@@ -1,27 +1,21 @@
 ---
 title: Résolution des problèmes de prise de décision sur l’appareil
-description: Découvrez comment résoudre les problèmes liés aux [!UICONTROL on-device decisioning]
+description: Découvrez comment résoudre les problèmes liés à la [!UICONTROL prise de décision sur l’appareil]
 exl-id: e76f95ce-afae-48e0-9dbb-2097133574dc
 feature: APIs/SDKs
 TQID: https://experienceleague.adobe.com/Fp25tLDtuk-CqqcbofshX2-0MzQzayE2xN8OvNT3zVo
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1158
+source-wordcount: 1188
 ht-degree: 0%
 
 ---
 
-# Résolution des problèmes [!UICONTROL on-device decisioning]
+# Dépannage [!UICONTROL prise de décision sur l’appareil]
 
 ## Validation de la configuration
 
@@ -29,8 +23,8 @@ ht-degree: 0%
 
 1. Vérifiez que le `logger` est configuré
 1. Assurez-vous que [!DNL Target] traces sont activées
-1. Vérifiez que l’[!UICONTROL on-device decisioning] *artefact de règle* a été récupéré et mis en cache selon l’intervalle d’interrogation défini.
-1. Validez la diffusion de contenu via l’artefact de règle mis en cache en créant une activité de [!UICONTROL on-device decisioning] de test via le compositeur d’expérience d’après les formulaires.
+1. Vérifiez que l’[!UICONTROL artefact de règle ** prise de décision sur l’appareil] a été récupéré et mis en cache conformément à l’intervalle d’interrogation défini.
+1. Validez la diffusion de contenu via l’artefact de règle mis en cache en créant une activité test [!UICONTROL prise de décision sur l’appareil] via le compositeur d’expérience basé sur les formulaires.
 1. Inspecter les erreurs de notification d’envoi
 
 ## &#x200B;1. Vérifiez que l’enregistreur est configuré
@@ -75,7 +69,7 @@ L’activation des traces génère des informations supplémentaires à partir d
 
    ![image alternative](assets/asset-target-ui-1.png)
 
-1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Implementation]** et cliquez sur **[!UICONTROL Generate New Authorization Token]**.
+1. Accédez à **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]** et cliquez sur **[!UICONTROL Générer un nouveau jeton d’autorisation]**.
 
    ![image alternative](assets/asset-target-ui-2.png)
 
@@ -124,7 +118,7 @@ L’activation des traces génère des informations supplémentaires à partir d
      AT: LD.ArtifactProvider artifact received - status=200
    ```
 
-## &#x200B;3. Vérifiez que l’[!UICONTROL on-device decisioning] *artefact de règle* a été récupéré et mis en cache selon l’intervalle d’interrogation défini.
+## &#x200B;3. Vérifiez que l’[!UICONTROL artefact de règle ** prise de décision sur l’appareil] a été récupéré et mis en cache conformément à l’intervalle d’interrogation défini.
 
 1. Patientez pendant la durée de l’intervalle d’interrogation (20 minutes par défaut) et assurez-vous que l’artefact est récupéré par le SDK. Les mêmes logs de terminal seront générés.
 
@@ -146,7 +140,7 @@ L’activation des traces génère des informations supplémentaires à partir d
      },
    ```
 
-## &#x200B;4. Validez la diffusion de contenu via l’artefact de règle mis en cache en créant une activité de [!UICONTROL on-device decisioning] de test via le compositeur d’expérience d’après les formulaires
+## &#x200B;4. Validez la diffusion de contenu via l’artefact de règle mis en cache en créant une activité test [!UICONTROL prise de décision sur l’appareil] via le compositeur d’expérience basé sur les formulaires
 
 1. Accéder à l’interface utilisateur [!DNL Target] dans Experience Cloud
 
@@ -250,11 +244,11 @@ client = TargetClient.create({
 
 ## Scénarios de dépannage courants
 
-Veillez à consulter les [fonctionnalités prises en charge](supported-features.md) pour [!UICONTROL on-device decisioning] d’informations en cas de problème.
+Veillez à consulter [fonctionnalités prises en charge](supported-features.md) pour la [!UICONTROL prise de décision sur l’appareil] lorsque vous rencontrez des problèmes.
 
 ### Activités de prise de décision sur l’appareil non exécutées en raison d’une audience ou d’une activité non prise en charge
 
-Un problème courant qui peut se produire est le [!UICONTROL on-device decisioning] des activités qui ne s’exécutent pas en raison de l’audience utilisée ou du type d’activité non pris en charge.
+Un problème courant qui peut se produire est la [!UICONTROL prise de décision sur l’appareil] activités qui ne s’exécutent pas en raison de l’audience utilisée ou d’un type d’activité non pris en charge.
 
 (1) À l’aide de la sortie de l’enregistreur, passez en revue les entrées de la propriété de trace dans votre objet de réponse. Identifiez spécifiquement la propriété des campagnes :
 

@@ -1,27 +1,20 @@
 ---
 keywords: Recommendations, paramètres, préférences, secteur vertical, critères de filtrage incompatibles, groupe d’hôtes par défaut, URL de base de pouces, jeton d’API Recommendations,
-description: Découvrez comment implémenter [!UICONTROL Recommendations] activités dans  [!DNL Adobe Target].
-title: Comment Mettre En Œuvre [!UICONTROL Recommendations] Activités ?
+description: Découvrez comment implémenter les activités [!UICONTROL Recommendations] dans  [!DNL Adobe Target].
+title: Comment Mettre En Œuvre Les Activités [!UICONTROL  Recommendations ] ?
 feature: Recommendations
 hide: true
 exl-id: 0a9c9649-195b-44e2-987e-d02eaf98cc54
 TQID: https://experienceleague.adobe.com/A7j0oJbyO3oei-a2l02I58o9I0vCPrRcqWC-QgQUxBo
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
 workflow-type: tm+mt
-source-wordcount: 1644
-ht-degree: 18%
+source-wordcount: 1734
+ht-degree: 17%
 
 ---
 
@@ -31,24 +24,24 @@ Informations destinées à vous aider à planifier et à implémenter des [!DNL 
 
 >[!NOTE]
 >
->Outre cet article, le [Guide du professionnel &#x200B;](https://experienceleague.adobe.com/fr/docs/target/using/target-home){target=_blank} contient des informations détaillées sur [Target Recommendations](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/recommendations){target=_blank}.
+>Outre cet article, le [Guide du professionnel ](https://experienceleague.adobe.com/en/docs/target/using/target-home){target=_blank} contient des informations détaillées sur [Target Recommendations](https://experienceleague.adobe.com/en/docs/target/using/recommendations/recommendations){target=_blank}.
 
 Avant de configurer votre première activité [!UICONTROL Recommendations] dans [!DNL Adobe Target], procédez comme suit :
 
-1. [Implémentez des [!UICONTROL Target]](#implement-target) sur les surfaces d’applications web et mobiles que vous souhaitez utiliser pour capturer le comportement des utilisateurs et fournir des recommandations.
-1. [Configurez votre catalogue de [!UICONTROL Recommendations]](#set-up-your-recommendations-catalog) de produits ou de contenu que vous souhaitez recommander à vos utilisateurs.
+1. [Implémentez [!UICONTROL Target]](#implement-target) sur les surfaces d’applications web et mobiles que vous souhaitez utiliser pour capturer le comportement des utilisateurs et diffuser des recommandations.
+1. [Configurez votre [!UICONTROL catalogue Recommendations] de produits ou de contenu](#set-up-your-recommendations-catalog) que vous souhaitez recommander à vos utilisateurs.
 1. [Transmettez des informations comportementales et contextuelles](#pass-behavioral-information-and-context) aux [!DNL Target Recommendations] afin de leur permettre de fournir des recommandations personnalisées.
 1. [Configurer les exclusions globales](#configure-global-exclusions).
-1. [Configurer [!UICONTROL Recommendations] paramètres](#configure-recommendations-settings).
-1. (Facultatif) [Administrer des [!UICONTROL Recommendations] à l’aide des API d’administration](#administer-recommendations-using-admin-apis).
+1. [Configurer [!UICONTROL les paramètres Recommendations]](#configure-recommendations-settings).
+1. (Facultatif) [Administration [!UICONTROL Recommendations] à l’aide des API d’administration](#administer-recommendations-using-admin-apis).
 
 ## &#x200B;1. Implémentation de [!UICONTROL Target]
 
-[!DNL Target Recommendations] nécessite l’implémentation de [!DNL Adobe Experience Platform Web SDK] ou d’at.js 0.9.2 (ou version ultérieure). Pour plus d’informations[&#128279;](../client-side/overview.md) consultez les guides de mise en œuvre côté client [!UICONTROL Target] .
+[!DNL Target Recommendations] nécessite l’implémentation de [!DNL Adobe Experience Platform Web SDK] ou d’at.js 0.9.2 (ou version ultérieure). Pour plus d’informations] consultez les guides de mise en œuvre côté client [[!UICONTROL Target](../client-side/overview.md).
 
 ## &#x200B;2. Configurer votre catalogue [!UICONTROL Recommendations]
 
-Pour fournir des recommandations de haute qualité, [!UICONTROL Target] devez connaître les produits ou le contenu que vous souhaitez recommander. Les catalogues incluent généralement trois types d’informations sur les éléments recommandés. Supposons que vous recommandiez des films. Inclure les éléments suivants :
+Pour fournir des recommandations de haute qualité, [!UICONTROL Target] doit connaître les produits ou le contenu que vous souhaitez recommander. Les catalogues incluent généralement trois types d’informations sur les éléments recommandés. Supposons que vous recommandiez des films. Inclure les éléments suivants :
 
 1. Données que vous souhaitez afficher pour l’utilisateur recevant la recommandation Par exemple, vous pouvez afficher le nom de l’animation et l’URL d’une miniature de l’affiche de l’animation.
 1. Données qui s’avèrent utiles pour appliquer des contrôles marketing et de marchandisage Par exemple, vous pouvez afficher la classification du film afin de ne pas recommander de films NC-17.
@@ -58,7 +51,7 @@ Pour fournir des recommandations de haute qualité, [!UICONTROL Target] devez co
 
 | Méthode | Ce que c&#39;est | Quand l’utiliser | Informations supplémentaires |
 | --- | --- | --- | --- |
-| Flux de catalogue | Planifiez le chargement et l’ingestion quotidiens d’un flux (CSV, [!DNL Google] Product XML ou [!UICONTROL Analytics Product Classifications]). | Pour envoyer des informations sur plusieurs éléments à la fois. Pour envoyer des informations qui changent rarement. | Voir [Flux](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/entities/feeds). |
+| Flux de catalogue | Planifiez le chargement et l’ingestion quotidiens d’un flux (CSV, [!DNL Google] Product XML ou [!UICONTROL Classifications de produit Analytics]). | Pour envoyer des informations sur plusieurs éléments à la fois. Pour envoyer des informations qui changent rarement. | Voir [Flux](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/feeds). |
 | API des entités | Appelez une API pour envoyer des mises à jour à la minute près pour un seul élément. | Pour envoyer des mises à jour lorsqu’elles se produisent sur un élément à la fois. Pour envoyer des informations qui changent fréquemment (par exemple, le prix, le stock/le niveau de stock). | Consultez la [documentation destinée aux développeurs et développeuses de l’API Entities](https://developer.adobe.com/target/administer/recommendations-api/#tag/Entities). |
 | Transmission des mises à jour sur la page | Envoyez des mises à jour à la minute pour un seul élément à l’aide de JavaScript sur la page ou de l’API de diffusion. | Pour envoyer des mises à jour lorsqu’elles se produisent sur un élément à la fois. Pour envoyer des informations qui changent fréquemment (par exemple, le prix, le stock/le niveau de stock). | Voir [Pages de produits/consultations d’articles](#item-views-or-product-pages) ci-dessous. |
 
@@ -121,7 +114,7 @@ function targetPageParams() {
 }
 ```
 
-Pour plus d’informations sur les recommandations basées sur le panier, voir [Basées sur le panier](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key#cart-based) dans le Guide du professionnel *[!DNL Adobe Target]*.
+Pour plus d’informations sur les recommandations basées sur le panier, voir [Basées sur le panier](https://experienceleague.adobe.com/en/docs/target/using/recommendations/criteria/base-the-recommendation-on-a-recommendation-key#cart-based) dans le Guide du professionnel *[!DNL Adobe Target]*.
 
 ### Exclure des éléments déjà présents dans le panier du visiteur
 
@@ -143,31 +136,31 @@ Lorsqu’un événement d’achat se produit, transmettez l’identité du ou de
 
 ## &#x200B;4. Configuration des exclusions globales
 
-Excluez de la liste tous les éléments à un niveau global que vous ne souhaitez jamais recommander à un visiteur. Voir [Exclusions](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/entities/exclusions) dans le Guide *[!DNL Adobe Target]du professionnel*.
+Excluez de la liste tous les éléments à un niveau global que vous ne souhaitez jamais recommander à un visiteur. Voir [Exclusions](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/exclusions) dans le Guide *[!DNL Adobe Target]du professionnel*.
 
 ## &#x200B;5. Configurer les paramètres [!UICONTROL Recommendations]
 
-Utilisez les paramètres pour gérer votre implémentation de [!UICONTROL Recommendations].
+Utilisez les paramètres pour gérer votre implémentation de [!UICONTROL Recommandations].
 
-Pour accéder aux options de **[!UICONTROL Recommendations Settings]**, ouvrez [!DNL Target] dans le [!DNL Adobe Experience Cloud], puis cliquez sur **[!UICONTROL Administration]** > **[!UICONTROL Recommendations]**.
+Pour accéder aux options **[!UICONTROL Paramètres de recommandations]**, ouvrez [!DNL Target] dans le [!DNL Adobe Experience Cloud], puis cliquez sur **[!UICONTROL Administration]** > **[!UICONTROL Recommandations]**.
 
 ![Page Paramètres Recommendations](/help/dev/implement/recommendations/assets/recs-settings-new.png)
 
 Configurez les options suivantes :
 
-### [!UICONTROL Recommendations API Token]
+### [!UICONTROL  Jeton API Recommendations ]
 
-Les options suivantes sont disponibles dans la section [!UICONTROL Recommendations API Token] :
+Les options suivantes sont disponibles dans la section [!UICONTROL  Jeton API Recommendations ] :
 
-#### [!UICONTROL Client code]
+#### [!UICONTROL  Code client ]
 
-La [!UICONTROL client code] [!DNL Target].
+Le [!DNL Target] [!UICONTROL code client].
 
-Si vous ne connaissez pas votre [!UICONTROL client code], dans l’interface utilisateur [!DNL Target], cliquez sur **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. Le [!UICONTROL client code] s’affiche dans la section [!UICONTROL Account Details] .
+Si vous ne connaissez pas votre [!UICONTROL code client], dans l’interface utilisateur [!DNL Target], cliquez sur **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]**. Le [!UICONTROL code client] s’affiche dans la section [!UICONTROL Détails du compte].
 
 #### Jeton d’authentification
 
-Les API [!DNL Adobe Target] Admin, y compris les API [!DNL Recommendations Admin], sont sécurisées par authentification afin de s’assurer que seuls les utilisateurs autorisés les utilisent pour accéder aux [!DNL Adobe Target]. Utilisez [&#128279;](https://developer.adobe.com/console/home) pour gérer cette authentification pour tous les [!DNL Adobe Experience Cloud solutions], y compris les [!DNL Adobe Target].
+Les API [!DNL Adobe Target] Admin, y compris les API [!DNL Recommendations Admin], sont sécurisées par authentification afin de s’assurer que seuls les utilisateurs autorisés les utilisent pour accéder aux [!DNL Adobe Target]. Utilisez [](https://developer.adobe.com/console/home) pour gérer cette authentification pour tous les [!DNL Adobe Experience Cloud solutions], y compris les [!DNL Adobe Target].
 
 Pour plus d’informations, voir [Configuration de l’authentification pour les API Adobe Target](/help/dev/before-administer/configure-authentication.md).
 
@@ -181,11 +174,11 @@ Connaître le secteur vertical de votre site permet à Target de choisir les cri
 
 Les critères de [!DNL Recommendations] sont des règles qui déterminent quels produits ou contenus recommander selon un ensemble prédéterminé de comportements de visiteurs. Les critères peuvent être basés sur des tendances populaires, les comportements actuel et passé d’un visiteur ou des produits et contenus similaires. Vous pouvez tester plusieurs types de recommandations les uns par rapport aux autres en ajoutant plusieurs critères.
 
-Pour plus d’informations, voir [Critères](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/criteria/algorithms){target=_blank} dans le *Guide du professionnel Adobe Target.*
+Pour plus d’informations, voir [Critères](https://experienceleague.adobe.com/en/docs/target/using/recommendations/criteria/algorithms){target=_blank} dans le *Guide du professionnel Adobe Target.*
 
-Les paramètres suivants sont disponibles dans la section [!UICONTROL Criteria] :
+Les paramètres suivants sont disponibles dans la section [!UICONTROL Critères] :
 
-#### [!UICONTROL Industry/Vertical]
+#### [!UICONTROL Secteur/Vertical]
 
 Le secteur industriel vertical permet de classer les critères de recommandations. Ces informations aident les membres de votre équipe à trouver les critères pertinents pour une page particulière, tels que les critères les plus adaptés à la page du panier ou à une page multimédia.
 
@@ -196,7 +189,7 @@ Les catégories suivantes sont disponibles à partir de la liste déroulante :
 * Génération de piste / B2B / Services financiers
 * Médias / Publication
 
-#### [!UICONTROL Filter Incompatible Criteria]
+#### [!UICONTROL Filtrer les critères incompatibles]
 
 Activez cette option pour afficher uniquement les critères pour lesquels la page sélectionnée transmet les données requises. Tous les critères ne s’exécutent pas correctement sur chaque page. La page ou la mbox doit être transmise `entity.id` ou `entity.categoryId` pour que les recommandations d’élément/de catégorie actuelles soient compatibles.
 
@@ -204,36 +197,36 @@ En général, il est préférable de n’afficher que les critères compatibles.
 
 Adobe recommande de désactiver cette option si vous utilisez une solution de gestion des balises.
 
-Pour plus d’informations sur cette option, voir [[!UICONTROL Recommendations] FAQ](https://experienceleague.adobe.com/fr/docs/target/using/recommendations/recommendations-faq/recommendations-faq){target=_blank} dans le Guide du professionnel *[!DNL Adobe Target]*.
+Pour plus d’informations sur cette option, voir [[!UICONTROL FAQ sur Recommendations] dans le Guide du professionnel de *[!DNL Adobe Target]’](https://experienceleague.adobe.com/en/docs/target/using/recommendations/recommendations-faq/recommendations-faq){target=_blank}*.
 
-### [!UICONTROL Product Catalog]
+### [!UICONTROL Catalogue de produits]
 
-Les options suivantes sont disponibles dans la section [!UICONTROL Product Catalog] :
+Les options suivantes sont disponibles dans la section [!UICONTROL Catalogue de produits] :
 
-#### [!UICONTROL Default Host Group]
+#### [!UICONTROL Groupe d’hôtes par défaut]
 
 Sélectionnez votre groupe d’hôtes par défaut.
 
 Le groupe d’hôtes peut servir à séparer les éléments disponibles dans votre catalogue pour différents usages. Par exemple, vous pouvez utiliser des groupes d’hôtes pour les environnements de développement et de production, des marques différentes ou différentes zones géographiques. Par défaut, les résultats d’aperçu dans la recherche de catalogue, les collections et les exclusions sont basés sur le groupe d’hôtes par défaut. (Vous pouvez également sélectionner un autre groupe d&#39;hôtes pour prévisualiser les résultats à l&#39;aide du filtre Environnement.) Par défaut, les nouveaux éléments ajoutés sont disponibles dans tous les groupes d’hôtes, sauf si un identifiant d’environnement est spécifié lors de la création ou de la mise à jour de l’élément. Les recommandations fournies dépendent du groupe d’hôtes spécifié dans la requête.
 
-Si vos produits ne sont pas répertoriés, vérifiez que vous utilisez le groupe d’hôtes approprié. Si, par exemple, vous configurez votre recommandation pour utiliser un environnement d’évaluation et que vous définissez votre groupe d’hôtes sur Évaluation, il se peut que vous deviez recréer vos collections dans l’environnement d’évaluation pour les produits à afficher. Pour voir quels produits sont disponibles dans chaque environnement, utilisez la recherche catalogue pour chaque environnement. Vous pouvez également prévisualiser le contenu des collections et exclusions de [!UICONTROL Recommendations] pour un environnement sélectionné (groupe d’hôtes).
+Si vos produits ne sont pas répertoriés, vérifiez que vous utilisez le groupe d’hôtes approprié. Si, par exemple, vous configurez votre recommandation pour utiliser un environnement d’évaluation et que vous définissez votre groupe d’hôtes sur Évaluation, il se peut que vous deviez recréer vos collections dans l’environnement d’évaluation pour les produits à afficher. Pour voir quels produits sont disponibles dans chaque environnement, utilisez la recherche catalogue pour chaque environnement. Vous pouvez également prévisualiser le contenu des collections et exclusions [!UICONTROL  Recommendations ] pour un environnement sélectionné (groupe d’hôtes).
 
 >[!NOTE]
 >
->Après avoir modifié l’environnement sélectionné, vous devez cliquer sur **[!UICONTROL Search]** pour mettre à jour les résultats renvoyés.
+>Après avoir modifié l’environnement sélectionné, vous devez cliquer sur **[!UICONTROL Rechercher]** pour mettre à jour les résultats renvoyés.
 
-Le filtre **[!UICONTROL Environment]** est disponible aux emplacements suivants de l’interface utilisateur de Target :
+Le filtre **[!UICONTROL Environnement]** est disponible aux emplacements suivants dans l’interface utilisateur de Target :
 
-* Recherche catalogue (**[!UICONTROL Recommendations]** > **[!UICONTROL Catalog Search]**)
+* Recherche catalogue (**[!UICONTROL Recommendations]** > **[!UICONTROL Recherche catalogue]**)
 * Collections (**[!UICONTROL Recommendations]** > **[!UICONTROL Collections]**)
-* Boîte de dialogue Créer une collection (**[!UICONTROL Recommendations]** > **[!UICONTROL Collections]** > **[!UICONTROL Create collection]**)
-* Boîte de dialogue Mettre à jour la collection (**[!UICONTROL Recommendations]** > **[!UICONTROL Collections]** > **[!UICONTROL Edit]**)
-* Boîte de dialogue Créer une exclusion (**[!UICONTROL Recommendations]** > **[!UICONTROL Exclusions]** > **[!UICONTROL Create exclusion]**)
-* Boîte de dialogue Mettre à jour l’exclusion (**[!UICONTROL Recommendations]** > **[!UICONTROL Exclusions]** > **[!UICONTROL Edit]**)
+* Boîte de dialogue Créer une collection (**[!UICONTROL Recommendations]** > **[!UICONTROL Collections]** > **[!UICONTROL Créer une collection]**)
+* Boîte de dialogue Mettre à jour la collection (**[!UICONTROL Recommendations]** > **[!UICONTROL Collections]** > **[!UICONTROL Modifier]**)
+* Boîte de dialogue Créer une exclusion (**[!UICONTROL Recommendations]** > **[!UICONTROL Exclusions]** > **[!UICONTROL Créer une exclusion]**)
+* Boîte de dialogue Mettre à jour l’exclusion (**[!UICONTROL Recommendations]** > **[!UICONTROL Exclusions]** > **[!UICONTROL Modifier]**)
 
-Pour plus d’informations, consultez [Hôtes](https://experienceleague.adobe.com/fr/docs/target/using/administer/hosts){target=_blank} dans le Guide du professionnel *[!DNL Adobe Target]*.
+Pour plus d’informations, consultez [Hôtes](https://experienceleague.adobe.com/en/docs/target/using/administer/hosts){target=_blank} dans le Guide du professionnel *[!DNL Adobe Target]*.
 
-#### [!UICONTROL Thumbnail Base]
+#### [!UICONTROL Base de miniature]
 
 La définition d’une URL de base pour votre catalogue de produits rend possible l’utilisation d’URL relatives lors de la spécification de miniatures de vos produits lors du transfert de votre URL de miniature.
 
@@ -243,12 +236,12 @@ Par exemple :
 
 définit une URL relative à l’URL de base de la miniature.
 
-### [!UICONTROL Custom Attribute Key Configuration]
+### [!UICONTROL Configuration de la clé d’attribut personnalisée]
 
 Basez vos recommandations sur un élément stocké dans le profil du visiteur. Par exemple, « dernier élément ajouté au panier » ou « dernière vidéo visionnée à 90 % ou plus ».
 
-Cliquez sur **[!UICONTROL Add]** pour créer une configuration, spécifiez un nom pour la configuration, sélectionnez l’attribut de profil souhaité, puis cliquez sur **[!UICONTROL Save]**.
+Cliquez sur **[!UICONTROL Ajouter]** pour créer une configuration, spécifiez un nom pour la configuration, sélectionnez l’attribut de profil souhaité, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
-## &#x200B;6. (Facultatif) Administration de [!UICONTROL Recommendations] à l’aide des API d’administration
+## &#x200B;6. (Facultatif) Administrer [!UICONTROL Recommendations] à l’aide des API d’administration
 
-Consultez le guide pratique [Utiliser les API [!UICONTROL Recommendations]](../../before-administer/recs-api/overview.md) pour savoir comment configurer et utiliser les API d’administration et de diffusion [!UICONTROL Target] pour les [!UICONTROL Recommendations].
+Consultez le guide pratique [Utilisation des API [!UICONTROL Recommendations]](../../before-administer/recs-api/overview.md) pour savoir comment configurer et utiliser les API d’administration et de diffusion [!UICONTROL Target] pour [!UICONTROL Recommendations].

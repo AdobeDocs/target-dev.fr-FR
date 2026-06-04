@@ -1,26 +1,19 @@
 ---
 keywords: adobe.target.getOffers, getOffers, getOffers, get offres, at.js, fonctions, fonction, 8 $
-description: Utilisez la fonction [!UICONTROL adobe.target.getOffers()] et ses options pour que la bibliothèque at [!DNL Adobe Target] js déclenche des requêtes afin d’obtenir plusieurs offres [!DNL Target]  (at.js 2.x)
+description: Utilisez la fonction [!UICONTROL adobe.target.getOffers()] et ses options pour que la bibliothèque  [!DNL Adobe Target] at.js déclenche des requêtes pour obtenir plusieurs offres [!DNL Target] . (at.js 2.x)
 title: Comment utiliser la fonction [!UICONTROL adobe.target.getOffers()] ?
 feature: at.js
 exl-id: b96a3018-93eb-49e7-9aed-b27bd9ae073a
 TQID: https://experienceleague.adobe.com/jJXcWyQzJ48GNCNcOT165vxcO-CLExTj-t-3kbR2FZ0
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1340
-ht-degree: 60%
+source-wordcount: 1357
+ht-degree: 57%
 
 ---
 
@@ -51,7 +44,7 @@ Cette fonction permet de récupérer plusieurs offres en transmettant plusieurs 
 | Request > id > thirdPartyId | Non | Taille maximale = 128. |  |
 | Request > experienceCloud | Non |  |  |
 | Request > experienceCloud > analytics | Non |  | Intégration d’Adobe Analytics |
-| Request > experienceCloud > analytics > logging | Non | Les éléments suivants doivent être implémentés sur la page :<ul><li>Service d’identification des visiteurs</li><li>Appmeasurement.js</li></ul> | Les valeurs suivantes sont prises en charge :<P>**client_side** : lorsqu’elle est spécifiée, une payload d’analyse est renvoyée à l’appelant. Celui-ci doit alors l’utiliser pour l’envoyer à [!UICONTROL Adobe Analytics] via l’[!UICONTROL Data Insertion API] .<P>**server_side** : il s’agit de la valeur par défaut où le [!DNL Target] et [!DNL Analytics] serveur principal utiliseront le SDID pour regrouper les appels à des fins de création de rapports. |
+| Request > experienceCloud > analytics > logging | Non | Les éléments suivants doivent être implémentés sur la page :<ul><li>Service d’identification des visiteurs</li><li>Appmeasurement.js</li></ul> | Les valeurs suivantes sont prises en charge :<P>**côté_client** : lorsqu’elle est spécifiée, une payload d’analyse est renvoyée à l’appelant, qui doit être utilisée pour l’envoi à [!UICONTROL Adobe Analytics] via l’[!UICONTROL API Data Insertion].<P>**server_side** : il s’agit de la valeur par défaut où le [!DNL Target] et [!DNL Analytics] serveur principal utiliseront le SDID pour regrouper les appels à des fins de création de rapports. |
 | Request > prefetch | Non |  |  |
 | Request > prefetch > views | Non | Nb maximal de 50.<P>Nom non vide.<P>Longueur du nom `<=` 128.<P>Longueur de la valeur `<=` 5 000.<P>Le nom ne doit pas commencer par « profile ».<P>Noms non autorisés : « orderId », « orderTotal », « productPurchasedId ». | Transmettez les paramètres à utiliser pour récupérer les vues pertinentes dans les activités actives. |
 | Request > prefetch > views > profileParameters | Non | Nombre maximal de 50.<P>Nom non vide.<P>Longueur du nom `<=` 128.<P>Longueur de la valeur `<=` 5 000.<P>Accepte uniquement les valeurs de chaîne.<P>Le nom ne doit pas commencer par « profile ». | Transmettez les paramètres de profil à utiliser pour récupérer les vues pertinentes dans les activités actives. |
@@ -86,7 +79,7 @@ Cette fonction permet de récupérer plusieurs offres en transmettant plusieurs 
 | Request > execute > mboxes > mbox > order > total | Non | `>=` 0. | Récupérez les offres pour une mbox donnée avec les totaux de commande spécifiés. |
 | Request > execute > mboxes > mbox > order > purchasedProductIds | Non | Aucune valeur vide.<P>Longueur maximale de chaque valeur = 50.<P>Concaténé et séparé par une virgule.<P>Longueur totale des ID de produit `<=` 250. | Récupérez les offres pour une mbox donnée avec l’ordre spécifié des ID de produit achetés. |
 
-## Appel de [!UICONTROL getOffers()] pour toutes les vues
+## Appelez [!UICONTROL getOffers()] pour toutes les vues
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({
@@ -98,7 +91,7 @@ adobe.target.getOffers({
 });
 ```
 
-## Appeler [!UICONTROL getOffers()] pour prendre une décision sur l’appareil
+## Appelez [!UICONTROL getOffers()] pour prendre une décision sur l’appareil
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({ 
@@ -117,7 +110,7 @@ adobe.target.getOffers({
 }); 
 ```
 
-## Appel de [!UICONTROL getOffers()] pour récupérer les dernières vues avec les paramètres transmis et les paramètres de profil
+## Appelez [!UICONTROL getOffers()] pour récupérer les dernières vues avec les paramètres transmis et les paramètres de profil
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({
@@ -138,7 +131,7 @@ adobe.target.getOffers({
 });
 ```
 
-## Appel de [!UICONTROL getOffers()] pour récupérer les mbox avec des paramètres et des paramètres de profil transmis.
+## Appelez [!UICONTROL getOffers()] pour récupérer les mbox avec les paramètres et les paramètres de profil transmis.
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({
@@ -165,7 +158,7 @@ adobe.target.getOffers({
 });
 ```
 
-## Appelez [!UICONTROL getOffers()] pour récupérer la payload d’analyse du côté client
+## Appelez [!UICONTROL getOffers()] pour récupérer la payload d’analyse côté client.
 
 ```javascript {line-numbers="true"}
 adobe.target.getOffers({
@@ -219,7 +212,7 @@ adobe.target.getOffers({
 
 La payload peut ensuite être transmise à [!DNL Adobe Analytics] via l’API [Data Insertion](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/index.md).
 
-## Récupérer et générer des données à partir de plusieurs mbox via [!UICONTROL getOffers()] et [!UICONTROL applyOffers()]
+## Récupérez et effectuez le rendu des données de plusieurs mbox via [!UICONTROL getOffers()] et [!UICONTROL applyOffers()]
 
 at.js 2.x vous permet de récupérer plusieurs mbox via l’`[!UICONTROL getOffers()]`API. Vous pouvez également récupérer des données pour plusieurs mbox, puis utiliser `[!UICONTROL applyOffers()]` pour effectuer le rendu des données à différents emplacements identifiés par un sélecteur CSS.
 
@@ -298,7 +291,7 @@ Cet exemple utilise la variable count pour construire les sélecteurs CSS. Dans 
 
 Notez que cet exemple utilise `prefetch > mboxes`, mais vous pouvez également utiliser `execute > mboxes`. Vérifiez que si vous utilisez la prérécupération dans `getOffers()`, vous devez également utiliser la prérécupération dans l’appel de `applyOffers()`.
 
-## Appeler [!UICONTROL getOffers()] pour effectuer un chargement de page
+## Appelez [!UICONTROL getOffers()] pour effectuer un chargement de page
 
 L’exemple suivant montre comment effectuer un chargement de page à l’aide de [!UICONTROL getOffers()] avec at.js 2.*x*
 

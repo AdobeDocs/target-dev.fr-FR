@@ -7,15 +7,12 @@ thumbnail: null
 author: Judy Kim
 exl-id: aea82607-cde4-456a-8dfb-2967badce455
 TQID: https://experienceleague.adobe.com/9uKu-mX9xzz-sG4-peyfzrwogo27nF8TZ4zFXBi6TaU
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 0fe52344f654f22d1ff7aaace0ba5a99e92d036d
 workflow-type: tm+mt
-source-wordcount: 901
+source-wordcount: 930
 ht-degree: 0%
 
 ---
@@ -28,7 +25,7 @@ Vous pouvez désormais utiliser les [API Recommendations](https://developer.adob
 
 >[!NOTE]
 >
->Envoyez la demande **[!UICONTROL IMS: JWT Generate + Auth via User Token]** chaque fois que vous devez actualiser votre jeton d’accès pour l’authentification, puisqu’il expire après 24 heures. Voir [Configurer l’authentification de l’API Adobe](../configure-authentication.md) pour obtenir des instructions.
+>Envoyez la requête **[!UICONTROL IMS : JWT Generate + Auth via Jeton utilisateur]** chaque fois que vous devez actualiser votre jeton d’accès pour l’authentification, puisqu’il expire après 24 heures. Voir [Configurer l’authentification de l’API Adobe](../configure-authentication.md) pour obtenir des instructions.
 
 ![JWT3ff](assets/configure-io-target-jwt3ff.png)
 
@@ -44,7 +41,7 @@ POST https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities
 
 Par exemple, les entités de sauvegarde peuvent être utilisées pour mettre à jour des articles lorsque certains seuils sont atteints, tels que les seuils de stock ou de prix, afin de marquer ces articles et d&#39;empêcher qu&#39;ils ne soient recommandés.
 
-1. Accédez à **[!UICONTROL Target]** > **[!UICONTROL Setup]** > **[!UICONTROL Hosts]** > **[!UICONTROL CONTROL Environments]** pour obtenir l’identifiant d’environnement cible dans lequel vous souhaitez ajouter ou mettre à jour un élément.
+1. Accédez à **[!UICONTROL Target]** > **[!UICONTROL Configuration]** > **[!UICONTROL Hosts]** > **[!UICONTROL Environnements DE CONTRÔLE]** pour obtenir l’identifiant de l’environnement cible dans lequel vous souhaitez ajouter ou mettre à jour un élément.
 
    ![SaveEntities1](assets/SaveEntities01.png)
 
@@ -79,7 +76,7 @@ Par exemple, les entités de sauvegarde peuvent être utilisées pour mettre à 
        }
    ```
 
-1. Cliquez sur **[!UICONTROL Send]**. Vous devriez recevoir la réponse suivante.
+1. Cliquez sur **[!UICONTROL Envoyer]**. Vous devriez recevoir la réponse suivante.
 
    ![SaveEntities5.png](assets/SaveEntities05.png)
 
@@ -156,7 +153,7 @@ Si vous recevez une erreur indiquant que l’entité est introuvable, comme illu
 
    >[!NOTE]
    >
-   >Si aucun environnement n&#39;est spécifié explicitement, Get Entity tente d&#39;obtenir l&#39;entité à partir de votre [environnement par défaut](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=fr) uniquement. Si vous souhaitez effectuer une extraction à partir de n’importe quel environnement autre que votre environnement par défaut, vous devez spécifier l’identifiant d’environnement.
+   >Si aucun environnement n&#39;est spécifié explicitement, Get Entity tente d&#39;obtenir l&#39;entité à partir de votre [environnement par défaut](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) uniquement. Si vous souhaitez effectuer une extraction à partir de n’importe quel environnement autre que votre environnement par défaut, vous devez spécifier l’identifiant d’environnement.
 
 1. Si nécessaire, ajoutez le paramètre `environmentId` et renvoyez la requête.
 
@@ -166,7 +163,7 @@ Si vous recevez une erreur indiquant que l’entité est introuvable, comme illu
 
    ![GetEntity5](assets/GetEntity5.png)
 
-Supposons que vous décidiez que ces entités doivent être supprimées de votre catalogue. Utilisons l’API **[!UICONTROL Delete Entities]**.
+Supposons que vous décidiez que ces entités doivent être supprimées de votre catalogue. Utilisons l’API **[!UICONTROL Supprimer des entités]**.
 
 ## Suppression d’éléments à l’aide de l’API Delete Entities
 
@@ -180,7 +177,7 @@ DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimit
 >
 >L’API Delete Entities supprime les entités référencées par les identifiants que vous spécifiez. Si aucun ID d’entité n’est fourni, toutes les entités de l’environnement donné sont supprimées. Si aucun identifiant d’environnement n’est donné, les entités seront supprimées de tous les environnements. Utilisez-le avec précaution !
 
-1. Accédez à **[!UICONTROL Target]** > **[!UICONTROL Setup]** > **[!UICONTROL Hosts]** > **[!UICONTROL Environments]** pour obtenir l’identifiant d’environnement cible à partir duquel vous souhaitez supprimer des éléments.
+1. Accédez à **[!UICONTROL Target]** > **[!UICONTROL Configuration]** > **[!UICONTROL Hosts]** > **[!UICONTROL Environments]** pour obtenir l’identifiant de l’environnement cible à partir duquel vous souhaitez supprimer des éléments.
 
    ![DeleteEntities1](assets/SaveEntities01.png)
 
@@ -200,7 +197,7 @@ DELETE https://mc.adobe.io/{{TENANT_ID}}/target/recs/entities?ids=[comma-delimit
 
    ![DeleteEntities5](assets/DeleteEntities5.png)
 
-1. Vérifiez vos résultats à l’aide de **[!UICONTROL Get Entity]**, qui doit maintenant indiquer que les entités supprimées sont introuvables.
+1. Vérifiez vos résultats à l’aide de l’option **[!UICONTROL Obtenir l’entité]**, qui doit maintenant indiquer que les entités supprimées sont introuvables.
 
    ![DeleteEntities6](assets/DeleteEntities6.png)
 

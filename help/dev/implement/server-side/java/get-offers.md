@@ -4,17 +4,13 @@ description: Découvrez comment utiliser getOffers() pour exécuter une décisio
 feature: APIs/SDKs
 exl-id: 9d7bf956-9d6a-4b4f-a401-2e6814f17f3d
 TQID: https://experienceleague.adobe.com/2oYkwezf-GkZnybeQUKUbCE6sPAHNQkg3Z1KH8s2a-g
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 652
+source-wordcount: 664
 ht-degree: 13%
 
 ---
@@ -72,10 +68,10 @@ L’objet `[!UICONTROL TargetDeliveryRequestBuilder]` présente la structure sui
 | tntId | Chaîne | Non | Identifiant de Principal en [!DNL Target] pour un utilisateur. Récupéré à partir de targetCookies. Généré automatiquement s’il n’est pas fourni. |
 | mcId | Chaîne | Non | Utilisé pour fusionner et partager des données entre différentes solutions [!DNL Adobe] (ECID). Récupéré à partir de targetCookies. Généré automatiquement s’il n’est pas fourni. |
 | trackingServer | Chaîne | Non | Le serveur Adobe Analytics afin que [!DNL Adobe Target] et [!DNL Adobe Analytics] assemblent correctement les données. |
-| trackingServerSecure | Chaîne | Non | La [!UICONTROL Adobe Analytics Secure Server] pour que [!DNL Adobe Target] et [!DNL Adobe Analytics] assemblent correctement les données. |
+| trackingServerSecure | Chaîne | Non | Le [!UICONTROL serveur sécurisé ] pour que [!DNL Adobe Target] et [!DNL Adobe Analytics] assemblent correctement les données. |
 | decisioningMethod | DecisioningMethod | Non | Peut être utilisé pour définir explicitement la méthode de prise de décision ON_DEVICE ou HYBRID pour la prise de décision sur l’appareil |
 
-Les valeurs de chaque champ doivent être conformes à *[!UICONTROL Target View Delivery API]* spécification de requête. Pour en savoir plus sur le *[!UICONTROL Target View Delivery API]*, voir [http://developers.adobetarget.com/api/#view-delivery-overview](http://developers.adobetarget.com/api/#view-delivery-overview)
+Les valeurs de chaque champ doivent être conformes à la spécification de requête *[!UICONTROL API de diffusion de la vue cible]*. Pour en savoir plus sur l’*[!UICONTROL API de diffusion de la vue Target]*, consultez [http://developers.adobetarget.com/api/#view-delivery-overview](http://developers.adobetarget.com/api/#view-delivery-overview)
 
 
 ## Réponse

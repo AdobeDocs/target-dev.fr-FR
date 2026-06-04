@@ -1,32 +1,19 @@
 ---
 keywords: intégration d’at.js, intégrations prises en charge, intégrations non prises en charge, intégrations tierces
-description: Consultez les intégrations prises en charge (et non prises en charge) par [!DNL Adobe Target] at.js, y compris [!UICONTROL Analytics for Target] (A4T), le [!UICONTROL Experience Cloud ID Service], etc.
+description: Consultez les intégrations prises en charge (et non prises en charge) par [!DNL Adobe Target] at.js, y compris [!UICONTROL Analytics for Target] (A4T), le [!UICONTROL service Experience Cloud ID], etc.
 title: Quelles intégrations at.js prend-il en charge ?
 feature: at.js
 exl-id: d2c61e77-5fc7-4c35-905b-76b8c4f9df4b
 TQID: https://experienceleague.adobe.com/RdcxcIGufo2O5aKPqIAJVINkCzZ1Brcv8EXiX1n4buc
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
-subfeature_v2:
-  - id: df62f171-ac37-440f-8f0f-f41a72ebdd34
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e6ff21d3-dec6-4298-8590-7c749fffaf78
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ceid: f7c7de77-382f-4f48-8b36-61a170f06d3d
+subfeature_v2: id: df62f171-ac37-440f-8f0f-f41a72ebdd34id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e6ff21d3-dec6-4298-8590-7c749fffaf78id: eb30f47f-d87a-400f-8f78-63ce7979ff56
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 486
-ht-degree: 52%
+source-wordcount: 530
+ht-degree: 50%
 
 ---
 
@@ -40,12 +27,12 @@ Si vous sentez le besoin irrépressible d’une intégration, mais qu’elle n�
 
 | Intégration | Détails |
 |--- |--- |
-| [!UICONTROL Analytics for Target] (A4T) | Voir [Adobe Analytics comme source de création de rapports pour Adobe Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) |
-| [!UICONTROL Profiles & Audiences] (P&amp;A) | Voir [Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=fr) dans le *Guide de l’utilisateur des services principaux*. |
-| [!UICONTROL Experience Cloud ID Service] | Voir la [documentation du Service Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr). |
-| [!UICONTROL Tags in Adobe Experience Platform] | [!UICONTROL Tags in Adobe Experience Platform] représente la nouvelle génération des fonctionnalités de gestion des balises de [!DNL Adobe]. Les [!UICONTROL Tags] offrent aux clients un moyen simple de déployer et de gérer les balises d’analyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. Voir [Implémentation [!DNL Target] à l’aide de Adobe Experience Platform](../how-to-deployatjs/implement-target-using-adobe-launch.md). |
-| [!UICONTROL Adobe Experience Manager] (AEM) Cloud Service | Le [!UICONTROL AEM Cloud Service] permet la création d’activités [!UICONTROL A/B Test] et [!UICONTROL Experience Targeting] dans le workflow AEM. Prend en charge at.js avec [!UICONTROL Adobe Experience Manager] 6.2 avec FP-11577 (ou version ultérieure). Pour plus d’informations, voir [Intégration à [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) et sélectionnez votre version d’AEM. |
-| [!UICONTROL AEM Experience Fragments] | Les fragments d’expérience créés dans AEM dans les activités [!DNL Target] vous permettent d’associer la facilité d’utilisation et la puissance d’AEM à de puissantes fonctionnalités d’intelligence artificielle (IA) et de machine learning (ML) dans le [!DNL Target] de tester et de personnaliser des expériences à grande échelle.  AEM rassemble tous vos contenus et ressources dans un emplacement central pour alimenter votre stratégie de personnalisation. AEM permet de créer facilement du contenu pour les ordinateurs de bureau, les tablettes et les appareils mobiles dans un emplacement sans avoir à écrire de code. Il n’est pas nécessaire de créer des pages pour chaque appareil : AEM ajuste automatiquement chaque expérience à l’aide de votre contenu.  Voir [fragments d’expérience AEM](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=fr). |
+| [!UICONTROL Analytics for Target] (A4T) | [Adobe Analytics comme source de création de rapports pour Adobe Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) |
+| [!UICONTROL Profils Et Audiences] (P&amp;A) | Voir [Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html?lang=fr) dans le *Guide de l’utilisateur des services principaux*. |
+| [!UICONTROL Service Experience Cloud ID] | Voir la [documentation du Service Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
+| [!UICONTROL  Balises dans Adobe Experience Platform ] | [!UICONTROL Les balises dans Adobe Experience Platform] représentent la nouvelle génération des fonctionnalités de gestion des balises de [!DNL Adobe]. Les [!UICONTROL  Balises ] offrent aux clients un moyen simple de déployer et de gérer les balises d’analyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. Voir [Implémentation [!DNL Target] à l’aide de Adobe Experience Platform](../how-to-deployatjs/implement-target-using-adobe-launch.md). |
+|  (AEM) Cloud Service | Le [!UICONTROL Cloud Service AEM] permet la création d’activités [!UICONTROL Test A/B] et [!UICONTROL Ciblage d’expérience] dans le workflow AEM. Prend en charge at.js avec  6.2 avec FP-11577 (ou version ultérieure). Pour plus d’informations, voir [Intégration à [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) et sélectionnez votre version d’AEM. |
+| [!UICONTROL Fragments d’expérience AEM] | Les fragments d’expérience créés dans AEM dans les activités [!DNL Target] vous permettent d’associer la facilité d’utilisation et la puissance d’AEM à de puissantes fonctionnalités d’intelligence artificielle (IA) et de machine learning (ML) dans le [!DNL Target] de tester et de personnaliser des expériences à grande échelle.  AEM rassemble tous vos contenus et ressources dans un emplacement central pour alimenter votre stratégie de personnalisation. AEM permet de créer facilement du contenu pour les ordinateurs de bureau, les tablettes et les appareils mobiles dans un emplacement sans avoir à écrire de code. Il n’est pas nécessaire de créer des pages pour chaque appareil : AEM ajuste automatiquement chaque expérience à l’aide de votre contenu.  Voir [fragments d’expérience AEM](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html). |
 
 ## Intégrations non prises en charge
 

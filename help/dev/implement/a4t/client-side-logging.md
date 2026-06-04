@@ -7,33 +7,26 @@ keywords: target;a4t;journalisation;sdk web;experience;platform;
 feature: Implementation
 exl-id: fef34eec-128f-4433-a557-42f1347cf2c3
 TQID: https://experienceleague.adobe.com/A-6Z757zzqoIW12ICTs9WBwXjHbapgLArhGSoIgMulo
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e0eb8757-182f-49f3-94a4-1587d16f5094
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1139
+source-wordcount: 1166
 ht-degree: 0%
 
 ---
 
 # Journalisation côté client pour les données A4T dans le [!DNL Experience Platform Web SDK]
 
-Le [!DNL Adobe Experience Platform Web SDK] vous permet de collecter des données [Adobe Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) côté client de votre application web.
+Le [!DNL Adobe Experience Platform Web SDK] vous permet de collecter des données [Adobe Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) côté client de votre application web.
 
-La journalisation côté client signifie que les données de [!DNL Target] pertinentes sont renvoyées côté client, ce qui vous permet de collecter des données et de les partager avec [!DNL Analytics]. Cette option doit être activée si vous envisagez d’envoyer manuellement des données à Analytics à l’aide de l’[API Data Insertion](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html?lang=fr).
+La journalisation côté client signifie que les données de [!DNL Target] pertinentes sont renvoyées côté client, ce qui vous permet de collecter des données et de les partager avec [!DNL Analytics]. Cette option doit être activée si vous envisagez d’envoyer manuellement des données à Analytics à l’aide de l’[API Data Insertion](https://experienceleague.adobe.com/docs/analytics/import/c-data-insertion-api.html).
 
 >[!NOTE]
 >
->Une méthode pour effectuer cette opération à l’aide de [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=fr) est actuellement en cours de développement et sera disponible prochainement.
+>Une méthode pour effectuer cette opération à l’aide de [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) est actuellement en cours de développement et sera disponible prochainement.
 
 Ce document décrit les étapes de configuration de la journalisation A4T côté client pour le [!DNL Platform Web SDK] et fournit des exemples d’implémentation pour les cas d’utilisation courants.
 
@@ -41,9 +34,9 @@ Ce document décrit les étapes de configuration de la journalisation A4T côté
 
 Ce tutoriel suppose que vous connaissez les concepts et processus fondamentaux liés à l’utilisation de l’[!DNL Platform Web SDK] à des fins de personnalisation. Consultez la documentation suivante si vous avez besoin d’une introduction :
 
-* [Configuration du SDK Web](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/configure/overview)
-* [Envoi d’événements](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/sendevent/overview)
-* [Effectuer le rendu du contenu de personnalisation](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+* [Configuration du SDK Web](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview)
+* [Envoi d’événements](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendevent/overview)
+* [Effectuer le rendu du contenu de personnalisation](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## Configurer [!DNL Analytics] journalisation côté client {#set-up-client-side-logging}
 
@@ -51,13 +44,13 @@ Les sous-sections suivantes décrivent comment activer [!DNL Analytics] journali
 
 ### Activer la journalisation côté client [!DNL Analytics] {#enable-analytics-client-side-logging}
 
-Pour que [!DNL Analytics] journalisation côté client soit activée pour votre implémentation, vous devez désactiver la configuration [!DNL Adobe Analytics] dans votre [flux de données](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/overview).
+Pour que [!DNL Analytics] journalisation côté client soit activée pour votre implémentation, vous devez désactiver la configuration [!DNL Adobe Analytics] dans votre [flux de données](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview).
 
 ![Configuration du flux de données Analytics désactivée](/help/dev/implement/a4t/assets/disable-analytics-datastream.png)
 
 ### Récupérez [!DNL A4T] données du SDK et envoyez-les à [!DNL Analytics] {#a4t-to-analytics}
 
-Pour que cette méthode de création de rapports fonctionne correctement, vous devez envoyer les données liées au [!DNL A4T] récupérées à partir de la commande [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/sendevent/overview) dans l’accès au [!DNL Analytics].
+Pour que cette méthode de création de rapports fonctionne correctement, vous devez envoyer les données liées au [!DNL A4T] récupérées à partir de la commande [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/sendevent/overview) dans l’accès au [!DNL Analytics].
 
 Lorsqu’[!DNL Target] Edge calcule une réponse de propositions, il vérifie si [!DNL Analytics] journalisation côté client est activée (par exemple, si [!DNL Analytics] est désactivé dans votre flux de données). Si la journalisation côté client est activée, le système ajoute un jeton [!DNL Analytics] à chaque proposition dans la réponse.
 
@@ -147,7 +140,7 @@ Voici un exemple de réponse `interact` lorsque [!DNL Analytics] journalisation 
 }
 ```
 
-Les propositions d’activités [!UICONTROL Form-based Experience Composer] peuvent contenir à la fois du contenu et des éléments de mesure de clic sous la même proposition. Ainsi, au lieu d’avoir un seul jeton d’analyse pour l’affichage du contenu dans `scopeDetails.characteristics.analyticsToken` propriété , ceux-ci peuvent avoir à la fois un jeton d’affichage et un jeton d’analyse de clic spécifiés dans les propriétés `scopeDetails.characteristics.analyticsDisplayToken` et `scopeDetails.characteristics.analyticsClickToken`, en conséquence.
+Les propositions des activités [!UICONTROL Compositeur d’expérience d’après les formulaires] peuvent contenir du contenu et des éléments de mesure de clic sous la même proposition. Ainsi, au lieu d’avoir un seul jeton d’analyse pour l’affichage du contenu dans `scopeDetails.characteristics.analyticsToken` propriété , ceux-ci peuvent avoir à la fois un jeton d’affichage et un jeton d’analyse de clic spécifiés dans les propriétés `scopeDetails.characteristics.analyticsDisplayToken` et `scopeDetails.characteristics.analyticsClickToken`, en conséquence.
 
 ```json
 {
@@ -236,13 +229,13 @@ Toutes les valeurs de `scopeDetails.characteristics.analyticsToken`, ainsi que `
 
 Les sous-sections suivantes montrent comment implémenter la journalisation côté client [!DNL Analytics] pour les cas d’utilisation courants.
 
-### activités [!UICONTROL Form-Based Experience Composer] {#form-based-composer}
+### [!UICONTROL Compositeur d’expérience d’après les formulaires] activités {#form-based-composer}
 
-Vous pouvez utiliser l’[!DNL Platform Web SDK] pour contrôler l’exécution des propositions à partir des activités du [Compositeur d’expérience d’après les formulaires d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=fr).
+Vous pouvez utiliser l’[!DNL Platform Web SDK] pour contrôler l’exécution des propositions à partir des activités du [Compositeur d’expérience d’après les formulaires d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html).
 
 Lorsque vous demandez des propositions pour une portée de décision spécifique, la proposition renvoyée contient son jeton d’[!DNL Analytics] approprié. Une bonne pratique consiste à enchaîner la commande [!DNL Experience Platform Web SDK] `sendEvent` et à effectuer une itération sur les propositions renvoyées pour les exécuter tout en collectant les jetons [!DNL Analytics] en même temps.
 
-Vous pouvez déclencher une commande `sendEvent` pour une portée d’activité [!UICONTROL Form-Based Experience Composer] comme celle-ci :
+Vous pouvez déclencher une commande `sendEvent` pour une portée d’activité [!UICONTROL Compositeur d’expérience d’après les formulaires] comme suit :
 
 ```javascript
 alloy("sendEvent", {
@@ -402,7 +395,7 @@ function getDisplayAnalyticsPayload(proposition) {
 }
 ```
 
-Une proposition peut comporter différents types d’éléments, comme indiqué par la propriété `schema` de l’élément en question. Quatre schémas d&#39;élément de proposition sont pris en charge pour les activités [!UICONTROL Form-Based Experience Composer] :
+Une proposition peut comporter différents types d’éléments, comme indiqué par la propriété `schema` de l’élément en question. Quatre schémas d’élément de proposition sont pris en charge pour les activités [!UICONTROL Compositeur d’expérience d’après les formulaires] :
 
 ```javascript
 var HTML_SCHEMA = "https://ns.adobe.com/personalization/html-content-item";
@@ -432,9 +425,9 @@ function getClickAnalyticsPayload(proposition) {
 
 #### Résumé de la mise en œuvre {#implementation-summary}
 
-En résumé, les étapes suivantes doivent être exécutées lors de l’application d’activités [!UICONTROL Form-Based Experience Composer] avec le [!DNL Experience Platform Web SDK] :
+En résumé, les étapes suivantes doivent être exécutées lors de l’application des activités [!UICONTROL Compositeur d’expérience d’après les formulaires] avec le [!DNL Experience Platform Web SDK] :
 
-1. envoyer un événement qui récupère [!UICONTROL Form-Based Experience Composer] offres d’activité ;
+1. envoyer un événement qui récupère les offres d’activité du [!UICONTROL compositeur d’expérience d’après les formulaires] ;
 1. appliquer les modifications du contenu à la page ;
 1. Envoyer l’événement de notification `decisioning.propositionDisplay` ;
 1. Collectez les jetons d’affichage [!DNL Analytics] à partir de la réponse SDK et construisez une payload pour l’accès [!DNL Analytics] ;
@@ -476,9 +469,9 @@ alloy("sendEvent", {
 });
 ```
 
-### Activités [!UICONTROL Visual Experience Composer] (VEC) {#visual-experience-composer-acitivties}
+### Activités du [!UICONTROL compositeur d’expérience visuelle] (VEC) {#visual-experience-composer-acitivties}
 
-Le [!DNL Platform Web SDK] vous permet de gérer les offres qui ont été créées à l’aide du [compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=fr).
+Le [!DNL Platform Web SDK] vous permet de gérer les offres qui ont été créées à l’aide du [compositeur d’expérience visuelle (VEC)](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html).
 
 >[!NOTE]
 >
@@ -551,4 +544,4 @@ alloy("configure", {
 
 ## Étapes suivantes {#next-steps}
 
-Ce guide couvre la journalisation côté client pour les données A4T dans le [!DNL Platform Web SDK] . Pour plus d’informations sur la gestion des données A4T sur [&#128279;](/help/dev/implement/a4t/server-side-a4t.md) consultez le guide sur la  journalisation côté serveur .
+Ce guide couvre la journalisation côté client pour les données A4T dans le [!DNL Platform Web SDK] . Pour plus d’informations sur la gestion des données A4T sur ](/help/dev/implement/a4t/server-side-a4t.md) consultez le guide sur la [ journalisation côté serveur .

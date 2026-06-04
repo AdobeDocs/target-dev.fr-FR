@@ -1,20 +1,16 @@
 ---
-title: Intégration aux rapports A4T Experience Cloud
-description: Intégration à Experience Cloud, rapports A4T, intégration d’Analytics for Target
+title: Intégration à la création de rapports A4T Experience Cloud
+description: Intégration à Experience Cloud, création de rapports A4T, intégration d’Analytics for Target
 keywords: api de diffusion, côté serveur, côté serveur, intégration, a4t
 exl-id: 0d09d7a1-528d-4e6a-bc6c-f7ccd61f5b75
 feature: Implement Server-side
 TQID: https://experienceleague.adobe.com/Qx5xwszkQLumkFhGJDbvyIofPe7qxUDN922iqmhsClk
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 392
+source-wordcount: 399
 ht-degree: 6%
 
 ---
@@ -33,7 +29,7 @@ ht-degree: 6%
 ## Conditions requises
 
 1. Configurez l’activité dans l’interface utilisateur de [!DNL Adobe Target] avec [!DNL Adobe Analytics] comme source de création de rapports et assurez-vous que les comptes sont activés pour A4T.
-1. L’utilisateur de l’API génère la [!UICONTROL Marketing Cloud Visitor ID] Adobe et s’assure que cet identifiant est disponible lors de l’exécution de la requête [!DNL Target].
+1. L’utilisateur de l’API génère l’identifiant visiteur Adobe [!UICONTROL Marketing Cloud] et s’assure que cet identifiant est disponible lors de l’exécution de la requête [!DNL Target].
 
 ## [!DNL Adobe Target] transfère automatiquement la payload [!DNL Analytics]
 
@@ -199,7 +195,7 @@ TargetDeliveryResponse offers = targetClient.getOffers(request);
 
 Une fois que vous avez spécifié `logging = client_side`, vous recevez la payload dans le champ mbox .
 
-Si la réponse de [!DNL Target] contient des éléments dans la propriété `analytics -> payload` , transférez-la telle quelle à [!DNL Adobe Analytics]. [!DNL Adobe Analytics] sait comment traiter cette payload. Cette opération peut être effectuée dans une requête GET à l’aide du format suivant :
+Si la réponse de [!DNL Target] contient des éléments dans la propriété `analytics -> payload` , transférez-la telle quelle à [!DNL Adobe Analytics]. [!DNL Adobe Analytics] sait comment traiter cette payload. Cette opération peut être effectuée dans une requête GET au format suivant :
 
 ```
 https://{datacollectionhost.sc.omtrdc.net}/b/ss/{rsid}/{content_type_num}/{code_ver}/{session}?pe=tnt&tnta={payload}&c.&a.&target.&sessionId={sessionId}&.target&.a&.c&mid={mid}
