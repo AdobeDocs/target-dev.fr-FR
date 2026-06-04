@@ -424,7 +424,7 @@ Les tableaux suivants décrivent at.js. compatibilité 2.*x* avec différents ty
 
 ## Jetons de réponse
 
-at.js 2.*x*, tout comme at.js 1.*x*, utilise le `at-request-succeeded` d’événement personnalisé pour faire apparaître les jetons de réponse. Pour des exemples de code utilisant l’événement `at-request-succeeded` personnalisé, voir [Jetons réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html).
+at.js 2.*x*, tout comme at.js 1.*x*, utilise le `at-request-succeeded` d’événement personnalisé pour faire apparaître les jetons de réponse. Pour des exemples de code utilisant l’événement `at-request-succeeded` personnalisé, voir [Jetons réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr).
 
 ## Paramètres at.js 1.*x* pour le mappage de la payload vers at.js 2.*x*
 
@@ -791,5 +791,5 @@ at.js 2.*x* améliore la prise en charge des SPA par Adobe [!DNL Target] et s’
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) voir  Fonctionnement d’at.js 2.*x* .
+Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=fr) voir  Fonctionnement d’at.js 2.*x* .
 

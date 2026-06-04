@@ -29,4 +29,4 @@ L’Edge Network [!UICONTROL Adobe Experience Platform] offre aux clients un moy
 
 L’API du serveur Edge Network  peut être utilisée pour divers cas d’utilisation de la collecte de données, de la personnalisation, de la publicité et du marketing. L’API du serveur peut être utilisée sur les serveurs, les appareils IoT, les décodeurs et divers autres appareils.
 
-Pour plus d’informations, consultez la [présentation de l’API du serveur &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html){target=_blank} dans la *documentation de l’API du serveur Edge*.
+Pour plus d’informations, consultez la [présentation de l’API du serveur &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=fr){target=_blank} dans la *documentation de l’API du serveur Edge*.

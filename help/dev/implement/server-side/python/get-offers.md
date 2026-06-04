@@ -58,7 +58,7 @@ Renvoie un `TargetDeliveryResponse` s’il est appelé de manière synchrone (pa
 | target_location_hint_cookie | dictionnaire | [!DNL Target] cookie d’indice d’emplacement |
 | analytics_details | list[AnalyticsResponse] | Payload Analytics, en cas d’utilisation d’Analytics côté client |
 | trace | list[dict] | Données de suivi agrégées pour toutes les mbox/vues de requête |
-| response_tokens | list[dict] | Une liste de &#x200B;jetons [&#x200B; réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) |
+| response_tokens | list[dict] | Une liste de &#x200B;jetons [&#x200B; réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr) |
 | méta | dictionnaire | Métadonnées de prise de décision supplémentaires à utiliser avec la prise de décision sur l’appareil |
 
 Les objets `target_cookie` et `target_location_hint_cookie` utilisés pour transmettre des données au navigateur ont la structure suivante :

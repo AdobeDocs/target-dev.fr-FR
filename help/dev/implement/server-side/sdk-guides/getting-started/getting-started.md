@@ -49,7 +49,7 @@ L’activation de la prise de décision sur l’appareil garantit l’exécution
 
 >[!NOTE]
 >
->Vous devez disposer du rôle **[!UICONTROL Administrateur]** ou **[!UICONTROL Approbateur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) pour activer ou désactiver le bouton (bascule) **[!UICONTROL Prise de décision sur l’appareil]**.
+>Vous devez disposer du rôle **[!UICONTROL Administrateur]** ou **[!UICONTROL Approbateur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=fr) pour activer ou désactiver le bouton (bascule) **[!UICONTROL Prise de décision sur l’appareil]**.
 
 Après avoir activé le bouton (bascule) **[!UICONTROL Prise de décision sur l’appareil]**, [!DNL Adobe Target] commence à générer des [artefacts de règle](../on-device-decisioning/rule-artifact-overview.md) pour votre client.
 
@@ -400,6 +400,6 @@ target_client.send_notifications({
 
    >[!NOTE]
    >
-   >Pour effectuer cette étape, vous devez disposer du rôle **[!UICONTROL Approbateur]** ou **[!UICONTROL Éditeur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html).
+   >Pour effectuer cette étape, vous devez disposer du rôle **[!UICONTROL Approbateur]** ou **[!UICONTROL Éditeur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=fr).
 
    ![image alternative](assets/asset-activate.png)

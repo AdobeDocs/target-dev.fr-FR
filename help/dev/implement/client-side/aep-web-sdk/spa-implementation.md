@@ -72,7 +72,7 @@ Le concept de [!UICONTROL Vues] peut être étendu bien au-delà de ce scénario
 
 [!UICONTROL Les vues XDM] peuvent être utilisées dans [!DNL Target] pour permettre aux spécialistes du marketing d’exécuter des tests A/B et XT sur des SPA via le [!UICONTROL compositeur d’expérience visuelle]. Pour ce faire, les étapes suivantes doivent être effectuées afin de terminer une configuration de développeur ponctuelle :
 
-1. Installez [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview).
+1. Installez [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/overview).
 2. Déterminez toutes les [!UICONTROL vues XDM] de votre application monopage que vous souhaitez personnaliser.
 3. Après avoir défini les [!UICONTROL vues XDM], pour diffuser des activités A/B ou XT VEC, implémentez la fonction `sendEvent()` avec `renderDecisions` définie sur `true` et la [!UICONTROL vue XDM] correspondante dans votre application d’une seule page. La [!UICONTROL vue XDM] doit être transmise en `xdm.web.webPageDetails.viewName`. Cette étape permet aux professionnels du marketing de tirer parti du [!UICONTROL compositeur d’expérience visuelle] pour lancer des tests A/B et XT pour ces XDM.
 
@@ -232,7 +232,7 @@ Une fois que vous avez défini vos [!UICONTROL vues XDM] et implémenté `sendEv
 
 >[!NOTE]
 >
->Pour utiliser le VEC pour votre SPA, vous devez installer et activer l’extension d’assistance du VEC [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) ou [Chrome](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension).
+>Pour utiliser le VEC pour votre SPA, vous devez installer et activer l’extension d’assistance du VEC [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) ou [Chrome](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension).
 
 ### Panneau [!UICONTROL Modifications]
 

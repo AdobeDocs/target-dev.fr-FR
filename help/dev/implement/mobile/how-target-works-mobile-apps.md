@@ -33,7 +33,7 @@ Le [!DNL Adobe Mobile SDK] contacte le serveur [!DNL Target] pour obtenir le con
 
 Un *emplacement cible* est également appelé mbox. Un emplacement identifié dans l’application est activé à des fins de test ou de personnalisation (par exemple, le message de bienvenue sur l’écran d’accueil). Ces emplacements sont identifiés au cours du processus de création des tests.
 
-Une *[mesure de succès](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)* est une action effectuée par l’utilisateur qui identifie si une activité spécifique a réussi (comme l’inscription, l’achat, la réservation d’un ticket, etc.).
+Une *[mesure de succès](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr)* est une action effectuée par l’utilisateur qui identifie si une activité spécifique a réussi (comme l’inscription, l’achat, la réservation d’un ticket, etc.).
 
 ![image alternative](assets/mobile-target-location.png)
 

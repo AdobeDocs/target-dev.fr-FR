@@ -24,4 +24,4 @@ L’emplacement est un contexte important pour comprendre et interagir avec les 
 
 Vous pouvez utiliser [!DNL Location Service] avec [!DNL Target] pour utiliser des règles avec des [balises dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) afin de joindre vos données [!UICONTROL Places] à vos événements SDK [!DNL Adobe Target].
 
-Pour plus d’informations, voir [Utiliser [!UICONTROL Location Service] avec [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/places/using/use-places-with-other-solutions/places-target/places-target.html) dans le guide [Adobe Experience Platform Location Service](https://experienceleague.adobe.com/docs/places/using/home.html).
+Pour plus d’informations, voir [Utiliser [!UICONTROL Location Service] avec [!DNL Adobe Target]](https://experienceleague.adobe.com/docs/places/using/use-places-with-other-solutions/places-target/places-target.html?lang=fr) dans le guide [Adobe Experience Platform Location Service](https://experienceleague.adobe.com/docs/places/using/home.html?lang=fr).
