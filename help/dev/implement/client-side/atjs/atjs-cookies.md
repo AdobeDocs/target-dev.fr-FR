@@ -20,7 +20,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 929e1f10bc5dd0741f0fe28cd46435e680a4a308
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 1830
 ht-degree: 67%
@@ -172,4 +172,3 @@ Extrait d’Apple :
 |--- |--- |
 | Prise en charge de l’exclusion | La fonction de suivi du WebKit d’Apple modifie la prise en charge de l’exclusion.<P>[!DNL Target] désinscription utilise un cookie dans le domaine `clientcode.tt.omtrdc.net`. Pour plus d’informations, consultez la section [Confidentialité](/help/dev/before-implement/privacy/privacy.md)<P>[!DNL Target] prend en charge deux désinscriptions :<ul><li>une par client (le client gère le lien d’exclusion) ;</li><li>Une via Adobe qui exclut l’utilisateur de toutes les fonctionnalités [!DNL Target] pour tous les clients.</li></ul>Ces deux méthodes utilisent le cookie tiers. |
 | activités [!DNL Target] | Les clients peuvent choisir leur [durée de vie du profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=fr) pour leurs comptes [!DNL Target], jusqu’à 90 jours. Le problème est que si la durée de vie du profil du compte est supérieure à 30 jours et que le cookie propriétaire est purgé, car le domaine du client a été marqué comme effectuant le suivi des utilisateurs sur plusieurs sites, le comportement des visiteurs Safari sera affecté dans les domaines suivants dans [!DNL Target] :<P>**[!DNL Target]de rapports** : si un utilisateur Safari entre dans une activité, revient après 30 jours, puis effectue une conversion, cet utilisateur compte comme deux visiteurs et une conversion.<P>Ce comportement est identique pour les activités utilisant [!DNL Analytics] comme source de création de rapports (A4T).<P>**Abonnement à un profil et à une activité** :<ul><li>Les données du profil sont effacées lorsque le cookie propriétaire expire.</li><li>L’appartenance à une activité est effacée lorsque le cookie propriétaire expire.</li><li> [!DNL Target] ne fonctionne pas dans Safari pour les comptes utilisant une implémentation de cookies tiers ou une implémentation de cookies propriétaires et tiers. Notez que ce comportement n’est pas récent. Cela fait un certain temps déjà que Safari n’autorise plus les cookies tiers.</li></ul><P>**Suggestions** : si vous craignez que le domaine client ne soit marqué comme un seul domaine de suivi des visiteurs sur plusieurs sessions, il est préférable de définir la durée de vie du profil sur 30 jours ou moins en [!DNL Target]. Ceci garantit que les utilisateurs seront suivis de la même manière dans Safari et tous les autres navigateurs. |
-

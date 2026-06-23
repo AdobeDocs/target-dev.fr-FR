@@ -22,7 +22,7 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 2851
 ht-degree: 53%
@@ -214,7 +214,7 @@ Les diagrammes suivants vous aident à comprendre le workflow de tâches d’at.
 
 | Étape | Détails |
 | --- | --- |
-| 1 | L’appel renvoie l’ID Experience Cloud si l’utilisateur est authentifié ; un autre appel synchronise l’ID client. |
+| 1 | L’appel renvoie l’Experience Cloud ID si l’utilisateur est authentifié ; un autre appel synchronise l’ID client. |
 | 2 | La bibliothèque at.js se charge de manière synchrone et masque le corps du document. <br />at.js peut également être chargé de manière asynchrone avec une option de masquage préalable d’un fragment de code implémentée sur la page. |
 | 3 | Une demande de chargement de page est faite, incluant tous les paramètres configurés (MCID, SDID et ID client). |
 | 4 | Les scripts de profil s’exécutent, puis sont introduits dans le magasin de profils. La boutique demande des audiences qualifiées à la bibliothèque d’audiences (par exemple, les audiences partagées à partir d’Adobe Analytics, la gestion de l’audience, etc.). <br />Les attributs du client sont envoyés à la boutique de profils par traitement par lots. |
@@ -342,3 +342,4 @@ Pour plus d’informations, voir [&#x200B; Implémentation d’Adobe Target at.j
 >[!VIDEO](https://video.tv.adobe.com/v/34769/?captions=fre_fr&quality=12)
 
 Pour plus d’informations, consultez [Utilisation du compositeur d’expérience visuelle pour les applications d’une seule page (SPA VEC) dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html?lang=fr).
+

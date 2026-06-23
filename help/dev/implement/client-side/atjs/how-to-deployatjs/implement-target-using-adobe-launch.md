@@ -17,7 +17,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
 source-wordcount: 446
 ht-degree: 61%
@@ -51,3 +51,4 @@ Les avantages suivants s’appliquent uniquement si vous utilisez les balises da
   >Utilisez l’action Envoyer la balise dans l’extension [!DNL Adobe Analytics] afin que l’appel [!DNL Analytics] attende l’appel [!DNL Target]. Si vous appelez directement `s.t()` ou `s.tl()` à l’aide d’un code personnalisé, les appels [!DNL Analytics] n’attendent pas la fin des appels [!DNL Target].
 
 * **Empêche une gestion incorrecte des offres de redirection :** si la page contient des [!DNL Target] et des [!DNL Analytics] et qu’une offre de redirection est en cours d’exécution par Target, il peut arriver que le dispositif de suivi des [!DNL Analytics] déclenche une requête alors qu’il ne devrait pas (car l’utilisateur est redirigé vers une autre URL). Si vous implémentez [!DNL Target] et [!DNL Analytics] au moyen de balises dans [!DNL Adobe Experience Platform], vous ne rencontrerez pas ce problème. À l’aide des balises dans [!DNL Adobe Experience Platform], [!DNL Target] donne l’ordre à [!DNL Analytics] d’abandonner la requête de balise [!DNL Analytics].
+
