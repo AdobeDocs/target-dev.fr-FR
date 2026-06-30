@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
+source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
 workflow-type: tm+mt
 source-wordcount: 661
 ht-degree: 70%
@@ -63,4 +63,5 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(event) 
 Regardez la vidéo suivante pour découvrir comment utiliser les jetons de réponse et les événements personnalisés at.js pour partager des informations de profil de [!DNL Target] vers des systèmes tiers.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33875/?captions=fre_fr&quality=12)
+
 

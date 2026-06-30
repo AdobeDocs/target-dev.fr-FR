@@ -17,7 +17,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
+source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
 workflow-type: tm+mt
 source-wordcount: 2994
 ht-degree: 64%
@@ -314,5 +314,6 @@ Le doctype HTML 5 garantit le chargement de la page en mode standard. Lors du c
 ## at.js fonctionne-t-il dans un environnement d’application ionique ?
 
 Cette implémentation n’a jamais été testée, car at.js n’était pas destiné à fonctionner dans un environnement non web. [!DNL Adobe] recommande ses [&#x200B; SDK pour les implémentations mobiles](/help/dev/implement/mobile/overview.md).
+
 
 

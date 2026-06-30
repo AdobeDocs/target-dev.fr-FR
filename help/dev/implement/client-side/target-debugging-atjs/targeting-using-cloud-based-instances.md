@@ -15,7 +15,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
+source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
 workflow-type: tm+mt
 source-wordcount: 203
 ht-degree: 46%
@@ -37,5 +37,6 @@ Ces domaines, et de nombreux autres, font partie de la [liste des suffixes publi
 La bibliothèque JavaScript at.js utilise des cookies pour suivre les utilisateurs afin de s’assurer que [!DNL [!DNL Target]] présente toujours une expérience cohérente. Si la bibliothèque JavaScript [!DNL Target] ne peut pas enregistrer de cookies, les requêtes Target sont désactivées.
 
 **Solution :** Pour respecter les bonnes pratiques, si vous envisagez d’utiliser des instances basées sur le cloud avec des domaines inclus dans la liste des suffixes publics, veillez à personnaliser le paramètre `cookieDomain`. Pour plus d’informations, voir [targetGlobalSettings()](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md).
+
 
 
