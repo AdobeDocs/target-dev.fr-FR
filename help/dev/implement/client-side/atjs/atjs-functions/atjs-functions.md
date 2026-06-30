@@ -5,18 +5,12 @@ title: Quelles fonctions puis-je utiliser avec at.js ?
 feature: at.js
 exl-id: 1efed365-8a74-4c85-bdb1-8daaaf53d642
 TQID: https://experienceleague.adobe.com/7uABK1rDaMpA7a0skEo3g1KxTnoc-gif-uHMkMnE8QE
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
 workflow-type: tm+mt
 source-wordcount: 557
 ht-degree: 38%
@@ -43,4 +37,5 @@ Liste des fonctions pouvant être utilisées avec la bibliothèque JavaScript at
 | [[!UICONTROL registerExtension(options)]](/help/dev/implement/client-side/atjs/atjs-functions/registerextension-atjs-1x.md)<P>(at.js 1.x) | Propose une méthode standard pour enregistrer une extension spécifique.<P>**Remarque :** cette fonction est disponible uniquement pour les versions 1.*x* d’at.js. Cette fonction a été abandonnée avec la publication d’at.js 2.x. Cette fonction renvoie le contenu par défaut s’il est utilisé avec at.js 2.x. |
 | [[!UICONTROL événements personnalisés at.js]](/help/dev/implement/client-side/atjs/atjs-functions/atjs-custom-events.md) | Les événements personnalisés at.js indiquent quand une requête ou une offre de mbox échoue ou réussit. |
 | [[!UICONTROL adobe.target.sendNotifications(options)]](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21.md)<P>(at.js 2.1.0) | Cette fonction envoie une notification à [!DNL Target] Edge lorsqu’une expérience est rendue sans utiliser de `[!UICONTROL adobe.target.applyOffer()]` ou de `[!UICONTROL adobe.target.applyOffers()]`.<P>**Remarque** : cette fonction a été introduite dans at.js 2.1.0 et sera disponible pour toutes les versions supérieures à 2.1.0. |
+
 

@@ -5,35 +5,21 @@ title: Comment la prise de décision sur l’appareil fonctionne-t-elle avec la 
 feature: at.js
 exl-id: bd0e062f-c259-46f3-adba-e380af058ac8
 TQID: https://experienceleague.adobe.com/5cYQQDwAwUbKanR3Wbt7ckKnGwHvz3arqn0zjdz6SBc
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bcc5edb5-84c3-4940-9f84-ed88b6c16274id: d3cdead0-685a-4489-9250-4bb709942f66id: e0eb8757-182f-49f3-94a4-1587d16f5094id: e1e0219c-f879-479f-8427-888ed2a6e9c2id: eb30f47f-d87a-400f-8f78-63ce7979ff56id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
 workflow-type: tm+mt
 source-wordcount: 3835
 ht-degree: 4%
 
 ---
 
-# [!UICONTROL &#x200B; Prise de décision sur l’appareil &#x200B;] pour at.js
+# [!UICONTROL  Prise de décision sur l’appareil ] pour at.js
 
-À partir de la version 2.5.0, at.js offre la [!UICONTROL &#x200B; prise de décision sur l’appareil &#x200B;]. La [!UICONTROL prise de décision sur l’appareil] vous permet de mettre en cache vos activités [Test A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=fr) et [Ciblage d’expérience](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=fr) (XT) sur le navigateur afin d’effectuer une prise de décision en mémoire sans bloquer la requête réseau à l’Edge Network [!DNL Adobe Target].
+À partir de la version 2.5.0, at.js offre la [!UICONTROL  prise de décision sur l’appareil ]. La [!UICONTROL prise de décision sur l’appareil] vous permet de mettre en cache vos activités [Test A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) et [Ciblage d’expérience](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) sur le navigateur afin d’effectuer une prise de décision en mémoire sans bloquer la requête réseau à l’Edge Network [!DNL Adobe Target].
 
 >[!NOTE]
 >
@@ -48,7 +34,7 @@ Les avantages de la [!UICONTROL prise de décision sur l’appareil] sont les su
 * **Offrez des décisions et des expériences incroyablement rapides.** Le regroupement et la prise de décision sont effectués en mémoire et sur le navigateur pour éviter de bloquer les requêtes réseau.
 * **Amélioration des performances des applications.** Exécutez des expériences et offrez une personnalisation à vos clients et utilisateurs sans compromettre les expériences des utilisateurs finaux.
 * **Amélioration du score de qualité du site Google.** Une fois la prise de décision en mémoire, améliorez le score de qualité du site Google de votre entreprise en ligne pour la rendre plus détectable par les consommateurs.
-* **En savoir plus sur l’analyse en temps réel.** Obtenez des informations sur les performances de votre activité en temps réel via les rapports [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) (A4T). A4T vous permet de faire pivoter votre stratégie aux moments critiques.
+* **En savoir plus sur l’analyse en temps réel.** Obtenez des informations sur les performances de votre activité en temps réel via les rapports [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T). A4T vous permet de faire pivoter votre stratégie aux moments critiques.
 
 ## Fonctionnalités prises en charge
 
@@ -58,7 +44,7 @@ Le SDK JS [!DNL Adobe Target] offre aux clients et aux clientes la possibilité 
 * Ciblage des audiences
 * Méthode d&#39;allocation
 
-Pour plus d’informations, voir [Fonctionnalités prises en charge pour la prise de décision [!UICONTROL &#x200B; sur l’appareil]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md).
+Pour plus d’informations, voir [Fonctionnalités prises en charge pour la prise de décision [!UICONTROL  sur l’appareil]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md).
 
 ## Comment fonctionne la [!UICONTROL prise de décision sur l’appareil] ?
 
@@ -76,7 +62,7 @@ Avec [!UICONTROL la prise de décision sur l’appareil], [!DNL Target] introdui
 
 Côté serveur uniquement est la méthode de prise de décision par défaut préconfigurée lors de l’implémentation et du déploiement d’at.js 2.5.0+ sur vos propriétés web.
 
-L’utilisation de Côté serveur uniquement comme configuration par défaut signifie que toutes les décisions sont prises sur le réseau Edge de [!DNL Target], ce qui implique un appel au serveur bloquant. Cette approche peut entraîner une latence incrémentielle, mais elle offre également des avantages significatifs, comme la possibilité d’appliquer les fonctionnalités de machine learning de [!DNL Target] qui incluent les activités [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=fr), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=fr) (AP) et [Ciblage automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html?lang=fr).
+L’utilisation de Côté serveur uniquement comme configuration par défaut signifie que toutes les décisions sont prises sur le réseau Edge de [!DNL Target], ce qui implique un appel au serveur bloquant. Cette approche peut entraîner une latence incrémentielle, mais elle offre également des avantages significatifs, comme la possibilité d’appliquer les fonctionnalités de machine learning de [!DNL Target] qui incluent les activités [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html), [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP) et [Ciblage automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html).
 
 En outre, l’amélioration de vos expériences personnalisées à l’aide du profil utilisateur de [!DNL Target], qui est persistant entre les sessions et les canaux, peut fournir des résultats performants pour votre entreprise.
 
@@ -92,7 +78,7 @@ La liste suivante correspond aux nombres du diagramme :
 
 | Étape | Description |
 | --- | --- |
-| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [service d’identités Adobe Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr ?). |
+| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [service d’identités Adobe Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html ?). |
 | 2 | La bibliothèque at.js se charge de manière synchrone et masque le corps du document.<br />   La bibliothèque at.js peut également être chargée de manière asynchrone avec un fragment de code de masquage préalable facultatif implémenté sur la page. |
 | 3 | La bibliothèque at.js masque le corps pour éviter le scintillement. |
 | 4 | Une requête de chargement de page est effectuée et inclut tous les paramètres configurés, tels que (ECID, ID de client, paramètres personnalisés, profil utilisateur, etc.). |
@@ -131,7 +117,7 @@ La liste suivante correspond aux nombres du diagramme :
 
 | Étape | Description |
 | --- | --- |
-| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [service d’identités Adobe Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr). |
+| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [service d’identités Adobe Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
 | 2 | La bibliothèque at.js se charge de manière synchrone et masque le corps du document.<br />La bibliothèque at.js peut également être chargée de manière asynchrone avec un fragment de code de masquage préalable facultatif implémenté sur la page. |
 | 3 | La bibliothèque at.js masque le corps pour éviter le scintillement. |
 | 4 | La bibliothèque at.js effectue une requête pour récupérer l’artefact de règle JSON à partir du réseau CDN Akamai le plus proche du visiteur. |
@@ -158,7 +144,7 @@ La liste suivante correspond aux nombres du diagramme :
 
 | Étape | Description |
 | --- | --- |
-| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [service d’identités Adobe Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr). |
+| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [service d’identités Adobe Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
 | 2 | La bibliothèque at.js se charge de manière synchrone et masque le corps du document.<br />La bibliothèque at.js peut également être chargée de manière asynchrone avec un fragment de code de masquage préalable facultatif implémenté sur la page. |
 | 3 | La bibliothèque at.js masque le corps pour éviter le scintillement. |
 | 4 | La bibliothèque at.js interprète l’artefact de règle JSON et exécute la décision en mémoire pour récupérer l’expérience. |
@@ -193,7 +179,7 @@ La liste suivante correspond aux nombres du diagramme :
 
 | Étape | Description |
 | --- | --- |
-| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [service d’identités Adobe Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr). |
+| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [service d’identités Adobe Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
 | 2 | La bibliothèque at.js se charge de manière synchrone et masque le corps du document.<br />La bibliothèque at.js peut également être chargée de manière asynchrone avec un fragment de code de masquage préalable facultatif implémenté sur la page. |
 | 3 | La bibliothèque at.js masque le corps pour éviter le scintillement. |
 | 4 | Une requête de chargement de page est envoyée à [!DNL Adobe Target] Edge Network, y compris tous les paramètres configurés tels que (ECID, ID de client, paramètres personnalisés, profil utilisateur, etc.). |
@@ -223,7 +209,7 @@ La liste suivante correspond aux nombres du diagramme :
 
 | Étape | Description |
 | --- | --- |
-| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [service d’identités Adobe Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr). |
+| 1 | L’identifiant visiteur Experience Cloud est récupéré à partir du [service d’identités Adobe Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/home.html). |
 | 2 | La bibliothèque at.js se charge de manière synchrone et masque le corps du document.<br />La bibliothèque at.js peut également être chargée de manière asynchrone avec un fragment de code de masquage préalable facultatif implémenté sur la page. |
 | 3 | La bibliothèque at.js masque le corps pour éviter le scintillement. |
 | 4 | Une requête est effectuée pour récupérer une expérience. |
@@ -243,7 +229,7 @@ Pour activer la [!UICONTROL prise de décision sur l’appareil] :
 
 >[!NOTE]
 >
->Vous devez disposer du [rôle utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=fr) Administrateur ou Approbateur pour activer ou désactiver le bouton (bascule) Prise de décision sur l’appareil.
+>Vous devez disposer du [rôle utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) Administrateur ou Approbateur pour activer ou désactiver le bouton (bascule) Prise de décision sur l’appareil.
 
 1. Cliquez sur **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]** > **[!UICONTROL Détails du compte]**.
 1. Sous **[!UICONTROL Détails du compte]**, faites glisser le bouton **[!UICONTROL Prise de décision sur l’appareil]** sur la position « activé ».
@@ -357,4 +343,5 @@ Vous pouvez filtrer toutes les activités éligibles [!UICONTROL prise de décis
 1. Créez et activez un [type d’activité pris en charge par la [!UICONTROL prise de décision sur l’appareil]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md) et vérifiez qu’il est éligible à la [!UICONTROL prise de décision sur l’appareil].
 1. Définissez la **[!UICONTROL Méthode de prise de décision]** sur **[!UICONTROL « Hybride »]** ou **[!UICONTROL « Sur l’appareil uniquement »]** via l’interface utilisateur des paramètres at.js.
 1. Téléchargez et déployez At.js 2.5.0+ sur vos pages.
+
 
