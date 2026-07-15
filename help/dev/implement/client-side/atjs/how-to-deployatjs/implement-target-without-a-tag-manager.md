@@ -21,7 +21,7 @@ topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d851e2344279caeae25e4823ca86b9c17efd63
+source-git-commit: ca4254966a337a0215d66bd28506128b9751d0e0
 workflow-type: tm+mt
 source-wordcount: 1785
 ht-degree: 32%
@@ -295,5 +295,6 @@ La mbox de confirmation de commande utilise les paramètres suivants :
 | orderId | Valeur unique identifiant une commande pour la comptabilisation de la conversion.<p>L’`orderId` doit être unique. Les commandes en double ne sont pas prises en compte dans les rapports. |
 | orderTotal | Valeur monétaire de l’achat.<p>N’indiquez pas le symbole de la devise. Utilisez un point décimal (pas une virgule) pour indiquer les valeurs décimales. |
 | productPurchasedId (facultatif) | Liste des ID de produit achetés dans la commande séparés par des virgules.<p>Ces ID produit s’affichent dans le rapport d’audit pour étayer les analyses de rapports supplémentaires. |
+
 
 
