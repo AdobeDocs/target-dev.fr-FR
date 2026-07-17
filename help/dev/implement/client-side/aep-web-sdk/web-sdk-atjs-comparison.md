@@ -5,25 +5,14 @@ keywords: target;adobe target;activity.id;experience.id;renderDecisions;portées
 feature: AEP Web SDK
 exl-id: 31c9722b-5d92-4653-aa20-4183d166c097
 TQID: https://experienceleague.adobe.com/Ly2ytp87gfQ5mCES-43K5tU4-4fhTjdcdk-OxRRL-II
-product_v2:
-  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
-feature_v2:
-  - id: adee20bd-51f4-461d-b9db-d215f8756eeb
-  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
-subfeature_v2:
-  - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
-role_v2:
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+product_v2: id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+feature_v2: id: adee20bd-51f4-461d-b9db-d215f8756eebid: c93393a4-e558-47e1-992e-c91ed4d480ce
+subfeature_v2: id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+role_v2: id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: e0eb8757-182f-49f3-94a4-1587d16f5094id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: b6b447ccb88925a8efb6ff6a80ae475c8780dbc8
 workflow-type: tm+mt
-source-wordcount: 2308
+source-wordcount: 2354
 ht-degree: 5%
 
 ---
@@ -34,17 +23,21 @@ ht-degree: 5%
 
 Cet article présente les différences entre la bibliothèque `at.js` et le SDK Web Experience Platform.
 
+>[!NOTE]
+>
+>`at.js` implémentations appellent directement l’[!DNL Target] [API de diffusion](/help/dev/implement/delivery-api/overview.md), par exemple, `POST https://<clientCode>.tt.omtrdc.net/rest/v1/delivery`. [!DNL Platform Web SDK] implémentations appellent plutôt l’API Interact par le biais de la commande `sendEvent` sur l’[!UICONTROL Edge Network Experience Platform] (par exemple, `POST https://edge.adobedc.net/ee/v2/interact`). Il s’agit de deux API distinctes qui ne sont pas interchangeables.
+
 ## Installation des bibliothèques
 
 ### Installation d’at.js
 
-[!DNL Adobe] permet aux clients de télécharger la bibliothèque directement à partir de l’onglet [!DNL Adobe Experience Cloud], [!UICONTROL &#x200B; Implémentation &#x200B;]. La bibliothèque at.js est personnalisée avec des paramètres tels que clientCode, imsOrgId, etc.
+[!DNL Adobe] permet aux clients de télécharger la bibliothèque directement à partir de l’onglet [!DNL Adobe Experience Cloud], [!UICONTROL  Implémentation ]. La bibliothèque at.js est personnalisée avec des paramètres tels que clientCode, imsOrgId, etc.
 
 ### Installation du SDK Web
 
 La version préconfigurée est disponible sur un réseau CDN. Vous pouvez référencer la bibliothèque sur le réseau CDN directement sur votre page ou la télécharger et l’héberger sur votre propre infrastructure. Il est disponible dans des formats miniaturisés et non miniaturisés. La version non miniaturisée est utile à des fins de débogage.
 
-Pour plus d’informations, consultez [Installation de Web SDK à l’aide de la bibliothèque JavaScript](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/library).
+Pour plus d’informations, consultez [Installation de Web SDK à l’aide de la bibliothèque JavaScript](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/library).
 
 ## Configuration des bibliothèques
 
@@ -90,7 +83,7 @@ window.adobe.target.init(window, document, {
 
 ### Configuration de Platform Web SDK
 
-La configuration du SDK s’effectue avec la commande [`configure`](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/configure/overview) . La commande `configure` est *toujours* appelée en premier.
+La configuration du SDK s’effectue avec la commande [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview) . La commande `configure` est *toujours* appelée en premier.
 
 ## Requête et rendu automatique des offres de [!DNL Target] de chargement de page
 
@@ -100,7 +93,7 @@ La configuration du SDK s’effectue avec la commande [`configure`](https://expe
 
 ### Utilisation de [!DNL PLatform Web SDK]
 
-Le contenu créé dans le [!DNL Target] [compositeur d’expérience visuelle](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/visual-experience-composer) peut être récupéré et rendu automatiquement par SDK.
+Le contenu créé dans le [!DNL Target] [compositeur d’expérience visuelle](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/visual-experience-composer) peut être récupéré et rendu automatiquement par SDK.
 
 Pour demander et effectuer automatiquement le rendu de [!DNL Target] offres, utilisez la commande `sendEvent` et définissez l’option `renderDecisions` sur `true.` Cela force le SDK à effectuer automatiquement le rendu de tout contenu personnalisé éligible au rendu automatique.
 
@@ -200,7 +193,7 @@ alloy("sendEvent", {
 }
 ```
 
-[En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[En savoir plus](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## Comment demander et *PAS* effectuer automatiquement le rendu des offres Page Load Target
 
@@ -279,7 +272,7 @@ alloy("sendEvent", {
   });
 ```
 
-[En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[En savoir plus](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## Comment demander des mbox Target spécifiques basées sur des formulaires
 
@@ -436,7 +429,7 @@ alloy("sendEvent", {
 });
 ```
 
-[En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
+[En savoir plus](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content)
 
 ## Application des activités [!DNL Target]
 
@@ -467,7 +460,7 @@ alloy("applyPropositions", {
 });
 ```
 
-En savoir plus sur la commande `applyPropositions` dans la [documentation dédiée](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/personalization/rendering-personalization-content).
+En savoir plus sur la commande `applyPropositions` dans la [documentation dédiée](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content).
 
 ## Suivi des événements
 
@@ -621,7 +614,7 @@ alloy("sendEvent", {
 });
 ```
 
-[En savoir plus](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/personalization/rendering-personalization-content#manual)
+[En savoir plus](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/personalization/rendering-personalization-content#manual)
 
 **Exemple 3 - Suivi d’un événement déclenché après l’exécution d’une action**
 
@@ -701,9 +694,9 @@ alloy("sendEvent", {
 
 [En savoir plus](/help/dev/implement/client-side/aep-web-sdk/spa-implementation.md)
 
-## Comment tirer parti de [!UICONTROL &#x200B; jetons de réponse &#x200B;]
+## Comment tirer parti de [!UICONTROL  jetons de réponse ]
 
-Le contenu Personalization renvoyé par [!DNL Target] inclut des [jetons de réponse](https://experienceleague.adobe.com/fr/docs/target/using/administer/response-tokens). Les jetons de réponse sont des détails sur l’activité, l’offre, l’expérience, le profil utilisateur, les informations géographiques, etc. Ces informations peuvent être partagées avec des outils tiers ou utilisées à des fins de débogage. Les jetons de réponse peuvent être configurés dans l’interface utilisateur d’[!DNL Target].
+Le contenu Personalization renvoyé par [!DNL Target] inclut des [jetons de réponse](https://experienceleague.adobe.com/en/docs/target/using/administer/response-tokens). Les jetons de réponse sont des détails sur l’activité, l’offre, l’expérience, le profil utilisateur, les informations géographiques, etc. Ces informations peuvent être partagées avec des outils tiers ou utilisées à des fins de débogage. Les jetons de réponse peuvent être configurés dans l’interface utilisateur d’[!DNL Target].
 
 ### Utiliser at.js
 
@@ -717,7 +710,7 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(e) {
 }); 
 ```
 
-[En savoir plus](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr)
+[En savoir plus](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)
 
 ### Utilisation de [!DNL Platform Web SDK]
 
@@ -725,7 +718,7 @@ document.addEventListener(adobe.target.event.REQUEST_SUCCEEDED, function(e) {
 >
 >Assurez-vous d’utiliser [!DNL Experience Platform Web SDK] version 2.6.0 ou ultérieure.
 
-Les jetons de réponse sont renvoyés dans le cadre des `propositions` exposées dans le résultat de la commande `sendEvent`. Chaque proposition contient un tableau de `items,` et chaque élément possède un objet `meta` rempli de jetons de réponse s’ils sont activés dans l’interface utilisateur d’administration [!DNL Target]. [En savoir plus](https://experienceleague.adobe.com/fr/docs/target/using/administer/response-tokens)
+Les jetons de réponse sont renvoyés dans le cadre des `propositions` exposées dans le résultat de la commande `sendEvent`. Chaque proposition contient un tableau de `items,` et chaque élément possède un objet `meta` rempli de jetons de réponse s’ils sont activés dans l’interface utilisateur d’administration [!DNL Target]. [En savoir plus](https://experienceleague.adobe.com/en/docs/target/using/administer/response-tokens)
 
 **Exemple**
 
@@ -832,7 +825,7 @@ Lorsque cette option est configurée, le format de la payload renvoyée est le s
 }
 ```
 
-La payload peut ensuite être transmise à [!DNL Analytics] via l’[!DNL &#x200B; Data Insertion API] .
+La payload peut ensuite être transmise à [!DNL Analytics] via l’[!DNL  Data Insertion API] .
 
 Exemple 2 : le configurer dans chaque fonction `getOffers` :
 
@@ -896,7 +889,7 @@ Ensuite, les données circulent comme suit :
 
 ![Diagramme affichant le workflow de journalisation côté serveur d’Analytics](/help/dev/implement/client-side/aep-web-sdk/assets/a4t-server-side-atjs.png)
 
-[En savoir plus](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html?lang=fr)
+[En savoir plus](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4timplementation.html)
 
 ### Utilisation de [!DNL Platform Web SDK]
 
@@ -1269,14 +1262,14 @@ La bibliothèque at.js expose ces fonctionnalités de débogage :
 
 >[!NOTE]
 >
->Toutes ces fonctionnalités de débogage sont disponibles avec des fonctionnalités améliorées dans [&#128279;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob).
+>Toutes ces fonctionnalités de débogage sont disponibles avec des fonctionnalités améliorées dans [](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob).
 
 ### Utilisation de [!DNL Platform Web SDK]
 
 Vous disposez de plusieurs fonctionnalités de débogage lors de l’utilisation de [!DNL Platform Web SDK] :
 
-* Utilisation de [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home)
+* Utilisation de [](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home)
 * [Débogage de Web SDK activé](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home)
 * Utilisation des [hooks de surveillance Web SDK](https://github.com/adobe/alloy/wiki/Monitoring-Hooks)
-* Utiliser [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/debugger/home)
+* Utiliser [](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
 * Target Trace
