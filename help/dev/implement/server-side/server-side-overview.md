@@ -35,7 +35,7 @@ Informations sur [!DNL Adobe Target] API de diffusion côté serveur, les SDK et
 >
 >Si votre implémentation utilise at.js et [!DNL AppMeasurement] côté client, vous devez utiliser l’[!UICONTROL API de diffusion Target] et les SDK côté serveur décrits ci-dessous.
 >
->Si votre implémentation utilise [!UICONTROL Adobe Experience Platform Web SDK], vous devez utiliser l’API [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server]](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank}.
+>Si votre implémentation utilise [!UICONTROL Adobe Experience Platform Web SDK], vous devez utiliser l’API [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server]](https://experienceleague.adobe.com/fr/docs/experience-platform/edge-network-server-api/overview){target=_blank}.
 
 Le processus suivant se produit dans une implémentation côté serveur de [!DNL Target] :
 
@@ -104,7 +104,7 @@ Pour les appels d’API Interact autres que SDK, respectez les exigences suivant
 
 Lorsque [!DNL Target] classe une requête comme trafic de robots, la personnalisation peut échouer ou paraître intermittente, car la recherche de profil, l’évaluation de segments et le contenu personnalisé pour des activités telles que [!UICONTROL Recommendations] et [!UICONTROL Ciblage automatique] sont supprimés, comme décrit ci-dessous.
 
-Pour en savoir plus sur l’implémentation d’avec SDK, consultez la [[!DNL Adobe Experience Platform Web SDK] présentation](https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/aep/aep-web-sdk-overview){target=_blank}.
+Pour en savoir plus sur l’implémentation d’avec SDK, consultez la [[!DNL Adobe Experience Platform Web SDK] présentation](https://experienceleague.adobe.com/fr/docs/target-dev/developer/client-side/aep/aep-web-sdk-overview){target=_blank}.
 
 **Exemple de requête API Interact (les en-têtes doivent inclure `User-Agent`) :**
 
