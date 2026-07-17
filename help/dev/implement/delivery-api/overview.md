@@ -9,16 +9,20 @@ product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: b6b447ccb88925a8efb6ff6a80ae475c8780dbc8
 workflow-type: tm+mt
-source-wordcount: 188
-ht-degree: 1%
+source-wordcount: 244
+ht-degree: 0%
 
 ---
 
 # Présentation de l’API de diffusion
 
 Le [!DNL Adobe Target Delivery API] est basé sur REST. Cette documentation décrit les ressources qui constituent le [!DNL Delivery API] [!DNL Adobe Target]. Les méthodes HTTP sont utilisées pour exécuter des opérations sur ces ressources.
+
+>[!IMPORTANT]
+>
+>La [!DNL Delivery API] décrite ici est destinée aux implémentations côté serveur [!DNL at.js] et directes. Si vous implémentez [!DNL Target] à l’aide de l’[!DNL Adobe Experience Platform Web SDK], utilisez l’API Interact, accessible via la commande `sendEvent` sur l’[!UICONTROL Edge Network Experience Platform], au lieu d’appeler directement l’[!DNL Delivery API]. Voir [Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md) et [Comparer la bibliothèque at.js à Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/web-sdk-atjs-comparison.md) pour plus d’informations.
 
 À l’aide de l’API de diffusion Adobe Target , vous pouvez :
 

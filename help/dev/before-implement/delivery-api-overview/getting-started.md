@@ -14,14 +14,18 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: b6b447ccb88925a8efb6ff6a80ae475c8780dbc8
 workflow-type: tm+mt
-source-wordcount: 132
+source-wordcount: 180
 ht-degree: 1%
 
 ---
 
 # Prise en main de l’API de diffusion 
+
+>[!IMPORTANT]
+>
+>Ce guide s’applique aux implémentations côté serveur [!DNL at.js] et directes qui appellent directement l’API [!UICONTROL Target Delivery]. Si vous implémentez [!DNL Target] à l’aide de [!UICONTROL Adobe Experience Platform Web SDK], utilisez plutôt l’API Interact (commande `sendEvent` sur [!UICONTROL Experience Platform Edge Network]). Voir [Adobe Experience Platform Web SDK](/help/dev/implement/client-side/aep-web-sdk/aep-web-sdk-overview.md) pour plus d’informations.
 
 Un appel [!UICONTROL API de diffusion Target] se présente comme suit :
 

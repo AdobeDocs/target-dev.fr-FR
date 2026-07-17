@@ -20,10 +20,10 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 45af56b5ac64eb1db67c1bfdfecd6887dce990ff
 workflow-type: tm+mt
-source-wordcount: 618
-ht-degree: 12%
+source-wordcount: 825
+ht-degree: 9%
 
 ---
 
@@ -64,7 +64,7 @@ Grâce à l’API de diffusion [!DNL Target], vous pouvez :
 * Diffusez des expériences à partir de n’importe quelle plateforme ou application côté serveur pouvant effectuer des appels HTTP/s.
 * Proposez des expériences cohérentes et personnalisées à un visiteur, quel que soit le ou les canaux utilisés pour interagir avec votre entreprise.
 * Mettez en cache des expériences pour un visiteur au cours d’une session sur votre serveur afin d’éviter plusieurs appels d’API, ce qui offre de meilleures performances.
-* Intégrez facilement aux produits Adobe Experience Cloud, tels qu’Adobe Analytics, Adobe Audience Manager (AAM) et le service Experience Cloud ID du côté serveur.
+* Intégrez de manière transparente les produits Adobe Experience Cloud, tels qu’Adobe Analytics, Adobe Audience Manager (AAM) et le service Experience Cloud ID côté serveur.
 
 ## SDK côté serveur
 
@@ -80,7 +80,7 @@ Grâce aux SDK côté serveur d’[!DNL Adobe Target], vous pouvez :
 * Exécutez et exécutez **indicateurs de fonctionnalité**, **déploiements** et **expériences A/B** à **latence quasi nulle**.
 * Diffusez des expériences sur **web**, y compris les **SPA** et **canaux mobiles**, ainsi que sur des appareils **Internet des objets (IoT) non basés sur un navigateur** tels qu’une télévision connectée, un kiosque ou un écran numérique en magasin.
 * **Proposez des expériences personnalisées basées sur le machine learning (ML** à un utilisateur, quel que soit le canal ou l’appareil qu’il a utilisé pour interagir avec votre entreprise.
-* **Intégrez facilement des produits Adobe Experience Cloud** tels que **Adobe Analytics**, **Adobe Audience Manager** et le **service Experience Cloud ID** côté serveur.
+* **Intégrez de manière transparente les produits Adobe Experience Cloud** tels que **Adobe Analytics**, **Adobe Audience Manager** et le **service Experience Cloud ID** côté serveur.
 
 Consultez la page [Prise en main](sdk-guides/getting-started/getting-started.md) pour savoir comment exécuter un cas d’utilisation simple de marquage des fonctionnalités via [la prise de décision sur l’appareil](sdk-guides/on-device-decisioning/overview.md).
 
@@ -91,3 +91,26 @@ Consultez notre [Sample Apps](sdk-guides/sample-apps/sample-apps.md) pour vous a
 Lien : [API Target Recommendations](https://developers.adobetarget.com/api/recommendations) et [Présentation de l’API Adobe Recommendations](../../before-administer/recs-api/overview.md).
 
 Les API Recommendations vous permettent d’interagir par programmation avec [!DNL Target] serveurs de recommandations. Ces API peuvent être intégrées à une plage de piles d’applications pour exécuter des fonctions que vous exécuteriez normalement via l’interface utilisateur d’[!DNL Target].
+
+## Appels d’API [!DNL Platform Edge Network] sans SDK {#platform-edge-api-user-agent}
+
+Le [!UICONTROL Adobe Experience Platform Web SDK] et les autres intégrations SDK prises en charge incluent une valeur `User-Agent` de type navigateur dans les en-têtes de requête HTTP lors de l’appel du [!DNL Experience Platform Edge Network]. Les intégrations côté serveur qui utilisent l’API publique [Interact](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/server-api/interact){target=_blank} sans SDK doivent fournir cet en-tête explicitement.
+
+Pour les appels d’API Interact autres que SDK, respectez les exigences suivantes :
+
+* Incluez un `User-Agent` valide de type navigateur dans les en-têtes de requête HTTP. Une valeur visiteur ou agent-utilisateur dans le corps de la requête JSON seule ne répond pas aux exigences de détection des robots pour ce modèle d’intégration.
+* N’utilisez pas de valeurs d’espace réservé ou autres que le navigateur, par exemple `MyApp/1.0`, car de telles valeurs peuvent entraîner une classification de robots.
+* Aucun nom SDK ou version SDK n’est requis pour les appels API Edge publics. Pour ce scénario, un en-tête HTTP `User-Agent` valide est l’élément obligatoire.
+
+Lorsque [!DNL Target] classe une requête comme trafic de robots, la personnalisation peut échouer ou paraître intermittente, car la recherche de profil, l’évaluation de segments et le contenu personnalisé pour des activités telles que [!UICONTROL Recommendations] et [!UICONTROL Ciblage automatique] sont supprimés, comme décrit ci-dessous.
+
+Pour en savoir plus sur l’implémentation d’avec SDK, consultez la [[!DNL Adobe Experience Platform Web SDK] présentation](https://experienceleague.adobe.com/fr/docs/target-dev/developer/client-side/aep/aep-web-sdk-overview){target=_blank}.
+
+**Exemple de requête API Interact (les en-têtes doivent inclure `User-Agent`) :**
+
+```http
+POST https://edge.adobedc.net/ee/v2/interact?dataStreamId=YOUR_DATASTREAM_ID&requestId=YOUR_REQUEST_ID
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.5 Safari/605.1.15
+Accept: */*
+Content-Type: text/plain; charset=UTF-8
+```
