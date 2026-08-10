@@ -20,9 +20,9 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 45af56b5ac64eb1db67c1bfdfecd6887dce990ff
+source-git-commit: 7a393cc6a3f30a276a256cdabb5b42fe08f3c505
 workflow-type: tm+mt
-source-wordcount: 825
+source-wordcount: 820
 ht-degree: 9%
 
 ---
@@ -94,19 +94,19 @@ Les API Recommendations vous permettent d’interagir par programmation avec [!D
 
 ## Appels d’API [!DNL Platform Edge Network] sans SDK {#platform-edge-api-user-agent}
 
-Le [!UICONTROL Adobe Experience Platform Web SDK] et les autres intégrations SDK prises en charge incluent une valeur `User-Agent` de type navigateur dans les en-têtes de requête HTTP lors de l’appel du [!DNL Experience Platform Edge Network]. Les intégrations côté serveur qui utilisent l’API publique [Interact](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network/server-api/interact){target=_blank} sans SDK doivent fournir cet en-tête explicitement.
+Le [!UICONTROL Adobe Experience Platform Web SDK] et les autres intégrations SDK prises en charge incluent une valeur `User-Agent` de type navigateur dans les en-têtes de requête HTTP lors de l’appel du [!DNL Experience Platform Edge Network]. Les intégrations côté serveur qui utilisent l’[API Edge publique](https://developer.adobe.com/data-collection-apis/docs/getting-started/personalization){target=_blank} sans SDK doivent fournir cet en-tête explicitement.
 
-Pour les appels d’API Interact autres que SDK, respectez les exigences suivantes :
+Pour les appels d’API Edge non SDK, respectez les exigences suivantes :
 
 * Incluez un `User-Agent` valide de type navigateur dans les en-têtes de requête HTTP. Une valeur visiteur ou agent-utilisateur dans le corps de la requête JSON seule ne répond pas aux exigences de détection des robots pour ce modèle d’intégration.
 * N’utilisez pas de valeurs d’espace réservé ou autres que le navigateur, par exemple `MyApp/1.0`, car de telles valeurs peuvent entraîner une classification de robots.
 * Aucun nom SDK ou version SDK n’est requis pour les appels API Edge publics. Pour ce scénario, un en-tête HTTP `User-Agent` valide est l’élément obligatoire.
 
-Lorsque [!DNL Target] classe une requête comme trafic de robots, la personnalisation peut échouer ou paraître intermittente, car la recherche de profil, l’évaluation de segments et le contenu personnalisé pour des activités telles que [!UICONTROL Recommendations] et [!UICONTROL Ciblage automatique] sont supprimés, comme décrit ci-dessous.
+Lorsque [!DNL Target] classe une requête comme trafic de robots, la personnalisation peut échouer ou paraître intermittente, car la recherche de profil, l’évaluation de segments et le contenu personnalisé pour des activités telles que [!UICONTROL Recommendations] et [!UICONTROL Ciblage automatique] sont supprimés.
 
 Pour en savoir plus sur l’implémentation d’avec SDK, consultez la [[!DNL Adobe Experience Platform Web SDK] présentation](https://experienceleague.adobe.com/fr/docs/target-dev/developer/client-side/aep/aep-web-sdk-overview){target=_blank}.
 
-**Exemple de requête API Interact (les en-têtes doivent inclure `User-Agent`) :**
+**Exemple de requête API Edge (les en-têtes doivent inclure `User-Agent`) :**
 
 ```http
 POST https://edge.adobedc.net/ee/v2/interact?dataStreamId=YOUR_DATASTREAM_ID&requestId=YOUR_REQUEST_ID
