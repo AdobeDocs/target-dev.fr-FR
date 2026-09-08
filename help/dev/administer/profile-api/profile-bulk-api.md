@@ -16,10 +16,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 64d250010899c671e73045b23b8e0c79cefaa2d6
 workflow-type: tm+mt
-source-wordcount: 1094
-ht-degree: 7%
+source-wordcount: 1311
+ht-degree: 6%
 
 ---
 
@@ -83,6 +83,27 @@ Vous référencez ce fichier dans l’appel POST aux serveurs [!DNL Target] pour
 * La taille du fichier de traitement par lot doit être inférieure à 50 Mo. En outre, le nombre total de lignes ne doit pas dépasser 500 000. Cette limite permet de s’assurer que les serveurs ne sont pas submergés par un trop grand nombre de requêtes.
 * Le nombre d’attributs que vous pouvez charger n’est pas limité. Cependant, la taille totale des données de profil externes, qui comprennent les attributs du client, l’API de profil, les paramètres de profil In-Mbox et la sortie de script de profil, ne doit pas dépasser 64 Ko.
 * Les paramètres et les valeurs sont sensibles à la casse.
+
+### Exigences en matière de codage d’URL {#url-encoding}
+
+>[!IMPORTANT]
+>
+>Tous les noms et toutes les valeurs de paramètre doivent être encodés en URL (UTF-8) avant d’envoyer le lot, envoyé avec `Content-Type: application/x-www-form-urlencoded`, avec le corps commençant par `batch=`. Les caractères réservés non codés sont lus en tant que syntaxe de requête au lieu des données, ce qui peut entraîner le rejet du lot, sa troncation ou sa corruption.
+>
+>Si vous recevez une réponse « Erreur inattendue » sans `batchId`, consultez la section [&#x200B; L’API de mise à jour de profil en masse renvoie « Erreur inattendue »](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-24281) pour connaître les étapes de dépannage.
+
+Les caractères suivants sont généralement présents dans les valeurs de profil, mais ont une signification spéciale dans les données `application/x-www-form-urlencoded`. Si vous les envoyez sans codage, la requête échoue ou les données sont corrompues sans erreur évidente :
+
+| Caractère | Coder en tant que | En cas d’envoi non codé |
+|---|---|---|
+| `%` | `%25` | Le lot entier est rejeté. La réponse renvoie un HTTP 200 avec `success=false` et le message « Erreur inattendue », et aucune `batchId` n’est émise. |
+| `&` | `%26` | Le lot est tronqué silencieusement au premier `&`. Les lignes restantes sont ignorées, ce qui peut entraîner une mise à jour partielle ou une réponse « Le lot est vide ». |
+| `+` | `%2B` | Le caractère est converti silencieusement en un espace, ce qui corrompt la valeur stockée. |
+| `=` | `%3D` | Le caractère peut être mal interprété comme une limite de champ. |
+
+_Par exemple, la valeur `50% off & more` doit être envoyée en tant que `50%25 off %26 more`._
+
+Notez que les lettres, les chiffres, les caractères accentués UTF-8 et les caractères `- . ! ~ _ * ( )` ne nécessitent pas de codage. Toutefois, [!DNL Adobe] recommande de coder toutes les valeurs pour éviter toute ambiguïté.
 
 ## Requête HTTP POST
 
