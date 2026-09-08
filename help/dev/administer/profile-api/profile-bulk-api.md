@@ -90,7 +90,7 @@ Vous référencez ce fichier dans l’appel POST aux serveurs [!DNL Target] pour
 >
 >Tous les noms et toutes les valeurs de paramètre doivent être encodés en URL (UTF-8) avant d’envoyer le lot, envoyé avec `Content-Type: application/x-www-form-urlencoded`, avec le corps commençant par `batch=`. Les caractères réservés non codés sont lus en tant que syntaxe de requête au lieu des données, ce qui peut entraîner le rejet du lot, sa troncation ou sa corruption.
 >
->Si vous recevez une réponse « Erreur inattendue » sans `batchId`, consultez la section [&#x200B; L’API de mise à jour de profil en masse renvoie « Erreur inattendue »](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24281) pour connaître les étapes de dépannage.
+>Si vous recevez une réponse « Erreur inattendue » sans `batchId`, consultez la section [&#x200B; L’API de mise à jour de profil en masse renvoie « Erreur inattendue »](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-24281) pour connaître les étapes de dépannage.
 
 Les caractères suivants sont généralement présents dans les valeurs de profil, mais ont une signification spéciale dans les données `application/x-www-form-urlencoded`. Si vous les envoyez sans codage, la requête échoue ou les données sont corrompues sans erreur évidente :
 
