@@ -1,16 +1,13 @@
 ---
 keywords: prémasquer SDK, scintillement, anti-scintillement, prémasquage, pré-masquage, alliage, at.js, implémentation, consentement, CMP, placement de script, en ligne, externe, sélection SDK
-description: Découvrez comment intégrer la fonction  [!DNL Adobe Target] Prehide SDK pour éliminer le flash de contenu non personnalisé (scintillement) lors du chargement de la page. Le SDK fonctionne avec Adobe Alloy (Web SDK) et at.js.
+description: Découvrez comment intégrer le SDK de prémasquage [!DNL Adobe Target] pour éliminer le flash de contenu non personnalisé (scintillement) lors du chargement de la page. Le SDK fonctionne avec Adobe Alloy (Web SDK) et at.js.
 title: Aperçu du guide d’intégration de SDK
 feature: Implementation
-hide: true
-source-git-commit: bb3c2906a52daecca03cf29331d9bec5e2955d2e
+source-git-commit: 35ac4480ead5069169a2c55d35b43d3c1a81d78a
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 0%
-
+source-wordcount: '1066'
+ht-degree: 1%
 ---
-
 
 # Prévisualisation du guide d’intégration de SDK
 
@@ -63,7 +60,8 @@ Une minuscule bibliothèque JavaScript synchrone qui empêche le scintillement v
 >[!IMPORTANT]
 >
 >Le SDK de prévisualisation doit s’exécuter avant Alloy/at.js. Si Alloy se charge en premier, la page affiche du contenu non personnalisé, puis effectue un nouveau rendu. C’est exactement le scintillement que ce SDK est conçu pour éviter.
-></br>>N’ajoutez pas de `async` ni de `defer` à la balise de script Prehide SDK. Une exécution synchrone est requise afin que la règle de masquage soit injectée avant que le navigateur ne commence à afficher la page.
+></br>
+>N’ajoutez pas de `async` ni de `defer` à la balise de script Prehide SDK. Une exécution synchrone est requise afin que la règle de masquage soit injectée avant que le navigateur ne commence à afficher la page.
 
 Le SDK de prémasquage doit apparaître plus tôt dans le document que le SDK de [!DNL Adobe Target] qui le supprime. L&#39;ordre de chargement est non négociable :
 
