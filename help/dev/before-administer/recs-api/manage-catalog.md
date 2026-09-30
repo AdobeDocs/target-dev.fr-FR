@@ -167,7 +167,7 @@ Les détails de l’entité ne peuvent être récupérés que pour une seule ent
 
    >[!NOTE]
    >
-   >Si aucun environnement n&#39;est spécifié explicitement, Get Entity tente d&#39;obtenir l&#39;entité à partir de votre [environnement par défaut](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) uniquement. Si vous souhaitez effectuer une extraction à partir de n’importe quel environnement autre que votre environnement par défaut, vous devez spécifier l’identifiant d’environnement.
+   >Si aucun environnement n&#39;est spécifié explicitement, Get Entity tente d&#39;obtenir l&#39;entité à partir de votre [environnement par défaut](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=fr) uniquement. Si vous souhaitez effectuer une extraction à partir de n’importe quel environnement autre que votre environnement par défaut, vous devez spécifier l’identifiant d’environnement.
 
 1. Si nécessaire, ajoutez le paramètre `environmentId` et renvoyez la requête.
 
