@@ -1,24 +1,32 @@
 ---
-description: Découvrez comment utiliser l’pour  [!DNL Adobe Mobile SDK]  les expériences optimales aux visiteurs de votre application mobile.
-title: Comment fonctionne [!DNL Target] t-il dans les applications mobiles ?
+description: Découvrez comment utiliser l’[!DNL Adobe Mobile SDK] pour montrer les expériences optimales aux visiteurs de votre application mobile.
+title: Comment fonctionne [!DNL Target] dans les applications mobiles ?
 feature: Implement Mobile
 exl-id: 33001f01-fde6-48cb-ac02-d1a632b2150d
-TQID: https://experienceleague.adobe.com/R3B-i9BFKaoTkbfzVLOU-j8VV2K-MpNrf0WTCkMceT8
+TQID: 'https://experienceleague.adobe.com/R3B-i9BFKaoTkbfzVLOU-j8VV2K-MpNrf0WTCkMceT8'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+subfeature_v2:
+  - id: d051910f-2bda-47ea-a969-6ade9fcd71f1
+    internal-label: Implement mobile
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Personalization
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 237
+source-wordcount: '239'
 ht-degree: 16%
-
 ---
-
 # Fonctionnement de la [!DNL Target] dans les applications mobiles
 
 Le [!DNL Adobe Mobile SDK] contacte le serveur [!DNL Target] pour obtenir le contenu ainsi que d’autres points de données afin d’afficher l’expérience appropriée à l’utilisateur.

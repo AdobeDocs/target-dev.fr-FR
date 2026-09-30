@@ -3,23 +3,34 @@ title: Gestion des critères personnalisés
 description: Étapes requises pour utiliser les API Adobe Target afin de gérer, créer, répertorier, modifier, obtenir et supprimer des critères de recommandations Adobe Target.
 feature: APIs/SDKs, Recommendations, Administration & Configuration
 kt: 3815
-thumbnail: null
+thumbnail:
 author: Judy Kim
 exl-id: 51a67a49-a92d-4377-9a9f-27116e011ab1
-TQID: https://experienceleague.adobe.com/sRzck0uJDaJdFZ9nG4Ijrbw31iX3M8WY5nIW2x4nl-0
+TQID: 'https://experienceleague.adobe.com/sRzck0uJDaJdFZ9nG4Ijrbw31iX3M8WY5nIW2x4nl-0'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
+  - id: dfc8a233-f2b5-4811-bf63-b4262aebc5a5
+    internal-label: Administration and configuration
+  - id: f69bc5f1-ebdb-4306-a281-f2e77daf734c
+    internal-label: Activities and tests
+subfeature_v2:
+  - id: ed58f4a1-16eb-4c8c-b505-be9da766a9ec
+    internal-label: Recommendations
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: f05a93102cc0f9b86a6521ff8007aa59f2af3c1a
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 890
+source-wordcount: '939'
 ht-degree: 0%
-
 ---
-
 # Gérer les critères personnalisés
 
 Parfois, les algorithmes fournis par Recommendations ne permettent pas de faire apparaître des éléments spécifiques que vous souhaitez promouvoir. Dans ce cas, les critères personnalisés vous permettent de fournir un ensemble spécifique d’éléments recommandés pour un élément ou une catégorie clé donnée.
@@ -115,7 +126,7 @@ Pour afficher les détails d’un critère personnalisé spécifique, utilisez l
 
 1. Vérifiez que le critère a été supprimé à l’aide de l’option Obtenir les critères personnalisés.
    ![DeleteCustomCriteria2](assets/DeleteCustomCriteria2.png)
-Dans ce cas, l’erreur 404 attendue indique que les critères supprimés sont introuvables.
+   Dans ce cas, l’erreur 404 attendue indique que les critères supprimés sont introuvables.
 
 >[!NOTE]
 >

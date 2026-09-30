@@ -5,22 +5,29 @@ feature: APIs/SDKs
 level: Experienced
 role: Developer
 exl-id: efccadab-d139-4423-8613-c2743d87b3a0
-TQID: https://experienceleague.adobe.com/u-RPLXjG8UBI7bDu2HgPFFnNBU--Yr0UydVX-Q-dcTc
+TQID: 'https://experienceleague.adobe.com/u-RPLXjG8UBI7bDu2HgPFFnNBU--Yr0UydVX-Q-dcTc'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Implementation
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 369
+source-wordcount: '370'
 ht-degree: 0%
-
 ---
-
 # Notifier [!DNL Target]
 
 En suivant cette étape, vous vous assurez que tous les événements qui doivent être envoyés à [!DNL Adobe Target] sont envoyés à l’aide de la méthode `trackEvent`.
@@ -56,9 +63,9 @@ Il n’est pas nécessaire d’inclure les attributs de conversion de commande d
 * Rencontrez votre équipe commerciale pour identifier tous les événements qui peuvent être considérés comme des mesures de conversion ou de succès. Vous devez également identifier l’événement de conversion qui génère un chiffre d’affaires afin que ces détails puissent être envoyés à [!DNL Target] avec les données d’événement.
 * Assurez-vous que les attributs suivants sont disponibles dans la couche de données afin de pouvoir les envoyer avec l’événement de conversion. L’événement de conversion génère un chiffre d’affaires, tel qu’un achat de produit ou un événement Ajouter au panier.
 
-   * `productPurchaseId` : ID de produit achetés dans le cadre de la commande. Séparez plusieurs produits en utilisant des virgules.
-   * `orderTotal` : total de la commande pour l&#39;achat.
-   * `orderId` : ID de commande de l’achat.
+  * `productPurchaseId` : ID de produit achetés dans le cadre de la commande. Séparez plusieurs produits en utilisant des virgules.
+  * `orderTotal` : total de la commande pour l&#39;achat.
+  * `orderId` : ID de commande de l’achat.
 
   L’illustration suivante présente une [règle pour [!DNL tags] in [!DNL Experience Platform]](https://experienceleague.adobe.com/docs/tags.html?lang=fr){target=_blank} qui ne doit être déclenchée que sur la page [!UICONTROL Confirmation].
 

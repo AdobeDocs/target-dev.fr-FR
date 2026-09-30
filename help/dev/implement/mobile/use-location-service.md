@@ -1,21 +1,27 @@
 ---
 keywords: application mobile, emplacement de l’application mobile, application mobile target, emplacements mobiles target, location service, adobe experience cloud location service, poi, points ciblés, sdk, emplacement, application mobile1
-description: Découvrez comment utiliser l’pour activer  [!DNL Adobe Experience Platform Location Service]  applications mobiles avec la connaissance de l’emplacement.
-title: Comment puis-je utiliser  [!DNL Adobe Location Service] ?
+description: Découvrez comment utiliser l’[!DNL Adobe Experience Platform Location Service] pour activer vos applications mobiles avec la connaissance de l’emplacement.
+title: Comment utiliser le [!DNL Adobe Location Service] ?
 feature: Implement Mobile
 exl-id: ff38c0bb-3451-420f-8538-10f1d0606232
-TQID: https://experienceleague.adobe.com/dr-6ZJdh-o9p75Cm1LsT7IrRglSiAMlkGKoEc4EZU6E
+TQID: 'https://experienceleague.adobe.com/dr-6ZJdh-o9p75Cm1LsT7IrRglSiAMlkGKoEc4EZU6E'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+subfeature_v2:
+  - id: d051910f-2bda-47ea-a969-6ade9fcd71f1
+    internal-label: Implement mobile
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 180
+source-wordcount: '181'
 ht-degree: 3%
-
 ---
-
 # Utilisez [!UICONTROL Location Service]
 
 L’emplacement est un contexte important pour comprendre et interagir avec les utilisateurs mobiles. En utilisant ce contexte, les développeurs d’applications mobiles peuvent améliorer la conception de l’application et en faire une expérience plus personnalisée et plus attrayante.

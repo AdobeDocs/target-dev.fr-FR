@@ -3,26 +3,38 @@ title: Comment récupérer des recommandations avec l’API de diffusion
 description: Cet article guide les développeurs à travers les étapes requises pour récupérer le contenu des recommandations à l’aide de l’API de diffusion Adobe Target.
 feature: APIs/SDKs, Recommendations, Administration & Configuration
 kt: 3815
-thumbnail: null
+thumbnail:
 author: Judy Kim
 exl-id: 9b391f42-2922-48e0-ad7e-10edd6125be6
-TQID: https://experienceleague.adobe.com/K94vITD8ZSDXLkC42Vm02eC5RmHudBvukXNcdPFVjzk
+TQID: 'https://experienceleague.adobe.com/K94vITD8ZSDXLkC42Vm02eC5RmHudBvukXNcdPFVjzk'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
+  - id: dfc8a233-f2b5-4811-bf63-b4262aebc5a5
+    internal-label: Administration and configuration
+  - id: f69bc5f1-ebdb-4306-a281-f2e77daf734c
+    internal-label: Activities and tests
+subfeature_v2:
+  - id: ed58f4a1-16eb-4c8c-b505-be9da766a9ec
+    internal-label: Recommendations
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 129298289889a3b133eb07d0caeade2fd0b5568e
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1284
+source-wordcount: '1380'
 ht-degree: 1%
-
 ---
-
 # Récupération des recommandations avec l’API de diffusion
 
 Les API Adobe Target et Adobe Target Recommendations peuvent être utilisées pour fournir des réponses aux pages web, mais peuvent également être utilisées dans des expériences non basées sur HTML, notamment les applications, les écrans, les consoles, les e-mails, les kiosques et d’autres appareils d’affichage. En d’autres termes, lorsque les bibliothèques Target et JavaScript ne peuvent pas être utilisées, l’[API de diffusion Target](/help/dev/implement/delivery-api/overview.md) permet toujours d’accéder à l’ensemble des fonctionnalités de Target pour offrir des expériences personnalisées.
@@ -84,7 +96,7 @@ N’oubliez pas de configurer correctement vos paramètres de requête. Par exem
 1. Envoyez la demande. Cette opération s’exécute à l’emplacement *api_charter*, où s’exécute une recommandation active, définie avec votre conception JSON et qui génère une liste des entités recommandées.
 1. Recevez une réponse basée sur la conception JSON.
    ![server-side-create-recs-json-response2.png](assets/server-side-create-recs-json-response2.png)
-La réponse inclut l’identifiant de clé, ainsi que les identifiants d’entité des entités recommandées.
+   La réponse inclut l’identifiant de clé, ainsi que les identifiants d’entité des entités recommandées.
 
 Ainsi, l’utilisation de l’API de diffusion avec Recommendations permet d’effectuer des étapes supplémentaires avant d’afficher les recommandations au visiteur sur un appareil non HTML. Par exemple, vous pouvez utiliser la réponse de l’API de diffusion pour effectuer une recherche en temps réel supplémentaire des détails des attributs de l’entité (inventaire, prix, évaluation, etc.) à partir d’un autre système (une plateforme CMS, PIM ou eCommerce, par exemple), avant d’afficher les résultats finaux.
 

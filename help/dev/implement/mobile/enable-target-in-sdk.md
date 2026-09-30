@@ -1,16 +1,26 @@
 ---
 keywords: application mobile, application mobile sdk, application mobile target, sdk target mobile, sdk d’application mobile, activer target dans sdk
 description: Découvrez comment ajouter le SDK Adobe Mobile Services à votre application mobile.
-title: Comment activer  [!DNL Target]  dans  [!DNL Adobe Mobile SDK] ?
+title: Comment activer le [!DNL Target] dans le [!DNL Adobe Mobile SDK] ?
 feature: Implement Mobile
 exl-id: 4263b96a-23c8-4513-8302-00080122181d
-source-git-commit: e5bae1ac9485c3e1d7c55e6386f332755196ffab
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+subfeature_v2:
+  - id: d051910f-2bda-47ea-a969-6ade9fcd71f1
+    internal-label: Implement mobile
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '303'
 ht-degree: 38%
-
 ---
-
 # Activation du [!DNL Target] dans le SDK
 
 Ajoutez [!UICONTROL Adobe Mobile Services SDK] à votre application.
@@ -21,7 +31,7 @@ Ajoutez [!UICONTROL Adobe Mobile Services SDK] à votre application.
 >
 >[Adobe Experience Platform SDK pour les applications mobiles](https://developer.adobe.com/client-sdks/documentation/){target=_blank} est la solution recommandée pour alimenter les solutions et services [!DNL Adobe Experience Cloud] dans vos applications mobiles.
 
-1. Si vous n’avez pas installé Adobe Mobile Services SDK dans votre application, utilisez vos informations d’identification Analytics ou Experience Cloud et téléchargez SDK à partir du site Web [Adobe Mobile Services](https://mobilemarketing.adobe.com/).
+1. Si vous n’avez pas installé Adobe Mobile Services SDK dans votre application, utilisez vos informations d’identification Analytics ou Experience Cloud et téléchargez SDK à partir du site web [Adobe Mobile Services](https://mobilemarketing.adobe.com/).
 
 1. Ajoutez le [!DNL Adobe Mobile Services SDK] à votre application.
 

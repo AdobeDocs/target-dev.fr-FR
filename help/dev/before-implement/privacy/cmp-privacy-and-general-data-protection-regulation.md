@@ -4,29 +4,41 @@ description: Découvrez Target et le RGPD (règlement général sur la protectio
 title: Comment Target gère-t-il les réglementations relatives à la confidentialité et à la protection des données ?
 feature: Privacy & Security
 exl-id: 40bac3c5-8e6f-4a90-ac0c-eddce1dbe6c0
-TQID: https://experienceleague.adobe.com/W-aYBengoNH5uKTcFZNHARelgAFX3-QrZixh09n0FU0
+TQID: 'https://experienceleague.adobe.com/W-aYBengoNH5uKTcFZNHARelgAFX3-QrZixh09n0FU0'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: f599e456-545c-47e5-8e50-b7dfe3579517
+    internal-label: Governance and control
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
+  - id: ee6498fb-34b1-4925-be4a-9ec7a38e8dab
+    internal-label: Privacy and security
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Privacy
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 2432
+source-wordcount: '2432'
 ht-degree: 61%
-
 ---
-
 # Réglementations relatives à la confidentialité et à la protection des données
 
 Informations sur le RGPD (règlement général sur la protection des données), le CCPA (California Consumer Privacy Act) et d’autres exigences internationales en matière de confidentialité. Découvrez comment ces réglementations affectent votre entreprise et Adobe Target.
@@ -39,7 +51,7 @@ Lorsqu’Adobe fournit des logiciels et des services à une entreprise, elle agi
 
 En tant que contrôleuse ou contrôleur de données, vous déterminez les données personnelles qu’Adobe traite et stocke pour vous. Si vous utilisez les solutions Adobe Experience Cloud, Adobe peut héberger des données personnelles pour vous, en fonction des solutions que vous utilisez et des informations que vous choisissez d’envoyer sur votre compte Adobe Experience Cloud. Pour obtenir une liste détaillée d’exemples, voir [Confidentialité Adobe Experience Cloud](https://www.adobe.com/fr/privacy/experience-cloud.html#collect).
 
-Adobe Experience Cloud fournit aux responsables du traitement des données des API conformes au RGPD qui permettent d’effectuer les tâches suivantes :
+Adobe Experience Cloud fournit aux responsables du traitement des données des API conformes au RGPD qui leur permettent d’effectuer les tâches suivantes :
 
 * Accéder aux informations du sujet des données stockées dans Target
 * Supprimer les informations du sujet des données stockées dans Target
@@ -127,11 +139,11 @@ Questions fréquentes sur le RGPD (règlement général sur la protection des do
 
 Adobe remplit déjà ou est en train de mettre en œuvre ses obligations en tant que responsable du traitement des données. Adobe dispose d’une base solide de contrôles certifiés de sécurité et de confidentialité dès la conception et a apporté des améliorations aux produits avant l’échéance de mai 2018. Les entreprises clientes ont la responsabilité de mettre en œuvre ces améliorations et de mettre à jour les politiques et procédures nécessaires.
 
-### Ma société, le contrôleur de données, doit-elle envoyer une requête RGPD pour chaque solution Adobe Experience Cloud qu’elle utilise ?
+### Mon entreprise, le contrôleur de données, doit-elle envoyer une requête RGPD pour chaque solution Adobe Experience Cloud qu’elle utilise ?
 
 Non, Adobe fournit un moyen centralisé d’aider les responsables du traitement des données à répondre aux exigences du RGPD et du CCPA. Les contrôleurs de données n’ont pas besoin d’accéder directement à chaque solution.
 
-Toutes les requêtes RGPD et CCPA à travers les solutions Experience Cloud, y compris Target, sont effectuées via une API Adobe centrale, actuellement nommée API conforme au RGPD. L’API effectue ensuite la requête à travers la suite de solutions Experience Cloud du contrôleur de données.
+Toutes les requêtes RGPD et CCPA à travers les solutions Experience Cloud, y compris Target, sont effectuées via une API Adobe centrale, actuellement appelée API conforme au RGPD. L’API effectue ensuite la requête à travers la suite de solutions Experience Cloud du contrôleur de données.
 
 ### Quelles informations Adobe permet-il aux clients de supprimer en réponse à une demande d’un titulaire de données/utilisateur ?
 
@@ -147,7 +159,7 @@ Target prend en charge les types d’ID suivants pour localiser un profil client
 
 | Identifiant utilisateur | Type d’ID d’espace de noms | ID d’espace de noms | Définition |
 |--- |--- |--- |--- |
-| Experience Cloud ID (ECID) | Standard | 4 | Adobe Experience Cloud ID, anciennement connu sous le nom d’identifiant visiteur ou Experience Cloud ID. Vous pouvez utiliser l’API JavaScript pour localiser cet ID (voir les détails ci-dessous). |
+| Experience Cloud ID (ECID) | Standard | 4 | Adobe Experience Cloud ID, anciennement connu sous le nom d’identifiant visiteur ou d’Experience Cloud ID. Vous pouvez utiliser l’API JavaScript pour localiser cet ID (voir les détails ci-dessous). |
 | Identifiant TnT / Identifiant du cookie (TNTID) | Standard | 9 | Identifiant cible défini comme cookie dans le navigateur du visiteur. Vous pouvez utiliser l’API JavaScript pour localiser cet ID (voir les détails ci-dessous). |
 | ID tiers/ID CRM (THIRDPARTYID) | Spécifique à Target | S.O. | Si vous fournissez à Target votre logiciel de gestion de la relation client ou d’autres informations d’identification uniques pour vos clients. |
 
