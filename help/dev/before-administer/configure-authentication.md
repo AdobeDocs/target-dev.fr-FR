@@ -29,7 +29,7 @@ ht-degree: 1%
 ---
 # Configuration de l’authentification pour les API [!DNL Adobe Target]
 
-Les API [!DNL Adobe Target] Admin, y compris les API [!DNL Recommendations Admin], sont sécurisées par authentification afin de s’assurer que seuls les utilisateurs autorisés les utilisent pour accéder aux [!DNL Adobe Target]. Utilisez [](https://developer.adobe.com/console/home) pour gérer cette authentification pour tous les [!DNL Adobe Experience Cloud solutions], y compris les [!DNL Adobe Target].
+Les API [!DNL Adobe Target] Admin, y compris les API [!DNL Recommendations Admin], sont sécurisées par authentification afin de s’assurer que seuls les utilisateurs autorisés les utilisent pour accéder aux [!DNL Adobe Target]. Utilisez [&#128279;](https://developer.adobe.com/console/home) pour gérer cette authentification pour tous les [!DNL Adobe Experience Cloud solutions], y compris les [!DNL Adobe Target].
 
 >[!IMPORTANT]
 >
@@ -52,7 +52,7 @@ Voici les étapes préliminaires requises pour générer les jetons d’authenti
 
 | Ressource | Détails |
 | --- | --- |
-| Postman | Pour réussir ces étapes, procurez-vous l&#39;application [](https://www.postman.com/downloads/) pour votre système d&#39;exploitation. Postman basic est gratuit avec la création de compte. Bien que cela ne soit pas nécessaire pour utiliser les API [!DNL Adobe Target] en général, Postman facilite les workflows d’API et [!DNL Adobe Target] fournit plusieurs collections Postman pour aider à exécuter ses API et à apprendre à les utiliser. Le reste de ce guide suppose une connaissance pratique de Postman. Pour obtenir de l’aide, consultez la documentation de [](https://learning.getpostman.com/). |
+| Postman | Pour réussir ces étapes, procurez-vous l&#39;application [&#128279;](https://www.postman.com/downloads/) pour votre système d&#39;exploitation. Postman basic est gratuit avec la création de compte. Bien que cela ne soit pas nécessaire pour utiliser les API [!DNL Adobe Target] en général, Postman facilite les workflows d’API et [!DNL Adobe Target] fournit plusieurs collections Postman pour aider à exécuter ses API et à apprendre à les utiliser. Le reste de ce guide suppose une connaissance pratique de Postman. Pour obtenir de l’aide, consultez la documentation de [&#128279;](https://learning.getpostman.com/). |
 | Références | Tout au long du reste de ce guide, les ressources suivantes doivent être connues :<ul><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Documentation de l’API Target Admin et Profile](../administer/admin-api/admin-api-overview-new.md)</li><li>[Documentation de l’API Recommendations](https://developer.adobe.com/target/administer/recommendations-api/)</li></ul> |
 
 ## Création d’un projet Adobe I/O
@@ -61,9 +61,9 @@ Dans cette section, vous accéderez au [!DNL Adobe Developer Console] et créere
 
 <!--(1. Generate your private key and public certificate, per the [documentation on authentication](https://developer.adobe.com/developer-console/docs/guides/authentication/). // [//]: # (as described in **Step 1** of [How to set up Adobe IO: Authentication - Step by Step](https://helpx.adobe.com/marketing-cloud-core/kb/adobe-io-authentication-step-by-step.html). After completing Step 1, return to this guide and resume with Step 2, below. // The outcome of this step should be the creation of a `private.key` file and a `certificate_pub.crt` file. Return to this guide once you have generated these two files.)-->
 
-1. Dans le [](https://adminconsole.adobe.com/), vérifiez que votre compte utilisateur [!DNL Adobe] a reçu l’accès de niveau [Administrateur de produit](https://helpx.adobe.com/enterprise/using/admin-roles.html) et [Développeur](https://helpx.adobe.com/enterprise/using/manage-developers.html) à [!DNL Target].
+1. Dans le [&#128279;](https://adminconsole.adobe.com/), vérifiez que votre compte utilisateur [!DNL Adobe] a reçu l’accès de niveau [Administrateur de produit](https://helpx.adobe.com/enterprise/using/admin-roles.html) et [Développeur](https://helpx.adobe.com/enterprise/using/manage-developers.html) à [!DNL Target].
 
-1. Dans [](https://developer.adobe.com/console/home), sélectionnez l’organisation [!UICONTROL Experience Cloud] pour laquelle vous souhaitez créer cette intégration. (Notez qu’il est probable que vous n’ayez accès qu’à une seule [!UICONTROL organisation Experience Cloud].)
+1. Dans [&#128279;](https://developer.adobe.com/console/home), sélectionnez l’organisation [!UICONTROL Experience Cloud] pour laquelle vous souhaitez créer cette intégration. (Notez qu’il est probable que vous n’ayez accès qu’à une seule [!UICONTROL organisation Experience Cloud].)
 
    ![configure-io-target-createproject2.png](assets/configure-io-target-createproject2.png)
 
@@ -114,7 +114,7 @@ Il existe de nombreuses façons de spécifier les détails de votre projet dans 
 >
 >Pour obtenir des instructions vidéo applicables à toute solution Experience Cloud, y compris [!DNL Target], voir [Utilisation de Postman avec les API Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html). Les sections suivantes concernent les API [!DNL Target] : 1. Création et exportation de l’API Experience Platform vers Postman 2. Générez un jeton d’accès avec Postman. Ces étapes sont également fournies ci-dessous.
 
-1. Toujours dans le [](https://developer.adobe.com/console/home), accédez à pour afficher les informations d’identification du **[!UICONTROL compte de service (JWT)]** de votre nouveau projet. Utilisez le volet de navigation de gauche ou la section **[!UICONTROL Informations d’identification]** comme illustré.
+1. Toujours dans le [&#128279;](https://developer.adobe.com/console/home), accédez à pour afficher les informations d’identification du **[!UICONTROL compte de service (JWT)]** de votre nouveau projet. Utilisez le volet de navigation de gauche ou la section **[!UICONTROL Informations d’identification]** comme illustré.
 
    ![JWT1](assets/configure-io-target-jwt1.png)
 
@@ -144,15 +144,15 @@ Il existe de nombreuses façons de spécifier les détails de votre projet dans 
 
 1. Dans la boîte de dialogue modale Postman **Gérer les environnements**, cliquez sur le nom de l’environnement nouvellement importé pour l’examiner. (Le nom de votre environnement peut être différent de celui affiché ici. Modifiez le nom selon vos besoins. Il n’est pas nécessaire qu’il corresponde au nom du projet [!DNL Adobe].)
 
-   ![ JWT6 ](assets/configure-io-target-jwt6.png)
+   ![&#x200B; JWT6 &#x200B;](assets/configure-io-target-jwt6.png)
 
 1. Notez que les valeurs `CLIENT_SECRET` et `API_KEY` (ainsi que d’autres variables) sont pré-renseignées, à partir de votre intégration telle que définie dans le Adobe Developer Console. (La variable `CLIENT_SECRET` de Postman doit correspondre aux informations d’identification Adobe `CLIENT SECRET` affichées dans le Developer Console, et les `API_KEY` dans Postman doivent également correspondre aux `CLIENT ID` dans le Developer Console.) En revanche, les notes `PRIVATE_KEY`, `JWT_TOKEN` et `ACCESS_TOKEN` sont vides. Commençons par fournir la valeur `PRIVATE_KEY`.
 
-   ![ JWT7 ](assets/configure-io-target-jwt7.png)
+   ![&#x200B; JWT7 &#x200B;](assets/configure-io-target-jwt7.png)
 
 1. À partir de votre système de fichiers, ouvrez votre fichier `config`, puis ouvrez le fichier de clé `private`.
 
-   ![ JWT8 ](assets/configure-io-target-jwt8.png)
+   ![&#x200B; JWT8 &#x200B;](assets/configure-io-target-jwt8.png)
 
 1. Sélectionnez et copiez l’intégralité du contenu du fichier de clé `private`.
 

@@ -94,7 +94,7 @@ Pour plus d’informations, voir [Paramètres personnalisés](https://experience
 
 ### Système d’exploitation
 
-Pour plus d’informations, voir [ Système d’exploitation ](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html).
+Pour plus d’informations, voir [&#x200B; Système d’exploitation &#x200B;](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html).
 
 * Linux
 * Macintosh
@@ -143,7 +143,7 @@ Pour plus d’informations, voir [Période](https://experienceleague.adobe.com/d
 
 ## Client Hints
 
-[!DNL Adobe Target] nécessite des Client Hints pour la segmentation correcte des attributs de navigateur, de système d’exploitation et d’audience mobile, ainsi que de certaines instances de scripts de profil. Pour plus d’informations d’arrière-plan, voir [ Agent utilisateur et Client Hints](../../../client-side/atjs/user-agent-and-client-hints.md).
+[!DNL Adobe Target] nécessite des Client Hints pour la segmentation correcte des attributs de navigateur, de système d’exploitation et d’audience mobile, ainsi que de certaines instances de scripts de profil. Pour plus d’informations d’arrière-plan, voir [&#x200B; Agent utilisateur et Client Hints](../../../client-side/atjs/user-agent-and-client-hints.md).
 
 ### Comment transmettre des Client Hints à [!DNL Adobe Target]
 
@@ -224,7 +224,7 @@ Le tableau suivant indique les règles d’audience prises en charge ou non pour
 | [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Non |
 | [Sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Non |
 | [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Oui |
-| [ Audiences Experience Cloud ](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Non |
+| [&#x200B; Audiences Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Non |
 
 ### Ciblage géographique pour la prise de décision sur l’appareil
 
@@ -351,4 +351,4 @@ Le tableau suivant indique les règles d’audience prises en charge ou non pour
 | [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Oui |
 | [Sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Oui |
 | [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Oui |
-| [ Audiences Experience Cloud ](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Oui |
+| [&#x200B; Audiences Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Oui |

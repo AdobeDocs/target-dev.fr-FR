@@ -125,4 +125,4 @@ Utilisez la méthode [adobe.target.trackEvent()](/help/dev/implement/client-side
 
 [Revenez au diagramme en haut de cette page.](#diagram)
 
-Passez à l’étape 3 : [ Rendu des expériences ](/help/dev/patterns/recs-atjs/render-experiences.md)
+Passez à l’étape 3 : [&#x200B; Rendu des expériences &#x200B;](/help/dev/patterns/recs-atjs/render-experiences.md)

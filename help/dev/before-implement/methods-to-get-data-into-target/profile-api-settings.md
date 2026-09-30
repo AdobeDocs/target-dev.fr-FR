@@ -61,7 +61,7 @@ Pour plus de sécurité, vous pouvez exiger que l’appel de l’API de mise à 
 
    * Droits d’administrateur (autorisation Sysadmin) au niveau du produit [!DNL Adobe Target]
 
-Vous pouvez également générer un jeton d’authentification de profil via l’API. Pour plus d’informations, voir « Profils » dans le guide de l’[API d’administration et de profil ](../../administer/admin-api/admin-api-overview-new.md).
+Vous pouvez également générer un jeton d’authentification de profil via l’API. Pour plus d’informations, voir « Profils » dans le guide de l’[API d’administration et de profil &#x200B;](../../administer/admin-api/admin-api-overview-new.md).
 
 1. Copiez le jeton et incluez-le dans l’en-tête de la requête au format : « Authorization » : « Porteur ».
 

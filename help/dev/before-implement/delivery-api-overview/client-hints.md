@@ -27,7 +27,7 @@ workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 0%
 ---
-# Client Hints et [!UICONTROL API de diffusion ]
+# Client Hints et [!UICONTROL API de diffusion &#x200B;]
 
 Les Client Hints doivent être envoyés à [!DNL Adobe Target] lors de la demande d’offres.
 

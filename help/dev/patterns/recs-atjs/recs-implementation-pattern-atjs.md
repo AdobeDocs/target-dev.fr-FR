@@ -41,7 +41,7 @@ Ce modèle d’implémentation permet de comprendre et de créer votre implémen
 
 Cliquez sur l’image pour l’afficher en plein écran.
 
-![Diagramme d’architecture ](/help/dev/patterns/assets/architecture-chart.png){width="600" zoomable="yes"}
+![Diagramme d’architecture &#x200B;](/help/dev/patterns/assets/architecture-chart.png){width="600" zoomable="yes"}
 
 Notez que les nombres dans l’image n’indiquent pas la séquence des opérations :
 

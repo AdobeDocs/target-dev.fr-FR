@@ -34,8 +34,8 @@ Pour découvrir comment commencer à utiliser le SDK Python, accédez au Guide d
 
 Testez le SDK Python :
 
-* En consultant le site de démonstration [[!DNL Adobe Target] [!UICONTROL prise de décision sur l’appareil] ](https://github.com/adobe/on-device-decisioning-demo-site)
-* Dans un [ exemple d’application ](../sdk-guides/sample-apps/sample-apps.md).
+* En consultant le site de démonstration [[!DNL Adobe Target] [!UICONTROL prise de décision sur l’appareil] &#x200B;](https://github.com/adobe/on-device-decisioning-demo-site)
+* Dans un [&#x200B; exemple d’application &#x200B;](../sdk-guides/sample-apps/sample-apps.md).
 
 ## Référence
 

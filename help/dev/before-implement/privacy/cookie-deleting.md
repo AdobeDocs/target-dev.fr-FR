@@ -47,7 +47,7 @@ S’il n’existe aucun cookie [!DNL Target] (mbox), vous êtes considéré comm
 
 Version 84.0.4147,105
 
-1. Cliquez sur le menu **** > **[!UICONTROL Préférences]**.
+1. Cliquez sur le menu **&#x200B;**&#x200B;> **[!UICONTROL Préférences]**.
 1. Cliquez sur l’onglet **[!UICONTROL Confidentialité et sécurité]**.
 1. Cliquez sur **[!UICONTROL Cookies et autres données du site]**.
 1. Cliquez sur **[!UICONTROL Voir tous les cookies et les données du site]**.
@@ -61,7 +61,7 @@ Version 79.0
 
 1. Cliquez sur le menu **[!UICONTROL Firefox]** > **[!UICONTROL Préférences]**.
 1. Cliquez sur l’onglet **[!UICONTROL Confidentialité et sécurité]**.
-1. Sous ** Cookies et données de site*, cliquez sur **[!UICONTROL Gérer les données]**.
+1. Sous **&#x200B; Cookies et données de site*, cliquez sur &#x200B;** [!UICONTROL Gérer les données]**.
 1. Sélectionnez le site `adobe.com`, puis cliquez sur **[!UICONTROL Supprimer la sélection]**.
 
 >[!WARNING]
@@ -80,7 +80,7 @@ Version 79.0
 
 Version 84.0.522.52
 
-1. Cliquez sur le menu **** > **[!UICONTROL Préférences]**.
+1. Cliquez sur le menu **&#x200B;**&#x200B;> **[!UICONTROL Préférences]**.
 1. Cliquez sur l’onglet **[!UICONTROL Autorisations de site]**.
 1. Cliquez sur **[!UICONTROL Cookies et données du site]**.
 1. Cliquez sur **[!UICONTROL Voir tous les cookies et les données du site]**.

@@ -1,6 +1,6 @@
 ---
 title: API de diffusion Adobe Target Diffusion unique ou par lots
-description: Comment utiliser l’[!UICONTROL API de diffusion ] les appels de diffusion uniques ou par lots ?
+description: Comment utiliser l’[!UICONTROL API de diffusion &#x200B;] les appels de diffusion uniques ou par lots ?
 keywords: API de diffusion
 exl-id: 525cd1f2-616a-486c-8f49-8117615500bb
 feature: APIs/SDKs

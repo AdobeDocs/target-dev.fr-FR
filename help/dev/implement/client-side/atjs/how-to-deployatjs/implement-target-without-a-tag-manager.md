@@ -45,7 +45,7 @@ Informations sur l’implémentation de [!DNL Adobe Target] sans utiliser de ges
 
 >[!NOTE]
 >
->Les balises dans [](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode privilégiée pour implémenter [!DNL Target] et la bibliothèque at.js. Les informations suivantes ne s’appliquent pas lors de l’utilisation de balises dans [!DNL Adobe Experience Platform] pour implémenter [!DNL Target].
+>Les balises dans [&#128279;](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode privilégiée pour implémenter [!DNL Target] et la bibliothèque at.js. Les informations suivantes ne s’appliquent pas lors de l’utilisation de balises dans [!DNL Adobe Experience Platform] pour implémenter [!DNL Target].
 
 Pour accéder à la page Implémentation, cliquez sur **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]**.
 
@@ -67,7 +67,7 @@ Vous pouvez afficher les détails du compte suivants. Ces paramètres ne peuvent
 
 | Paramètre | Description |
 | --- | --- |
-| [!UICONTROL  Code client ] | Le code client est une séquence de caractères spécifique au client, souvent nécessaire lors de l’utilisation des API [!DNL Target]. |
+| [!UICONTROL &#x200B; Code client &#x200B;] | Le code client est une séquence de caractères spécifique au client, souvent nécessaire lors de l’utilisation des API [!DNL Target]. |
 | [!UICONTROL ID d’organisation IMS] | Cet identifiant associe votre mise en œuvre à votre compte Adobe Experience Cloud. |
 | [!UICONTROL Prise De Décision Sur L’Appareil] | Pour activer la prise de décision sur l’appareil, faites glisser le bouton (bascule) sur la position « activé ».<p>La prise de décision sur l’appareil vous permet de mettre en cache vos campagnes A/B et de ciblage d’expérience (XT) sur votre serveur et d’effectuer une prise de décision en mémoire à une latence proche de zéro. Pour plus d’informations, voir [Présentation de la prise de décision sur l’appareil](../../../server-side/sdk-guides/on-device-decisioning/overview.md). |
 | [!UICONTROL Incluez toutes les activités qualifiées de prise de décision sur l’appareil existantes dans l’artefact] | (Conditionnel) Cette option s’affiche si vous activez la prise de décision sur l’appareil.<p>Faites glisser le bouton (bascule) sur la position « activé » si vous souhaitez que toutes vos activités Live [!DNL Target] qui remplissent les critères de la prise de décision sur l’appareil soient automatiquement incluses dans l’artefact .<p>Si vous laissez ce bouton désactivé, vous devrez recréer et activer toutes les activités de prise de décision sur l’appareil afin qu’elles soient incluses dans l’artefact de règles généré. |
@@ -137,7 +137,7 @@ Pour plus d’informations, consultez la page [Confidentialité](/help/dev/befor
 
 >[!NOTE]
 >
->L’option Prise en charge héritée des navigateurs était disponible dans at.js version 0.9.3 et versions antérieures. Elle a été supprimée de la version 0.9.4 d’at.js. Pour obtenir la liste des navigateurs pris en charge par at.js, voir [ Navigateurs pris en charge ](/help/dev/before-implement/supported-browsers.md).<p>Les navigateurs hérités sont d’anciens navigateurs qui ne prennent pas entièrement en charge le partage des ressources cross-origin (CORS). Ces navigateurs comprennent Internet Explorer (versions antérieures à la version 11) et Safari (versions 6 et antérieures). Si la prise en charge héritée du navigateur était désactivée, [!DNL Target] n’avez pas diffusé de contenu ni comptabilisé les visiteurs dans les rapports sur ces navigateurs. Si cette option a été activée, il est recommandé d’effectuer l’assurance qualité sur les navigateurs plus anciens pour garantir une bonne expérience client.
+>L’option Prise en charge héritée des navigateurs était disponible dans at.js version 0.9.3 et versions antérieures. Elle a été supprimée de la version 0.9.4 d’at.js. Pour obtenir la liste des navigateurs pris en charge par at.js, voir [&#x200B; Navigateurs pris en charge &#x200B;](/help/dev/before-implement/supported-browsers.md).<p>Les navigateurs hérités sont d’anciens navigateurs qui ne prennent pas entièrement en charge le partage des ressources cross-origin (CORS). Ces navigateurs comprennent Internet Explorer (versions antérieures à la version 11) et Safari (versions 6 et antérieures). Si la prise en charge héritée du navigateur était désactivée, [!DNL Target] n’avez pas diffusé de contenu ni comptabilisé les visiteurs dans les rapports sur ces navigateurs. Si cette option a été activée, il est recommandé d’effectuer l’assurance qualité sur les navigateurs plus anciens pour garantir une bonne expérience client.
 
 ## Téléchargement d’at.js
 
@@ -145,7 +145,7 @@ Instructions pour télécharger la bibliothèque à l’aide de l’interface [!
 
 >[!NOTE]
 >
->[](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) est la méthode privilégiée pour implémenter [!DNL Target] et la bibliothèque at.js. Les informations suivantes ne s’appliquent pas lors de l’utilisation de balises dans [!DNL Adobe Experience Platform] pour implémenter [!DNL Target].
+>[&#128279;](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) est la méthode privilégiée pour implémenter [!DNL Target] et la bibliothèque at.js. Les informations suivantes ne s’appliquent pas lors de l’utilisation de balises dans [!DNL Adobe Experience Platform] pour implémenter [!DNL Target].
 >
 >[!DNL Adobe Target] prend en charge at.js 1.*x* et at.js 2.*x*. Effectuez la mise à niveau vers la mise à jour la plus récente de l’une des versions majeures d’at.js pour vous assurer que vous exécutez une version prise en charge. Pour en savoir plus sur le contenu de chaque version, voir [Informations détaillées sur les versions d’at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md).
 

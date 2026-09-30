@@ -1,6 +1,6 @@
 ---
 title: Personnalisation à l’aide des SDK Adobe Target
-description: Découvrez comment offrir une personnalisation à l’aide de la [!UICONTROL  prise de décision sur l’appareil ].
+description: Découvrez comment offrir une personnalisation à l’aide de la [!UICONTROL &#x200B; prise de décision sur l’appareil &#x200B;].
 feature: APIs/SDKs
 exl-id: bac64c78-0d3a-40d7-ae2b-afa0f1b8dc4f
 TQID: 'https://experienceleague.adobe.com/IufE4ByFgQ8WwHZ5YVHbbyvN6jBBNGCK4IC98m9zGsc'
@@ -41,7 +41,7 @@ ht-degree: 1%
 1. Ajout de mesures pour le suivi des KPI
 1. Mise en œuvre d’offres personnalisées dans votre application
 1. Implémenter le code pour suivre les événements de conversion
-1. Activez votre activité de personnalisation [!UICONTROL  Ciblage d’expérience ] (XT)
+1. Activez votre activité de personnalisation [!UICONTROL &#x200B; Ciblage d’expérience &#x200B;] (XT)
 
 Supposons que vous soyez une société itinérante. Vous souhaitez proposer une offre personnalisée de 25 % de réduction sur certains forfaits. Pour que l’offre résonne auprès de vos utilisateurs et utilisatrices, vous décidez de montrer un point de repère de la ville de destination. Vous devez également vous assurer que la diffusion de vos offres personnalisées est exécutée avec une latence proche de zéro, afin qu’elle n’ait pas d’impact négatif sur les expériences utilisateur et ne fausse pas les résultats.
 

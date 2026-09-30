@@ -108,7 +108,7 @@ Pour plus d’informations, voir [Implémentation du service Experience Cloud po
 * Incorporez le fichier `VisitorAPI.js` dans vos pages web.
 * Découvrez les [configurations disponibles pour le service d’ID visiteur/API](https://experienceleague.adobe.com/docs/id-service/using/reference/requirements.html){target=_blank}.
 * Une fois le fichier `VisitorAPI.js` chargé, utilisez la méthode `Visitor.getInstance` pour initialiser à l’aide des configurations nécessaires.
-* Familiarisez-vous avec les [ méthodes disponibles ](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/get-set.html){target=_blank}.
+* Familiarisez-vous avec les [&#x200B; méthodes disponibles &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/methods/get-set.html){target=_blank}.
 
 +++
 
@@ -268,7 +268,7 @@ Faites des recommandations en fonction du contenu du panier de l’utilisateur.
 
 **Critères disponibles**
 
-* [!UICONTROL Les personnes qui ont consulté ces , ont consulté ces ]
+* [!UICONTROL Les personnes qui ont consulté ces , ont consulté ces &#x200B;]
 * [!UICONTROL Les Personnes Qui Les Ont Consultés Les Ont Achetés]
 * [!UICONTROL Les gens qui ont acheté ceci, ont acheté cela]
 

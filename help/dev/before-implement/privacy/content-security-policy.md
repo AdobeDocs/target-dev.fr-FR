@@ -37,7 +37,7 @@ ht-degree: 28%
 ---
 # Directives relatives aux politiques de sécurité du contenu (CSP)
 
-Si vous utilisez la [ politique de sécurité du contenu ](https://fr.wikipedia.org/wiki/Content_Security_Policy) (CSP) pour votre mise en œuvre [!DNL Adobe Target], vous devez ajouter les directives CSP suivantes lors de l’utilisation d’[at.js 2.1 ou version ultérieure ](../../implement/client-side/atjs/target-atjs-versions.md) :
+Si vous utilisez la [&#x200B; politique de sécurité du contenu &#x200B;](https://fr.wikipedia.org/wiki/Content_Security_Policy) (CSP) pour votre mise en œuvre [!DNL Adobe Target], vous devez ajouter les directives CSP suivantes lors de l’utilisation d’[at.js 2.1 ou version ultérieure &#x200B;](../../implement/client-side/atjs/target-atjs-versions.md) :
 
 * `connect-src` avec `*.tt.omtrdc.net` placé sur la liste autorisée. Nécessaire pour autoriser la requête réseau à [!DNL Target] edge.
 * `style-src unsafe-inline`. Obligatoire pour le prémasquage et le contrôle du scintillement.

@@ -347,7 +347,7 @@ Pour plus d’informations, consultez la page [Fonctionnement d’at.js 2.x](htt
 
 >[!VIDEO](https://video.tv.adobe.com/v/26248/?quality=12)
 
-Pour plus d’informations, voir [ Implémentation d’Adobe Target at.js 2.x dans une application monopage (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) .
+Pour plus d’informations, voir [&#x200B; Implémentation d’Adobe Target at.js 2.x dans une application monopage (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) .
 
 ### Utilisation du compositeur d’expérience visuelle pour les SPA dans [!DNL Adobe Target]
 

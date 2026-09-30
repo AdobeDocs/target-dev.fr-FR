@@ -28,4 +28,4 @@ Le SDK Python est distribué par [pypi](https://pypi.org/project/target-python-s
 pip install target-python-sdk
 ```
 
-Le code open source se trouve à l’adresse [](https://github.com/adobe/target-python-sdk)
+Le code open source se trouve à l’adresse [&#128279;](https://github.com/adobe/target-python-sdk)

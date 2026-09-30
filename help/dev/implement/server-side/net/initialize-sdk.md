@@ -32,7 +32,7 @@ Ensuite, utilisez la méthode `Initialize` du SDK pour configurer le SDK et term
 
 `TargetClient` est créé à l’aide de `TargetClient.Create`.
 
-## C#
+## C#&#x200B;
 
 ```csharp {line-numbers="true"}
 TargetClient TargetClient.Create(TargetClientConfig clientConfig)
@@ -40,7 +40,7 @@ TargetClient TargetClient.Create(TargetClientConfig clientConfig)
 
 `ClientConfig` est créé à l’aide de ClientConfig.Builder.
 
-## C#
+## C#&#x200B;
 
 ```csharp {line-numbers="true"}
 TargetClientConfig.Builder TargetClientConfig.Builder()
@@ -74,7 +74,7 @@ TargetClientConfig.Builder TargetClientConfig.Builder()
 
 ## Exemple
 
-## C#
+## C#&#x200B;
 
 ```csharp {line-numbers="true"}
 var targetClientConfig = new TargetClientConfig.Builder("acmeclient", "ABCDEF012345677890ABCDEF0@AdobeOrg")

@@ -104,7 +104,7 @@ Faites des recommandations en fonction du contenu du panier de l’utilisateur.
 
 **Critères disponibles**
 
-* [!UICONTROL Les personnes qui ont consulté ces , ont consulté ces ]
+* [!UICONTROL Les personnes qui ont consulté ces , ont consulté ces &#x200B;]
 * [!UICONTROL Les Personnes Qui Les Ont Consultés Les Ont Achetés]
 * [!UICONTROL Les gens qui ont acheté ceci, ont acheté cela]
 
@@ -280,7 +280,7 @@ Cette étape déclenche un appel [!DNL Delivery API] avec `execute` > payload `p
 
 +++Afficher les détails
 
-![ Déclencher le diagramme de requête de chargement de page ](/help/dev/patterns/recs-atjs/assets/fire-page-load-request-combined.png){width="400" zoomable="yes"}
+![&#x200B; Déclencher le diagramme de requête de chargement de page &#x200B;](/help/dev/patterns/recs-atjs/assets/fire-page-load-request-combined.png){width="400" zoomable="yes"}
 
 **Conditions préalables**
 

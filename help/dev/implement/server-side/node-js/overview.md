@@ -28,14 +28,14 @@ Toutes les versions actuellement conservées de Node.js sont prises en charge (y
 
 ## Prise en main
 
-Pour découvrir comment commencer à utiliser le SDK Node.js, accédez au [ Guide de prise en main de Target SDK ](../sdk-guides/getting-started/getting-started.md).
+Pour découvrir comment commencer à utiliser le SDK Node.js, accédez au [&#x200B; Guide de prise en main de Target SDK &#x200B;](../sdk-guides/getting-started/getting-started.md).
 
 ## Exemple d’application
 
 Testez le SDK Node.js :
 
-* En consultant le site de démonstration de la prise de décision [[!DNL Adobe Target]  sur l’appareil ](https://github.com/adobe/on-device-decisioning-demo-site)
-* Dans un [ exemple d’application ](../sdk-guides/sample-apps/sample-apps.md).
+* En consultant le site de démonstration de la prise de décision [[!DNL Adobe Target]  sur l’appareil &#x200B;](https://github.com/adobe/on-device-decisioning-demo-site)
+* Dans un [&#x200B; exemple d’application &#x200B;](../sdk-guides/sample-apps/sample-apps.md).
 
 ## Référence
 

@@ -60,7 +60,7 @@ Ce guide est destiné aux développeurs qui découvrent les API Target ou Recomm
 
 ## Conditions préalables {#prerequisites}
 
-Les API d’administration Target nécessitent la configuration de l’authentification [](../configure-authentication.md). Assurez-vous que cette configuration est terminée avant d’utiliser l’API Recommendations.
+Les API d’administration Target nécessitent la configuration de l’authentification [&#128279;](../configure-authentication.md). Assurez-vous que cette configuration est terminée avant d’utiliser l’API Recommendations.
 
 ## Ressources
 
@@ -68,5 +68,5 @@ Notez les ressources suivantes, qui sont nécessaires pour comprendre ce guide e
 
 | Ressource | Détails |
 | --- | --- |
-| Postman | Obtenez l&#39;application [](https://www.postman.com/downloads/) pour votre système d&#39;exploitation. Postman basic est gratuit avec la création de compte. Bien que cela ne soit pas nécessaire pour utiliser les API Adobe Target en général, Postman facilite les workflows d’API et Adobe Target fournit plusieurs collections Postman pour l’aider à exécuter ses API et à apprendre à les utiliser. Le reste de ce guide suppose une connaissance pratique de Postman. Pour obtenir de l’aide, consultez la documentation de [](https://learning.getpostman.com/). |
+| Postman | Obtenez l&#39;application [&#128279;](https://www.postman.com/downloads/) pour votre système d&#39;exploitation. Postman basic est gratuit avec la création de compte. Bien que cela ne soit pas nécessaire pour utiliser les API Adobe Target en général, Postman facilite les workflows d’API et Adobe Target fournit plusieurs collections Postman pour l’aider à exécuter ses API et à apprendre à les utiliser. Le reste de ce guide suppose une connaissance pratique de Postman. Pour obtenir de l’aide, consultez la documentation de [&#128279;](https://learning.getpostman.com/). |
 | Références | Tout au long du reste de ce guide, les ressources suivantes doivent être connues :<UL><li>[Adobe I/O Github](https://github.com/adobeio)</li><li>[Documentation de l’API Target Admin et Profile](../../administer/admin-api/admin-api-overview-new.md)</li><li>[Documentation de l’API Recommendations](https://developer.adobe.com/target/administer/recommendations-api/)</li></UL> |

@@ -1,6 +1,6 @@
 ---
 title: Notifications de l’API de diffusion Adobe Target
-description: Comment déclencher des notifications à l’aide de l’API de diffusion [!UICONTROL Adobe Target ] ?
+description: Comment déclencher des notifications à l’aide de l’API de diffusion [!UICONTROL Adobe Target &#x200B;] ?
 keywords: API de diffusion
 exl-id: 711388fd-2c1f-4ca4-939f-c56dc4bdc04a
 feature: APIs/SDKs
@@ -30,7 +30,7 @@ Pour que les notifications soient déclenchées pour la mbox ou la vue appropri�
 
 ## Notifications pour les mBox prérécupérées
 
-Une ou plusieurs notifications peuvent être envoyées via un seul appel de diffusion. Déterminez si la mesure qui doit être suivie est un `click` ou un `display` pour chaque mbox afin que le `type` de la notification puisse être correctement reflété. Transmettez également un `id` pour chaque notification afin que vous puissiez déterminer si une notification a été envoyée correctement via l’API de diffusion [!UICONTROL  Adobe Target]. Il est également important de transmettre le `timestamp` à [!DNL Target] pour indiquer le moment où le `click` ou le `display` s’est produit pour une mbox donnée à des fins de création de rapports.
+Une ou plusieurs notifications peuvent être envoyées via un seul appel de diffusion. Déterminez si la mesure qui doit être suivie est un `click` ou un `display` pour chaque mbox afin que le `type` de la notification puisse être correctement reflété. Transmettez également un `id` pour chaque notification afin que vous puissiez déterminer si une notification a été envoyée correctement via l’API de diffusion [!UICONTROL &#x200B; Adobe Target]. Il est également important de transmettre le `timestamp` à [!DNL Target] pour indiquer le moment où le `click` ou le `display` s’est produit pour une mbox donnée à des fins de création de rapports.
 
 ```
 curl -X POST \

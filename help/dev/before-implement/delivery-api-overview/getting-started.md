@@ -1,6 +1,6 @@
 ---
 title: Prise en main de l’API de diffusion Adobe Target
-description: Comment utiliser l’API de diffusion [!UICONTROL Adobe Target ] ?
+description: Comment utiliser l’API de diffusion [!UICONTROL Adobe Target &#x200B;] ?
 keywords: API de diffusion
 exl-id: 142ec3be-b017-4cdc-9079-b1cc173a710a
 feature: APIs/SDKs

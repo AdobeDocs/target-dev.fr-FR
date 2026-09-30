@@ -35,7 +35,7 @@ Cet article présente les informations générales nécessaires pour comprendre 
 
 >[!NOTE]
 >
->Si vous souhaitez administrer [!DNL Target] via l’interface utilisateur, consultez la section [ administration du *Guide du professionnel Adobe Target*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
+>Si vous souhaitez administrer [!DNL Target] via l’interface utilisateur, consultez la section [&#x200B; administration du *Guide du professionnel Adobe Target*](https://experienceleague.adobe.com/docs/target/using/administer/administrating-target.html?lang=en).
 >
 >Les API Admin et Profile sont souvent désignées collectivement (« API Admin et Profile »), mais peuvent également être désignées séparément (« API Admin » et « API Profile »). L’API Recommendations est une implémentation spécifique d’une API d’administration [!DNL Target].
 
@@ -83,11 +83,11 @@ Voici les codes de réponse courants pour les API Target Admin.
 
 | État | Signification | Description |
 | --- | --- | --- |
-| 200 | [ OK ](https://www.rfc-editor.org/rfc/rfc7231#section-6.3.1) | OK |
+| 200 | [&#x200B; OK &#x200B;](https://www.rfc-editor.org/rfc/rfc7231#section-6.3.1) | OK |
 | 400 | [Requête incorrecte](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.1) | Requête incorrecte. Les données fournies dans la requête ne sont probablement pas valides. |
 | 401 | [Non Autorisé](https://www.rfc-editor.org/rfc/rfc7235#section-3.1) | L’utilisateur n’est pas autorisé à effectuer cette opération. |
 | 403 | [Interdit](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.3) | L’accès à cette ressource est interdit. |
-| 404 | [ Introuvable ](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.4) | La ressource référencée est introuvable. |
+| 404 | [&#x200B; Introuvable &#x200B;](https://www.rfc-editor.org/rfc/rfc7231#section-6.5.4) | La ressource référencée est introuvable. |
 
 ## Activités
 

@@ -41,7 +41,7 @@ La fonctionnalité d’aperçu mobile vous permet de tester entièrement les act
    Les liens suivants contiennent des informations supplémentaires :
 
    * **iOs** : pour plus d’informations sur la définition de schémas d’URL pour iOS, voir [Définition d’un schéma d’URL personnalisé pour votre application](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=_blank} sur le site web *Apple Developer*.
-   * **** : pour plus d’informations sur la définition de schémas d’URL pour Android, consultez la section [Créer des liens profonds vers le contenu de l’application](https://developer.android.com/training/app-links/deep-linking){target=_blank} sur le site web *Android Developers*.
+   * **&#x200B;**&#x200B;: pour plus d’informations sur la définition de schémas d’URL pour Android, consultez la section [Créer des liens profonds vers le contenu de l’application](https://developer.android.com/training/app-links/deep-linking){target=_blank} sur le site web *Android Developers*.
 
 1. **Configurer l’API `collectLaunchInfo` (i0S uniquement)**
 

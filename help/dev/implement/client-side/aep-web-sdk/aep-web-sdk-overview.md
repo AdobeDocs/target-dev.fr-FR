@@ -51,7 +51,7 @@ ht-degree: 8%
 
 Pour plus d&#39;informations, consultez les liens suivants dans l&#39;aide de *[!UICONTROL Adobe Experience Platform Web SDK]* :
 
-* Pour obtenir des informations complètes : [En quoi consiste [!UICONTROL Adobe Experience Platform Web SDK ]](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr)
+* Pour obtenir des informations complètes : [En quoi consiste [!UICONTROL Adobe Experience Platform Web SDK &#x200B;]](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=fr)
 * Pour plus d’informations spécifiques à [!DNL Target] : [[!DNL Target] Présentation](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html?lang=fr)
 
 ## Tutoriels

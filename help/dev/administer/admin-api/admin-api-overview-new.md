@@ -22,7 +22,7 @@ workflow-type: tm+mt
 source-wordcount: '33'
 ht-degree: 0%
 ---
-# [!UICONTROL API d’administration ]
+# [!UICONTROL API d’administration &#x200B;]
 
 Les API d’administration et de création de rapports [!DNL Adobe Target] sont disponibles ici :
 

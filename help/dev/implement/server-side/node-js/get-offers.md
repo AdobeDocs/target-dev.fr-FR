@@ -43,7 +43,7 @@ L’objet `options` présente la structure suivante :
 | visitorCookie | Chaîne | Non | None | Cookie ECID (VisitorId) |
 | targetCookie | Chaîne | Non | None | cookie [!DNL Target] |
 | targetLocationHint | Chaîne | Non | None | [!DNL Target] l’indicateur d’emplacement |
-| consumerId | Chaîne | Non | None | assemblage de consumerIds pour [!UICONTROL  Analytics for Target ] (A4T) |
+| consumerId | Chaîne | Non | None | assemblage de consumerIds pour [!UICONTROL &#x200B; Analytics for Target &#x200B;] (A4T) |
 | CustomerIds | Tableau | Non | None | ID de client au format compatible avec les VisitorId |
 | sessionId | Chaîne | Non | None | Utilisé pour lier plusieurs requêtes [!DNL Target] |
 | visiteur | Objet | Non | new VisitorId | Fournir une instance externe VisitorId |

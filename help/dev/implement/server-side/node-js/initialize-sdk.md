@@ -45,7 +45,7 @@ TargetClient.create(options: Object): TargetClient
 
 | Nom | Type | Requis | Par défaut | Description |
 | --- | --- | --- | --- | --- |
-| client | Chaîne | Oui | None | [!UICONTROL Identifiant client ] |
+| client | Chaîne | Oui | None | [!UICONTROL Identifiant client &#x200B;] |
 | organizationId | Chaîne | Oui | None | [!UICONTROL ID d’organisation Experience Cloud] |
 | environnement | Chaîne | Non | production | Nom de l’environnement cible. Dans l’interface utilisateur de [!DNL Target], [!UICONTROL Administration] > [!UICONTROL Environnements]. |
 | timeout | Nombre | Non | 3000 | Timeout en millisecondes |
@@ -57,7 +57,7 @@ TargetClient.create(options: Object): TargetClient
 | propertyToken | Chaîne | Non | None | **Jeton de propriété cible**. S’il est spécifié ici, tous les appels `getOffers` utiliseront cette valeur. **Pour la prise de décision sur l’appareil**, le SDK télécharge uniquement l’artefact qui contient les activités qualifiées pour le jeton de propriété défini dans `propertyToken` |
 | decisioningMethod | Chaîne | Non | côté serveur | Détermine la méthode de prise de décision à utiliser ([sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), côté serveur, hybride). |
 | pollingInterval | Nombre | Non | 300000 (5 minutes) | Intervalle d’interrogation de l’artefact [règle de prise de décision sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md) (en millisecondes) |
-| artifactLocation | Chaîne | Non | None | Une URL complète vers l’artefact de règle de prise de décision [ sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Il remplace l’emplacement déterminé en interne. |
+| artifactLocation | Chaîne | Non | None | Une URL complète vers l’artefact de règle de prise de décision [&#x200B; sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Il remplace l’emplacement déterminé en interne. |
 | artifactPayload | Objet | Non | None | Payload JSON de l’artefact de règle de prise de décision [sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md). Si spécifié, il est utilisé au lieu d’en demander un à partir d’une URL. |
 | [events](sdk-events.md) | Object&lt;String,Function> | Non | None | Objet facultatif avec clés de nom d’événement et valeurs de fonction de rappel |
 | telemetryEnabled | Booléen | Non | true | Lorsqu’il est activé, Adobe collecte des données télémétriques sur l’utilisation des fonctionnalités et les performances de SDK. Les données personnelles ne sont pas collectées. |

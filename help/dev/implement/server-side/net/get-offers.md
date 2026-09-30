@@ -74,7 +74,7 @@ L’objet `TargetDeliveryRequest.Builder` présente la structure suivante :
 | tntId | Chaîne | Non | Identifiant de Principal en [!DNL Target] pour un utilisateur. Récupéré à partir de targetCookies. Généré automatiquement s’il n’est pas fourni. |
 | mcId | Chaîne | Non | Utilisé pour fusionner et partager des données entre différentes solutions Adobe (ECID). Récupéré à partir de targetCookies. Généré automatiquement s’il n’est pas fourni. |
 | trackingServer | Chaîne | Non | Le serveur Adobe Analytics afin que [!DNL Adobe Target] et [!DNL Adobe Analytics] assemblent correctement les données. |
-| trackingServerSecure | Chaîne | Non | Le [!UICONTROL serveur sécurisé ] pour que [!DNL Adobe Target] et [!DNL Adobe Analytics] assemblent correctement les données. |
+| trackingServerSecure | Chaîne | Non | Le [!UICONTROL serveur sécurisé &#x200B;] pour que [!DNL Adobe Target] et [!DNL Adobe Analytics] assemblent correctement les données. |
 | decisioningMethod | DecisioningMethod | Non | Peut être utilisé pour définir explicitement la méthode de prise de décision ON_DEVICE ou HYBRID pour la prise de décision sur l’appareil |
 
 Les valeurs de chaque champ doivent être conformes à la spécification de requête [API de diffusion Target](/help/dev/implement/delivery-api/overview.md).

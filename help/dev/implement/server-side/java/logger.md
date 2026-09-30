@@ -34,7 +34,7 @@ Lors de l’initialisation [du SDK](initialize-sdk.md), plusieurs options s’of
 | `logRequests` | Consigne l’ensemble du corps de la requête ainsi que le corps de la réponse. |
 | `logRequestStatus` | Enregistre l’URL de la requête, le statut et le temps de réponse. |
 
-[!DNL Target] Java SDK utilise la journalisation `slf4j`. Vous devez fournir votre implémentation de l’enregistreur, telle que `java.util.logging`, `logback` et `log4j`. Pour plus d&#39;informations, voir [](https://www.slf4j.org/manual.html). Tous les journaux seront imprimés en `debug`.
+[!DNL Target] Java SDK utilise la journalisation `slf4j`. Vous devez fournir votre implémentation de l’enregistreur, telle que `java.util.logging`, `logback` et `log4j`. Pour plus d&#39;informations, voir [&#128279;](https://www.slf4j.org/manual.html). Tous les journaux seront imprimés en `debug`.
 
 ## Exemple
 

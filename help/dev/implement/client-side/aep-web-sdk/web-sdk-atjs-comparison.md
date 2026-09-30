@@ -55,7 +55,7 @@ Cet article présente les différences entre la bibliothèque `at.js` et le SDK 
 
 ### Installation d’at.js
 
-[!DNL Adobe] permet aux clients de télécharger la bibliothèque directement à partir de l’onglet [!DNL Adobe Experience Cloud], [!UICONTROL  Implémentation ]. La bibliothèque at.js est personnalisée avec des paramètres tels que clientCode, imsOrgId, etc.
+[!DNL Adobe] permet aux clients de télécharger la bibliothèque directement à partir de l’onglet [!DNL Adobe Experience Cloud], [!UICONTROL &#x200B; Implémentation &#x200B;]. La bibliothèque at.js est personnalisée avec des paramètres tels que clientCode, imsOrgId, etc.
 
 ### Installation du SDK Web
 
@@ -718,7 +718,7 @@ alloy("sendEvent", {
 
 [En savoir plus](/help/dev/implement/client-side/aep-web-sdk/spa-implementation.md)
 
-## Comment tirer parti de [!UICONTROL  jetons de réponse ]
+## Comment tirer parti de [!UICONTROL &#x200B; jetons de réponse &#x200B;]
 
 Le contenu Personalization renvoyé par [!DNL Target] inclut des [jetons de réponse](https://experienceleague.adobe.com/en/docs/target/using/administer/response-tokens). Les jetons de réponse sont des détails sur l’activité, l’offre, l’expérience, le profil utilisateur, les informations géographiques, etc. Ces informations peuvent être partagées avec des outils tiers ou utilisées à des fins de débogage. Les jetons de réponse peuvent être configurés dans l’interface utilisateur d’[!DNL Target].
 
@@ -849,7 +849,7 @@ Lorsque cette option est configurée, le format de la payload renvoyée est le s
 }
 ```
 
-La payload peut ensuite être transmise à [!DNL Analytics] via l’[!DNL  Data Insertion API] .
+La payload peut ensuite être transmise à [!DNL Analytics] via l’[!DNL &#x200B; Data Insertion API] .
 
 Exemple 2 : le configurer dans chaque fonction `getOffers` :
 
@@ -1286,14 +1286,14 @@ La bibliothèque at.js expose ces fonctionnalités de débogage :
 
 >[!NOTE]
 >
->Toutes ces fonctionnalités de débogage sont disponibles avec des fonctionnalités améliorées dans [](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob).
+>Toutes ces fonctionnalités de débogage sont disponibles avec des fonctionnalités améliorées dans [&#128279;](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob).
 
 ### Utilisation de [!DNL Platform Web SDK]
 
 Vous disposez de plusieurs fonctionnalités de débogage lors de l’utilisation de [!DNL Platform Web SDK] :
 
-* Utilisation de [](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home)
+* Utilisation de [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home)
 * [Débogage de Web SDK activé](https://experienceleague.adobe.com/fr/docs/experience-platform/assurance/home)
 * Utilisation des [hooks de surveillance Web SDK](https://github.com/adobe/alloy/wiki/Monitoring-Hooks)
-* Utiliser [](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
+* Utiliser [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/debugger/home)
 * Target Trace
