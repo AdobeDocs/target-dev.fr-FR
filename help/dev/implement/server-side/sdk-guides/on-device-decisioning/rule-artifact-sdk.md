@@ -1,25 +1,30 @@
 ---
 title: Télécharger, stocker et mettre à jour automatiquement l’artefact de règle de prise de décision sur l’appareil
-description: Découvrez comment utiliser l’artefact de règle de prise de décision sur l’appareil lors de l’initialisation du  [!DNL Adobe Target] SDK.
+description: Découvrez comment utiliser l’artefact de règle de prise de décision sur l’appareil lors de l’initialisation du SDK [!DNL Adobe Target].
 feature: APIs/SDKs
 exl-id: be41a723-616f-4aa3-9a38-8143438bd18a
-TQID: https://experienceleague.adobe.com/o4oNaCtd3PS1cDndSJHkI10pDke1DTaEnBn8u9pIQk8
+TQID: 'https://experienceleague.adobe.com/o4oNaCtd3PS1cDndSJHkI10pDke1DTaEnBn8u9pIQk8'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 7a5aae2510a014c6efaeee63080cde3e7746f91c
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 352
+source-wordcount: '353'
 ht-degree: 0%
-
 ---
-
 # Téléchargement, stockage et mise à jour automatique de l’artefact de règle via [!DNL Adobe Target] SDK
 
 Cette approche est préférable lorsque vous pouvez initialiser le SDK [!DNL Adobe Target] en même temps que vous initialisez et démarrez votre serveur web. L’artefact de règle sera téléchargé par le SDK [!DNL Adobe Target] et mis en mémoire cache avant que votre application de serveur web ne commence à traiter les requêtes. Une fois votre application web en cours d’exécution, toutes les décisions [!DNL Adobe Target] sont exécutées à l’aide de l’artefact de règle en mémoire. L’artefact de règle mis en cache sera mis à jour en fonction du `pollingInterval` que vous spécifiez lors de l’étape d’initialisation du SDK.

@@ -1,27 +1,33 @@
 ---
 keywords: implémentation, api, profil, paramètres d’api de profil, jeton d’authentification
-description: Découvrez comment configurer l’authentification pour les mises à jour par lots via  [!DNL Adobe Target]  API et générer un jeton d’authentification de profil.
+description: Découvrez comment configurer l’authentification pour les mises à jour par lots via les API [!DNL Adobe Target] et générer un jeton d’authentification de profil.
 title: Comment utiliser les paramètres de l’API Profile pour activer ou désactiver les mises à jour par lots ?
 feature: APIs/SDKs
 exl-id: 968f33d0-296b-4248-8c9a-8e6f3077bdfa
-TQID: https://experienceleague.adobe.com/-KYSphaCrm0ICK7g92v9x-uK--nwirs4-DWBR3G5rTM
+TQID: 'https://experienceleague.adobe.com/-KYSphaCrm0ICK7g92v9x-uK--nwirs4-DWBR3G5rTM'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 363
+source-wordcount: '364'
 ht-degree: 31%
-
 ---
-
 # Paramètres de l’API de profil
 
 Activez ou désactivez l’authentification pour les mises à jour par lots via les API [!DNL Adobe Target] et générez un jeton d’authentification de profil.
@@ -47,15 +53,15 @@ Pour plus de sécurité, vous pouvez exiger que l’appel de l’API de mise à 
 
    * Rôle d’administrateur ou disposent au moins des droits d’approbateur
 
-     Pour plus d’informations concernant les clients Target Standard, voir [Spécifier les rôles et autorisations](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html?lang=fr#roles-permissions) dans *Utilisateurs*. Pour plus d’informations concernant les clients [!DNL Target Premium], consultez [Configuration des autorisations d’Enterprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=fr).
+     Pour plus d’informations concernant les clients Target Standard, voir [Spécifier les rôles et autorisations](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/users/user-management.html#roles-permissions) dans *Utilisateurs*. Pour plus d’informations concernant les clients [!DNL Target Premium], consultez [Configuration des autorisations d’Enterprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
    * Rôle d’administrateur au niveau de l’espace de travail/du profil de produit
 
-     Les espaces de travail sont disponibles uniquement pour les clients [!DNL Target Premium]. Pour plus d’informations, consultez [Configuration des autorisations d’Enterprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=fr).
+     Les espaces de travail sont disponibles uniquement pour les clients [!DNL Target Premium]. Pour plus d’informations, consultez [Configuration des autorisations d’Enterprise](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html).
 
    * Droits d’administrateur (autorisation Sysadmin) au niveau du produit [!DNL Adobe Target]
 
-Vous pouvez également générer un jeton d’authentification de profil via l’API. Pour plus d’informations, voir « Profils » dans le guide de l’[API d’administration et de profil &#x200B;](../../administer/admin-api/admin-api-overview-new.md).
+Vous pouvez également générer un jeton d’authentification de profil via l’API. Pour plus d’informations, voir « Profils » dans le guide de l’[API d’administration et de profil ](../../administer/admin-api/admin-api-overview-new.md).
 
 1. Copiez le jeton et incluez-le dans l’en-tête de la requête au format : « Authorization » : « Porteur ».
 

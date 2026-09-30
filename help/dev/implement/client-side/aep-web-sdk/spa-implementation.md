@@ -1,27 +1,36 @@
 ---
 title: Implémentation d’applications d’une seule page pour [!DNL Adobe Experience Platform Web SDK]
-description: Découvrez comment créer une implémentation d’application sur une seule page (SPA) de l’ [!DNL Adobe Experience Platform Web SDK]using [!DNL Target].
+description: Découvrez comment créer une implémentation d’application sur une seule page (SPA) à l’aide de l’[!DNL Target] [!DNL Adobe Experience Platform Web SDK].
 keywords: target;adobe target;vues xdm;vues;applications monopages;SPA;cycle de vie SPA;côté client;AB testing;AB;Ciblage d’expérience;XT;VEC
 feature: AEP Web SDK
 exl-id: 17e71e47-c7cc-421a-bc9c-53f45f587449
-TQID: https://experienceleague.adobe.com/Kp5fxEhLaXUNi6GOXXnET-1ueGQVLC0tPFhYzShk0cQ
+TQID: 'https://experienceleague.adobe.com/Kp5fxEhLaXUNi6GOXXnET-1ueGQVLC0tPFhYzShk0cQ'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: b050e0cd-2ddd-42cd-a71b-5d9e1fdf75e0
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: a1f3c920-a3a8-4506-8067-53189547b5e6
+    internal-label: AEP Web SDK
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Personalization
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1836
+source-wordcount: '1837'
 ht-degree: 2%
-
 ---
-
 # Implémentation d’applications d’une seule page
 
 [!DNL Adobe Experience Platform Web SDK] fournit des fonctionnalités riches qui permettent à votre entreprise d’exécuter de la personnalisation sur des technologies côté client de nouvelle génération, telles que les applications d’une seule page (SPA).
@@ -72,7 +81,7 @@ Le concept de [!UICONTROL Vues] peut être étendu bien au-delà de ce scénario
 
 [!UICONTROL Les vues XDM] peuvent être utilisées dans [!DNL Target] pour permettre aux spécialistes du marketing d’exécuter des tests A/B et XT sur des SPA via le [!UICONTROL compositeur d’expérience visuelle]. Pour ce faire, les étapes suivantes doivent être effectuées afin de terminer une configuration de développeur ponctuelle :
 
-1. Installez [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/overview).
+1. Installez [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview).
 2. Déterminez toutes les [!UICONTROL vues XDM] de votre application monopage que vous souhaitez personnaliser.
 3. Après avoir défini les [!UICONTROL vues XDM], pour diffuser des activités A/B ou XT VEC, implémentez la fonction `sendEvent()` avec `renderDecisions` définie sur `true` et la [!UICONTROL vue XDM] correspondante dans votre application d’une seule page. La [!UICONTROL vue XDM] doit être transmise en `xdm.web.webPageDetails.viewName`. Cette étape permet aux professionnels du marketing de tirer parti du [!UICONTROL compositeur d’expérience visuelle] pour lancer des tests A/B et XT pour ces XDM.
 
@@ -232,7 +241,7 @@ Une fois que vous avez défini vos [!UICONTROL vues XDM] et implémenté `sendEv
 
 >[!NOTE]
 >
->Pour utiliser le VEC pour votre SPA, vous devez installer et activer l’extension d’assistance du VEC [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) ou [Chrome](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension).
+>Pour utiliser le VEC pour votre SPA, vous devez installer et activer l’extension d’assistance du VEC [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-target-vec-helper/) ou [Chrome](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension).
 
 ### Panneau [!UICONTROL Modifications]
 

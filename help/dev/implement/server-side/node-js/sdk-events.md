@@ -1,25 +1,28 @@
 ---
-title: Abonnement aux événements dans le SDK Node [!DNL Adobe Target] js
+title: Abonnement aux événements dans le SDK Node.js [!DNL Adobe Target]
 description: Découvrez comment vous abonner à divers événements qui se produisent dans le SDK Node.js à l’aide de l’objet [!UICONTROL OnDeviceDecisioningHandler].
 feature: APIs/SDKs
 exl-id: 40c53840-a560-4819-ae04-f527c36b22fe
-TQID: https://experienceleague.adobe.com/KWuJT-p-Er-1mx766Y-itlFn7REZnqkUksdHKCy-2-U
+TQID: 'https://experienceleague.adobe.com/KWuJT-p-Er-1mx766Y-itlFn7REZnqkUksdHKCy-2-U'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 164
+source-wordcount: '165'
 ht-degree: 2%
-
 ---
-
 # Événements SDK (Node.js)
 
 ## Description
 
-Lors de l’initialisation [&#x200B; du SDK](initialize-sdk.md), l’objet `options.events` est un objet facultatif avec des clés de nom d’événement et des valeurs de fonction de rappel. Il peut être utilisé pour vous abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `clientReady` peut être utilisé avec une fonction de rappel appelée lorsque le SDK est prêt pour les appels de méthode.
+Lors de l’initialisation [ du SDK](initialize-sdk.md), l’objet `options.events` est un objet facultatif avec des clés de nom d’événement et des valeurs de fonction de rappel. Il peut être utilisé pour vous abonner à divers événements qui se produisent dans le SDK. Par exemple, l’événement `clientReady` peut être utilisé avec une fonction de rappel appelée lorsque le SDK est prêt pour les appels de méthode.
 
 Lorsque la fonction de rappel est appelée, un objet d’événement est transmis. Chaque événement possède un `type` correspondant au nom de l’événement. Certains événements incluent des propriétés supplémentaires avec des informations pertinentes.
 

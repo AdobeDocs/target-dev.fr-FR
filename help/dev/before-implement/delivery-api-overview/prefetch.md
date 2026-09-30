@@ -1,28 +1,35 @@
 ---
 title: Prérécupération de l’API de diffusion Adobe Target
-description: Comment utiliser la prérécupération dans l’API de diffusion [!UICONTROL Adobe Target &#x200B;] ?
+description: Comment utiliser la prérécupération dans l’API de diffusion [!UICONTROL Adobe Target ] ?
 keywords: API de diffusion
 exl-id: eab88e3a-442c-440b-a83d-f4512fc73e75
 feature: APIs/SDKs
-TQID: https://experienceleague.adobe.com/gthn2vJrIjEkmQdpsf4J818OrzFiLpeRvXXRAUp2SiY
+TQID: 'https://experienceleague.adobe.com/gthn2vJrIjEkmQdpsf4J818OrzFiLpeRvXXRAUp2SiY'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c18d9e03-ac7d-4811-9c92-3e92ddc70ade
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Mobile experience
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 578
+source-wordcount: '578'
 ht-degree: 0%
-
 ---
-
 # Prérécupération
 
 La prérécupération permet aux clients tels que les applications mobiles et les serveurs de récupérer du contenu pour plusieurs mbox ou vues en une seule requête, de le mettre en cache localement et de [!DNL Target] informer ultérieurement lorsque le visiteur visite ces mbox ou vues.
@@ -132,11 +139,11 @@ Dans le champ `prefetch` , ajoutez une ou plusieurs `mboxes` que vous souhaitez 
 }
 ```
 
-Dans la réponse, vous voyez le champ `content` contenant l’expérience à afficher au visiteur pour une `mbox` particulière. Cette méthode est très utile lorsque vous la mettez en cache sur votre serveur. Ainsi, lorsqu’un visiteur interagit avec votre application web ou mobile au cours d’une session et visite une `mbox` sur une page particulière de votre application, l’expérience peut être diffusée à partir du cache au lieu d’effectuer un autre appel de l’API de diffusion Adobe Target. Cependant, lorsqu’une expérience est diffusée au visiteur à partir du `mbox`, un `notification` est envoyé via un appel d’API de diffusion pour que la journalisation des impressions se produise. Cela est dû au fait que la réponse des appels `prefetch` est mise en cache, ce qui signifie que le visiteur n’a pas vu les expériences au moment où l’appel `prefetch` se produit. Pour en savoir plus sur le processus de `notification`, voir [Notifications](notifications.md).
+Dans la réponse, vous voyez le champ `content` contenant l’expérience à afficher au visiteur pour une `mbox` particulière. Cette méthode est très utile lorsque vous la mettez en cache sur votre serveur. Ainsi, lorsqu’un visiteur interagit avec votre application web ou mobile au cours d’une session et visite une `mbox` sur une page particulière de votre application, l’expérience peut être diffusée à partir du cache au lieu d’effectuer un autre appel de l’API de diffusion Adobe Target]. [!UICONTROL Cependant, lorsqu’une expérience est diffusée au visiteur à partir du `mbox`, un `notification` est envoyé via un appel d’API de diffusion pour que la journalisation des impressions se produise. Cela est dû au fait que la réponse des appels `prefetch` est mise en cache, ce qui signifie que le visiteur n’a pas vu les expériences au moment où l’appel `prefetch` se produit. Pour en savoir plus sur le processus de `notification`, voir [Notifications](notifications.md).
 
 ## Prérécupération des mbox avec des mesures `clickTrack` lors de l’utilisation d’[!UICONTROL Analytics for Target] (A4T)
 
-[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr){target=_blank} (A4T) est une intégration intersolutions qui vous permet de créer des activités basées sur des mesures de conversion [!DNL Analytics] et des segments d’audience.
+[[!UICONTROL Adobe Analytics for Target]](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html){target=_blank} (A4T) est une intégration intersolutions qui vous permet de créer des activités basées sur des mesures de conversion [!DNL Analytics] et des segments d’audience.
 
 Le fragment de code suivant est une réponse d’une prérécupération d’une mbox contenant des mesures `clickTrack` pour [!DNL Analytics] informer qu’un utilisateur a cliqué sur une offre :
 
@@ -181,7 +188,7 @@ Le fragment de code suivant est une réponse d’une prérécupération d’une 
 
 ## Prérécupération des vues
 
-Les vues prennent en charge les applications sur une seule page (SPA) et les applications mobiles de manière plus transparente. Les vues peuvent être considérées comme un groupe logique d’éléments visuels qui, ensemble, constituent une SPA ou une expérience mobile. Désormais, grâce à l’API de diffusion, les activités [[!UICONTROL Test A/B]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=fr){target=_blank} et [[!UICONTROL Ciblage d’expérience]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=fr){target=_blank} (X)T créées par le VEC et comportant des modifications sur [Vues pour SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) peuvent être prérécupérées.
+Les vues prennent en charge les applications sur une seule page (SPA) et les applications mobiles de manière plus transparente. Les vues peuvent être considérées comme un groupe logique d’éléments visuels qui, ensemble, constituent une SPA ou une expérience mobile. Désormais, grâce à l’API de diffusion, les activités [[!UICONTROL Test A/B]](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html){target=_blank} et [[!UICONTROL Ciblage d’expérience]](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html){target=_blank} (X)T créées par le VEC et comportant des modifications sur [Vues pour SPA](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md) peuvent être prérécupérées.
 
 ```shell  {line-numbers="true"}
 curl -X POST \

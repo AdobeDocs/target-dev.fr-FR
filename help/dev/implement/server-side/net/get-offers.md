@@ -1,24 +1,28 @@
 ---
-title: Utilisez getOffers() in [!DNL Adobe Target] lors de l’utilisation du SDK .NET
-description: Découvrez comment utiliser getOffers() pour exécuter une décision et récupérer une expérience depuis  [!DNL Adobe Target].
+title: Utilisez getOffers() dans [!DNL Adobe Target] lors de l’utilisation du SDK .NET
+description: Découvrez comment utiliser getOffers() pour exécuter une décision et récupérer une expérience à partir de [!DNL Adobe Target].
 feature: APIs/SDKs
 exl-id: 4d1d1cbd-c7e5-4146-9fea-08e01923874d
-TQID: https://experienceleague.adobe.com/T-oUyDgCJZ8hqQZgCb3-Z-d9WeMaffwq8krMHhGvYlI
+TQID: 'https://experienceleague.adobe.com/T-oUyDgCJZ8hqQZgCb3-Z-d9WeMaffwq8krMHhGvYlI'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+    internal-label: Integrations
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Metadata
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 576
+source-wordcount: '577'
 ht-degree: 14%
-
 ---
-
 # Obtenir les offres (.NET)
 
 ## Description
@@ -70,7 +74,7 @@ L’objet `TargetDeliveryRequest.Builder` présente la structure suivante :
 | tntId | Chaîne | Non | Identifiant de Principal en [!DNL Target] pour un utilisateur. Récupéré à partir de targetCookies. Généré automatiquement s’il n’est pas fourni. |
 | mcId | Chaîne | Non | Utilisé pour fusionner et partager des données entre différentes solutions Adobe (ECID). Récupéré à partir de targetCookies. Généré automatiquement s’il n’est pas fourni. |
 | trackingServer | Chaîne | Non | Le serveur Adobe Analytics afin que [!DNL Adobe Target] et [!DNL Adobe Analytics] assemblent correctement les données. |
-| trackingServerSecure | Chaîne | Non | Le [!UICONTROL serveur sécurisé &#x200B;] pour que [!DNL Adobe Target] et [!DNL Adobe Analytics] assemblent correctement les données. |
+| trackingServerSecure | Chaîne | Non | Le [!UICONTROL serveur sécurisé ] pour que [!DNL Adobe Target] et [!DNL Adobe Analytics] assemblent correctement les données. |
 | decisioningMethod | DecisioningMethod | Non | Peut être utilisé pour définir explicitement la méthode de prise de décision ON_DEVICE ou HYBRID pour la prise de décision sur l’appareil |
 
 Les valeurs de chaque champ doivent être conformes à la spécification de requête [API de diffusion Target](/help/dev/implement/delivery-api/overview.md).

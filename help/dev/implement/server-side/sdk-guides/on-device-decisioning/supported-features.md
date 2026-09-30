@@ -3,25 +3,32 @@ title: Quelles fonctionnalités sont prises en charge dans la prise de décision
 description: Découvrez comment diffuser du contenu personnalisé attrayant et pertinent à l’aide du machine learning à l’aide d’un appel au serveur en direct.
 feature: APIs/SDKs
 exl-id: 15d9870f-6c58-4da0-bfe5-ef23daf7d273
-TQID: https://experienceleague.adobe.com/Fgwu8Nh90i-tS1aCUVmQReGz6DYBP2GHdcNM7z17BSk
+TQID: 'https://experienceleague.adobe.com/Fgwu8Nh90i-tS1aCUVmQReGz6DYBP2GHdcNM7z17BSk'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Machine learning
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 731
+source-wordcount: '731'
 ht-degree: 9%
-
 ---
-
 # Présentation des fonctionnalités prises en charge
 
 Les SDK côté serveur d’[!DNL Adobe Target] offrent aux développeurs et aux développeuses la possibilité de choisir entre les performances et la fraîcheur des données pour prendre des décisions. En d’autres termes, si la diffusion du contenu personnalisé le plus pertinent et le plus attrayant via le machine learning est la plus importante pour vous, un appel au serveur en direct doit être effectué. Mais lorsque les performances sont plus critiques, une décision doit être prise sur l’appareil. Pour que la [!UICONTROL prise de décision sur l’appareil] fonctionne, reportez-vous à la liste suivante des fonctionnalités prises en charge :
@@ -32,18 +39,18 @@ Les SDK côté serveur d’[!DNL Adobe Target] offrent aux développeurs et aux 
 
 ## Types d’activités
 
-Le tableau suivant indique quels [types d’activité](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html?lang=fr) créés à l’aide du [compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=fr ?) sont pris en charge ou non pour la prise de décision sur [!UICONTROL ’appareil].
+Le tableau suivant indique quels [types d’activité](https://experienceleague.adobe.com/docs/target/using/activities/target-activities-guide.html) créés à l’aide du [compositeur d’expérience d’après les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html ?) sont pris en charge ou non pour la prise de décision sur [!UICONTROL ’appareil].
 
 | Type d’activité | Pris en charge |
 | --- | --- |
-| [Test A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=fr) | Oui |
-| [affectation automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html?lang=fr) | Non |
-| [ciblage automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html?lang=fr) | Non |
-| [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) (A4T) | Oui |
-| [Test multivarié](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html?lang=fr) (MVT) | Non |
-| [Ciblage d’expérience](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html?lang=fr) (XT) | Oui |
-| [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html?lang=fr) (AP) | Non |
-| [Recommandations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html?lang=fr) | Non |
+| [Test A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) | Oui |
+| [affectation automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html) | Non |
+| [ciblage automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) | Non |
+| [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) | Oui |
+| [Test multivarié](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html) (MVT) | Non |
+| [Ciblage d’expérience](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) | Oui |
+| [Automated Personalization](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) (AP) | Non |
+| [Recommandations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) | Non |
 
 
 ## Ciblage des audiences
@@ -52,19 +59,19 @@ Le tableau suivant indique les règles d’audience prises ou non en charge pour
 
 | Règle d’audience | Prise de décision sur l’appareil |
 | --- | --- |
-| [Géo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html?lang=fr) | Oui |
-| [Réseau](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html?lang=fr) | Non |
-| [Mobile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=fr) | Non |
-| [Paramètres personnalisés](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=fr) | Oui |
-| [Système d’exploitation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html?lang=fr) | Oui |
-| [Pages du site](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=fr) | Oui |
-| [Navigateur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=fr) | Oui |
-| [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=fr) | Non |
-| [Sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=fr) | Non |
-| [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html?lang=fr) | Oui |
-| [&#x200B; Audiences Experience Cloud &#x200B;](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html?lang=fr) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Non |
+| [Géo](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/geo.html) | Oui |
+| [Réseau](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/network.html) | Non |
+| [Mobile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html) | Non |
+| [Paramètres personnalisés](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) | Oui |
+| [Système d’exploitation](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/operating-system.html) | Oui |
+| [Pages du site](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) | Oui |
+| [Navigateur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html) | Oui |
+| [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html) | Non |
+| [Sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) | Non |
+| [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Oui |
+| [ Audiences Experience Cloud ](https://experienceleague.adobe.com/docs/target/using/integrate/mmp.html) (audiences de Adobe Audience Manager, Adobe Analytics et Adobe Experience Manager) | Non |
 
-### Ciblage géographique pour la prise de décision [!UICONTROL &#x200B; sur l’appareil]
+### Ciblage géographique pour la prise de décision [!UICONTROL  sur l’appareil]
 
 Afin de maintenir une latence proche de zéro pour les activités de [!UICONTROL prise de décision sur l’appareil] avec des audiences basées sur la zone géographique, Adobe vous recommande de fournir vous-même les valeurs géographiques dans l’appel à l’`getOffers`. Pour ce faire, définissez l’objet `Geo` dans le `Context` de la requête. Cela signifie que votre serveur doit pouvoir déterminer l’emplacement de chaque utilisateur final. Par exemple, votre serveur peut effectuer une recherche IP/zone géographique à l’aide d’un service que vous configurez. Certains fournisseurs d’hébergement, tels que Google Cloud, proposent cette fonctionnalité via des en-têtes personnalisés dans chaque `HttpServletRequest`.
 
@@ -182,5 +189,5 @@ Le tableau suivant indique les méthodes d’attribution prises en charge ou non
 | Méthode d&#39;allocation | Pris en charge |
 | --- | --- |
 | Manuel | Oui |
-| [&#x200B; Affectation automatique à la meilleure expérience &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html?lang=fr) | Non |
-| [Ciblage automatique pour les expériences personnalisées](https://experienceleague.adobe.com/docs/target/using/activities/auto-target-to-optimize.html?lang=fr) | Non |
+| [ Affectation automatique à la meilleure expérience ](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html) | Non |
+| [Ciblage automatique pour les expériences personnalisées](https://experienceleague.adobe.com/docs/target/using/activities/auto-target-to-optimize.html) | Non |

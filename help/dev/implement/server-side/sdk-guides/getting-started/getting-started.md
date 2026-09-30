@@ -3,25 +3,32 @@ title: Prise en main des SDK de Target
 description: Comment utiliser les SDK Adobe Target ?
 feature: APIs/SDKs
 exl-id: a5ae9826-7bb5-41de-8796-76edc4f5b281
-TQID: https://experienceleague.adobe.com/oW9op2s6buvt5Jp18DYzrwh7aBXSNEPAikq9EPISaWQ
+TQID: 'https://experienceleague.adobe.com/oW9op2s6buvt5Jp18DYzrwh7aBXSNEPAikq9EPISaWQ'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 702
+source-wordcount: '702'
 ht-degree: 1%
-
 ---
-
 # Prise en main des SDK [!DNL Target]
 
 Pour être opérationnel, nous vous encourageons à créer votre première activité d’indicateur de fonctionnalité [prise de décision sur l’appareil](../on-device-decisioning/overview.md) dans la langue de votre choix :
@@ -39,7 +46,7 @@ Pour être opérationnel, nous vous encourageons à créer votre première activ
 1. Configurer les indicateurs de fonctionnalité dans une activité [!DNL Adobe Target] [!UICONTROL Test A/B]
 1. Implémenter et générer la fonctionnalité dans votre application
 1. Implémenter le suivi des événements dans votre application
-1. Activez votre activité [!UICONTROL &#x200B; Test A/B &#x200B;]
+1. Activez votre activité [!UICONTROL  Test A/B ]
 
 ## &#x200B;1. Activation de la prise de décision sur l’appareil pour votre organisation
 
@@ -49,7 +56,7 @@ L’activation de la prise de décision sur l’appareil garantit l’exécution
 
 >[!NOTE]
 >
->Vous devez disposer du rôle **[!UICONTROL Administrateur]** ou **[!UICONTROL Approbateur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=fr) pour activer ou désactiver le bouton (bascule) **[!UICONTROL Prise de décision sur l’appareil]**.
+>Vous devez disposer du rôle **[!UICONTROL Administrateur]** ou **[!UICONTROL Approbateur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) pour activer ou désactiver le bouton (bascule) **[!UICONTROL Prise de décision sur l’appareil]**.
 
 Après avoir activé le bouton (bascule) **[!UICONTROL Prise de décision sur l’appareil]**, [!DNL Adobe Target] commence à générer des [artefacts de règle](../on-device-decisioning/rule-artifact-overview.md) pour votre client.
 
@@ -394,12 +401,12 @@ target_client.send_notifications({
 
 >[!ENDTABS]
 
-## &#x200B;7. Activez votre activité [!UICONTROL &#x200B; Test A/B &#x200B;]
+## &#x200B;7. Activez votre activité [!UICONTROL  Test A/B ]
 
-1. Cliquez sur **[!UICONTROL Activer]** (1) pour activer votre activité [!UICONTROL &#x200B; Test A/B &#x200B;].
+1. Cliquez sur **[!UICONTROL Activer]** (1) pour activer votre activité [!UICONTROL  Test A/B ].
 
    >[!NOTE]
    >
-   >Pour effectuer cette étape, vous devez disposer du rôle **[!UICONTROL Approbateur]** ou **[!UICONTROL Éditeur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=fr).
+   >Pour effectuer cette étape, vous devez disposer du rôle **[!UICONTROL Approbateur]** ou **[!UICONTROL Éditeur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html).
 
    ![image alternative](assets/asset-activate.png)

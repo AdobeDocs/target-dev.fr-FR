@@ -1,40 +1,51 @@
 ---
 keywords: implémentation de target, implémentation, implémentation d’at.js, gestionnaire de balises, prise de décision sur l’appareil, prise de décision sur l’appareil
-description: Découvrez comment spécifier les paramètres (détails du compte, méthodes d’implémentation, etc.) pour implémenter la bibliothèque at [!DNL Adobe Target] js sans utiliser de gestionnaire de balises.
-title: Puis-je implémenter  [!DNL Target]  sans gestionnaire de balises ?
+description: Découvrez comment spécifier les paramètres (détails du compte, méthodes d’implémentation, etc.) pour implémenter la bibliothèque at.js [!DNL Adobe Target] sans utiliser de gestionnaire de balises.
+title: Puis-je implémenter [!DNL Target] sans gestionnaire de balises ?
 feature: Implement Server-side
 exl-id: f675ae21-105d-4aa3-9926-59291f1136b5
-TQID: https://experienceleague.adobe.com/UkFhxuka6uds6NVcJlZqo7soQlg4kqr7Z-rvuJPuRKk
+TQID: 'https://experienceleague.adobe.com/UkFhxuka6uds6NVcJlZqo7soQlg4kqr7Z-rvuJPuRKk'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+    internal-label: Customer experience
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: ca4254966a337a0215d66bd28506128b9751d0e0
+    internal-label: Privacy
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1785
+source-wordcount: '1787'
 ht-degree: 32%
-
 ---
-
 # Implémentation de [!DNL Target] sans gestionnaire de balises
 
 Informations sur l’implémentation de [!DNL Adobe Target] sans utiliser de gestionnaire de balises ou de balises dans [!DNL Adobe Experience Platform].
 
 >[!NOTE]
 >
->Les balises dans [&#128279;](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode privilégiée pour implémenter [!DNL Target] et la bibliothèque at.js. Les informations suivantes ne s’appliquent pas lors de l’utilisation de balises dans [!DNL Adobe Experience Platform] pour implémenter [!DNL Target].
+>Les balises dans [](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) sont la méthode privilégiée pour implémenter [!DNL Target] et la bibliothèque at.js. Les informations suivantes ne s’appliquent pas lors de l’utilisation de balises dans [!DNL Adobe Experience Platform] pour implémenter [!DNL Target].
 
 Pour accéder à la page Implémentation, cliquez sur **[!UICONTROL Administration]** > **[!UICONTROL Implémentation]**.
 
@@ -56,7 +67,7 @@ Vous pouvez afficher les détails du compte suivants. Ces paramètres ne peuvent
 
 | Paramètre | Description |
 | --- | --- |
-| [!UICONTROL &#x200B; Code client &#x200B;] | Le code client est une séquence de caractères spécifique au client, souvent nécessaire lors de l’utilisation des API [!DNL Target]. |
+| [!UICONTROL  Code client ] | Le code client est une séquence de caractères spécifique au client, souvent nécessaire lors de l’utilisation des API [!DNL Target]. |
 | [!UICONTROL ID d’organisation IMS] | Cet identifiant associe votre mise en œuvre à votre compte Adobe Experience Cloud. |
 | [!UICONTROL Prise De Décision Sur L’Appareil] | Pour activer la prise de décision sur l’appareil, faites glisser le bouton (bascule) sur la position « activé ».<p>La prise de décision sur l’appareil vous permet de mettre en cache vos campagnes A/B et de ciblage d’expérience (XT) sur votre serveur et d’effectuer une prise de décision en mémoire à une latence proche de zéro. Pour plus d’informations, voir [Présentation de la prise de décision sur l’appareil](../../../server-side/sdk-guides/on-device-decisioning/overview.md). |
 | [!UICONTROL Incluez toutes les activités qualifiées de prise de décision sur l’appareil existantes dans l’artefact] | (Conditionnel) Cette option s’affiche si vous activez la prise de décision sur l’appareil.<p>Faites glisser le bouton (bascule) sur la position « activé » si vous souhaitez que toutes vos activités Live [!DNL Target] qui remplissent les critères de la prise de décision sur l’appareil soient automatiquement incluses dans l’artefact .<p>Si vous laissez ce bouton désactivé, vous devrez recréer et activer toutes les activités de prise de décision sur l’appareil afin qu’elles soient incluses dans l’artefact de règles généré. |
@@ -76,7 +87,7 @@ Les paramètres suivants peuvent être configurés dans le panneau Méthodes d�
 | [!UICONTROL Chargement de page activé (mbox globale de création automatique)] | Indiquez si l’appel de la mbox globale doit être incorporé dans le fichier at.js afin d’être automatiquement déclenché lors de chaque chargement de page. |
 | [!UICONTROL mbox globale] | Sélectionnez un nom pour la mbox globale. Par défaut, ce nom est target-global-mbox.<p>Les noms de mbox peuvent contenir des caractères spéciaux, y compris des esperluettes (&amp;), avec at.js. |
 | [!UICONTROL Délai d’expiration (secondes)] | Si [!DNL Target] ne répond pas avec du contenu dans le délai défini, l’appel au serveur expire et le contenu par défaut est affiché. Des tentatives d’appel supplémentaires sont effectuées pendant la session du visiteur. Le délai par défaut est de 5 secondes.<p>La bibliothèque at.js utilise le paramètre de délai d’expiration dans `XMLHttpRequest`. Le délai d’expiration commence lorsque la requête est déclenchée et s’arrête lorsque [!DNL Target] reçoit une réponse du serveur. Pour plus d’informations, voir [XMLHttpRequest.timeout](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/timeout) sur le réseau développeur Mozilla.<p>Si la temporisation spécifiée se produit avant la réception de la réponse, le contenu par défaut s’affiche et le visiteur peut être comptabilisé comme un participant à une activité, car toute la collecte de données se produit à l’extrémité [!DNL Target]. Si la requête atteint le bord [!DNL Target], le visiteur est comptabilisé.<p>Tenez compte de ce qui suit lors de la configuration du paramètre d’expiration :<ul><li>Si la valeur est trop basse, les utilisateurs risquent de voir le contenu par défaut dans la plupart des cas, bien que le visiteur puisse être comptabilisé parmi les participants à l’activité.</li><li>Si la valeur est trop élevée, les visiteurs risquent de voir des zones vierges sur votre page web ou des pages vierges si vous utilisez le masquage du contenu pendant une durée prolongée.</li></ul>Pour une meilleure compréhension du temps de réponse de mbox, consultez l’onglet Réseau dans les Outils de développement de votre navigateur. Vous pouvez également utiliser des outils de surveillance des performances web tiers, tels que Catchpoint.<p>**Remarque** : le paramètre [visitorApiTimeout](/help/dev/implement/client-side/atjs/atjs-functions/targetglobalsettings.md#visitorapitimeout) garantit que [!DNL Target] n’attendez pas trop longtemps la réponse de l’API visiteur. Ce paramètre et le paramètre Délai d’expiration de at.js décrit ici n’ont pas d’effet l’un sur l’autre. |
-| [!UICONTROL Durée de vie du profil] | Ce paramètre détermine la durée de stockage des profils de visiteur. Par défaut, les profils sont stockés pendant deux semaines. Ce paramètre peut être augmenté jusqu’à 90 jours.<p>Pour modifier le paramètre Durée de vie du profil, contactez l’[Assistance clientèle](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=fr#reference_ACA3391A00EF467B87930A450050077C). |
+| [!UICONTROL Durée de vie du profil] | Ce paramètre détermine la durée de stockage des profils de visiteur. Par défaut, les profils sont stockés pendant deux semaines. Ce paramètre peut être augmenté jusqu’à 90 jours.<p>Pour modifier le paramètre Durée de vie du profil, contactez l’[Assistance clientèle](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html#reference_ACA3391A00EF467B87930A450050077C). |
 
 ### Méthode d’implémentation principale
 
@@ -90,7 +101,7 @@ Pour modifier le paramètre at.js, cliquez sur **[!UICONTROL Modifier]** en rega
 
 >[!WARNING]
 >
->Avant de modifier ces paramètres par défaut, contactez l’assistance clientèle [Client Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=fr#reference_ACA3391A00EF467B87930A450050077C) afin de ne pas affecter votre implémentation actuelle.
+>Avant de modifier ces paramètres par défaut, contactez l’assistance clientèle [Client Care](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html#reference_ACA3391A00EF467B87930A450050077C) afin de ne pas affecter votre implémentation actuelle.
 
 Outre les paramètres décrits ci-dessus, les paramètres at.js spécifiques suivants sont également disponibles :
 
@@ -126,7 +137,7 @@ Pour plus d’informations, consultez la page [Confidentialité](/help/dev/befor
 
 >[!NOTE]
 >
->L’option Prise en charge héritée des navigateurs était disponible dans at.js version 0.9.3 et versions antérieures. Elle a été supprimée de la version 0.9.4 d’at.js. Pour obtenir la liste des navigateurs pris en charge par at.js, voir [&#x200B; Navigateurs pris en charge &#x200B;](/help/dev/before-implement/supported-browsers.md).<p>Les navigateurs hérités sont d’anciens navigateurs qui ne prennent pas entièrement en charge le partage des ressources cross-origin (CORS). Ces navigateurs comprennent Internet Explorer (versions antérieures à la version 11) et Safari (versions 6 et antérieures). Si la prise en charge héritée du navigateur était désactivée, [!DNL Target] n’avez pas diffusé de contenu ni comptabilisé les visiteurs dans les rapports sur ces navigateurs. Si cette option a été activée, il est recommandé d’effectuer l’assurance qualité sur les navigateurs plus anciens pour garantir une bonne expérience client.
+>L’option Prise en charge héritée des navigateurs était disponible dans at.js version 0.9.3 et versions antérieures. Elle a été supprimée de la version 0.9.4 d’at.js. Pour obtenir la liste des navigateurs pris en charge par at.js, voir [ Navigateurs pris en charge ](/help/dev/before-implement/supported-browsers.md).<p>Les navigateurs hérités sont d’anciens navigateurs qui ne prennent pas entièrement en charge le partage des ressources cross-origin (CORS). Ces navigateurs comprennent Internet Explorer (versions antérieures à la version 11) et Safari (versions 6 et antérieures). Si la prise en charge héritée du navigateur était désactivée, [!DNL Target] n’avez pas diffusé de contenu ni comptabilisé les visiteurs dans les rapports sur ces navigateurs. Si cette option a été activée, il est recommandé d’effectuer l’assurance qualité sur les navigateurs plus anciens pour garantir une bonne expérience client.
 
 ## Téléchargement d’at.js
 
@@ -134,7 +145,7 @@ Instructions pour télécharger la bibliothèque à l’aide de l’interface [!
 
 >[!NOTE]
 >
->[&#128279;](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) est la méthode privilégiée pour implémenter [!DNL Target] et la bibliothèque at.js. Les informations suivantes ne s’appliquent pas lors de l’utilisation de balises dans [!DNL Adobe Experience Platform] pour implémenter [!DNL Target].
+>[](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) est la méthode privilégiée pour implémenter [!DNL Target] et la bibliothèque at.js. Les informations suivantes ne s’appliquent pas lors de l’utilisation de balises dans [!DNL Adobe Experience Platform] pour implémenter [!DNL Target].
 >
 >[!DNL Adobe Target] prend en charge at.js 1.*x* et at.js 2.*x*. Effectuez la mise à niveau vers la mise à jour la plus récente de l’une des versions majeures d’at.js pour vous assurer que vous exécutez une version prise en charge. Pour en savoir plus sur le contenu de chaque version, voir [Informations détaillées sur les versions d’at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md).
 

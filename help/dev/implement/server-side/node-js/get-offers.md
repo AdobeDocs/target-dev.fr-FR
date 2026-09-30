@@ -1,20 +1,23 @@
 ---
-title: Utilisez [!UICONTROL getOffers()] in [!DNL Adobe Target] lors de l’utilisation du SDK Node.js.
-description: Découvrez comment utiliser [!UICONTROL getOffers()] pour exécuter une décision et récupérer une expérience depuis  [!DNL Adobe Target].
+title: Utilisez [!UICONTROL getOffers()] dans [!DNL Adobe Target] lors de l’utilisation du SDK Node.js.
+description: Découvrez comment utiliser [!UICONTROL getOffers()] pour exécuter une décision et récupérer une expérience à partir de [!DNL Adobe Target].
 feature: APIs/SDKs
 exl-id: 3c4125ea-68d4-405e-9b9a-5fa832743153
-TQID: https://experienceleague.adobe.com/WRGy74F1kUobRl1Pakse0VnXt3cT3-ntCljm4bHtiZ4
+TQID: 'https://experienceleague.adobe.com/WRGy74F1kUobRl1Pakse0VnXt3cT3-ntCljm4bHtiZ4'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 342
+source-wordcount: '343'
 ht-degree: 20%
-
 ---
-
 # [!UICONTROL Obtenir les offres] (Node.js)
 
 ## Description
@@ -40,7 +43,7 @@ L’objet `options` présente la structure suivante :
 | visitorCookie | Chaîne | Non | None | Cookie ECID (VisitorId) |
 | targetCookie | Chaîne | Non | None | cookie [!DNL Target] |
 | targetLocationHint | Chaîne | Non | None | [!DNL Target] l’indicateur d’emplacement |
-| consumerId | Chaîne | Non | None | assemblage de consumerIds pour [!UICONTROL &#x200B; Analytics for Target &#x200B;] (A4T) |
+| consumerId | Chaîne | Non | None | assemblage de consumerIds pour [!UICONTROL  Analytics for Target ] (A4T) |
 | CustomerIds | Tableau | Non | None | ID de client au format compatible avec les VisitorId |
 | sessionId | Chaîne | Non | None | Utilisé pour lier plusieurs requêtes [!DNL Target] |
 | visiteur | Objet | Non | new VisitorId | Fournir une instance externe VisitorId |
@@ -57,7 +60,7 @@ L’objet `options` présente la structure suivante :
 | targetCookie | Objet | cookie [!DNL Target] |
 | targetLocationHintCookie | Objet | [!DNL Target] cookie d’indice d’emplacement |
 | analyticsDetails | Tableau | Payload Analytics, en cas d’utilisation d’Analytics côté client |
-| responseTokens | Tableau | Une liste de [jetons de réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr ?). |
+| responseTokens | Tableau | Une liste de [jetons de réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html ?). |
 | trace | Tableau | Données de suivi agrégées pour toutes les mbox/vues de requête |
 | status | Objet | Objet contenant le statut de la réponse. |
 | decisioningMethod | Chaîne | Détermine la méthode de prise de décision à utiliser ([sur l’appareil](/help/dev/implement/server-side/sdk-guides/on-device-decisioning/overview.md), côté serveur, hybride). |

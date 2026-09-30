@@ -3,7 +3,16 @@ keywords: prémasquer SDK, scintillement, anti-scintillement, prémasquage, pré
 description: Découvrez comment intégrer le SDK de prémasquage [!DNL Adobe Target] pour éliminer le flash de contenu non personnalisé (scintillement) lors du chargement de la page. Le SDK fonctionne avec Adobe Alloy (Web SDK) et at.js.
 title: Aperçu du guide d’intégration de SDK
 feature: Implementation
-source-git-commit: 35ac4480ead5069169a2c55d35b43d3c1a81d78a
+product_v2:
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 1%
@@ -49,7 +58,7 @@ Une minuscule bibliothèque JavaScript synchrone qui empêche le scintillement v
 
 1. (Facultatif) Congédiez le consentement.
 
-   Si votre mise en œuvre utilise une plateforme de gestion du consentement (CMP), appelez le `window.Prehide.setConsent(...)` dès que l’état du consentement est connu. Voir [&#x200B; Gestion du consentement &#x200B;](#consent-management).
+   Si votre mise en œuvre utilise une plateforme de gestion du consentement (CMP), appelez le `window.Prehide.setConsent(...)` dès que l’état du consentement est connu. Voir [ Gestion du consentement ](#consent-management).
 
 1. Vérifiez.
 
@@ -121,7 +130,7 @@ Pour les lots auto-hébergés ou non modifiés, déclarez un objet config avant 
 
 | Champ | Type | Requis | Description |
 | --- | --- | --- | --- |
-| `sdk` | `"alloy"` \| `"atjs"` | Non | SDK Adobe chargé sur la page. Voir la sélection [&#128279;](#sdk-selection). |
+| `sdk` | `"alloy"` \| `"atjs"` | Non | SDK Adobe chargé sur la page. Voir la sélection [](#sdk-selection). |
 
 ## SDK selection {#sdk-selection}
 

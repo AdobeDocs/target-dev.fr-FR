@@ -1,28 +1,35 @@
 ---
 title: API de mise à jour du profil en bloc Adobe Target
-description: Découvrez comment utiliser l [!DNL Adobe Target] [!UICONTROL API de mise à jour de profil en bloc] pour envoyer les données de profil de plusieurs visiteurs à des  [!DNL Target]  à utiliser dans le ciblage.
+description: Découvrez comment utiliser l’[!DNL Adobe Target] [!UICONTROL API de mise à jour de profil en bloc] pour envoyer les données de profil de plusieurs visiteurs aux [!DNL Target] afin de les utiliser dans le ciblage.
 feature: APIs/SDKs
 contributors: https://github.com/icaraps
 exl-id: 0f38d109-5273-4f73-9488-80eca115d44d
-TQID: https://experienceleague.adobe.com/EVlP71oFI-NIFoTe9fyx2Xzsr9v-sZq0JGdpti1XI64
+TQID: 'https://experienceleague.adobe.com/EVlP71oFI-NIFoTe9fyx2Xzsr9v-sZq0JGdpti1XI64'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 64d250010899c671e73045b23b8e0c79cefaa2d6
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1311
+source-wordcount: '1313'
 ht-degree: 6%
-
 ---
-
 # [!DNL Adobe Target Bulk Profile Update API]
 
 L’[!DNL Adobe Target] [!UICONTROL API de mise à jour de profil en bloc] vous permet de mettre à jour en bloc les profils d’utilisateurs de plusieurs visiteurs sur un site web à l’aide d’un fichier par lots.
@@ -90,7 +97,7 @@ Vous référencez ce fichier dans l’appel POST aux serveurs [!DNL Target] pour
 >
 >Tous les noms et toutes les valeurs de paramètre doivent être encodés en URL (UTF-8) avant d’envoyer le lot, envoyé avec `Content-Type: application/x-www-form-urlencoded`, avec le corps commençant par `batch=`. Les caractères réservés non codés sont lus en tant que syntaxe de requête au lieu des données, ce qui peut entraîner le rejet du lot, sa troncation ou sa corruption.
 >
->Si vous recevez une réponse « Erreur inattendue » sans `batchId`, consultez la section [&#x200B; L’API de mise à jour de profil en masse renvoie « Erreur inattendue »](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-24281) pour connaître les étapes de dépannage.
+>Si vous recevez une réponse « Erreur inattendue » sans `batchId`, consultez la section [ L’API de mise à jour de profil en masse renvoie « Erreur inattendue »](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24281) pour connaître les étapes de dépannage.
 
 Les caractères suivants sont généralement présents dans les valeurs de profil, mais ont une signification spéciale dans les données `application/x-www-form-urlencoded`. Si vous les envoyez sans codage, la requête échoue ou les données sont corrompues sans erreur évidente :
 

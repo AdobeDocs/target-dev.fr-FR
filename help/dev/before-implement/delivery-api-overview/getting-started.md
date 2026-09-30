@@ -1,26 +1,31 @@
 ---
 title: Prise en main de l’API de diffusion Adobe Target
-description: Comment utiliser l’API de diffusion [!UICONTROL Adobe Target &#x200B;] ?
+description: Comment utiliser l’API de diffusion [!UICONTROL Adobe Target ] ?
 keywords: API de diffusion
 exl-id: 142ec3be-b017-4cdc-9079-b1cc173a710a
 feature: APIs/SDKs
-TQID: https://experienceleague.adobe.com/DC-YVq6VfAaqMU1utmIMw73gzp4PIJgQjaS0a8FQEO4
+TQID: 'https://experienceleague.adobe.com/DC-YVq6VfAaqMU1utmIMw73gzp4PIJgQjaS0a8FQEO4'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a19e8738-9679-599a-b83b-5f2f15f8e4d6
+    internal-label: APIs/SDKs
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: b6b447ccb88925a8efb6ff6a80ae475c8780dbc8
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 180
+source-wordcount: '180'
 ht-degree: 1%
-
 ---
-
 # Prise en main de l’API de diffusion 
 
 >[!IMPORTANT]
@@ -63,6 +68,6 @@ Vous pouvez récupérer le `clientCode` à partir de l’interface utilisateur d
 
 Avant d’effectuer un appel [!UICONTROL API de diffusion Target], procédez comme suit pour vous assurer qu’une réponse contient l’expérience appropriée pour afficher les utilisateurs finaux :
 
-1. Créez une activité de [!DNL Target] (A/B, XT, AP ou Recommendations) à l’aide du [compositeur basé sur les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=fr) ou du [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html?lang=fr).
+1. Créez une activité de [!DNL Target] (A/B, XT, AP ou Recommendations) à l’aide du [compositeur basé sur les formulaires](https://experienceleague.adobe.com/docs/target/using/experiences/form-experience-composer.html?lang=en) ou du [compositeur d’expérience visuelle](https://experienceleague.adobe.com/docs/target/using/experiences/vec/visual-experience-composer.html).
 1. Utilisez l’API de diffusion pour obtenir une réponse pour les mbox utilisées dans l’activité de [!DNL Target] créée à l’étape 2.
 1. Présentez l’expérience au visiteur.

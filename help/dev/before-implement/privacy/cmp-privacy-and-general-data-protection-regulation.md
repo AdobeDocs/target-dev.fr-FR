@@ -4,29 +4,41 @@ description: Découvrez Target et le RGPD (règlement général sur la protectio
 title: Comment Target gère-t-il les réglementations relatives à la confidentialité et à la protection des données ?
 feature: Privacy & Security
 exl-id: 40bac3c5-8e6f-4a90-ac0c-eddce1dbe6c0
-TQID: https://experienceleague.adobe.com/W-aYBengoNH5uKTcFZNHARelgAFX3-QrZixh09n0FU0
+TQID: 'https://experienceleague.adobe.com/W-aYBengoNH5uKTcFZNHARelgAFX3-QrZixh09n0FU0'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: f599e456-545c-47e5-8e50-b7dfe3579517
+    internal-label: Governance and control
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
+  - id: ee6498fb-34b1-4925-be4a-9ec7a38e8dab
+    internal-label: Privacy and security
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Privacy
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 2432
+source-wordcount: '2432'
 ht-degree: 61%
-
 ---
-
 # Réglementations relatives à la confidentialité et à la protection des données
 
 Informations sur le RGPD (règlement général sur la protection des données), le CCPA (California Consumer Privacy Act) et d’autres exigences internationales en matière de confidentialité. Découvrez comment ces réglementations affectent votre entreprise et Adobe Target.
@@ -39,7 +51,7 @@ Lorsqu’Adobe fournit des logiciels et des services à une entreprise, elle agi
 
 En tant que contrôleuse ou contrôleur de données, vous déterminez les données personnelles qu’Adobe traite et stocke pour vous. Si vous utilisez les solutions Adobe Experience Cloud, Adobe peut héberger des données personnelles pour vous, en fonction des solutions que vous utilisez et des informations que vous choisissez d’envoyer sur votre compte Adobe Experience Cloud. Pour obtenir une liste détaillée d’exemples, voir [Confidentialité Adobe Experience Cloud](https://www.adobe.com/fr/privacy/experience-cloud.html#collect).
 
-Adobe Experience Cloud fournit aux responsables du traitement des données des API conformes au RGPD qui permettent d’effectuer les tâches suivantes :
+Adobe Experience Cloud fournit aux responsables du traitement des données des API conformes au RGPD qui leur permettent d’effectuer les tâches suivantes :
 
 * Accéder aux informations du sujet des données stockées dans Target
 * Supprimer les informations du sujet des données stockées dans Target
@@ -69,7 +81,7 @@ Si vous vous prépariez l’année dernière pour le règlement européen sur la
 
 ## Fonctionnalité de souscription (opt-in) Adobe Target et Adobe Experience Platform
 
-Target fournit une prise en charge de la fonctionnalité de souscription par le biais des balises dans Adobe Experience Platform afin de vous aider à appliquer votre stratégie de gestion du consentement. La fonctionnalité d’opt-in permet aux clients de décider comment et à quel moment la balise Target est déclenchée. Il existe également une option via Adobe Experience Platform pour préapprouver la balise Target. Pour permettre l’utilisation de la fonctionnalité d’accord préalable dans la bibliothèque at.js de Target, vous devez utiliser `targetGlobalSettings` et ajouter le paramètre `optinEnabled=true` . Dans Adobe Experience Platform, sélectionnez « activer » dans la liste déroulante d’accord préalable RGPD dans la vue d’installation de l’extension. Voir [&#x200B; Implémentation de Target à l’aide de Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) pour plus d’informations.
+Target fournit une prise en charge de la fonctionnalité de souscription par le biais des balises dans Adobe Experience Platform afin de vous aider à appliquer votre stratégie de gestion du consentement. La fonctionnalité d’opt-in permet aux clients de décider comment et à quel moment la balise Target est déclenchée. Il existe également une option via Adobe Experience Platform pour préapprouver la balise Target. Pour permettre l’utilisation de la fonctionnalité d’accord préalable dans la bibliothèque at.js de Target, vous devez utiliser `targetGlobalSettings` et ajouter le paramètre `optinEnabled=true` . Dans Adobe Experience Platform, sélectionnez « activer » dans la liste déroulante d’accord préalable RGPD dans la vue d’installation de l’extension. Voir [ Implémentation de Target à l’aide de Adobe Experience Platform](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) pour plus d’informations.
 
 L’extrait de code suivant montre comment activer le paramètre `optinEnabled=true` :
 
@@ -89,7 +101,7 @@ Lors de l’utilisation de la fonctionnalité d’opt-in, trois scénarios sont 
 
 1. **La balise Target est préapprouvée via Adobe Experience Platform (ou la personne concernée ayant précédemment approuvé Target) :** la balise Target n’est pas conservée pour le consentement et fonctionne comme prévu.
 1. **La balise Target n’a PAS été préalablement approuvée et la valeur de `bodyHidingEnabled` est FALSE :** La balise Target se déclenche seulement après que le client a donné son consentement. Avant d’avoir reçu le consentement du client, seul le contenu par défaut est disponible. Une fois le consentement reçu, Target est appelé et le contenu personnalisé est disponible pour le sujet de données (visiteur). Il est important de tenir compte du fait que seul le contenu par défaut est disponible avant la réception du consentement, et d’utiliser une stratégie appropriée à la situation. Il s’agit, par exemple, d’utiliser une splash page pour recouvrir les parties ou le contenu d’une page qui pourra être personnalisée. Ce processus permet de faire en sorte que l’expérience reste cohérente pour le titulaire de données (visiteur).
-1. **La balise Target n’a PAS été préalablement approuvée et la valeur de `bodyHidingEnabled` est TRUE :** La balise Target se déclenche seulement après que le client a donné son consentement. Avant d’avoir reçu le consentement du client, seul le contenu par défaut est disponible. Cependant, comme le paramètre `bodyHidingEnabled` est défini sur « true », c’est `bodyHiddenStyle` qui définit le contenu qui est masqué jusqu’au déclenchement de la balise Target (sauf si le titulaire de données refuse l’opt-in, ce qui entraînerait l’affichage du contenu par défaut). Par défaut, le paramètre `bodyHiddenStyle` est défini sur `body { opacity:0;}`, ce qui masque la balise HTML body. Vous trouverez ci-dessous la configuration de page recommandée par Adobe : masquage de l’ensemble du corps de la page, à l’exception de la boîte de dialogue du gestionnaire de consentement, en les mettant, celle-ci et le contenu de la page, dans deux conteneurs différents. Cette configuration de Target fait en sorte que seul le conteneur du contenu de la page soit masqué. Consultez la [présentation du Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr ?).
+1. **La balise Target n’a PAS été préalablement approuvée et la valeur de `bodyHidingEnabled` est TRUE :** La balise Target se déclenche seulement après que le client a donné son consentement. Avant d’avoir reçu le consentement du client, seul le contenu par défaut est disponible. Cependant, comme le paramètre `bodyHidingEnabled` est défini sur « true », c’est `bodyHiddenStyle` qui définit le contenu qui est masqué jusqu’au déclenchement de la balise Target (sauf si le titulaire de données refuse l’opt-in, ce qui entraînerait l’affichage du contenu par défaut). Par défaut, le paramètre `bodyHiddenStyle` est défini sur `body { opacity:0;}`, ce qui masque la balise HTML body. Vous trouverez ci-dessous la configuration de page recommandée par Adobe : masquage de l’ensemble du corps de la page, à l’exception de la boîte de dialogue du gestionnaire de consentement, en les mettant, celle-ci et le contenu de la page, dans deux conteneurs différents. Cette configuration de Target fait en sorte que seul le conteneur du contenu de la page soit masqué. Consultez la [présentation du Privacy Service](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html ?).
 
    La configuration de page recommandée pour le troisième scénario est la suivante :
 
@@ -127,15 +139,15 @@ Questions fréquentes sur le RGPD (règlement général sur la protection des do
 
 Adobe remplit déjà ou est en train de mettre en œuvre ses obligations en tant que responsable du traitement des données. Adobe dispose d’une base solide de contrôles certifiés de sécurité et de confidentialité dès la conception et a apporté des améliorations aux produits avant l’échéance de mai 2018. Les entreprises clientes ont la responsabilité de mettre en œuvre ces améliorations et de mettre à jour les politiques et procédures nécessaires.
 
-### Ma société, le contrôleur de données, doit-elle envoyer une requête RGPD pour chaque solution Adobe Experience Cloud qu’elle utilise ?
+### Mon entreprise, le contrôleur de données, doit-elle envoyer une requête RGPD pour chaque solution Adobe Experience Cloud qu’elle utilise ?
 
 Non, Adobe fournit un moyen centralisé d’aider les responsables du traitement des données à répondre aux exigences du RGPD et du CCPA. Les contrôleurs de données n’ont pas besoin d’accéder directement à chaque solution.
 
-Toutes les requêtes RGPD et CCPA à travers les solutions Experience Cloud, y compris Target, sont effectuées via une API Adobe centrale, actuellement nommée API conforme au RGPD. L’API effectue ensuite la requête à travers la suite de solutions Experience Cloud du contrôleur de données.
+Toutes les requêtes RGPD et CCPA à travers les solutions Experience Cloud, y compris Target, sont effectuées via une API Adobe centrale, actuellement appelée API conforme au RGPD. L’API effectue ensuite la requête à travers la suite de solutions Experience Cloud du contrôleur de données.
 
 ### Quelles informations Adobe permet-il aux clients de supprimer en réponse à une demande d’un titulaire de données/utilisateur ?
 
-Les informations relatives à un visiteur individuel dans Target sont contenues dans le profil du visiteur Target. Target permet aux clients de supprimer toutes les données associées à un ID dans leur profil du visiteur. Pour obtenir des exemples de données de profil stockées dans Target, voir [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=fr).
+Les informations relatives à un visiteur individuel dans Target sont contenues dans le profil du visiteur Target. Target permet aux clients de supprimer toutes les données associées à un ID dans leur profil du visiteur. Pour obtenir des exemples de données de profil stockées dans Target, voir [Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html).
 
 Les données agrégées ou rendues anonymes (par exemple, les données des rapports) qui n’identifient pas une personne spécifique, ou les données qui ne sont pas liées à une personne spécifique (par exemple, les données en matière de contenu), ne sont pas concernées par la demande de suppression soumise par un utilisateur.
 
@@ -147,7 +159,7 @@ Target prend en charge les types d’ID suivants pour localiser un profil client
 
 | Identifiant utilisateur | Type d’ID d’espace de noms | ID d’espace de noms | Définition |
 |--- |--- |--- |--- |
-| Experience Cloud ID (ECID) | Standard | 4 | Adobe Experience Cloud ID, anciennement connu sous le nom d’identifiant visiteur ou Experience Cloud ID. Vous pouvez utiliser l’API JavaScript pour localiser cet ID (voir les détails ci-dessous). |
+| Experience Cloud ID (ECID) | Standard | 4 | Adobe Experience Cloud ID, anciennement connu sous le nom d’identifiant visiteur ou d’Experience Cloud ID. Vous pouvez utiliser l’API JavaScript pour localiser cet ID (voir les détails ci-dessous). |
 | Identifiant TnT / Identifiant du cookie (TNTID) | Standard | 9 | Identifiant cible défini comme cookie dans le navigateur du visiteur. Vous pouvez utiliser l’API JavaScript pour localiser cet ID (voir les détails ci-dessous). |
 | ID tiers/ID CRM (THIRDPARTYID) | Spécifique à Target | S.O. | Si vous fournissez à Target votre logiciel de gestion de la relation client ou d’autres informations d’identification uniques pour vos clients. |
 
@@ -163,7 +175,7 @@ Adobe n’offre pas actuellement de solution de Gestion des consentements, mais 
 
 Target prend en charge la fonctionnalité d’accord préalable via Adobe Experience Platform pour prendre en charge votre stratégie de gestion du consentement. La fonctionnalité d’opt-in permet aux clients de décider comment et à quel moment la balise Target est déclenchée. Il existe également une option via Adobe Experience Platform pour préapprouver la balise Target. L’utilisation de Adobe Experience Platform pour gérer l’opt-in est l’approche recommandée. Il existe un contrôle granulaire plus poussé dans Adobe Experience Platform. Le but est de masquer, avant le déclenchement de Target, certains éléments de votre page pouvant servir pour votre stratégie de consentement.
 
-Pour plus d’informations sur le RGPD, le CCPA et Adobe Experience Platform, consultez [La bibliothèque JavaScript Adobe Privacy et le RGPD](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=fr ?). Consultez également la section *Fonctionnalité de souscription (opt-in) Adobe Target et Adobe Experience Platform* ci-dessus.
+Pour plus d’informations sur le RGPD, le CCPA et Adobe Experience Platform, consultez [La bibliothèque JavaScript Adobe Privacy et le RGPD](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html ?). Consultez également la section *Fonctionnalité de souscription (opt-in) Adobe Target et Adobe Experience Platform* ci-dessus.
 
 ### `AdobePrivacy.js` envoie-t-il des informations à l’API conforme au RGPD ?
 
@@ -302,7 +314,7 @@ Le tableau suivant contient la description des champs illustratifs JSON du profi
 | Sample_Parameter | De nombreuses informations du profil Target sont chargées ou directement fournies par le contrôleur des données. Dans cet exemple, un paramètre a été chargé dans le profil Target à l’aide de l’API de mise à jour du profil. Pour plus d’informations, voir [Méthodes pour obtenir des données dans Target](/help/dev/before-implement/methods-to-get-data-into-target/methods-to-get-data-into-target.md). |
 | user.ReturnTimeOfDay | Ce champ standard inclut l’heure de la journée de la dernière visite de retour d’un utilisateur ou d’une utilisatrice. |
 | firstSessionStart | Ce champ standard inclut l’heure à laquelle la première session de l’utilisateur a commencé. |
-| user.sessionCountScript | De nombreuses informations du profil Target sont chargées ou directement fournies par le contrôleur des données. Dans cet exemple, un script de profil incrémente le nombre de sessions que ce visiteur a effectuées sur le site du contrôleur de données. Pour plus d’informations, voir [Attributs de script de profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=fr). |
+| user.sessionCountScript | De nombreuses informations du profil Target sont chargées ou directement fournies par le contrôleur des données. Dans cet exemple, un script de profil incrémente le nombre de sessions que ce visiteur a effectuées sur le site du contrôleur de données. Pour plus d’informations, voir [Attributs de script de profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html). |
 
 >[!NOTE]
 >

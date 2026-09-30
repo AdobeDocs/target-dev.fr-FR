@@ -1,34 +1,46 @@
 ---
 keywords: implémentation d’applications sur une seule page, implémentation d’une application sur une seule page, spa, at.js 2.x, at.js, application sur une seule page, application sur une seule page, spa, SPA, implémentation d’applications sur une seule page
-description: Découvrez comment utiliser at [!DNL Adobe Target] js 2.x pour implémenter  [!DNL Target]  pour les applications monopages (SPA).
-title: Puis [!DNL Target] je implémenter pour les applications monopages (SPA) ?
+description: Découvrez comment utiliser [!DNL Adobe Target] at.js 2.x pour implémenter [!DNL Target] pour les applications monopages (SPA).
+title: Puis-je implémenter des [!DNL Target] pour les applications monopages (SPA) ?
 feature: Implement Server-side
 exl-id: d59d7683-0a63-47a9-bbb5-0fe4a5bb7766
-TQID: https://experienceleague.adobe.com/zFYKCYv740tA3UXvJfJx-eiNst-r0xYlj3RP-LbCcOo
+TQID: 'https://experienceleague.adobe.com/zFYKCYv740tA3UXvJfJx-eiNst-r0xYlj3RP-LbCcOo'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: bcc5edb5-84c3-4940-9f84-ed88b6c16274
+    internal-label: Experimentation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: ca4254966a337a0215d66bd28506128b9751d0e0
+    internal-label: Administration
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 2851
+source-wordcount: '2854'
 ht-degree: 53%
-
 ---
-
 # Mise en œuvre d’une application d’une seule page
 
 Les sites Web traditionnels fonctionnaient sur des modèles de navigation « page à page », appelés également applications multi-pages dans lesquelles les conceptions de site Web étaient étroitement couplées à des URL et les transitions d’une page Web à une autre nécessitaient un chargement de page. Les applications Web modernes, comme les applications monopages, adoptent plutôt un modèle qui projette rapidement le rendu de l’interface utilisateur du navigateur, ce qui est souvent indépendant des rechargements de page. Ces expériences sont souvent déclenchées par des interactions client, comme faire défiler, cliquer et faire bouger le curseur. À mesure de l’évolution des paradigmes du Web moderne, la pertinence des événements génériques traditionnels, comme le chargement des pages, pour déployer la personnalisation et les expériences ne fonctionnent plus.
@@ -238,7 +250,7 @@ Désormais, où que soit implémenté `triggerView()` sur votre application d’
 
 ## Compositeur d’expérience visuelle pour les applications monopages
 
-Après avoir installé le fichier at.js 2.x et l’avoir ajouté `triggerView()` à votre site, utilisez VEC pour exécuter les activités AB et XT. Pour plus d’informations, reportez-vous au [Compositeur d’expérience visuelle pour application d’une seule page (SPA)](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html?lang=fr).
+Après avoir installé le fichier at.js 2.x et l’avoir ajouté `triggerView()` à votre site, utilisez VEC pour exécuter les activités AB et XT. Pour plus d’informations, reportez-vous au [Compositeur d’expérience visuelle pour application d’une seule page (SPA)](https://experienceleague.adobe.com/docs/target/using/experiences/spa-visual-experience-composer.html).
 
 >[!NOTE]
 >
@@ -246,7 +258,7 @@ Après avoir installé le fichier at.js 2.x et l’avoir ajouté `triggerView()`
 
 ## Utilisez TriggerView pour vous assurer que A4T fonctionne correctement avec at.js 2.x et les SPA
 
-Pour vous assurer que [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) (A4T) fonctionne correctement avec at.js 2.x, veillez à envoyer le même SDID dans la requête [!DNL Target] et dans la requête [!DNL Analytics].
+Pour vous assurer que [Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) (A4T) fonctionne correctement avec at.js 2.x, veillez à envoyer le même SDID dans la requête [!DNL Target] et dans la requête [!DNL Analytics].
 
 En tant que bonnes pratiques liées aux applications monopages :
 
@@ -329,19 +341,19 @@ Les vidéos suivantes comprennent davantage d’informations :
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-Pour plus d’informations, consultez la page [Fonctionnement d’at.js 2.x](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=fr).
+Pour plus d’informations, consultez la page [Fonctionnement d’at.js 2.x](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html).
 
 ### Implémentation d’at.js 2 dans une application d’une seule page
 
->[!VIDEO](https://video.tv.adobe.com/v/34765/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26248/?quality=12)
 
-Pour plus d’informations, voir [&#x200B; Implémentation d’Adobe Target at.js 2.x dans une application monopage (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html?lang=fr) .
+Pour plus d’informations, voir [ Implémentation d’Adobe Target at.js 2.x dans une application monopage (SPA)](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html) .
 
 ### Utilisation du compositeur d’expérience visuelle pour les SPA dans [!DNL Adobe Target]
 
->[!VIDEO](https://video.tv.adobe.com/v/34769/?captions=fre_fr&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/26249/?quality=12)
 
-Pour plus d’informations, consultez [Utilisation du compositeur d’expérience visuelle pour les applications d’une seule page (SPA VEC) dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html?lang=fr).
+Pour plus d’informations, consultez [Utilisation du compositeur d’expérience visuelle pour les applications d’une seule page (SPA VEC) dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer-for-single-page-applications.html).
 
 
 

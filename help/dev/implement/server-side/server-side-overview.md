@@ -1,32 +1,42 @@
 ---
 keywords: côté serveur, côté serveur, api, sdk, node.js, nodejs, node js, api recommendations, api, api, api, côté serveur1
-description: Découvrez les API  [!DNL Adobe Target]  diffusion côté serveur, les SDK et les API  [!DNL Target Recommendations] .
-title: Où puis [!DNL Target] je en savoir plus sur les API et les SDK de diffusion côté serveur ?
+description: Découvrez les API de diffusion côté serveur [!DNL Adobe Target], les SDK et les API [!DNL Target Recommendations].
+title: Où puis-je en savoir plus sur [!DNL Target] API et les SDK de diffusion côté serveur ?
 feature: Implement Server-side
 exl-id: 3eb0a789-cf1a-4d02-acf7-3c895bcb662f
-TQID: https://experienceleague.adobe.com/x5WKb9Eenz2bw-idOnxlpWdtiivTx05n38sNXEt3DNc
+TQID: 'https://experienceleague.adobe.com/x5WKb9Eenz2bw-idOnxlpWdtiivTx05n38sNXEt3DNc'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: b050e0cd-2ddd-42cd-a71b-5d9e1fdf75e0
+    internal-label: APIs and SDKs
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: a8a69496-b9ae-554a-b68e-e92a87809fc5
+    internal-label: Implement Server-side
 subfeature_v2:
   - id: a6cc21b9-1a36-4fa6-9c61-4acd04d9c88c
+    internal-label: Delivery API
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
-source-git-commit: 7a393cc6a3f30a276a256cdabb5b42fe08f3c505
+    internal-label: Machine learning
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 820
+source-wordcount: '823'
 ht-degree: 9%
-
 ---
-
 # Implémentation de [!DNL Target] côté serveur
 
 Informations sur [!DNL Adobe Target] API de diffusion côté serveur, les SDK et les API [!DNL Target Recommendations].
@@ -35,7 +45,7 @@ Informations sur [!DNL Adobe Target] API de diffusion côté serveur, les SDK et
 >
 >Si votre implémentation utilise at.js et [!DNL AppMeasurement] côté client, vous devez utiliser l’[!UICONTROL API de diffusion Target] et les SDK côté serveur décrits ci-dessous.
 >
->Si votre implémentation utilise [!UICONTROL Adobe Experience Platform Web SDK], vous devez utiliser l’API [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server]](https://experienceleague.adobe.com/fr/docs/experience-platform/edge-network-server-api/overview){target=_blank}.
+>Si votre implémentation utilise [!UICONTROL Adobe Experience Platform Web SDK], vous devez utiliser l’API [[!UICONTROL Adobe Experience Platform] [!UICONTROL Edge Network Server]](https://experienceleague.adobe.com/en/docs/experience-platform/edge-network-server-api/overview){target=_blank}.
 
 Le processus suivant se produit dans une implémentation côté serveur de [!DNL Target] :
 
@@ -104,7 +114,7 @@ Pour les appels d’API Edge non SDK, respectez les exigences suivantes :
 
 Lorsque [!DNL Target] classe une requête comme trafic de robots, la personnalisation peut échouer ou paraître intermittente, car la recherche de profil, l’évaluation de segments et le contenu personnalisé pour des activités telles que [!UICONTROL Recommendations] et [!UICONTROL Ciblage automatique] sont supprimés.
 
-Pour en savoir plus sur l’implémentation d’avec SDK, consultez la [[!DNL Adobe Experience Platform Web SDK] présentation](https://experienceleague.adobe.com/fr/docs/target-dev/developer/client-side/aep/aep-web-sdk-overview){target=_blank}.
+Pour en savoir plus sur l’implémentation d’avec SDK, consultez la [[!DNL Adobe Experience Platform Web SDK] présentation](https://experienceleague.adobe.com/en/docs/target-dev/developer/client-side/aep/aep-web-sdk-overview){target=_blank}.
 
 **Exemple de requête API Edge (les en-têtes doivent inclure `User-Agent`) :**
 

@@ -1,31 +1,42 @@
 ---
 keywords: tls, tls 1.0, sécurité de la couche de transport, chiffrement, tls 1.1, tls 1.2
-description: Découvrez comment utilise  [!DNL Target]  protocole TLS (Transport Layer Security) pour maintenir les normes de sécurité les plus élevées et promouvoir la sécurité de vos données client.
-title: Comment utilise [!DNL Target] t-il TLS pour fournir la sécurité ?
+description: Découvrez comment [!DNL Target] utilise le protocole TLS (Transport Layer Security) pour maintenir les normes de sécurité les plus élevées et promouvoir la sécurité de vos données client.
+title: Comment utilise-[!DNL Target] TLS pour assurer la sécurité ?
 feature: Privacy & Security
 exl-id: f5ea2272-27ab-49c9-b096-b15dd277d4e5
-TQID: https://experienceleague.adobe.com/2Ka08Kp8jLd6u7-gtwbfU1rq7SGDxE-dwBTHWz1mS3E
+TQID: 'https://experienceleague.adobe.com/2Ka08Kp8jLd6u7-gtwbfU1rq7SGDxE-dwBTHWz1mS3E'
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
+  - id: f599e456-545c-47e5-8e50-b7dfe3579517
+    internal-label: Governance and control
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
+  - id: ee6498fb-34b1-4925-be4a-9ec7a38e8dab
+    internal-label: Privacy and security
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Privacy
+source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
 workflow-type: tm+mt
-source-wordcount: 1231
+source-wordcount: '1233'
 ht-degree: 45%
-
 ---
-
 # Modifications du chiffrement de TLS (Transport Layer Security)
 
 Informations sur les modifications apportées à l’utilisation [!DNL Adobe] et [!DNL Adobe Target] du protocole TLS (Transport Layer Security) pour maintenir les normes de sécurité les plus élevées et promouvoir la sécurité des données client.
@@ -44,7 +55,7 @@ TLS 1.2 est la valeur par défaut à compter du 1er mars 2020 et TLS 1.1 ne sera
 
 Adobe fera évoluer progressivement les clients vers TLS 1.2. Pour ceux dont les domaines sont déjà conformes à la version 1.2, nous les déplacerons vers TLS 1.2 sans que vous ayez besoin d’apporter de modifications. La plupart des domaines clients prennent déjà en charge TLS 1.2. Cependant, si votre domaine ne prend pas en charge TLS 1.2, nous conserverons ces domaines sur TLS 1.1 comme aujourd’hui (jusqu’en mars 2020).
 
-Aucun problème ne devrait se poser pendant cette phase de migration. Si le compositeur d’expérience visuelle a arrêté de charger un site qui fonctionnait auparavant, [ouvrez un ticket d’assistance clientèle](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=fr&#reference_ACA3391A00EF467B87930A450050077C) en citant cette migration comme cause possible.
+Aucun problème ne devrait se poser pendant cette phase de migration. Si le compositeur d’expérience visuelle a arrêté de charger un site qui fonctionnait auparavant, [ouvrez un ticket d’assistance clientèle](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?#reference_ACA3391A00EF467B87930A450050077C) en citant cette migration comme cause possible.
 
 Cependant, si vous êtes l’un de ces clients qui utilisent TSL 1.1 sans prendre en charge TLS 1.2, vous devez planifier le déplacement de vos domaines/infrastructures vers TLS 1.2. Nous continuerons à prendre en charge le protocole TLS 1.1 jusqu’au 1er mars 2020. À compter du 1er mars 2020, [!DNL Target] ne prendra pas en charge le protocole TLS 1.1 à utiliser pour le compositeur d’expérience visuelle via la fonctionnalité Enhanced Experience Composer.
 
