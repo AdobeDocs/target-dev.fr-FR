@@ -7,26 +7,34 @@ exl-id: e0d87d95-ee95-4ca9-8632-222ae1fb9a91
 TQID: https://experienceleague.adobe.com/7-Kr0OwJ4o780zkFL2EIQ0vJUqVyQp-RuoJOaBNYrQg
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+    internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
   - id: ff2b9b37-92e0-45fc-b853-379d44c08c89
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+    internal-label: Audience segmentation
+source-git-commit: 09c7444b7ed70521cfd01caf5c996643d0a27547
 workflow-type: tm+mt
-source-wordcount: 1340
-ht-degree: 73%
-
+source-wordcount: '1460'
+ht-degree: 67%
 ---
-
 # User-agent et Client Hints
 
 Adobe Target utilise user-agent pour qualifier les visiteurs pour la segmentation et la personnalisation.
@@ -57,6 +65,14 @@ Mozilla/5.0 (Linux; Android 12; SM-S908E) AppleWebKit/537.36 (KHTML, like Gecko)
 | Appareil | SM-S908E (Samsung Galaxy S22 Ultra) |
 
 Au fil des ans, la quantité d’informations sur le navigateur et l’appareil utilisé incluses dans la chaîne user-agent a augmenté.
+
+## Scripts personnalisés qui remplacent l’agent utilisateur {#custom-scripts-overwrite-user-agent}
+
+Étant donné que le ciblage des appareils mobiles repose sur la chaîne Agent-utilisateur, tout script personnalisé de votre page qui modifie le `navigator.userAgent` avant qu’[!DNL Target] ne le lise peut entraîner l’échec du ciblage des appareils.
+
+Si votre site web dispose d’un script personnalisé qui écoute tous les événements au lieu de l’événement spécifique dont il a besoin, il peut involontairement intercepter un événement [!DNL Web SDK] et le remplacer `navigator.userAgent`. Par conséquent, [!DNL Target] reçoit des informations incorrectes sur l’appareil au lieu de l’appareil réel du visiteur et l’expérience attendue n’est pas délivrée.
+
+Si le ciblage des appareils mobiles ne se comporte pas comme prévu, vérifiez si des scripts personnalisés ou des écouteurs d’événement sur la page modifient les `navigator.userAgent` et définissez une portée aussi étroite que possible sur ces écouteurs afin qu’ils n’interceptent pas involontairement des événements [!DNL Target] ou Web SDK.
 
 ## Cas d’utilisation de User-Agent
 
