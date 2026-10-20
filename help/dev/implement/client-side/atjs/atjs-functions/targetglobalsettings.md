@@ -286,7 +286,7 @@ Le champ En-tête de bibliothèque vous permet de saisir du code JavaScript de f
 window.targetGlobalSettings = {
    timeout: 200, // using custom timeout
    visitorApiTimeout: 500, // using custom API timeout
-   enabled: document.location.href.indexOf('https://www.adobe.com') >= 0 // enabled ONLY on adobe.com
+   enabled: document.location.href.indexOf('https://www.adobe.com/fr') >= 0 // enabled ONLY on adobe.com
 };
 ```
 
