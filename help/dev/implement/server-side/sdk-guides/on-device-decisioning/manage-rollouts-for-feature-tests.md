@@ -1,6 +1,6 @@
 ---
 title: Gestion des déploiements pour les tests de fonctionnalité
-description: Découvrez comment gérer les déploiements pour les tests de fonctionnalité à l’aide de la [!UICONTROL &#x200B; prise de décision sur l’appareil &#x200B;].
+description: Découvrez comment gérer les déploiements pour les tests de fonctionnalité à l’aide de la [!UICONTROL  prise de décision sur l’appareil ].
 feature: APIs/SDKs
 exl-id: caa91728-6ac0-4583-a594-0c8fe616342d
 TQID: 'https://experienceleague.adobe.com/soG8leVV3R4Y4FSns5oIJ43oziIhtOb2zJ5bkFYxeo0'
@@ -49,7 +49,7 @@ L’activation de la prise de décision sur l’appareil garantit l’exécution
 
 >[!NOTE]
 >
->Vous devez disposer du [rôle utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=fr) Administrateur ou Approbateur pour activer ou désactiver le bouton [!UICONTROL Prise de décision sur l’appareil].
+>Vous devez disposer du [rôle utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) Administrateur ou Approbateur pour activer ou désactiver le bouton [!UICONTROL Prise de décision sur l’appareil].
 
 Après avoir activé le bouton (bascule) [!UICONTROL Prise de décision sur l’appareil], [!DNL Adobe Target] commence à générer des *artefacts de règle* pour votre client.
 

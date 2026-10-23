@@ -46,7 +46,7 @@ Pour être opérationnel, nous vous encourageons à créer votre première activ
 1. Configurer les indicateurs de fonctionnalité dans une activité [!DNL Adobe Target] [!UICONTROL Test A/B]
 1. Implémenter et générer la fonctionnalité dans votre application
 1. Implémenter le suivi des événements dans votre application
-1. Activez votre activité [!UICONTROL &#x200B; Test A/B &#x200B;]
+1. Activez votre activité [!UICONTROL  Test A/B ]
 
 ## &#x200B;1. Activation de la prise de décision sur l’appareil pour votre organisation
 
@@ -56,7 +56,7 @@ L’activation de la prise de décision sur l’appareil garantit l’exécution
 
 >[!NOTE]
 >
->Vous devez disposer du rôle **[!UICONTROL Administrateur]** ou **[!UICONTROL Approbateur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=fr) pour activer ou désactiver le bouton (bascule) **[!UICONTROL Prise de décision sur l’appareil]**.
+>Vous devez disposer du rôle **[!UICONTROL Administrateur]** ou **[!UICONTROL Approbateur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html) pour activer ou désactiver le bouton (bascule) **[!UICONTROL Prise de décision sur l’appareil]**.
 
 Après avoir activé le bouton (bascule) **[!UICONTROL Prise de décision sur l’appareil]**, [!DNL Adobe Target] commence à générer des [artefacts de règle](../on-device-decisioning/rule-artifact-overview.md) pour votre client.
 
@@ -401,12 +401,12 @@ target_client.send_notifications({
 
 >[!ENDTABS]
 
-## &#x200B;7. Activez votre activité [!UICONTROL &#x200B; Test A/B &#x200B;]
+## &#x200B;7. Activez votre activité [!UICONTROL  Test A/B ]
 
-1. Cliquez sur **[!UICONTROL Activer]** (1) pour activer votre activité [!UICONTROL &#x200B; Test A/B &#x200B;].
+1. Cliquez sur **[!UICONTROL Activer]** (1) pour activer votre activité [!UICONTROL  Test A/B ].
 
    >[!NOTE]
    >
-   >Pour effectuer cette étape, vous devez disposer du rôle **[!UICONTROL Approbateur]** ou **[!UICONTROL Éditeur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html?lang=fr).
+   >Pour effectuer cette étape, vous devez disposer du rôle **[!UICONTROL Approbateur]** ou **[!UICONTROL Éditeur]** [utilisateur](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/user-management.html).
 
    ![image alternative](assets/asset-activate.png)
