@@ -1,6 +1,6 @@
 ---
 title: Gestion des déploiements pour les tests de fonctionnalité
-description: Découvrez comment gérer les déploiements pour les tests de fonctionnalité à l’aide de la [!UICONTROL  prise de décision sur l’appareil ].
+description: Découvrez comment gérer les déploiements pour les tests de fonctionnalité à l’aide de la [!UICONTROL &#x200B; prise de décision sur l’appareil &#x200B;].
 feature: APIs/SDKs
 exl-id: caa91728-6ac0-4583-a594-0c8fe616342d
 TQID: 'https://experienceleague.adobe.com/soG8leVV3R4Y4FSns5oIJ43oziIhtOb2zJ5bkFYxeo0'
