@@ -25,9 +25,9 @@ topic_v2:
     internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
     internal-label: Administration
-source-git-commit: 5d119ccf18b09b3ba864a69642458597f65c754f
+source-git-commit: 3a1674348a1cb39351051addf8e063efbf0dc9e9
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1336'
 ht-degree: 6%
 ---
 # [!DNL Adobe Target Bulk Profile Update API]
@@ -97,7 +97,7 @@ Vous référencez ce fichier dans l’appel POST aux serveurs [!DNL Target] pour
 >
 >Tous les noms et toutes les valeurs de paramètre doivent être encodés en URL (UTF-8) avant d’envoyer le lot, envoyé avec `Content-Type: application/x-www-form-urlencoded`, avec le corps commençant par `batch=`. Les caractères réservés non codés sont lus en tant que syntaxe de requête au lieu des données, ce qui peut entraîner le rejet du lot, sa troncation ou sa corruption.
 >
->Si vous recevez une réponse « Erreur inattendue » sans `batchId`, consultez la section [&#x200B; L’API de mise à jour de profil en masse renvoie « Erreur inattendue »](https://experienceleague.adobe.com/fr/docs/experience-cloud-kcs/kbarticles/ka-24281) pour connaître les étapes de dépannage.
+>Si vous recevez une réponse « Erreur inattendue » sans `batchId`, consultez la section [ L’API de mise à jour de profil en masse renvoie « Erreur inattendue »](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24281) pour connaître les étapes de dépannage.
 
 Les caractères suivants sont généralement présents dans les valeurs de profil, mais ont une signification spéciale dans les données `application/x-www-form-urlencoded`. Si vous les envoyez sans codage, la requête échoue ou les données sont corrompues sans erreur évidente :
 
@@ -156,9 +156,9 @@ Les valeurs attendues pour les champs de statut sont les suivantes :
 
 | État | Détails |
 | --- | --- |
-| [!UICONTROL complete] | La demande de mise à jour du lot de profils a été effectuée avec succès. |
-| [!UICONTROL incomplet] | La demande de mise à jour par lots de profils est toujours en cours de traitement et n’est pas terminée. |
-| [!UICONTROL coincé] | La demande de mise à jour par lots du profil est bloquée et n’a pas pu être terminée. |
+| [!UICONTROL complete] | La demande de mise à jour du lot de profils a été effectuée avec succès. Aucune action n’est nécessaire. |
+| [!UICONTROL incomplet] | La demande de mise à jour par lots de profils est toujours en cours de traitement et n’est pas terminée. Aucune action n’est nécessaire. |
+| [!UICONTROL coincé] | La demande de mise à jour par lots du profil est bloquée et n’a pas pu être terminée. Si un lot reste bloqué même après 24 heures à compter de son chargement, vous devez le charger à nouveau. |
 
 ### Réponse détaillée d’URL de statut du lot
 
