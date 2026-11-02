@@ -61,7 +61,7 @@ Les données sont envoyées à [!DNL Target] en temps réel et peuvent être uti
 
   `< > # % " { } | \ ^ [ ] `
 
-  Le reste doit être encodé en URL. La norme spécifie le format suivant ( [](https://www.ietf.org/rfc/rfc1738.txt) ), comme illustré ci-dessous :
+  Le reste doit être encodé en URL. La norme spécifie le format suivant ( [&#128279;](https://www.ietf.org/rfc/rfc1738.txt) ), comme illustré ci-dessous :
 
   ![image alternative](assets/ietf1.png)
 

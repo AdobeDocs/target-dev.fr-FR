@@ -63,7 +63,7 @@ Vous pouvez remplacer les paramètres suivants :
 
 * **Type** : String
 * **Valeur Par Défaut** : Aucune
-* **Description** : URL complète de l’artefact de règle de prise de décision [ sur l’appareil](../../../server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md)
+* **Description** : URL complète de l’artefact de règle de prise de décision [&#x200B; sur l’appareil](../../../server-side/sdk-guides/on-device-decisioning/rule-artifact-overview.md)
 
 ### bodyHiddenStyle
 
@@ -214,7 +214,7 @@ Vous pouvez remplacer les paramètres suivants :
 * **Valeur par défaut** : true (à partir de la version 1.6.2 d’at.js)
 * **Description** : indique s’il convient d’utiliser le domaine `<clientCode>.tt.omtrdc.net` ou le domaine `mboxedge<clusterNumber>.tt.omtrdc.net`.
 
-  Si cette valeur est définie sur true, le domaine `mboxedge<clusterNumber>.tt.omtrdc.net` est enregistré dans un cookie. Actuellement, cela ne fonctionne pas avec [ CNAME ](/help/dev/before-implement/implement-cname-support-in-target.md) lors de l’utilisation de versions d’at.js antérieures à at.js 1.8.2 et at.js 2.3.1. Si cela pose problème, pensez à [mettre à jour at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md) vers une version plus récente et prise en charge.
+  Si cette valeur est définie sur true, le domaine `mboxedge<clusterNumber>.tt.omtrdc.net` est enregistré dans un cookie. Actuellement, cela ne fonctionne pas avec [&#x200B; CNAME &#x200B;](/help/dev/before-implement/implement-cname-support-in-target.md) lors de l’utilisation de versions d’at.js antérieures à at.js 1.8.2 et at.js 2.3.1. Si cela pose problème, pensez à [mettre à jour at.js](/help/dev/implement/client-side/atjs/target-atjs-versions.md) vers une version plus récente et prise en charge.
 
 ### overrideMboxEdgeServerTimeout
 

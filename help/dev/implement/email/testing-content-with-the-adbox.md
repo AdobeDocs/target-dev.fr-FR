@@ -31,7 +31,7 @@ Utilisez un AdBox pour diffuser des images dans une implémentation hors site à
 
 Une AdBox s’apparente à une mbox, mais elle est contrôlée par une URL et non par du code JavaScript. Les AdBox sont créées à l’aide d’une URL d’AdBox spéciale qui charge une mbox publicitaire (ou AdBox) dans votre compte Adobe. Utilisez cette AdBox à la place de la mbox dans les activités. Utilisez l’URL de l’AdBox au lieu d’une référence d’image directe dans les mises en œuvre de messagerie ou d’autres mises en œuvre sans JavaScript.
 
-Pour obtenir de l’aide sur la sélection de la configuration appropriée, voir [ Implémentations non basées sur JavaScript ](/help/dev/implement/email/overview.md).
+Pour obtenir de l’aide sur la sélection de la configuration appropriée, voir [&#x200B; Implémentations non basées sur JavaScript &#x200B;](/help/dev/implement/email/overview.md).
 
 1. Créez l’URL de l’AdBox :
 

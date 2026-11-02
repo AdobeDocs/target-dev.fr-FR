@@ -132,7 +132,7 @@ adobe.target.getOffers({...})
 .catch(error => console.log("Error", error));
 ```
 
-Pour plus d’exemples sur l’utilisation de getOffers(), reportez-vous à la documentation getOffers ](adobe-target-getoffers-atjs-2.md)[
+Pour plus d’exemples sur l’utilisation de getOffers(), reportez-vous à la documentation getOffers [&#128279;](adobe-target-getoffers-atjs-2.md)
 
 ### Exemple de requête de chargement de page
 

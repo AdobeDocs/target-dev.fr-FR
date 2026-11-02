@@ -115,7 +115,7 @@ Les diagrammes suivants vous aident à comprendre le workflow d’at.js 1.x.
 
 ### Vidéo : Heures de bureau, conseils et présentation d’at.js (26 juin 2019)
 
-Cette vidéo est un enregistrement de « Office Hours », une initiative menée par l’équipe de l’[!UICONTROL Assistance clientèle ].
+Cette vidéo est un enregistrement de « Office Hours », une initiative menée par l’équipe de l’[!UICONTROL Assistance clientèle &#x200B;].
 
 * Avantages de l’utilisation d’at.js
 * Paramètres d’at.js

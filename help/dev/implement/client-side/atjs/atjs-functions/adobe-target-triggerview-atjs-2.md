@@ -86,9 +86,9 @@ adobe.target.getOffers({
 
 ## Exemple : meilleure compatibilité pour `triggerView()` avec l’extension Visual Editing Helper d’Adobe 
 
-Tenez compte des points suivants lors de l’utilisation de l’extension Visual Editing Helper d’Adobe [](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} :
+Tenez compte des points suivants lors de l’utilisation de l’extension Visual Editing Helper d’Adobe [&#128279;](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} :
 
-En raison des nouvelles politiques de manifeste V3 de [!DNL Googl]e pour les extensions [!DNL Chrome], l’extension [!UICONTROL  Visual Editing Helper ] doit attendre l’événement `DOMContentLoaded` avant de charger les bibliothèques [!DNL Target] dans le VEC. Ce délai peut entraîner le déclenchement de l’appel `triggerView()` aux pages web avant que les bibliothèques de création ne soient prêtes, ce qui fait que la vue n’est pas renseignée au chargement.
+En raison des nouvelles politiques de manifeste V3 de [!DNL Googl]e pour les extensions [!DNL Chrome], l’extension [!UICONTROL &#x200B; Visual Editing Helper &#x200B;] doit attendre l’événement `DOMContentLoaded` avant de charger les bibliothèques [!DNL Target] dans le VEC. Ce délai peut entraîner le déclenchement de l’appel `triggerView()` aux pages web avant que les bibliothèques de création ne soient prêtes, ce qui fait que la vue n’est pas renseignée au chargement.
 
 Pour atténuer ce problème, utilisez un écouteur pour l’événement de `load` de page.
 

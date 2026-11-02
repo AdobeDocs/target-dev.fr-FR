@@ -48,7 +48,7 @@ Le tableau suivant indique les [types d’activité](https://experienceleague.ad
 | [Ciblage automatique](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) ![Premium](../../../assets/premium.png) | Non |
 | [Test multivarié](https://experienceleague.adobe.com/docs/target/using/activities/multivariate-test/multivariate-testing.html) (MVT) | Non |
 | [Ciblage d’expérience](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) | Oui |
-| [](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) ![Premium](../../../assets/premium.png) | Non |
+| [&#128279;](https://experienceleague.adobe.com/docs/target/using/activities/automated-personalization/automated-personalization.html) ![Premium](../../../assets/premium.png) | Non |
 | [Recommendations](https://experienceleague.adobe.com/docs/target/using/recommendations/recommendations.html) ![Premium](../../../assets/premium.png) | Non |
 | [Activités utilisant Analytics for Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html ?) (A4T) | Oui |
 
@@ -70,7 +70,7 @@ Le tableau suivant indique les règles d’audience prises ou non en charge pour
 | [Période](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/time-frame.html) | Oui |
 | Audiences Adobe Experience Cloud<P>([!DNL Audiences from Adobe Analytics], [!DNL Adobe Audience Manager] et [!DNL Adobe Experience Manager]) | Non |
 
-### Ciblage géographique pour la prise de décision [!UICONTROL  sur l’appareil]
+### Ciblage géographique pour la prise de décision [!UICONTROL &#x200B; sur l’appareil]
 
 Pour maintenir une latence minimale pour les activités [!UICONTROL prise de décision sur l’appareil] avec des audiences basées sur la zone géographique, Adobe vous recommande de fournir vous-même les valeurs géographiques dans l’appel à [getOffers](/help/dev/implement/client-side/atjs/atjs-functions/adobe-target-getoffers-atjs-2.md). Définissez l’objet géographique dans le contexte de la requête. Cela signifie qu’à partir du navigateur, il est possible de déterminer l’emplacement de chaque visiteur. Par exemple, vous pouvez effectuer une recherche IP/zone géographique à l’aide d’un service que vous configurez. Certains fournisseurs d’hébergement, tels que Google Cloud, proposent cette fonctionnalité via des en-têtes personnalisés dans chaque `HttpServletRequest`.
 
@@ -119,7 +119,7 @@ Le tableau suivant indique les méthodes d’attribution prises en charge ou non
 | Méthode d&#39;allocation | Pris en charge ? |
 | --- | --- |
 | Manuel | Oui |
-| [ Affectation automatique à la meilleure expérience ](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html) | Non |
+| [&#x200B; Affectation automatique à la meilleure expérience &#x200B;](https://experienceleague.adobe.com/docs/target/using/activities/auto-allocate/automated-traffic-allocation.html) | Non |
 | [Ciblage automatique pour les expériences personnalisées](https://experienceleague.adobe.com/docs/target/using/activities/auto-target/auto-target-to-optimize.html) | Non |
 
 

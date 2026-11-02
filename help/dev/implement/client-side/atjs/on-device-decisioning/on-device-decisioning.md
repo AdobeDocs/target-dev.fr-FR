@@ -43,9 +43,9 @@ workflow-type: tm+mt
 source-wordcount: '3835'
 ht-degree: 4%
 ---
-# [!UICONTROL  Prise de décision sur l’appareil ] pour at.js
+# [!UICONTROL &#x200B; Prise de décision sur l’appareil &#x200B;] pour at.js
 
-À partir de la version 2.5.0, at.js offre la [!UICONTROL  prise de décision sur l’appareil ]. La [!UICONTROL prise de décision sur l’appareil] vous permet de mettre en cache vos activités [Test A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) et [Ciblage d’expérience](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) sur le navigateur afin d’effectuer une prise de décision en mémoire sans bloquer la requête réseau à l’Edge Network [!DNL Adobe Target].
+À partir de la version 2.5.0, at.js offre la [!UICONTROL &#x200B; prise de décision sur l’appareil &#x200B;]. La [!UICONTROL prise de décision sur l’appareil] vous permet de mettre en cache vos activités [Test A/B](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html) et [Ciblage d’expérience](https://experienceleague.adobe.com/docs/target/using/activities/experience-targeting/experience-target.html) (XT) sur le navigateur afin d’effectuer une prise de décision en mémoire sans bloquer la requête réseau à l’Edge Network [!DNL Adobe Target].
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ Le SDK JS [!DNL Adobe Target] offre aux clients et aux clientes la possibilité 
 * Ciblage des audiences
 * Méthode d&#39;allocation
 
-Pour plus d’informations, voir [Fonctionnalités prises en charge pour la prise de décision [!UICONTROL  sur l’appareil]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md).
+Pour plus d’informations, voir [Fonctionnalités prises en charge pour la prise de décision [!UICONTROL &#x200B; sur l’appareil]](/help/dev/implement/client-side/atjs/on-device-decisioning/supported-features.md).
 
 ## Comment fonctionne la [!UICONTROL prise de décision sur l’appareil] ?
 

@@ -51,7 +51,7 @@ Voir aussi [Supprimer le [!DNL Target] cookie](cookie-deleting.md).
 
 ## Quand utiliser des cookies propriétaires ou tiers ?
 
-La configuration de votre site détermine le type de cookies que vous allez utiliser. Il est utile de comprendre comment fonctionne [!DNL Target] lorsque vous essayez de comprendre les cookies propriétaires et tiers. Pour plus d’informations [!DNL Adobe] [!DNL Target] consultez la section [ Fonctionnement ](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html) .
+La configuration de votre site détermine le type de cookies que vous allez utiliser. Il est utile de comprendre comment fonctionne [!DNL Target] lorsque vous essayez de comprendre les cookies propriétaires et tiers. Pour plus d’informations [!DNL Adobe] [!DNL Target] consultez la section [&#x200B; Fonctionnement &#x200B;](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html) .
 
 Il existe trois principaux cas d’utilisation des cookies :
 

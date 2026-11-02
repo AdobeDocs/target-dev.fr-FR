@@ -35,7 +35,7 @@ Comparez l’[!UICONTROL API de mise à jour de profil en bloc] à l’[[!DNL Ad
 Cette option est similaire aux [[!UICONTROL attributs du client]](/help/dev/before-implement/methods-to-get-data-into-target/customer-attributes.md) avec quelques différences :
 
 * [!UICONTROL Attributs du client] utilisez un chargement FTP. L’API [!UICONTROL Target Bulk Profile Update] utilise une API HTTP POST.
-* [!UICONTROL Attributs du client] les données peuvent être partagées avec [!DNL Analytics]. La [!UICONTROL  Mise à jour de profil en bloc ] n’est utilisable que dans [!DNL Target].
+* [!UICONTROL Attributs du client] les données peuvent être partagées avec [!DNL Analytics]. La [!UICONTROL &#x200B; Mise à jour de profil en bloc &#x200B;] n’est utilisable que dans [!DNL Target].
 * [!UICONTROL Attributs du client] prise en charge de la création d’un profil pour un utilisateur [!DNL Target] n’a pas encore vu.
   * [!UICONTROL API de mise à jour de profil en masse] v2 : vous n’avez pas besoin de spécifier toutes les valeurs de paramètre pour chaque `pcId`. Les profils sont créés pour tout `pcId` ou `mbox3rdPartyId` introuvable dans [!DNL Target].
   * [!UICONTROL API de mise à jour de profil en masse] v1 : l’[!UICONTROL API de mise à jour de profil en masse] met uniquement à jour les profils [!DNL Target] existants. Si vous utilisez v1, les profils ne sont pas créés pour les `pcIds` ou les `mbox3rdPartyIds` manquants.

@@ -28,7 +28,7 @@ Liste des questions fréquentes sur [!DNL Target] pour les applications mobiles.
 
 ## Dois-je utiliser les balises dans [!DNL Adobe Experience Platform] pour déployer le SDK ou puis-je déployer le SDK sans utiliser Launch ?
 
-Le SDK est disponible sur le git [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud/acp-sdks/){target=_blank}. Si vous n’utilisez pas de balises [ dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr){target=_blank}, vous devez gérer votre propre fichier de paramètres et le gérer dans votre application.
+Le SDK est disponible sur le git [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud/acp-sdks/){target=_blank}. Si vous n’utilisez pas de balises [&#x200B; dans Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr){target=_blank}, vous devez gérer votre propre fichier de paramètres et le gérer dans votre application.
 
 ## Quels SDK sont disponibles aujourd’hui ?
 
@@ -36,7 +36,7 @@ Les SDK mobiles Adobe Experience Platform prennent actuellement en charge iOS, A
 
 ## Quelle est la fréquence de la fonction de localisation, en termes de vérification de la latitude et de la longitude ?
 
-Pour plus d’informations](https://experienceleague.adobe.com/docs/places/using/home.html){target=_blank} consultez la documentation sur Adobe Places [.
+Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/docs/places/using/home.html){target=_blank} consultez la documentation sur Adobe Places .
 
 ## Ai-je besoin d’at.js pour que les SDK mobiles Adobe Experience Platform fonctionnent ?
 

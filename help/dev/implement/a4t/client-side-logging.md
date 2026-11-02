@@ -556,4 +556,4 @@ alloy("configure", {
 
 ## Étapes suivantes {#next-steps}
 
-Ce guide couvre la journalisation côté client pour les données A4T dans le [!DNL Platform Web SDK] . Pour plus d’informations sur la gestion des données A4T sur ](/help/dev/implement/a4t/server-side-a4t.md) consultez le guide sur la [ journalisation côté serveur .
+Ce guide couvre la journalisation côté client pour les données A4T dans le [!DNL Platform Web SDK] . Pour plus d’informations sur la gestion des données A4T sur [&#128279;](/help/dev/implement/a4t/server-side-a4t.md) consultez le guide sur la  journalisation côté serveur .

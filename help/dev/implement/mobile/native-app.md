@@ -38,7 +38,7 @@ Dans le monde réel, votre application d’entreprise utilise probablement des v
 
 Pour commencer à utiliser le [!DNL Adobe Experience Platform Mobile SDK], vous devez effectuer certaines tâches préalables.
 
-Pour plus d’informations, voir [](https://developer.adobe.com/client-sdks/documentation/adobe-target/){target=_blank} dans la documentation [[!DNL Adobe Experience Platform Mobile SDK]](https://developer.adobe.com/client-sdks/documentation/){target=_blank}.
+Pour plus d’informations, voir [&#128279;](https://developer.adobe.com/client-sdks/documentation/adobe-target/){target=_blank} dans la documentation [[!DNL Adobe Experience Platform Mobile SDK]](https://developer.adobe.com/client-sdks/documentation/){target=_blank}.
 
 ## Synchroniser le code natif avec les vues web
 
@@ -74,7 +74,7 @@ https://vadymus.github.io/ateng/at-order-confirmation/index.html?a=1&b=2&adobe_m
 Comme vous pouvez le constater, `adobe_mc` paramètre est ajouté à l’URL. Ce paramètre contient les valeurs codées pour :
 
 * TS=1660667205 : date et heure actuelles. Cet horodatage garantit que l’affichage web ne reçoit pas de valeurs expirées.
-* MCMID=69624092487065093697422606480535692677 : [!UICONTROL  Experience Cloud ID ] (ECID). Également appelé MID ou [!UICONTROL Marketing Cloud ID] requis pour [!DNL Adobe] identification des visiteurs intersolutions.
+* MCMID=69624092487065093697422606480535692677 : [!UICONTROL &#x200B; Experience Cloud ID &#x200B;] (ECID). Également appelé MID ou [!UICONTROL Marketing Cloud ID] requis pour [!DNL Adobe] identification des visiteurs intersolutions.
 * MCORGID=EB9CAE8B56E003697F000101@AdobeOrg : [!UICONTROL ID d’organisation Adobe].
 
 L’`Identity.getUrlVariables` est une autre méthode de [!DNL Adobe Experience Platform Mobile SDK] qui renvoie une chaîne correctement formée contenant les variables d’URL [!DNL Experience Cloud Identity Service]. Pour plus d’informations, voir [getUrlVariables](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#geturlvariables){target=_blank} dans la référence de l’API *Identity*.
