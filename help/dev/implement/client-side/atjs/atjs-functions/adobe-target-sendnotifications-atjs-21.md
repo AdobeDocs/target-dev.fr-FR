@@ -1,27 +1,30 @@
 ---
 keywords: adobe.target.sendNotifications, sendNotifications, sendnotifications, send notifications, notifications, at.js, fonctions, fonction, $9
-description: Utilisez [!UICONTROL adobe.target.sendNotifications()] pour at.js afin d’envoyer des notifications à  [!DNL Target]  Edge lorsqu’une expérience est rendue sans utiliser [!UICONTROL applyOffer]​(s). (at.js.2.1 +)
+description: Utilisez [!UICONTROL adobe.target.sendNotifications()] pour at.js afin d’envoyer des notifications à [!DNL Target] Edge lorsqu’une expérience est rendue sans utiliser [!UICONTROL applyOffer] (s). (at.js.2.1 +)
 title: Comment utiliser la fonction adobe.target.sendNotifications() ?
 feature: at.js
 exl-id: 1a08da10-31a0-4b0b-af7d-91ed7d32c308
 TQID: https://experienceleague.adobe.com/QprkTK-0WGq-fzJ9e3FUSAZAandaZFiUY62-zQ6ajY8
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 642
+source-wordcount: '643'
 ht-degree: 83%
-
 ---
-
 # [!UICONTROL adobe.target.sendNotifications(options)]
 
 Cette fonction envoie une notification à [!DNL Target] Edge lorsqu’une expérience est rendue sans utiliser de `[!UICONTROL adobe.target.applyOffer()]` ou de `[!UICONTROL adobe.target.applyOffers()]`.
@@ -57,7 +60,7 @@ Cette fonction envoie une notification à [!DNL Target] Edge lorsqu’une expér
 | Request > notifications > impressionId | Chaîne | Non | `<= 128` caractères. | L’ID d’impression est utilisé pour associer (lier) la notification actuelle à une notification précédente ou à une demande d’exécution. Au cas où ces deux requêtes correspondent, la deuxième requête et les requêtes suivantes ne généreront pas de nouvelle impression pour l’activité ou l’expérience. |
 | Request > notifications > type | Chaîne | Oui | « click » ou « display » est pris en charge. | Type de notification. |
 | Request > notifications > timestamp | Nombre`<int64>` | Oui |  | Horodatage de la notification en millisecondes écoulées depuis l’époque UNIX considérée. |
-| Request > notifications > tokens | Tableau de chaîne | Oui |  | Liste des jetons pour le contenu affiché ou les sélecteurs cliqués, en fonction du type de notification. |
+| Demande > notifications > jetons | Tableau de chaîne | Oui |  | Liste des jetons pour le contenu affiché ou les sélecteurs cliqués, en fonction du type de notification. |
 | Request > notifications > mbox | Objet | Non |  | Notifications pour la mbox. |
 | Request > notifications > mbox > name | Chaîne | Non | Aucune valeur vide n’est autorisée.<p>Graphiques autorisés : voir la remarque suivant ce tableau. | nom de mbox. |
 | Request > notifications > mbox > state | Chaîne | Non |  | jeton d’état de mbox. |

@@ -1,28 +1,32 @@
 ---
 keywords: adobe.target.applyOffers, applyOffers, applyoffers, apply offres, at.js, functions, function,
-description: Utilisez la fonction [!UICONTROL adobe.target.applyOffers()] pour que la bibliothèque JavaScript at [!DNL Adobe Target] js applique plusieurs offres dans la réponse. (at.js 2.x)
+description: Utilisez la fonction [!UICONTROL adobe.target.applyOffers()] pour que la bibliothèque JavaScript at.js [!DNL Adobe Target] applique plusieurs offres dans la réponse. (at.js 2.x)
 title: Comment utiliser la fonction [!UICONTROL adobe.target.applyOffers()] ?
 feature: at.js
 exl-id: c391e3f4-fdf1-4e33-8dcb-6bf46e390538
 TQID: https://experienceleague.adobe.com/9WIJvPZIlrtLkv-vv-HRkctgwHn3nX-jrE4-4usXW0Y
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 825
+source-wordcount: '826'
 ht-degree: 78%
-
 ---
-
 # [!UICONTROL adobe.target.applyOffers(options)] - at.js 2.x
 
 Cette fonction vous permet d’appliquer plusieurs offres récupérées par `adobe.target.getOffers()`.

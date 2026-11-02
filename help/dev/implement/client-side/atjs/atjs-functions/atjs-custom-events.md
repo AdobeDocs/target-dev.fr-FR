@@ -1,28 +1,32 @@
 ---
 keywords: événements personnalisés, at.js, échec de la requête, succès de la requête, échec du rendu du contenu, succès du rendu du contenu, bibliothèque chargée, début de la requête, début du rendu du contenu, aucune offre de rendu du contenu, redirection du rendu du contenu, événements personnalisés2
-description: Utilisez des événements personnalisés pour que la bibliothèque JavaScript at [!DNL Adobe Target] js soit avertie en cas d’échec ou de succès d’une requête ou d’une offre de mbox.
+description: Utilisez des événements personnalisés pour que la bibliothèque JavaScript at.js [!DNL Adobe Target] soit avertie en cas d’échec ou de succès d’une requête ou d’une offre de mbox.
 title: Comment utiliser les événements personnalisés at.js ?
 feature: at.js
 exl-id: a4baed9a-9eb8-4343-9834-709b03e44ca2
 TQID: https://experienceleague.adobe.com/gCjLJ-XBlMe-GE-gaTJ2wHkn1jmal6Ftbs1GDb0zURA
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+    internal-label: Measurement
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 661
+source-wordcount: '662'
 ht-degree: 70%
-
 ---
-
 # événements personnalisés at.js
 
 Informations sur `at.js custom events`, qui permet de savoir quand une requête ou une offre mbox échoue ou réussit.

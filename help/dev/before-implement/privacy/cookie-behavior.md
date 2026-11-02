@@ -1,40 +1,49 @@
 ---
 keywords: Présentation et référence, webkit, cookies, propriétaires, tiers, propriétaires, tiers, tiers,
-description: Découvrez le comportement  [!DNL Target]  cookies (cookie propriétaire, cookie tiers avec cookie propriétaire ou cookie tiers seul).
-title: Où Puis-Je Trouver Des Informations Sur Les Cookies  [!DNL Target]  ?
+description: Découvrez le comportement des cookies [!DNL Target] (cookie propriétaire, cookie tiers avec cookie propriétaire ou cookie tiers seul).
+title: Où Puis-Je Trouver Des Informations Sur Les Cookies [!DNL Target] ?
 feature: at.js
 exl-id: d44e02ce-8920-4130-bcad-699ca77c0dad
 TQID: https://experienceleague.adobe.com/Uc9Gb06t9DIkvBvLQJ9ZhopE8pyJovjyrQdsUmFD9-o
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1692
+source-wordcount: '1694'
 ht-degree: 49%
-
 ---
-
 # [!DNL Target] des cookies
 
 Le comportement des cookies varie selon qu’il s’agit d’un cookie propriétaire, d’un cookie tiers avec un cookie propriétaire ou d’un cookie tiers seul.
 
 >[!NOTE]
 >
->Pour plus d’informations sur les différents cookies utilisés par [!DNL Target], voir [[!DNL Adobe Target] cookies](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-target.html?lang=fr){target=_blank} dans le *Guide des composants de l’interface centrale d’Experience Cloud*.
+>Pour plus d’informations sur les différents cookies utilisés par [!DNL Target], voir [[!DNL Adobe Target] cookies](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-target.html?lang=fr){target=_blank} dans le Guide des composants de l’interface centrale d’*Experience Cloud*.
 >
 >Cette rubrique contient des informations sur `mboxSession` et `mboxPC`. Les bonnes pratiques d’implémentation recommandent de ne pas lier ni stocker d’informations sensibles avec les données de cookie : `mboxSession` ou `mboxPC`.
 

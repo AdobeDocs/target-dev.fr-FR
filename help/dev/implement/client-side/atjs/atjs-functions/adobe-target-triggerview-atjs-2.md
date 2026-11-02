@@ -1,27 +1,30 @@
 ---
 keywords: adobe.target.triggerView, triggerView, trigger view, trigger view, at.js, functions, function, viewName, viewname, nom de la vue, adobe.target.triggerView1
-description: Utilisez la fonction adobe.target.triggerView() pour la bibliothèque JavaScript at [!DNL Adobe Target] js à utiliser dans les applications d’une seule page (SPA). (at.js 2.x)
+description: Utilisez la fonction adobe.target.triggerView() pour la bibliothèque JavaScript at.js [!DNL Adobe Target] à utiliser dans les applications d’une seule page (SPA). (at.js 2.x)
 title: Comment utiliser la fonction adobe.target.triggerView() ?
 feature: at.js
 exl-id: d6130c56-4e77-4668-ad21-a5b335f8b234
 TQID: https://experienceleague.adobe.com/pBC1GRKG0mxeaZ1hfaByKv2tu-XScrSJfm7lUw-3yKw
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 446
+source-wordcount: '447'
 ht-degree: 19%
-
 ---
-
 # adobe.target.triggerView (viewName, options) - at.js 2.x
 
 Cette fonction peut être appelée à chaque chargement d’une nouvelle page ou lorsqu’un composant fait l’objet d’un nouveau rendu sur une page. `adobe.target.triggerView()` doit être implémenté pour que les applications monopages (SPA) utilisent le [!UICONTROL compositeur d’expérience visuelle] (VEC) afin de créer des activités [!UICONTROL test A/B] et [!UICONTROL ciblage d’expérience] (XT). Si `[!UICONTROL adobe.target.triggerView()]` n’est pas implémenté sur le site, le compositeur d’expérience visuelle ne peut pas être utilisé pour les SPA. Pour plus d’informations, voir [Implémentation d’application monopage](/help/dev/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application.md).
