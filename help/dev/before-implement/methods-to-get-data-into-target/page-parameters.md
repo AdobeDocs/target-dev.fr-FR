@@ -1,26 +1,29 @@
 ---
 keywords: implémentation, implémentation, configuration, configuration, paramètres de page
-description: Transférez des données dans à l [!DNL Target] aide des paramètres de page.
-title: Comment puis-je importer des données dans à l [!DNL Target] aide des paramètres de page ?
+description: Insérez des données dans [!DNL Target] à l’aide des paramètres de page.
+title: Comment puis-je importer des données dans [!DNL Target] à l’aide des paramètres de page ?
 feature: Implementation
 exl-id: 9bb7157e-a938-4150-8a15-c9bf0a0e2296
 TQID: https://experienceleague.adobe.com/CYhZOFnli-DmREOOZGE2aGNn3x7BJ7uwGA2vfwUSnOk
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: f6df325aff4a2eb9321b86778d102737493e63bb
 workflow-type: tm+mt
-source-wordcount: 397
+source-wordcount: '399'
 ht-degree: 31%
-
 ---
-
 # Paramètres de page
 
 Les paramètres de page (également appelés « paramètres de mbox ») sont des paires nom/valeur transmises directement par le biais du code de page, qui ne sont pas stockées dans le profil du visiteur pour une utilisation ultérieure.
@@ -58,7 +61,7 @@ Les données sont envoyées à [!DNL Target] en temps réel et peuvent être uti
 
   `< > # % " { } | \ ^ [ ] `
 
-  Le reste doit être encodé en URL. La norme spécifie le format suivant ( [&#128279;](https://www.ietf.org/rfc/rfc1738.txt) ), comme illustré ci-dessous :
+  Le reste doit être encodé en URL. La norme spécifie le format suivant ( [](https://www.ietf.org/rfc/rfc1738.txt) ), comme illustré ci-dessous :
 
   ![image alternative](assets/ietf1.png)
 
@@ -78,8 +81,8 @@ targetPageParams (ajoute les paramètres à la mbox globale sur la page) :
 
 ## Liens vers des informations pertinentes
 
-Recommandations : [implémentation selon le type de page](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=fr)
+Recommandations : [implémentation selon le type de page](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html)
 
 Confirmation de commande : [suivi des conversions](../../implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions)
 
-Affinité catégorielle : [affinité catégorielle](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=fr)
+Affinité catégorielle : [affinité catégorielle](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html)

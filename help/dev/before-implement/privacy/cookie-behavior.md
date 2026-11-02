@@ -1,40 +1,49 @@
 ---
 keywords: Présentation et référence, webkit, cookies, propriétaires, tiers, propriétaires, tiers, tiers,
-description: Découvrez le comportement  [!DNL Target]  cookies (cookie propriétaire, cookie tiers avec cookie propriétaire ou cookie tiers seul).
-title: Où Puis-Je Trouver Des Informations Sur Les Cookies  [!DNL Target]  ?
+description: Découvrez le comportement des cookies [!DNL Target] (cookie propriétaire, cookie tiers avec cookie propriétaire ou cookie tiers seul).
+title: Où Puis-Je Trouver Des Informations Sur Les Cookies [!DNL Target] ?
 feature: at.js
 exl-id: d44e02ce-8920-4130-bcad-699ca77c0dad
 TQID: https://experienceleague.adobe.com/Uc9Gb06t9DIkvBvLQJ9ZhopE8pyJovjyrQdsUmFD9-o
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+    internal-label: Machine learning
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 1692
+source-wordcount: '1694'
 ht-degree: 49%
-
 ---
-
 # [!DNL Target] des cookies
 
 Le comportement des cookies varie selon qu’il s’agit d’un cookie propriétaire, d’un cookie tiers avec un cookie propriétaire ou d’un cookie tiers seul.
 
 >[!NOTE]
 >
->Pour plus d’informations sur les différents cookies utilisés par [!DNL Target], voir [[!DNL Adobe Target] cookies](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-target.html?lang=fr){target=_blank} dans le *Guide des composants de l’interface centrale d’Experience Cloud*.
+>Pour plus d’informations sur les différents cookies utilisés par [!DNL Target], voir [[!DNL Adobe Target] cookies](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-target.html?lang=fr){target=_blank} dans le Guide des composants de l’interface centrale d’*Experience Cloud*.
 >
 >Cette rubrique contient des informations sur `mboxSession` et `mboxPC`. Les bonnes pratiques d’implémentation recommandent de ne pas lier ni stocker d’informations sensibles avec les données de cookie : `mboxSession` ou `mboxPC`.
 
@@ -42,7 +51,7 @@ Voir aussi [Supprimer le [!DNL Target] cookie](cookie-deleting.md).
 
 ## Quand utiliser des cookies propriétaires ou tiers ?
 
-La configuration de votre site détermine le type de cookies que vous allez utiliser. Il est utile de comprendre comment fonctionne [!DNL Target] lorsque vous essayez de comprendre les cookies propriétaires et tiers. Pour plus d’informations [!DNL Adobe] [!DNL Target] consultez la section [&#x200B; Fonctionnement &#x200B;](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html?lang=fr) .
+La configuration de votre site détermine le type de cookies que vous allez utiliser. Il est utile de comprendre comment fonctionne [!DNL Target] lorsque vous essayez de comprendre les cookies propriétaires et tiers. Pour plus d’informations [!DNL Adobe] [!DNL Target] consultez la section [ Fonctionnement ](https://experienceleague.adobe.com/docs/target/using/introduction/how-target-works.html) .
 
 Il existe trois principaux cas d’utilisation des cookies :
 
@@ -157,4 +166,4 @@ Extrait d’Apple :
 | Fonctionnalités affectées | Détails |
 |--- |--- |
 | Prise en charge de l’exclusion | La fonction de suivi du WebKit d’Apple modifie la prise en charge de l’exclusion.<br />La fonction d’exclusion de Target utilise un cookie dans le domaine `clientcode.tt.omtrdc.net`. Pour plus d’informations, voir [Confidentialité](privacy.md).<br />Target prend en charge deux désinscriptions :<ul><li>une par client (le client gère le lien d’exclusion) ;</li><li>Un via [!DNL Adobe] qui exclut l’utilisateur de toutes les fonctionnalités [!DNL Target] pour tous les clients.</li></ul>Ces deux méthodes utilisent le cookie tiers. |
-| Activités Target | Les clients peuvent choisir leur [durée de vie du profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=fr) pour leurs comptes [!DNL Target] (jusqu’à 90 jours). Le problème est que si la durée de vie du profil du compte est supérieure à 30 jours et que le cookie propriétaire est purgé, car le domaine du client a été marqué comme effectuant le suivi des utilisateurs sur plusieurs sites, le comportement des visiteurs Safari est affecté dans les zones suivantes des rapports Target:<br />**Target** : si un utilisateur Safari entre dans une activité, la revient après 30 jours, puis effectue une conversion, cet utilisateur compte comme deux visiteurs et une conversion.<br />Ce comportement est identique pour les activités utilisant Analytics comme source de création de rapports (A4T).<br />**Profil et appartenance à une activité** :<ul><li>Les données du profil sont effacées lorsque le cookie propriétaire expire.</li><li>L’appartenance à une activité est effacée lorsque le cookie propriétaire expire.</li><li> [!DNL Target] ne fonctionne pas dans Safari pour les comptes utilisant une implémentation de cookies tiers ou une implémentation de cookies propriétaires et tiers. Ce comportement n’est pas neuf. Safari n’autorise pas les cookies tiers depuis un certain temps.</li></ul><br />**Suggestions** : si vous craignez que le domaine client ne soit marqué comme un seul domaine de suivi des visiteurs sur plusieurs sessions, il est préférable de définir la durée de vie du profil sur 30 jours ou moins dans Target. Cette limite garantit que les utilisateurs sont suivis de la même manière dans Safari et tous les autres navigateurs. |
+| Activités Target | Les clients peuvent choisir leur [durée de vie du profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html) pour leurs comptes [!DNL Target] (jusqu’à 90 jours). Le problème est que si la durée de vie du profil du compte est supérieure à 30 jours et que le cookie propriétaire est purgé, car le domaine du client a été marqué comme effectuant le suivi des utilisateurs sur plusieurs sites, le comportement des visiteurs Safari est affecté dans les zones suivantes des rapports Target:<br />**Target** : si un utilisateur Safari entre dans une activité, la revient après 30 jours, puis effectue une conversion, cet utilisateur compte comme deux visiteurs et une conversion.<br />Ce comportement est identique pour les activités utilisant Analytics comme source de création de rapports (A4T).<br />**Profil et appartenance à une activité** :<ul><li>Les données du profil sont effacées lorsque le cookie propriétaire expire.</li><li>L’appartenance à une activité est effacée lorsque le cookie propriétaire expire.</li><li> [!DNL Target] ne fonctionne pas dans Safari pour les comptes utilisant une implémentation de cookies tiers ou une implémentation de cookies propriétaires et tiers. Ce comportement n’est pas neuf. Safari n’autorise pas les cookies tiers depuis un certain temps.</li></ul><br />**Suggestions** : si vous craignez que le domaine client ne soit marqué comme un seul domaine de suivi des visiteurs sur plusieurs sessions, il est préférable de définir la durée de vie du profil sur 30 jours ou moins dans Target. Cette limite garantit que les utilisateurs sont suivis de la même manière dans Safari et tous les autres navigateurs. |

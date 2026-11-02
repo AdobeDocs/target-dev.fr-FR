@@ -1,35 +1,46 @@
 ---
 keywords: versions d’at.js, versions d’at.js, application monopage, spa, interdomaines, interdomaines
-description: Découvrez comment mettre à niveau at [!DNL Adobe Target] js 1.x vers at.js 2.x. Consultez les diagrammes de flux système, découvrez les nouvelles fonctions et les fonctions obsolètes, etc.
+description: Découvrez comment effectuer une mise à niveau d’[!DNL Adobe Target] at.js 1.x vers at.js 2.x. Consultez les diagrammes de flux système, découvrez les nouvelles fonctions et les fonctions obsolètes, etc.
 title: Comment effectuer une mise à niveau d’at.js version 1.x vers la version 2.x ?
 feature: at.js
 exl-id: fbfa5743-0fa5-44c6-89b3-fdee9b50e126
 TQID: https://experienceleague.adobe.com/JGsuogzhCvThr4QGHJ5g4d8ZqGVZ8ClAf7hXuoh7X0Q
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
   - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+    internal-label: Integrations
 subfeature_v2:
   - id: df62f171-ac37-440f-8f0f-f41a72ebdd34
+    internal-label: Analytics integration
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 4d0e7f9f2887db71229061fa64b2633a84c6d054
 workflow-type: tm+mt
-source-wordcount: 3100
+source-wordcount: '3101'
 ht-degree: 47%
-
 ---
-
 # Mettre à niveau at.js 1.*x* vers at.js 2.*x*
 
 La dernière version d’at.js [!DNL Adobe Target] propose des ensembles de fonctionnalités riches qui permettent à votre entreprise d’exécuter la personnalisation sur les technologies de nouvelle génération côté client. Cette nouvelle version vise à mettre à niveau at.js afin d’établir des interactions harmonieuses avec les applications monopages (SPA).
@@ -84,7 +95,7 @@ Déployez at.js 2.*x* via les balises dans l’extension [Adobe Experience Platf
 >
 >Ou
 >
->Téléchargez at.js 2.*x* manuellement à l’aide de l’interface utilisateur [!DNL Target] et déployez-le à l’aide de la méthode [&#x200B; de votre choix](/help/dev/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
+>Téléchargez at.js 2.*x* manuellement à l’aide de l’interface utilisateur [!DNL Target] et déployez-le à l’aide de la méthode [ de votre choix](/help/dev/implement/client-side/atjs/how-to-deployatjs/how-to-deployatjs.md).
 
 ## Fonctions d’at.js obsolètes
 
@@ -336,7 +347,7 @@ Les clients peuvent spécifier un nom de mbox global via **[!UICONTROL Target]**
 
 Oui, les événements personnalisés at.js s’appliquent à `triggerView()` également.
 
-### Elle indique que lorsque j’appelle `triggerView()` avec &lbrace;`"page" : "true"`&rbrace;, une notification est envoyée au serveur principal [!DNL Target] et l’impression est augmentée. Cela entraîne-t-il également l’exécution des scripts de profil ?
+### Elle indique que lorsque j’appelle `triggerView()` avec &amp;lbrace;`"page" : "true"`&amp;rbrace;, une notification est envoyée au serveur principal [!DNL Target] et l’impression est augmentée. Cela entraîne-t-il également l’exécution des scripts de profil ?
 
 Lorsqu’un appel de pré-récupération est effectué au [!DNL Target] principal, les scripts de profil sont exécutés. Ensuite, les données de profil impactées seront chiffrées et retransmises côté client. Après l’appel de `triggerView()` avec `{"page": "true"}`, une notification est envoyée avec les données de profil chiffrées. C’est alors que l’arrière-plan [!DNL Target] déchiffrera les données de profil et les stockera dans les bases de données.
 
@@ -390,7 +401,7 @@ Les tableaux suivants décrivent at.js. compatibilité 2.*x* avec différents ty
 | Audiences | Oui |
 | Attributs du client | Oui |
 | Fragments d’expérience AEM | Oui |
-| [Extension &#x200B;](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) | Oui |
+| [Extension ](/help/dev/implement/client-side/atjs/how-to-deployatjs/implement-target-using-adobe-launch.md) | Oui |
 | Débogueur | Oui |
 | Auditeur | Les règles n’ont pas encore été mises à jour pour at.js 2.*x* |
 | Prise en charge de l’Opt-in pour le [RGPD](/help/dev/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.md) | Cette fonctionnalité est prise en charge dans [at.js version 2.1.0](/help/dev/implement/client-side/atjs/target-atjs-versions.md#atjs-version-210-june-3-2019) ou ultérieure. |
@@ -424,7 +435,7 @@ Les tableaux suivants décrivent at.js. compatibilité 2.*x* avec différents ty
 
 ## Jetons de réponse
 
-at.js 2.*x*, tout comme at.js 1.*x*, utilise le `at-request-succeeded` d’événement personnalisé pour faire apparaître les jetons de réponse. Pour des exemples de code utilisant l’événement `at-request-succeeded` personnalisé, voir [Jetons réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=fr).
+at.js 2.*x*, tout comme at.js 1.*x*, utilise le `at-request-succeeded` d’événement personnalisé pour faire apparaître les jetons de réponse. Pour des exemples de code utilisant l’événement `at-request-succeeded` personnalisé, voir [Jetons réponse](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html).
 
 ## Paramètres at.js 1.*x* pour le mappage de la payload vers at.js 2.*x*
 
@@ -791,4 +802,4 @@ at.js 2.*x* améliore la prise en charge des SPA par Adobe [!DNL Target] et s’
 
 >[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
 
-Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=fr) voir  Fonctionnement d’at.js 2.*x* .
+Pour plus d’informations](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html) voir [ Fonctionnement d’at.js 2.*x* .

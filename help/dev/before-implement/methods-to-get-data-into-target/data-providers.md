@@ -1,29 +1,34 @@
 ---
 keywords: implémentation, implémentation, configuration, fournisseurs de données
-description: Transférez des données dans à l [!DNL Target] aide des fournisseurs de données.
-title: Comment puis-je intégrer des données dans  [!DNL Target]  à l’aide des fournisseurs de données ?
+description: Intégrez des données dans [!DNL Target] à l’aide des fournisseurs de données.
+title: Comment puis-je importer des données dans [!DNL Target] à l’aide des fournisseurs de données ?
 feature: Implementation
 exl-id: 9971bd96-f736-4965-afe2-b4901c12d006
 TQID: https://experienceleague.adobe.com/e8uMaGcACjHiaIT4WSlbKry82mhLHUDTSKmCuuhoWgw
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
   - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+    internal-label: Integrations
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 314
+source-wordcount: '316'
 ht-degree: 50%
-
 ---
-
 # Fournisseurs de données
 
 Les fournisseurs de données sont une fonctionnalité qui vous permet de transmettre facilement des données de tiers à [!DNL Adobe Target].
@@ -66,5 +71,5 @@ Documentation : [Fournisseurs de données](../../implement/client-side/atjs/atj
 
 ## Vidéos de formation :
 
-* [Utilisation des fournisseurs de données dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=fr)
-* [Implémenter les fournisseurs de données dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html?lang=fr)
+* [Utilisation des fournisseurs de données dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)
+* [Implémenter les fournisseurs de données dans Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)

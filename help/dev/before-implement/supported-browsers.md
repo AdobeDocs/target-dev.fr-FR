@@ -1,28 +1,32 @@
 ---
 keywords: Navigateurs, Conditions préalables, Conditions requises, Internet Explorer, chrome, firefox, safari, android, surface, Navigateurs0
-description: Découvrez les navigateurs Internet pris  [!DNL Adobe Target]  charge pour son interface et pour la diffusion de contenu.
-title: Quels Navigateurs Est [!DNL Target] Il Pris En Charge ?
+description: Découvrez les navigateurs Internet que [!DNL Adobe Target] prend en charge pour son interface et pour la diffusion de contenu.
+title: Quels Navigateurs [!DNL Target] Prend-Il En Charge ?
 feature: Implementation
 exl-id: 1d778e14-26b0-477b-ac28-d304db70a133
 TQID: https://experienceleague.adobe.com/xYilaZkJzo4zLIJ4uvIxkuRkhl5E1D52OFmf1eZNtDs
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 443
+source-wordcount: '445'
 ht-degree: 19%
-
 ---
-
 # Navigateurs pris en charge
 
 L’application [!DNL Adobe Target] et la diffusion de contenu ont été testées sur un large éventail de navigateurs et d’appareils.
@@ -45,7 +49,7 @@ L’interface [!DNL Target] prend en charge les navigateurs et appareils suivant
 
 ## Exigences en matière d’édition visuelle
 
-Pour pouvoir ouvrir, créer et prévisualiser vos pages web de manière fiable dans le [!UICONTROL compositeur d’expérience visuelle] (VEC), vous devez disposer de l’extension de navigateur [Visual Editing Helper d’Adobe Experience Cloud](https://experienceleague.adobe.com/fr/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} installée sur votre navigateur web ou utiliser le [!UICONTROL compositeur d’expérience amélioré (EEC)].
+Pour pouvoir ouvrir, créer et prévisualiser vos pages web de manière fiable dans le [!UICONTROL compositeur d’expérience visuelle] (VEC), vous devez disposer de l’extension de navigateur [Visual Editing Helper d’Adobe Experience Cloud](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension){target=_blank} installée sur votre navigateur web ou utiliser le [!UICONTROL compositeur d’expérience amélioré (EEC)].
 
 >[!NOTE]
 >

@@ -1,26 +1,29 @@
 ---
 keywords: implémentation, implémentation, configuration, paramètre de page, tomcat, url encodée, attribut de profil sur la page, paramètre mbox, attributs de profil sur la page, attribut de profil de script, API de mise à jour de profil en masse, API de mise à jour de fichier unique, attributs du client, implementation5, implementation6, implementation7, implementation8, implementation9, implementation0, implementation1, implementation2, implementation3, implementation4, implementation5, fournisseurs de données, fournisseur de données, fournisseur de données
-description: Obtention de données dans  [!DNL Target] (paramètres de page, attributs de profil, attributs de profil de script, fournisseurs de données, API de mise à jour de profil en bloc et unique, attributs du client).
+description: Obtenir des données dans des [!DNL Target] (paramètres de page, attributs de profil, attributs de profil de script, fournisseurs de données, API de mise à jour de profil en bloc et unique, attributs du client).
 title: Comment puis-je importer des données dans Target ?
 feature: Implementation
 exl-id: a54e306a-ea8e-4d3f-bc5d-b5895b6b9a84
 TQID: https://experienceleague.adobe.com/pmlPWRHb9tnrdSFm7s5OZ-RRsJJOxw-ntBY5AeswIcM
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+    internal-label: Privacy
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 377
+source-wordcount: '377'
 ht-degree: 27%
-
 ---
-
 # Présentation des méthodes
 
 Informations sur les différentes méthodes que vous pouvez utiliser pour importer des données dans Adobe Target.

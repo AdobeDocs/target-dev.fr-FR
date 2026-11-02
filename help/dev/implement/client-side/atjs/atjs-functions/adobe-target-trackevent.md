@@ -1,32 +1,35 @@
 ---
 keywords: adobe.target.trackEvent, trackEvent, trackevent, track event, at.js, fonctions, fonction, preventionDefault, preventiondefault, empêcher le défaut, adobe.target.trackEvent
-description: Utilisez la fonction [!UICONTROL adobe.target.trackEvent()] de la bibliothèque JavaScript at [!DNL Adobe Target] js pour déclencher une requête afin de signaler les actions des utilisateurs et utilisatrices, telles que les clics et les conversions sur votre site.
+description: Utilisez la fonction [!UICONTROL adobe.target.trackEvent()] de la bibliothèque JavaScript at.js [!DNL Adobe Target] pour déclencher une requête afin de signaler les actions des utilisateurs et utilisatrices, telles que les clics et les conversions sur votre site.
 title: Comment utiliser la fonction [!UICONTROL adobe.target.trackEvent()] ?
 feature: at.js
 exl-id: 9a55e4f1-d7f9-47c1-867c-2ce06fb26f9f
 TQID: https://experienceleague.adobe.com/Jib9C5FvmsgIF6CA-0UbdMdnMiXxQCkU2-O3Zys3vrY
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: fd0ff162-b6d3-4a11-8aeb-e165a01c0f0a
+    internal-label: at.js
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
 source-git-commit: a1af9d2c909d9b3d506dd4875d1bd75149dbf636
 workflow-type: tm+mt
-source-wordcount: 336
+source-wordcount: '337'
 ht-degree: 56%
-
 ---
-
 # [!UICONTROL adobe.target.trackEvent(options)]
 
 Cette fonction déclenche une demande pour signaler les actions de l’utilisateur, telles que les clics et les conversions. Elle ne déclenche pas la diffusion d’activités dans le cadre de la réponse.
 
-Ces appels de mbox de suivi d’événement peuvent servir à définir des mesures dans les activités. Pour plus d’informations, voir [Mesures de succès](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr) et [Suivi des conversions](../how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions).
+Ces appels de mbox de suivi d’événement peuvent servir à définir des mesures dans les activités. Pour plus d’informations, voir [Mesures de succès](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) et [Suivi des conversions](../how-to-deployatjs/implement-target-without-a-tag-manager.md#track-conversions).
 
 Voici les détails de l’API :
 

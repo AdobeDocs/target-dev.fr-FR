@@ -1,27 +1,31 @@
 ---
 keywords: implémentation, implémentation, configuration, configuration, paramètre de page
-description: Transformez les données en  [!DNL Target]  à l’aide des attributs de profil sur la page.
-title: Comment puis-je importer des données dans à l [!DNL Target] aide des attributs de profil sur la page ?
+description: Intégrez des données dans [!DNL Target] à l’aide des attributs de profil sur la page.
+title: Comment puis-je importer des données dans [!DNL Target] à l’aide des attributs de profil sur la page ?
 feature: Implementation
 exl-id: c19fd746-21a2-4eb5-8c2a-c24806e09324
 TQID: https://experienceleague.adobe.com/jXWNNl7HfrR03tEoMz7KApX3onc1Zc44IAuXy4QF2tU
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: adee20bd-51f4-461d-b9db-d215f8756eeb
+    internal-label: Audiences
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+    internal-label: Personalization
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 311
+source-wordcount: '313'
 ht-degree: 40%
-
 ---
-
 # Attributs de profil sur la page
 
 Les attributs de profil sur la page dans [!DNL Adobe Target] (également appelés « attributs de profil sur la mbox ») sont des paires nom/valeur transmises directement par le biais du code de page qui sont stockées dans le profil du visiteur pour une utilisation ultérieure.
@@ -71,6 +75,6 @@ Attributs dans le code mboxCreate :
 
 ## Liens vers des informations pertinentes
 
-[Attributs de profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html?lang=fr)
+[Attributs de profil](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html)
 
-[Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html?lang=fr)
+[Profil du visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/visitor-profile.html)

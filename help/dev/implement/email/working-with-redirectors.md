@@ -1,29 +1,34 @@
 ---
 keywords: Mise en œuvre, mbox.js sans JavaScript, redirecteur, coûts par clic, recettes par clic
-description: Découvrez comment utiliser les redirecteurs dans les implémentations d’e-mail, de la même manière que vous utilisez une mbox dans vos  [!DNL Adobe Target] .
+description: Découvrez comment utiliser les redirecteurs dans les implémentations d’e-mail, de la même manière que vous utilisez une mbox dans vos activités [!DNL Adobe Target].
 title: Comment puis-je travailler avec un redirecteur ?
 feature: Implement Email
 exl-id: 072368ff-9f17-4709-ac2d-c9e1f0d888bb
 TQID: https://experienceleague.adobe.com/3SUsZl1y9tk97sWgdB3iB7wrAXNb2LfN3hObJM14caE
 product_v2:
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
 feature_v2:
   - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+    internal-label: Implementation
 subfeature_v2:
   - id: c94a34eb-b51c-4dd1-a6a4-46b0d84ccccd
+    internal-label: Implement email
 role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+    internal-label: Administration
 source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
 workflow-type: tm+mt
-source-wordcount: 697
+source-wordcount: '698'
 ht-degree: 62%
-
 ---
-
 # Fonctionnement avec un redirecteur
 
 L’utilisation d’un redirecteur s’apparente à celle d’une mbox dans vos tests.
@@ -69,13 +74,13 @@ Pour pouvoir utiliser un redirecteur, vous devez le créer.
 
    >[!WARNING]
    >
-   >Notez qu’avec Redirector, vous pouvez être exposé à un risque de vulnérabilité de redirection ouverte. Pour éviter l’utilisation non autorisée de liens de redirection par des tiers, Adobe recommande d’utiliser des « hôtes autorisés » pour placer sur la liste autorisée les domaines d’URL de redirection par défaut. [!DNL Target] utilise des hôtes pour placer sur la liste autorisée les domaines vers lesquels vous souhaitez autoriser les redirections. Pour plus d’informations, consultez [Création de Listes autorisées qui spécifient les hôtes autorisés à envoyer des appels de mbox à [!DNL Target]](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=fr#allowlist) dans *Hôtes*.
+   >Notez qu’avec Redirector, vous pouvez être exposé à un risque de vulnérabilité de redirection ouverte. Pour éviter l’utilisation non autorisée de liens de redirection par des tiers, Adobe recommande d’utiliser des « hôtes autorisés » pour placer sur la liste autorisée les domaines d’URL de redirection par défaut. [!DNL Target] utilise des hôtes pour placer sur la liste autorisée les domaines vers lesquels vous souhaitez autoriser les redirections. Pour plus d’informations, consultez [Création de Listes autorisées qui spécifient les hôtes autorisés à envoyer des appels de mbox à [!DNL Target]](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html#allowlist) dans *Hôtes*.
 
 1. Validez le redirecteur.
    1. *Bonne pratique en matière de sécurité* : assurez-vous que le domaine utilisé dans le redirecteur est bien placé sur la liste autorisée, comme indiqué ci-dessus. Si vous utilisez un domaine qui n’est pas placé sur la liste autorisée, Adobe bloquera tous les appels vers ce domaine afin d’empêcher des acteurs malveillants d’utiliser le redirecteur pour rediriger vers des domaines potentiellement malveillants.
    2. Insérez l’URL du redirecteur dans un navigateur et procédez à l’actualisation.
    3. Connectez-vous à votre compte, actualisez votre liste de mbox et vérifiez que le nouveau redirecteur est répertorié en tant que mbox.
-1. Si vous testez différentes destinations pour une même publicité, créez des [offres de redirection](https://experienceleague.adobe.com/docs/target/using/experiences/vec/redirect-offer.html?lang=fr) pour chaque version.
+1. Si vous testez différentes destinations pour une même publicité, créez des [offres de redirection](https://experienceleague.adobe.com/docs/target/using/experiences/vec/redirect-offer.html) pour chaque version.
 1. Créez la campagne.
 
    Consultez les [Implémentations non basées sur JavaScript](/help/dev/implement/email/overview.md) pour connaître la configuration appropriée permettant d’atteindre vos objectifs.
