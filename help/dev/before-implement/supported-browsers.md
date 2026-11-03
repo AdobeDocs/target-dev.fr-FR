@@ -22,9 +22,9 @@ topic_v2:
     internal-label: Implementation
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
     internal-label: Security
-source-git-commit: 07d73101a14b986fa9b016350c1ddeac0df4fdc2
+source-git-commit: 4d1a60ca866f126520e9a17257adc50114ddd8e7
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '452'
 ht-degree: 19%
 ---
 # Navigateurs pris en charge
@@ -45,7 +45,7 @@ L’interface [!DNL Target] prend en charge les navigateurs et appareils suivant
 | Type d&#39;appareil | Version du navigateur |
 |--- |--- |
 | [!DNL Windows] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li></ul> |
-| [!DNL Mac] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li></ul> |
+| [!DNL Mac] | <ul><li>[!DNL Microsoft Edge]</li><li>[!DNL Google Chrome]</li><li>[!DNL Mozilla Firefox]</li><li>[!DNL Safari]</li></ul> |
 
 ## Exigences en matière d’édition visuelle
 
@@ -53,7 +53,7 @@ Pour pouvoir ouvrir, créer et prévisualiser vos pages web de manière fiable d
 
 >[!NOTE]
 >
->[!DNL Google Chrome] et [!DNL Microsoft Edge] sont actuellement les seuls navigateurs qui prennent en charge la modification visuelle des pages web dans [!DNL Adobe Target].
+>[!DNL Google Chrome] et [!DNL Microsoft Edge] sont actuellement les seuls navigateurs qui prennent en charge la modification visuelle des pages web dans [!DNL Adobe Target]. [!DNL Safari] ne prend pas en charge le compositeur d’expérience visuelle ou le compositeur d’expérience visuelle.
 
 
 ## Diffusion de contenu
