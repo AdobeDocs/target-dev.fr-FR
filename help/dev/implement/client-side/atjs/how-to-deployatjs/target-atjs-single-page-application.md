@@ -339,7 +339,7 @@ Les vidéos suivantes comprennent davantage d’informations :
 
 ### Fonctionnement d’at.js 2
 
->[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3507927/?captions=fre_fr&quality=12)
 
 Pour plus d’informations, consultez la page [Fonctionnement d’at.js 2.x](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=fr).
 
