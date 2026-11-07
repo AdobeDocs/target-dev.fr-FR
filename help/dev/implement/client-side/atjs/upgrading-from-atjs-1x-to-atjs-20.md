@@ -800,6 +800,6 @@ La version est envoyée en tant que paramètre de chaîne de requête via le par
 
 at.js 2.*x* améliore la prise en charge des SPA par Adobe [!DNL Target] et s’intègre à d’autres solutions Experience Cloud. Cette vidéo explique comment tout se connecte.
 
->[!VIDEO](https://video.tv.adobe.com/v/26250/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3507927/?captions=fre_fr&quality=12)
 
 Pour plus d’informations[&#128279;](https://experienceleague.adobe.com/docs/target-learn/tutorials/implementation/understanding-how-atjs-20-works.html?lang=fr) voir  Fonctionnement d’at.js 2.*x* .
